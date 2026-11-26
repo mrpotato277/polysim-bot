@@ -58,7 +58,6 @@ class PolySimWrapper:
                 status="PENDING",
                 limit=page_size,
                 offset=offset,
-                wallet_id="api",
             )
             if not batch:
                 break

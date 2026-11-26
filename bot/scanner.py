@@ -232,7 +232,7 @@ class MarketScanner:
             ),
             reverse=True,
         )
-        for cid in need_detail[:25]:
+        for cid in need_detail[:120]:
             try:
                 detail = self.client.get_market(cid)
                 merged[cid].update({k: v for k, v in detail.items() if v is not None})

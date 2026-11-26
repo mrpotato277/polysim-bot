@@ -32,16 +32,16 @@ class BotConfig:
     gemini_model: str = "gemini-3.5-flash-lite"
     dry_run: bool = True
 
-    # Capital & Risk Limits (strictly enforced by Overseer — cautious ramp-up profile)
-    max_total_exposure_pct: Decimal = Decimal("0.35")
-    max_single_market_pct: Decimal = Decimal("0.04")
-    max_category_exposure_pct: Decimal = Decimal("0.12")
-    kelly_fraction: Decimal = Decimal("0.15")
+    # Capital & Risk Limits (strictly enforced by Overseer — scaled balanced profile)
+    max_total_exposure_pct: Decimal = Decimal("0.55")
+    max_single_market_pct: Decimal = Decimal("0.07")
+    max_category_exposure_pct: Decimal = Decimal("0.22")
+    kelly_fraction: Decimal = Decimal("0.22")
     cash_buffer_usd: Decimal = Decimal("1.00")
     circuit_breaker_24h_dd: Decimal = Decimal("-0.05")
 
     # Alpha & Edge Thresholds
-    min_edge_net: Decimal = Decimal("0.08")
+    min_edge_net: Decimal = Decimal("0.06")
     breaking_taker_min_edge_net: Decimal = Decimal("0.12")
     min_high_conv_bump_edge: Decimal = Decimal("0.10")
     carry_min_prob: Decimal = Decimal("0.88")

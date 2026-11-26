@@ -91,11 +91,12 @@ def _make_proposal(
 def test_overseer_quarter_kelly_and_caps() -> None:
     cfg = BotConfig(polysim_api_key="x", gemini_api_key="y")
     assert cfg.max_new_buys_per_run == 2
-    assert cfg.kelly_fraction == Decimal("0.15")
+    assert cfg.kelly_fraction == Decimal("0.22")
+    assert cfg.min_edge_net == Decimal("0.06")
     assert cfg.circuit_breaker_24h_dd == Decimal("-0.05")
     ov = Overseer(cfg)
     prop = _make_proposal(price="0.50", p_true="0.70", edge="0.20")
-    # full kelly = (0.70 - 0.50) / 0.50 = 0.40; 0.15 * kelly = 0.06 -> capped by 4% single market ($400)
+    # full kelly = (0.70 - 0.50) / 0.50 = 0.40; 0.22 * kelly = 0.088 -> capped by 7% single market ($700)
     dec = ov.evaluate_buy(
         prop,
         equity_usd=Decimal("10000"),
@@ -107,41 +108,41 @@ def test_overseer_quarter_kelly_and_caps() -> None:
         circuit_breaker_active=False,
     )
     assert dec.approved and dec.order is not None
-    assert dec.order.notional_usd <= Decimal("400.00")
+    assert dec.order.notional_usd <= Decimal("700.00")
     assert dec.order.quantity >= Decimal("5")
 
-    # Single-market cap (4% = 400) already used -> veto
+    # Single-market cap (7% = 700) already used -> veto
     dec_single = ov.evaluate_buy(
         prop,
         equity_usd=Decimal("10000"),
-        cash_usd=Decimal("9600"),
-        total_exposure_usd=Decimal("400"),
-        market_exposure_usd=Decimal("400"),
-        category_exposure_usd=Decimal("400"),
+        cash_usd=Decimal("9300"),
+        total_exposure_usd=Decimal("700"),
+        market_exposure_usd=Decimal("700"),
+        category_exposure_usd=Decimal("700"),
         has_open_order_on_market=False,
         circuit_breaker_active=False,
     )
     assert not dec_single.approved
 
-    # Category cap (12% = 1200) already used -> veto
+    # Category cap (22% = 2200) already used -> veto
     dec_cat = ov.evaluate_buy(
         prop,
         equity_usd=Decimal("10000"),
-        cash_usd=Decimal("8800"),
-        total_exposure_usd=Decimal("1200"),
+        cash_usd=Decimal("7800"),
+        total_exposure_usd=Decimal("2200"),
         market_exposure_usd=Decimal("0"),
-        category_exposure_usd=Decimal("1200"),
+        category_exposure_usd=Decimal("2200"),
         has_open_order_on_market=False,
         circuit_breaker_active=False,
     )
     assert not dec_cat.approved
 
-    # Total exposure cap (35% = 3500) already used -> veto
+    # Total exposure cap (55% = 5500) already used -> veto
     dec_tot = ov.evaluate_buy(
         prop,
         equity_usd=Decimal("10000"),
-        cash_usd=Decimal("6500"),
-        total_exposure_usd=Decimal("3500"),
+        cash_usd=Decimal("4500"),
+        total_exposure_usd=Decimal("5500"),
         market_exposure_usd=Decimal("0"),
         category_exposure_usd=Decimal("0"),
         has_open_order_on_market=False,
