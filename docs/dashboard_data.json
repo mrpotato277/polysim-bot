@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:06:02.900494+00:00",
+  "generated_at": "2026-11-26T17:11:05.310081+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,24 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9962.1,
+    "equity_usd": 9958.76,
     "cash_usd": 8998.81,
-    "positions_value_usd": 963.29,
-    "deployed_pct": 9.67,
-    "total_pnl_usd": -37.9,
-    "total_pnl_pct": -0.38,
-    "unrealized_pnl_usd": -36.88,
+    "positions_value_usd": 959.95,
+    "deployed_pct": 9.64,
+    "total_pnl_usd": -41.24,
+    "total_pnl_pct": -0.41,
+    "unrealized_pnl_usd": -40.22,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.44,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 55,
+    "total_forecasts": 56,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 397.77,
-    "politics": 565.52
+    "crypto": 396.21,
+    "politics": 563.74
   },
   "equity_curve": [
     {
@@ -533,6 +533,13 @@
       "cash": 8998.81,
       "deployed_pct": 9.67,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T17:11:05.054940+00:00",
+      "equity": 9958.76,
+      "cash": 8998.81,
+      "deployed_pct": 9.64,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -543,9 +550,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.892,
-      "current_value": 397.77,
-      "unrealized_pnl": -2.23,
+      "current_price": 0.8885,
+      "current_value": 396.21,
+      "unrealized_pnl": -3.79,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -557,9 +564,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0975,
-      "current_value": 173.33,
-      "unrealized_pnl": -47.11,
+      "current_price": 0.0965,
+      "current_value": 171.55,
+      "unrealized_pnl": -48.89,
       "p_blended": 0.2134,
       "edge_net": 0.0,
       "rationale": "Pedro Sánchez steht vor einer äußerst knappen und polarisierten vorgezogenen Wahl, bei der seine Wiederwahl stark gefährdet ist."
@@ -580,6 +587,39 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 56,
+      "ts": "2026-11-26T17:11:05.051956+00:00",
+      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
+      "category": "markets",
+      "end_date": "2026-12-01T04:59:59.999000+00:00",
+      "market_price": "0.1300",
+      "p_blind": "0.1200",
+      "p_blended": "0.1258",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "-0.0042",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if WTI hits $90 during November 2026. Objective market high reference is clear.",
+        "base_rate": 0.15,
+        "bull_case": "Geopolitical tensions, supply fears, and attacks on infrastructure (e.g. Ras Tanura claims) can spike prices rapidly towards $90 before month-end.",
+        "bear_case": "Current WTI spot is around $84.52 with only a few days left in November, and global supply surplus concerns keep heavy lids on prices.",
+        "summary_de": "Da der WTI-Rohölpreis aktuell bei rund 84,50 US-Dollar notiert und nur noch wenige Tage im November verbleiben, ist ein sprunghafter Anstieg auf 80 Dollar zwar geopolitisch möglich, aber statistisch eher unwahrscheinlich.",
+        "news_used": [
+          "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times",
+          "WTI Jumps to $83.49 and Brent to $92.41 on Ras Tanura Claim; $86 WTI and $96 Brent Targets Before OPEC+ Sunday - TradingNEWS",
+          "Brent Crude Slips Below $90 as Global Supply Surplus Weighs on Market - Coin Edition",
+          "Oil-sensitive stocks rally up to 5% as Brent slips below $90; CEAT leads - Business Standard"
+        ],
+        "market_data": "WTI Crude Oil (CL=F) live reference: 84.52 (prev close: 83.98, +0.64%)."
+      }
+    },
     {
       "id": 55,
       "ts": "2026-11-26T17:06:02.476743+00:00",
@@ -1339,38 +1379,6 @@
           "Analysis-Spain's economic gains miss voters' wallets as Sanchez seeks reelection - San Luis Obispo Tribune"
         ]
       }
-    },
-    {
-      "id": 31,
-      "ts": "2026-11-26T11:21:18.969234+00:00",
-      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
-      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.5950",
-      "p_blind": "0.7500",
-      "p_blended": "0.6789",
-      "confidence": "0.8000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0889",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election according to Taiwan's Central Election Commission.",
-        "base_rate": 0.6,
-        "bull_case": "As the incumbent Kuomintang (KMT) mayor, Chiang Wan-an holds strong name recognition, incumbency advantage, and is actively managing pre-election events as seen in recent news reports.",
-        "bear_case": "Taiwanese local elections are highly volatile, and national-level political shifts or strong opposition challengers can pose unexpected hurdles for incumbent KMT candidates.",
-        "summary_de": "Als amtierender Bürgermeister von Taipeh und Spitzenkandidat der KMT verfügt Chiang Wan-an über einen starken Amtsinhabervorteil, der seine Siegchancen bei den bevorstehenden Wahlen begünstigt.",
-        "news_used": [
-          "What to know about Taiwan’s local elections and why they matter to China - CTPost",
-          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
-          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
-          "What a KMT setback in Taiwan’s polls means for Washington and Beijing - ThinkChina"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1516,6 +1524,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 60,
+      "ts": "2026-11-26T17:11:05.055930+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1177,
+      "candidates_found": 7,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 24.4,
+      "errors": []
+    },
     {
       "id": 59,
       "ts": "2026-11-26T17:06:02.479989+00:00",
@@ -1742,18 +1762,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 43.93,
-      "errors": []
-    },
-    {
-      "id": 40,
-      "ts": "2026-11-26T15:31:46.984139+00:00",
-      "dry_run": 0,
-      "markets_scanned": 424,
-      "candidates_found": 6,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 57.32,
       "errors": []
     }
   ]
