@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:55:52.527289+00:00",
+  "generated_at": "2026-11-26T18:01:25.243926+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,13 +11,13 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9962.02,
+    "equity_usd": 9962.47,
     "cash_usd": 8998.81,
-    "positions_value_usd": 963.21,
+    "positions_value_usd": 963.66,
     "deployed_pct": 9.67,
-    "total_pnl_usd": -37.98,
+    "total_pnl_usd": -37.53,
     "total_pnl_pct": -0.38,
-    "unrealized_pnl_usd": -36.96,
+    "unrealized_pnl_usd": -36.51,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.44,
@@ -27,7 +27,7 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 394.87,
+    "crypto": 395.32,
     "politics": 568.34
   },
   "equity_curve": [
@@ -603,6 +603,19 @@
       "cash": 8998.81,
       "deployed_pct": 9.67,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T18:00:00+00:00",
+      "equity": 9962.25,
+      "cash": 9962.25,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T18:01:24.853687+00:00",
+      "equity": 9962.47,
+      "cash": 8998.81,
+      "deployed_pct": 9.67,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -613,9 +626,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8855,
-      "current_value": 394.87,
-      "unrealized_pnl": -5.13,
+      "current_price": 0.8865,
+      "current_value": 395.32,
+      "unrealized_pnl": -4.68,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -1588,6 +1601,18 @@
   ],
   "recent_runs": [
     {
+      "id": 70,
+      "ts": "2026-11-26T18:01:24.872108+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1200,
+      "candidates_found": 6,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 21.61,
+      "errors": []
+    },
+    {
       "id": 69,
       "ts": "2026-11-26T17:55:52.257297+00:00",
       "dry_run": 0,
@@ -1813,18 +1838,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 17.94,
-      "errors": []
-    },
-    {
-      "id": 50,
-      "ts": "2026-11-26T16:20:59.882071+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1126,
-      "candidates_found": 5,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 17.87,
       "errors": []
     }
   ]
