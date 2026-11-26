@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T16:16:03.815747+00:00",
+  "generated_at": "2026-11-26T16:21:00.106527+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,23 +11,23 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9967.65,
+    "equity_usd": 9967.88,
     "cash_usd": 8998.81,
-    "positions_value_usd": 968.84,
+    "positions_value_usd": 969.07,
     "deployed_pct": 9.72,
-    "total_pnl_usd": -32.35,
+    "total_pnl_usd": -32.12,
     "total_pnl_pct": -0.32,
-    "unrealized_pnl_usd": -31.33,
+    "unrealized_pnl_usd": -31.1,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.32,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 51,
+    "total_forecasts": 52,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 397.99,
+    "crypto": 398.22,
     "politics": 570.85
   },
   "equity_curve": [
@@ -457,6 +457,13 @@
       "cash": 8998.81,
       "deployed_pct": 9.72,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T16:20:59.881203+00:00",
+      "equity": 9967.88,
+      "cash": 8998.81,
+      "deployed_pct": 9.72,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -467,9 +474,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8925,
-      "current_value": 397.99,
-      "unrealized_pnl": -2.01,
+      "current_price": 0.893,
+      "current_value": 398.22,
+      "unrealized_pnl": -1.78,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -484,9 +491,9 @@
       "current_price": 0.1005,
       "current_value": 178.66,
       "unrealized_pnl": -41.78,
-      "p_blended": 0.2441,
+      "p_blended": 0.2134,
       "edge_net": 0.0,
-      "rationale": "Pedro Sánchez steht trotz anhaltender politischer Krisen und starker Opposition weiterhin im Amt und kämpft aktiv um seine politische Zukunft."
+      "rationale": "Pedro Sánchez steht vor einer äußerst knappen und polarisierten vorgezogenen Wahl, bei der seine Wiederwahl stark gefährdet ist."
     },
     {
       "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
@@ -504,6 +511,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 52,
+      "ts": "2026-11-26T16:20:59.879420+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1005",
+      "p_blind": "0.4800",
+      "p_blended": "0.2134",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on who the next Prime Minister of Spain is following the election concluding before the deadline.",
+        "base_rate": 0.45,
+        "bull_case": "Pedro Sánchez has demonstrated remarkable political survival skills and could manage to cobble together another coalition or win the snap election.",
+        "bear_case": "Polling and recent news highlight a tight, polarized race with strong opposition momentum threatening to unseat Europe's left-wing holdout.",
+        "summary_de": "Pedro Sánchez steht vor einer äußerst knappen und polarisierten vorgezogenen Wahl, bei der seine Wiederwahl stark gefährdet ist.",
+        "news_used": [
+          "Spain's Election Could Topple One of Europe's Last Left-Wing Holdouts - Haaretz",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
+          "Spain Heads to Sunday Snap Election With Tight, Polarized Race - teleSUR English",
+          "Can a political reinvention keep Pedro Sanchez in power? - DW.com"
+        ]
+      }
+    },
     {
       "id": 51,
       "ts": "2026-11-26T16:16:03.448194+00:00",
@@ -1263,35 +1302,6 @@
           "Spanish elections: What you need to know and what's at stake - BBC"
         ]
       }
-    },
-    {
-      "id": 27,
-      "ts": "2026-11-26T10:22:10.562112+00:00",
-      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
-      "question": "Will Bitcoin dip to $55,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1025",
-      "p_blind": "0.0200",
-      "p_blended": "0.0635",
-      "confidence": "0.8500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0395",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.8-flash",
-        "resolution_note": "Der Kontrakt verlangt das Erreichen oder Unterschreiten der 55.000-Dollar-Marke im November; maßgeblich ist meist ein spezifischer Index- oder Exchange-Feed.",
-        "base_rate": 0.05,
-        "bull_case": "Ein beispielloser Krypto-Marktcrash oder regulatorischer Schock innerhalb der verbleibenden Tage des Monats könnte den Kurs massiv einbrechen lassen.",
-        "bear_case": "Mit nur noch wenigen Tagen im November und Notierungen weit über diesem Niveau ist ein Absturz auf 55.000 Dollar vor Monatsende extrem unwahrscheinlich.",
-        "summary_de": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen.",
-        "news_used": [
-          "Plan C Outlines a $55,185 Target and a $45,000 Risk for the Bitcoin Model - Bitcoin Sistemi"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1437,6 +1447,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 50,
+      "ts": "2026-11-26T16:20:59.882071+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1126,
+      "candidates_found": 5,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 17.87,
+      "errors": []
+    },
     {
       "id": 49,
       "ts": "2026-11-26T16:16:03.450707+00:00",
@@ -1663,18 +1685,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 42.77,
-      "errors": []
-    },
-    {
-      "id": 30,
-      "ts": "2026-11-26T14:21:17.971914+00:00",
-      "dry_run": 0,
-      "markets_scanned": 423,
-      "candidates_found": 5,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 39.49,
       "errors": []
     }
   ]
