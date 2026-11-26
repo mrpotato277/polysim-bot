@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:15:54.360193+00:00",
+  "generated_at": "2026-11-26T17:20:56.917434+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,13 +11,13 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9960.54,
+    "equity_usd": 9967.36,
     "cash_usd": 8998.81,
-    "positions_value_usd": 961.73,
-    "deployed_pct": 9.66,
-    "total_pnl_usd": -39.46,
-    "total_pnl_pct": -0.39,
-    "unrealized_pnl_usd": -38.44,
+    "positions_value_usd": 968.55,
+    "deployed_pct": 9.72,
+    "total_pnl_usd": -32.64,
+    "total_pnl_pct": -0.33,
+    "unrealized_pnl_usd": -31.62,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.44,
@@ -27,8 +27,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 396.21,
-    "politics": 565.52
+    "crypto": 396.65,
+    "politics": 571.9
   },
   "equity_curve": [
     {
@@ -547,6 +547,13 @@
       "cash": 8998.81,
       "deployed_pct": 9.66,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T17:20:56.601274+00:00",
+      "equity": 9967.36,
+      "cash": 8998.81,
+      "deployed_pct": 9.72,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -557,9 +564,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8885,
-      "current_value": 396.21,
-      "unrealized_pnl": -3.79,
+      "current_price": 0.8895,
+      "current_value": 396.65,
+      "unrealized_pnl": -3.35,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -585,9 +592,9 @@
       "outcome": "Yes",
       "quantity": 637.71,
       "avg_entry_price": 0.5955,
-      "current_price": 0.615,
-      "current_value": 392.19,
-      "unrealized_pnl": 12.46,
+      "current_price": 0.625,
+      "current_value": 398.57,
+      "unrealized_pnl": 18.84,
       "p_blended": 0.7975,
       "edge_net": 0.1558,
       "rationale": "Der amtierende Bürgermeister Chiang Wan-an geht als klarer Favorit in die Wahl, da aktuelle Berichte seine Handlungsfähigkeit und starke Position unterstreichen."
@@ -1532,6 +1539,18 @@
   ],
   "recent_runs": [
     {
+      "id": 62,
+      "ts": "2026-11-26T17:20:56.606687+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1143,
+      "candidates_found": 5,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 17.17,
+      "errors": []
+    },
+    {
       "id": 61,
       "ts": "2026-11-26T17:15:54.103341+00:00",
       "dry_run": 0,
@@ -1757,18 +1776,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 39.46,
-      "errors": []
-    },
-    {
-      "id": 42,
-      "ts": "2026-11-26T15:41:12.019849+00:00",
-      "dry_run": 0,
-      "markets_scanned": 509,
-      "candidates_found": 5,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 37.65,
       "errors": []
     }
   ]
