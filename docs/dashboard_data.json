@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:06:24.260757+00:00",
+  "generated_at": "2026-11-26T20:11:08.116318+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9943.38,
-    "reconciled_equity_usd": 9517.56,
+    "equity_usd": 9942.49,
+    "reconciled_equity_usd": 9516.67,
     "equity_discrepancy_usd": 425.82,
     "cash_usd": 8361.37,
-    "positions_value_usd": 1156.19,
-    "deployed_pct": 11.63,
-    "total_pnl_usd": -56.62,
-    "total_pnl_pct": -0.57,
-    "unrealized_pnl_usd": -42.42,
+    "positions_value_usd": 1155.3,
+    "deployed_pct": 11.62,
+    "total_pnl_usd": -57.51,
+    "total_pnl_pct": -0.58,
+    "unrealized_pnl_usd": -43.31,
     "total_trades": 51,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.81,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 872.04,
+    "politics": 871.15,
     "crypto": 284.15
   },
   "equity_curve": [
@@ -773,6 +773,13 @@
       "cash": 8361.37,
       "deployed_pct": 11.63,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T20:11:07.811284+00:00",
+      "equity": 9942.49,
+      "cash": 8361.37,
+      "deployed_pct": 11.62,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -783,9 +790,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.093,
-      "current_value": 165.33,
-      "unrealized_pnl": -55.11,
+      "current_price": 0.0925,
+      "current_value": 164.44,
+      "unrealized_pnl": -56.0,
       "p_yes": 0.1645,
       "p_blended": 0.1645,
       "edge_net": 0.0,
@@ -840,7 +847,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T20:10:37.607084+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds within the specified date range.",
@@ -869,7 +876,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T20:10:37.879126+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain by the deadline.",
@@ -904,7 +911,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:34.773443+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.249156+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28.11.2026 statt; die Bedingungen sind klar definiert.",
@@ -939,7 +946,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:35.797033+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.967676+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet über eine Zinsanhebung um 25 Basispunkte nach dem Dezember-Treffen 2026 gemäß offizieller Fed-Mitteilung.",
@@ -974,7 +981,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:01:11.220656+00:00",
+      "last_checked_ts": "2026-11-26T20:10:37.879126+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain before the deadline.",
@@ -1079,7 +1086,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:01:11.049490+00:00",
+      "last_checked_ts": "2026-11-26T20:10:37.772596+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $55,000 in November, resolving based on standard spot exchange data before the December deadline.",
@@ -1150,7 +1157,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:01:11.220656+00:00",
+      "last_checked_ts": "2026-11-26T20:10:37.879126+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Alberto Núñez Feijóo becomes the next Prime Minister of Spain before the deadline.",
@@ -1255,7 +1262,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:35.457027+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.737165+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the 2026 Spanish general election according to official results.",
@@ -1325,7 +1332,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:34.241110+00:00",
+      "last_checked_ts": "2026-11-26T20:10:38.942565+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im Zeitraum 23. bis 29. November $64.000 erreicht. Maßgeblich sind Standard-Preis-Feeds wie Binance oder Chainlink.",
@@ -1354,7 +1361,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:34.081702+00:00",
+      "last_checked_ts": "2026-11-26T20:10:38.838836+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Ethereum im November 2026 die Marke von 1.500 USD berührt.",
@@ -1386,7 +1393,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:34.773443+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.249156+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard LaLiga match resolution based on official league score at final whistle.",
@@ -1421,7 +1428,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:01:11.049490+00:00",
+      "last_checked_ts": "2026-11-26T20:10:37.772596+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin dips to $55,000 in November 2026 based on standard spot pricing feeds.",
@@ -1457,7 +1464,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:35.457027+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.737165+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether PSOE will win the most seats in the 2026 Spanish general election, determined by official election results.",
@@ -1492,7 +1499,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:01:11.220656+00:00",
+      "last_checked_ts": "2026-11-26T20:10:37.879126+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolvable based on official appointment before the deadline.",
@@ -1527,7 +1534,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:34.928970+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.395110+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard exchange spot price or index resolution for Bitcoin hitting $62,500.",
@@ -1556,7 +1563,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:34.773443+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.249156+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28. November 2026 statt. Das Ergebnis entscheidet klar über den Ausgang (Sieg von Alavés = YES).",
@@ -1591,7 +1598,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:34.621538+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.147044+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price threshold contract based on spot exchange feeds during the specified dates.",
@@ -1620,7 +1627,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:35.457027+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.737165+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract is straightforward, focusing on the seat count winner in the 2026 Spanish general election.",
@@ -1655,7 +1662,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:05:35.097088+00:00",
+      "last_checked_ts": "2026-11-26T20:10:39.513934+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the New Taipei Mayor election.",
@@ -1771,7 +1778,7 @@
       "est_fee_usd": "0",
       "edge_net": "0.0725",
       "strategy_type": "news_lag",
-      "status": "PENDING",
+      "status": "CANCELLED",
       "dry_run": 0,
       "rationale": "[news_lag] Die Bürgermeisterwahl in Neu-Taipeh verläuft äußerst knapp zwischen DPP und KMT, wobei die organisatorischen Vorteile von Su Chiao-hui auf ein starkes traditionelles Lager der Opposition treffen."
     },
@@ -1917,6 +1924,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 91,
+      "ts": "2026-11-26T20:11:07.821194+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1147,
+      "candidates_found": 18,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 31.31,
+      "errors": []
+    },
     {
       "id": 90,
       "ts": "2026-11-26T20:06:23.665020+00:00",
@@ -2143,18 +2162,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 22.29,
-      "errors": []
-    },
-    {
-      "id": 71,
-      "ts": "2026-11-26T18:05:54.048374+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1246,
-      "candidates_found": 5,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 20.36,
       "errors": []
     }
   ]
