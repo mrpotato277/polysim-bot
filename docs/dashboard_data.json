@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T12:41:15.995585+00:00",
+  "generated_at": "2026-11-26T12:51:22.965206+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,24 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9985.46,
+    "equity_usd": 9981.74,
     "cash_usd": 9054.73,
-    "positions_value_usd": 930.73,
-    "deployed_pct": 9.32,
-    "total_pnl_usd": -14.54,
-    "total_pnl_pct": -0.15,
-    "unrealized_pnl_usd": -14.54,
+    "positions_value_usd": 927.01,
+    "deployed_pct": 9.29,
+    "total_pnl_usd": -18.26,
+    "total_pnl_pct": -0.18,
+    "unrealized_pnl_usd": -18.26,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.22,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 34,
+    "total_forecasts": 35,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 397.99,
-    "politics": 532.74
+    "crypto": 399.78,
+    "politics": 527.23
   },
   "equity_curve": [
     {
@@ -244,6 +244,13 @@
       "cash": 9054.73,
       "deployed_pct": 9.32,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T12:51:21.981533+00:00",
+      "equity": 9981.74,
+      "cash": 9054.73,
+      "deployed_pct": 9.29,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -254,9 +261,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8925,
-      "current_value": 397.99,
-      "unrealized_pnl": -2.01,
+      "current_price": 0.8965,
+      "current_value": 399.78,
+      "unrealized_pnl": -0.22,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -282,15 +289,47 @@
       "outcome": "Yes",
       "quantity": 550.56,
       "avg_entry_price": 0.59,
-      "current_price": 0.585,
-      "current_value": 322.08,
-      "unrealized_pnl": -2.75,
-      "p_blended": 0.6789,
-      "edge_net": 0.0889,
-      "rationale": "Als amtierender Bürgermeister von Taipeh und Spitzenkandidat der KMT verfügt Chiang Wan-an über einen starken Amtsinhabervorteil, der seine Siegchancen bei den bevorstehenden Wahlen begünstigt."
+      "current_price": 0.575,
+      "current_value": 316.57,
+      "unrealized_pnl": -8.26,
+      "p_blended": 0.7097,
+      "edge_net": 0.1397,
+      "rationale": "Als amtierender Bürgermeister von Taipeh hat Chiang Wan-an starke institutionelle Vorteile und gute Chancen auf eine Wiederwahl bei den anstehenden Kommunalwahlen."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 35,
+      "ts": "2026-11-26T12:51:21.722145+00:00",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.5750",
+      "p_blind": "0.8200",
+      "p_blended": "0.7097",
+      "confidence": "0.7500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1397",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election ending around late November 2026.",
+        "base_rate": 0.75,
+        "bull_case": "As the incumbent Kuomintang (KMT) mayor, Chiang Wan-an enjoys strong institutional advantages, high visibility, and leads recent local election coverage.",
+        "bear_case": "Competitive challenges from pan-Green candidates and potential KMT setbacks in broader nationwide local elections could create headwinds.",
+        "summary_de": "Als amtierender Bürgermeister von Taipeh hat Chiang Wan-an starke institutionelle Vorteile und gute Chancen auf eine Wiederwahl bei den anstehenden Kommunalwahlen.",
+        "news_used": [
+          "What to know about Taiwan’s local elections and why they matter to China - CTPost",
+          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "What a possible KMT setback in Taiwan’s polls could mean for Washington and Beijing - ThinkChina"
+        ]
+      }
+    },
     {
       "id": 34,
       "ts": "2026-11-26T12:31:33.366224+00:00",
@@ -1040,41 +1079,29 @@
           "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business"
         ]
       }
-    },
-    {
-      "id": 10,
-      "ts": "2026-11-26T01:40:43.184104+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1110",
-      "p_blind": "0.3500",
-      "p_blended": "0.1712",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Evaluates whether Pedro Sánchez becomes the next Prime Minister of Spain following current political events/elections.",
-        "base_rate": 0.4,
-        "bull_case": "Sánchez has repeatedly demonstrated remarkable political survival skills and coalition-building acumen despite deep polarization.",
-        "bear_case": "Recent news headlines indicate mounting political pressure, declining voter sentiment over economic conditions, and rising threats from the far-right/opposition making defeat likely.",
-        "summary_de": "Pedro Sánchez steht starkem politischen Gegenwind und drohenden Wahlniederlagen gegenüber, was seine Chancen auf eine Fortsetzung als Premierminister mindert.",
-        "news_used": [
-          "5 charts show why Spaniards aren't feeling the benefits of economic growth under Sánchez - The New Indian Express",
-          "Pedro Sánchez pledges €22bn spending spree despite EU’s warnings - The Times",
-          "Does Spain’s Leftist Government Stand a Chance? - The Nation",
-          "Spain election 2026: Pedro Sánchez faces defeat as far right threatens his anti-Israel legacy - Ynetnews"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 6,
+      "ts": "2026-11-26T12:51:21.979747+00:00",
+      "client_order_id": "psb-20261126-12-bf7a9da083-buy-y",
+      "order_id": "1733161",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.57",
+      "quantity": "145.08",
+      "notional_usd": "82.69",
+      "est_fee_usd": "0",
+      "edge_net": "0.1397",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Als amtierender Bürgermeister von Taipeh hat Chiang Wan-an starke institutionelle Vorteile und gute Chancen auf eine Wiederwahl bei den anstehenden Kommunalwahlen."
+    },
     {
       "id": 5,
       "ts": "2026-11-26T11:41:24.164237+00:00",
@@ -1177,6 +1204,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 23,
+      "ts": "2026-11-26T12:51:21.982500+00:00",
+      "dry_run": 0,
+      "markets_scanned": 420,
+      "candidates_found": 5,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 43.16,
+      "errors": []
+    },
     {
       "id": 22,
       "ts": "2026-11-26T12:41:15.250487+00:00",
@@ -1410,18 +1449,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 38.39,
-      "errors": []
-    },
-    {
-      "id": 3,
-      "ts": "2026-11-26T01:53:01.606951+00:00",
-      "dry_run": 0,
-      "markets_scanned": 460,
-      "candidates_found": 9,
-      "llm_calls": 5,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 56.06,
       "errors": []
     }
   ]
