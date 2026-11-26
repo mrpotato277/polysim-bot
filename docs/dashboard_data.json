@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:45:48.152834+00:00",
+  "generated_at": "2026-11-26T17:51:02.520496+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,24 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9959.35,
+    "equity_usd": 9963.13,
     "cash_usd": 8998.81,
-    "positions_value_usd": 960.54,
-    "deployed_pct": 9.64,
-    "total_pnl_usd": -40.65,
-    "total_pnl_pct": -0.41,
-    "unrealized_pnl_usd": -39.63,
+    "positions_value_usd": 964.32,
+    "deployed_pct": 9.68,
+    "total_pnl_usd": -36.87,
+    "total_pnl_pct": -0.37,
+    "unrealized_pnl_usd": -35.85,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.44,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 56,
+    "total_forecasts": 57,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 392.2,
-    "politics": 568.34
+    "crypto": 394.2,
+    "politics": 570.12
   },
   "equity_curve": [
     {
@@ -589,6 +589,13 @@
       "cash": 8998.81,
       "deployed_pct": 9.64,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T17:51:02.118883+00:00",
+      "equity": 9963.13,
+      "cash": 8998.81,
+      "deployed_pct": 9.68,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -599,9 +606,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8795,
-      "current_value": 392.2,
-      "unrealized_pnl": -7.8,
+      "current_price": 0.884,
+      "current_value": 394.2,
+      "unrealized_pnl": -5.8,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -613,12 +620,12 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0955,
-      "current_value": 169.77,
-      "unrealized_pnl": -50.67,
-      "p_blended": 0.2134,
+      "current_price": 0.0965,
+      "current_value": 171.55,
+      "unrealized_pnl": -48.89,
+      "p_blended": 0.2008,
       "edge_net": 0.0,
-      "rationale": "Pedro Sánchez steht vor einer äußerst knappen und polarisierten vorgezogenen Wahl, bei der seine Wiederwahl stark gefährdet ist."
+      "rationale": "Die aktuellen Umfragen zeigen ein extrem knappes Rennen bei den spanischen Neuwahlen, weshalb Pedro Sánchez' Verbleib an der Regierung gefährdet ist."
     },
     {
       "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
@@ -636,6 +643,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 57,
+      "ts": "2026-11-26T17:51:02.117076+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.0965",
+      "p_blind": "0.4500",
+      "p_blended": "0.2008",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain following the ongoing election cycle.",
+        "base_rate": 0.5,
+        "bull_case": "Pedro Sánchez has proven resilient through multiple political crises and could manage to forge another coalition or benefit from late momentum in the tight snap election.",
+        "bear_case": "Polls and recent reports highlight an intensely polarized race where the conservative opposition under Feijóo poses a severe threat to unseat one of Europe's last left-wing holdouts.",
+        "summary_de": "Die aktuellen Umfragen zeigen ein extrem knappes Rennen bei den spanischen Neuwahlen, weshalb Pedro Sánchez' Verbleib an der Regierung gefährdet ist.",
+        "news_used": [
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
+          "Spain's Election Could Topple One of Europe's Last Left-Wing Holdouts - Haaretz",
+          "Spain Heads to Sunday Snap Election With Tight, Polarized Race - teleSUR English"
+        ]
+      }
+    },
     {
       "id": 56,
       "ts": "2026-11-26T17:11:05.051956+00:00",
@@ -1396,38 +1435,6 @@
           "Analysis-Spain's economic gains miss voters' wallets as Sanchez seeks reelection - San Luis Obispo Tribune"
         ]
       }
-    },
-    {
-      "id": 32,
-      "ts": "2026-11-26T11:31:25.462306+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1165",
-      "p_blind": "0.4200",
-      "p_blended": "0.2189",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.1-flash-lite",
-        "resolution_note": "The contract asks if Pedro Sánchez will be the next Prime Minister; given the election is imminent, the outcome will be determined by the parliamentary investiture process following the vote.",
-        "base_rate": 0.45,
-        "bull_case": "Sánchez has demonstrated high resilience and coalition-building skills, potentially securing enough support from regional parties to maintain a governing majority.",
-        "bear_case": "Economic dissatisfaction and voter fatigue, as highlighted by recent reports, suggest a strong shift toward opposition parties, potentially making a viable coalition impossible for Sánchez.",
-        "summary_de": "Trotz seiner politischen Widerstandsfähigkeit steht Sánchez aufgrund wirtschaftlicher Unzufriedenheit und einer polarisierten Wählerschaft vor einer schwierigen Wiederwahl, was die Erfolgsaussichten für eine erneute Regierungsbildung schmälert.",
-        "news_used": [
-          "Spain Heads to Sunday Snap Election With Tight, Polarized Race - teleSUR English",
-          "Can a political reinvention keep Pedro Sanchez in power? - DW.com",
-          "Who really wants Pedro Sanchez out of power? - Al Jazeera",
-          "Analysis-Spain's economic gains miss voters' wallets as Sanchez seeks reelection - San Luis Obispo Tribune"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1573,6 +1580,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 68,
+      "ts": "2026-11-26T17:51:02.119765+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1148,
+      "candidates_found": 6,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 23.03,
+      "errors": []
+    },
     {
       "id": 67,
       "ts": "2026-11-26T17:45:47.926659+00:00",
@@ -1799,18 +1818,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 27.33,
-      "errors": []
-    },
-    {
-      "id": 48,
-      "ts": "2026-11-26T16:11:32.287865+00:00",
-      "dry_run": 0,
-      "markets_scanned": 386,
-      "candidates_found": 6,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 43.36,
       "errors": []
     }
   ]
