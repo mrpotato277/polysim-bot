@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:31:26.183869+00:00",
+  "generated_at": "2026-11-26T11:41:25.100097+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -23,7 +23,7 @@
     "max_drawdown_pct": -0.14,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 32,
+    "total_forecasts": 33,
     "circuit_breaker_active": false
   },
   "category_exposure": {
@@ -188,6 +188,13 @@
       "cash": 9275.17,
       "deployed_pct": 3.88,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T11:41:24.165515+00:00",
+      "equity": 9987.29,
+      "cash": 9275.17,
+      "deployed_pct": 3.88,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -207,6 +214,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 33,
+      "ts": "2026-11-26T11:41:23.795510+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1240",
+      "p_blind": "0.4800",
+      "p_blended": "0.2529",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1289",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the snap election context.",
+        "base_rate": 0.5,
+        "bull_case": "Pedro Sánchez has proven exceptionally resilient at building coalitions and surviving tight political races.",
+        "bear_case": "Polling and recent news highlight a deeply polarized race where economic discontent and intense opposition threaten his reelection bid.",
+        "summary_de": "Pedro Sánchez kämpft in einer sehr knappen und polarisierten Neuwahl um seinen Verbleib im Amt, wobei die Umfragen und die wirtschaftliche Unzufriedenheit der Wähler gegen ihn sprechen.",
+        "news_used": [
+          "Spain Heads to Sunday Snap Election With Tight, Polarized Race - teleSUR English",
+          "Can a political reinvention keep Pedro Sanchez in power? - DW.com",
+          "Who really wants Pedro Sanchez out of power? - Al Jazeera",
+          "Analysis-Spain's economic gains miss voters' wallets as Sanchez seeks reelection - San Luis Obispo Tribune"
+        ]
+      }
+    },
     {
       "id": 32,
       "ts": "2026-11-26T11:31:25.462306+00:00",
@@ -956,41 +995,29 @@
           "Taiwan’s 2026 Nine-in-One Elections: Things to Watch - CSIS | Center for Strategic and International Studies"
         ]
       }
-    },
-    {
-      "id": 8,
-      "ts": "2026-11-26T01:40:37.655793+00:00",
-      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
-      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.5450",
-      "p_blind": "0.7200",
-      "p_blended": "0.6121",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0721",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag klärt die Frage, ob Chiang Wan-an die nächste Bürgermeisterwahl in Taipeh gewinnt. Die Bedingungen sind klar definiert.",
-        "base_rate": 0.65,
-        "bull_case": "Als amtierender Bürgermeister von Taipeh und prominentes KMT-Mitglied genießt Chiang Wan-an starken institutionellen Rückhalt und profitiert von der hohen Sichtbarkeit seines Amtes.",
-        "bear_case": "Die DPP stellt eine scharfe Konkurrenz dar, und nationale Trends in Taiwan sowie die komplexe Dynamik der Beziehungen zu Peking könnten die Wählerprämien verschieben.",
-        "summary_de": "Als amtierender Bürgermeister verfügt Chiang Wan-an über starke Vorteile im Wahlkampf, bleibt jedoch von nationalen politischen Strömungen in Taiwan abhängig.",
-        "news_used": [
-          "Taiwan's local elections test President Lai's defence push, KMT's Beijing line - Yahoo",
-          "Will Chen Jining’s downfall affect Shanghai–Taipei forum? Chiang Wan-an’s re-election is key, says Taiwan academic - 联合早报",
-          "Why Taiwan’s Local Elections Matter for Deterring China - Council on Foreign Relations",
-          "Taipei mayoral election: Can Puma Shen win his first electoral contest? - 联合早报"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 5,
+      "ts": "2026-11-26T11:41:24.164237+00:00",
+      "client_order_id": "psb-20261126-11-91e2086024-buy-y",
+      "order_id": "1733051",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.124",
+      "quantity": "1777.73",
+      "notional_usd": "220.43",
+      "est_fee_usd": "0",
+      "edge_net": "0.1289",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Pedro Sánchez kämpft in einer sehr knappen und polarisierten Neuwahl um seinen Verbleib im Amt, wobei die Umfragen und die wirtschaftliche Unzufriedenheit der Wähler gegen ihn sprechen."
+    },
     {
       "id": 4,
       "ts": "2026-11-26T11:21:19.213679+00:00",
@@ -1073,6 +1100,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 16,
+      "ts": "2026-11-26T11:41:24.165946+00:00",
+      "dry_run": 0,
+      "markets_scanned": 494,
+      "candidates_found": 6,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 35.06,
+      "errors": []
+    },
     {
       "id": 15,
       "ts": "2026-11-26T11:31:25.465318+00:00",
