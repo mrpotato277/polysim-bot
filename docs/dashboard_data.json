@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:21:20.261555+00:00",
+  "generated_at": "2026-11-26T11:31:26.183869+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -12,7 +12,7 @@
   "kpis": {
     "starting_balance_usd": 10000.0,
     "equity_usd": 9987.29,
-    "cash_usd": 9600.0,
+    "cash_usd": 9275.17,
     "positions_value_usd": 387.29,
     "deployed_pct": 3.88,
     "total_pnl_usd": -12.71,
@@ -23,7 +23,7 @@
     "max_drawdown_pct": -0.14,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 31,
+    "total_forecasts": 32,
     "circuit_breaker_active": false
   },
   "category_exposure": {
@@ -181,6 +181,13 @@
       "cash": 9600.0,
       "deployed_pct": 3.88,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T11:31:25.464630+00:00",
+      "equity": 9987.29,
+      "cash": 9275.17,
+      "deployed_pct": 3.88,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -200,6 +207,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 32,
+      "ts": "2026-11-26T11:31:25.462306+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1165",
+      "p_blind": "0.4200",
+      "p_blended": "0.2189",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.1-flash-lite",
+        "resolution_note": "The contract asks if Pedro Sánchez will be the next Prime Minister; given the election is imminent, the outcome will be determined by the parliamentary investiture process following the vote.",
+        "base_rate": 0.45,
+        "bull_case": "Sánchez has demonstrated high resilience and coalition-building skills, potentially securing enough support from regional parties to maintain a governing majority.",
+        "bear_case": "Economic dissatisfaction and voter fatigue, as highlighted by recent reports, suggest a strong shift toward opposition parties, potentially making a viable coalition impossible for Sánchez.",
+        "summary_de": "Trotz seiner politischen Widerstandsfähigkeit steht Sánchez aufgrund wirtschaftlicher Unzufriedenheit und einer polarisierten Wählerschaft vor einer schwierigen Wiederwahl, was die Erfolgsaussichten für eine erneute Regierungsbildung schmälert.",
+        "news_used": [
+          "Spain Heads to Sunday Snap Election With Tight, Polarized Race - teleSUR English",
+          "Can a political reinvention keep Pedro Sanchez in power? - DW.com",
+          "Who really wants Pedro Sanchez out of power? - Al Jazeera",
+          "Analysis-Spain's economic gains miss voters' wallets as Sanchez seeks reelection - San Luis Obispo Tribune"
+        ]
+      }
+    },
     {
       "id": 31,
       "ts": "2026-11-26T11:21:18.969234+00:00",
@@ -949,38 +988,6 @@
           "Taipei mayoral election: Can Puma Shen win his first electoral contest? - 联合早报"
         ]
       }
-    },
-    {
-      "id": 7,
-      "ts": "2026-11-26T01:40:18.528572+00:00",
-      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
-      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.9350",
-      "p_blind": "0.8500",
-      "p_blended": "0.8994",
-      "confidence": "0.8000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Entscheidung bezieht sich eindeutig auf die Zinserhöhung um 25 bps beim Dezember-Meeting 2026.",
-        "base_rate": 0.3,
-        "bull_case": "Aktuelle Inflationsdaten und PCE-Anstiege auf 3.8% zwingen die Federal Reserve zu einer erneuten Zinserhöhung.",
-        "bear_case": "Die politischen Meinungsverschiedenheiten der Fed-Mitglieder über die Ursachen der Inflation könnten zu einer abwartenden Haltung und Zinspause führen.",
-        "summary_de": "Angesichts anhaltend hoher Inflationszahlen und starker Signale der Medien preist der Markt eine Zinserhöhung im Dezember stark ein.",
-        "news_used": [
-          "Fed policymakers at odds over causes of high inflation - Reuters",
-          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
-          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch",
-          "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1066,6 +1073,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 15,
+      "ts": "2026-11-26T11:31:25.465318+00:00",
+      "dry_run": 0,
+      "markets_scanned": 494,
+      "candidates_found": 6,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 37.34,
+      "errors": []
+    },
     {
       "id": 14,
       "ts": "2026-11-26T11:21:19.216334+00:00",
