@@ -269,7 +269,14 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
         ranked = sorted(candidates[:15], key=_priority_key, reverse=True)
 
         # 6. Forecast & evaluate trades
+        new_buys_executed = 0
         for cand in ranked:
+            if new_buys_executed >= cfg.max_new_buys_per_run:
+                log.info(
+                    "Ramp-up pace cap reached (max %d new buy/run); deferring remaining entries.",
+                    cfg.max_new_buys_per_run,
+                )
+                break
             if cand.condition_id in open_order_markets:
                 continue
 
@@ -469,6 +476,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
             log.info("Execution %s -> %s", cand.question[:45], msg)
             if ok:
                 trades_executed += 1
+                new_buys_executed += 1
                 notional = decision.order.notional_usd
                 cash_usd -= notional
                 total_exp += notional

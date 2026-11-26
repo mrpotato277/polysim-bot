@@ -279,7 +279,7 @@
       <div class="kpi-sub" id="kpiPosVal">Positionen: $--</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Deployed Exposure (Cap 65%)</div>
+      <div class="kpi-label" id="kpiDeployedLabel">Deployed Exposure (Cap --%)</div>
       <div class="kpi-val" id="kpiDeployed">--%</div>
       <div class="cap-track"><div class="cap-fill" id="capFill" style="width: 0%"></div></div>
     </div>
@@ -306,7 +306,7 @@
     <div class="panel" style="margin-bottom: 0;">
       <div class="panel-header">
         <span class="panel-title">Exposure nach Kategorie</span>
-        <span class="panel-note">Max 25% pro Thema</span>
+        <span class="panel-note" id="catCapNote">Max --% pro Thema</span>
       </div>
       <div class="chart-box"><canvas id="categoryChart"></canvas></div>
     </div>
@@ -376,7 +376,12 @@
       const limits = data.risk_limits || {};
 
       document.getElementById("metaLine").textContent =
-        `Model: ${data.model || "--"} | Quarter-Kelly: ${limits.kelly_fraction ?? 0.25}x | Max Position: ${limits.max_single_market_pct ?? 10}% | Max Gesamt: ${limits.max_total_exposure_pct ?? 65}%`;
+        `Model: ${data.model || "--"} | Kelly: ${limits.kelly_fraction ?? 0.15}x | Max Position: ${limits.max_single_market_pct ?? 4}% | Max Gesamt: ${limits.max_total_exposure_pct ?? 35}%`;
+
+      document.getElementById("kpiDeployedLabel").textContent =
+        `Deployed Exposure (Cap ${limits.max_total_exposure_pct ?? 35}%)`;
+      document.getElementById("catCapNote").textContent =
+        `Max ${limits.max_category_exposure_pct ?? 12}% pro Thema`;
 
       const modePill = document.getElementById("modePill");
       if (data.dry_run) {
@@ -389,7 +394,7 @@
 
       const cbPill = document.getElementById("cbPill");
       if (k.circuit_breaker_active) {
-        cbPill.textContent = "CIRCUIT BREAKER: AKTIV (-10% DD)";
+        cbPill.textContent = `CIRCUIT BREAKER: AKTIV (${limits.circuit_breaker_24h_dd_pct ?? -5}% DD)`;
         cbPill.className = "pill pill-alert";
       } else {
         cbPill.textContent = "CIRCUIT BREAKER: NORMAL";

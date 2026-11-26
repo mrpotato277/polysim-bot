@@ -27,16 +27,16 @@ class BotConfig:
     gemini_model: str = "gemini-3.5-flash-lite"
     dry_run: bool = True
 
-    # Capital & Risk Limits (strictly enforced by Overseer)
-    max_total_exposure_pct: Decimal = Decimal("0.65")
-    max_single_market_pct: Decimal = Decimal("0.10")
-    max_category_exposure_pct: Decimal = Decimal("0.25")
-    kelly_fraction: Decimal = Decimal("0.25")
+    # Capital & Risk Limits (strictly enforced by Overseer — cautious ramp-up profile)
+    max_total_exposure_pct: Decimal = Decimal("0.35")
+    max_single_market_pct: Decimal = Decimal("0.04")
+    max_category_exposure_pct: Decimal = Decimal("0.12")
+    kelly_fraction: Decimal = Decimal("0.15")
     cash_buffer_usd: Decimal = Decimal("1.00")
-    circuit_breaker_24h_dd: Decimal = Decimal("-0.10")
+    circuit_breaker_24h_dd: Decimal = Decimal("-0.05")
 
     # Alpha & Edge Thresholds
-    min_edge_net: Decimal = Decimal("0.07")
+    min_edge_net: Decimal = Decimal("0.08")
     min_high_conv_bump_edge: Decimal = Decimal("0.10")
     carry_min_prob: Decimal = Decimal("0.88")
     carry_max_prob: Decimal = Decimal("0.96")
@@ -55,6 +55,7 @@ class BotConfig:
     max_markets_scan: int = 250
     max_candidates_for_books: int = 40
     max_forecasts_per_run: int = 5
+    max_new_buys_per_run: int = 1
     stale_order_minutes: int = 90
 
     # Rate Limiting
