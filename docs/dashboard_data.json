@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T10:12:02.962598+00:00",
+  "generated_at": "2026-11-26T10:22:12.162457+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -23,7 +23,7 @@
     "max_drawdown_pct": 0.0,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 24,
+    "total_forecasts": 27,
     "circuit_breaker_active": false
   },
   "category_exposure": {},
@@ -124,10 +124,110 @@
       "cash": 10000.0,
       "deployed_pct": 0.0,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T10:22:11.204596+00:00",
+      "equity": 10000.0,
+      "cash": 10000.0,
+      "deployed_pct": 0.0,
+      "source": "bot"
     }
   ],
   "open_positions": [],
   "recent_forecasts": [
+    {
+      "id": 27,
+      "ts": "2026-11-26T10:22:10.562112+00:00",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1025",
+      "p_blind": "0.0200",
+      "p_blended": "0.0635",
+      "confidence": "0.8500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0395",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.8-flash",
+        "resolution_note": "Der Kontrakt verlangt das Erreichen oder Unterschreiten der 55.000-Dollar-Marke im November; maßgeblich ist meist ein spezifischer Index- oder Exchange-Feed.",
+        "base_rate": 0.05,
+        "bull_case": "Ein beispielloser Krypto-Marktcrash oder regulatorischer Schock innerhalb der verbleibenden Tage des Monats könnte den Kurs massiv einbrechen lassen.",
+        "bear_case": "Mit nur noch wenigen Tagen im November und Notierungen weit über diesem Niveau ist ein Absturz auf 55.000 Dollar vor Monatsende extrem unwahrscheinlich.",
+        "summary_de": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen.",
+        "news_used": [
+          "Plan C Outlines a $55,185 Target and a $45,000 Risk for the Bitcoin Model - Bitcoin Sistemi"
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "ts": "2026-11-26T10:21:24.242625+00:00",
+      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+      "question": "Will Puma Shen win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.4165",
+      "p_blind": "0.3800",
+      "p_blended": "0.4002",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0178",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taipei Mayor election.",
+        "base_rate": 0.35,
+        "bull_case": "Puma Shen is actively campaigning and is a prominent candidate in the 2026 Taipei mayoral race with active media coverage.",
+        "bear_case": "Incumbent Mayor Chiang Wan-an and the KMT maintain strong structural advantages in Taipei municipal elections, presenting an uphill battle for the DPP.",
+        "summary_de": "Puma Shen kandidiert aktiv für das Amt des Bürgermeisters von Taipei, steht jedoch in einer traditionell schwierigen Wählerschaft starker Konkurrenz gegenüber.",
+        "news_used": [
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "DPP suspects foul play over Taipei election rally venues - Taiwan News",
+          "2026 ELECTIONS Taipei mayor candidates cancel rallies amid road use controversy - Focus Taiwan",
+          "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "ts": "2026-11-26T10:21:22.617809+00:00",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.5850",
+      "p_blind": "0.5500",
+      "p_blended": "0.5704",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0196",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official winner of the Taipei Mayor election by the deadline.",
+        "base_rate": 0.5,
+        "bull_case": "Incumbent Mayor Chiang Wan-an holds strong visibility and institutional advantage in Taipei.",
+        "bear_case": "Recent news highlights broader KMT setbacks and competitive opposition challenges in local elections.",
+        "summary_de": "Chiang Wan-an geht als amtierender Bürgermeister mit guten Chancen in die Wahl, sieht sich jedoch starken lokalen Gegenwinden der Opposition gegenüber.",
+        "news_used": [
+          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "What a KMT setback in Taiwan’s polls means for Washington and Beijing - ThinkChina",
+          "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
+        ]
+      }
+    },
     {
       "id": 24,
       "ts": "2026-11-26T10:11:31.279162+00:00",
@@ -816,73 +916,29 @@
           "[Big read] Taiwan local elections: What a DPP surge means for the 2028 presidency and cross-strait relations - ThinkChina"
         ]
       }
-    },
-    {
-      "id": 2,
-      "ts": "2026-11-26T00:04:13.707470+00:00",
-      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
-      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.9350",
-      "p_blind": "0.7800",
-      "p_blended": "0.8790",
-      "confidence": "0.7500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if the Fed will increase interest rates by 25 bps after the December 2026 meeting.",
-        "base_rate": 0.2,
-        "bull_case": "Hotter-than-expected inflation readings (such as October PCE rising to 3.8%) heavily pressure the Fed to hike rates at the December meeting.",
-        "bear_case": "Fed policymakers remain divided on the underlying causes of inflation, and central banks frequently resist single-month data volatility.",
-        "summary_de": "Aktuelle Inflationsdaten und steigender Preisdruck erhöhen die Wahrscheinlichkeit einer Zinserhöhung durch die Fed im Dezember deutlich.",
-        "news_used": [
-          "Fed policymakers at odds over causes of high inflation - Reuters",
-          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
-          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch",
-          "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business"
-        ]
-      }
-    },
-    {
-      "id": 1,
-      "ts": "2026-11-26T00:04:11.756034+00:00",
-      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
-      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.0425",
-      "p_blind": "0.1500",
-      "p_blended": "0.0823",
-      "confidence": "0.8000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if there will be no change in Fed interest rates after the December 2026 meeting (i.e. rates remain unchanged).",
-        "base_rate": 0.2,
-        "bull_case": "Persistent inflation concerns could cause sudden hawkish surprises, but a pause is always structurally possible if economic indicators soften unexpectedly before the meeting.",
-        "bear_case": "Recent breaking news headlines uniformly point toward a likely rate hike due to hot inflation readings, making 'no change' (YES) less probable than a hike.",
-        "summary_de": "Aktuelle Wirtschaftsdaten und Medienberichte deuten stark darauf hin, dass die Fed im Dezember die Zinsen anheben wird, wodurch ein unverändertes Zinsniveau unwahrscheinlich ist.",
-        "news_used": [
-          "Fed policymakers at odds over causes of high inflation - Reuters",
-          "The Fed says inflation hasn’t gotten any better ahead of its key December vote to raise rates - MarketWatch",
-          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
-          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 3,
+      "ts": "2026-11-26T10:22:11.203626+00:00",
+      "client_order_id": "psb-20261126-10-7cfd775dc4-buy-n",
+      "order_id": "1732994",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.897",
+      "quantity": "445.93",
+      "notional_usd": "399.99",
+      "est_fee_usd": "0",
+      "edge_net": "0.0395",
+      "strategy_type": "carry",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[carry] Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
+    },
     {
       "id": 2,
       "ts": "2026-11-26T08:37:32.626843+00:00",
@@ -925,6 +981,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 8,
+      "ts": "2026-11-26T10:22:11.205049+00:00",
+      "dry_run": 0,
+      "markets_scanned": 383,
+      "candidates_found": 6,
+      "llm_calls": 3,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 89.32,
+      "errors": []
+    },
     {
       "id": 7,
       "ts": "2026-11-26T10:12:02.226993+00:00",
