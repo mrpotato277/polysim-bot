@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T21:56:06.678579+00:00",
+  "generated_at": "2026-11-26T22:01:34.091067+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9928.42,
-    "reconciled_equity_usd": 9232.41,
+    "equity_usd": 9945.64,
+    "reconciled_equity_usd": 9249.63,
     "equity_discrepancy_usd": 696.01,
     "cash_usd": 8091.18,
-    "positions_value_usd": 1141.23,
-    "deployed_pct": 11.49,
-    "total_pnl_usd": -71.58,
-    "total_pnl_pct": -0.72,
-    "unrealized_pnl_usd": -57.38,
+    "positions_value_usd": 1158.45,
+    "deployed_pct": 11.65,
+    "total_pnl_usd": -54.36,
+    "total_pnl_pct": -0.54,
+    "unrealized_pnl_usd": -40.16,
     "total_trades": 51,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -33,7 +33,7 @@
   },
   "category_exposure": {
     "politics": 880.04,
-    "crypto": 261.19
+    "crypto": 278.41
   },
   "equity_curve": [
     {
@@ -926,6 +926,19 @@
       "cash": 8091.18,
       "deployed_pct": 11.49,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T22:00:00+00:00",
+      "equity": 9249.62,
+      "cash": 9249.62,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T22:01:33.595901+00:00",
+      "equity": 9945.64,
+      "cash": 8091.18,
+      "deployed_pct": 11.65,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -951,9 +964,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.455,
-      "current_value": 261.19,
-      "unrealized_pnl": -31.57,
+      "current_price": 0.485,
+      "current_value": 278.41,
+      "unrealized_pnl": -14.35,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -993,7 +1006,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment before the deadline.",
@@ -1063,7 +1076,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, basierend auf den aktuellen Wahlen und Regierungsbildungsprozessen bis zum Fristende.",
@@ -1098,7 +1111,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain by the deadline.",
@@ -1238,7 +1251,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional succession and investiture rules.",
@@ -1308,7 +1321,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming whether Alberto Núñez Feijóo formally takes office as the next Prime Minister before the deadline of November 30, 2026, amid ongoing snap election developments.",
@@ -1343,7 +1356,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing political context and snap elections.",
@@ -1448,7 +1461,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following current election dynamics.",
@@ -1518,7 +1531,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:37.715018+00:00",
+      "last_checked_ts": "2026-11-26T22:00:59.494940+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1653,7 +1666,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, und läuft bis Ende November 2026 ab.",
@@ -1723,7 +1736,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.012316+00:00",
+      "last_checked_ts": "2026-11-26T22:00:59.782136+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds within the specified date range.",
@@ -1752,7 +1765,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:50:38.324690+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.082254+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain by the deadline.",
@@ -1787,7 +1800,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:55:28.601160+00:00",
+      "last_checked_ts": "2026-11-26T22:01:00.889250+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28.11.2026 statt; die Bedingungen sind klar definiert.",
@@ -2105,6 +2118,18 @@
   ],
   "recent_runs": [
     {
+      "id": 112,
+      "ts": "2026-11-26T22:01:33.597355+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1193,
+      "candidates_found": 16,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 35.54,
+      "errors": []
+    },
+    {
       "id": 111,
       "ts": "2026-11-26T21:56:06.356910+00:00",
       "dry_run": 0,
@@ -2330,18 +2355,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 32.52,
-      "errors": []
-    },
-    {
-      "id": 92,
-      "ts": "2026-11-26T20:21:17.450845+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1151,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 39.74,
       "errors": []
     }
   ]
