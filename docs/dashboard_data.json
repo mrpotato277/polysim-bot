@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T19:46:25.392526+00:00",
+  "generated_at": "2026-11-26T19:51:40.469507+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,29 +11,29 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9923.34,
-    "reconciled_equity_usd": 9497.52,
+    "equity_usd": 9919.38,
+    "reconciled_equity_usd": 9493.56,
     "equity_discrepancy_usd": 425.82,
     "cash_usd": 8361.37,
-    "positions_value_usd": 1136.15,
-    "deployed_pct": 11.45,
-    "total_pnl_usd": -76.66,
-    "total_pnl_pct": -0.77,
-    "unrealized_pnl_usd": -62.46,
+    "positions_value_usd": 1132.19,
+    "deployed_pct": 11.41,
+    "total_pnl_usd": -80.62,
+    "total_pnl_pct": -0.81,
+    "unrealized_pnl_usd": -66.42,
     "total_trades": 51,
     "win_rate_pct": 0.0,
-    "max_drawdown_pct": -0.77,
+    "max_drawdown_pct": -0.81,
     "brier_score": null,
     "brier_resolved_count": 0,
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 89,
+    "total_forecasts": 90,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 846.26,
-    "crypto": 289.89
+    "politics": 848.04,
+    "crypto": 284.15
   },
   "equity_curve": [
     {
@@ -739,6 +739,13 @@
       "cash": 8361.37,
       "deployed_pct": 11.45,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T19:51:40.034445+00:00",
+      "equity": 9919.38,
+      "cash": 8361.37,
+      "deployed_pct": 11.41,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -749,9 +756,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0785,
-      "current_value": 139.55,
-      "unrealized_pnl": -80.89,
+      "current_price": 0.0795,
+      "current_value": 141.33,
+      "unrealized_pnl": -79.11,
       "p_yes": 0.1645,
       "p_blended": 0.1645,
       "edge_net": 0.0,
@@ -764,9 +771,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.505,
-      "current_value": 289.89,
-      "unrealized_pnl": -2.87,
+      "current_price": 0.495,
+      "current_value": 284.15,
+      "unrealized_pnl": -8.61,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -790,6 +797,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 90,
+      "ts": "2026-11-26T19:51:40.032555+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9350",
+      "p_blind": "0.9500",
+      "p_blended": "0.9434",
+      "confidence": "0.8500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0134",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Entscheidet über eine Zinsanhebung um 25 Basispunkte nach dem Dezember-Treffen 2026 gemäß offizieller Fed-Mitteilung.",
+        "base_rate": 0.2,
+        "bull_case": "Die Märkte preisen eine Wahrscheinlichkeit von fast 99% ein, getrieben durch anhaltend hohe Inflation (ca. 3.8%), was einen Zinsschritt im Dezember extrem wahrscheinlich macht.",
+        "bear_case": "Unerwartete makroökonomische Daten oder Warnungen vor einem wirtschaftlichen Abschwung könnten die Fed im letzten Moment zu einer Zinspause oder vorsichtigeren Haltung zwingen.",
+        "summary_de": "Angesichts der aktuellen Markterwartungen von fast 99 Prozent und anhaltender Inflationsdaten ist eine Zinserhöhung um 25 Basispunkte im Dezember 2026 hochgradig eingepreist.",
+        "news_used": [
+          "Markets Price 99.5% Chance of 25-Basis-Point Fed Hike in December - www.tokenpost.com",
+          "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView",
+          "EUR/USD might be bottoming out amid peak Fed hawkishness and dovish repricing risks - investingLive",
+          "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English",
+          "Inflation is accelerating, urging the Fed to raise interest rates more aggressively. - Vietnam.vn",
+          "Fed Rate Hike Odds Hit 98%, But Eric Jackson Says It’s Time To Cut – Robin Brooks Warns Of ‘Full Meltdown’ - TradingView"
+        ]
+      }
+    },
+    {
       "id": 89,
       "ts": "2026-11-26T19:46:25.019111+00:00",
       "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
@@ -806,7 +848,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T19:50:53.760186+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain before the deadline.",
@@ -841,7 +883,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:40.764766+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.258530+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -876,7 +918,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:40.981249+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.424976+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official final election results and vote counts for the 2026 Taipei Mayoral Election margin.",
@@ -911,7 +953,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.157885+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.599484+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $55,000 in November, resolving based on standard spot exchange data before the December deadline.",
@@ -947,7 +989,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:40.981249+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.424976+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official final election margin announced by the Central Election Commission for the 2026 Taipei Mayoral Election.",
@@ -982,7 +1024,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.328516+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.760186+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Alberto Núñez Feijóo becomes the next Prime Minister of Spain before the deadline.",
@@ -1017,7 +1059,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:40.764766+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.258530+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract asks if Pedro Sánchez will be the next Prime Minister; this implies the incumbent or the winner of the current election cycle.",
@@ -1052,7 +1094,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:40.598141+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.035328+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Taipei Mayor election as determined by the Central Election Commission.",
@@ -1122,7 +1164,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:40.764766+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.258530+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Pedro Sánchez der nächste Premierminister Spaniens sein wird, angesichts anstehender Wahlen und Debatten.",
@@ -1157,7 +1199,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.841081+00:00",
+      "last_checked_ts": "2026-11-26T19:50:54.259064+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im Zeitraum 23. bis 29. November $64.000 erreicht. Maßgeblich sind Standard-Preis-Feeds wie Binance oder Chainlink.",
@@ -1186,7 +1228,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.676737+00:00",
+      "last_checked_ts": "2026-11-26T19:50:54.096361+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Ethereum im November 2026 die Marke von 1.500 USD berührt.",
@@ -1218,7 +1260,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:42.401099+00:00",
+      "last_checked_ts": "2026-11-26T19:50:54.799433+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard LaLiga match resolution based on official league score at final whistle.",
@@ -1253,7 +1295,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.157885+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.599484+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin dips to $55,000 in November 2026 based on standard spot pricing feeds.",
@@ -1324,7 +1366,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.328516+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.760186+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolvable based on official appointment before the deadline.",
@@ -1359,7 +1401,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:42.575970+00:00",
+      "last_checked_ts": "2026-11-26T19:50:54.969661+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard exchange spot price or index resolution for Bitcoin hitting $62,500.",
@@ -1388,7 +1430,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:42.401099+00:00",
+      "last_checked_ts": "2026-11-26T19:50:54.799433+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28. November 2026 statt. Das Ergebnis entscheidet klar über den Ausgang (Sieg von Alavés = YES).",
@@ -1423,7 +1465,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:42.198578+00:00",
+      "last_checked_ts": "2026-11-26T19:50:54.634242+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price threshold contract based on spot exchange feeds during the specified dates.",
@@ -1522,7 +1564,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.328516+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.760186+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Begriffs 'nächster Premierminister' nach einer vorgezogenen Neuwahl muss exakt die Regierungsübernahme durch die Amtseinführung umfassen, nicht nur den Wahlausgang.",
@@ -1557,7 +1599,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:40.764766+00:00",
+      "last_checked_ts": "2026-11-26T19:50:53.258530+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain following the 2026 election cycle.",
@@ -1604,40 +1646,6 @@
           "Spanish elections: What you need to know and what's at stake - BBC",
           "Spain’s Election Could Spark Europe’s Next Right-Wing Wave - Council on Foreign Relations"
         ]
-      }
-    },
-    {
-      "id": 65,
-      "ts": "2026-11-26T18:36:40.083854+00:00",
-      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
-      "question": "Will Bitcoin dip to $55,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1090",
-      "p_blind": "0.1500",
-      "p_blended": "0.1244",
-      "confidence": "0.8000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:45:41.157885+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves YES if Bitcoin hits or dips to $55,000 at any point during November 2026.",
-        "base_rate": 0.3,
-        "bull_case": "Severe selling pressure and historical Thanksgiving liquidity drops could trigger a sudden flash crash down to $55,000 before the end of November.",
-        "bear_case": "Bitcoin is currently trading above $60,500 with only a few days left in November, and recent relief rallies indicate strong support holding above $59,000.",
-        "summary_de": "Da Bitcoin bei rund 60.500 US-Dollar handelt und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Absturz um über neun Prozent auf 55.000 US-Dollar unwahrscheinlich, wenngleich Krypto-Märkte volatil sind.",
-        "news_used": [
-          "Bitcoin Stages Relief Rally, Bounces Above $61,000 as Investors Weigh Further Downside Risks - Tekedia",
-          "Talos warns of thin Thanksgiving liquidity as Bitcoin eyes $61K - TradingView",
-          "Bitcoin Price Prediction: Wait for Another Shot at $55K BTC or Enter AlphaPepe Under 4 Cents Before Launch? - openPR.com",
-          "Bitcoin Holders Face Worst Selling Pressure Since FTX Meltdown, Glassnode Data Shows - Tekedia"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $60,535.70 (24h range: $59,490.50 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $55,000.00: -9.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
       }
     }
   ],
@@ -1885,6 +1893,18 @@
   ],
   "recent_runs": [
     {
+      "id": 87,
+      "ts": "2026-11-26T19:51:40.035222+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1141,
+      "candidates_found": 20,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 49.11,
+      "errors": []
+    },
+    {
       "id": 86,
       "ts": "2026-11-26T19:46:25.022041+00:00",
       "dry_run": 0,
@@ -2110,18 +2130,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 23.03,
-      "errors": []
-    },
-    {
-      "id": 67,
-      "ts": "2026-11-26T17:45:47.926659+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1114,
-      "candidates_found": 6,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 15.55,
       "errors": []
     }
   ]
