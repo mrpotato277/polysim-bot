@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-26T01:40:43.374994+00:00",
-  "dry_run": true,
+  "generated_at": "2026-11-26T01:53:02.142557+00:00",
+  "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
-    "max_total_exposure_pct": 65.0,
-    "max_single_market_pct": 10.0,
-    "max_category_exposure_pct": 25.0,
-    "kelly_fraction": 0.25,
-    "circuit_breaker_24h_dd_pct": -10.0
+    "max_total_exposure_pct": 35.0,
+    "max_single_market_pct": 4.0,
+    "max_category_exposure_pct": 12.0,
+    "kelly_fraction": 0.15,
+    "circuit_breaker_24h_dd_pct": -5.0
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
@@ -23,7 +23,7 @@
     "max_drawdown_pct": 0.0,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 10,
+    "total_forecasts": 15,
     "circuit_breaker_active": false
   },
   "category_exposure": {},
@@ -41,10 +41,167 @@
       "cash": 10000.0,
       "deployed_pct": 0.0,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T01:52:32.233376+00:00",
+      "equity": 10000.0,
+      "cash": 10000.0,
+      "deployed_pct": 0.0,
+      "source": "bot"
     }
   ],
   "open_positions": [],
   "recent_forecasts": [
+    {
+      "id": 15,
+      "ts": "2026-11-26T01:53:01.605617+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8850",
+      "p_blind": "0.0500",
+      "p_blended": "0.6190",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.1-flash-lite",
+        "resolution_note": "The contract is straightforward, focusing on the identity of the next Prime Minister before the specified deadline.",
+        "base_rate": 0.15,
+        "bull_case": "A sudden collapse of the current coalition government or a snap election could force a change in leadership.",
+        "bear_case": "Pedro Sánchez currently maintains a stable parliamentary majority, and there are no immediate signs of a government collapse before the deadline.",
+        "summary_de": "Die aktuelle Regierung unter Pedro Sánchez bleibt stabil, und es gibt keine Anzeichen für einen Regierungswechsel vor Ablauf der Frist.",
+        "news_used": []
+      }
+    },
+    {
+      "id": 14,
+      "ts": "2026-11-26T01:52:56.173996+00:00",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1365",
+      "p_blind": "0.0800",
+      "p_blended": "0.1176",
+      "confidence": "0.7500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0194",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves YES if Bitcoin hits or dips to $55,000 at any point during November 2026.",
+        "base_rate": 0.15,
+        "bull_case": "Macro volatility or unexpected liquidity shocks could trigger a sudden flash crash down to $55,000 before the end of November.",
+        "bear_case": "Bitcoin's current price action and overall trend remain well above $55,000, and with only a few days left in November, a correction of that magnitude is unlikely.",
+        "summary_de": "Da Bitcoin deutlich über der Marke von 55.000 US-Dollar gehandelt wird und nur noch wenige Tage im November verbleiben, ist ein so starker Rücksetzer statistisch unwahrscheinlich.",
+        "news_used": []
+      }
+    },
+    {
+      "id": 13,
+      "ts": "2026-11-26T01:52:50.738098+00:00",
+      "market_id": "0xf91a7667289b63e0c9c926017529e2bccaadc3da2d82075612420c43d36fbb08",
+      "question": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.1325",
+      "p_blind": "0.0800",
+      "p_blended": "0.1099",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0231",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official final election results margin for the 2026 Taipei Mayoral Election.",
+        "base_rate": 0.15,
+        "bull_case": "Puma Shen leads a strong DPP campaign focused on national security and cognitive warfare, aiming for a decisive mandate in the capital.",
+        "bear_case": "Taipei historically leans blue/conservative, and an 8% landslide margin in a multi-cornered or highly competitive mayoral race is historically rare for a DPP candidate.",
+        "summary_de": "Ein Sieg mit einem großen Vorsprung von 8% oder mehr ist angesichts der traditionellen Wählerpräferenzen in Taipeh und der starken Konkurrenz für Puma Shen sehr unwahrscheinlich.",
+        "news_used": [
+          "Puma Shen cancels election-eve rally after public anger over stage construction and road closures - 联合早报",
+          "Taipei mayoral election: Can Puma Shen win his first electoral contest? - 联合早报",
+          "‘They Never Stop’: Taipei Mayoral Candidate Puma Shen on Fighting Chinese Cognitive Warfare - Time Magazine",
+          "Battle for the Capital: Inside the 2026 Taipei Mayoral Race, Part 2 - Global Taiwan Institute"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "ts": "2026-11-26T01:52:45.677353+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9350",
+      "p_blind": "0.8500",
+      "p_blended": "0.9076",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Entscheidung bezieht sich eindeutig auf die Zinserhöhung nach der Dezember-Sitzung.",
+        "base_rate": 0.2,
+        "bull_case": "Aktuelle Inflationsdaten und PCE-Berichte signalisieren einen anhaltenden Preisdruck, der den Markt von einer Zinserhöhung im Dezember ausgehen lässt.",
+        "bear_case": "Die Fed könnte trotz hoher Inflation zögern, den Zinssatz weiter anzuheben, um eine restriktive Übersteuerung zu vermeiden.",
+        "summary_de": "Angesichts starker Inflationsdaten und aktueller Berichte deuten alle Zeichen auf eine bevorstehende Zinserhöhung der Fed im Dezember hin.",
+        "news_used": [
+          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
+          "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business",
+          "US PCE rises 3.8% in October: experts say Fed rate hike in December a done deal - Invezz",
+          "PCE inflation gauge still running hot, as December rate hike looms - InvestmentNews"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "ts": "2026-11-26T01:52:41.340004+00:00",
+      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
+      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.0430",
+      "p_blind": "0.1500",
+      "p_blended": "0.0700",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Entscheidet sich anhand der Zinsänderung nach der Dezember-Sitzung 2026.",
+        "base_rate": 0.2,
+        "bull_case": "Unerwartete Datenabkühlung im letzten Moment könnte die Fed veranlassen, die Zinsen unverändert zu lassen.",
+        "bear_case": "Anhaltend hohe Inflationswerte und aktuelle Berichte deuten stark auf eine Zinserhöhung hin.",
+        "summary_de": "Aktuelle Inflationsdaten und Markterwartungen deuten stark auf eine Zinsänderung im Dezember hin, weshalb ein unverändertes Zinsniveau eher unwahrscheinlich ist.",
+        "news_used": [
+          "Fed policymakers at odds over causes of high inflation - Reuters",
+          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
+          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch",
+          "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business"
+        ]
+      }
+    },
     {
       "id": 10,
       "ts": "2026-11-26T01:40:43.184104+00:00",
@@ -389,6 +546,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 3,
+      "ts": "2026-11-26T01:53:01.606951+00:00",
+      "dry_run": 0,
+      "markets_scanned": 460,
+      "candidates_found": 9,
+      "llm_calls": 5,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 56.06,
+      "errors": []
+    },
     {
       "id": 2,
       "ts": "2026-11-26T01:40:43.185543+00:00",
