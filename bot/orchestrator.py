@@ -14,7 +14,7 @@ from bot.dashboard import export_dashboard_data, resolve_true_starting_balance
 from bot.execution import ExecutionEngine
 from bot.forecaster import Superforecaster
 from bot.math_utils import fee_drag_per_share, maker_buy_price, to_decimal
-from bot.news import build_news_query, fetch_google_news
+from bot.news import build_news_query, fetch_market_news
 from bot.overseer import Overseer, TradeProposal
 from bot.polysim_client import PolySimWrapper
 from bot.scanner import MarketCandidate, MarketScanner
@@ -90,7 +90,7 @@ def _re_evaluate_positions(
 
         if question:
             q = build_news_query(question)
-            raw_news = fetch_google_news(q, max_age_hours=24, max_items=6)
+            raw_news = fetch_market_news(q, category=cat, max_age_hours=48, max_items=10)
             news_articles, new_cnt = state.filter_and_record_news(mid, raw_news)
             if new_cnt > 0:
                 need_reforecast = True
@@ -244,7 +244,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                 enriched_news[cand.condition_id] = ([], 0)
                 continue
             q_str = build_news_query(cand.question, cand.event_title)
-            raw_arts = fetch_google_news(q_str, max_age_hours=48, max_items=8)
+            raw_arts = fetch_market_news(q_str, category=cand.category, max_age_hours=48, max_items=10)
             arts, new_cnt = state.filter_and_record_news(cand.condition_id, raw_arts)
             enriched_news[cand.condition_id] = (arts, new_cnt)
 

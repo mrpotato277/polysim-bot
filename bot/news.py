@@ -107,6 +107,40 @@ def build_news_query(question: str, event_title: str | None = None) -> str:
     return " ".join(keywords) if keywords else question[:80]
 
 
+_SPECIALIST_FEED_CACHE: dict[str, list[dict[str, Any]]] = {}
+
+SPECIALIST_FEEDS: dict[str, list[tuple[str, str]]] = {
+    "economics": [
+        ("Federal Reserve", "https://www.federalreserve.gov/feeds/press_all.xml"),
+        (
+            "CNBC Economy",
+            "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
+        ),
+        ("MarketWatch", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
+    ],
+    "crypto": [
+        ("CoinDesk", "https://www.coindesk.com/arc/outboundfeeds/rss/"),
+        ("Cointelegraph", "https://cointelegraph.com/rss"),
+    ],
+    "politics": [
+        ("NPR Politics", "https://feeds.npr.org/1014/rss.xml"),
+        ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ],
+    "geopolitics": [
+        ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+        ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
+    ],
+    "tech": [
+        ("TechCrunch", "https://techcrunch.com/feed/"),
+        ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
+    ],
+    "sports": [
+        ("ESPN", "https://www.espn.com/espn/rss/news"),
+        ("ESPN NBA", "https://www.espn.com/espn/rss/nba/news"),
+    ],
+}
+
+
 def _strip_html(raw: str) -> str:
     no_tags = re.sub(r"<[^>]+>", " ", raw or "")
     unescaped = html.unescape(no_tags)
@@ -124,6 +158,44 @@ def _parse_pub_dt(entry: Any) -> datetime | None:
         return dt.astimezone(timezone.utc)
     except Exception:
         return None
+
+
+def _parse_feed_entries(
+    feed: Any,
+    *,
+    default_source: str = "",
+    max_age_hours: int | None = 48,
+) -> list[dict[str, Any]]:
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(hours=max_age_hours) if max_age_hours is not None else None
+    articles: list[dict[str, Any]] = []
+
+    for entry in getattr(feed, "entries", []) or []:
+        pub_dt = _parse_pub_dt(entry)
+        if cutoff is not None and pub_dt is not None and pub_dt < cutoff:
+            continue
+        age_hours = round((now - pub_dt).total_seconds() / 3600.0, 2) if pub_dt else 24.0
+        source_obj = entry.get("source")
+        source_name = (
+            source_obj.get("title") if isinstance(source_obj, dict) else ""
+        ) or default_source
+        title = _strip_html(entry.get("title", ""))
+        snippet = _strip_html(entry.get("summary", ""))
+        if not title:
+            continue
+        articles.append(
+            {
+                "title": title[:240],
+                "source": str(source_name or "")[:80],
+                "published_at": pub_dt.isoformat() if pub_dt else "",
+                "age_hours": age_hours,
+                "link": str(entry.get("link", ""))[:500],
+                "snippet": snippet[:280],
+            }
+        )
+
+    articles.sort(key=lambda a: a["age_hours"])
+    return articles
 
 
 def fetch_google_news(
@@ -146,31 +218,112 @@ def fetch_google_news(
     except Exception:
         return []
 
-    now = datetime.now(timezone.utc)
-    cutoff = now - timedelta(hours=max_age_hours)
-    articles: list[dict[str, Any]] = []
+    return _parse_feed_entries(feed, max_age_hours=max_age_hours)[:max_items]
 
-    for entry in feed.entries:
-        pub_dt = _parse_pub_dt(entry)
-        if pub_dt is not None and pub_dt < cutoff:
-            continue
-        age_hours = round((now - pub_dt).total_seconds() / 3600.0, 2) if pub_dt else 24.0
-        source_obj = entry.get("source")
-        source_name = source_obj.get("title") if isinstance(source_obj, dict) else ""
-        title = _strip_html(entry.get("title", ""))
-        snippet = _strip_html(entry.get("summary", ""))
-        if not title:
-            continue
-        articles.append(
-            {
-                "title": title[:240],
-                "source": str(source_name or "")[:80],
-                "published_at": pub_dt.isoformat() if pub_dt else "",
-                "age_hours": age_hours,
-                "link": str(entry.get("link", ""))[:500],
-                "snippet": snippet[:280],
-            }
+
+def _tokenize_for_match(text: str) -> set[str]:
+    """Extract lowercase alphanumeric tokens (len >= 3, excluding stopwords)."""
+    normalized = re.sub(r"(?<=\d),(?=\d)", "", (text or "").lower())
+    return {
+        tok
+        for tok in re.findall(r"[a-z0-9]+", normalized)
+        if len(tok) >= 3 and tok not in STOPWORDS
+    }
+
+
+def _fetch_single_rss_feed(
+    source_label: str,
+    url: str,
+    *,
+    max_age_hours: int = 48,
+    timeout: float = 6.0,
+) -> list[dict[str, Any]]:
+    """Fetch and cache an RSS feed once per process, returning items within max_age_hours."""
+    cached = _SPECIALIST_FEED_CACHE.get(url)
+    if cached is None:
+        cached = []
+        try:
+            with httpx.Client(timeout=timeout, follow_redirects=True) as client:
+                resp = client.get(url, headers={"User-Agent": "Mozilla/5.0 (compatible; PolySimBot/1.0)"})
+                if resp.status_code == 200:
+                    feed = feedparser.parse(resp.text)
+                    cached = _parse_feed_entries(feed, default_source=source_label, max_age_hours=None)
+        except Exception:
+            cached = []
+        _SPECIALIST_FEED_CACHE[url] = cached
+
+    return [
+        art
+        for art in cached
+        if float(art.get("age_hours", 24.0)) <= float(max_age_hours)
+    ]
+
+
+def fetch_specialist_news(
+    query: str,
+    category: str,
+    *,
+    max_age_hours: int = 48,
+    max_items: int = 6,
+    timeout: float = 6.0,
+) -> list[dict[str, Any]]:
+    """Match category-specific specialist RSS articles against market query tokens."""
+    feeds = SPECIALIST_FEEDS.get((category or "").strip().lower(), [])
+    q_tokens = _tokenize_for_match(query)
+    if not feeds or not q_tokens:
+        return []
+
+    min_overlap = 1 if len(q_tokens) <= 2 else 2
+    scored: list[tuple[int, float, dict[str, Any]]] = []
+
+    for source_label, url in feeds:
+        items = _fetch_single_rss_feed(
+            source_label,
+            url,
+            max_age_hours=max_age_hours,
+            timeout=timeout,
         )
+        for art in items:
+            haystack = f"{art.get('title', '')} {art.get('snippet', '')}"
+            overlap = len(q_tokens & _tokenize_for_match(haystack))
+            if overlap >= min_overlap:
+                scored.append((overlap, -float(art.get("age_hours", 24.0)), art))
 
-    articles.sort(key=lambda a: a["age_hours"])
-    return articles[:max_items]
+    scored.sort(key=lambda row: (row[0], row[1]), reverse=True)
+    return [row[2] for row in scored[:max_items]]
+
+
+def fetch_market_news(
+    query: str,
+    *,
+    category: str = "other",
+    max_age_hours: int = 48,
+    max_items: int = 10,
+    timeout: float = 10.0,
+) -> list[dict[str, Any]]:
+    """Combine Google News RSS and category-specific specialist feeds, deduplicated by title."""
+    combined = fetch_google_news(
+        query,
+        max_age_hours=max_age_hours,
+        max_items=max_items,
+        timeout=timeout,
+    ) + fetch_specialist_news(
+        query,
+        category,
+        max_age_hours=max_age_hours,
+        max_items=min(6, max_items),
+        timeout=min(6.0, timeout),
+    )
+
+    combined.sort(key=lambda a: float(a.get("age_hours", 24.0)))
+    seen_titles: set[str] = set()
+    deduped: list[dict[str, Any]] = []
+    for art in combined:
+        norm_title = re.sub(r"[^a-z0-9]+", "", str(art.get("title") or "").lower())[:90]
+        if not norm_title or norm_title in seen_titles:
+            continue
+        seen_titles.add(norm_title)
+        deduped.append(art)
+        if len(deduped) >= max_items:
+            break
+    return deduped

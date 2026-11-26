@@ -4,6 +4,9 @@ from __future__ import annotations
 
 from decimal import Decimal
 
+import pytest
+
+import bot.news as news_mod
 from bot.config import BotConfig
 from bot.math_utils import bayesian_blend, best_bid_ask, calc_taker_fee, round_to_tick
 from bot.overseer import Overseer, TradeProposal
@@ -192,3 +195,60 @@ def test_is_cumulative_deadline_question() -> None:
     assert is_cumulative_deadline_question("Will a deal be signed by November 30?") is True
     assert is_cumulative_deadline_question("Israel x Iran ceasefire continues through December 31?") is False
     assert is_cumulative_deadline_question("Will Bitcoin stay above $80,000 through December?") is False
+
+
+def test_specialist_news_matching_and_dedup(monkeypatch: pytest.MonkeyPatch) -> None:
+    crypto_urls = [url for _, url in news_mod.SPECIALIST_FEEDS["crypto"]]
+    fake_cache = {url: [] for url in crypto_urls}
+    fake_cache[crypto_urls[0]] = [
+        {
+            "title": "Bitcoin rallies toward $55,000 after Fed liquidity note",
+            "source": "CoinDesk",
+            "published_at": "2026-11-26T14:00:00+00:00",
+            "age_hours": 1.0,
+            "link": "https://example.com/btc",
+            "snippet": "Bitcoin approaches 55000 level.",
+        },
+        {
+            "title": "European sailing regatta concludes in calm winds",
+            "source": "CoinDesk",
+            "published_at": "2026-11-26T12:00:00+00:00",
+            "age_hours": 3.0,
+            "link": "https://example.com/unrelated",
+            "snippet": "Unrelated sailing article.",
+        },
+    ]
+    monkeypatch.setattr(news_mod, "_SPECIALIST_FEED_CACHE", fake_cache)
+
+    spec = news_mod.fetch_specialist_news("Bitcoin 55000", "crypto")
+    assert len(spec) == 1
+    assert "Bitcoin" in spec[0]["title"]
+
+    monkeypatch.setattr(
+        news_mod,
+        "fetch_google_news",
+        lambda *_args, **_kwargs: [
+            {
+                "title": "Bitcoin rallies toward $55,000 after Fed liquidity note!",
+                "source": "Reuters",
+                "published_at": "2026-11-26T13:00:00+00:00",
+                "age_hours": 2.0,
+                "link": "https://example.com/dup",
+                "snippet": "Duplicate story.",
+            },
+            {
+                "title": "Spot Bitcoin ETF volume hits weekly high",
+                "source": "Bloomberg",
+                "published_at": "2026-11-26T14:30:00+00:00",
+                "age_hours": 0.5,
+                "link": "https://example.com/etf",
+                "snippet": "Fresh ETF flow.",
+            },
+        ],
+    )
+
+    merged = news_mod.fetch_market_news("Bitcoin 55000", category="crypto", max_items=10)
+    assert len(merged) == 2
+    assert [a["age_hours"] for a in merged] == [0.5, 1.0]
+    assert merged[0]["source"] == "Bloomberg"
+    assert merged[1]["source"] == "CoinDesk"
