@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:41:33.685385+00:00",
+  "generated_at": "2026-11-26T22:46:52.613957+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9966.14,
-    "reconciled_equity_usd": 9966.14,
+    "equity_usd": 9938.42,
+    "reconciled_equity_usd": 9938.42,
     "equity_discrepancy_usd": 0.0,
-    "cash_usd": 8787.19,
-    "positions_value_usd": 1178.95,
-    "deployed_pct": 11.83,
-    "total_pnl_usd": -33.86,
-    "total_pnl_pct": -0.34,
-    "unrealized_pnl_usd": -19.66,
-    "total_trades": 51,
+    "cash_usd": 8597.75,
+    "positions_value_usd": 1340.67,
+    "deployed_pct": 13.49,
+    "total_pnl_usd": -61.58,
+    "total_pnl_pct": -0.62,
+    "unrealized_pnl_usd": -47.38,
+    "total_trades": 65,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
     "brier_score": null,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 126,
+    "total_forecasts": 129,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 874.71,
-    "crypto": 304.24
+    "crypto": 478.41,
+    "politics": 862.26
   },
   "equity_curve": [
     {
@@ -988,9 +988,31 @@
       "cash": 8787.19,
       "deployed_pct": 11.83,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T22:46:52.276452+00:00",
+      "equity": 9938.42,
+      "cash": 8597.75,
+      "deployed_pct": 13.49,
+      "source": "bot"
     }
   ],
   "open_positions": [
+    {
+      "market_id": "0x18c74c5f8c9eb6ed04f45d4675272e680669a6c9e17c81150f90351a82383d1f",
+      "question": "Will Bitcoin dip to $58,000 November 23-29?",
+      "category": "crypto",
+      "outcome": "Yes",
+      "quantity": 757.74,
+      "avg_entry_price": 0.25,
+      "current_price": 0.245,
+      "current_value": 185.65,
+      "unrealized_pnl": -3.79,
+      "p_yes": 0.3148,
+      "p_blended": 0.3148,
+      "edge_net": 0.0648,
+      "rationale": "Bitcoin wird nahe 60.500 USD gehandelt, und da der Zeitraum bis zum 29. November kurz ist, sinkt die Wahrscheinlichkeit eines Rücksetzers auf 58.000 USD trotz anhaltender Volatilität leicht."
+    },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
       "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
@@ -998,9 +1020,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0945,
-      "current_value": 168.0,
-      "unrealized_pnl": -52.44,
+      "current_price": 0.0875,
+      "current_value": 155.55,
+      "unrealized_pnl": -64.89,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1013,9 +1035,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.53,
-      "current_value": 304.24,
-      "unrealized_pnl": 11.48,
+      "current_price": 0.51,
+      "current_value": 292.76,
+      "unrealized_pnl": 0.0,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -1039,6 +1061,99 @@
   ],
   "recent_forecasts": [
     {
+      "id": 129,
+      "ts": "2026-11-26T22:46:52.275120+00:00",
+      "market_id": "0xea3fc87eb93319e7ec9bc2d6c2b0b1a7aa9bdbfa9c74fcb268d1c98bda0d7e18",
+      "question": "Will Bitcoin reach $62,000 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.5350",
+      "p_blind": "0.5800",
+      "p_blended": "0.5513",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0213",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch resolution based on specified index feeds.",
+        "base_rate": 0.6,
+        "bull_case": "Bitcoin is currently around $60,550 and needs only a modest ~2.4% upside move to touch $62,000 before the November 29 deadline, well within normal multi-day volatility ranges.",
+        "bear_case": "Bearish sentiment and rising option demand for $60,000 puts suggest downward pressure, keeping the price suppressed below the $62k resistance level.",
+        "summary_de": "Bitcoin handelt nahe 60.550 USD und benötigt einen Anstieg von rund 2,4 Prozent, um die Marke von 62.000 USD bis zum Fristende zu erreichen, was angesichts der Volatilität gut möglich ist.",
+        "news_used": [
+          "Bitcoin price predictions for Nov 29, 2026, sho... - Pluang",
+          "Bitcoin Options Traders Shift to $60,000 Puts as Bearish Bets Reach 2022 Levels - Hokanews"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $60,550.30 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $62,000.00: +2.4% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-4.5%, distance = 0.52 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 128,
+      "ts": "2026-11-26T22:46:51.096651+00:00",
+      "market_id": "0x133b51a6851a2ee619e841693c0f75f3c3fdc8d75d69eadd3f0c0fe9105c50ee",
+      "question": "Will Ko Chih-en win the next Kaohsiung Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.1845",
+      "p_blind": "0.2000",
+      "p_blended": "0.1887",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0057",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
+        "base_rate": 0.25,
+        "bull_case": "Ko Chih-en maintains a strong local presence and KMT opposition momentum in Kaohsiung.",
+        "bear_case": "Kaohsiung has historically been a strong DPP stronghold, making a KMT victory difficult.",
+        "summary_de": "Kaohsiung ist traditionell eine Hochburg der DPP, weshalb die Siegchancen für die KMT-Kandidatin Ko Chih-en statistisch eher gering bleiben.",
+        "news_used": [
+          "Kaohsiung mayoral candidates take campaign to the streets - Taiwan News"
+        ]
+      }
+    },
+    {
+      "id": 127,
+      "ts": "2026-11-26T22:46:50.054335+00:00",
+      "market_id": "0x215898981a482d275f91f8f9523f9cf7d582be172557e0c953f265a54936878a",
+      "question": "Will Bitcoin reach $67,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0550",
+      "p_blind": "0.0400",
+      "p_blended": "0.0498",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0062",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
+        "base_rate": 0.05,
+        "bull_case": "Crypto markets exhibit extreme volatility and fat tails, allowing for rapid 11.5% rallies driven by sudden short squeezes or macro news.",
+        "bear_case": "Bitcoin is currently trading near $60,550 with only a few days left in November, requiring an 11.5% upward move against current downward macro pressures like elevated PCE inflation.",
+        "summary_de": "Bitcoin müsste innerhalb weniger Tage vor Monatsende um über elf Prozent steigen, was angesichts des aktuellen Kurses und der verbleibenden Zeit statistisch sehr unwahrscheinlich ist.",
+        "news_used": [
+          "Bitcoin Risks Further Decline as U.S. PCE Inflation Reaches 3.8% - Blockonomi"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $60,550.30 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $67,500.00: +11.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.3d (1-sigma move = +/-5.2%, distance = 2.10 sigma): Gaussian one-touch ('dip/reach/hi"
+      }
+    },
+    {
       "id": 126,
       "ts": "2026-11-26T22:41:33.358565+00:00",
       "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
@@ -1055,7 +1170,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:42.812564+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -1084,7 +1199,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:42.621815+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1113,7 +1228,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:42.408075+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -1141,7 +1256,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:42.190231+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard spot price tracking for Bitcoin reaching a high watermark during November 2026.",
@@ -1170,7 +1285,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:41.307209+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the next White House Press Secretary is officially announced by November 30, 2026.",
@@ -1205,7 +1320,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:41.068883+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution checks if Bitcoin hits or dips to $58,000 at any point during November 23-29, 2026 according to standard market feeds.",
@@ -1237,7 +1352,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:40.850847+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Tiefstwerts von Ethereum während des angegebenen Datumsfensters.",
@@ -1268,7 +1383,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:45:40.671952+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands und dessen allfällige formelle Verletzungen im Laufe des Dezember müssen exakt den offiziellen Kriterien entsprechen.",
@@ -1408,7 +1523,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:35:35.503250+00:00",
+      "last_checked_ts": "2026-11-26T22:45:43.801604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob Alberto Núñez Feijóo vor dem Stichtag offiziell als Ministerpräsident vereidigt wird oder das Amt übernimmt.",
@@ -1443,7 +1558,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:35:35.503250+00:00",
+      "last_checked_ts": "2026-11-26T22:45:43.801604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment before the deadline.",
@@ -1513,7 +1628,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:35:35.503250+00:00",
+      "last_checked_ts": "2026-11-26T22:45:43.801604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, basierend auf den aktuellen Wahlen und Regierungsbildungsprozessen bis zum Fristende.",
@@ -1548,7 +1663,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:35:35.503250+00:00",
+      "last_checked_ts": "2026-11-26T22:45:43.801604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain by the deadline.",
@@ -1688,7 +1803,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:35:35.503250+00:00",
+      "last_checked_ts": "2026-11-26T22:45:43.801604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional succession and investiture rules.",
@@ -1758,7 +1873,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:35:35.503250+00:00",
+      "last_checked_ts": "2026-11-26T22:45:43.801604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming whether Alberto Núñez Feijóo formally takes office as the next Prime Minister before the deadline of November 30, 2026, amid ongoing snap election developments.",
@@ -1773,111 +1888,6 @@
           "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
           "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times",
           "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale"
-        ]
-      }
-    },
-    {
-      "id": 104,
-      "ts": "2026-11-26T21:01:35.688755+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.9050",
-      "p_blind": "0.4800",
-      "p_blended": "0.7814",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:35:35.503250+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing political context and snap elections.",
-        "base_rate": 0.45,
-        "bull_case": "Recent polls and snap election dynamics position Feijóo's party competitively, maintaining strong opposition momentum against Sánchez.",
-        "bear_case": "Incumbent advantages, coalition arithmetic, and potential alliance roadblocks by other factions could prevent Feijóo from securing a parliamentary majority.",
-        "summary_de": "Trotz intensiver Umfragen und vorgezogener Wahlen bleibt die Regierungsbildung durch komplexe Koalitionsverhältnisse ungewiss, weshalb die Wahrscheinlichkeit für Feijóo nahe der Parität liegt.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times",
-          "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale"
-        ]
-      }
-    },
-    {
-      "id": 103,
-      "ts": "2026-11-26T21:01:34.207510+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.0890",
-      "p_blind": "0.9000",
-      "p_blended": "0.3834",
-      "confidence": "0.8000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.853741+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Evaluates whether Pedro Sánchez becomes or remains the Prime Minister of Spain following current political developments.",
-        "base_rate": 0.85,
-        "bull_case": "Pedro Sánchez is the incumbent Prime Minister heading a fragile yet currently stable governing coalition, retaining parliamentary support.",
-        "bear_case": "Political instability, sudden no-confidence votes, or corruption scandals could force a collapse of his government before the deadline.",
-        "summary_de": "Pedro Sánchez ist der amtierende Ministerpräsident und verfügt über ausreichenden politischen Rückhalt, wodurch ein Verbleib im Amt das wahrscheinliche Szenario bleibt.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spain Elections - Daily News-Record",
-          "Spain Elections - chronicleonline.com",
-          "Spain Elections - Goshen News",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 102,
-      "ts": "2026-11-26T21:01:31.926107+00:00",
-      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
-      "question": "Will Puma Shen win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.3825",
-      "p_blind": "0.3000",
-      "p_blended": "0.3429",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0401",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.720977+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official winner of the Taipei Mayor election.",
-        "base_rate": 0.35,
-        "bull_case": "Puma Shen has high media visibility, strong backing from civil defense and progressive circles, and energetic campaign events leading up to the vote.",
-        "bear_case": "Incumbent or opposing KMT candidates (like Chiang Wan-an) maintain deep structural advantages and polling leads in Taipei.",
-        "summary_de": "Trotz hoher Medienpräsenz von Puma Shen im Endspurt der Wahl bleiben etablierte Gegenkandidaten in Taipeh strukturell im Vorteil.",
-        "news_used": [
-          "《TAIPEI TIMES》 2026 ELECTIONS: Puma Shen moves event online after traffic issues - 自由時報",
-          "2026 Elections: Puma Shen moves event online after traffic issues - Taipei Times",
-          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
-          "A trader just placed a $19K bet on Chiang Wan-an winning Taipei’s mayor election - Quiver Quantitative",
-          "Civil defense innovator, cognitive warfare expert, in race to be mayor of Taiwan’s capital - Washington Times",
-          "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报"
         ]
       }
     }
@@ -2166,6 +2176,18 @@
   ],
   "recent_runs": [
     {
+      "id": 120,
+      "ts": "2026-11-26T22:46:52.277286+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1214,
+      "candidates_found": 31,
+      "llm_calls": 3,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 73.2,
+      "errors": []
+    },
+    {
       "id": 119,
       "ts": "2026-11-26T22:41:33.361158+00:00",
       "dry_run": 0,
@@ -2391,18 +2413,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 45.8,
-      "errors": []
-    },
-    {
-      "id": 100,
-      "ts": "2026-11-26T21:01:35.691268+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1172,
-      "candidates_found": 18,
-      "llm_calls": 3,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 40.48,
       "errors": []
     }
   ]
