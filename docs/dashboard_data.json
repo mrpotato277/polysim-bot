@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T10:10:30.233981+00:00",
+  "generated_at": "2026-11-26T10:12:02.962598+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -23,7 +23,7 @@
     "max_drawdown_pct": 0.0,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 23,
+    "total_forecasts": 24,
     "circuit_breaker_active": false
   },
   "category_exposure": {},
@@ -117,10 +117,49 @@
       "cash": 10000.0,
       "deployed_pct": 0.0,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T10:12:02.225730+00:00",
+      "equity": 10000.0,
+      "cash": 10000.0,
+      "deployed_pct": 0.0,
+      "source": "bot"
     }
   ],
   "open_positions": [],
   "recent_forecasts": [
+    {
+      "id": 24,
+      "ts": "2026-11-26T10:11:31.279162+00:00",
+      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
+      "question": "Israel x Iran ceasefire continues through November 30?",
+      "category": "geopolitics",
+      "end_date": "2026-11-30T20:29:00+00:00",
+      "market_price": "0.9450",
+      "p_blind": "0.3500",
+      "p_blended": "0.7878",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.1-flash-lite",
+        "resolution_note": "The definition of 'ceasefire' is subjective and prone to conflicting reports of minor violations versus formal collapse.",
+        "base_rate": 0.45,
+        "bull_case": "Diplomatic pressure and the current lack of large-scale direct state-on-state strikes suggest the status quo may hold for the final four days of November.",
+        "bear_case": "Reports of ongoing violations and regional instability, combined with aggressive rhetoric regarding military funding, indicate the ceasefire is fragile and likely to be declared void.",
+        "summary_de": "Aufgrund anhaltender Berichte über Verstöße und einer instabilen Sicherheitslage ist die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis zum 30. November als gering einzustufen.",
+        "news_used": [
+          "Trump Says US Iran War Funded Through End of January - houseofsaud.com",
+          "The rapidly shifting geopolitical landscape across the Middle East. - TV7 Israel News",
+          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
+          "Polymarket Odds: Taipei Mayor, Tesla-SpaceX, Super Bowl - RG.org"
+        ]
+      }
+    },
     {
       "id": 23,
       "ts": "2026-11-26T10:10:02.936431+00:00",
@@ -886,6 +925,20 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 7,
+      "ts": "2026-11-26T10:12:02.226993+00:00",
+      "dry_run": 0,
+      "markets_scanned": 384,
+      "candidates_found": 6,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 66.72,
+      "errors": [
+        "Forecaster error for 0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d: All Gemini models failed for forecast: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      ]
+    },
     {
       "id": 6,
       "ts": "2026-11-26T10:10:29.525668+00:00",
