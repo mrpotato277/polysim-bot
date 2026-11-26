@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T23:06:26.535734+00:00",
+  "generated_at": "2026-11-26T23:11:37.939440+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9986.17,
-    "reconciled_equity_usd": 8882.84,
+    "equity_usd": 9989.04,
+    "reconciled_equity_usd": 8885.71,
     "equity_discrepancy_usd": 1103.33,
     "cash_usd": 7494.42,
-    "positions_value_usd": 1388.42,
-    "deployed_pct": 13.9,
-    "total_pnl_usd": -13.83,
-    "total_pnl_pct": -0.14,
-    "unrealized_pnl_usd": 0.37,
+    "positions_value_usd": 1391.29,
+    "deployed_pct": 13.93,
+    "total_pnl_usd": -10.96,
+    "total_pnl_pct": -0.11,
+    "unrealized_pnl_usd": 3.24,
     "total_trades": 65,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -28,11 +28,11 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 131,
+    "total_forecasts": 133,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 515.49,
+    "crypto": 518.36,
     "politics": 872.93
   },
   "equity_curve": [
@@ -1029,6 +1029,13 @@
       "cash": 7494.42,
       "deployed_pct": 13.9,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T23:11:37.553256+00:00",
+      "equity": 9989.04,
+      "cash": 7494.42,
+      "deployed_pct": 13.93,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1069,9 +1076,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.535,
-      "current_value": 307.11,
-      "unrealized_pnl": 14.35,
+      "current_price": 0.54,
+      "current_value": 309.98,
+      "unrealized_pnl": 17.22,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -1095,6 +1102,72 @@
   ],
   "recent_forecasts": [
     {
+      "id": 133,
+      "ts": "2026-11-26T23:11:37.551934+00:00",
+      "market_id": "0x9b1a03b41a1a68c209e9c3caf3d8af3f878420d6dbe8cb8afffd66049e73b114",
+      "question": "Another Fed rate hike in 2026?",
+      "category": "economics",
+      "end_date": "2026-12-10T04:59:00+00:00",
+      "market_price": "0.9545",
+      "p_blind": "0.5500",
+      "p_blended": "0.8641",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
+        "base_rate": 0.2,
+        "bull_case": "Persistent inflation surprises and a hot economy with rising wage pressures, as highlighted by recent Fed Beige Book reports and market expectations, increase the probability of a resumption in rate hikes.",
+        "bear_case": "The Federal Reserve has generally been in an easing or neutral pause phase, and actual rate hikes require severe upside shocks that policy makers may prefer to manage through prolonged pauses rather than tightening further.",
+        "summary_de": "Angesichts anhaltender Inflationssorgen und steigender Markterwartungen bezüglich weiterer Zinsschritte ist die Wahrscheinlichkeit einer Zinserhöhung durch die Fed im Jahr 2026 spürbar gestiegen.",
+        "news_used": [
+          "Fed rate hike odds rise to almost 100%: can AI selloff force a rethink? - TradingView",
+          "Gold hovers near 15-month low as Fed rate hike bets grow - Traders Union",
+          "US Strategic Bitcoin Reserve Bill Advances, but Can It Pass Before 2027? - TradingView",
+          "Gold falls again amid accelerating inflation in the United States and expectations of another Fed rate hike - Українські Національні Новини ",
+          "Australian Dollar gathers strength above 0.6600 on hotter CPI inflation data - www.tmgm.com",
+          "Fed Beige Book Shows Hot US Economy With Modest Price Growth And Rising Wage Pressure - TradingView"
+        ]
+      }
+    },
+    {
+      "id": 132,
+      "ts": "2026-11-26T23:11:28.076626+00:00",
+      "market_id": "0xe232f2c2d14a5ab8275e34cbc068944206df7fa382c279fca0745c8dd0522e0e",
+      "question": "Will Ho Hsin-chun win the next Taichung Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.2005",
+      "p_blind": "0.4200",
+      "p_blended": "0.2756",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0786",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.1-flash-lite",
+        "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
+        "base_rate": 0.45,
+        "bull_case": "Ho Hsin-chun benefits from strong DPP party mobilization and high-profile endorsements from figures like Tsai Ing-wen.",
+        "bear_case": "Recent KMT-led conflict-of-interest allegations may alienate swing voters and dampen turnout in the competitive Taichung district.",
+        "summary_de": "Trotz prominenter Unterstützung durch die DPP belasten aktuelle Vorwürfe wegen Interessenkonflikten die Wahlchancen von Ho Hsin-chun in einem hart umkämpften Umfeld.",
+        "news_used": [
+          "KMT presses DPP's Ho Hsin-chun in Taichung over conflict-of-interest allegations - Taiwan News",
+          "Tsai campaigns for Ho Hsin-chun in Taichung - Taiwan News"
+        ]
+      }
+    },
+    {
       "id": 131,
       "ts": "2026-11-26T22:51:44.891726+00:00",
       "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
@@ -1111,7 +1184,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.897594+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.800527+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -1176,7 +1249,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:06.318176+00:00",
+      "last_checked_ts": "2026-11-26T23:10:45.041719+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -1482,7 +1555,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.897594+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.800527+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands und dessen allfällige formelle Verletzungen im Laufe des Dezember müssen exakt den offiziellen Kriterien entsprechen.",
@@ -1517,7 +1590,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.524376+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.384177+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
@@ -1552,7 +1625,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.524376+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.384177+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official winner of the Taipei Mayor election, coinciding with the 2026 Taiwan local elections.",
@@ -1587,7 +1660,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, focusing on the current political cycle and upcoming leadership transition.",
@@ -1692,7 +1765,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag klärt, ob Pedro Sánchez der nächste Premierminister Spaniens sein wird, wobei die aktuellen Nachrichten auf Wahlen hindeuten.",
@@ -1797,7 +1870,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on who becomes the next Prime Minister of Spain following current political developments.",
@@ -1832,7 +1905,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
+      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain.",
@@ -1849,79 +1922,29 @@
           "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
         ]
       }
-    },
-    {
-      "id": 108,
-      "ts": "2026-11-26T21:26:10.887165+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.0940",
-      "p_blind": "0.7000",
-      "p_blended": "0.2326",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who the next Prime Minister of Spain is relative to current political terms, requiring a clear assessment of government continuity or transitions.",
-        "base_rate": 0.65,
-        "bull_case": "Pedro Sánchez currently holds power and continues to navigate the political landscape, maintaining coalition support despite fierce opposition attacks.",
-        "bear_case": "Political instability, ongoing controversies, or a successful parliamentary challenge from the opposition could unseat him before the resolution date.",
-        "summary_de": "Pedro Sánchez bleibt als amtierender Ministerpräsident der wahrscheinlichste Kandidat, auch wenn die politische Opposition weiterhin Druck ausübt.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spain Elections - Goshen News",
-          "Spain Elections - Daily News-Record",
-          "Spain Elections - chronicleonline.com",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 107,
-      "ts": "2026-11-26T21:21:17.739903+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.9050",
-      "p_blind": "0.3500",
-      "p_blended": "0.7146",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:34.554909+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional succession and investiture rules.",
-        "base_rate": 0.4,
-        "bull_case": "Feijóo's PP leads in several polls and could form a coalition or benefit from political instability facing Pedro Sánchez's current minority government.",
-        "bear_case": "Pedro Sánchez remains in power and retains sufficient parliamentary backing from regional and left-wing allies to avoid an early election or successful motion of no confidence before the deadline.",
-        "summary_de": "Pedro Sánchez bleibt voraussichtlich im Amt, da Alberto Núñez Feijóo derzeit keine stabile parlamentarische Mehrheit für eine Regierungsübernahme organisieren kann.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spain Elections - Goshen News",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
-          "Spain’s far right hasn’t governed since Franco. Immigration fears could change that - NBC News",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 17,
+      "ts": "2026-11-26T23:11:28.582429+00:00",
+      "client_order_id": "psb-20261126-231128-e232f2c2d1-buy-y-d2e42e",
+      "order_id": "1733866",
+      "market_id": "0xe232f2c2d14a5ab8275e34cbc068944206df7fa382c279fca0745c8dd0522e0e",
+      "question": "Will Ho Hsin-chun win the next Taichung Mayor election?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.197",
+      "quantity": "1091.91",
+      "notional_usd": "215.10",
+      "est_fee_usd": "0",
+      "edge_net": "0.0786",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Trotz prominenter Unterstützung durch die DPP belasten aktuelle Vorwürfe wegen Interessenkonflikten die Wahlchancen von Ho Hsin-chun in einem hart umkämpften Umfeld."
+    },
     {
       "id": 16,
       "ts": "2026-11-26T22:51:45.274871+00:00",
@@ -2245,6 +2268,18 @@
   ],
   "recent_runs": [
     {
+      "id": 125,
+      "ts": "2026-11-26T23:11:37.553706+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 23,
+      "llm_calls": 3,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 54.03,
+      "errors": []
+    },
+    {
       "id": 124,
       "ts": "2026-11-26T23:06:26.108620+00:00",
       "dry_run": 0,
@@ -2470,18 +2505,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 45.41,
-      "errors": []
-    },
-    {
-      "id": 105,
-      "ts": "2026-11-26T21:26:10.889801+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1157,
-      "candidates_found": 18,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 42.53,
       "errors": []
     }
   ]
