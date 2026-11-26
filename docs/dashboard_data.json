@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T09:39:41.950086+00:00",
+  "generated_at": "2026-11-26T10:10:30.233981+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -23,7 +23,7 @@
     "max_drawdown_pct": 0.0,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 20,
+    "total_forecasts": 23,
     "circuit_breaker_active": false
   },
   "category_exposure": {},
@@ -104,10 +104,119 @@
       "cash": 10000.0,
       "deployed_pct": 0.0,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T10:00:00+00:00",
+      "equity": 10000.0,
+      "cash": 10000.0,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T10:10:29.519699+00:00",
+      "equity": 10000.0,
+      "cash": 10000.0,
+      "deployed_pct": 0.0,
+      "source": "bot"
     }
   ],
   "open_positions": [],
   "recent_forecasts": [
+    {
+      "id": 23,
+      "ts": "2026-11-26T10:10:02.936431+00:00",
+      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
+      "question": "Israel x Iran ceasefire continues through November 30?",
+      "category": "geopolitics",
+      "end_date": "2026-11-30T20:29:00+00:00",
+      "market_price": "0.9450",
+      "p_blind": "0.6500",
+      "p_blended": "0.8887",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if the Israel-Iran ceasefire continues through November 30, 2026. Given the current date is Nov 26, only a few days remain.",
+        "base_rate": 0.7,
+        "bull_case": "Ceasefire agreements typically hold for a few remaining days once established unless a massive escalation occurs.",
+        "bear_case": "Fragile regional dynamics and continuous low-level violations or sudden escalations can collapse the ceasefire at any moment.",
+        "summary_de": "Da der Waffenstillstand zwischen Israel und dem Iran nur noch wenige Tage bis zum Monatsende halten muss und keine akuten Großkonflikte gemeldet wurden, ist ein Fortbestand am wahrscheinlichsten.",
+        "news_used": [
+          "The rapidly shifting geopolitical landscape across the Middle East. - TV7 Israel News",
+          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
+          "Polymarket Odds: Taipei Mayor, Tesla-SpaceX, Super Bowl - RG.org",
+          "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "ts": "2026-11-26T10:10:01.638589+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1130",
+      "p_blind": "0.6500",
+      "p_blended": "0.2699",
+      "confidence": "0.5500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on who serves as the next Prime Minister of Spain according to official appointment.",
+        "base_rate": 0.6,
+        "bull_case": "Pedro Sánchez has proven resilient through multiple political crises and continues to maneuver effectively to maintain his coalition's grip on power.",
+        "bear_case": "Growing voter dissatisfaction with the economy, intense opposition pressure, and potential coalition fractures threaten his path to reelection.",
+        "summary_de": "Pedro Sánchez kämpft trotz anhaltendem politischen Druck und wirtschaftlicher Unzufriedenheit der Wähler um seinen Verbleib an der Macht.",
+        "news_used": [
+          "Can a political reinvention keep Pedro Sanchez in power? - DW.com",
+          "Who really wants Pedro Sanchez out of power? - Al Jazeera",
+          "Spain's economic gains miss voters' wallets as Sanchez seeks reelection - Reuters",
+          "5 charts show why Spaniards aren't feeling the benefits of economic growth under Sánchez - The New Indian Express"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "ts": "2026-11-26T10:10:00.542120+00:00",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.5850",
+      "p_blind": "0.7000",
+      "p_blended": "0.6431",
+      "confidence": "0.7500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0631",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The market resolves based on the official winner of the Taipei Mayor election as scheduled by the Central Election Commission.",
+        "base_rate": 0.65,
+        "bull_case": "As the incumbent KMT mayor, Chiang Wan-an holds strong institutional advantages and high visibility, interacting with other candidates like Puma Shen in recent reports.",
+        "bear_case": "Local elections in Taiwan face fierce competition and shifts in voter sentiment, and recent news highlights uphill battles for the KMT in certain local races.",
+        "summary_de": "Als amtierender Bürgermeister von Taipeh hat Chiang Wan-an gute institutionelle Startvoraussetzungen, wenngleich lokale Wahlen in Taiwan stets hart umkämpft sind.",
+        "news_used": [
+          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "What a KMT setback in Taiwan’s polls means for Washington and Beijing - ThinkChina",
+          "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
+        ]
+      }
+    },
     {
       "id": 20,
       "ts": "2026-11-26T09:39:41.223944+00:00",
@@ -777,6 +886,21 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 6,
+      "ts": "2026-11-26T10:10:29.525668+00:00",
+      "dry_run": 0,
+      "markets_scanned": 384,
+      "candidates_found": 6,
+      "llm_calls": 3,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 89.6,
+      "errors": [
+        "Forecaster error for 0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8: All Gemini models failed for forecast: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+        "Forecaster error for 0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d: All Gemini models failed for forecast: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      ]
+    },
     {
       "id": 5,
       "ts": "2026-11-26T09:39:41.226040+00:00",
