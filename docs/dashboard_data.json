@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T12:11:25.481197+00:00",
+  "generated_at": "2026-11-26T12:21:14.706490+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,13 +11,13 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9980.11,
+    "equity_usd": 9981.9,
     "cash_usd": 9054.73,
-    "positions_value_usd": 925.38,
-    "deployed_pct": 9.27,
-    "total_pnl_usd": -19.89,
-    "total_pnl_pct": -0.2,
-    "unrealized_pnl_usd": -19.89,
+    "positions_value_usd": 927.17,
+    "deployed_pct": 9.29,
+    "total_pnl_usd": -18.1,
+    "total_pnl_pct": -0.18,
+    "unrealized_pnl_usd": -18.1,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.2,
@@ -27,8 +27,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 390.86,
-    "politics": 534.52
+    "crypto": 394.43,
+    "politics": 532.74
   },
   "equity_curve": [
     {
@@ -223,6 +223,13 @@
       "cash": 9054.73,
       "deployed_pct": 9.27,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T12:21:13.954165+00:00",
+      "equity": 9981.45,
+      "cash": 9054.73,
+      "deployed_pct": 9.29,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -233,9 +240,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8765,
-      "current_value": 390.86,
-      "unrealized_pnl": -9.14,
+      "current_price": 0.8845,
+      "current_value": 394.43,
+      "unrealized_pnl": -5.57,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -247,9 +254,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1195,
-      "current_value": 212.44,
-      "unrealized_pnl": -8.0,
+      "current_price": 0.1185,
+      "current_value": 210.66,
+      "unrealized_pnl": -9.78,
       "p_blended": 0.2529,
       "edge_net": 0.1289,
       "rationale": "Pedro Sánchez kämpft in einer sehr knappen und polarisierten Neuwahl um seinen Verbleib im Amt, wobei die Umfragen und die wirtschaftliche Unzufriedenheit der Wähler gegen ihn sprechen."
@@ -1156,6 +1163,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 20,
+      "ts": "2026-11-26T12:21:13.955720+00:00",
+      "dry_run": 0,
+      "markets_scanned": 444,
+      "candidates_found": 5,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 37.72,
+      "errors": []
+    },
     {
       "id": 19,
       "ts": "2026-11-26T12:11:24.710010+00:00",
