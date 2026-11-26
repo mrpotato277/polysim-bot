@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T10:31:31.252686+00:00",
+  "generated_at": "2026-11-26T10:41:17.480329+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,22 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10000.0,
+    "equity_usd": 9992.64,
     "cash_usd": 9600.0,
-    "positions_value_usd": 0.0,
-    "deployed_pct": 0.0,
-    "total_pnl_usd": 0.0,
-    "total_pnl_pct": 0.0,
-    "unrealized_pnl_usd": 0.0,
-    "total_trades": 0,
+    "positions_value_usd": 392.64,
+    "deployed_pct": 3.93,
+    "total_pnl_usd": -7.36,
+    "total_pnl_pct": -0.07,
+    "unrealized_pnl_usd": -7.36,
+    "total_trades": 2,
     "win_rate_pct": null,
-    "max_drawdown_pct": 0.0,
+    "max_drawdown_pct": -0.07,
     "brier_score": null,
     "brier_resolved_count": 0,
     "total_forecasts": 28,
     "circuit_breaker_active": false
   },
-  "category_exposure": {},
+  "category_exposure": {
+    "crypto": 392.64
+  },
   "equity_curve": [
     {
       "ts": "2026-11-26T00:04:09.557822+00:00",
@@ -138,9 +140,31 @@
       "cash": 9600.0,
       "deployed_pct": 0.0,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T10:41:16.743567+00:00",
+      "equity": 9992.64,
+      "cash": 9600.0,
+      "deployed_pct": 3.93,
+      "source": "bot"
     }
   ],
-  "open_positions": [],
+  "open_positions": [
+    {
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "outcome": "No",
+      "quantity": 445.93,
+      "avg_entry_price": 0.897,
+      "current_price": 0.8805,
+      "current_value": 392.64,
+      "unrealized_pnl": -7.36,
+      "p_blended": 0.0635,
+      "edge_net": 0.0395,
+      "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
+    }
+  ],
   "recent_forecasts": [
     {
       "id": 28,
@@ -988,6 +1012,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 10,
+      "ts": "2026-11-26T10:41:16.746083+00:00",
+      "dry_run": 0,
+      "markets_scanned": 506,
+      "candidates_found": 6,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 33.82,
+      "errors": []
+    },
     {
       "id": 9,
       "ts": "2026-11-26T10:31:30.519745+00:00",
