@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:01:37.797339+00:00",
+  "generated_at": "2026-11-26T14:11:54.057787+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,23 +11,23 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9990.97,
+    "equity_usd": 9991.41,
     "cash_usd": 8972.03,
-    "positions_value_usd": 936.24,
+    "positions_value_usd": 936.68,
     "deployed_pct": 9.37,
-    "total_pnl_usd": -9.03,
+    "total_pnl_usd": -8.59,
     "total_pnl_pct": -0.09,
-    "unrealized_pnl_usd": -9.03,
+    "unrealized_pnl_usd": -8.59,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.22,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 38,
+    "total_forecasts": 39,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 399.78,
+    "crypto": 400.22,
     "politics": 536.46
   },
   "equity_curve": [
@@ -298,6 +298,13 @@
       "cash": 8972.03,
       "deployed_pct": 9.37,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T14:11:53.324585+00:00",
+      "equity": 9991.41,
+      "cash": 8972.03,
+      "deployed_pct": 9.37,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -308,9 +315,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8965,
-      "current_value": 399.78,
-      "unrealized_pnl": -0.22,
+      "current_price": 0.8975,
+      "current_value": 400.22,
+      "unrealized_pnl": 0.22,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -345,6 +352,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 39,
+      "ts": "2026-11-26T14:11:53.321657+00:00",
+      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+      "question": "Will Puma Shen win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.4195",
+      "p_blind": "0.4200",
+      "p_blended": "0.4197",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0007",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official winner of the Taipei Mayor election as certified by the election commission.",
+        "base_rate": 0.35,
+        "bull_case": "Puma Shen is a prominent DPP candidate showing competitive momentum in the final stretch, with high voter mobilization.",
+        "bear_case": "Incumbent-leaning dynamics and recent logistical setbacks such as cancelled rallies indicate tough competition against KMT opposition.",
+        "summary_de": "Die aktuellen Berichte über kurzfristige Kundgebungsabsagen und logistische Hürden im Bürgermeisterwahlkampf in Taipeh beeinflussen die Chancen kurz vor dem entscheidenden Urnengang.",
+        "news_used": [
+          "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "DPP suspects foul play over Taipei election rally venues - Taiwan News",
+          "2026 ELECTIONS Taipei mayor candidates cancel rallies amid road use controversy - Focus Taiwan"
+        ]
+      }
+    },
     {
       "id": 38,
       "ts": "2026-11-26T13:41:19.042468+00:00",
@@ -1099,33 +1138,6 @@
         "summary_de": "Die aktuelle Regierung unter Pedro Sánchez bleibt stabil, und es gibt keine Anzeichen für einen Regierungswechsel vor Ablauf der Frist.",
         "news_used": []
       }
-    },
-    {
-      "id": 14,
-      "ts": "2026-11-26T01:52:56.173996+00:00",
-      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
-      "question": "Will Bitcoin dip to $55,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1365",
-      "p_blind": "0.0800",
-      "p_blended": "0.1176",
-      "confidence": "0.7500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0194",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves YES if Bitcoin hits or dips to $55,000 at any point during November 2026.",
-        "base_rate": 0.15,
-        "bull_case": "Macro volatility or unexpected liquidity shocks could trigger a sudden flash crash down to $55,000 before the end of November.",
-        "bear_case": "Bitcoin's current price action and overall trend remain well above $55,000, and with only a few days left in November, a correction of that magnitude is unlikely.",
-        "summary_de": "Da Bitcoin deutlich über der Marke von 55.000 US-Dollar gehandelt wird und nur noch wenige Tage im November verbleiben, ist ein so starker Rücksetzer statistisch unwahrscheinlich.",
-        "news_used": []
-      }
     }
   ],
   "trade_journal": [
@@ -1251,6 +1263,20 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 29,
+      "ts": "2026-11-26T14:11:53.325908+00:00",
+      "dry_run": 0,
+      "markets_scanned": 504,
+      "candidates_found": 5,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 70.82,
+      "errors": [
+        "Forecaster error for 0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8: All Gemini models failed for forecast: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      ]
+    },
     {
       "id": 28,
       "ts": "2026-11-26T14:01:36.701220+00:00",
@@ -1479,18 +1505,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 33.82,
-      "errors": []
-    },
-    {
-      "id": 9,
-      "ts": "2026-11-26T10:31:30.519745+00:00",
-      "dry_run": 0,
-      "markets_scanned": 473,
-      "candidates_found": 6,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 37.97,
       "errors": []
     }
   ]
