@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T21:31:42.761436+00:00",
+  "generated_at": "2026-11-26T21:36:17.626995+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,18 +11,18 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9913.59,
-    "reconciled_equity_usd": 9217.58,
+    "equity_usd": 9910.72,
+    "reconciled_equity_usd": 9214.71,
     "equity_discrepancy_usd": 696.01,
     "cash_usd": 8091.18,
-    "positions_value_usd": 1126.4,
-    "deployed_pct": 11.36,
-    "total_pnl_usd": -86.41,
-    "total_pnl_pct": -0.86,
-    "unrealized_pnl_usd": -72.21,
+    "positions_value_usd": 1123.53,
+    "deployed_pct": 11.34,
+    "total_pnl_usd": -89.28,
+    "total_pnl_pct": -0.89,
+    "unrealized_pnl_usd": -75.08,
     "total_trades": 51,
     "win_rate_pct": 0.0,
-    "max_drawdown_pct": -0.86,
+    "max_drawdown_pct": -0.89,
     "brier_score": null,
     "brier_resolved_count": 0,
     "brier_blind_score": null,
@@ -33,7 +33,7 @@
   },
   "category_exposure": {
     "politics": 873.82,
-    "crypto": 252.58
+    "crypto": 249.71
   },
   "equity_curve": [
     {
@@ -891,6 +891,13 @@
       "cash": 8091.18,
       "deployed_pct": 11.36,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T21:36:16.949798+00:00",
+      "equity": 9910.72,
+      "cash": 8091.18,
+      "deployed_pct": 11.34,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -916,9 +923,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.44,
-      "current_value": 252.58,
-      "unrealized_pnl": -40.18,
+      "current_price": 0.435,
+      "current_value": 249.71,
+      "unrealized_pnl": -43.05,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -958,7 +965,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain.",
@@ -993,7 +1000,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who the next Prime Minister of Spain is relative to current political terms, requiring a clear assessment of government continuity or transitions.",
@@ -1063,7 +1070,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Evaluates whether Pedro Sánchez becomes the next Prime Minister of Spain according to official resolution criteria.",
@@ -1168,7 +1175,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Evaluates whether Pedro Sánchez becomes or remains the Prime Minister of Spain following current political developments.",
@@ -1203,7 +1210,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.294991+00:00",
+      "last_checked_ts": "2026-11-26T21:35:40.948169+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei Mayor election.",
@@ -1273,7 +1280,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract asks if Pedro Sánchez will be the next Prime Minister of Spain. Given he is already the incumbent Prime Minister and no unexpected snap elections or successful motions of no confidence have occurred to unseat him before the deadline, this refers to his current ongoing tenure.",
@@ -1338,7 +1345,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the current election cycle.",
@@ -1373,7 +1380,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who the next Prime Minister of Spain is around the election/investiture timeline ending Nov 2026.",
@@ -1408,7 +1415,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:30:59.926811+00:00",
+      "last_checked_ts": "2026-11-26T21:35:40.568976+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the Federal Reserve increases the target range for the federal funds rate by 25 basis points at the conclusion of the December 2026 FOMC meeting.",
@@ -1478,7 +1485,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election context.",
@@ -1577,7 +1584,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:30:58.694456+00:00",
+      "last_checked_ts": "2026-11-26T21:35:39.501063+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28.11.2026 statt; die Bedingungen sind klar definiert.",
@@ -1612,7 +1619,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:30:59.926811+00:00",
+      "last_checked_ts": "2026-11-26T21:35:40.568976+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet über eine Zinsanhebung um 25 Basispunkte nach dem Dezember-Treffen 2026 gemäß offizieller Fed-Mitteilung.",
@@ -1682,7 +1689,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.483685+00:00",
+      "last_checked_ts": "2026-11-26T21:35:41.106226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -2071,6 +2078,18 @@
   ],
   "recent_runs": [
     {
+      "id": 107,
+      "ts": "2026-11-26T21:36:16.952122+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1156,
+      "candidates_found": 18,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.62,
+      "errors": []
+    },
+    {
       "id": 106,
       "ts": "2026-11-26T21:31:42.310554+00:00",
       "dry_run": 0,
@@ -2296,18 +2315,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 40.89,
-      "errors": []
-    },
-    {
-      "id": 87,
-      "ts": "2026-11-26T19:51:40.035222+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1141,
-      "candidates_found": 20,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 49.11,
       "errors": []
     }
   ]
