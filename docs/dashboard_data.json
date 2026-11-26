@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T17:51:02.520496+00:00",
+  "generated_at": "2026-11-26T17:55:52.527289+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,24 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9963.13,
+    "equity_usd": 9962.02,
     "cash_usd": 8998.81,
-    "positions_value_usd": 964.32,
-    "deployed_pct": 9.68,
-    "total_pnl_usd": -36.87,
-    "total_pnl_pct": -0.37,
-    "unrealized_pnl_usd": -35.85,
+    "positions_value_usd": 963.21,
+    "deployed_pct": 9.67,
+    "total_pnl_usd": -37.98,
+    "total_pnl_pct": -0.38,
+    "unrealized_pnl_usd": -36.96,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.44,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 57,
+    "total_forecasts": 58,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 394.2,
-    "politics": 570.12
+    "crypto": 394.87,
+    "politics": 568.34
   },
   "equity_curve": [
     {
@@ -596,6 +596,13 @@
       "cash": 8998.81,
       "deployed_pct": 9.68,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T17:55:52.256541+00:00",
+      "equity": 9962.02,
+      "cash": 8998.81,
+      "deployed_pct": 9.67,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -606,9 +613,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.884,
-      "current_value": 394.2,
-      "unrealized_pnl": -5.8,
+      "current_price": 0.8855,
+      "current_value": 394.87,
+      "unrealized_pnl": -5.13,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -620,9 +627,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0965,
-      "current_value": 171.55,
-      "unrealized_pnl": -48.89,
+      "current_price": 0.0955,
+      "current_value": 169.77,
+      "unrealized_pnl": -50.67,
       "p_blended": 0.2008,
       "edge_net": 0.0,
       "rationale": "Die aktuellen Umfragen zeigen ein extrem knappes Rennen bei den spanischen Neuwahlen, weshalb Pedro Sánchez' Verbleib an der Regierung gefährdet ist."
@@ -643,6 +650,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 58,
+      "ts": "2026-11-26T17:55:52.254544+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9350",
+      "p_blind": "0.3500",
+      "p_blended": "0.7835",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Entscheidung fällt nach dem FOMC-Meeting im Dezember 2026 bezüglich einer Zinserhöhung um 25 bps.",
+        "base_rate": 0.15,
+        "bull_case": "Aktuelle Schlagzeilen und Inflationsdaten (z.B. Inflation bei 3.8%) treiben die Marktpreise für Zinserhöhungserwartungen stark nach oben.",
+        "bear_case": "Historisch zögert die Fed bei erneuten Straffungszyklen nach langen Pausen, und die Mehrheit der Analysten rechnet weiterhin eher mit Zinssenkungen oder einer Pause.",
+        "summary_de": "Trotz jüngster hawkish Berichte und steigender Inflationssorgen bleibt eine Zinserhöhung der Fed im Dezember 2026 ein eher unwahrscheinliches Szenario im historischen Vergleich.",
+        "news_used": [
+          "Robin Brooks Warns Hawkish Fed Could Trigger Risk-Asset Meltdown - www.tokenpost.com",
+          "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView",
+          "EUR/USD might be bottoming out amid peak Fed hawkishness and dovish repricing risks - investingLive",
+          "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English"
+        ]
+      }
+    },
     {
       "id": 57,
       "ts": "2026-11-26T17:51:02.117076+00:00",
@@ -1403,38 +1442,6 @@
           "Spain's economic gains miss voters' wallets as Sanchez seeks reelection - Reuters"
         ]
       }
-    },
-    {
-      "id": 33,
-      "ts": "2026-11-26T11:41:23.795510+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1240",
-      "p_blind": "0.4800",
-      "p_blended": "0.2529",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1289",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the snap election context.",
-        "base_rate": 0.5,
-        "bull_case": "Pedro Sánchez has proven exceptionally resilient at building coalitions and surviving tight political races.",
-        "bear_case": "Polling and recent news highlight a deeply polarized race where economic discontent and intense opposition threaten his reelection bid.",
-        "summary_de": "Pedro Sánchez kämpft in einer sehr knappen und polarisierten Neuwahl um seinen Verbleib im Amt, wobei die Umfragen und die wirtschaftliche Unzufriedenheit der Wähler gegen ihn sprechen.",
-        "news_used": [
-          "Spain Heads to Sunday Snap Election With Tight, Polarized Race - teleSUR English",
-          "Can a political reinvention keep Pedro Sanchez in power? - DW.com",
-          "Who really wants Pedro Sanchez out of power? - Al Jazeera",
-          "Analysis-Spain's economic gains miss voters' wallets as Sanchez seeks reelection - San Luis Obispo Tribune"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1580,6 +1587,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 69,
+      "ts": "2026-11-26T17:55:52.257297+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1151,
+      "candidates_found": 6,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 22.91,
+      "errors": []
+    },
     {
       "id": 68,
       "ts": "2026-11-26T17:51:02.119765+00:00",
@@ -1806,18 +1825,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 17.87,
-      "errors": []
-    },
-    {
-      "id": 49,
-      "ts": "2026-11-26T16:16:03.450707+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1113,
-      "candidates_found": 5,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 27.33,
       "errors": []
     }
   ]
