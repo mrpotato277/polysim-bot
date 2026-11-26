@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:41:41.343747+00:00",
+  "generated_at": "2026-11-26T14:51:25.032609+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,23 +11,23 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9992.08,
+    "equity_usd": 9992.52,
     "cash_usd": 9054.73,
-    "positions_value_usd": 937.35,
+    "positions_value_usd": 937.79,
     "deployed_pct": 9.38,
-    "total_pnl_usd": -7.92,
-    "total_pnl_pct": -0.08,
-    "unrealized_pnl_usd": -7.92,
+    "total_pnl_usd": -7.48,
+    "total_pnl_pct": -0.07,
+    "unrealized_pnl_usd": -7.48,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.22,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 42,
+    "total_forecasts": 43,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 399.11,
+    "crypto": 399.55,
     "politics": 538.24
   },
   "equity_curve": [
@@ -326,6 +326,13 @@
       "cash": 9054.73,
       "deployed_pct": 9.38,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T14:51:23.915022+00:00",
+      "equity": 9992.52,
+      "cash": 9054.73,
+      "deployed_pct": 9.38,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -336,9 +343,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.895,
-      "current_value": 399.11,
-      "unrealized_pnl": -0.89,
+      "current_price": 0.896,
+      "current_value": 399.55,
+      "unrealized_pnl": -0.45,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -373,6 +380,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 43,
+      "ts": "2026-11-26T14:51:23.912137+00:00",
+      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
+      "question": "Israel x Iran ceasefire continues through November 30?",
+      "category": "geopolitics",
+      "end_date": "2026-11-30T20:29:00+00:00",
+      "market_price": "0.9350",
+      "p_blind": "0.3500",
+      "p_blended": "0.7958",
+      "confidence": "0.5500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Unclear whether sporadic skirmishes or mutual accusations of ceasefire violations constitute an official breakdown before November 30.",
+        "base_rate": 0.4,
+        "bull_case": "Despite ongoing political rhetoric and threats, both sides have largely held off on major full-scale military offensives over the past days, suggesting the temporary ceasefire may limp through the remaining few days until November 30.",
+        "bear_case": "Recent news headlines indicate Israel remains ready to strike Iran at any moment and accuses Iran of violations, while regional tensions stay extremely high, leaving a high risk of sudden escalation before the deadline.",
+        "summary_de": "Angesichts anhaltender israelischer Drohungen und fortwährender gegenseitiger Vorwürfe über Verletzungen des Waffenstillstands ist die Wahrscheinlichkeit eines Bruchs vor dem 30. November erheblich.",
+        "news_used": [
+          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
+          "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm - The Straits Times",
+          "Israel ready to strike Iran ‘at any moment’ without US support as Netanyahu pushes Trump for fresh offensiv... - Firstpost",
+          "Trump Says US Iran War Funded Through End of January - https://houseofsaud.com/"
+        ]
+      }
+    },
     {
       "id": 42,
       "ts": "2026-11-26T14:41:40.258380+00:00",
@@ -1127,38 +1166,6 @@
         "summary_de": "Angesichts der historischen Fragilität von Waffenstillständen in diesem Konflikt und der kurzen verbleibenden Frist bis Ende November bleibt das Risiko eines Bruchs moderat hoch.",
         "news_used": []
       }
-    },
-    {
-      "id": 18,
-      "ts": "2026-11-26T09:39:33.222145+00:00",
-      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
-      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.9350",
-      "p_blind": "0.8500",
-      "p_blended": "0.9076",
-      "confidence": "0.8000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if the Fed increases interest rates by 25 bps after the December 2026 meeting.",
-        "base_rate": 0.3,
-        "bull_case": "Hot inflation readings (PCE at 3.8%) and severe market pricing indicate strong pressure for a 25 bps rate hike.",
-        "bear_case": "Fed policymakers remain divided over the drivers of inflation, and unexpected economic cooling or dovish shifts before December could prevent a hike.",
-        "summary_de": "Angesichts starker Inflationsdaten und hoher Markterwartungen für eine Zinserhöhung im Dezember 2026 spricht eine hohe Wahrscheinlichkeit für ein JA, auch wenn geldpolitische Meinungsverschiedenheiten bestehen bleiben.",
-        "news_used": [
-          "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English",
-          "Fed Rate Hike Odds Hit 98%, But Eric Jackson Says It’s Time To Cut – Robin Brooks Warns Of ‘Full Meltdown’ - TradingView",
-          "Fed policymakers at odds over causes of high inflation - Reuters",
-          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1284,6 +1291,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 33,
+      "ts": "2026-11-26T14:51:23.916434+00:00",
+      "dry_run": 0,
+      "markets_scanned": 407,
+      "candidates_found": 5,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 45.08,
+      "errors": []
+    },
     {
       "id": 32,
       "ts": "2026-11-26T14:41:40.261686+00:00",
@@ -1513,20 +1532,6 @@
       "trades_executed": 1,
       "duration_sec": 40.81,
       "errors": []
-    },
-    {
-      "id": 13,
-      "ts": "2026-11-26T11:11:31.846281+00:00",
-      "dry_run": 0,
-      "markets_scanned": 383,
-      "candidates_found": 6,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 51.46,
-      "errors": [
-        "Forecaster error for 0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659: All Gemini models failed for forecast: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
-      ]
     }
   ]
 }
