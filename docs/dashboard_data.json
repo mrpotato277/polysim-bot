@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T19:21:10.456208+00:00",
+  "generated_at": "2026-11-26T19:26:05.222030+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,29 +11,29 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9965.93,
-    "reconciled_equity_usd": 9540.11,
+    "equity_usd": 9951.1,
+    "reconciled_equity_usd": 9525.28,
     "equity_discrepancy_usd": 425.82,
     "cash_usd": 8361.37,
-    "positions_value_usd": 1178.74,
-    "deployed_pct": 11.83,
-    "total_pnl_usd": -34.07,
-    "total_pnl_pct": -0.34,
-    "unrealized_pnl_usd": -19.87,
+    "positions_value_usd": 1163.91,
+    "deployed_pct": 11.7,
+    "total_pnl_usd": -48.9,
+    "total_pnl_pct": -0.49,
+    "unrealized_pnl_usd": -34.7,
     "total_trades": 51,
     "win_rate_pct": 0.0,
-    "max_drawdown_pct": -0.45,
+    "max_drawdown_pct": -0.49,
     "brier_score": null,
     "brier_resolved_count": 0,
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 86,
+    "total_forecasts": 87,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 877.37,
-    "crypto": 301.37
+    "politics": 871.15,
+    "crypto": 292.76
   },
   "equity_curve": [
     {
@@ -704,6 +704,13 @@
       "cash": 8361.37,
       "deployed_pct": 11.83,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T19:26:04.862835+00:00",
+      "equity": 9951.1,
+      "cash": 8361.37,
+      "deployed_pct": 11.7,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -714,9 +721,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.096,
-      "current_value": 170.66,
-      "unrealized_pnl": -49.78,
+      "current_price": 0.0925,
+      "current_value": 164.44,
+      "unrealized_pnl": -56.0,
       "p_yes": 0.2131,
       "p_blended": 0.2131,
       "edge_net": 0.0,
@@ -729,9 +736,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.525,
-      "current_value": 301.37,
-      "unrealized_pnl": 8.61,
+      "current_price": 0.51,
+      "current_value": 292.76,
+      "unrealized_pnl": 0.0,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -755,6 +762,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 87,
+      "ts": "2026-11-26T19:26:04.860334+00:00",
+      "market_id": "0xf91a7667289b63e0c9c926017529e2bccaadc3da2d82075612420c43d36fbb08",
+      "question": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.1045",
+      "p_blind": "0.1200",
+      "p_blended": "0.1118",
+      "confidence": "0.7500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on official final election results and vote counts for the 2026 Taipei Mayoral Election margin.",
+        "base_rate": 0.15,
+        "bull_case": "Puma Shen has high energy mobilization, strong digital presence, and high-profile endorsements (like Tsai Ing-wen) driving enthusiastic voter turnout.",
+        "bear_case": "Taipei historically favors Kuomintang (Chiang Wan-an), making a landslide 8%+ victory for a DPP candidate extremely difficult.",
+        "summary_de": "Trotz aktiver Wahlkampfdynamik bleibt Taipeh historisch ein schwieriges Pflaster für die DPP, weshalb ein Vorsprung von über 8 Prozent für Puma Shen unwahrscheinlich ist.",
+        "news_used": [
+          "2026 Elections: Puma Shen moves event online after traffic issues - Taipei Times",
+          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
+          "A trader just placed a $19K bet on Chiang Wan-an winning Taipei’s mayor election - Quiver Quantitative",
+          "Civil defense innovator, cognitive warfare expert, in race to be mayor of Taiwan’s capital - Washington Times",
+          "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报",
+          "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报"
+        ]
+      }
+    },
+    {
       "id": 86,
       "ts": "2026-11-26T19:21:10.201425+00:00",
       "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
@@ -771,7 +813,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T19:25:31.603417+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $55,000 in November, resolving based on standard spot exchange data before the December deadline.",
@@ -807,7 +849,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.062640+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.492366+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official final election margin announced by the Central Election Commission for the 2026 Taipei Mayoral Election.",
@@ -842,7 +884,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.303240+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.714031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Alberto Núñez Feijóo becomes the next Prime Minister of Spain before the deadline.",
@@ -877,7 +919,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:37.957692+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.378711+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract asks if Pedro Sánchez will be the next Prime Minister; this implies the incumbent or the winner of the current election cycle.",
@@ -912,7 +954,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:37.859077+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.179948+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Taipei Mayor election as determined by the Central Election Commission.",
@@ -947,7 +989,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:17:30.524241+00:00",
+      "last_checked_ts": "2026-11-26T19:25:30.680760+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the 2026 Spanish general election according to official results.",
@@ -982,7 +1024,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:37.957692+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.378711+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Pedro Sánchez der nächste Premierminister Spaniens sein wird, angesichts anstehender Wahlen und Debatten.",
@@ -1017,7 +1059,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.726412+00:00",
+      "last_checked_ts": "2026-11-26T19:25:32.130755+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im Zeitraum 23. bis 29. November $64.000 erreicht. Maßgeblich sind Standard-Preis-Feeds wie Binance oder Chainlink.",
@@ -1046,7 +1088,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.581220+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.982795+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Ethereum im November 2026 die Marke von 1.500 USD berührt.",
@@ -1113,7 +1155,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.162399+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.603417+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin dips to $55,000 in November 2026 based on standard spot pricing feeds.",
@@ -1149,7 +1191,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:17:30.524241+00:00",
+      "last_checked_ts": "2026-11-26T19:25:30.680760+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether PSOE will win the most seats in the 2026 Spanish general election, determined by official election results.",
@@ -1184,7 +1226,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.303240+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.714031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolvable based on official appointment before the deadline.",
@@ -1312,7 +1354,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:17:30.524241+00:00",
+      "last_checked_ts": "2026-11-26T19:25:30.680760+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract is straightforward, focusing on the seat count winner in the 2026 Spanish general election.",
@@ -1347,7 +1389,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:17:30.201501+00:00",
+      "last_checked_ts": "2026-11-26T19:25:30.417880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the New Taipei Mayor election.",
@@ -1382,7 +1424,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.303240+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.714031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Begriffs 'nächster Premierminister' nach einer vorgezogenen Neuwahl muss exakt die Regierungsübernahme durch die Amtseinführung umfassen, nicht nur den Wahlausgang.",
@@ -1417,7 +1459,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:37.957692+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.378711+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain following the 2026 election cycle.",
@@ -1452,7 +1494,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:17:30.524241+00:00",
+      "last_checked_ts": "2026-11-26T19:25:30.680760+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count of the Spanish general election by the resolution deadline.",
@@ -1483,7 +1525,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.162399+00:00",
+      "last_checked_ts": "2026-11-26T19:25:31.603417+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Bitcoin hits or dips to $55,000 at any point during November 2026.",
@@ -1517,7 +1559,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:17:30.422023+00:00",
+      "last_checked_ts": "2026-11-26T19:25:30.535554+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the New Taipei Mayor election happening in November 2026.",
@@ -1552,7 +1594,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:17:30.201501+00:00",
+      "last_checked_ts": "2026-11-26T19:25:30.417880+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election is scheduled for Saturday, November 28, 2026, which falls within the contract resolution window.",
@@ -1567,41 +1609,6 @@
           "Well wishes - Taipei Times",
           "Taiwan’s 2026 Nine-in-One Elections: Things to Watch - CSIS | Center for Strategic and International Studies",
           "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation"
-        ]
-      }
-    },
-    {
-      "id": 62,
-      "ts": "2026-11-26T18:36:24.932938+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.9050",
-      "p_blind": "0.4800",
-      "p_blended": "0.7814",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T19:20:38.303240+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves YES if Alberto Núñez Feijóo becomes the next Prime Minister of Spain before the deadline of November 30, 2026.",
-        "base_rate": 0.45,
-        "bull_case": "Recent polls and snap election dynamics show strong momentum for the conservative Partido Popular under Feijóo, potentially allowing them to form a government.",
-        "bear_case": "Incumbent Pedro Sánchez and left-wing coalitions may retain power or forge alternative alliances, preventing Feijóo from securing the necessary parliamentary majority before the deadline.",
-        "summary_de": "Trotz guter Umfrageergebnisse und der aktuellen Parlamentswahlen bleibt unklar, ob Alberto Núñez Feijóo rechtzeitig die notwendigen Mehrheiten für eine Regierungsbildung sichern kann.",
-        "news_used": [
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times",
-          "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale",
-          "Spain's Election Could Topple One of Europe's Last Left-Wing Holdouts - Haaretz",
-          "Spain’s far right hasn’t governed since Franco. Immigration fears could change that - News4JAX",
-          "Spain, tonight TV debate between 4 prime minister candidates - jiji press"
         ]
       }
     }
@@ -1850,6 +1857,18 @@
   ],
   "recent_runs": [
     {
+      "id": 82,
+      "ts": "2026-11-26T19:26:04.863656+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1153,
+      "candidates_found": 19,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 35.6,
+      "errors": []
+    },
+    {
       "id": 81,
       "ts": "2026-11-26T19:21:10.206198+00:00",
       "dry_run": 0,
@@ -2075,18 +2094,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 27.01,
-      "errors": []
-    },
-    {
-      "id": 62,
-      "ts": "2026-11-26T17:20:56.606687+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1143,
-      "candidates_found": 5,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 17.17,
       "errors": []
     }
   ]
