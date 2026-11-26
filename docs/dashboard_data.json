@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T15:56:27.993403+00:00",
+  "generated_at": "2026-11-26T16:01:53.597861+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,24 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9984.42,
+    "equity_usd": 9968.21,
     "cash_usd": 9054.73,
-    "positions_value_usd": 929.69,
-    "deployed_pct": 9.31,
-    "total_pnl_usd": -15.58,
-    "total_pnl_pct": -0.16,
-    "unrealized_pnl_usd": -15.58,
+    "positions_value_usd": 913.48,
+    "deployed_pct": 9.16,
+    "total_pnl_usd": -31.79,
+    "total_pnl_pct": -0.32,
+    "unrealized_pnl_usd": -31.79,
     "total_trades": 17,
     "win_rate_pct": null,
-    "max_drawdown_pct": -0.22,
+    "max_drawdown_pct": -0.32,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 47,
+    "total_forecasts": 49,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 398.22,
-    "politics": 531.47
+    "crypto": 399.78,
+    "politics": 513.7
   },
   "equity_curve": [
     {
@@ -423,6 +423,19 @@
       "cash": 9054.73,
       "deployed_pct": 9.31,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T16:00:00+00:00",
+      "equity": 9967.76,
+      "cash": 9967.76,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T16:01:52.451448+00:00",
+      "equity": 9967.98,
+      "cash": 9054.73,
+      "deployed_pct": 9.16,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -433,9 +446,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.893,
-      "current_value": 398.22,
-      "unrealized_pnl": -1.78,
+      "current_price": 0.8965,
+      "current_value": 399.78,
+      "unrealized_pnl": -0.22,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -447,9 +460,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1085,
-      "current_value": 192.88,
-      "unrealized_pnl": -27.56,
+      "current_price": 0.0985,
+      "current_value": 175.11,
+      "unrealized_pnl": -45.33,
       "p_blended": 0.2441,
       "edge_net": 0.0,
       "rationale": "Pedro Sánchez steht trotz anhaltender politischer Krisen und starker Opposition weiterhin im Amt und kämpft aktiv um seine politische Zukunft."
@@ -470,6 +483,67 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 49,
+      "ts": "2026-11-26T16:01:52.449706+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8950",
+      "p_blind": "0.4000",
+      "p_blended": "0.7728",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves YES if Alberto Núñez Feijóo formally becomes the next Prime Minister of Spain before the deadline.",
+        "base_rate": 0.45,
+        "bull_case": "Conservative leader Feijóo holds strong momentum following snap elections and potential coalition formations.",
+        "bear_case": "Difficulty in securing a parliamentary majority and rival alliances could block his path to the premiership.",
+        "summary_de": "Obwohl Alberto Núñez Feijóo gute Chancen nach den Wahlen hat, bleibt unklar, ob er eine stabile parlamentarische Mehrheit für das Amt des Ministerpräsidenten bilden kann.",
+        "news_used": [
+          "Spanish elections: What you need to know and what's at stake"
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "ts": "2026-11-26T16:01:47.050762+00:00",
+      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+      "question": "Will Puma Shen win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.3885",
+      "p_blind": "0.3500",
+      "p_blended": "0.3704",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0096",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official winner of the Taipei Mayor election ending by November 29, 2026.",
+        "base_rate": 0.4,
+        "bull_case": "Puma Shen has strong mobilisation and high visibility within the DPP camp, engaging voters heavily on election eve despite permit controversies.",
+        "bear_case": "Incumbent Mayor Chiang Wan-an and administrative advantages create a tough environment, compounded by recent last-minute rally cancellations and permit disputes.",
+        "summary_de": "Puma Shen steht vor einer harten Hürde im Rennen um das Amt des Bürgermeisters von Taipei, verschärft durch kurzfristige Kundgebungsausfälle kurz vor der Wahl.",
+        "news_used": [
+          "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报",
+          "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "DPP suspects foul play over Taipei election rally venues - Taiwan News"
+        ]
+      }
+    },
     {
       "id": 47,
       "ts": "2026-11-26T15:56:27.319554+00:00",
@@ -1197,70 +1271,6 @@
           "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
         ]
       }
-    },
-    {
-      "id": 24,
-      "ts": "2026-11-26T10:11:31.279162+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9450",
-      "p_blind": "0.3500",
-      "p_blended": "0.7878",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.1-flash-lite",
-        "resolution_note": "The definition of 'ceasefire' is subjective and prone to conflicting reports of minor violations versus formal collapse.",
-        "base_rate": 0.45,
-        "bull_case": "Diplomatic pressure and the current lack of large-scale direct state-on-state strikes suggest the status quo may hold for the final four days of November.",
-        "bear_case": "Reports of ongoing violations and regional instability, combined with aggressive rhetoric regarding military funding, indicate the ceasefire is fragile and likely to be declared void.",
-        "summary_de": "Aufgrund anhaltender Berichte über Verstöße und einer instabilen Sicherheitslage ist die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis zum 30. November als gering einzustufen.",
-        "news_used": [
-          "Trump Says US Iran War Funded Through End of January - houseofsaud.com",
-          "The rapidly shifting geopolitical landscape across the Middle East. - TV7 Israel News",
-          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
-          "Polymarket Odds: Taipei Mayor, Tesla-SpaceX, Super Bowl - RG.org"
-        ]
-      }
-    },
-    {
-      "id": 23,
-      "ts": "2026-11-26T10:10:02.936431+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9450",
-      "p_blind": "0.6500",
-      "p_blended": "0.8887",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if the Israel-Iran ceasefire continues through November 30, 2026. Given the current date is Nov 26, only a few days remain.",
-        "base_rate": 0.7,
-        "bull_case": "Ceasefire agreements typically hold for a few remaining days once established unless a massive escalation occurs.",
-        "bear_case": "Fragile regional dynamics and continuous low-level violations or sudden escalations can collapse the ceasefire at any moment.",
-        "summary_de": "Da der Waffenstillstand zwischen Israel und dem Iran nur noch wenige Tage bis zum Monatsende halten muss und keine akuten Großkonflikte gemeldet wurden, ist ein Fortbestand am wahrscheinlichsten.",
-        "news_used": [
-          "The rapidly shifting geopolitical landscape across the Middle East. - TV7 Israel News",
-          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
-          "Polymarket Odds: Taipei Mayor, Tesla-SpaceX, Super Bowl - RG.org",
-          "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1386,6 +1396,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 46,
+      "ts": "2026-11-26T16:01:52.452447+00:00",
+      "dry_run": 0,
+      "markets_scanned": 386,
+      "candidates_found": 6,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 49.29,
+      "errors": []
+    },
     {
       "id": 45,
       "ts": "2026-11-26T15:56:27.323079+00:00",
@@ -1614,18 +1636,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 44.47,
-      "errors": []
-    },
-    {
-      "id": 26,
-      "ts": "2026-11-26T13:41:19.044762+00:00",
-      "dry_run": 0,
-      "markets_scanned": 384,
-      "candidates_found": 5,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 38.89,
       "errors": []
     }
   ]
