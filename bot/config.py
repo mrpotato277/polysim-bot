@@ -53,14 +53,14 @@ class BotConfig:
     carry_max_horizon_days: int = 15
     min_volume_usd: Decimal = Decimal("15000")
     max_spread: Decimal = Decimal("0.04")
-    max_markets_scan: int = 250
-    max_candidates_for_books: int = 40
-    max_forecasts_per_run: int = 5
-    max_new_buys_per_run: int = 1
+    max_markets_scan: int = 1000
+    max_candidates_for_books: int = 120
+    max_forecasts_per_run: int = 8
+    max_new_buys_per_run: int = 2
     stale_order_minutes: int = 90
 
     # Rate Limiting
-    min_request_spacing_sec: float = 0.55
+    min_request_spacing_sec: float = 0.05
 
     # Paths
     db_path: Path = PROJECT_ROOT / "data" / "state.db"

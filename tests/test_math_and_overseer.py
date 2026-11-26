@@ -90,7 +90,7 @@ def _make_proposal(
 
 def test_overseer_quarter_kelly_and_caps() -> None:
     cfg = BotConfig(polysim_api_key="x", gemini_api_key="y")
-    assert cfg.max_new_buys_per_run == 1
+    assert cfg.max_new_buys_per_run == 2
     assert cfg.kelly_fraction == Decimal("0.15")
     assert cfg.circuit_breaker_24h_dd == Decimal("-0.05")
     ov = Overseer(cfg)
