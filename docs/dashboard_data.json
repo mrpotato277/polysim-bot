@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T21:36:17.626995+00:00",
+  "generated_at": "2026-11-26T21:41:17.145494+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9910.72,
-    "reconciled_equity_usd": 9214.71,
-    "equity_discrepancy_usd": 696.01,
+    "equity_usd": 9922.68,
+    "reconciled_equity_usd": 9225.78,
+    "equity_discrepancy_usd": 696.9,
     "cash_usd": 8091.18,
-    "positions_value_usd": 1123.53,
-    "deployed_pct": 11.34,
-    "total_pnl_usd": -89.28,
-    "total_pnl_pct": -0.89,
-    "unrealized_pnl_usd": -75.08,
+    "positions_value_usd": 1134.6,
+    "deployed_pct": 11.43,
+    "total_pnl_usd": -77.32,
+    "total_pnl_pct": -0.77,
+    "unrealized_pnl_usd": -64.01,
     "total_trades": 51,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 109,
+    "total_forecasts": 111,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 873.82,
-    "crypto": 249.71
+    "politics": 879.15,
+    "crypto": 255.45
   },
   "equity_curve": [
     {
@@ -898,6 +898,13 @@
       "cash": 8091.18,
       "deployed_pct": 11.34,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T21:41:16.862199+00:00",
+      "equity": 9922.68,
+      "cash": 8091.18,
+      "deployed_pct": 11.43,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -908,13 +915,13 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.094,
-      "current_value": 167.11,
-      "unrealized_pnl": -53.33,
-      "p_yes": 0.1713,
-      "p_blended": 0.1713,
+      "current_price": 0.097,
+      "current_value": 172.44,
+      "unrealized_pnl": -48.0,
+      "p_yes": 0.319,
+      "p_blended": 0.319,
       "edge_net": 0.0,
-      "rationale": "Pedro Sánchez bleibt ein zentraler Akteur in der spanischen Politik, jedoch besteht angesichts politischer Veränderungen Unsicherheit über die nächste Regierungsbildung."
+      "rationale": "Pedro Sánchez bleibt der gegenwärtige Ministerpräsident und verfügt über starke institutionelle Unterstützung, wodurch ein Verbleib im Amt am wahrscheinlichsten ist."
     },
     {
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -923,9 +930,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.435,
-      "current_value": 249.71,
-      "unrealized_pnl": -43.05,
+      "current_price": 0.445,
+      "current_value": 255.45,
+      "unrealized_pnl": -37.31,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -948,6 +955,76 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 111,
+      "ts": "2026-11-26T21:41:16.860778+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.9050",
+      "p_blind": "0.4000",
+      "p_blended": "0.7345",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain by the deadline.",
+        "base_rate": 0.35,
+        "bull_case": "Polling and recent snap election developments show strong competitiveness for the Partido Popular under Feijóo against Pedro Sánchez.",
+        "bear_case": "Sánchez's coalition building remains resilient, and Feijóo still faces high hurdles to secure a parliamentary majority before the November 30 deadline.",
+        "summary_de": "Obwohl die PP unter Feijóo in Umfragen gut abschneidet, bleibt eine Regierungsüberbildung bis Ende November angesichts der Koalitionsdynamik unwahrscheinlich.",
+        "news_used": [
+          "Spain Elections - WV News",
+          "Spain Elections - The Batesville Daily Guard",
+          "Spain Elections - Goshen News",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times"
+        ]
+      }
+    },
+    {
+      "id": 110,
+      "ts": "2026-11-26T21:41:15.488363+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.0970",
+      "p_blind": "0.8200",
+      "p_blended": "0.3190",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The market resolves based on who becomes the next Prime Minister of Spain following current political developments.",
+        "base_rate": 0.7,
+        "bull_case": "Pedro Sánchez remains the leader of the ruling PSOE and currently holds power, maintaining strong institutional positioning.",
+        "bear_case": "Ongoing political volatility and opposition pressure could lead to unexpected coalition breakdowns or early succession scenarios.",
+        "summary_de": "Pedro Sánchez bleibt der gegenwärtige Ministerpräsident und verfügt über starke institutionelle Unterstützung, wodurch ein Verbleib im Amt am wahrscheinlichsten ist.",
+        "news_used": [
+          "Spain Elections - Goshen News",
+          "Spain Elections - The Batesville Daily Guard",
+          "Spain Elections - WV News",
+          "Spain Elections - Daily News-Record",
+          "Spain Elections - chronicleonline.com",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
+        ]
+      }
+    },
     {
       "id": 109,
       "ts": "2026-11-26T21:31:42.308578+00:00",
@@ -1035,7 +1112,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.466030+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.506133+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional succession and investiture rules.",
@@ -1105,7 +1182,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.466030+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.506133+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming whether Alberto Núñez Feijóo formally takes office as the next Prime Minister before the deadline of November 30, 2026, amid ongoing snap election developments.",
@@ -1140,7 +1217,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.466030+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.506133+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing political context and snap elections.",
@@ -1245,7 +1322,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.466030+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.506133+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following current election dynamics.",
@@ -1315,7 +1392,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.674216+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.096151+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1450,7 +1527,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.466030+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.506133+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, und läuft bis Ende November 2026 ab.",
@@ -1520,7 +1597,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.045735+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.309331+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds within the specified date range.",
@@ -1549,7 +1626,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.466030+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.506133+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain by the deadline.",
@@ -1584,7 +1661,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:35:39.501063+00:00",
+      "last_checked_ts": "2026-11-26T21:40:44.205947+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28.11.2026 statt; die Bedingungen sind klar definiert.",
@@ -1654,7 +1731,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.466030+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.506133+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain before the deadline.",
@@ -1724,7 +1801,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.856552+00:00",
+      "last_checked_ts": "2026-11-26T21:40:43.196765+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official final election results and vote counts for the 2026 Taipei Mayoral Election margin.",
@@ -1739,77 +1816,6 @@
           "Civil defense innovator, cognitive warfare expert, in race to be mayor of Taiwan’s capital - Washington Times",
           "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报",
           "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报"
-        ]
-      }
-    },
-    {
-      "id": 86,
-      "ts": "2026-11-26T19:21:10.201425+00:00",
-      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
-      "question": "Will Bitcoin dip to $55,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1085",
-      "p_blind": "0.1500",
-      "p_blended": "0.1228",
-      "confidence": "0.7000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:01.238527+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Bitcoin will dip to $55,000 in November, resolving based on standard spot exchange data before the December deadline.",
-        "base_rate": 0.2,
-        "bull_case": "Recent news and heavy capital outflow reports indicate Bitcoin is nearing the $55,000 mark amidst market unwinding and thin holiday liquidity, leaving room for a sudden flush before the end of November.",
-        "bear_case": "Bitcoin has recently bounced above $61,000 and is currently trading around $60,512, requiring a swift ~9.1% drop within just a few days with only minor downward momentum remaining.",
-        "summary_de": "Da Bitcoin aktuell über 60.000 US-Dollar gehandelt wird und sich nach einer Erholung stabilisiert hat, ist ein rapider Absturz auf 55.000 US-Dollar in den verbleibenden Tagen des Novembers eher unwahrscheinlich.",
-        "news_used": [
-          "Bitfinex Sees Record $4.94B BTC Fund Exodus in November as Bitcoin Nears $55,000 - CryptoDaily",
-          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
-          "Ed Zitron says the AI trade peaked at Anthropic's IPO — and Bitcoin's slide to $55,000 is riding the same unwind - BigGo Finance",
-          "Bitcoin Stages Relief Rally, Bounces Above $61,000 as Investors Weigh Further Downside Risks - Tekedia",
-          "Talos warns of thin Thanksgiving liquidity as Bitcoin eyes $61K - TradingView",
-          "Bitcoin Price Prediction: Wait for Another Shot at $55K BTC or Enter AlphaPepe Under 4 Cents Before Launch? - openPR.com"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $60,512.30 (24h range: $59,719.80 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $55,000.00: -9.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
-      }
-    },
-    {
-      "id": 85,
-      "ts": "2026-11-26T19:18:16.234514+00:00",
-      "market_id": "0xf91a7667289b63e0c9c926017529e2bccaadc3da2d82075612420c43d36fbb08",
-      "question": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.1045",
-      "p_blind": "0.1800",
-      "p_blended": "0.1354",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T21:31:00.856552+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official final election margin announced by the Central Election Commission for the 2026 Taipei Mayoral Election.",
-        "base_rate": 0.25,
-        "bull_case": "Puma Shen leads active campaign events with strong digital engagement (e.g., livestreams with Tsai Ing-wen) and high national profile in civil defense.",
-        "bear_case": "Taipei is historically a pan-Blue stronghold, making an 8%+ landslide victory for a DPP candidate extremely difficult to achieve against opposition consolidation.",
-        "summary_de": "Taipei ist traditionell eine Hochburg der Opposition, weshalb ein Erdrutschsieg mit mehr als acht Prozent Vorsprung für Puma Shen historisch und demografisch unwahrscheinlich bleibt.",
-        "news_used": [
-          "2026 Elections: Puma Shen moves event online after traffic issues - Taipei Times",
-          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
-          "Civil defense innovator, cognitive warfare expert, in race to be mayor of Taiwan’s capital - Washington Times",
-          "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报",
-          "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报",
-          "AI fakes are trying to influence Taiwan’s key elections. Taipei suspects China - The Independent"
         ]
       }
     }
@@ -2078,6 +2084,18 @@
   ],
   "recent_runs": [
     {
+      "id": 108,
+      "ts": "2026-11-26T21:41:16.862748+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1134,
+      "candidates_found": 17,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 34.78,
+      "errors": []
+    },
+    {
       "id": 107,
       "ts": "2026-11-26T21:36:16.952122+00:00",
       "dry_run": 0,
@@ -2303,18 +2321,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 45.6,
-      "errors": []
-    },
-    {
-      "id": 88,
-      "ts": "2026-11-26T19:56:08.976887+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1184,
-      "candidates_found": 20,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 40.89,
       "errors": []
     }
   ]
