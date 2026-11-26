@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T23:21:20.576578+00:00",
+  "generated_at": "2026-11-26T23:26:26.704401+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9999.49,
-    "reconciled_equity_usd": 8681.05,
+    "equity_usd": 9986.17,
+    "reconciled_equity_usd": 8667.73,
     "equity_discrepancy_usd": 1318.44,
     "cash_usd": 7279.31,
-    "positions_value_usd": 1401.74,
-    "deployed_pct": 14.02,
-    "total_pnl_usd": -0.51,
-    "total_pnl_pct": -0.01,
-    "unrealized_pnl_usd": 13.69,
+    "positions_value_usd": 1388.42,
+    "deployed_pct": 13.9,
+    "total_pnl_usd": -13.83,
+    "total_pnl_pct": -0.14,
+    "unrealized_pnl_usd": 0.37,
     "total_trades": 65,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -28,11 +28,11 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 133,
+    "total_forecasts": 134,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 528.81,
+    "crypto": 515.49,
     "politics": 872.93
   },
   "equity_curve": [
@@ -1050,6 +1050,13 @@
       "cash": 7279.31,
       "deployed_pct": 14.02,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T23:26:26.281380+00:00",
+      "equity": 9986.17,
+      "cash": 7279.31,
+      "deployed_pct": 13.9,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1060,9 +1067,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.285,
-      "current_value": 215.96,
-      "unrealized_pnl": 26.52,
+      "current_price": 0.275,
+      "current_value": 208.38,
+      "unrealized_pnl": 18.94,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1090,9 +1097,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.545,
-      "current_value": 312.85,
-      "unrealized_pnl": 20.09,
+      "current_price": 0.535,
+      "current_value": 307.11,
+      "unrealized_pnl": 14.35,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -1116,6 +1123,39 @@
   ],
   "recent_forecasts": [
     {
+      "id": 134,
+      "ts": "2026-11-26T23:26:26.279534+00:00",
+      "market_id": "0x33b2636d05ee172f370049ccc84d185aedf23cc893f4c82e7997e13ecc29c704",
+      "question": "Iran full airspace closure by November 30, 2026?",
+      "category": "geopolitics",
+      "end_date": "2026-12-01T04:59:00+00:00",
+      "market_price": "0.0520",
+      "p_blind": "0.0800",
+      "p_blended": "0.0617",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
+        "base_rate": 0.05,
+        "bull_case": "Escalating regional military tensions and US warnings of Iranian attacks could precipitate a complete emergency closure of Iranian airspace before November 30.",
+        "bear_case": "Despite regional conflict and flight delays, full nationwide airspace closures are extremely rare events mostly reserved for active total war, and Iran has kept corridors partially open.",
+        "summary_de": "Trotz anhaltender regionaler Spannungen und Angriffswarnungen ist eine vollständige, landesweite Schließung des iranischen Luftraums bis Ende November ein extremes Ereignis mit geringer historischer Wahrscheinlichkeit.",
+        "news_used": [
+          "Is it safe to travel to Saudi Arabia? The latest advice, as the kingdom confirms another spate of attacks - Condé Nast Traveller Middle East",
+          "UAE flights status update: Latest cancellations and delays for November 25 as regional tensions escalate - Gulf News",
+          "Etihad flight from Abu Dhabi to Tel Aviv turns back, apparently due to Iran attacks in Gulf - The Times of Israel",
+          "US warns Americans in the Middle East of Iranian, Houthi attack threats - Gulf News"
+        ]
+      }
+    },
+    {
       "id": 133,
       "ts": "2026-11-26T23:11:37.551934+00:00",
       "market_id": "0x9b1a03b41a1a68c209e9c3caf3d8af3f878420d6dbe8cb8afffd66049e73b114",
@@ -1132,7 +1172,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:43.928063+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.304701+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -1167,7 +1207,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:43.695565+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.147922+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
@@ -1198,7 +1238,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:10:46.800527+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.001437+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -1233,7 +1273,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:44.607140+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.516322+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -1295,7 +1335,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:45.597007+00:00",
+      "last_checked_ts": "2026-11-26T23:25:32.262933+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -1325,7 +1365,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:45.389471+00:00",
+      "last_checked_ts": "2026-11-26T23:25:32.123311+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -1356,7 +1396,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:46.059603+00:00",
+      "last_checked_ts": "2026-11-26T23:25:32.576992+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -1385,7 +1425,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:45.794537+00:00",
+      "last_checked_ts": "2026-11-26T23:25:32.428512+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1414,7 +1454,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:45.597007+00:00",
+      "last_checked_ts": "2026-11-26T23:25:32.262933+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -1442,7 +1482,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:45.389471+00:00",
+      "last_checked_ts": "2026-11-26T23:25:32.123311+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard spot price tracking for Bitcoin reaching a high watermark during November 2026.",
@@ -1471,7 +1511,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:45.235606+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.955850+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the next White House Press Secretary is officially announced by November 30, 2026.",
@@ -1506,7 +1546,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:45.018364+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.812197+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution checks if Bitcoin hits or dips to $58,000 at any point during November 23-29, 2026 according to standard market feeds.",
@@ -1538,7 +1578,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:15:44.860186+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.666182+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Tiefstwerts von Ethereum während des angegebenen Datumsfensters.",
@@ -1569,7 +1609,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:10:46.800527+00:00",
+      "last_checked_ts": "2026-11-26T23:25:31.001437+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands und dessen allfällige formelle Verletzungen im Laufe des Dezember müssen exakt den offiziellen Kriterien entsprechen.",
@@ -1674,7 +1714,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
+      "last_checked_ts": "2026-11-26T23:25:30.824141+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, focusing on the current political cycle and upcoming leadership transition.",
@@ -1779,7 +1819,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
+      "last_checked_ts": "2026-11-26T23:25:30.824141+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag klärt, ob Pedro Sánchez der nächste Premierminister Spaniens sein wird, wobei die aktuellen Nachrichten auf Wahlen hindeuten.",
@@ -1884,7 +1924,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
+      "last_checked_ts": "2026-11-26T23:25:30.824141+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on who becomes the next Prime Minister of Spain following current political developments.",
@@ -1896,41 +1936,6 @@
           "Spain Elections - Goshen News",
           "Spain Elections - The Batesville Daily Guard",
           "Spain Elections - WV News",
-          "Spain Elections - Daily News-Record",
-          "Spain Elections - chronicleonline.com",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 109,
-      "ts": "2026-11-26T21:31:42.308578+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.0940",
-      "p_blind": "0.5500",
-      "p_blended": "0.1713",
-      "confidence": "0.4000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:10:46.662389+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain.",
-        "base_rate": 0.5,
-        "bull_case": "Pedro Sánchez remains the leader of the PSOE and a dominant figure in Spanish politics with viable coalition paths.",
-        "bear_case": "Political shifts, opposition consolidation, or unexpected coalitions could elevate an alternative candidate to the premiership.",
-        "summary_de": "Pedro Sánchez bleibt ein zentraler Akteur in der spanischen Politik, jedoch besteht angesichts politischer Veränderungen Unsicherheit über die nächste Regierungsbildung.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spain Elections - Goshen News",
           "Spain Elections - Daily News-Record",
           "Spain Elections - chronicleonline.com",
           "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
@@ -2282,6 +2287,18 @@
   ],
   "recent_runs": [
     {
+      "id": 128,
+      "ts": "2026-11-26T23:26:26.282062+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1130,
+      "candidates_found": 30,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 57.33,
+      "errors": []
+    },
+    {
       "id": 127,
       "ts": "2026-11-26T23:21:20.187689+00:00",
       "dry_run": 0,
@@ -2507,18 +2524,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 35.56,
-      "errors": []
-    },
-    {
-      "id": 108,
-      "ts": "2026-11-26T21:41:16.862748+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1134,
-      "candidates_found": 17,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 34.78,
       "errors": []
     }
   ]
