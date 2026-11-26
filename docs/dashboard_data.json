@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T18:15:58.493272+00:00",
+  "generated_at": "2026-11-26T18:21:01.497427+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,13 +11,13 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9958.98,
+    "equity_usd": 9960.54,
     "cash_usd": 8998.81,
-    "positions_value_usd": 960.17,
-    "deployed_pct": 9.64,
-    "total_pnl_usd": -41.02,
-    "total_pnl_pct": -0.41,
-    "unrealized_pnl_usd": -40.0,
+    "positions_value_usd": 961.73,
+    "deployed_pct": 9.66,
+    "total_pnl_usd": -39.46,
+    "total_pnl_pct": -0.39,
+    "unrealized_pnl_usd": -38.44,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.44,
@@ -27,8 +27,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 394.65,
-    "politics": 565.52
+    "crypto": 395.32,
+    "politics": 566.41
   },
   "equity_curve": [
     {
@@ -637,6 +637,13 @@
       "cash": 8998.81,
       "deployed_pct": 9.64,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T18:21:01.084337+00:00",
+      "equity": 9960.54,
+      "cash": 8998.81,
+      "deployed_pct": 9.66,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -647,9 +654,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.885,
-      "current_value": 394.65,
-      "unrealized_pnl": -5.35,
+      "current_price": 0.8865,
+      "current_value": 395.32,
+      "unrealized_pnl": -4.68,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -661,9 +668,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0975,
-      "current_value": 173.33,
-      "unrealized_pnl": -47.11,
+      "current_price": 0.098,
+      "current_value": 174.22,
+      "unrealized_pnl": -46.22,
       "p_blended": 0.2008,
       "edge_net": 0.0,
       "rationale": "Die aktuellen Umfragen zeigen ein extrem knappes Rennen bei den spanischen Neuwahlen, weshalb Pedro Sánchez' Verbleib an der Regierung gefährdet ist."
@@ -1622,6 +1629,18 @@
   ],
   "recent_runs": [
     {
+      "id": 74,
+      "ts": "2026-11-26T18:21:01.109905+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1148,
+      "candidates_found": 5,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 18.87,
+      "errors": []
+    },
+    {
       "id": 73,
       "ts": "2026-11-26T18:15:58.218890+00:00",
       "dry_run": 0,
@@ -1847,18 +1866,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 19.52,
-      "errors": []
-    },
-    {
-      "id": 54,
-      "ts": "2026-11-26T16:40:56.609332+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1237,
-      "candidates_found": 5,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 15.68,
       "errors": []
     }
   ]
