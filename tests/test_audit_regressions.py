@@ -566,3 +566,40 @@ def test_overseer_thesis_break_threshold_8pp() -> None:
     )
     assert real_exit is not None
     assert real_exit.strategy_type == "exit_thesis_break"
+
+
+def test_annotate_news_does_not_mark_seen_until_committed(tmp_path: Any) -> None:
+    arts_in = [
+        {"title": "Fed signals pause", "link": "https://example.com/fed-1", "published_at": ""}
+    ]
+    with StateStore(tmp_path / "news.db") as state:
+        arts1, cnt1 = state.annotate_news("mkt-x", arts_in)
+        arts2, cnt2 = state.annotate_news("mkt-x", arts_in)
+        assert cnt1 == 1 and arts1[0]["is_new"] is True
+        assert cnt2 == 1 and arts2[0]["is_new"] is True
+
+        inserted = state.mark_news_seen("mkt-x", arts1)
+        assert inserted == 1
+
+        arts3, cnt3 = state.annotate_news("mkt-x", arts_in)
+        assert cnt3 == 0 and arts3[0]["is_new"] is False
+
+
+def test_overseer_event_group_cap_prevents_correlated_double_stack() -> None:
+    from tests.test_math_and_overseer import _make_proposal
+
+    cfg = BotConfig(polysim_api_key="x", gemini_api_key="y")
+    ov = Overseer(cfg)
+    dec = ov.evaluate_buy(
+        _make_proposal(market_id="mkt-puma", price="0.40", p_true="0.60", edge="0.20"),
+        equity_usd=Decimal("10000"),
+        cash_usd=Decimal("9000"),
+        total_exposure_usd=Decimal("700"),
+        market_exposure_usd=Decimal("0"),
+        category_exposure_usd=Decimal("700"),
+        has_open_order_on_market=False,
+        circuit_breaker_active=False,
+        event_group_exposure_usd=Decimal("700"),
+    )
+    assert not dec.approved
+    assert "event_rem" in dec.reason

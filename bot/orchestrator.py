@@ -251,6 +251,13 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
         total_exp, by_market, by_category = overseer.compute_portfolio_exposure(
             positions, open_orders, market_categories
         )
+        by_event_group: dict[str, Decimal] = {}
+        cand_eg_by_mid = {c.condition_id: c.event_group_id for c in candidates if c.event_group_id}
+        for mid_exp, val_exp in by_market.items():
+            eg_id = cand_eg_by_mid.get(mid_exp)
+            if eg_id:
+                by_event_group[eg_id] = by_event_group.get(eg_id, Decimal("0")) + val_exp
+
         deployed_pct = (total_exp / equity_usd * Decimal("100")) if equity_usd > 0 else Decimal("0")
         synced_total_exp = total_exp
         synced_cash_usd = cash_usd
@@ -275,25 +282,51 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
             str(o.get("market_id") or o.get("market") or "") for o in open_orders
         }
 
-        # 5. Fetch & deduplicate news for top non-structural candidates (0 LLM tokens)
+        # 5. Filter out capped/cooldown markets, then annotate news read-only for top 25 candidates
+        now = datetime.now(timezone.utc)
+        single_cap_95 = equity_usd * cfg.max_single_market_pct * Decimal("0.95")
+        eligible_candidates: list[MarketCandidate] = []
         enriched_news: dict[str, tuple[list[dict[str, Any]], int]] = {}
-        for cand in candidates[:15]:
+        for cand in candidates[:25]:
+            if cand.condition_id in open_order_markets:
+                continue
+            if by_market.get(cand.condition_id, Decimal("0")) >= single_cap_95:
+                continue
+            if cand.event_group_id and by_event_group.get(cand.event_group_id, Decimal("0")) >= single_cap_95:
+                continue
+
+            latest_fc = state.get_latest_forecast(cand.condition_id)
+            if latest_fc is not None:
+                is_rejected = (
+                    str(latest_fc.get("strategy_type") or "") == "carry_rejected"
+                    or str(latest_fc.get("resolution_risk") or "") == "high"
+                )
+                if is_rejected:
+                    try:
+                        rej_dt = datetime.fromisoformat(str(latest_fc["ts"]).replace("Z", "+00:00"))
+                        if rej_dt.tzinfo is None:
+                            rej_dt = rej_dt.replace(tzinfo=timezone.utc)
+                        if (now - rej_dt) < timedelta(hours=12):
+                            continue
+                    except ValueError:
+                        pass
+
+            eligible_candidates.append(cand)
             if cand.strategy_type == "structural_arb":
                 enriched_news[cand.condition_id] = ([], 0)
                 continue
             q_str = build_news_query(cand.question, cand.event_title)
             raw_arts = fetch_market_news(q_str, category=cand.category, max_age_hours=48, max_items=10)
-            arts, new_cnt = state.filter_and_record_news(cand.condition_id, raw_arts)
+            arts, new_cnt = state.annotate_news(cand.condition_id, raw_arts)
             enriched_news[cand.condition_id] = (arts, new_cnt)
 
         # Prioritize: structural_arb > candidates with new unseen news > high-score carry/news_lag
-        now = datetime.now(timezone.utc)
         def _priority_key(c: MarketCandidate) -> tuple[int, int, float]:
             _, n_new = enriched_news.get(c.condition_id, ([], 0))
             is_struct = 1 if c.strategy_type == "structural_arb" else 0
             return (is_struct, 1 if n_new > 0 else 0, c.score)
 
-        ranked = sorted(candidates[:15], key=_priority_key, reverse=True)
+        ranked = sorted(eligible_candidates, key=_priority_key, reverse=True)
 
         # 6. Forecast & evaluate trades
         new_buys_executed = 0
@@ -367,6 +400,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                         market_context=mkt_ctx,
                     )
                     llm_calls += fc.api_attempts
+                    state.mark_news_seen(cand.condition_id, arts)
                 except Exception as exc:
                     err = f"Forecaster error for {cand.condition_id}: {exc}"
                     log.warning(err)
@@ -524,6 +558,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                 category_exposure_usd=by_category.get(cand.category, Decimal("0")),
                 has_open_order_on_market=(cand.condition_id in open_order_markets),
                 circuit_breaker_active=circuit_breaker,
+                event_group_exposure_usd=by_event_group.get(cand.event_group_id, Decimal("0")),
             )
             if not decision.approved or decision.order is None:
                 log.info("Overseer %s -> %s", cand.question[:45], decision.reason)
@@ -541,6 +576,8 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                 total_exp += notional
                 by_market[cand.condition_id] = by_market.get(cand.condition_id, Decimal("0")) + notional
                 by_category[cand.category] = by_category.get(cand.category, Decimal("0")) + notional
+                if cand.event_group_id:
+                    by_event_group[cand.event_group_id] = by_event_group.get(cand.event_group_id, Decimal("0")) + notional
                 open_order_markets.add(cand.condition_id)
 
         # 9. Export dashboard JSON & record run log (skip rewriting on idle 5-min checks)

@@ -126,12 +126,11 @@ class StateStore:
 
     # ── News deduplication ─────────────────────────────────────────────
 
-    def filter_and_record_news(
+    def annotate_news(
         self, market_id: str, articles: list[dict[str, Any]]
     ) -> tuple[list[dict[str, Any]], int]:
-        """Return all articles annotated with is_new, recording unseen ones. Returns (articles, new_count)."""
+        """Read-only check: annotate articles with is_new without writing to seen_news."""
         cur = self.conn.cursor()
-        now_iso = utc_now_iso()
         new_count = 0
         annotated: list[dict[str, Any]] = []
         for art in articles:
@@ -141,15 +140,36 @@ class StateStore:
             is_new = row is None
             if is_new:
                 new_count += 1
-                cur.execute(
-                    "INSERT OR IGNORE INTO seen_news (url_hash, market_id, title, published_at, first_seen_at) "
-                    "VALUES (?, ?, ?, ?, ?)",
-                    (h, market_id, str(art.get("title", ""))[:300], art.get("published_at"), now_iso),
-                )
             item = dict(art)
             item["is_new"] = is_new
             annotated.append(item)
-        self.conn.commit()
+        return annotated, new_count
+
+    def mark_news_seen(self, market_id: str, articles: list[dict[str, Any]]) -> int:
+        """Persist articles into seen_news after evaluation. Returns inserted row count."""
+        cur = self.conn.cursor()
+        now_iso = utc_now_iso()
+        inserted = 0
+        for art in articles:
+            key_basis = art.get("link") or art.get("title") or ""
+            h = hash_text(f"{market_id}::{key_basis}")
+            cur.execute(
+                "INSERT OR IGNORE INTO seen_news (url_hash, market_id, title, published_at, first_seen_at) "
+                "VALUES (?, ?, ?, ?, ?)",
+                (h, market_id, str(art.get("title", ""))[:300], art.get("published_at"), now_iso),
+            )
+            inserted += int(cur.rowcount > 0)
+        if inserted:
+            self.conn.commit()
+        return inserted
+
+    def filter_and_record_news(
+        self, market_id: str, articles: list[dict[str, Any]]
+    ) -> tuple[list[dict[str, Any]], int]:
+        """Return all articles annotated with is_new and record unseen ones."""
+        annotated, new_count = self.annotate_news(market_id, articles)
+        if new_count > 0:
+            self.mark_news_seen(market_id, annotated)
         return annotated, new_count
 
     # ── Forecasts & Brier calibration ──────────────────────────────────

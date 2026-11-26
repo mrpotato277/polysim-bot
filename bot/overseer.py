@@ -147,6 +147,7 @@ class Overseer:
         category_exposure_usd: Decimal,
         has_open_order_on_market: bool,
         circuit_breaker_active: bool,
+        event_group_exposure_usd: Decimal = Decimal("0"),
     ) -> VetoDecision:
         if circuit_breaker_active:
             dd_pct = self.cfg.circuit_breaker_24h_dd * Decimal("100")
@@ -191,16 +192,18 @@ class Overseer:
         kelly_stake_usd = equity_usd * raw_fraction
 
         single_cap_rem = (equity_usd * self.cfg.max_single_market_pct) - market_exposure_usd
+        event_group_cap_rem = (equity_usd * self.cfg.max_single_market_pct) - event_group_exposure_usd
         cat_cap_rem = (equity_usd * self.cfg.max_category_exposure_pct) - category_exposure_usd
         total_cap_rem = (equity_usd * self.cfg.max_total_exposure_pct) - total_exposure_usd
         cash_rem = cash_usd - self.cfg.cash_buffer_usd
 
-        hard_cap_usd = min(single_cap_rem, cat_cap_rem, total_cap_rem, cash_rem)
+        hard_cap_usd = min(single_cap_rem, event_group_cap_rem, cat_cap_rem, total_cap_rem, cash_rem)
         if hard_cap_usd <= Decimal("0"):
             return VetoDecision(
                 False,
                 f"VETO: Exposure/cash cap reached (single_rem={single_cap_rem:.2f}, "
-                f"cat_rem={cat_cap_rem:.2f}, total_rem={total_cap_rem:.2f}, cash_rem={cash_rem:.2f}).",
+                f"event_rem={event_group_cap_rem:.2f}, cat_rem={cat_cap_rem:.2f}, "
+                f"total_rem={total_cap_rem:.2f}, cash_rem={cash_rem:.2f}).",
             )
 
         target_stake_usd = min(kelly_stake_usd, hard_cap_usd)
