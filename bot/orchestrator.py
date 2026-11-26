@@ -214,19 +214,8 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
             positions, open_orders, market_categories
         )
         deployed_pct = (total_exp / equity_usd * Decimal("100")) if equity_usd > 0 else Decimal("0")
-
-        state.record_equity_snapshot(
-            {
-                "cash_usd": f"{cash_usd:.2f}",
-                "positions_value_usd": f"{total_exp:.2f}",
-                "equity_usd": f"{equity_usd:.2f}",
-                "deployed_pct": f"{deployed_pct:.2f}",
-                "unrealized_pnl_usd": f"{unrealized_pnl:.2f}",
-                "realized_pnl_usd": f"{realized_pnl:.2f}",
-                "open_positions_count": len(positions),
-                "circuit_breaker_active": circuit_breaker,
-            }
-        )
+        synced_total_exp = total_exp
+        synced_cash_usd = cash_usd
 
         # 4. Re-evaluate open positions
         pos_llm, pos_att, pos_exec = _re_evaluate_positions(
@@ -484,30 +473,70 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                 by_category[cand.category] = by_category.get(cand.category, Decimal("0")) + notional
                 open_order_markets.add(cand.condition_id)
 
-        # 9. Export dashboard JSON & record run log
+        # 9. Export dashboard JSON & record run log (skip rewriting on idle 5-min checks)
         duration = round(time.monotonic() - t0, 2)
-        state.record_run(
-            {
-                "dry_run": cfg.dry_run,
-                "markets_scanned": total_scanned,
-                "candidates_found": len(candidates),
-                "llm_calls": llm_calls,
-                "trades_attempted": trades_attempted,
-                "trades_executed": trades_executed,
-                "errors": errors,
-                "duration_sec": duration,
-            }
+        snapshots = state.get_equity_snapshots(limit=500)
+        last_snap = snapshots[-1] if snapshots else None
+        now_snap = datetime.now(timezone.utc)
+        snap_stale = True
+        equity_changed = True
+        if last_snap is not None:
+            try:
+                last_dt = datetime.fromisoformat(str(last_snap["ts"]).replace("Z", "+00:00"))
+                if last_dt.tzinfo is None:
+                    last_dt = last_dt.replace(tzinfo=timezone.utc)
+                snap_stale = (now_snap - last_dt) >= timedelta(minutes=15)
+            except ValueError:
+                snap_stale = True
+            last_eq = to_decimal(last_snap.get("equity_usd"))
+            last_pos = int(last_snap.get("open_positions_count") or 0)
+            equity_changed = (last_eq != equity_usd.quantize(Decimal("0.01"))) or (last_pos != len(positions))
+
+        should_persist = (
+            llm_calls > 0
+            or trades_attempted > 0
+            or len(errors) > 0
+            or equity_changed
+            or snap_stale
         )
-        export_dashboard_data(
-            config=cfg,
-            client=client,
-            state=state,
-            balance=balance,
-            portfolio=portfolio,
-            positions=positions,
-            market_categories=market_categories,
-            circuit_breaker_active=circuit_breaker,
-        )
+
+        if should_persist:
+            state.record_equity_snapshot(
+                {
+                    "cash_usd": f"{synced_cash_usd:.2f}",
+                    "positions_value_usd": f"{synced_total_exp:.2f}",
+                    "equity_usd": f"{equity_usd:.2f}",
+                    "deployed_pct": f"{deployed_pct:.2f}",
+                    "unrealized_pnl_usd": f"{unrealized_pnl:.2f}",
+                    "realized_pnl_usd": f"{realized_pnl:.2f}",
+                    "open_positions_count": len(positions),
+                    "circuit_breaker_active": circuit_breaker,
+                }
+            )
+            state.record_run(
+                {
+                    "dry_run": cfg.dry_run,
+                    "markets_scanned": total_scanned,
+                    "candidates_found": len(candidates),
+                    "llm_calls": llm_calls,
+                    "trades_attempted": trades_attempted,
+                    "trades_executed": trades_executed,
+                    "errors": errors,
+                    "duration_sec": duration,
+                }
+            )
+            export_dashboard_data(
+                config=cfg,
+                client=client,
+                state=state,
+                balance=balance,
+                portfolio=portfolio,
+                positions=positions,
+                market_categories=market_categories,
+                circuit_breaker_active=circuit_breaker,
+            )
+        else:
+            log.info("Idle 5-min check (no new signals/changes); skipping commit-triggering dashboard rewrite.")
         log.info(
             "Cycle finished in %.2fs | scanned=%d candidates=%d llm=%d attempted=%d executed=%d",
             duration,
