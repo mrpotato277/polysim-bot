@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T15:21:20.008191+00:00",
+  "generated_at": "2026-11-26T15:26:16.927608+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,13 +11,13 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9988.22,
+    "equity_usd": 9988.67,
     "cash_usd": 9054.73,
-    "positions_value_usd": 933.05,
-    "deployed_pct": 9.34,
-    "total_pnl_usd": -11.78,
-    "total_pnl_pct": -0.12,
-    "unrealized_pnl_usd": -12.22,
+    "positions_value_usd": 933.94,
+    "deployed_pct": 9.35,
+    "total_pnl_usd": -11.33,
+    "total_pnl_pct": -0.11,
+    "unrealized_pnl_usd": -11.33,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.22,
@@ -27,8 +27,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 389.3,
-    "politics": 543.75
+    "crypto": 391.97,
+    "politics": 541.97
   },
   "equity_curve": [
     {
@@ -374,6 +374,13 @@
       "cash": 9054.73,
       "deployed_pct": 9.34,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T15:26:16.261543+00:00",
+      "equity": 9988.67,
+      "cash": 9054.73,
+      "deployed_pct": 9.35,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -384,9 +391,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.873,
-      "current_value": 389.3,
-      "unrealized_pnl": -10.7,
+      "current_price": 0.879,
+      "current_value": 391.97,
+      "unrealized_pnl": -8.03,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -398,9 +405,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1185,
-      "current_value": 210.66,
-      "unrealized_pnl": -9.78,
+      "current_price": 0.1175,
+      "current_value": 208.88,
+      "unrealized_pnl": -11.56,
       "p_blended": 0.2441,
       "edge_net": 0.0,
       "rationale": "Pedro Sánchez steht trotz anhaltender politischer Krisen und starker Opposition weiterhin im Amt und kämpft aktiv um seine politische Zukunft."
@@ -1338,6 +1345,18 @@
   ],
   "recent_runs": [
     {
+      "id": 39,
+      "ts": "2026-11-26T15:26:16.264074+00:00",
+      "dry_run": 0,
+      "markets_scanned": 386,
+      "candidates_found": 5,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.87,
+      "errors": []
+    },
+    {
       "id": 38,
       "ts": "2026-11-26T15:21:19.280367+00:00",
       "dry_run": 0,
@@ -1565,18 +1584,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 37.72,
-      "errors": []
-    },
-    {
-      "id": 19,
-      "ts": "2026-11-26T12:11:24.710010+00:00",
-      "dry_run": 0,
-      "markets_scanned": 497,
-      "candidates_found": 5,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 38.15,
       "errors": []
     }
   ]
