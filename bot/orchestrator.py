@@ -13,6 +13,7 @@ from bot.config import BotConfig
 from bot.dashboard import export_dashboard_data, resolve_true_starting_balance
 from bot.execution import ExecutionEngine
 from bot.forecaster import Superforecaster
+from bot.market_data import build_market_data_context
 from bot.math_utils import maker_buy_price, to_decimal
 from bot.news import build_news_query, fetch_market_news
 from bot.overseer import Overseer, TradeProposal, choose_entry_execution
@@ -103,12 +104,17 @@ def _re_evaluate_positions(
         if need_reforecast and question and llm_calls < cfg.max_forecasts_per_run:
             try:
                 mkt_yes_mid = met["mid"] if outcome.lower() == "yes" else (Decimal("1") - met["mid"])
+                try:
+                    mkt_ctx = build_market_data_context(question, cat)
+                except Exception:
+                    mkt_ctx = ""
                 fc = forecaster.forecast(
                     question=question,
                     description="",
                     end_date_iso="",
                     market_price_yes=mkt_yes_mid,
                     news_articles=news_articles,
+                    market_context=mkt_ctx,
                 )
                 llm_calls += 1
                 p_true_outcome = fc.p_blended if outcome.lower() == "yes" else (Decimal("1") - fc.p_blended)
@@ -312,12 +318,17 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                     desc = cand.event_title
 
                 try:
+                    try:
+                        mkt_ctx = build_market_data_context(cand.question, cand.category)
+                    except Exception:
+                        mkt_ctx = ""
                     fc = forecaster.forecast(
                         question=cand.question,
                         description=desc,
                         end_date_iso=cand.end_date.isoformat() if cand.end_date else "",
                         market_price_yes=cand.mid,
                         news_articles=arts,
+                        market_context=mkt_ctx,
                     )
                     llm_calls += 1
                 except Exception as exc:

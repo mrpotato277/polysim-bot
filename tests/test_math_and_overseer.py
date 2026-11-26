@@ -6,6 +6,7 @@ from decimal import Decimal
 
 import pytest
 
+import bot.market_data as market_data_mod
 import bot.news as news_mod
 from bot.config import BotConfig
 from bot.math_utils import bayesian_blend, best_bid_ask, calc_taker_fee, round_to_tick
@@ -299,3 +300,36 @@ def test_hybrid_breaking_taker_selection() -> None:
         assert mode3 == "maker_limit"
         assert price3 == Decimal("0.54")
         assert fee3 == 0
+
+
+def test_market_data_context_defensive_parsing_and_fallback(monkeypatch: pytest.MonkeyPatch) -> None:
+    # 1. Single vs multi USD threshold parsing
+    assert market_data_mod.extract_single_usd_threshold("Will Bitcoin dip to $55,000 in November?") == 55000.0
+    assert market_data_mod.extract_single_usd_threshold("Will Bitcoin hit $100k before Dec 31?") == 100000.0
+    assert market_data_mod.extract_single_usd_threshold("Will Bitcoin hit $100,000 before $80,000?") is None
+    assert market_data_mod.extract_single_usd_threshold("Will Bitcoin stay above $55,000 market close?") == 55000.0
+
+    # 2. Strict word-boundary protection ('whether'/'method' must NOT trigger ETH)
+    monkeypatch.setattr(market_data_mod, "_CRYPTO_CACHE", {"BTC": {"symbol": "BTC", "last": 90000.0, "low_24h": 88000.0, "high_24h": 92000.0, "source": "Kraken"}, "ETH": {"symbol": "ETH", "last": 3000.0, "low_24h": 2900.0, "high_24h": 3100.0, "source": "Kraken"}})
+    monkeypatch.setattr(market_data_mod, "_OHLC_VOL_CACHE", {"BTC": 0.62, "ETH": 0.70})
+    monkeypatch.setattr(market_data_mod, "_FRED_CACHE", {"DFF": ("2026-11-24", 4.58)})
+    monkeypatch.setattr(market_data_mod, "_YAHOO_CACHE", {})
+
+    assert market_data_mod.build_market_data_context("Whether the method works in politics?") == ""
+
+    # 3. Single-threshold Bitcoin question gets spot, 30d vol, distance, and fat-tail warning
+    btc_ctx = market_data_mod.build_market_data_context("Will Bitcoin dip to $55,000 in November?", "crypto")
+    assert "$90,000.00" in btc_ctx
+    assert "~62%" in btc_ctx
+    assert "Distance from live spot to $55,000.00: -38.9%" in btc_ctx
+    assert "fat tails" in btc_ctx
+
+    # 4. Multi-threshold Bitcoin question keeps spot + vol, omits distance calculation
+    multi_ctx = market_data_mod.build_market_data_context("Will Bitcoin hit $100,000 before $80,000?", "crypto")
+    assert "$90,000.00" in multi_ctx
+    assert "Distance from live spot" not in multi_ctx
+
+    # 5. Fed question injects FRED DFF rate
+    fed_ctx = market_data_mod.build_market_data_context("Will the Fed cut interest rates in December?", "economics")
+    assert "Effective Federal Funds Rate (FRED DFF): 4.58%" in fed_ctx
+    assert "2026-11-24" in fed_ctx

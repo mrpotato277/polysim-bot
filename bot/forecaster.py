@@ -59,6 +59,7 @@ class Superforecaster:
         end_date_iso: str,
         market_price_yes: Decimal,
         news_articles: list[dict[str, Any]],
+        market_context: str = "",
     ) -> ForecastResult:
         """Run blind forecasting prompt (NO market price shown to LLM), then blend in Python."""
         now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -71,6 +72,11 @@ class Superforecaster:
             snippet = art.get("snippet", "")
             news_lines.append(f"{idx}. {tag} ({age}h ago, {src}) {title} -- {snippet[:140]}")
         news_block = "\n".join(news_lines) if news_lines else "No recent news articles found in the last 48 hours."
+        market_data_section = (
+            f"\nLive Market Data (objective spot reference — remember crypto/markets have fat tails and Polymarket resolution sources can differ by ~0.1-0.2%):\n{market_context.strip()}\n"
+            if market_context.strip()
+            else ""
+        )
 
         prompt = f"""You are a disciplined quantitative superforecaster evaluating a binary Polymarket contract.
 Current UTC time: {now_utc}
@@ -81,7 +87,7 @@ Resolution context / rules: {description[:900] if description else "Standard Pol
 
 Recent News Headlines (last 48h):
 {news_block}
-
+{market_data_section}
 Instructions:
 1. Check for Polymarket resolution traps (e.g., 'announced' vs 'enacted', exact deadline cutoff, ambiguous wording). Rate resolution_trap_risk as "low", "medium", or "high".
 2. Anchor on an outside-view historical base_rate (0.01 to 0.99).
@@ -167,5 +173,6 @@ Return ONLY valid JSON with these exact keys:
                 "bear_case": str(parsed.get("bear_case", ""))[:350],
                 "summary_de": str(parsed.get("summary_de", ""))[:400],
                 "news_used": [a.get("title", "")[:140] for a in news_articles[:4]],
+                **({"market_data": market_context.strip()[:400]} if market_context.strip() else {}),
             },
         )
