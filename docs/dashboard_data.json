@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T23:11:37.939440+00:00",
+  "generated_at": "2026-11-26T23:16:45.781904+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9989.04,
-    "reconciled_equity_usd": 8885.71,
-    "equity_discrepancy_usd": 1103.33,
-    "cash_usd": 7494.42,
-    "positions_value_usd": 1391.29,
-    "deployed_pct": 13.93,
-    "total_pnl_usd": -10.96,
-    "total_pnl_pct": -0.11,
-    "unrealized_pnl_usd": 3.24,
+    "equity_usd": 9993.92,
+    "reconciled_equity_usd": 8675.48,
+    "equity_discrepancy_usd": 1318.44,
+    "cash_usd": 7279.31,
+    "positions_value_usd": 1396.17,
+    "deployed_pct": 13.97,
+    "total_pnl_usd": -6.08,
+    "total_pnl_pct": -0.06,
+    "unrealized_pnl_usd": 8.12,
     "total_trades": 65,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 518.36,
-    "politics": 872.93
+    "crypto": 525.02,
+    "politics": 871.15
   },
   "equity_curve": [
     {
@@ -1036,6 +1036,13 @@
       "cash": 7494.42,
       "deployed_pct": 13.93,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T23:16:45.264240+00:00",
+      "equity": 9993.92,
+      "cash": 7279.31,
+      "deployed_pct": 13.97,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1046,9 +1053,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.275,
-      "current_value": 208.38,
-      "unrealized_pnl": 18.94,
+      "current_price": 0.28,
+      "current_value": 212.17,
+      "unrealized_pnl": 22.73,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1061,9 +1068,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0935,
-      "current_value": 166.22,
-      "unrealized_pnl": -54.22,
+      "current_price": 0.0925,
+      "current_value": 164.44,
+      "unrealized_pnl": -56.0,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1076,9 +1083,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.54,
-      "current_value": 309.98,
-      "unrealized_pnl": 17.22,
+      "current_price": 0.545,
+      "current_value": 312.85,
+      "unrealized_pnl": 20.09,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -1118,7 +1125,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T23:15:43.928063+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -1153,7 +1160,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T23:15:43.695565+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
@@ -1219,7 +1226,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:31.948049+00:00",
+      "last_checked_ts": "2026-11-26T23:15:44.607140+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -1281,7 +1288,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.745583+00:00",
+      "last_checked_ts": "2026-11-26T23:15:45.597007+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -1311,7 +1318,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.595270+00:00",
+      "last_checked_ts": "2026-11-26T23:15:45.389471+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -1342,7 +1349,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:33.720861+00:00",
+      "last_checked_ts": "2026-11-26T23:15:46.059603+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -1371,7 +1378,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.879174+00:00",
+      "last_checked_ts": "2026-11-26T23:15:45.794537+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1400,7 +1407,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.745583+00:00",
+      "last_checked_ts": "2026-11-26T23:15:45.597007+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -1428,7 +1435,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.595270+00:00",
+      "last_checked_ts": "2026-11-26T23:15:45.389471+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard spot price tracking for Bitcoin reaching a high watermark during November 2026.",
@@ -1457,7 +1464,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.406990+00:00",
+      "last_checked_ts": "2026-11-26T23:15:45.235606+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the next White House Press Secretary is officially announced by November 30, 2026.",
@@ -1492,7 +1499,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.252898+00:00",
+      "last_checked_ts": "2026-11-26T23:15:45.018364+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution checks if Bitcoin hits or dips to $58,000 at any point during November 23-29, 2026 according to standard market feeds.",
@@ -1524,7 +1531,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:32.112476+00:00",
+      "last_checked_ts": "2026-11-26T23:15:44.860186+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Tiefstwerts von Ethereum während des angegebenen Datumsfensters.",
@@ -1695,7 +1702,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:34.554909+00:00",
+      "last_checked_ts": "2026-11-26T23:15:47.132638+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob Alberto Núñez Feijóo vor dem Stichtag offiziell als Ministerpräsident vereidigt wird oder das Amt übernimmt.",
@@ -1730,7 +1737,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:34.554909+00:00",
+      "last_checked_ts": "2026-11-26T23:15:47.132638+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment before the deadline.",
@@ -1800,7 +1807,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:34.554909+00:00",
+      "last_checked_ts": "2026-11-26T23:15:47.132638+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, basierend auf den aktuellen Wahlen und Regierungsbildungsprozessen bis zum Fristende.",
@@ -1835,7 +1842,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T23:05:34.554909+00:00",
+      "last_checked_ts": "2026-11-26T23:15:47.132638+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain by the deadline.",
@@ -2268,6 +2275,18 @@
   ],
   "recent_runs": [
     {
+      "id": 126,
+      "ts": "2026-11-26T23:16:45.266161+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 26,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 63.98,
+      "errors": []
+    },
+    {
       "id": 125,
       "ts": "2026-11-26T23:11:37.553706+00:00",
       "dry_run": 0,
@@ -2493,18 +2512,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 39.62,
-      "errors": []
-    },
-    {
-      "id": 106,
-      "ts": "2026-11-26T21:31:42.310554+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1157,
-      "candidates_found": 18,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 45.41,
       "errors": []
     }
   ]
