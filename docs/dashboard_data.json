@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:46:52.613957+00:00",
+  "generated_at": "2026-11-26T22:51:45.665709+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9938.42,
-    "reconciled_equity_usd": 9938.42,
+    "equity_usd": 9948.0,
+    "reconciled_equity_usd": 9948.0,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8597.75,
-    "positions_value_usd": 1340.67,
-    "deployed_pct": 13.49,
-    "total_pnl_usd": -61.58,
-    "total_pnl_pct": -0.62,
-    "unrealized_pnl_usd": -47.38,
+    "positions_value_usd": 1350.25,
+    "deployed_pct": 13.57,
+    "total_pnl_usd": -52.0,
+    "total_pnl_pct": -0.52,
+    "unrealized_pnl_usd": -37.8,
     "total_trades": 65,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 129,
+    "total_forecasts": 131,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 478.41,
-    "politics": 862.26
+    "crypto": 475.54,
+    "politics": 874.71
   },
   "equity_curve": [
     {
@@ -995,6 +995,13 @@
       "cash": 8597.75,
       "deployed_pct": 13.49,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T22:51:45.276195+00:00",
+      "equity": 9948.0,
+      "cash": 8597.75,
+      "deployed_pct": 13.57,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1020,9 +1027,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0875,
-      "current_value": 155.55,
-      "unrealized_pnl": -64.89,
+      "current_price": 0.0945,
+      "current_value": 168.0,
+      "unrealized_pnl": -52.44,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1035,9 +1042,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.51,
-      "current_value": 292.76,
-      "unrealized_pnl": 0.0,
+      "current_price": 0.505,
+      "current_value": 289.89,
+      "unrealized_pnl": -2.87,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -1061,6 +1068,71 @@
   ],
   "recent_forecasts": [
     {
+      "id": 131,
+      "ts": "2026-11-26T22:51:44.891726+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8350",
+      "p_blind": "0.3000",
+      "p_blended": "0.6838",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.1562",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
+        "base_rate": 0.35,
+        "bull_case": "International pressure and mutual deterrence may keep both sides from escalating back into direct military conflict through mid-December.",
+        "bear_case": "Recent reports indicate Israeli military readiness to strike Iran at any moment, signaling high fragility and a potential breakdown of the truce.",
+        "summary_de": "Trotz eines bestehenden Waffenstillstands bleibt das Risiko eines israelischen Schlags gegen den Iran hoch, weshalb ein Fortbestehen bis zum 15. Dezember unwahrscheinlich erscheint.",
+        "news_used": [
+          "Red Sea shipping crisis explained: Suez lost $7bn in 2024 - DNE Africa",
+          "Israeli army says it's ready to strike Iran 'at any moment,' even without US - Türkiye Today",
+          "Israeli Attacks Kill Nine Palestinians Across Gaza, Including an Education Ministry Official and His Wife - Countercurrents.org",
+          "UN Tribunal Challenges UNRWA Dismissals as Gaza Strikes Continue - cwibc.co.id",
+          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
+          "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
+        ]
+      }
+    },
+    {
+      "id": 130,
+      "ts": "2026-11-26T22:51:42.551923+00:00",
+      "market_id": "0x158304bcdd1ce7e8d15b4600e99f857aee5e233b781c2653367d67394d23e113",
+      "question": "Will Hsieh Lung-chieh win the next Tainan Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.0790",
+      "p_blind": "0.0100",
+      "p_blended": "0.0437",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0473",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
+        "base_rate": 0.05,
+        "bull_case": "An unexpected political shift or major candidate disqualification could elevate long-shot contenders.",
+        "bear_case": "Incumbent or major party frontrunners dominate Tainan politics, making alternative candidates unlikely to win.",
+        "summary_de": "Hsieh Lung-chieh hat bei den Bürgermeisterwahlen in Tainan historisch und gegen etablierte Parteistrukturen nur geringe Siegchancen.",
+        "news_used": [
+          "Notes from Central Taiwan: The old is new again: Storm over solar - Taipei Times"
+        ]
+      }
+    },
+    {
       "id": 129,
       "ts": "2026-11-26T22:46:52.275120+00:00",
       "market_id": "0xea3fc87eb93319e7ec9bc2d6c2b0b1a7aa9bdbfa9c74fcb268d1c98bda0d7e18",
@@ -1077,7 +1149,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T22:50:38.246077+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -1383,7 +1455,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:45:40.671952+00:00",
+      "last_checked_ts": "2026-11-26T22:50:41.248746+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands und dessen allfällige formelle Verletzungen im Laufe des Dezember müssen exakt den offiziellen Kriterien entsprechen.",
@@ -1418,7 +1490,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.606986+00:00",
+      "last_checked_ts": "2026-11-26T22:50:40.693680+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
@@ -1453,7 +1525,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.606986+00:00",
+      "last_checked_ts": "2026-11-26T22:50:40.693680+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official winner of the Taipei Mayor election, coinciding with the 2026 Taiwan local elections.",
@@ -1488,7 +1560,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.853741+00:00",
+      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, focusing on the current political cycle and upcoming leadership transition.",
@@ -1593,7 +1665,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.853741+00:00",
+      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag klärt, ob Pedro Sánchez der nächste Premierminister Spaniens sein wird, wobei die aktuellen Nachrichten auf Wahlen hindeuten.",
@@ -1698,7 +1770,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.853741+00:00",
+      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on who becomes the next Prime Minister of Spain following current political developments.",
@@ -1733,7 +1805,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.853741+00:00",
+      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain.",
@@ -1768,7 +1840,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.853741+00:00",
+      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who the next Prime Minister of Spain is relative to current political terms, requiring a clear assessment of government continuity or transitions.",
@@ -1820,79 +1892,49 @@
           "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters"
         ]
       }
-    },
-    {
-      "id": 106,
-      "ts": "2026-11-26T21:21:16.410009+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.0940",
-      "p_blind": "0.6500",
-      "p_blended": "0.2189",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:40:39.853741+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Evaluates whether Pedro Sánchez becomes the next Prime Minister of Spain according to official resolution criteria.",
-        "base_rate": 0.5,
-        "bull_case": "Pedro Sánchez remains the incumbent leader of the PSOE and continues to command a viable coalition path in the Spanish parliament.",
-        "bear_case": "Political opposition and shifting parliamentary alliances could trigger a snap election or a successful no-confidence motion replacing him.",
-        "summary_de": "Pedro Sánchez bleibt als amtierender Ministerpräsident Spaniens der wahrscheinlichste Kandidat für das Amt, trotz anhaltender politischer Spannungen und parlamentarischer Herausforderungen.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spain Elections - Goshen News",
-          "Spain Elections - Daily News-Record",
-          "Spain Elections - chronicleonline.com",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 105,
-      "ts": "2026-11-26T21:06:19.838174+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.9050",
-      "p_blind": "0.3800",
-      "p_blended": "0.7506",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:45:43.801604+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires confirming whether Alberto Núñez Feijóo formally takes office as the next Prime Minister before the deadline of November 30, 2026, amid ongoing snap election developments.",
-        "base_rate": 0.35,
-        "bull_case": "Feijóo leads the Partido Popular and strong poll numbers in the snap election cycle position him as a prime candidate to form a government.",
-        "bear_case": "Parliamentary math in Spain often requires complex coalition building, and incumbent Pedro Sánchez or alternative alliances could block Feijóo's path to the premiership by the November deadline.",
-        "summary_de": "Trotz guter Umfrageergebnisse für Alberto Núñez Feijóo im Rahmen der Neuwahlen bleibt die Regierungsbildung aufgrund komplex Mehrheitsverhältnisse ungewiss.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times",
-          "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 16,
+      "ts": "2026-11-26T22:51:45.274871+00:00",
+      "client_order_id": "psb-20261126-225144-3a0c86d7d9-buy-n-1ff016",
+      "order_id": "1733853",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.16",
+      "quantity": "2543.54",
+      "notional_usd": "406.96",
+      "est_fee_usd": "0",
+      "edge_net": "0.1562",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Trotz eines bestehenden Waffenstillstands bleibt das Risiko eines israelischen Schlags gegen den Iran hoch, weshalb ein Fortbestehen bis zum 15. Dezember unwahrscheinlich erscheint."
+    },
+    {
+      "id": 15,
+      "ts": "2026-11-26T22:51:42.911252+00:00",
+      "client_order_id": "psb-20261126-225142-158304bcdd-buy-n-e313c5",
+      "order_id": "1733852",
+      "market_id": "0x158304bcdd1ce7e8d15b4600e99f857aee5e233b781c2653367d67394d23e113",
+      "question": "Will Hsieh Lung-chieh win the next Tainan Mayor election?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.909",
+      "quantity": "766.07",
+      "notional_usd": "696.35",
+      "est_fee_usd": "0",
+      "edge_net": "0.0473",
+      "strategy_type": "carry",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[carry] Hsieh Lung-chieh hat bei den Bürgermeisterwahlen in Tainan historisch und gegen etablierte Parteistrukturen nur geringe Siegchancen."
+    },
     {
       "id": 14,
       "ts": "2026-11-26T22:41:27.317716+00:00",
@@ -2176,6 +2218,18 @@
   ],
   "recent_runs": [
     {
+      "id": 121,
+      "ts": "2026-11-26T22:51:45.276973+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1135,
+      "candidates_found": 26,
+      "llm_calls": 2,
+      "trades_attempted": 2,
+      "trades_executed": 2,
+      "duration_sec": 68.82,
+      "errors": []
+    },
+    {
       "id": 120,
       "ts": "2026-11-26T22:46:52.277286+00:00",
       "dry_run": 0,
@@ -2401,18 +2455,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 42.03,
-      "errors": []
-    },
-    {
-      "id": 101,
-      "ts": "2026-11-26T21:06:19.841740+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1176,
-      "candidates_found": 18,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 45.8,
       "errors": []
     }
   ]
