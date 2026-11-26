@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 from decimal import Decimal
 from typing import Any
 
@@ -23,6 +24,30 @@ def _json_safe(val: Any) -> Any:
     if isinstance(val, list):
         return [_json_safe(v) for v in val]
     return val
+
+
+def _parse_win_rate_pct(raw: Any) -> float | None:
+    """Parse PolySimulator win_rate whether formatted as '0.0%' string or 0.0..1.0 ratio."""
+    if raw is None or isinstance(raw, bool):
+        return None
+    if isinstance(raw, str):
+        s = raw.strip()
+        if not s:
+            return None
+        if "%" in s:
+            try:
+                val = float(s.replace("%", "").strip())
+            except (ValueError, TypeError):
+                return None
+            return round(val, 1) if math.isfinite(val) else None
+        raw = s
+    try:
+        val = float(raw)
+    except (ValueError, TypeError):
+        return None
+    if not math.isfinite(val):
+        return None
+    return round(val * 100.0, 1) if 0.0 <= val <= 1.0 else round(val, 1)
 
 
 def resolve_true_starting_balance(
@@ -177,7 +202,7 @@ def export_dashboard_data(
             "total_pnl_pct": round(float(total_pnl_pct), 2),
             "unrealized_pnl_usd": round(float(unrealized_pnl), 2),
             "total_trades": total_trades,
-            "win_rate_pct": round(float(win_rate) * 100, 1) if win_rate is not None else None,
+            "win_rate_pct": _parse_win_rate_pct(win_rate),
             "max_drawdown_pct": round(float(max_dd), 2),
             "brier_score": round(float(brier_avg), 4) if brier_avg is not None else None,
             "brier_resolved_count": brier_count,

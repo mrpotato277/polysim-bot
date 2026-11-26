@@ -10,7 +10,7 @@ from typing import Any
 import pytest
 
 from bot.config import BotConfig, _parse_bool
-from bot.dashboard import export_dashboard_data
+from bot.dashboard import _parse_win_rate_pct, export_dashboard_data
 from bot.forecaster import Superforecaster
 from bot.news import _parse_feed_entries, build_news_query
 from bot.orchestrator import _update_brier_scores
@@ -458,3 +458,38 @@ def test_crossed_orderbook_rejected() -> None:
         }
     )
     assert met is None
+
+
+def test_dashboard_parses_percent_string_win_rate(tmp_path: Any) -> None:
+    assert _parse_win_rate_pct("0.0%") == 0.0
+    assert _parse_win_rate_pct("62.5%") == 62.5
+    assert _parse_win_rate_pct(0.625) == 62.5
+    assert _parse_win_rate_pct(None) is None
+    assert _parse_win_rate_pct("N/A") is None
+
+    db_path = tmp_path / "wr.db"
+    dash_path = tmp_path / "dash.json"
+    cfg = BotConfig(
+        polysim_api_key="x",
+        gemini_api_key="y",
+        db_path=db_path,
+        dashboard_json_path=dash_path,
+    )
+    fake_client = SimpleNamespace(
+        sdk=SimpleNamespace(list_wallets=lambda: [{"kind": "API", "baseline": "10000"}]),
+        get_equity_history=lambda limit=200: [],
+    )
+    with StateStore(db_path) as state:
+        payload = export_dashboard_data(
+            config=cfg,
+            client=fake_client,  # type: ignore[arg-type]
+            state=state,
+            balance={"balance": "8361.37", "total_value": "9968.80"},
+            portfolio={"total_trades": 51, "win_rate": "0.0%"},
+            positions=[],
+            market_categories={},
+            circuit_breaker_active=False,
+        )
+
+    assert payload["kpis"]["win_rate_pct"] == 0.0
+    assert payload["kpis"]["total_trades"] == 51
