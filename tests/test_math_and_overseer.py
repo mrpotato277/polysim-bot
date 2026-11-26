@@ -9,7 +9,7 @@ import pytest
 import bot.news as news_mod
 from bot.config import BotConfig
 from bot.math_utils import bayesian_blend, best_bid_ask, calc_taker_fee, round_to_tick
-from bot.overseer import Overseer, TradeProposal
+from bot.overseer import Overseer, TradeProposal, choose_entry_execution
 from bot.scanner import is_cumulative_deadline_question
 
 
@@ -252,3 +252,50 @@ def test_specialist_news_matching_and_dedup(monkeypatch: pytest.MonkeyPatch) -> 
     assert [a["age_hours"] for a in merged] == [0.5, 1.0]
     assert merged[0]["source"] == "Bloomberg"
     assert merged[1]["source"] == "CoinDesk"
+
+
+def test_hybrid_breaking_taker_selection() -> None:
+    # 1. Breaking news + strong edge after 500 bps taker fee (>= 0.12) -> marketable_limit
+    mode, price, edge, fee = choose_entry_execution(
+        strategy_type="news_lag",
+        catalyst_freshness="breaking_lt_6h",
+        p_true_outcome=Decimal("0.75"),
+        maker_price=Decimal("0.54"),
+        best_ask=Decimal("0.55"),
+        fee_rate_bps=500,
+        breaking_taker_min_edge_net=Decimal("0.12"),
+    )
+    assert mode == "marketable_limit"
+    assert price == Decimal("0.55")
+    assert fee == 500
+    assert edge >= Decimal("0.12")
+
+    # 2. Breaking news, but net edge after taker fee falls below 0.12 -> stay maker_limit
+    mode2, price2, edge2, fee2 = choose_entry_execution(
+        strategy_type="news_lag",
+        catalyst_freshness="breaking_lt_6h",
+        p_true_outcome=Decimal("0.65"),
+        maker_price=Decimal("0.54"),
+        best_ask=Decimal("0.55"),
+        fee_rate_bps=500,
+        breaking_taker_min_edge_net=Decimal("0.12"),
+    )
+    assert mode2 == "maker_limit"
+    assert price2 == Decimal("0.54")
+    assert fee2 == 0
+    assert edge2 == Decimal("0.11")
+
+    # 3. Stale news or carry strategy -> always stay maker_limit regardless of edge
+    for strat, fresh in [("news_lag", "stale_or_none"), ("carry", "breaking_lt_6h")]:
+        mode3, price3, _edge3, fee3 = choose_entry_execution(
+            strategy_type=strat,
+            catalyst_freshness=fresh,
+            p_true_outcome=Decimal("0.98"),
+            maker_price=Decimal("0.54"),
+            best_ask=Decimal("0.55"),
+            fee_rate_bps=500,
+            breaking_taker_min_edge_net=Decimal("0.12"),
+        )
+        assert mode3 == "maker_limit"
+        assert price3 == Decimal("0.54")
+        assert fee3 == 0

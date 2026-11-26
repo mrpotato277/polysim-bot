@@ -13,9 +13,9 @@ from bot.config import BotConfig
 from bot.dashboard import export_dashboard_data, resolve_true_starting_balance
 from bot.execution import ExecutionEngine
 from bot.forecaster import Superforecaster
-from bot.math_utils import fee_drag_per_share, maker_buy_price, to_decimal
+from bot.math_utils import maker_buy_price, to_decimal
 from bot.news import build_news_query, fetch_market_news
-from bot.overseer import Overseer, TradeProposal
+from bot.overseer import Overseer, TradeProposal, choose_entry_execution
 from bot.polysim_client import PolySimWrapper
 from bot.scanner import MarketCandidate, MarketScanner
 from bot.state import StateStore
@@ -358,6 +358,8 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
 
                 chosen_outcome = "Yes"
                 entry_price = yes_entry
+                chosen_ask = cand.best_ask
+                chosen_token_id = cand.yes_token_id
                 p_true_outcome = fc.p_blended
                 edge_net = yes_edge
                 tick_sz = cand.tick_size
@@ -375,6 +377,8 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                         tick_sz = no_met["tick_size"]
                         min_sz = no_met["min_order_size"]
                         entry_price = maker_buy_price(no_met["best_bid"], no_met["best_ask"], tick_sz)
+                        chosen_ask = no_met["best_ask"]
+                        chosen_token_id = cand.no_token_id
                         p_true_outcome = Decimal("1") - fc.p_blended
                         edge_net = p_true_outcome - entry_price
 
@@ -402,9 +406,28 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                     log.info("Overseer %s -> SKIP: Carry candidate disagreed with market consensus.", cand.question[:45])
                     continue
 
-                # Maker post_only pays 0% fee; subtract tiny safety drag only if carry or marketable
-                fee_drag = fee_drag_per_share(entry_price, 0)
-                edge_net = edge_net - fee_drag
+                # Default to 0% maker_limit; switch to marketable_limit (FAK taker) on high-edge breaking news
+                fee_bps = 0
+                if effective_strategy == "news_lag" and fc.catalyst_freshness == "breaking_lt_6h":
+                    fee_bps = client.get_fee_rate_bps(chosen_token_id) if chosen_token_id else 500
+                order_mode, entry_price, edge_net, est_fee_bps = choose_entry_execution(
+                    strategy_type=effective_strategy,
+                    catalyst_freshness=fc.catalyst_freshness,
+                    p_true_outcome=p_true_outcome,
+                    maker_price=entry_price,
+                    best_ask=chosen_ask,
+                    fee_rate_bps=fee_bps,
+                    breaking_taker_min_edge_net=cfg.breaking_taker_min_edge_net,
+                )
+                if order_mode == "marketable_limit":
+                    log.info(
+                        "Hybrid-taker triggered for %s (%s): ask=%s fee_bps=%d edge_net=%.4f",
+                        cand.question[:45],
+                        chosen_outcome,
+                        entry_price,
+                        est_fee_bps,
+                        edge_net,
+                    )
 
                 state.record_forecast(
                     {
@@ -430,7 +453,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                     category=cand.category,
                     outcome=chosen_outcome,
                     side="BUY",
-                    order_mode="maker_limit",
+                    order_mode=order_mode,
                     limit_price=entry_price,
                     tick_size=tick_sz,
                     min_order_size=min_sz,
@@ -438,7 +461,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                     edge_net=edge_net,
                     strategy_type=effective_strategy,
                     rationale=f"[{effective_strategy}] {fc.summary_de}",
-                    est_fee_bps=0,
+                    est_fee_bps=est_fee_bps,
                 )
 
             if proposal is None:

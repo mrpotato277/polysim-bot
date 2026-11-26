@@ -37,6 +37,7 @@ class BotConfig:
 
     # Alpha & Edge Thresholds
     min_edge_net: Decimal = Decimal("0.08")
+    breaking_taker_min_edge_net: Decimal = Decimal("0.12")
     min_high_conv_bump_edge: Decimal = Decimal("0.10")
     carry_min_prob: Decimal = Decimal("0.88")
     carry_max_prob: Decimal = Decimal("0.96")

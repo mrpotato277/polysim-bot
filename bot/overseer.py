@@ -8,7 +8,7 @@ from decimal import Decimal, ROUND_DOWN
 from typing import Any
 
 from bot.config import BotConfig
-from bot.math_utils import to_decimal
+from bot.math_utils import fee_drag_per_share, to_decimal
 
 
 @dataclass(frozen=True)
@@ -52,6 +52,35 @@ class VetoDecision:
     approved: bool
     reason: str
     order: ApprovedOrder | None = None
+
+
+def choose_entry_execution(
+    *,
+    strategy_type: str,
+    catalyst_freshness: str,
+    p_true_outcome: Decimal,
+    maker_price: Decimal,
+    best_ask: Decimal,
+    fee_rate_bps: int,
+    breaking_taker_min_edge_net: Decimal,
+) -> tuple[str, Decimal, Decimal, int]:
+    """Return (order_mode, entry_price, edge_net, est_fee_bps).
+
+    Defaults to 0%-fee post-only maker_limit. Switches to marketable_limit (FAK taker)
+    only for news_lag + breaking_lt_6h when edge after taker fees still meets
+    breaking_taker_min_edge_net.
+    """
+    maker_edge = p_true_outcome - maker_price
+    if (
+        strategy_type == "news_lag"
+        and catalyst_freshness == "breaking_lt_6h"
+        and Decimal("0") < best_ask < Decimal("1")
+    ):
+        taker_fee = fee_drag_per_share(best_ask, fee_rate_bps)
+        taker_edge = p_true_outcome - best_ask - taker_fee
+        if taker_edge >= breaking_taker_min_edge_net:
+            return "marketable_limit", best_ask, taker_edge, fee_rate_bps
+    return "maker_limit", maker_price, maker_edge, 0
 
 
 class Overseer:
