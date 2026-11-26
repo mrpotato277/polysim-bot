@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T16:01:53.597861+00:00",
+  "generated_at": "2026-11-26T16:06:22.815330+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,24 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9968.21,
+    "equity_usd": 9975.26,
     "cash_usd": 9054.73,
-    "positions_value_usd": 913.48,
-    "deployed_pct": 9.16,
-    "total_pnl_usd": -31.79,
-    "total_pnl_pct": -0.32,
-    "unrealized_pnl_usd": -31.79,
+    "positions_value_usd": 920.53,
+    "deployed_pct": 9.23,
+    "total_pnl_usd": -24.74,
+    "total_pnl_pct": -0.25,
+    "unrealized_pnl_usd": -24.74,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.32,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 49,
+    "total_forecasts": 50,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 399.78,
-    "politics": 513.7
+    "crypto": 399.55,
+    "politics": 520.98
   },
   "equity_curve": [
     {
@@ -436,6 +436,13 @@
       "cash": 9054.73,
       "deployed_pct": 9.16,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T16:06:22.008445+00:00",
+      "equity": 9975.26,
+      "cash": 9054.73,
+      "deployed_pct": 9.23,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -446,9 +453,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8965,
-      "current_value": 399.78,
-      "unrealized_pnl": -0.22,
+      "current_price": 0.896,
+      "current_value": 399.55,
+      "unrealized_pnl": -0.45,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -460,9 +467,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0985,
-      "current_value": 175.11,
-      "unrealized_pnl": -45.33,
+      "current_price": 0.0995,
+      "current_value": 176.88,
+      "unrealized_pnl": -43.56,
       "p_blended": 0.2441,
       "edge_net": 0.0,
       "rationale": "Pedro Sánchez steht trotz anhaltender politischer Krisen und starker Opposition weiterhin im Amt und kämpft aktiv um seine politische Zukunft."
@@ -474,15 +481,47 @@
       "outcome": "Yes",
       "quantity": 550.56,
       "avg_entry_price": 0.59,
-      "current_price": 0.615,
-      "current_value": 338.59,
-      "unrealized_pnl": 13.76,
-      "p_blended": 0.6565,
-      "edge_net": 0.0465,
-      "rationale": "Der amtierende Bürgermeister Chiang Wan-an geht als Favorit in die Wahlen, gestützt durch den Amtsinhabereffekt und eine starke Präsenz im Wahlkampfendspurt."
+      "current_price": 0.625,
+      "current_value": 344.1,
+      "unrealized_pnl": 19.27,
+      "p_blended": 0.7975,
+      "edge_net": 0.1558,
+      "rationale": "Der amtierende Bürgermeister Chiang Wan-an geht als klarer Favorit in die Wahl, da aktuelle Berichte seine Handlungsfähigkeit und starke Position unterstreichen."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 50,
+      "ts": "2026-11-26T16:06:21.171826+00:00",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.6250",
+      "p_blind": "0.9000",
+      "p_blended": "0.7975",
+      "confidence": "0.8000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1558",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
+        "base_rate": 0.8,
+        "bull_case": "Incumbent Mayor Chiang Wan-an holds strong structural advantages and recent news confirms he is actively managing campaign events while opponents face logistical hurdles.",
+        "bear_case": "Unexpected shifts in voter sentiment or late-breaking campaign controversies could undermine the incumbent's lead.",
+        "summary_de": "Der amtierende Bürgermeister Chiang Wan-an geht als klarer Favorit in die Wahl, da aktuelle Berichte seine Handlungsfähigkeit und starke Position unterstreichen.",
+        "news_used": [
+          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
+          "2026 ELECTIONS: Puma Shen moves event online after traffic issues - Taipei Times",
+          "A trader just placed a $19K bet on Chiang Wan-an winning Taipei’s mayor election - Quiver Quantitative",
+          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News"
+        ]
+      }
+    },
     {
       "id": 49,
       "ts": "2026-11-26T16:01:52.449706+00:00",
@@ -1239,41 +1278,29 @@
           "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
         ]
       }
-    },
-    {
-      "id": 25,
-      "ts": "2026-11-26T10:21:22.617809+00:00",
-      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
-      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.5850",
-      "p_blind": "0.5500",
-      "p_blended": "0.5704",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0196",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official winner of the Taipei Mayor election by the deadline.",
-        "base_rate": 0.5,
-        "bull_case": "Incumbent Mayor Chiang Wan-an holds strong visibility and institutional advantage in Taipei.",
-        "bear_case": "Recent news highlights broader KMT setbacks and competitive opposition challenges in local elections.",
-        "summary_de": "Chiang Wan-an geht als amtierender Bürgermeister mit guten Chancen in die Wahl, sieht sich jedoch starken lokalen Gegenwinden der Opposition gegenüber.",
-        "news_used": [
-          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
-          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
-          "What a KMT setback in Taiwan’s polls means for Washington and Beijing - ThinkChina",
-          "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 7,
+      "ts": "2026-11-26T16:06:22.005812+00:00",
+      "client_order_id": "psb-20261126-16-bf7a9da083-buy-y",
+      "order_id": "1733460",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "marketable_limit",
+      "price": "0.63",
+      "quantity": "87.15",
+      "notional_usd": "54.90",
+      "est_fee_usd": "1.02",
+      "edge_net": "0.1558",
+      "strategy_type": "news_lag",
+      "status": "FILLED",
+      "dry_run": 0,
+      "rationale": "[news_lag] Der amtierende Bürgermeister Chiang Wan-an geht als klarer Favorit in die Wahl, da aktuelle Berichte seine Handlungsfähigkeit und starke Position unterstreichen."
+    },
     {
       "id": 6,
       "ts": "2026-11-26T12:51:21.979747+00:00",
@@ -1396,6 +1423,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 47,
+      "ts": "2026-11-26T16:06:22.009790+00:00",
+      "dry_run": 0,
+      "markets_scanned": 386,
+      "candidates_found": 6,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 47.82,
+      "errors": []
+    },
     {
       "id": 46,
       "ts": "2026-11-26T16:01:52.452447+00:00",
@@ -1624,18 +1663,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 35.41,
-      "errors": []
-    },
-    {
-      "id": 27,
-      "ts": "2026-11-26T13:51:22.424952+00:00",
-      "dry_run": 0,
-      "markets_scanned": 456,
-      "candidates_found": 5,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 44.47,
       "errors": []
     }
   ]
