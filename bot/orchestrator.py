@@ -10,7 +10,7 @@ from decimal import Decimal
 from typing import Any
 
 from bot.config import BotConfig
-from bot.dashboard import export_dashboard_data
+from bot.dashboard import export_dashboard_data, resolve_true_starting_balance
 from bot.execution import ExecutionEngine
 from bot.forecaster import Superforecaster
 from bot.math_utils import fee_drag_per_share, maker_buy_price, to_decimal
@@ -193,8 +193,8 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
 
         cash_usd = to_decimal(balance.get("balance"))
         equity_usd = to_decimal(balance.get("total_value"), str(cash_usd))
-        unrealized_pnl = to_decimal(balance.get("unrealized_pnl"))
-        starting_bal = to_decimal(balance.get("starting_balance"), "10000")
+        unrealized_pnl = sum((to_decimal(p.get("unrealized_pnl")) for p in positions), Decimal("0"))
+        starting_bal = resolve_true_starting_balance(client, state, balance)
         realized_pnl = equity_usd - starting_bal - unrealized_pnl
 
         dd_24h = state.get_24h_drawdown(equity_usd)

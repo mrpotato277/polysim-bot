@@ -25,6 +25,31 @@ def _json_safe(val: Any) -> Any:
     return val
 
 
+def resolve_true_starting_balance(
+    client: PolySimWrapper,
+    state: StateStore,
+    balance: dict[str, Any],
+) -> Decimal:
+    """Resolve true API wallet baseline (guards against /account/balance returning 1000 on 10k wallets)."""
+    try:
+        wallets = client.sdk.list_wallets()
+        for w in wallets:
+            if str(w.get("kind") or "").upper() == "API":
+                base = to_decimal(w.get("baseline"))
+                if base > Decimal("0"):
+                    return base
+    except Exception as exc:
+        log.debug("list_wallets baseline lookup failed: %s", exc)
+
+    snaps = state.get_equity_snapshots(limit=1)
+    if snaps:
+        first_eq = to_decimal(snaps[0].get("equity_usd"))
+        if first_eq > Decimal("0"):
+            return first_eq
+
+    return to_decimal(balance.get("starting_balance"), "10000")
+
+
 def export_dashboard_data(
     *,
     config: BotConfig,
@@ -38,11 +63,11 @@ def export_dashboard_data(
 ) -> dict[str, Any]:
     """Assemble clean JSON payload for docs/index.html (strictly zero secrets)."""
     cash = to_decimal(balance.get("balance"))
-    starting_balance = to_decimal(balance.get("starting_balance"), "10000")
-    unrealized_pnl = to_decimal(balance.get("unrealized_pnl"))
+    starting_balance = resolve_true_starting_balance(client, state, balance)
     total_value = to_decimal(balance.get("total_value"), str(cash))
 
     positions_val = Decimal("0")
+    unrealized_pnl = Decimal("0")
     category_exposure: dict[str, Decimal] = {}
     enriched_positions: list[dict[str, Any]] = []
 
@@ -56,6 +81,7 @@ def export_dashboard_data(
         cat = market_categories.get(mid, str(pos.get("category") or "other")).lower()
 
         positions_val += val
+        unrealized_pnl += upnl
         category_exposure[cat] = category_exposure.get(cat, Decimal("0")) + val
 
         latest_fc = state.get_latest_forecast(mid) if mid else None

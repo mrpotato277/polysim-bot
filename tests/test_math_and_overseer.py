@@ -7,6 +7,7 @@ from decimal import Decimal
 from bot.config import BotConfig
 from bot.math_utils import bayesian_blend, best_bid_ask, calc_taker_fee, round_to_tick
 from bot.overseer import Overseer, TradeProposal
+from bot.scanner import is_cumulative_deadline_question
 
 
 def test_order_independent_best_bid_ask() -> None:
@@ -184,3 +185,10 @@ def test_overseer_quarter_kelly_and_caps() -> None:
         circuit_breaker_active=False,
     )
     assert not dec_bad_carry.approved
+
+
+def test_is_cumulative_deadline_question() -> None:
+    assert is_cumulative_deadline_question("Will the US invade Iran before December 31?") is True
+    assert is_cumulative_deadline_question("Will a deal be signed by November 30?") is True
+    assert is_cumulative_deadline_question("Israel x Iran ceasefire continues through December 31?") is False
+    assert is_cumulative_deadline_question("Will Bitcoin stay above $80,000 through December?") is False

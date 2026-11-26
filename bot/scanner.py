@@ -48,6 +48,20 @@ class MarketCandidate:
     score: float = 0.0
 
 
+def is_cumulative_deadline_question(question: str) -> bool:
+    """Return True only for cumulative occurrence deadline questions ('by'/'before'), excluding survival contracts."""
+    q_norm = re.sub(r"\s+", " ", (question or "").strip().lower())
+    if not q_norm:
+        return False
+    survival_or_threshold = re.search(
+        r"\b(?:continues|continue|through|hold|holds|remain|remains|stay|stays|still|above|below|over|under|at least|at most|end of)\b",
+        q_norm,
+    )
+    if survival_or_threshold:
+        return False
+    return bool(re.search(r"\b(?:by|before)\b", q_norm))
+
+
 def normalize_category(raw_cat: str | None, question: str) -> str:
     c = (raw_cat or "").strip().lower()
     q = question.lower()
@@ -450,8 +464,12 @@ class MarketScanner:
                     dt_late, p_late, m_late = dated[i + 1]
                     if dt_early >= dt_late:
                         continue
-                    q_early_stem = re.sub(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|\d{1,4})\b", "", str(m_early.get("question", "")).lower()).strip()
-                    q_late_stem = re.sub(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|\d{1,4})\b", "", str(m_late.get("question", "")).lower()).strip()
+                    q_early_raw = str(m_early.get("question", ""))
+                    q_late_raw = str(m_late.get("question", ""))
+                    if not (is_cumulative_deadline_question(q_early_raw) and is_cumulative_deadline_question(q_late_raw)):
+                        continue
+                    q_early_stem = re.sub(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|\d{1,4})\b", "", q_early_raw.lower()).strip()
+                    q_late_stem = re.sub(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|\d{1,4})\b", "", q_late_raw.lower()).strip()
                     if q_early_stem and q_early_stem == q_late_stem and (p_early - p_late) > self.cfg.monotonicity_violation_threshold:
                         # Later deadline is priced CHEAPER than earlier deadline -> buy Yes on later deadline
                         cid = str(m_late["condition_id"])
