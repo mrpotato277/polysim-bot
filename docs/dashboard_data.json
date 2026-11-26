@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:56:33.639951+00:00",
+  "generated_at": "2026-11-26T23:01:43.664835+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9975.72,
-    "reconciled_equity_usd": 8872.39,
-    "equity_discrepancy_usd": 1103.33,
+    "equity_usd": 9984.33,
+    "reconciled_equity_usd": 8878.13,
+    "equity_discrepancy_usd": 1106.2,
     "cash_usd": 7494.42,
-    "positions_value_usd": 1377.97,
-    "deployed_pct": 13.81,
-    "total_pnl_usd": -24.28,
-    "total_pnl_pct": -0.24,
-    "unrealized_pnl_usd": -10.08,
+    "positions_value_usd": 1383.71,
+    "deployed_pct": 13.86,
+    "total_pnl_usd": -15.67,
+    "total_pnl_pct": -0.16,
+    "unrealized_pnl_usd": -4.34,
     "total_trades": 65,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 505.04,
+    "crypto": 510.78,
     "politics": 872.93
   },
   "equity_curve": [
@@ -1009,6 +1009,19 @@
       "cash": 7494.42,
       "deployed_pct": 13.81,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T23:00:00+00:00",
+      "equity": 8888.57,
+      "cash": 8888.57,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T23:01:43.350194+00:00",
+      "equity": 9984.33,
+      "cash": 7494.42,
+      "deployed_pct": 13.86,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1049,9 +1062,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.53,
-      "current_value": 304.24,
-      "unrealized_pnl": 11.48,
+      "current_price": 0.54,
+      "current_value": 309.98,
+      "unrealized_pnl": 17.22,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -1091,7 +1104,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T23:01:07.897594+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -1156,7 +1169,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:38.246077+00:00",
+      "last_checked_ts": "2026-11-26T23:01:06.318176+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -1462,7 +1475,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:41.248746+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.897594+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands und dessen allfällige formelle Verletzungen im Laufe des Dezember müssen exakt den offiziellen Kriterien entsprechen.",
@@ -1497,7 +1510,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:40.693680+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.524376+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
@@ -1532,7 +1545,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:40.693680+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.524376+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official winner of the Taipei Mayor election, coinciding with the 2026 Taiwan local elections.",
@@ -1567,7 +1580,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, focusing on the current political cycle and upcoming leadership transition.",
@@ -1672,7 +1685,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag klärt, ob Pedro Sánchez der nächste Premierminister Spaniens sein wird, wobei die aktuellen Nachrichten auf Wahlen hindeuten.",
@@ -1777,7 +1790,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on who becomes the next Prime Minister of Spain following current political developments.",
@@ -1812,7 +1825,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain.",
@@ -1847,7 +1860,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:50:41.038823+00:00",
+      "last_checked_ts": "2026-11-26T23:01:07.788616+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who the next Prime Minister of Spain is relative to current political terms, requiring a clear assessment of government continuity or transitions.",
@@ -2225,6 +2238,18 @@
   ],
   "recent_runs": [
     {
+      "id": 123,
+      "ts": "2026-11-26T23:01:43.351725+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 30,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 38.53,
+      "errors": []
+    },
+    {
       "id": 122,
       "ts": "2026-11-26T22:56:33.115780+00:00",
       "dry_run": 0,
@@ -2450,18 +2475,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 35.2,
-      "errors": []
-    },
-    {
-      "id": 103,
-      "ts": "2026-11-26T21:16:07.925238+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1177,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 31.32,
       "errors": []
     }
   ]
