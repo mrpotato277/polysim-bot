@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:41:25.100097+00:00",
+  "generated_at": "2026-11-26T11:51:22.440597+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,14 +11,14 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9987.29,
-    "cash_usd": 9275.17,
-    "positions_value_usd": 387.29,
-    "deployed_pct": 3.88,
-    "total_pnl_usd": -12.71,
-    "total_pnl_pct": -0.13,
-    "unrealized_pnl_usd": -12.71,
-    "total_trades": 2,
+    "equity_usd": 9988.11,
+    "cash_usd": 9054.73,
+    "positions_value_usd": 712.94,
+    "deployed_pct": 7.14,
+    "total_pnl_usd": -11.89,
+    "total_pnl_pct": -0.12,
+    "unrealized_pnl_usd": -11.89,
+    "total_trades": 3,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.14,
     "brier_score": null,
@@ -27,7 +27,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 387.29
+    "crypto": 390.86,
+    "politics": 322.08
   },
   "equity_curve": [
     {
@@ -195,6 +196,13 @@
       "cash": 9275.17,
       "deployed_pct": 3.88,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T11:51:21.697725+00:00",
+      "equity": 9988.11,
+      "cash": 9054.73,
+      "deployed_pct": 7.14,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -205,12 +213,26 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8685,
-      "current_value": 387.29,
-      "unrealized_pnl": -12.71,
+      "current_price": 0.8765,
+      "current_value": 390.86,
+      "unrealized_pnl": -9.14,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
+    },
+    {
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "outcome": "Yes",
+      "quantity": 550.56,
+      "avg_entry_price": 0.59,
+      "current_price": 0.585,
+      "current_value": 322.08,
+      "unrealized_pnl": -2.75,
+      "p_blended": 0.6789,
+      "edge_net": 0.0889,
+      "rationale": "Als amtierender Bürgermeister von Taipeh und Spitzenkandidat der KMT verfügt Chiang Wan-an über einen starken Amtsinhabervorteil, der seine Siegchancen bei den bevorstehenden Wahlen begünstigt."
     }
   ],
   "recent_forecasts": [
@@ -1100,6 +1122,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 17,
+      "ts": "2026-11-26T11:51:21.700174+00:00",
+      "dry_run": 0,
+      "markets_scanned": 435,
+      "candidates_found": 6,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.17,
+      "errors": []
+    },
     {
       "id": 16,
       "ts": "2026-11-26T11:41:24.165946+00:00",
