@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:21:15.899925+00:00",
+  "generated_at": "2026-11-26T22:26:19.306750+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9962.86,
-    "reconciled_equity_usd": 9962.86,
+    "equity_usd": 9960.19,
+    "reconciled_equity_usd": 9960.19,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8787.19,
-    "positions_value_usd": 1175.67,
-    "deployed_pct": 11.8,
-    "total_pnl_usd": -37.14,
-    "total_pnl_pct": -0.37,
-    "unrealized_pnl_usd": -22.94,
+    "positions_value_usd": 1173.0,
+    "deployed_pct": 11.78,
+    "total_pnl_usd": -39.81,
+    "total_pnl_pct": -0.4,
+    "unrealized_pnl_usd": -25.61,
     "total_trades": 51,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.89,
@@ -28,11 +28,11 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 117,
+    "total_forecasts": 118,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 880.04,
+    "politics": 877.37,
     "crypto": 295.63
   },
   "equity_curve": [
@@ -960,6 +960,13 @@
       "cash": 8787.19,
       "deployed_pct": 11.8,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T22:26:18.958733+00:00",
+      "equity": 9960.19,
+      "cash": 8787.19,
+      "deployed_pct": 11.78,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -970,9 +977,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0975,
-      "current_value": 173.33,
-      "unrealized_pnl": -47.11,
+      "current_price": 0.096,
+      "current_value": 170.66,
+      "unrealized_pnl": -49.78,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1003,13 +1010,48 @@
       "current_price": 0.625,
       "current_value": 706.71,
       "unrealized_pnl": 21.3,
-      "p_yes": 0.8296,
-      "p_blended": 0.8296,
-      "edge_net": 0.1879,
-      "rationale": "Als amtierender Bürgermeister hat Chiang Wan-an starke institutionelle Vorteile und die Nachrichtenlage deutet auf eine stabile Führung kurz vor den Wahlen hin."
+      "p_yes": 0.8655,
+      "p_blended": 0.8655,
+      "edge_net": 0.2238,
+      "rationale": "Der amtierende Bürgermeister Chiang Wan-an gilt als klarer Favorit für die Wiederwahl in Taipei, unterstützt durch starke Umfragewerte und den Heimvorteil der KMT."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 118,
+      "ts": "2026-11-26T22:26:18.956812+00:00",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.6250",
+      "p_blind": "0.9500",
+      "p_blended": "0.8655",
+      "confidence": "0.9000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.2238",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
+        "base_rate": 0.85,
+        "bull_case": "Chiang Wan-an is the incumbent KMT mayor running in a traditional stronghold with strong name recognition and active campaign management.",
+        "bear_case": "Unforeseen political shifts or high-turnout opposition mobilizations could occasionally disrupt incumbent advantages in Taiwan's volatile local elections.",
+        "summary_de": "Der amtierende Bürgermeister Chiang Wan-an gilt als klarer Favorit für die Wiederwahl in Taipei, unterstützt durch starke Umfragewerte und den Heimvorteil der KMT.",
+        "news_used": [
+          "《TAIPEI TIMES》 2026 ELECTIONS: Puma Shen moves event online after traffic issues - 自由時報",
+          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
+          "A trader just placed a $19K bet on Chiang Wan-an winning Taipei’s mayor election - Quiver Quantitative",
+          "2026 Elections: Puma Shen moves event online after traffic issues - Taipei Times",
+          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺"
+        ]
+      }
+    },
     {
       "id": 117,
       "ts": "2026-11-26T22:11:36.984987+00:00",
@@ -1097,7 +1139,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob Alberto Núñez Feijóo vor dem Stichtag offiziell als Ministerpräsident vereidigt wird oder das Amt übernimmt.",
@@ -1132,7 +1174,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment before the deadline.",
@@ -1202,7 +1244,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, basierend auf den aktuellen Wahlen und Regierungsbildungsprozessen bis zum Fristende.",
@@ -1237,7 +1279,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain by the deadline.",
@@ -1377,7 +1419,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional succession and investiture rules.",
@@ -1447,7 +1489,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming whether Alberto Núñez Feijóo formally takes office as the next Prime Minister before the deadline of November 30, 2026, amid ongoing snap election developments.",
@@ -1482,7 +1524,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing political context and snap elections.",
@@ -1587,7 +1629,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following current election dynamics.",
@@ -1657,7 +1699,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:45.857384+00:00",
+      "last_checked_ts": "2026-11-26T22:25:31.987412+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1792,7 +1834,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.619340+00:00",
+      "last_checked_ts": "2026-11-26T22:25:32.778880+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, und läuft bis Ende November 2026 ab.",
@@ -1843,35 +1885,6 @@
           "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
           "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
         ]
-      }
-    },
-    {
-      "id": 93,
-      "ts": "2026-11-26T20:06:23.661746+00:00",
-      "market_id": "0x459bb1954c553022e8d64b02acf6e752287947c7402a59edb8f4beb754b7804f",
-      "question": "Will Bitcoin dip to $56,000 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.0750",
-      "p_blind": "0.1100",
-      "p_blended": "0.0841",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T22:10:46.219869+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds within the specified date range.",
-        "base_rate": 0.12,
-        "bull_case": "High volatility in crypto can easily generate a 7.7% downward spike to $56,000 within a few days, especially around macroeconomic data releases or sudden liquidations.",
-        "bear_case": "Bitcoin is currently trading near $60,643 with strong support above $59,000, and only a few days remain until the November 29 deadline.",
-        "summary_de": "Bitcoin liegt derzeit stabil über 60.000 US-Dollar, und der Abstand von knapp 8 Prozent zum Zielkurs ist in der verbleibenden kurzen Zeit bei moderater Volatilität statistisch unwahrscheinlich.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $60,643.40 (24h range: $59,719.80 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $56,000.00: -7.7% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.4d (1-sigma move = +/-4.6%, distance = 1.73 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -2139,6 +2152,18 @@
   ],
   "recent_runs": [
     {
+      "id": 116,
+      "ts": "2026-11-26T22:26:18.959532+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1112,
+      "candidates_found": 18,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 49.05,
+      "errors": []
+    },
+    {
       "id": 115,
       "ts": "2026-11-26T22:21:15.436922+00:00",
       "dry_run": 0,
@@ -2364,18 +2389,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 38.77,
-      "errors": []
-    },
-    {
-      "id": 96,
-      "ts": "2026-11-26T20:41:15.222591+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1143,
-      "candidates_found": 19,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 35.91,
       "errors": []
     }
   ]
