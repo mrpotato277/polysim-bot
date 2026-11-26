@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:51:23.163808+00:00",
+  "generated_at": "2026-11-26T14:01:37.797339+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,13 +11,13 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9987.25,
+    "equity_usd": 9990.97,
     "cash_usd": 8972.03,
-    "positions_value_usd": 932.52,
-    "deployed_pct": 9.34,
-    "total_pnl_usd": -12.75,
-    "total_pnl_pct": -0.13,
-    "unrealized_pnl_usd": -12.75,
+    "positions_value_usd": 936.24,
+    "deployed_pct": 9.37,
+    "total_pnl_usd": -9.03,
+    "total_pnl_pct": -0.09,
+    "unrealized_pnl_usd": -9.03,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.22,
@@ -27,8 +27,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 401.56,
-    "politics": 530.96
+    "crypto": 399.78,
+    "politics": 536.46
   },
   "equity_curve": [
     {
@@ -285,6 +285,19 @@
       "cash": 8972.03,
       "deployed_pct": 9.34,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T14:00:00+00:00",
+      "equity": 9908.27,
+      "cash": 9908.27,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T14:01:36.698734+00:00",
+      "equity": 9990.97,
+      "cash": 8972.03,
+      "deployed_pct": 9.37,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -295,9 +308,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.9005,
-      "current_value": 401.56,
-      "unrealized_pnl": 1.56,
+      "current_price": 0.8965,
+      "current_value": 399.78,
+      "unrealized_pnl": -0.22,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -323,9 +336,9 @@
       "outcome": "Yes",
       "quantity": 550.56,
       "avg_entry_price": 0.59,
-      "current_price": 0.585,
-      "current_value": 322.08,
-      "unrealized_pnl": -2.75,
+      "current_price": 0.595,
+      "current_value": 327.58,
+      "unrealized_pnl": 2.75,
       "p_blended": 0.7097,
       "edge_net": 0.1397,
       "rationale": "Als amtierender Bürgermeister von Taipeh hat Chiang Wan-an starke institutionelle Vorteile und gute Chancen auf eine Wiederwahl bei den anstehenden Kommunalwahlen."
@@ -1239,6 +1252,18 @@
   ],
   "recent_runs": [
     {
+      "id": 28,
+      "ts": "2026-11-26T14:01:36.701220+00:00",
+      "dry_run": 0,
+      "markets_scanned": 471,
+      "candidates_found": 5,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 35.41,
+      "errors": []
+    },
+    {
       "id": 27,
       "ts": "2026-11-26T13:51:22.424952+00:00",
       "dry_run": 0,
@@ -1466,18 +1491,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 37.97,
-      "errors": []
-    },
-    {
-      "id": 8,
-      "ts": "2026-11-26T10:22:11.205049+00:00",
-      "dry_run": 0,
-      "markets_scanned": 383,
-      "candidates_found": 6,
-      "llm_calls": 3,
-      "trades_attempted": 1,
-      "trades_executed": 1,
-      "duration_sec": 89.32,
       "errors": []
     }
   ]
