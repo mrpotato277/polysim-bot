@@ -118,8 +118,19 @@ def _re_evaluate_positions(
                         end_date_iso = str(detail.get("end_date"))
                 except Exception:
                     pass
+                days_rem: float | None = None
+                if end_date_iso:
+                    try:
+                        end_dt = datetime.fromisoformat(end_date_iso.replace("Z", "+00:00"))
+                        if end_dt.tzinfo is None:
+                            end_dt = end_dt.replace(tzinfo=timezone.utc)
+                        rem = (end_dt.astimezone(timezone.utc) - now).total_seconds() / 86400.0
+                        if rem > 0.0:
+                            days_rem = rem
+                    except ValueError:
+                        days_rem = None
                 try:
-                    mkt_ctx = build_market_data_context(question, cat)
+                    mkt_ctx = build_market_data_context(question, cat, days_remaining=days_rem)
                 except Exception:
                     mkt_ctx = ""
                 fc = forecaster.forecast(
@@ -340,7 +351,11 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
 
                 try:
                     try:
-                        mkt_ctx = build_market_data_context(cand.question, cand.category)
+                        mkt_ctx = build_market_data_context(
+                            cand.question,
+                            cand.category,
+                            days_remaining=cand.days_to_resolution,
+                        )
                     except Exception:
                         mkt_ctx = ""
                     fc = forecaster.forecast(

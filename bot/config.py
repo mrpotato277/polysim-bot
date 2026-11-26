@@ -48,7 +48,7 @@ class BotConfig:
     carry_max_prob: Decimal = Decimal("0.96")
     carry_min_annualized: Decimal = Decimal("0.40")
     take_profit_edge_remaining: Decimal = Decimal("0.02")
-    thesis_break_edge: Decimal = Decimal("-0.04")
+    thesis_break_edge: Decimal = Decimal("-0.08")
     structural_arb_max_sum: Decimal = Decimal("0.985")
     monotonicity_violation_threshold: Decimal = Decimal("0.03")
 

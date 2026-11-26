@@ -259,7 +259,36 @@ def fetch_yahoo_quote(ticker: str, timeout: float = 5.0) -> dict[str, Any] | Non
     return quote_data
 
 
-def build_market_data_context(question: str, category: str = "other") -> str:
+def estimate_barrier_probabilities(
+    spot: float,
+    target: float,
+    annual_vol: float,
+    days_remaining: float,
+) -> dict[str, float] | None:
+    """Compute Gaussian one-touch barrier and expiry-cross probabilities (log-normal driftless approximation)."""
+    for val in (spot, target, annual_vol, days_remaining):
+        if isinstance(val, bool) or not math.isfinite(float(val)) or float(val) <= 0.0:
+            return None
+    sigma_t = float(annual_vol) * math.sqrt(float(days_remaining) / 365.0)
+    if not math.isfinite(sigma_t) or sigma_t <= 0.0:
+        return None
+    z = abs(math.log(float(target) / float(spot))) / sigma_t
+    p_end_cross = 0.5 * math.erfc(z / math.sqrt(2.0))
+    p_touch = min(1.0, 2.0 * p_end_cross)
+    return {
+        "sigma_t": sigma_t,
+        "z_score": z,
+        "p_end_cross": p_end_cross,
+        "p_touch": p_touch,
+    }
+
+
+def build_market_data_context(
+    question: str,
+    category: str = "other",
+    *,
+    days_remaining: float | None = None,
+) -> str:
     """Assemble factual live market reference lines relevant to the question (or '')."""
     q_low = (question or "").strip().lower()
     if not q_low:
@@ -296,6 +325,16 @@ def build_market_data_context(question: str, category: str = "other") -> str:
                 f"Distance from live spot to ${single_target:,.2f}: {pct_diff:+.1f}% "
                 "(NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
             )
+            if vol is not None and days_remaining is not None and days_remaining > 0.0:
+                bp = estimate_barrier_probabilities(spot, single_target, vol, float(days_remaining))
+                if bp is not None:
+                    lines.append(
+                        f"Quantitative volatility reference over {float(days_remaining):.1f}d "
+                        f"(1-sigma move = +/-{bp['sigma_t'] * 100:.1f}%, distance = {bp['z_score']:.2f} sigma): "
+                        f"Gaussian one-touch ('dip/reach/hit') baseline ~{bp['p_touch'] * 100:.1f}%, "
+                        f"expiry-finish ('above/below') baseline ~{bp['p_end_cross'] * 100:.1f}% "
+                        "(allow moderate crypto fat-tail uplift ~1.2x-1.5x, not 4x)."
+                    )
 
     # 2. US Fed / Macro rates
     if _contains_any_keyword(q_low, FED_KEYWORDS):

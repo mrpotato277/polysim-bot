@@ -9,9 +9,11 @@ from typing import Any
 
 import pytest
 
+import bot.market_data as mkt_mod
 from bot.config import BotConfig, _parse_bool
 from bot.dashboard import _parse_win_rate_pct, export_dashboard_data
 from bot.forecaster import Superforecaster
+from bot.market_data import build_market_data_context, estimate_barrier_probabilities
 from bot.news import _parse_feed_entries, build_news_query
 from bot.orchestrator import _update_brier_scores
 from bot.overseer import Overseer
@@ -493,3 +495,74 @@ def test_dashboard_parses_percent_string_win_rate(tmp_path: Any) -> None:
 
     assert payload["kpis"]["win_rate_pct"] == 0.0
     assert payload["kpis"]["total_trades"] == 51
+
+
+def test_barrier_probability_math_and_context(monkeypatch: pytest.MonkeyPatch) -> None:
+    bp = estimate_barrier_probabilities(60614.6, 55000.0, 0.48, 4.2)
+    assert bp is not None
+    assert 1.85 < bp["z_score"] < 1.95
+    assert 0.05 < bp["p_touch"] < 0.07
+    assert 0.025 < bp["p_end_cross"] < 0.035
+
+    monkeypatch.setattr(
+        mkt_mod,
+        "fetch_crypto_snapshot",
+        lambda sym: {
+            "source": "Kraken",
+            "last": 60614.6,
+            "low_24h": 59610.7,
+            "high_24h": 61533.1,
+        }
+        if sym == "BTC"
+        else None,
+    )
+    monkeypatch.setattr(mkt_mod, "fetch_crypto_30d_vol", lambda sym: 0.48 if sym == "BTC" else None)
+
+    ctx = build_market_data_context(
+        "Will Bitcoin dip to $55,000 in November?",
+        "crypto",
+        days_remaining=4.2,
+    )
+    assert "one-touch" in ctx
+    assert "sigma" in ctx
+
+
+def test_overseer_thesis_break_threshold_8pp() -> None:
+    cfg = BotConfig(polysim_api_key="x", gemini_api_key="y")
+    assert cfg.thesis_break_edge == Decimal("-0.08")
+    ov = Overseer(cfg)
+
+    # -5 pp noise (0.84 vs bid 0.89) must NOT trigger thesis-break exit
+    no_exit = ov.evaluate_position_exit(
+        market_id="btc-55k",
+        question="Will Bitcoin dip to $55,000 in November?",
+        category="crypto",
+        outcome="No",
+        shares_held=Decimal("445"),
+        avg_entry_price=Decimal("0.8970"),
+        best_bid=Decimal("0.89"),
+        best_ask=Decimal("0.90"),
+        tick_size=Decimal("0.01"),
+        min_order_size=Decimal("5"),
+        p_true_outcome=Decimal("0.84"),
+        fee_rate_bps=500,
+    )
+    assert no_exit is None
+
+    # -9 pp real collapse (0.80 vs bid 0.89) MUST trigger exit_thesis_break
+    real_exit = ov.evaluate_position_exit(
+        market_id="btc-55k",
+        question="Will Bitcoin dip to $55,000 in November?",
+        category="crypto",
+        outcome="No",
+        shares_held=Decimal("445"),
+        avg_entry_price=Decimal("0.8970"),
+        best_bid=Decimal("0.89"),
+        best_ask=Decimal("0.90"),
+        tick_size=Decimal("0.01"),
+        min_order_size=Decimal("5"),
+        p_true_outcome=Decimal("0.80"),
+        fee_rate_bps=500,
+    )
+    assert real_exit is not None
+    assert real_exit.strategy_type == "exit_thesis_break"
