@@ -485,7 +485,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                 last_dt = datetime.fromisoformat(str(last_snap["ts"]).replace("Z", "+00:00"))
                 if last_dt.tzinfo is None:
                     last_dt = last_dt.replace(tzinfo=timezone.utc)
-                snap_stale = (now_snap - last_dt) >= timedelta(minutes=15)
+                snap_stale = (now_snap - last_dt) >= timedelta(minutes=12)
             except ValueError:
                 snap_stale = True
             last_eq = to_decimal(last_snap.get("equity_usd"))
