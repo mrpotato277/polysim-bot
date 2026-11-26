@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T15:31:47.679830+00:00",
+  "generated_at": "2026-11-26T15:36:17.248025+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,24 +11,24 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9983.16,
+    "equity_usd": 9988.15,
     "cash_usd": 9054.73,
-    "positions_value_usd": 928.43,
-    "deployed_pct": 9.3,
-    "total_pnl_usd": -16.84,
-    "total_pnl_pct": -0.17,
-    "unrealized_pnl_usd": -16.84,
+    "positions_value_usd": 933.42,
+    "deployed_pct": 9.35,
+    "total_pnl_usd": -11.85,
+    "total_pnl_pct": -0.12,
+    "unrealized_pnl_usd": -11.85,
     "total_trades": 17,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.22,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 44,
+    "total_forecasts": 45,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 391.97,
-    "politics": 536.46
+    "crypto": 394.2,
+    "politics": 539.22
   },
   "equity_curve": [
     {
@@ -388,6 +388,13 @@
       "cash": 9054.73,
       "deployed_pct": 9.3,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T15:36:16.173479+00:00",
+      "equity": 9988.15,
+      "cash": 9054.73,
+      "deployed_pct": 9.35,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -398,9 +405,9 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.879,
-      "current_value": 391.97,
-      "unrealized_pnl": -8.03,
+      "current_price": 0.884,
+      "current_value": 394.2,
+      "unrealized_pnl": -5.8,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
@@ -426,15 +433,47 @@
       "outcome": "Yes",
       "quantity": 550.56,
       "avg_entry_price": 0.59,
-      "current_price": 0.595,
-      "current_value": 327.58,
-      "unrealized_pnl": 2.75,
+      "current_price": 0.6,
+      "current_value": 330.34,
+      "unrealized_pnl": 5.51,
       "p_blended": 0.7097,
       "edge_net": 0.1397,
       "rationale": "Als amtierender Bürgermeister von Taipeh hat Chiang Wan-an starke institutionelle Vorteile und gute Chancen auf eine Wiederwahl bei den anstehenden Kommunalwahlen."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 45,
+      "ts": "2026-11-26T15:36:16.171033+00:00",
+      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+      "question": "Will Puma Shen win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.4050",
+      "p_blind": "0.3500",
+      "p_blended": "0.3790",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0270",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official winner of the Taipei mayoral election according to Taiwan's Central Election Commission.",
+        "base_rate": 0.4,
+        "bull_case": "Puma Shen has strong high-level DPP backing (e.g., Tsai Ing-wen livestream) and high enthusiasm in the final stretch, though facing fierce competition.",
+        "bear_case": "Taipei historically leans toward the KMT (incumbent Chiang Wan-an), and recent permit controversies and cancellations of final rallies indicate structural campaign headwinds.",
+        "summary_de": "Trotz intensiver Mobilisierung und prominenter Unterstützung hat Puma Shen in Taipei historisch bedingt gegen den KMT-Amtsinhaber einen schweren Stand, was sich in aktuellen Kontroversen um Wahlkampfveranstaltungen widerspiegelt.",
+        "news_used": [
+          "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报",
+          "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "DPP suspects foul play over Taipei election rally venues - Taiwan News"
+        ]
+      }
+    },
     {
       "id": 44,
       "ts": "2026-11-26T15:06:14.657767+00:00",
@@ -1194,38 +1233,6 @@
           "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
         ]
       }
-    },
-    {
-      "id": 20,
-      "ts": "2026-11-26T09:39:41.223944+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1130",
-      "p_blind": "0.3500",
-      "p_blended": "0.1892",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Ensure contract checks who assumes office as the next Prime Minister or wins the election cleanly by the deadline.",
-        "base_rate": 0.4,
-        "bull_case": "Sánchez has repeatedly demonstrated remarkable political survival skills and coalition-building acumen despite intense opposition.",
-        "bear_case": "Recent news headlines indicate mounting political pressure, economic discontent, and rising threats from the right and far-right leading up to the 2026 election context.",
-        "summary_de": "Pedro Sánchez steht zunehmendem politischen und wirtschaftlichen Druck gegenüber, was seine Chancen auf eine erneute Wiederwahl als Ministerpräsident schwächt.",
-        "news_used": [
-          "Who really wants Pedro Sanchez out of power? - Al Jazeera",
-          "Spain's economic gains miss voters' wallets as Sanchez seeks reelection - Reuters",
-          "5 charts show why Spaniards aren't feeling the benefits of economic growth under Sánchez - The New Indian Express",
-          "Pedro Sánchez pledges €22bn spending spree despite EU’s warnings - The Times"
-        ]
-      }
     }
   ],
   "trade_journal": [
@@ -1351,6 +1358,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 41,
+      "ts": "2026-11-26T15:36:16.174511+00:00",
+      "dry_run": 0,
+      "markets_scanned": 480,
+      "candidates_found": 5,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 43.93,
+      "errors": []
+    },
     {
       "id": 40,
       "ts": "2026-11-26T15:31:46.984139+00:00",
@@ -1579,18 +1598,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 36.29,
-      "errors": []
-    },
-    {
-      "id": 21,
-      "ts": "2026-11-26T12:31:33.370443+00:00",
-      "dry_run": 0,
-      "markets_scanned": 384,
-      "candidates_found": 5,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 43.89,
       "errors": []
     }
   ]
