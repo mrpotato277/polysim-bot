@@ -65,7 +65,8 @@ class StateStore:
                 resolution_risk TEXT NOT NULL,
                 reasoning_json TEXT NOT NULL,
                 resolved_outcome TEXT,
-                brier_score TEXT
+                brier_score TEXT,
+                last_checked_ts TEXT DEFAULT ''
             );
             CREATE INDEX IF NOT EXISTS idx_forecasts_market_ts ON forecasts(market_id, ts);
 
@@ -117,6 +118,10 @@ class StateStore:
             );
             """
         )
+        try:
+            cur.execute("ALTER TABLE forecasts ADD COLUMN last_checked_ts TEXT DEFAULT ''")
+        except sqlite3.OperationalError:
+            pass
         self.conn.commit()
 
     # ── News deduplication ─────────────────────────────────────────────
@@ -199,11 +204,26 @@ class StateStore:
         except ValueError:
             return None
 
-    def list_unresolved_forecast_market_ids(self) -> list[str]:
+    def list_unresolved_forecast_market_ids(self, limit: int = 50) -> list[str]:
         rows = self.conn.execute(
-            "SELECT DISTINCT market_id FROM forecasts WHERE brier_score IS NULL"
+            """
+            SELECT market_id
+            FROM forecasts
+            WHERE brier_score IS NULL
+            GROUP BY market_id
+            ORDER BY MAX(COALESCE(last_checked_ts, '')) ASC, MIN(id) ASC
+            LIMIT ?
+            """,
+            (limit,),
         ).fetchall()
         return [str(r["market_id"]) for r in rows]
+
+    def mark_forecast_market_checked(self, market_id: str) -> None:
+        self.conn.execute(
+            "UPDATE forecasts SET last_checked_ts = ? WHERE market_id = ? AND brier_score IS NULL",
+            (utc_now_iso(), market_id),
+        )
+        self.conn.commit()
 
     def update_resolved_market_brier(self, market_id: str, resolved_yes: bool) -> int:
         outcome_label = "Yes" if resolved_yes else "No"
@@ -235,6 +255,48 @@ class StateStore:
         avg = sum(scores) / Decimal(len(scores))
         return avg, len(scores)
 
+    def get_brier_comparison(self) -> dict[str, Any]:
+        """Compute event-weighted Brier scores across p_blended, p_blind, and market_price."""
+        rows = self.conn.execute(
+            """
+            SELECT market_id, market_price, p_blind, p_blended, resolved_outcome
+            FROM forecasts
+            WHERE resolved_outcome IN ('Yes', 'No') AND brier_score IS NOT NULL
+            ORDER BY id ASC
+            """
+        ).fetchall()
+        seen_markets: set[str] = set()
+        blended_scores: list[Decimal] = []
+        blind_scores: list[Decimal] = []
+        market_scores: list[Decimal] = []
+        for r in rows:
+            mid = str(r["market_id"])
+            if mid in seen_markets:
+                continue
+            seen_markets.add(mid)
+            y = Decimal("1") if str(r["resolved_outcome"]) == "Yes" else Decimal("0")
+            blended_scores.append((Decimal(str(r["p_blended"])) - y) ** 2)
+            blind_scores.append((Decimal(str(r["p_blind"])) - y) ** 2)
+            market_scores.append((Decimal(str(r["market_price"])) - y) ** 2)
+
+        n = len(seen_markets)
+        if n == 0:
+            return {
+                "brier_blended": None,
+                "brier_blind": None,
+                "brier_market": None,
+                "unique_markets": 0,
+                "resolved_rows": 0,
+            }
+        dn = Decimal(n)
+        return {
+            "brier_blended": round(float(sum(blended_scores) / dn), 4),
+            "brier_blind": round(float(sum(blind_scores) / dn), 4),
+            "brier_market": round(float(sum(market_scores) / dn), 4),
+            "unique_markets": n,
+            "resolved_rows": len(rows),
+        }
+
     def get_recent_forecasts(self, limit: int = 25) -> list[dict[str, Any]]:
         rows = self.conn.execute(
             "SELECT * FROM forecasts ORDER BY id DESC LIMIT ?", (limit,)
@@ -253,35 +315,88 @@ class StateStore:
     # ── Trade journal ──────────────────────────────────────────────────
 
     def record_trade(self, trade: dict[str, Any]) -> None:
-        self.conn.execute(
-            """
-            INSERT OR REPLACE INTO trade_journal (
-                ts, client_order_id, order_id, market_id, question, outcome,
-                side, order_mode, price, quantity, notional_usd, est_fee_usd,
-                edge_net, strategy_type, status, dry_run, rationale
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """,
-            (
-                trade.get("ts") or utc_now_iso(),
-                trade["client_order_id"],
-                str(trade.get("order_id") or ""),
-                trade["market_id"],
-                trade["question"],
-                trade["outcome"],
-                trade["side"],
-                trade["order_mode"],
-                str(trade["price"]),
-                str(trade["quantity"]),
-                str(trade["notional_usd"]),
-                str(trade["est_fee_usd"]),
-                str(trade["edge_net"]),
-                trade["strategy_type"],
-                trade["status"],
-                1 if trade.get("dry_run") else 0,
-                trade["rationale"],
-            ),
+        coid = trade["client_order_id"]
+        new_oid = str(trade.get("order_id") or "")
+        new_status = str(trade["status"])
+        new_rationale = str(trade["rationale"])
+
+        existing = self.conn.execute(
+            "SELECT order_id, status, rationale FROM trade_journal WHERE client_order_id = ?",
+            (coid,),
+        ).fetchone()
+
+        if existing is None:
+            self.conn.execute(
+                """
+                INSERT INTO trade_journal (
+                    ts, client_order_id, order_id, market_id, question, outcome,
+                    side, order_mode, price, quantity, notional_usd, est_fee_usd,
+                    edge_net, strategy_type, status, dry_run, rationale
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    trade.get("ts") or utc_now_iso(),
+                    coid,
+                    new_oid,
+                    trade["market_id"],
+                    trade["question"],
+                    trade["outcome"],
+                    trade["side"],
+                    trade["order_mode"],
+                    str(trade["price"]),
+                    str(trade["quantity"]),
+                    str(trade["notional_usd"]),
+                    str(trade["est_fee_usd"]),
+                    str(trade["edge_net"]),
+                    trade["strategy_type"],
+                    new_status,
+                    1 if trade.get("dry_run") else 0,
+                    new_rationale,
+                ),
+            )
+        else:
+            confirmed = {"PENDING", "FILLED", "SUBMITTED", "PARTIALLY_FILLED", "OPEN", "CANCELLED"}
+            old_oid = str(existing["order_id"] or "")
+            old_status = str(existing["status"] or "")
+            final_oid = new_oid if new_oid else old_oid
+            if new_status.upper() == "ERROR" and old_status.upper() in confirmed:
+                final_status = old_status
+                final_rationale = f"{existing['rationale']} | RETRY_ERR: {new_rationale}"[:500]
+            else:
+                final_status = new_status
+                final_rationale = new_rationale
+
+            self.conn.execute(
+                """
+                UPDATE trade_journal
+                SET ts = ?, order_id = ?, price = ?, quantity = ?, notional_usd = ?,
+                    est_fee_usd = ?, edge_net = ?, status = ?, rationale = ?
+                WHERE client_order_id = ?
+                """,
+                (
+                    trade.get("ts") or utc_now_iso(),
+                    final_oid,
+                    str(trade["price"]),
+                    str(trade["quantity"]),
+                    str(trade["notional_usd"]),
+                    str(trade["est_fee_usd"]),
+                    str(trade["edge_net"]),
+                    final_status,
+                    final_rationale,
+                    coid,
+                ),
+            )
+        self.conn.commit()
+
+    def update_trade_status_by_order_id(self, order_id: str, status: str) -> int:
+        if not order_id:
+            return 0
+        cur = self.conn.execute(
+            "UPDATE trade_journal SET status = ? WHERE order_id = ?",
+            (status, str(order_id)),
         )
         self.conn.commit()
+        return int(cur.rowcount)
 
     def get_trade_journal(self, limit: int = 50) -> list[dict[str, Any]]:
         rows = self.conn.execute(
@@ -344,11 +459,27 @@ class StateStore:
                     max_dd = dd
         return max_dd
 
-    def get_equity_snapshots(self, limit: int = 500) -> list[dict[str, Any]]:
+    def get_first_equity_snapshot(self) -> dict[str, Any] | None:
+        row = self.conn.execute(
+            "SELECT * FROM equity_snapshots ORDER BY ts ASC, rowid ASC LIMIT 1"
+        ).fetchone()
+        return dict(row) if row else None
+
+    def get_latest_equity_snapshot(self) -> dict[str, Any] | None:
+        row = self.conn.execute(
+            "SELECT * FROM equity_snapshots ORDER BY ts DESC, rowid DESC LIMIT 1"
+        ).fetchone()
+        return dict(row) if row else None
+
+    def get_recent_equity_snapshots(self, limit: int = 500) -> list[dict[str, Any]]:
         rows = self.conn.execute(
-            "SELECT * FROM equity_snapshots ORDER BY ts ASC LIMIT ?", (limit,)
+            "SELECT * FROM equity_snapshots ORDER BY ts DESC, rowid DESC LIMIT ?",
+            (limit,),
         ).fetchall()
-        return [dict(r) for r in rows]
+        return [dict(r) for r in reversed(rows)]
+
+    def get_equity_snapshots(self, limit: int = 500) -> list[dict[str, Any]]:
+        return self.get_recent_equity_snapshots(limit=limit)
 
     # ── Run logs ───────────────────────────────────────────────────────
 

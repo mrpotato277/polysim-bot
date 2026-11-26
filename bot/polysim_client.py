@@ -44,22 +44,40 @@ class PolySimWrapper:
         return self.sdk.balance()
 
     def get_portfolio(self) -> dict[str, Any]:
-        return self.sdk.portfolio()
+        return self.sdk.portfolio(wallet_id="api")
 
     def get_positions(self, status: str = "OPEN") -> list[dict[str, Any]]:
-        return self.sdk.positions(status=status)
+        return self.sdk.positions(status=status, wallet_id="api")
 
-    def get_open_orders(self) -> list[dict[str, Any]]:
-        return self.sdk.list_orders(status="PENDING", limit=100)
+    def get_open_orders(self, max_orders: int = 500) -> list[dict[str, Any]]:
+        orders: list[dict[str, Any]] = []
+        offset = 0
+        page_size = min(100, max_orders)
+        while len(orders) < max_orders:
+            batch = self.sdk.list_orders(
+                status="PENDING",
+                limit=page_size,
+                offset=offset,
+                wallet_id="api",
+            )
+            if not batch:
+                break
+            orders.extend(batch)
+            if len(batch) < page_size:
+                break
+            offset += len(batch)
+        if len(orders) >= max_orders:
+            log.warning("Open orders reached pagination cap (%d); list may be truncated.", max_orders)
+        return orders[:max_orders]
 
     def get_equity_history(self, limit: int = 200) -> list[dict[str, Any]]:
-        return self.sdk.equity(limit=limit)
+        return self.sdk.equity(limit=limit, wallet_id="api")
 
     def get_trade_history(self, limit: int = 100) -> list[dict[str, Any]]:
-        return self.sdk.history(limit=limit)
+        return self.sdk.history(limit=limit, wallet_id="api")
 
     def get_settlements(self, limit: int = 100) -> list[dict[str, Any]]:
-        resp = self.sdk.settlements(limit=limit)
+        resp = self.sdk.settlements(limit=limit, wallet_id="api")
         if isinstance(resp, dict):
             return list(resp.get("data") or [])
         return []
@@ -154,6 +172,9 @@ class PolySimWrapper:
         asks = book.get("asks") or []
         best_bid, best_ask = best_bid_ask(bids, asks)
         if best_bid is None or best_ask is None:
+            return None
+        if best_bid <= Decimal("0") or best_ask <= Decimal("0") or best_ask < best_bid:
+            log.warning("Rejected invalid/crossed orderbook: best_bid=%s best_ask=%s", best_bid, best_ask)
             return None
         tick_size = to_decimal(book.get("tick_size"), "0.01")
         if tick_size <= Decimal("0"):

@@ -28,26 +28,31 @@ logging.basicConfig(
 log = logging.getLogger("orchestrator")
 
 
-def _update_brier_scores(client: PolySimWrapper, state: StateStore) -> None:
+def _update_brier_scores(client: PolySimWrapper, state: StateStore) -> int:
     """Check settlements and unresolved forecast markets to update Brier scores."""
+    total_updated = 0
     try:
         settlements = client.get_settlements(limit=100)
         for s in settlements:
             mid = str(s.get("market_id") or "")
             res = str(s.get("resolved_outcome") or s.get("winning_outcome") or "").lower()
             if mid and res in {"yes", "no"}:
-                state.update_resolved_market_brier(mid, res == "yes")
+                total_updated += state.update_resolved_market_brier(mid, res == "yes")
     except Exception as exc:
         log.debug("Settlement check skipped: %s", exc)
 
-    for mid in state.list_unresolved_forecast_market_ids()[:10]:
+    for mid in state.list_unresolved_forecast_market_ids(limit=15):
         try:
             m = client.get_market(mid)
             res = str(m.get("resolved_outcome") or "").lower()
             if res in {"yes", "no"}:
-                state.update_resolved_market_brier(mid, res == "yes")
+                total_updated += state.update_resolved_market_brier(mid, res == "yes")
+            else:
+                state.mark_forecast_market_checked(mid)
         except Exception:
+            state.mark_forecast_market_checked(mid)
             continue
+    return total_updated
 
 
 def _re_evaluate_positions(
@@ -104,19 +109,28 @@ def _re_evaluate_positions(
         if need_reforecast and question and llm_calls < cfg.max_forecasts_per_run:
             try:
                 mkt_yes_mid = met["mid"] if outcome.lower() == "yes" else (Decimal("1") - met["mid"])
+                desc = ""
+                end_date_iso = str(latest.get("end_date") or "") if latest else ""
+                try:
+                    detail = client.get_market(mid)
+                    desc = str(detail.get("description") or detail.get("rules") or detail.get("event_title") or "")
+                    if detail.get("end_date"):
+                        end_date_iso = str(detail.get("end_date"))
+                except Exception:
+                    pass
                 try:
                     mkt_ctx = build_market_data_context(question, cat)
                 except Exception:
                     mkt_ctx = ""
                 fc = forecaster.forecast(
                     question=question,
-                    description="",
-                    end_date_iso="",
+                    description=desc,
+                    end_date_iso=end_date_iso,
                     market_price_yes=mkt_yes_mid,
                     news_articles=news_articles,
                     market_context=mkt_ctx,
                 )
-                llm_calls += 1
+                llm_calls += fc.api_attempts
                 p_true_outcome = fc.p_blended if outcome.lower() == "yes" else (Decimal("1") - fc.p_blended)
                 edge_now = p_true_outcome - met["mid"]
                 state.record_forecast(
@@ -124,7 +138,7 @@ def _re_evaluate_positions(
                         "market_id": mid,
                         "question": question,
                         "category": cat,
-                        "end_date": "",
+                        "end_date": end_date_iso,
                         "market_price": f"{mkt_yes_mid:.4f}",
                         "p_blind": f"{fc.p_blind:.4f}",
                         "p_blended": f"{fc.p_blended:.4f}",
@@ -195,7 +209,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
         portfolio = client.get_portfolio()
         positions = client.get_positions(status="OPEN")
         open_orders = client.get_open_orders()
-        _update_brier_scores(client, state)
+        brier_updates = _update_brier_scores(client, state)
 
         cash_usd = to_decimal(balance.get("balance"))
         equity_usd = to_decimal(balance.get("total_value"), str(cash_usd))
@@ -209,8 +223,15 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
             log.warning("CIRCUIT BREAKER ACTIVE: 24h drawdown %s <= %s", dd_24h, cfg.circuit_breaker_24h_dd)
 
         # 2. Cancel stale resting orders
+        stale_cancelled = 0
         for stale_ord in overseer.find_stale_orders(open_orders):
-            execution.cancel_stale_order(stale_ord)
+            if execution.cancel_stale_order(stale_ord):
+                stale_cancelled += 1
+        if stale_cancelled > 0:
+            try:
+                open_orders = client.get_open_orders()
+            except Exception as exc:
+                log.warning("Failed to refresh open orders after cancel: %s", exc)
 
         # 3. Scan markets for Alpha A/B/C
         candidates, market_categories, total_scanned = scanner.scan()
@@ -330,7 +351,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                         news_articles=arts,
                         market_context=mkt_ctx,
                     )
-                    llm_calls += 1
+                    llm_calls += fc.api_attempts
                 except Exception as exc:
                     err = f"Forecaster error for {cand.condition_id}: {exc}"
                     log.warning(err)
@@ -509,8 +530,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
 
         # 9. Export dashboard JSON & record run log (skip rewriting on idle 5-min checks)
         duration = round(time.monotonic() - t0, 2)
-        snapshots = state.get_equity_snapshots(limit=500)
-        last_snap = snapshots[-1] if snapshots else None
+        last_snap = state.get_latest_equity_snapshot()
         now_snap = datetime.now(timezone.utc)
         snap_stale = True
         equity_changed = True
@@ -529,6 +549,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
         should_persist = (
             llm_calls > 0
             or trades_attempted > 0
+            or brier_updates > 0
             or len(errors) > 0
             or equity_changed
             or snap_stale

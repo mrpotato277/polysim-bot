@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import uuid
 from datetime import datetime, timezone
 from decimal import Decimal
 from typing import Any
@@ -20,9 +21,10 @@ log = logging.getLogger(__name__)
 
 def build_client_order_id(market_id: str, side: str, outcome: str) -> str:
     now = datetime.now(timezone.utc)
-    stamp = now.strftime("%Y%m%d-%H")
+    stamp = now.strftime("%Y%m%d-%H%M%S")
     short_mkt = market_id.replace("0x", "")[:10]
-    return f"psb-{stamp}-{short_mkt}-{side.lower()}-{outcome.lower()[:1]}"
+    suffix = uuid.uuid4().hex[:6]
+    return f"psb-{stamp}-{short_mkt}-{side.lower()}-{outcome.lower()[:1]}-{suffix}"
 
 
 class ExecutionEngine:
@@ -221,6 +223,26 @@ class ExecutionEngine:
         except Exception as exc:
             err_msg = str(exc)[:240]
             log.warning("SELL failed for %s: %s", proposal.market_id, err_msg)
+            self.state.record_trade(
+                {
+                    "client_order_id": coid,
+                    "order_id": "",
+                    "market_id": proposal.market_id,
+                    "question": proposal.question,
+                    "outcome": proposal.outcome,
+                    "side": "SELL",
+                    "order_mode": proposal.order_mode,
+                    "price": f"{proposal.limit_price}",
+                    "quantity": f"{qty}",
+                    "notional_usd": f"{notional}",
+                    "est_fee_usd": f"{est_fee}",
+                    "edge_net": f"{proposal.edge_net:.4f}",
+                    "strategy_type": proposal.strategy_type,
+                    "status": "ERROR",
+                    "dry_run": False,
+                    "rationale": f"{proposal.rationale} | ERR: {err_msg}",
+                }
+            )
             return False, err_msg
 
     def cancel_stale_order(self, order_row: dict[str, Any]) -> bool:
@@ -232,6 +254,7 @@ class ExecutionEngine:
             return True
         try:
             self.client.cancel_order(oid)
+            self.state.update_trade_status_by_order_id(str(oid), "CANCELLED")
             return True
         except Exception as exc:
             log.warning("Failed to cancel stale order %s: %s", oid, exc)

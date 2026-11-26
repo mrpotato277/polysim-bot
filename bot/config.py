@@ -14,9 +14,14 @@ load_dotenv(PROJECT_ROOT / ".env")
 
 
 def _parse_bool(value: str | None, default: bool) -> bool:
-    if value is None:
+    if value is None or not value.strip():
         return default
-    return value.strip().lower() in {"1", "true", "yes", "on"}
+    v = value.strip().lower()
+    if v in {"1", "true", "yes", "on"}:
+        return True
+    if v in {"0", "false", "no", "off"}:
+        return False
+    raise ValueError(f"Invalid boolean value: {value!r}")
 
 
 @dataclass(frozen=True)

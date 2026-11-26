@@ -62,31 +62,51 @@ def is_cumulative_deadline_question(question: str) -> bool:
     return bool(re.search(r"\b(?:by|before)\b", q_norm))
 
 
+_DATE_STEM_RE = re.compile(
+    r"\b(?:"
+    r"(?:january|february|march|april|may|june|july|august|september|october|november|december)"
+    r"(?:\s+\d{1,2}(?:st|nd|rd|th)?)?(?:,?\s*\d{4})?"
+    r"|(?:by|before)\s+\d{1,2}/\d{1,2}(?:/\d{2,4})?"
+    r"|\d{4}-\d{2}-\d{2}"
+    r"|(?:by|before)\s+(?:the\s+end\s+of\s+)?(?:q[1-4]\s+)?\d{4}"
+    r")\b",
+    re.IGNORECASE,
+)
+
+
+def _has_keyword(text_lower: str, keywords: tuple[str, ...]) -> bool:
+    pattern = r"(?<!\w)(?:" + "|".join(re.escape(k) for k in keywords) + r")(?!\w)"
+    return bool(re.search(pattern, text_lower))
+
+
 def normalize_category(raw_cat: str | None, question: str) -> str:
     c = (raw_cat or "").strip().lower()
-    q = question.lower()
-    if c in {"crypto", "cryptocurrency", "defi", "bitcoin"} or any(
-        w in q for w in ("bitcoin", "btc", "ethereum", "eth", "solana", "crypto")
-    ):
+    q = (question or "").lower()
+    if c in {"crypto", "cryptocurrency", "defi", "bitcoin"}:
         return "crypto"
-    if c in {"politics", "elections", "us-politics"} or any(
-        w in q for w in ("election", "president", "senate", "congress", "trump", "vote", "minister")
-    ):
+    if c in {"politics", "elections", "us-politics"}:
         return "politics"
-    if c in {"world", "geopolitics", "ukraine", "middle-east"} or any(
-        w in q for w in ("invade", "war", "ceasefire", "nato", "treaty", "sanction", "israel", "iran", "russia", "china")
-    ):
+    if c in {"world", "geopolitics", "ukraine", "middle-east"}:
         return "geopolitics"
-    if c in {"finance", "economics", "business", "macro"} or any(
-        w in q for w in ("fed", "fomc", "cpi", "inflation", "gdp", "rate cut", "tariff", "stock", "s&p")
-    ):
+    if c in {"finance", "economics", "business", "macro"}:
         return "economics"
     if c in {"sports", "nba", "nfl", "soccer", "ufc", "tennis"}:
         return "sports"
-    if c in {"tech", "ai", "science"} or any(w in q for w in ("openai", "gpt", "spacex", "launch", "fda", "ai ")):
+    if c in {"tech", "ai", "science"}:
         return "tech"
     if c in {"culture", "pop-culture", "entertainment", "mentions"}:
         return "culture"
+
+    if _has_keyword(q, ("bitcoin", "btc", "ethereum", "eth", "solana", "crypto")):
+        return "crypto"
+    if _has_keyword(q, ("election", "president", "senate", "congress", "trump", "vote", "minister")):
+        return "politics"
+    if _has_keyword(q, ("invade", "war", "ceasefire", "nato", "treaty", "sanction", "israel", "iran", "russia", "china")):
+        return "geopolitics"
+    if _has_keyword(q, ("fed", "fomc", "cpi", "inflation", "gdp", "rate cut", "tariff", "stock", "s&p")):
+        return "economics"
+    if _has_keyword(q, ("openai", "gpt", "spacex", "launch", "fda", "ai")):
+        return "tech"
     return c or "other"
 
 
@@ -468,9 +488,14 @@ class MarketScanner:
                     q_late_raw = str(m_late.get("question", ""))
                     if not (is_cumulative_deadline_question(q_early_raw) and is_cumulative_deadline_question(q_late_raw)):
                         continue
-                    q_early_stem = re.sub(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|\d{1,4})\b", "", q_early_raw.lower()).strip()
-                    q_late_stem = re.sub(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|\d{1,4})\b", "", q_late_raw.lower()).strip()
+                    q_early_stem = re.sub(r"\s+", " ", _DATE_STEM_RE.sub("", q_early_raw.lower())).strip()
+                    q_late_stem = re.sub(r"\s+", " ", _DATE_STEM_RE.sub("", q_late_raw.lower())).strip()
                     if q_early_stem and q_early_stem == q_late_stem and (p_early - p_late) > self.cfg.monotonicity_violation_threshold:
+                        # Enforce shared multi-day horizon window before fetching book or emitting candidate
+                        now_dt = datetime.now(timezone.utc)
+                        days = (dt_late - now_dt).total_seconds() / 86400.0
+                        if not (self.cfg.min_horizon_days <= days <= self.cfg.max_horizon_days):
+                            continue
                         # Later deadline is priced CHEAPER than earlier deadline -> buy Yes on later deadline
                         cid = str(m_late["condition_id"])
                         yes_tid, no_tid = _extract_token_ids(m_late)
@@ -484,8 +509,6 @@ class MarketScanner:
                         if not metrics or metrics["spread"] > Decimal("0.05"):
                             continue
                         if p_early - metrics["best_ask"] >= Decimal("0.02"):
-                            now = datetime.now(timezone.utc)
-                            days = max(0.5, (dt_late - now).total_seconds() / 86400.0)
                             hits.append(
                                 MarketCandidate(
                                     condition_id=cid,

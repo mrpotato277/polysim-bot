@@ -79,8 +79,7 @@ STOPWORDS = {
 def build_news_query(question: str, event_title: str | None = None) -> str:
     """Extract crisp keywords from a Polymarket question for Google News RSS search."""
     text = question.strip()
-    # Remove trailing date / threshold boilerplate if clean enough, keep proper nouns & core verbs
-    tokens = re.findall(r"[A-Za-z0-9$%.\-']+", text)
+    tokens = re.findall(r"[\$€£%]?[^\W_]+(?:[,\.\-'\$/%][^\W_]+)*", text)
     keywords: list[str] = []
     seen: set[str] = set()
     for tok in tokens:
@@ -95,7 +94,7 @@ def build_news_query(question: str, event_title: str | None = None) -> str:
             break
 
     if len(keywords) < 2 and event_title:
-        for tok in re.findall(r"[A-Za-z0-9.\-']+", event_title):
+        for tok in re.findall(r"[^\W_]+(?:[\.\-'][^\W_]+)*", event_title):
             clean = tok.strip(".,?!:;\"'()[]")
             low = clean.lower()
             if clean and low not in STOPWORDS and low not in seen:
@@ -160,6 +159,11 @@ def _parse_pub_dt(entry: Any) -> datetime | None:
         return None
 
 
+def _age_sort_key(art: dict[str, Any]) -> float:
+    age = art.get("age_hours")
+    return float("inf") if age is None else float(age)
+
+
 def _parse_feed_entries(
     feed: Any,
     *,
@@ -174,7 +178,12 @@ def _parse_feed_entries(
         pub_dt = _parse_pub_dt(entry)
         if cutoff is not None and pub_dt is not None and pub_dt < cutoff:
             continue
-        age_hours = round((now - pub_dt).total_seconds() / 3600.0, 2) if pub_dt else 24.0
+        if pub_dt is None:
+            age_hours: float | None = None
+        elif pub_dt > now:
+            age_hours = 0.0
+        else:
+            age_hours = round((now - pub_dt).total_seconds() / 3600.0, 2)
         source_obj = entry.get("source")
         source_name = (
             source_obj.get("title") if isinstance(source_obj, dict) else ""
@@ -194,7 +203,7 @@ def _parse_feed_entries(
             }
         )
 
-    articles.sort(key=lambda a: a["age_hours"])
+    articles.sort(key=_age_sort_key)
     return articles
 
 
@@ -222,11 +231,11 @@ def fetch_google_news(
 
 
 def _tokenize_for_match(text: str) -> set[str]:
-    """Extract lowercase alphanumeric tokens (len >= 3, excluding stopwords)."""
+    """Extract lowercase Unicode alphanumeric tokens (len >= 3, excluding stopwords)."""
     normalized = re.sub(r"(?<=\d),(?=\d)", "", (text or "").lower())
     return {
         tok
-        for tok in re.findall(r"[a-z0-9]+", normalized)
+        for tok in re.findall(r"[^\W_]+", normalized)
         if len(tok) >= 3 and tok not in STOPWORDS
     }
 
@@ -255,7 +264,7 @@ def _fetch_single_rss_feed(
     return [
         art
         for art in cached
-        if float(art.get("age_hours", 24.0)) <= float(max_age_hours)
+        if art.get("age_hours") is None or float(art["age_hours"]) <= float(max_age_hours)
     ]
 
 
@@ -287,7 +296,7 @@ def fetch_specialist_news(
             haystack = f"{art.get('title', '')} {art.get('snippet', '')}"
             overlap = len(q_tokens & _tokenize_for_match(haystack))
             if overlap >= min_overlap:
-                scored.append((overlap, -float(art.get("age_hours", 24.0)), art))
+                scored.append((overlap, -_age_sort_key(art), art))
 
     scored.sort(key=lambda row: (row[0], row[1]), reverse=True)
     return [row[2] for row in scored[:max_items]]
@@ -315,11 +324,11 @@ def fetch_market_news(
         timeout=min(6.0, timeout),
     )
 
-    combined.sort(key=lambda a: float(a.get("age_hours", 24.0)))
+    combined.sort(key=_age_sort_key)
     seen_titles: set[str] = set()
     deduped: list[dict[str, Any]] = []
     for art in combined:
-        norm_title = re.sub(r"[^a-z0-9]+", "", str(art.get("title") or "").lower())[:90]
+        norm_title = re.sub(r"[\W_]+", "", str(art.get("title") or "").lower())[:90]
         if not norm_title or norm_title in seen_titles:
             continue
         seen_titles.add(norm_title)

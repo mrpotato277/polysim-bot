@@ -3,14 +3,33 @@
 from __future__ import annotations
 
 import math
-from decimal import Decimal, ROUND_DOWN, ROUND_UP
+from decimal import Decimal, InvalidOperation, ROUND_DOWN, ROUND_UP
 from typing import Iterable, Mapping, Any
+
+
+def first_present(mapping: Mapping[str, Any], *keys: str) -> Any:
+    """Return the first value in mapping that is neither None nor empty string (preserves numeric 0)."""
+    for key in keys:
+        if key not in mapping:
+            continue
+        val = mapping[key]
+        if val is not None and val != "":
+            return val
+    return None
 
 
 def to_decimal(value: Any, default: str = "0") -> Decimal:
     if value is None or value == "":
         return Decimal(default)
-    return Decimal(str(value))
+    if isinstance(value, bool):
+        return Decimal(default)
+    if isinstance(value, float) and not math.isfinite(value):
+        return Decimal(default)
+    try:
+        dec = Decimal(str(value))
+    except (InvalidOperation, ValueError):
+        return Decimal(default)
+    return dec if dec.is_finite() else Decimal(default)
 
 
 def best_bid_ask(

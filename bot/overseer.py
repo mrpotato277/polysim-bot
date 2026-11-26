@@ -8,7 +8,7 @@ from decimal import Decimal, ROUND_DOWN
 from typing import Any
 
 from bot.config import BotConfig
-from bot.math_utils import fee_drag_per_share, to_decimal
+from bot.math_utils import fee_drag_per_share, first_present, to_decimal
 
 
 @dataclass(frozen=True)
@@ -101,13 +101,14 @@ class Overseer:
         total = Decimal("0")
 
         for pos in positions:
-            mid = str(pos.get("market_id") or pos.get("condition_id") or "")
-            qty = to_decimal(pos.get("quantity") or pos.get("size"))
-            cur_p = to_decimal(pos.get("current_price") or pos.get("avg_entry_price") or pos.get("avg_price"))
-            val = to_decimal(pos.get("current_value") or pos.get("market_value") or (qty * cur_p))
+            mid = str(first_present(pos, "market_id", "condition_id") or "")
+            qty = to_decimal(first_present(pos, "quantity", "size"))
+            cur_p = to_decimal(first_present(pos, "current_price", "avg_entry_price", "avg_price"))
+            val_raw = first_present(pos, "current_value", "market_value")
+            val = to_decimal(val_raw) if val_raw is not None else (qty * cur_p)
             if val <= Decimal("0") or not mid:
                 continue
-            cat = market_categories.get(mid, str(pos.get("category") or "other")).lower()
+            cat = market_categories.get(mid, str(first_present(pos, "category") or "other")).lower()
             by_market[mid] = by_market.get(mid, Decimal("0")) + val
             by_category[cat] = by_category.get(cat, Decimal("0")) + val
             total += val
@@ -116,11 +117,15 @@ class Overseer:
         for ord_row in open_orders:
             if str(ord_row.get("side", "")).upper() != "BUY":
                 continue
-            mid = str(ord_row.get("market_id") or ord_row.get("market") or "")
-            rem = to_decimal(ord_row.get("remaining_quantity") or ord_row.get("quantity") or ord_row.get("original_size"))
-            filled = to_decimal(ord_row.get("size_matched") or "0")
-            unfilled = max(Decimal("0"), rem - filled)
-            price = to_decimal(ord_row.get("price") or "0")
+            mid = str(first_present(ord_row, "market_id", "market") or "")
+            rem_raw = first_present(ord_row, "remaining_quantity")
+            if rem_raw is not None:
+                unfilled = max(Decimal("0"), to_decimal(rem_raw))
+            else:
+                orig = to_decimal(first_present(ord_row, "quantity", "original_size"))
+                filled = to_decimal(first_present(ord_row, "size_matched"), "0")
+                unfilled = max(Decimal("0"), orig - filled)
+            price = to_decimal(first_present(ord_row, "price"), "0")
             committed = unfilled * price
             if committed <= Decimal("0") or not mid:
                 continue
@@ -144,7 +149,8 @@ class Overseer:
         circuit_breaker_active: bool,
     ) -> VetoDecision:
         if circuit_breaker_active:
-            return VetoDecision(False, "VETO: 24h drawdown circuit breaker (-10%) is active.")
+            dd_pct = self.cfg.circuit_breaker_24h_dd * Decimal("100")
+            return VetoDecision(False, f"VETO: 24h drawdown circuit breaker ({dd_pct:.0f}%) is active.")
 
         if equity_usd <= Decimal("0"):
             return VetoDecision(False, "VETO: Equity is non-positive.")
