@@ -1,34 +1,39 @@
 {
-  "generated_at": "2026-11-26T18:21:01.497427+00:00",
+  "generated_at": "2026-11-26T18:36:42.181744+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
-    "max_total_exposure_pct": 35.0,
-    "max_single_market_pct": 4.0,
-    "max_category_exposure_pct": 12.0,
-    "kelly_fraction": 0.15,
+    "max_total_exposure_pct": 55.0,
+    "max_single_market_pct": 7.0,
+    "max_category_exposure_pct": 22.0,
+    "kelly_fraction": 0.22,
     "circuit_breaker_24h_dd_pct": -5.0
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9960.54,
+    "equity_usd": 9960.99,
+    "reconciled_equity_usd": 9960.99,
+    "equity_discrepancy_usd": 0.0,
     "cash_usd": 8998.81,
-    "positions_value_usd": 961.73,
+    "positions_value_usd": 962.18,
     "deployed_pct": 9.66,
-    "total_pnl_usd": -39.46,
+    "total_pnl_usd": -39.01,
     "total_pnl_pct": -0.39,
-    "unrealized_pnl_usd": -38.44,
+    "unrealized_pnl_usd": -37.99,
     "total_trades": 18,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.44,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 59,
+    "brier_blind_score": null,
+    "brier_market_score": null,
+    "brier_unique_markets": 0,
+    "total_forecasts": 66,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 395.32,
-    "politics": 566.41
+    "crypto": 397.55,
+    "politics": 564.63
   },
   "equity_curve": [
     {
@@ -644,6 +649,13 @@
       "cash": 8998.81,
       "deployed_pct": 9.66,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T18:36:41.841776+00:00",
+      "equity": 9960.99,
+      "cash": 8998.81,
+      "deployed_pct": 9.66,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -654,12 +666,13 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8865,
-      "current_value": 395.32,
-      "unrealized_pnl": -4.68,
-      "p_blended": 0.0635,
-      "edge_net": 0.0395,
-      "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
+      "current_price": 0.8915,
+      "current_value": 397.55,
+      "unrealized_pnl": -2.45,
+      "p_yes": 0.1244,
+      "p_blended": 0.8756,
+      "edge_net": 0.0,
+      "rationale": "Da Bitcoin bei rund 60.500 US-Dollar handelt und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Absturz um über neun Prozent auf 55.000 US-Dollar unwahrscheinlich, wenngleich Krypto-Märkte volatil sind."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -668,12 +681,13 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.098,
-      "current_value": 174.22,
-      "unrealized_pnl": -46.22,
-      "p_blended": 0.2008,
+      "current_price": 0.097,
+      "current_value": 172.44,
+      "unrealized_pnl": -48.0,
+      "p_yes": 0.1825,
+      "p_blended": 0.1825,
       "edge_net": 0.0,
-      "rationale": "Die aktuellen Umfragen zeigen ein extrem knappes Rennen bei den spanischen Neuwahlen, weshalb Pedro Sánchez' Verbleib an der Regierung gefährdet ist."
+      "rationale": "Pedro Sánchez kämpft in den aktuellen Neuwahlen gegen eine starke konservative Opposition, während Umfragen die Sozialisten im Rückstand sehen."
     },
     {
       "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
@@ -685,12 +699,253 @@
       "current_price": 0.615,
       "current_value": 392.19,
       "unrealized_pnl": 12.46,
+      "p_yes": 0.7975,
       "p_blended": 0.7975,
       "edge_net": 0.1558,
       "rationale": "Der amtierende Bürgermeister Chiang Wan-an geht als klarer Favorit in die Wahl, da aktuelle Berichte seine Handlungsfähigkeit und starke Position unterstreichen."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 66,
+      "ts": "2026-11-26T18:36:41.840145+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2650",
+      "p_blind": "0.3800",
+      "p_blended": "0.3039",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0439",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official seat count of the Spanish general election by the resolution deadline.",
+        "base_rate": 0.45,
+        "bull_case": "PSOE retains a strong incumbency advantage and mobilization of progressive voters against the rising right-wing coalition.",
+        "bear_case": "Polling heavily favors the Partido Popular (PP) alongside Vox, pointing to a likely conservative victory in seat count.",
+        "summary_de": "Aktuelle Umfragen und der europäische Trend zu konservativen Parteien sprechen eher für eine Mehrheit der konservativen Opposition.",
+        "news_used": [
+          "Spanish elections: What you need to know and what's at stake - BBC",
+          "Spain’s Election Could Spark Europe’s Next Right-Wing Wave - Council on Foreign Relations"
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "ts": "2026-11-26T18:36:40.083854+00:00",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1090",
+      "p_blind": "0.1500",
+      "p_blended": "0.1244",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves YES if Bitcoin hits or dips to $55,000 at any point during November 2026.",
+        "base_rate": 0.3,
+        "bull_case": "Severe selling pressure and historical Thanksgiving liquidity drops could trigger a sudden flash crash down to $55,000 before the end of November.",
+        "bear_case": "Bitcoin is currently trading above $60,500 with only a few days left in November, and recent relief rallies indicate strong support holding above $59,000.",
+        "summary_de": "Da Bitcoin bei rund 60.500 US-Dollar handelt und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Absturz um über neun Prozent auf 55.000 US-Dollar unwahrscheinlich, wenngleich Krypto-Märkte volatil sind.",
+        "news_used": [
+          "Bitcoin Stages Relief Rally, Bounces Above $61,000 as Investors Weigh Further Downside Risks - Tekedia",
+          "Talos warns of thin Thanksgiving liquidity as Bitcoin eyes $61K - TradingView",
+          "Bitcoin Price Prediction: Wait for Another Shot at $55K BTC or Enter AlphaPepe Under 4 Cents Before Launch? - openPR.com",
+          "Bitcoin Holders Face Worst Selling Pressure Since FTX Meltdown, Glassnode Data Shows - Tekedia"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $60,535.70 (24h range: $59,490.50 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $55,000.00: -9.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
+      }
+    },
+    {
+      "id": 64,
+      "ts": "2026-11-26T18:36:35.323097+00:00",
+      "market_id": "0x598c99fbef3a7d4fb2c3a5af62e67e4ef5f5f7447e966569aee6c917bff12a25",
+      "question": "Will Su Chiao-hui win the next New Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.6450",
+      "p_blind": "0.4800",
+      "p_blended": "0.5775",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0725",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official winner of the New Taipei Mayor election happening in November 2026.",
+        "base_rate": 0.5,
+        "bull_case": "Su Chiao-hui holds a strong organizational edge and represents the DPP in a highly contested race against the KMT, amid late campaign controversies from opponents.",
+        "bear_case": "New Taipei has historically been a KMT stronghold, and turnout operations by the opposition could favor the KMT candidate Lee Shu-chuan or equivalent.",
+        "summary_de": "Die Bürgermeisterwahl in Neu-Taipeh verläuft äußerst knapp zwischen DPP und KMT, wobei die organisatorischen Vorteile von Su Chiao-hui auf ein starkes traditionelles Lager der Opposition treffen.",
+        "news_used": [
+          "Could New Taipei change hands? Su Chiao-hui has organisational edge as Lee Shu-chuan looks to turnout - 联合早报",
+          "2026 ELECTIONS Candidates, party leaders step up campaigning ahead of Saturday's elections - Focus Taiwan",
+          "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation",
+          "As Taiwan’s local elections loom, voters want an end to ‘constant confrontation’ - South China Morning Post",
+          "[Big read] Taiwan local elections: What a DPP surge means for the 2028 presidency and cross-strait relations - ThinkChina",
+          "New Taipei City’s KMT candidate apologizes for volunteer's sexist remarks -News-Radio Taiwan International - Rti 中央廣播電臺"
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "ts": "2026-11-26T18:36:30.381843+00:00",
+      "market_id": "0x0ff4131bebd7e76a8d4e10951cf22ed92616ed2b5631d71e80721e7afd94f6ed",
+      "question": "Will Lee Shu-chuan win the next New Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.3700",
+      "p_blind": "0.4800",
+      "p_blended": "0.4177",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0477",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.1-flash-lite",
+        "resolution_note": "The election is scheduled for Saturday, November 28, 2026, which falls within the contract resolution window.",
+        "base_rate": 0.45,
+        "bull_case": "Lee Shu-chuan benefits from the KMT's strong local political machinery in New Taipei and the potential for a consolidation of the pan-blue vote.",
+        "bear_case": "Su Chiao-hui holds a significant organizational advantage and benefits from the DPP's incumbency momentum in the region.",
+        "summary_de": "Der Ausgang der Wahl in Neu-Taipeh bleibt aufgrund des starken organisatorischen Rückhalts von Su Chiao-hui und der intensiven Mobilisierungsbemühungen von Lee Shu-chuan äußerst knapp.",
+        "news_used": [
+          "'Don't vote for women who menstruate': Female Taiwan election volunteer says during walkabout, sparks outrage - Mothership",
+          "Could New Taipei change hands? Su Chiao-hui has organisational edge as Lee Shu-chuan looks to turnout - 联合早报",
+          "2026 ELECTIONS Candidates, party leaders step up campaigning ahead of Saturday's elections - Focus Taiwan",
+          "Well wishes - Taipei Times",
+          "Taiwan’s 2026 Nine-in-One Elections: Things to Watch - CSIS | Center for Strategic and International Studies",
+          "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation"
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "ts": "2026-11-26T18:36:24.932938+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.9050",
+      "p_blind": "0.4800",
+      "p_blended": "0.7814",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves YES if Alberto Núñez Feijóo becomes the next Prime Minister of Spain before the deadline of November 30, 2026.",
+        "base_rate": 0.45,
+        "bull_case": "Recent polls and snap election dynamics show strong momentum for the conservative Partido Popular under Feijóo, potentially allowing them to form a government.",
+        "bear_case": "Incumbent Pedro Sánchez and left-wing coalitions may retain power or forge alternative alliances, preventing Feijóo from securing the necessary parliamentary majority before the deadline.",
+        "summary_de": "Trotz guter Umfrageergebnisse und der aktuellen Parlamentswahlen bleibt unklar, ob Alberto Núñez Feijóo rechtzeitig die notwendigen Mehrheiten für eine Regierungsbildung sichern kann.",
+        "news_used": [
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times",
+          "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale",
+          "Spain's Election Could Topple One of Europe's Last Left-Wing Holdouts - Haaretz",
+          "Spain’s far right hasn’t governed since Franco. Immigration fears could change that - News4JAX",
+          "Spain, tonight TV debate between 4 prime minister candidates - jiji press"
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "ts": "2026-11-26T18:36:20.223055+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.0970",
+      "p_blind": "0.3800",
+      "p_blended": "0.1825",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, hinging on the ongoing snap election results.",
+        "base_rate": 0.35,
+        "bull_case": "Sánchez rallies progressive voters and turnout surges past key thresholds, allowing a left-wing coalition to form a government.",
+        "bear_case": "The conservative People's Party leads strongly in polls and the opposition unites to unseat Sánchez in the current snap election.",
+        "summary_de": "Pedro Sánchez kämpft in den aktuellen Neuwahlen gegen eine starke konservative Opposition, während Umfragen die Sozialisten im Rückstand sehen.",
+        "news_used": [
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
+          "Explainer-Spain's Snap Election — Why It Matters and Who Might Win? - U.S. News & World Report",
+          "Spain's Election Could Topple One of Europe's Last Left-Wing Holdouts - Haaretz",
+          "DW News. . Spain's Socialist Party is trailing the conservative People's Party in most polls. As the country faces multiple challenges, incl",
+          "Spanish PM Pedro Sánchez: ‘We’re within touching distance of securing a progressive majority; if we reach 75% turnout, we can make it happen"
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "ts": "2026-11-26T18:36:18.630434+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9350",
+      "p_blind": "0.6500",
+      "p_blended": "0.8693",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Entscheidet über eine Zinserhöhung um 25 Basispunkte nach dem Dezember-Meeting 2026.",
+        "base_rate": 0.2,
+        "bull_case": "Aktuelle PCE-Inflationsdaten (Oktober 2026) steigen stärker als erwartet auf 3,8%, was den Druck auf die Fed erhöht, die Zinsen im Dezember anzuheben.",
+        "bear_case": "Die Federal Reserve belässt die Zinsen trotz hartnäckiger Inflation historisch oft länger auf dem Plateau, um wirtschaftliche Verwerfungen zu vermeiden, und bevorzugt eine vorsichtige Haltung.",
+        "summary_de": "Angesichts wieder anziehender Inflationszahlen und aktueller Marktberichte steigt die Wahrscheinlichkeit einer Zinsanhebung durch die Fed im Dezember 2026 deutlich an.",
+        "news_used": [
+          "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
+          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch",
+          "PCE inflation gauge still running hot, as December rate hike looms - InvestmentNews",
+          "Fed's preferred gauge of inflation climbs ahead of possible rate hike - ABC News - Breaking News, Latest News and Videos",
+          "US PCE rises 3.8% in October: experts say Fed rate hike in December a done deal - TradingView",
+          "Fed’s preferred inflation metric rose in October as final 2026 rate meeting nears - The Hill"
+        ]
+      }
+    },
     {
       "id": 59,
       "ts": "2026-11-26T18:05:54.045426+00:00",
@@ -708,6 +963,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.237255+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Taipei Mayor election in 2026.",
@@ -740,6 +996,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:31.925215+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung fällt nach dem FOMC-Meeting im Dezember 2026 bezüglich einer Zinserhöhung um 25 bps.",
@@ -772,6 +1029,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.429658+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain following the ongoing election cycle.",
@@ -804,6 +1062,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:33.291983+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 during November 2026. Objective market high reference is clear.",
@@ -837,6 +1096,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.237255+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei Mayor election.",
@@ -869,6 +1129,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:33.091197+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, wie ein eventueller Waffenstillstand offiziell definiert und verifiziert wird.",
@@ -901,6 +1162,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:33.091197+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag prüft, ob der Waffenstillstand bis zum 30. November 2026 anhält.",
@@ -933,6 +1195,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.429658+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who the next Prime Minister of Spain is following the election concluding before the deadline.",
@@ -965,6 +1228,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:31.925215+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if the Fed will increase interest rates by 25 bps after the December 2026 meeting, resolving based on the official FOMC rate decision.",
@@ -997,6 +1261,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.093845+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
@@ -1029,6 +1294,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.953267+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if Alberto Núñez Feijóo formally becomes the next Prime Minister of Spain before the deadline.",
@@ -1058,6 +1324,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.237255+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Taipei Mayor election ending by November 29, 2026.",
@@ -1090,6 +1357,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.093845+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the 2026 Taipei mayoral election as certified by the Central Election Commission of Taiwan.",
@@ -1122,6 +1390,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:31.925215+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract clearly specifies a 25 bps increase following the December 2026 meeting.",
@@ -1154,6 +1423,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:32.237255+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Taipei mayoral election according to Taiwan's Central Election Commission.",
@@ -1186,6 +1456,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:31.925215+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich direkt nach dem FOMC-Meeting im Dezember 2026.",
@@ -1218,6 +1489,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:33.091197+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Unclear whether sporadic skirmishes or mutual accusations of ceasefire violations constitute an official breakdown before November 30.",
@@ -1250,6 +1522,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
+      "last_checked_ts": "2026-11-26T18:35:33.291983+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies November 2026; the deadline is Dec 1, 2026, covering the full month.",
@@ -1259,233 +1532,29 @@
         "summary_de": "Da der WTI-Ölpreis derzeit weit unter 90 USD liegt und keine unmittelbaren Preistreiber erkennbar sind, ist ein Erreichen dieser Marke im November äußerst unwahrscheinlich.",
         "news_used": []
       }
-    },
-    {
-      "id": 41,
-      "ts": "2026-11-26T14:41:36.299852+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1185",
-      "p_blind": "0.5200",
-      "p_blended": "0.2441",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The market asks if Pedro Sánchez will be the next Prime Minister of Spain, following current political developments and elections.",
-        "base_rate": 0.5,
-        "bull_case": "Pedro Sánchez has proven resilient through multiple political crises and continues to lead the ruling party with active efforts toward political reinvention and reelection.",
-        "bear_case": "Intense political opposition, questions over economic discontent reaching voters, and ongoing coalition pressures threaten his path to remaining in power.",
-        "summary_de": "Pedro Sánchez steht trotz anhaltender politischer Krisen und starker Opposition weiterhin im Amt und kämpft aktiv um seine politische Zukunft.",
-        "news_used": [
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
-          "Can a political reinvention keep Pedro Sanchez in power? - DW.com",
-          "Who really wants Pedro Sanchez out of power? - Al Jazeera",
-          "Analysis-Spain's economic gains miss voters' wallets as Sanchez seeks reelection - San Luis Obispo Tribune"
-        ]
-      }
-    },
-    {
-      "id": 40,
-      "ts": "2026-11-26T14:41:34.148760+00:00",
-      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
-      "question": "Will Puma Shen win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.4175",
-      "p_blind": "0.4500",
-      "p_blended": "0.4325",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0155",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official winner of the Taipei Mayor election ending by November 29, 2026.",
-        "base_rate": 0.4,
-        "bull_case": "Puma Shen has strong high-profile backing from senior party leadership like Tsai Ing-wen and remains a major contender in a fiercely contested race.",
-        "bear_case": "Incumbent advantage and recent logistical setbacks, such as canceled election-eve rallies due to road permit controversies, create friction in the final stretch.",
-        "summary_de": "Puma Shen steht kurz vor der Wahl in Taipeh, sieht sich jedoch kurzfristigen organisatorischen Hürden und einem harten Wettbewerb gegenüber.",
-        "news_used": [
-          "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报",
-          "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报",
-          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
-          "DPP suspects foul play over Taipei election rally venues - Taiwan News"
-        ]
-      }
-    },
-    {
-      "id": 39,
-      "ts": "2026-11-26T14:11:53.321657+00:00",
-      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
-      "question": "Will Puma Shen win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.4195",
-      "p_blind": "0.4200",
-      "p_blended": "0.4197",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0007",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official winner of the Taipei Mayor election as certified by the election commission.",
-        "base_rate": 0.35,
-        "bull_case": "Puma Shen is a prominent DPP candidate showing competitive momentum in the final stretch, with high voter mobilization.",
-        "bear_case": "Incumbent-leaning dynamics and recent logistical setbacks such as cancelled rallies indicate tough competition against KMT opposition.",
-        "summary_de": "Die aktuellen Berichte über kurzfristige Kundgebungsabsagen und logistische Hürden im Bürgermeisterwahlkampf in Taipeh beeinflussen die Chancen kurz vor dem entscheidenden Urnengang.",
-        "news_used": [
-          "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报",
-          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
-          "DPP suspects foul play over Taipei election rally venues - Taiwan News",
-          "2026 ELECTIONS Taipei mayor candidates cancel rallies amid road use controversy - Focus Taiwan"
-        ]
-      }
-    },
-    {
-      "id": 38,
-      "ts": "2026-11-26T13:41:19.042468+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9450",
-      "p_blind": "0.3500",
-      "p_blended": "0.8005",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if the Israel-Iran ceasefire continues through November 30, 2026.",
-        "base_rate": 0.4,
-        "bull_case": "Recent diplomatic arrangements and fatigue could hold the fragile status quo for a few more days until the November 30 deadline.",
-        "bear_case": "Recent news indicates Israel is ready to strike Iran at any moment without US support and tensions remain extremely high, threatening the ceasefire.",
-        "summary_de": "Trotz anhaltender Spannungen und Kriegsdrohungen israelischer Offizieller könnte ein Waffenstillstand für wenige Tage halten, die Risiken eines Bruchs sind jedoch sehr hoch.",
-        "news_used": [
-          "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm - The Straits Times",
-          "Israel ready to strike Iran ‘at any moment’ without US support as Netanyahu pushes Trump for fresh offensiv... - Firstpost",
-          "Trump Says US Iran War Funded Through End of January - https://houseofsaud.com/",
-          "The rapidly shifting geopolitical landscape across the Middle East. - TV7 Israel News"
-        ]
-      }
-    },
-    {
-      "id": 37,
-      "ts": "2026-11-26T13:21:28.873097+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9450",
-      "p_blind": "0.1500",
-      "p_blended": "0.6245",
-      "confidence": "0.8000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und dem Iran bis zum 30. November anhält.",
-        "base_rate": 0.4,
-        "bull_case": "Bestehende diplomatische Bemühungen und regionale Erschöpfung könnten kurzfristig einen fragilen Frieden bis Monatsende bewahren.",
-        "bear_case": "Aktuelle Berichte zeigen, dass Israel bereit ist, jederzeit zuzuschlagen und Netanyahu neue Offensiven fordert, was das Ende des Waffenstillstands vor dem 30. November sehr wahrscheinlich macht.",
-        "summary_de": "Aktuelle Berichte über akute israelische Angriffsplanungen und mangelnde Stabilität des Waffenstillstands machen ein Fortbestehen bis Ende November unwahrscheinlich.",
-        "news_used": [
-          "Israel ready to strike Iran ‘at any moment’ without US support as Netanyahu pushes Trump for fresh offensiv... - Firstpost",
-          "Trump Says US Iran War Funded Through End of January - https://houseofsaud.com/",
-          "The rapidly shifting geopolitical landscape across the Middle East. - TV7 Israel News",
-          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!"
-        ]
-      }
-    },
-    {
-      "id": 36,
-      "ts": "2026-11-26T13:21:22.782512+00:00",
-      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
-      "question": "Will Puma Shen win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.4310",
-      "p_blind": "0.4000",
-      "p_blended": "0.4172",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0148",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official winner of the Taipei Mayor election as certified by the Central Election Commission.",
-        "base_rate": 0.45,
-        "bull_case": "Puma Shen is actively campaigning as a major contender in a competitive Taipei mayoral race with intense media coverage.",
-        "bear_case": "Incumbent and opposition dynamics in Taipei often favor the KMT or established candidates, making it an uphill battle for the DPP.",
-        "summary_de": "Puma Shen ist ein starker Kandidat im um umkämpften Bürgermeisterrennen von Taipeh, hat jedoch gegen etablierte Gegenkandidaten eine herausfordernde Ausgangslage.",
-        "news_used": [
-          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
-          "DPP suspects foul play over Taipei election rally venues - Taiwan News",
-          "2026 ELECTIONS Taipei mayor candidates cancel rallies amid road use controversy - Focus Taiwan",
-          "The uphill battle for the opposition Kuomintang in Taiwan’s local elections - South China Morning Post"
-        ]
-      }
-    },
-    {
-      "id": 35,
-      "ts": "2026-11-26T12:51:21.722145+00:00",
-      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
-      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.5750",
-      "p_blind": "0.8200",
-      "p_blended": "0.7097",
-      "confidence": "0.7500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1397",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election ending around late November 2026.",
-        "base_rate": 0.75,
-        "bull_case": "As the incumbent Kuomintang (KMT) mayor, Chiang Wan-an enjoys strong institutional advantages, high visibility, and leads recent local election coverage.",
-        "bear_case": "Competitive challenges from pan-Green candidates and potential KMT setbacks in broader nationwide local elections could create headwinds.",
-        "summary_de": "Als amtierender Bürgermeister von Taipeh hat Chiang Wan-an starke institutionelle Vorteile und gute Chancen auf eine Wiederwahl bei den anstehenden Kommunalwahlen.",
-        "news_used": [
-          "What to know about Taiwan’s local elections and why they matter to China - CTPost",
-          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
-          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
-          "What a possible KMT setback in Taiwan’s polls could mean for Washington and Beijing - ThinkChina"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 8,
+      "ts": "2026-11-26T18:36:35.618225+00:00",
+      "client_order_id": "psb-20261126-183635-598c99fbef-buy-n-00b779",
+      "order_id": "1733618",
+      "market_id": "0x598c99fbef3a7d4fb2c3a5af62e67e4ef5f5f7447e966569aee6c917bff12a25",
+      "question": "Will Su Chiao-hui win the next New Taipei Mayor election?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.35",
+      "quantity": "698.36",
+      "notional_usd": "244.42",
+      "est_fee_usd": "0",
+      "edge_net": "0.0725",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Die Bürgermeisterwahl in Neu-Taipeh verläuft äußerst knapp zwischen DPP und KMT, wobei die organisatorischen Vorteile von Su Chiao-hui auf ein starkes traditionelles Lager der Opposition treffen."
+    },
     {
       "id": 7,
       "ts": "2026-11-26T16:06:22.005812+00:00",
@@ -1628,6 +1697,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 75,
+      "ts": "2026-11-26T18:36:41.842543+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1115,
+      "candidates_found": 20,
+      "llm_calls": 8,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 71.59,
+      "errors": []
+    },
     {
       "id": 74,
       "ts": "2026-11-26T18:21:01.109905+00:00",
@@ -1854,18 +1935,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 16.07,
-      "errors": []
-    },
-    {
-      "id": 55,
-      "ts": "2026-11-26T16:45:59.609092+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1237,
-      "candidates_found": 5,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 19.52,
       "errors": []
     }
   ]
