@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:56:21.401772+00:00",
+  "generated_at": "2026-11-26T21:01:35.980448+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9930.53,
-    "reconciled_equity_usd": 9234.52,
+    "equity_usd": 9924.79,
+    "reconciled_equity_usd": 9228.78,
     "equity_discrepancy_usd": 696.01,
     "cash_usd": 8091.18,
-    "positions_value_usd": 1143.34,
-    "deployed_pct": 11.51,
-    "total_pnl_usd": -69.47,
-    "total_pnl_pct": -0.69,
-    "unrealized_pnl_usd": -55.27,
+    "positions_value_usd": 1137.6,
+    "deployed_pct": 11.46,
+    "total_pnl_usd": -75.21,
+    "total_pnl_pct": -0.75,
+    "unrealized_pnl_usd": -61.01,
     "total_trades": 51,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -0.81,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 101,
+    "total_forecasts": 104,
     "circuit_breaker_active": false
   },
   "category_exposure": {
     "politics": 864.93,
-    "crypto": 278.41
+    "crypto": 272.67
   },
   "equity_curve": [
     {
@@ -836,6 +836,19 @@
       "cash": 8091.18,
       "deployed_pct": 11.51,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T21:00:00+00:00",
+      "equity": 9228.77,
+      "cash": 9228.77,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T21:01:35.690291+00:00",
+      "equity": 9924.79,
+      "cash": 8091.18,
+      "deployed_pct": 11.46,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -849,10 +862,10 @@
       "current_price": 0.089,
       "current_value": 158.22,
       "unrealized_pnl": -62.22,
-      "p_yes": 0.4047,
-      "p_blended": 0.4047,
+      "p_yes": 0.3834,
+      "p_blended": 0.3834,
       "edge_net": 0.0,
-      "rationale": "Pedro Sánchez ist der amtierende Ministerpräsident von Spanien, und es gibt keine Anzeichen für einen überraschenden Machtwechsel vor Ablauf der Frist."
+      "rationale": "Pedro Sánchez ist der amtierende Ministerpräsident und verfügt über ausreichenden politischen Rückhalt, wodurch ein Verbleib im Amt das wahrscheinliche Szenario bleibt."
     },
     {
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -861,9 +874,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.485,
-      "current_value": 278.41,
-      "unrealized_pnl": -14.35,
+      "current_price": 0.475,
+      "current_value": 272.67,
+      "unrealized_pnl": -20.09,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -887,6 +900,111 @@
   ],
   "recent_forecasts": [
     {
+      "id": 104,
+      "ts": "2026-11-26T21:01:35.688755+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.9050",
+      "p_blind": "0.4800",
+      "p_blended": "0.7814",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing political context and snap elections.",
+        "base_rate": 0.45,
+        "bull_case": "Recent polls and snap election dynamics position Feijóo's party competitively, maintaining strong opposition momentum against Sánchez.",
+        "bear_case": "Incumbent advantages, coalition arithmetic, and potential alliance roadblocks by other factions could prevent Feijóo from securing a parliamentary majority.",
+        "summary_de": "Trotz intensiver Umfragen und vorgezogener Wahlen bleibt die Regierungsbildung durch komplexe Koalitionsverhältnisse ungewiss, weshalb die Wahrscheinlichkeit für Feijóo nahe der Parität liegt.",
+        "news_used": [
+          "Spain Elections - WV News",
+          "Spain Elections - The Batesville Daily Guard",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times",
+          "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale"
+        ]
+      }
+    },
+    {
+      "id": 103,
+      "ts": "2026-11-26T21:01:34.207510+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.0890",
+      "p_blind": "0.9000",
+      "p_blended": "0.3834",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Evaluates whether Pedro Sánchez becomes or remains the Prime Minister of Spain following current political developments.",
+        "base_rate": 0.85,
+        "bull_case": "Pedro Sánchez is the incumbent Prime Minister heading a fragile yet currently stable governing coalition, retaining parliamentary support.",
+        "bear_case": "Political instability, sudden no-confidence votes, or corruption scandals could force a collapse of his government before the deadline.",
+        "summary_de": "Pedro Sánchez ist der amtierende Ministerpräsident und verfügt über ausreichenden politischen Rückhalt, wodurch ein Verbleib im Amt das wahrscheinliche Szenario bleibt.",
+        "news_used": [
+          "Spain Elections - WV News",
+          "Spain Elections - The Batesville Daily Guard",
+          "Spain Elections - Daily News-Record",
+          "Spain Elections - chronicleonline.com",
+          "Spain Elections - Goshen News",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian"
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "ts": "2026-11-26T21:01:31.926107+00:00",
+      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+      "question": "Will Puma Shen win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.3825",
+      "p_blind": "0.3000",
+      "p_blended": "0.3429",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0401",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taipei Mayor election.",
+        "base_rate": 0.35,
+        "bull_case": "Puma Shen has high media visibility, strong backing from civil defense and progressive circles, and energetic campaign events leading up to the vote.",
+        "bear_case": "Incumbent or opposing KMT candidates (like Chiang Wan-an) maintain deep structural advantages and polling leads in Taipei.",
+        "summary_de": "Trotz hoher Medienpräsenz von Puma Shen im Endspurt der Wahl bleiben etablierte Gegenkandidaten in Taipeh strukturell im Vorteil.",
+        "news_used": [
+          "《TAIPEI TIMES》 2026 ELECTIONS: Puma Shen moves event online after traffic issues - 自由時報",
+          "2026 Elections: Puma Shen moves event online after traffic issues - Taipei Times",
+          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
+          "A trader just placed a $19K bet on Chiang Wan-an winning Taipei’s mayor election - Quiver Quantitative",
+          "Civil defense innovator, cognitive warfare expert, in race to be mayor of Taiwan’s capital - Washington Times",
+          "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报"
+        ]
+      }
+    },
+    {
       "id": 101,
       "ts": "2026-11-26T20:56:21.003317+00:00",
       "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
@@ -903,7 +1021,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T21:00:56.877819+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following current election dynamics.",
@@ -973,7 +1091,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:43.757731+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.317551+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1108,7 +1226,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:44.424656+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.877819+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, und läuft bis Ende November 2026 ab.",
@@ -1178,7 +1296,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:44.124698+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.557283+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds within the specified date range.",
@@ -1207,7 +1325,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:44.424656+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.877819+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain by the deadline.",
@@ -1242,7 +1360,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:55:35.751870+00:00",
+      "last_checked_ts": "2026-11-26T21:00:57.633900+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28.11.2026 statt; die Bedingungen sind klar definiert.",
@@ -1312,7 +1430,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:44.424656+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.877819+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain before the deadline.",
@@ -1382,7 +1500,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:43.920007+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.412607+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official final election results and vote counts for the 2026 Taipei Mayoral Election margin.",
@@ -1417,7 +1535,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:44.282482+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.665078+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $55,000 in November, resolving based on standard spot exchange data before the December deadline.",
@@ -1453,7 +1571,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:43.920007+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.412607+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official final election margin announced by the Central Election Commission for the 2026 Taipei Mayoral Election.",
@@ -1488,7 +1606,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:50:44.424656+00:00",
+      "last_checked_ts": "2026-11-26T21:00:56.877819+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Alberto Núñez Feijóo becomes the next Prime Minister of Spain before the deadline.",
@@ -1593,7 +1711,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:55:36.490938+00:00",
+      "last_checked_ts": "2026-11-26T21:00:58.319527+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the 2026 Spanish general election according to official results.",
@@ -1643,102 +1761,6 @@
           "DW News. . Spain's Socialist Party is trailing the conservative People's Party in most polls. As the country faces multiple challenges, incl",
           "Spanish PM Pedro Sánchez: ‘We’re within touching distance of securing a progressive majority; if we reach 75% turnout, we can make it happen",
           "Spain, tonight TV debate between 4 prime minister candidates - jiji press"
-        ]
-      }
-    },
-    {
-      "id": 79,
-      "ts": "2026-11-26T18:46:58.060248+00:00",
-      "market_id": "0x22b069c1d8ef9af798919c707b50f2d49b4d82acbdaa37c9169739469b2a19ff",
-      "question": "Will Bitcoin reach $64,000 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.1850",
-      "p_blind": "0.1200",
-      "p_blended": "0.1635",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0165",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:55:34.084305+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Kontrakt fragt, ob Bitcoin im Zeitraum 23. bis 29. November $64.000 erreicht. Maßgeblich sind Standard-Preis-Feeds wie Binance oder Chainlink.",
-        "base_rate": 0.25,
-        "bull_case": "Bitcoin zeigt häufig schnelle, impulsive Aufwärtsbewegungen von 5-6%, weshalb ein kurzer Spike auf $64.000 bei hoher Volatilität im Zeitfenster möglich ist.",
-        "bear_case": "Der aktuelle Kurs liegt bei ca. $60.614 und das verbleibende Zeitfenster ist extrem kurz, sodass ein Anstieg von über 5% in wenigen Tagen statistisch unwahrscheinlich ist.",
-        "summary_de": "Der Bitcoin-Kurs notiert aktuell bei rund 60.600 USD, womit für das Erreichen der Marke von 64.000 USD im verbleibenden kurzen Zeitraum ein Anstieg von über 5 Prozent erforderlich ist, der angesichts der begrenzten Zeit unwahrscheinlich erscheint.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $60,614.60 (24h range: $59,610.70 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $64,000.00: +5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
-      }
-    },
-    {
-      "id": 78,
-      "ts": "2026-11-26T18:46:55.769767+00:00",
-      "market_id": "0x51cb05f3d4af8985141a29b81dcfdeec5081c4edc36640579823118ae91e516d",
-      "question": "Will Ethereum dip to $1,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.0745",
-      "p_blind": "0.1200",
-      "p_blended": "0.0901",
-      "confidence": "0.7500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:55:33.874989+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Kontrakt fragt, ob Ethereum im November 2026 die Marke von 1.500 USD berührt.",
-        "base_rate": 0.15,
-        "bull_case": "Der aktuelle Abwärtstrend und Berichte über einen möglichen Test der 1.500-USD-Unterstützung bei anhaltender Marktschwäche könnten einen schnellen Dip auslösen.",
-        "bear_case": "Ethereum hält sich stabil um 1.700 USD, und mit nur noch wenigen verbleibenden Tagen im November ist die Distanz von rund 11,8% angesichts der aktuellen Volatilität kurzfristig schwer zu überbrücken.",
-        "summary_de": "Ethereum notiert derzeit bei rund 1.700 USD, womit ein Rücksetzer auf 1.500 USD in den verbleibenden Tagen des Novembers zwar möglich, angesichts der begrenzten Zeit aber weniger wahrscheinlich ist.",
-        "news_used": [
-          "Ethereum (ETH) Price Prediction: $1,500 Make-or-Break Support Could Decide Between $2,000 Rally and Sub $1,000-Crash - Brave New Coin",
-          "Ethereum Price Prediction: A Failed ETH Bounce Puts $1,500 Back in Play as AlphaPepe’s Presale Tops $3.47M - StreetInsider"
-        ],
-        "market_data": "ETH/USD live spot (Kraken): $1,700.18 (24h range: $1,666.02 - $1,728.63, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,500.00: -11.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
-      }
-    },
-    {
-      "id": 77,
-      "ts": "2026-11-26T18:46:50.323722+00:00",
-      "market_id": "0x403893a785828d37b2c3565e105afc2f77e66a8a36504d226728465d7351b17c",
-      "question": "Will Deportivo Alavés win on 2026-11-28?",
-      "category": "sports",
-      "end_date": "2026-11-28T20:00:00+00:00",
-      "market_price": "0.0450",
-      "p_blind": "0.1000",
-      "p_blended": "0.0636",
-      "confidence": "0.8500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T20:55:35.751870+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard LaLiga match resolution based on official league score at final whistle.",
-        "base_rate": 0.12,
-        "bull_case": "Alavés could pull off a historic tactical upset away at the Santiago Bernabéu if Real Madrid rotates heavily or suffers an early red card.",
-        "bear_case": "Real Madrid is heavily favored, in superior form pursuing a winning streak, and playing at home against a significantly weaker squad.",
-        "summary_de": "Real Madrid ist als haushoher Favorit im Heimspiel gegen Deportivo Alavés anzusehen, weshalb die Wahrscheinlichkeit für einen Auswärtssieg gering ist.",
-        "news_used": [
-          "Real Madrid vs Deportivo Alaves Prediction and Betting Tips | November 28th 2026 - Sportskeeda",
-          "Real Madrid CF - Club Deportivo Alavés betting tip & best odds | 28.11.2026 - Futbol24",
-          "Real Madrid vs Deportivo Alavés Preview, prediction, injury news & lineups | LaLiga 2026-27 - Khel Now",
-          "Real Madrid vs Alaves Prediction & Betting Tips | 28/11/2026 - FootballPredictions.com",
-          "November 28, 2026: Real Madrid vs Alaves Soccer Prediction Market - Robinhood",
-          "Real Madrid vs Alaves LaLiga preview: The Special One to oversee an eleventh straight win? - Goal.com"
         ]
       }
     }
@@ -2007,6 +2029,18 @@
   ],
   "recent_runs": [
     {
+      "id": 100,
+      "ts": "2026-11-26T21:01:35.691268+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1172,
+      "candidates_found": 18,
+      "llm_calls": 3,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 40.48,
+      "errors": []
+    },
+    {
       "id": 99,
       "ts": "2026-11-26T20:56:21.006229+00:00",
       "dry_run": 0,
@@ -2232,18 +2266,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 33.74,
-      "errors": []
-    },
-    {
-      "id": 80,
-      "ts": "2026-11-26T19:18:16.236989+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1241,
-      "candidates_found": 19,
-      "llm_calls": 5,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 48.45,
       "errors": []
     }
   ]
