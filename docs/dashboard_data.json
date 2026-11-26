@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:11:32.572099+00:00",
+  "generated_at": "2026-11-26T11:21:20.261555+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,23 +11,23 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9986.62,
+    "equity_usd": 9987.29,
     "cash_usd": 9600.0,
-    "positions_value_usd": 386.62,
-    "deployed_pct": 3.87,
-    "total_pnl_usd": -13.38,
+    "positions_value_usd": 387.29,
+    "deployed_pct": 3.88,
+    "total_pnl_usd": -12.71,
     "total_pnl_pct": -0.13,
-    "unrealized_pnl_usd": -13.38,
+    "unrealized_pnl_usd": -12.71,
     "total_trades": 2,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.14,
     "brier_score": null,
     "brier_resolved_count": 0,
-    "total_forecasts": 29,
+    "total_forecasts": 31,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 386.62
+    "crypto": 387.29
   },
   "equity_curve": [
     {
@@ -174,6 +174,13 @@
       "cash": 9600.0,
       "deployed_pct": 3.87,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T11:21:19.215488+00:00",
+      "equity": 9987.29,
+      "cash": 9600.0,
+      "deployed_pct": 3.88,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -184,15 +191,79 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.867,
-      "current_value": 386.62,
-      "unrealized_pnl": -13.38,
+      "current_price": 0.8685,
+      "current_value": 387.29,
+      "unrealized_pnl": -12.71,
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 31,
+      "ts": "2026-11-26T11:21:18.969234+00:00",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.5950",
+      "p_blind": "0.7500",
+      "p_blended": "0.6789",
+      "confidence": "0.8000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0889",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election according to Taiwan's Central Election Commission.",
+        "base_rate": 0.6,
+        "bull_case": "As the incumbent Kuomintang (KMT) mayor, Chiang Wan-an holds strong name recognition, incumbency advantage, and is actively managing pre-election events as seen in recent news reports.",
+        "bear_case": "Taiwanese local elections are highly volatile, and national-level political shifts or strong opposition challengers can pose unexpected hurdles for incumbent KMT candidates.",
+        "summary_de": "Als amtierender Bürgermeister von Taipeh und Spitzenkandidat der KMT verfügt Chiang Wan-an über einen starken Amtsinhabervorteil, der seine Siegchancen bei den bevorstehenden Wahlen begünstigt.",
+        "news_used": [
+          "What to know about Taiwan’s local elections and why they matter to China - CTPost",
+          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
+          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺",
+          "What a KMT setback in Taiwan’s polls means for Washington and Beijing - ThinkChina"
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "ts": "2026-11-26T11:21:13.870592+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9350",
+      "p_blind": "0.8500",
+      "p_blended": "0.9076",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Prüft, ob die Fed nach dem Dezember-Treffen 2026 den Leitzins um 25 bps anhebt.",
+        "base_rate": 0.15,
+        "bull_case": "Heisse Inflationsdaten (PCE bei 3,8% im Oktober) und Markterwartungen deuten stark auf eine Zinserhöhung hin.",
+        "bear_case": "Trotz jüngster Inflationszahlen bleibt die Fed oft vorsichtig, und unerwartete Konjunkturabkühlungen könnten zu einer Pause oder Zinssenkungsdebatte führen.",
+        "summary_de": "Gestützt auf anhaltend hohe Inflationszahlen und stark steigende Markterwartungen preist der Markt eine Zinserhöhung im Dezember mit hoher Wahrscheinlichkeit ein.",
+        "news_used": [
+          "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English",
+          "Inflation is accelerating, urging the Fed to raise interest rates more aggressively. - Vietnam.vn",
+          "Fed Rate Hike Odds Hit 98%, But Eric Jackson Says It’s Time To Cut – Robin Brooks Warns Of ‘Full Meltdown’ - TradingView",
+          "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business"
+        ]
+      }
+    },
     {
       "id": 29,
       "ts": "2026-11-26T11:11:31.841879+00:00",
@@ -910,73 +981,29 @@
           "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business"
         ]
       }
-    },
-    {
-      "id": 6,
-      "ts": "2026-11-26T01:40:16.792582+00:00",
-      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
-      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.0425",
-      "p_blind": "0.1500",
-      "p_blended": "0.0695",
-      "confidence": "0.7000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob es nach dem Dezember-2026-Meeting keine Änderung der Fed-Zinsen geben wird.",
-        "base_rate": 0.2,
-        "bull_case": "Die Wirtschaft zeigt überraschende Resilienz und unerwartete Inflationstreiber, die die Fed zu einer Pause statt einer Zinserhöhung zwingen könnten, falls Daten gemischt ausfallen.",
-        "bear_case": "Mehrere aktuelle Wirtschaftsberichte deuten stark darauf hin, dass die Fed angesichts heißer Inflation die Zinsen anheben wird, weshalb ein Status quo (keine Änderung) unwahrscheinlich ist.",
-        "summary_de": "Aktuelle Inflationsdaten und Markterwartungen deuten stark auf eine Zinsänderung durch die Fed hin, weshalb die Wahrscheinlichkeit für keine Änderung (Status quo) gering ist.",
-        "news_used": [
-          "Fed policymakers at odds over causes of high inflation - Reuters",
-          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
-          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch",
-          "Fed's preferred gauge of inflation climbs ahead of possible rate hike - ABC News - Breaking News, Latest News and Videos"
-        ]
-      }
-    },
-    {
-      "id": 5,
-      "ts": "2026-11-26T00:04:18.369634+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1070",
-      "p_blind": "0.7000",
-      "p_blended": "0.3083",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Ensure definition of 'next Prime Minister' aligns with any ongoing election cycles or successful motions of confidence/investitures before the deadline.",
-        "base_rate": 0.65,
-        "bull_case": "Pedro Sánchez remains the incumbent leader of Spain's socialist party with an active government and ongoing political maneuvers, retaining high probability of remaining in power.",
-        "bear_case": "Intense challenges from conservative and far-right coalitions, combined with economic discontent and EU friction, threaten his government's stability.",
-        "summary_de": "Pedro Sánchez bleibt trotz wachsendem politischen Druck und heftiger Kritik an seiner Wirtschaftspolitik der aktuelle Ministerpräsident mit guten Chancen auf Fortbestand.",
-        "news_used": [
-          "5 charts show why Spaniards aren't feeling the benefits of economic growth under Sánchez - The New Indian Express",
-          "Pedro Sánchez pledges €22bn spending spree despite EU’s warnings - The Times",
-          "Does Spain’s Leftist Government Stand a Chance? - The Nation",
-          "Spain’s Anti-Trump Hero May Be Headed for a Fall - Bloomberg"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 4,
+      "ts": "2026-11-26T11:21:19.213679+00:00",
+      "client_order_id": "psb-20261126-11-bf7a9da083-buy-y",
+      "order_id": "1733033",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.59",
+      "quantity": "550.56",
+      "notional_usd": "324.83",
+      "est_fee_usd": "0",
+      "edge_net": "0.0889",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Als amtierender Bürgermeister von Taipeh und Spitzenkandidat der KMT verfügt Chiang Wan-an über einen starken Amtsinhabervorteil, der seine Siegchancen bei den bevorstehenden Wahlen begünstigt."
+    },
     {
       "id": 3,
       "ts": "2026-11-26T10:22:11.203626+00:00",
@@ -1039,6 +1066,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 14,
+      "ts": "2026-11-26T11:21:19.216334+00:00",
+      "dry_run": 0,
+      "markets_scanned": 467,
+      "candidates_found": 6,
+      "llm_calls": 2,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 40.81,
+      "errors": []
+    },
     {
       "id": 13,
       "ts": "2026-11-26T11:11:31.846281+00:00",
