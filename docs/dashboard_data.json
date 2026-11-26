@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T18:41:40.007592+00:00",
+  "generated_at": "2026-11-26T18:46:58.465408+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9955.21,
-    "reconciled_equity_usd": 9710.78,
+    "equity_usd": 9957.04,
+    "reconciled_equity_usd": 9712.61,
     "equity_discrepancy_usd": 244.43,
-    "cash_usd": 8754.38,
-    "positions_value_usd": 956.4,
-    "deployed_pct": 9.61,
-    "total_pnl_usd": -44.79,
-    "total_pnl_pct": -0.45,
-    "unrealized_pnl_usd": -43.77,
-    "total_trades": 18,
+    "cash_usd": 8461.62,
+    "positions_value_usd": 1250.99,
+    "deployed_pct": 12.56,
+    "total_pnl_usd": -42.96,
+    "total_pnl_pct": -0.43,
+    "unrealized_pnl_usd": -41.94,
+    "total_trades": 48,
     "win_rate_pct": null,
     "max_drawdown_pct": -0.45,
     "brier_score": null,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 73,
+    "total_forecasts": 79,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 397.1,
-    "politics": 559.3
+    "crypto": 681.92,
+    "politics": 569.07
   },
   "equity_curve": [
     {
@@ -663,6 +663,13 @@
       "cash": 8754.38,
       "deployed_pct": 9.61,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T18:46:58.061753+00:00",
+      "equity": 9957.04,
+      "cash": 8461.62,
+      "deployed_pct": 12.56,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -673,13 +680,13 @@
       "outcome": "No",
       "quantity": 445.93,
       "avg_entry_price": 0.897,
-      "current_price": 0.8905,
-      "current_value": 397.1,
-      "unrealized_pnl": -2.9,
-      "p_yes": 0.1244,
-      "p_blended": 0.8756,
+      "current_price": 0.892,
+      "current_value": 397.77,
+      "unrealized_pnl": -2.23,
+      "p_yes": 0.1617,
+      "p_blended": 0.8383,
       "edge_net": 0.0,
-      "rationale": "Da Bitcoin bei rund 60.500 US-Dollar handelt und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Absturz um über neun Prozent auf 55.000 US-Dollar unwahrscheinlich, wenngleich Krypto-Märkte volatil sind."
+      "rationale": "Obwohl Berichte auf Druck und niedrigere Preisregionen hindeuten, liegt Bitcoin aktuell bei über 60.000 US-Dollar, weshalb ein Rücksetzer auf 55.000 US-Dollar in den verbleibenden Tagen des Novembers eher unwahrscheinlich ist."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -688,13 +695,28 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.094,
-      "current_value": 167.11,
-      "unrealized_pnl": -53.33,
+      "current_price": 0.0995,
+      "current_value": 176.88,
+      "unrealized_pnl": -43.56,
       "p_yes": 0.1684,
       "p_blended": 0.1684,
       "edge_net": 0.0,
       "rationale": "Pedro Sánchez steht vor schwierigen Wahlen, da die konservative Volkspartei in den Umfragen führt und die sozialistische Partei unter Druck gerät."
+    },
+    {
+      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
+      "question": "Will Bitcoin reach $62,500 in November?",
+      "category": "crypto",
+      "outcome": "No",
+      "quantity": 574.04,
+      "avg_entry_price": 0.51,
+      "current_price": 0.495,
+      "current_value": 284.15,
+      "unrealized_pnl": -8.61,
+      "p_yes": 0.4245,
+      "p_blended": 0.5755,
+      "edge_net": 0.0655,
+      "rationale": "Bitcoin benötigt einen Kursanstieg von rund 3,3% auf 62.500 US-Dollar, was bei der aktuellen Volatilität durchaus möglich ist, aber angesichts des begrenzten Zeitfensters bis Monatsende eher unwahrscheinlich bleibt."
     },
     {
       "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
@@ -714,6 +736,208 @@
   ],
   "recent_forecasts": [
     {
+      "id": 79,
+      "ts": "2026-11-26T18:46:58.060248+00:00",
+      "market_id": "0x22b069c1d8ef9af798919c707b50f2d49b4d82acbdaa37c9169739469b2a19ff",
+      "question": "Will Bitcoin reach $64,000 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.1850",
+      "p_blind": "0.1200",
+      "p_blended": "0.1635",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0165",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Kontrakt fragt, ob Bitcoin im Zeitraum 23. bis 29. November $64.000 erreicht. Maßgeblich sind Standard-Preis-Feeds wie Binance oder Chainlink.",
+        "base_rate": 0.25,
+        "bull_case": "Bitcoin zeigt häufig schnelle, impulsive Aufwärtsbewegungen von 5-6%, weshalb ein kurzer Spike auf $64.000 bei hoher Volatilität im Zeitfenster möglich ist.",
+        "bear_case": "Der aktuelle Kurs liegt bei ca. $60.614 und das verbleibende Zeitfenster ist extrem kurz, sodass ein Anstieg von über 5% in wenigen Tagen statistisch unwahrscheinlich ist.",
+        "summary_de": "Der Bitcoin-Kurs notiert aktuell bei rund 60.600 USD, womit für das Erreichen der Marke von 64.000 USD im verbleibenden kurzen Zeitraum ein Anstieg von über 5 Prozent erforderlich ist, der angesichts der begrenzten Zeit unwahrscheinlich erscheint.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $60,614.60 (24h range: $59,610.70 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $64,000.00: +5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
+      }
+    },
+    {
+      "id": 78,
+      "ts": "2026-11-26T18:46:55.769767+00:00",
+      "market_id": "0x51cb05f3d4af8985141a29b81dcfdeec5081c4edc36640579823118ae91e516d",
+      "question": "Will Ethereum dip to $1,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0745",
+      "p_blind": "0.1200",
+      "p_blended": "0.0901",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Kontrakt fragt, ob Ethereum im November 2026 die Marke von 1.500 USD berührt.",
+        "base_rate": 0.15,
+        "bull_case": "Der aktuelle Abwärtstrend und Berichte über einen möglichen Test der 1.500-USD-Unterstützung bei anhaltender Marktschwäche könnten einen schnellen Dip auslösen.",
+        "bear_case": "Ethereum hält sich stabil um 1.700 USD, und mit nur noch wenigen verbleibenden Tagen im November ist die Distanz von rund 11,8% angesichts der aktuellen Volatilität kurzfristig schwer zu überbrücken.",
+        "summary_de": "Ethereum notiert derzeit bei rund 1.700 USD, womit ein Rücksetzer auf 1.500 USD in den verbleibenden Tagen des Novembers zwar möglich, angesichts der begrenzten Zeit aber weniger wahrscheinlich ist.",
+        "news_used": [
+          "Ethereum (ETH) Price Prediction: $1,500 Make-or-Break Support Could Decide Between $2,000 Rally and Sub $1,000-Crash - Brave New Coin",
+          "Ethereum Price Prediction: A Failed ETH Bounce Puts $1,500 Back in Play as AlphaPepe’s Presale Tops $3.47M - StreetInsider"
+        ],
+        "market_data": "ETH/USD live spot (Kraken): $1,700.18 (24h range: $1,666.02 - $1,728.63, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,500.00: -11.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
+      }
+    },
+    {
+      "id": 77,
+      "ts": "2026-11-26T18:46:50.323722+00:00",
+      "market_id": "0x403893a785828d37b2c3565e105afc2f77e66a8a36504d226728465d7351b17c",
+      "question": "Will Deportivo Alavés win on 2026-11-28?",
+      "category": "sports",
+      "end_date": "2026-11-28T20:00:00+00:00",
+      "market_price": "0.0450",
+      "p_blind": "0.1000",
+      "p_blended": "0.0636",
+      "confidence": "0.8500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard LaLiga match resolution based on official league score at final whistle.",
+        "base_rate": 0.12,
+        "bull_case": "Alavés could pull off a historic tactical upset away at the Santiago Bernabéu if Real Madrid rotates heavily or suffers an early red card.",
+        "bear_case": "Real Madrid is heavily favored, in superior form pursuing a winning streak, and playing at home against a significantly weaker squad.",
+        "summary_de": "Real Madrid ist als haushoher Favorit im Heimspiel gegen Deportivo Alavés anzusehen, weshalb die Wahrscheinlichkeit für einen Auswärtssieg gering ist.",
+        "news_used": [
+          "Real Madrid vs Deportivo Alaves Prediction and Betting Tips | November 28th 2026 - Sportskeeda",
+          "Real Madrid CF - Club Deportivo Alavés betting tip & best odds | 28.11.2026 - Futbol24",
+          "Real Madrid vs Deportivo Alavés Preview, prediction, injury news & lineups | LaLiga 2026-27 - Khel Now",
+          "Real Madrid vs Alaves Prediction & Betting Tips | 28/11/2026 - FootballPredictions.com",
+          "November 28, 2026: Real Madrid vs Alaves Soccer Prediction Market - Robinhood",
+          "Real Madrid vs Alaves LaLiga preview: The Special One to oversee an eleventh straight win? - Goal.com"
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "ts": "2026-11-26T18:46:45.805574+00:00",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1070",
+      "p_blind": "0.2500",
+      "p_blended": "0.1617",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Bitcoin dips to $55,000 in November 2026 based on standard spot pricing feeds.",
+        "base_rate": 0.35,
+        "bull_case": "Recent news headlines indicate Bitcoin is nearing or has dipped toward the $55,000 level amid fund outflows and thin holiday liquidity, leaving room for a quick wick down before the end of November.",
+        "bear_case": "Current live spot is around $60,614 with Bitcoin recently bouncing above $61,000, leaving only a few days left in November with a ~9.3% buffer above the $55,000 mark.",
+        "summary_de": "Obwohl Berichte auf Druck und niedrigere Preisregionen hindeuten, liegt Bitcoin aktuell bei über 60.000 US-Dollar, weshalb ein Rücksetzer auf 55.000 US-Dollar in den verbleibenden Tagen des Novembers eher unwahrscheinlich ist.",
+        "news_used": [
+          "Bitfinex Sees Record $4.94B BTC Fund Exodus in November as Bitcoin Nears $55,000 - CryptoDaily",
+          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
+          "Bitcoin Stages Relief Rally, Bounces Above $61,000 as Investors Weigh Further Downside Risks - Tekedia",
+          "Talos warns of thin Thanksgiving liquidity as Bitcoin eyes $61K - TradingView",
+          "Bitcoin Price Prediction: Wait for Another Shot at $55K BTC or Enter AlphaPepe Under 4 Cents Before Launch? - openPR.com",
+          "Bitcoin Slips to $55K as Analyst Maps $52K-$62K Buying Band - BigGo Finance"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $60,614.60 (24h range: $59,610.70 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $55,000.00: -9.3% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%)."
+      }
+    },
+    {
+      "id": 75,
+      "ts": "2026-11-26T18:46:38.029133+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2650",
+      "p_blind": "0.3800",
+      "p_blended": "0.3039",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0439",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks whether PSOE will win the most seats in the 2026 Spanish general election, determined by official election results.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbency advantage and late campaign mobilization could allow Sánchez's PSOE to outperform expectations and narrow the gap in seats against PP.",
+        "bear_case": "Recent polls consistently show the Spanish right (PP and Vox) leading ahead of the election, indicating a likely victory in seat share for the opposition.",
+        "summary_de": "Aktuelle Umfragen sehen das rechte Lager in Spanien vor der Wahl in Führung, weshalb die konservative Volkspartei gute Chancen hat, die meisten Sitze zu erringen.",
+        "news_used": [
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Spain's Right Leads Polls Ahead of Final Election Debate - https://streamlinefeed.co.ke/",
+          "How to watch the Spanish election like a pro - POLITICO.eu",
+          "Spanish elections: What you need to know and what's at stake - BBC",
+          "Clashing political visions reflect a divided Spain ahead of election - BBC",
+          "Spain’s Election Could Spark Europe’s Next Right-Wing Wave - Council on Foreign Relations"
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "ts": "2026-11-26T18:46:32.898878+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.9050",
+      "p_blind": "0.5200",
+      "p_blended": "0.7926",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolvable based on official appointment before the deadline.",
+        "base_rate": 0.45,
+        "bull_case": "Feijóo leads the conservative PP and polls show strong contention against Pedro Sánchez amid ongoing political volatility and snap elections.",
+        "bear_case": "Sánchez may still manage to cobble together a coalition majority or block Feijóo from securing the necessary votes in Parliament before the deadline.",
+        "summary_de": "Die aktuellen Umfragen und Neuwahlen lassen ein enges Rennen zwischen Feijóo und Sánchez erwarten, wobei die Regierungsbildung komplex bleibt.",
+        "news_used": [
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
+          "Explainer-Spain's snap election — why it matters and who might win? - The Straits Times",
+          "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale",
+          "Spain’s far right hasn’t governed since Franco. Immigration fears could change that - News4JAX",
+          "Spain, tonight TV debate between 4 prime minister candidates - jiji press"
+        ]
+      }
+    },
+    {
       "id": 73,
       "ts": "2026-11-26T18:41:39.304210+00:00",
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -730,7 +954,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T18:45:43.638972+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard exchange spot price or index resolution for Bitcoin hitting $62,500.",
@@ -759,7 +983,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T18:45:43.386818+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel Real Madrid gegen Deportivo Alavés findet am 28. November 2026 statt. Das Ergebnis entscheidet klar über den Ausgang (Sieg von Alavés = YES).",
@@ -794,7 +1018,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T18:45:43.168816+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price threshold contract based on spot exchange feeds during the specified dates.",
@@ -823,7 +1047,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T18:45:44.167251+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract is straightforward, focusing on the seat count winner in the 2026 Spanish general election.",
@@ -858,7 +1082,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T18:45:43.819602+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the New Taipei Mayor election.",
@@ -893,7 +1117,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T18:45:46.565971+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Begriffs 'nächster Premierminister' nach einer vorgezogenen Neuwahl muss exakt die Regierungsübernahme durch die Amtseinführung umfassen, nicht nur den Wahlausgang.",
@@ -928,7 +1152,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-26T18:45:45.954969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain following the 2026 election cycle.",
@@ -963,7 +1187,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:35.303376+00:00",
+      "last_checked_ts": "2026-11-26T18:45:44.167251+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count of the Spanish general election by the resolution deadline.",
@@ -994,7 +1218,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.326991+00:00",
+      "last_checked_ts": "2026-11-26T18:45:46.398793+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Bitcoin hits or dips to $55,000 at any point during November 2026.",
@@ -1028,7 +1252,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:35.145249+00:00",
+      "last_checked_ts": "2026-11-26T18:45:43.992981+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the New Taipei Mayor election happening in November 2026.",
@@ -1063,7 +1287,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:35.035602+00:00",
+      "last_checked_ts": "2026-11-26T18:45:43.819602+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election is scheduled for Saturday, November 28, 2026, which falls within the contract resolution window.",
@@ -1098,7 +1322,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.431534+00:00",
+      "last_checked_ts": "2026-11-26T18:45:46.565971+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Alberto Núñez Feijóo becomes the next Prime Minister of Spain before the deadline of November 30, 2026.",
@@ -1133,7 +1357,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.030290+00:00",
+      "last_checked_ts": "2026-11-26T18:45:45.954969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, hinging on the ongoing snap election results.",
@@ -1168,7 +1392,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:36.203289+00:00",
+      "last_checked_ts": "2026-11-26T18:45:44.811076+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet über eine Zinserhöhung um 25 Basispunkte nach dem Dezember-Meeting 2026.",
@@ -1203,7 +1427,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:39.069777+00:00",
+      "last_checked_ts": "2026-11-26T18:45:45.699604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Taipei Mayor election in 2026.",
@@ -1236,7 +1460,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:36.203289+00:00",
+      "last_checked_ts": "2026-11-26T18:45:44.811076+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung fällt nach dem FOMC-Meeting im Dezember 2026 bezüglich einer Zinserhöhung um 25 bps.",
@@ -1269,7 +1493,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.030290+00:00",
+      "last_checked_ts": "2026-11-26T18:45:45.954969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain following the ongoing election cycle.",
@@ -1336,7 +1560,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:39.069777+00:00",
+      "last_checked_ts": "2026-11-26T18:45:45.699604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei Mayor election.",
@@ -1349,201 +1573,6 @@
           "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
           "Puma Shen unveils election-eve plans as livestream with Tsai Ing-wen draws over 270,000 viewers - 联合早报",
           "Puma Shen cancels election-eve rally as road permit row adds uncertainty to Taipei race - 联合早报"
-        ]
-      }
-    },
-    {
-      "id": 54,
-      "ts": "2026-11-26T16:45:59.607094+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9350",
-      "p_blind": "0.2500",
-      "p_blended": "0.7311",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.659303+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Es muss geprüft werden, wie ein eventueller Waffenstillstand offiziell definiert und verifiziert wird.",
-        "base_rate": 0.3,
-        "bull_case": "Bestehende diplomatische Bemühungen oder Abkommen halten bis zum Monatsende an.",
-        "bear_case": "Berichte über anhaltende militärische Spannungen und Drohungen (z.B. Israel bereit für Angriffe auf Iran) deuten auf eine fragile Lage hin.",
-        "summary_de": "Angesichts der jüngsten Drohungen und anhaltenden Spannungen zwischen Israel und Iran ist ein stabiler Waffenstillstand bis Ende November unwahrscheinlich.",
-        "news_used": [
-          "Israeli Attacks Kill 10 Palestinians Across Gaza, Including Education Ministry Official and His Wife - Antiwar.com",
-          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
-          "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm - The Straits Times",
-          "Israel ready to strike Iran ‘at any moment’ without US support as Netanyahu pushes Trump for fresh offensiv... - Firstpost"
-        ]
-      }
-    },
-    {
-      "id": 53,
-      "ts": "2026-11-26T16:36:04.572617+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9250",
-      "p_blind": "0.2500",
-      "p_blended": "0.7139",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.659303+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag prüft, ob der Waffenstillstand bis zum 30. November 2026 anhält.",
-        "base_rate": 0.4,
-        "bull_case": "Bestehende diplomatische Vereinbarungen und internationale Bemühungen halten den Waffenstillstand kurzfristig stabil.",
-        "bear_case": "Aktuelle Berichte zeigen anhaltende Spannungen und israelische Drohungen mit erneuten Schlägen gegen den Iran ohne US-Unterstützung.",
-        "summary_de": "Aufgrund anhaltender militärischer Drohungen und extremer Spannungen zwischen Israel und dem Iran ist ein Fortbestehen des Waffenstillstands bis Ende November unwahrscheinlich.",
-        "news_used": [
-          "Israeli Attacks Kill 10 Palestinians Across Gaza, Including Education Ministry Official and His Wife - Antiwar.com",
-          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
-          "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm - The Straits Times",
-          "Israel ready to strike Iran ‘at any moment’ without US support as Netanyahu pushes Trump for fresh offensiv... - Firstpost"
-        ]
-      }
-    },
-    {
-      "id": 52,
-      "ts": "2026-11-26T16:20:59.879420+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1005",
-      "p_blind": "0.4800",
-      "p_blended": "0.2134",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.030290+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who the next Prime Minister of Spain is following the election concluding before the deadline.",
-        "base_rate": 0.45,
-        "bull_case": "Pedro Sánchez has demonstrated remarkable political survival skills and could manage to cobble together another coalition or win the snap election.",
-        "bear_case": "Polling and recent news highlight a tight, polarized race with strong opposition momentum threatening to unseat Europe's left-wing holdout.",
-        "summary_de": "Pedro Sánchez steht vor einer äußerst knappen und polarisierten vorgezogenen Wahl, bei der seine Wiederwahl stark gefährdet ist.",
-        "news_used": [
-          "Spain's Election Could Topple One of Europe's Last Left-Wing Holdouts - Haaretz",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
-          "Spain Heads to Sunday Snap Election With Tight, Polarized Race - teleSUR English",
-          "Can a political reinvention keep Pedro Sanchez in power? - DW.com"
-        ]
-      }
-    },
-    {
-      "id": 51,
-      "ts": "2026-11-26T16:16:03.448194+00:00",
-      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
-      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.9350",
-      "p_blind": "0.3500",
-      "p_blended": "0.7835",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:36.203289+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if the Fed will increase interest rates by 25 bps after the December 2026 meeting, resolving based on the official FOMC rate decision.",
-        "base_rate": 0.15,
-        "bull_case": "Recent news headlines indicate rising inflation concerns and aggressive speculation about a potential rate hike following recent economic data prints.",
-        "bear_case": "Historically, the Federal Reserve rarely hikes rates unexpectedly in December unless persistent high inflation shocks occur, and market pricing for hikes can often be overhyped media chatter.",
-        "summary_de": "Trotz jüngster Inflationssorgen und Marktspekulationen über mögliche Zinserhöhungen bleibt eine Zinsanhebung im Dezember ein historisch unwahrscheinliches Szenario.",
-        "news_used": [
-          "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView",
-          "EUR/USD might be bottoming out amid peak Fed hawkishness and dovish repricing risks - investingLive",
-          "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English",
-          "Inflation is accelerating, urging the Fed to raise interest rates more aggressively. - Vietnam.vn"
-        ]
-      }
-    },
-    {
-      "id": 50,
-      "ts": "2026-11-26T16:06:21.171826+00:00",
-      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
-      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.6250",
-      "p_blind": "0.9000",
-      "p_blended": "0.7975",
-      "confidence": "0.8000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1558",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:36.367402+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
-        "base_rate": 0.8,
-        "bull_case": "Incumbent Mayor Chiang Wan-an holds strong structural advantages and recent news confirms he is actively managing campaign events while opponents face logistical hurdles.",
-        "bear_case": "Unexpected shifts in voter sentiment or late-breaking campaign controversies could undermine the incumbent's lead.",
-        "summary_de": "Der amtierende Bürgermeister Chiang Wan-an geht als klarer Favorit in die Wahl, da aktuelle Berichte seine Handlungsfähigkeit und starke Position unterstreichen.",
-        "news_used": [
-          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
-          "2026 ELECTIONS: Puma Shen moves event online after traffic issues - Taipei Times",
-          "A trader just placed a $19K bet on Chiang Wan-an winning Taipei’s mayor election - Quiver Quantitative",
-          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News"
-        ]
-      }
-    },
-    {
-      "id": 49,
-      "ts": "2026-11-26T16:01:52.449706+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.8950",
-      "p_blind": "0.4000",
-      "p_blended": "0.7728",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-26T18:40:41.431534+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves YES if Alberto Núñez Feijóo formally becomes the next Prime Minister of Spain before the deadline.",
-        "base_rate": 0.45,
-        "bull_case": "Conservative leader Feijóo holds strong momentum following snap elections and potential coalition formations.",
-        "bear_case": "Difficulty in securing a parliamentary majority and rival alliances could block his path to the premiership.",
-        "summary_de": "Obwohl Alberto Núñez Feijóo gute Chancen nach den Wahlen hat, bleibt unklar, ob er eine stabile parlamentarische Mehrheit für das Amt des Ministerpräsidenten bilden kann.",
-        "news_used": [
-          "Spanish elections: What you need to know and what's at stake"
         ]
       }
     }
@@ -1731,6 +1760,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 77,
+      "ts": "2026-11-26T18:46:58.062806+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1134,
+      "candidates_found": 21,
+      "llm_calls": 6,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 76.73,
+      "errors": []
+    },
     {
       "id": 76,
       "ts": "2026-11-26T18:41:39.757837+00:00",
@@ -1957,18 +1998,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 15.09,
-      "errors": []
-    },
-    {
-      "id": 57,
-      "ts": "2026-11-26T16:55:50.231156+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1135,
-      "candidates_found": 5,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 13.57,
       "errors": []
     }
   ]
