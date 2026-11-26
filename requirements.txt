@@ -1,0 +1,6 @@
+polysimulator
+google-genai
+httpx
+python-dotenv
+feedparser
+pytest

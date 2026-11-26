@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PolySimulator Quant Bot — Portfolio & Forecasting Terminal</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121821;
+      --panel-alt: #171f2b;
+      --border: #243042;
+      --text: #e6edf3;
+      --muted: #8b9bb0;
+      --accent: #38bdf8;
+      --green: #22c55e;
+      --red: #ef4444;
+      --amber: #f59e0b;
+      --mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
+      --sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.45;
+      padding: 20px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
+    .title-block h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .title-block .subtitle {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 2px;
+      font-family: var(--mono);
+    }
+    .status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--panel-alt);
+    }
+    .pill-dry { color: var(--amber); border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1); }
+    .pill-live { color: var(--green); border-color: rgba(34, 197, 94, 0.4); background: rgba(34, 197, 94, 0.1); }
+    .pill-ok { color: var(--green); border-color: rgba(34, 197, 94, 0.35); }
+    .pill-alert { color: var(--red); border-color: rgba(239, 68, 68, 0.5); background: rgba(239, 68, 68, 0.12); }
+    button.reload-btn {
+      background: var(--accent);
+      color: #06121c;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button.reload-btn:hover { opacity: 0.9; }
+
+    .error-banner {
+      display: none;
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.45);
+      color: #fecaca;
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      font-size: 0.9rem;
+    }
+    .error-banner code {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: var(--mono);
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .kpi-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .kpi-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .kpi-val {
+      font-family: var(--mono);
+      font-size: 1.45rem;
+      font-weight: 700;
+    }
+    .kpi-sub {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .pos { color: var(--green); }
+    .neg { color: var(--red); }
+    .cap-track {
+      width: 100%;
+      height: 6px;
+      background: var(--panel-alt);
+      border-radius: 4px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+    .cap-fill {
+      height: 100%;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    .charts-grid {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    @media (max-width: 960px) {
+      .charts-grid { grid-template-columns: 1fr; }
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+    }
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+      gap: 10px;
+    }
+    .panel-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+    }
+    .panel-note {
+      font-size: 0.76rem;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+    .chart-box {
+      position: relative;
+      height: 300px;
+      width: 100%;
+    }
+
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    td.num, th.num {
+      text-align: right;
+      font-family: var(--mono);
+      white-space: nowrap;
+    }
+    td.mono { font-family: var(--mono); white-space: nowrap; }
+    .tag {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-family: var(--mono);
+      font-size: 0.71rem;
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .tag-yes { color: var(--green); border-color: rgba(34, 197, 94, 0.35); }
+    .tag-no { color: var(--red); border-color: rgba(239, 68, 68, 0.35); }
+    .tag-warn { color: var(--amber); border-color: rgba(245, 158, 11, 0.35); }
+    .empty-state {
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 18px 4px;
+      text-align: center;
+      font-family: var(--mono);
+    }
+    .learn-box {
+      background: var(--panel-alt);
+      border-left: 3px solid var(--accent);
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+    .learn-box strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title-block">
+      <h1>PolySimulator Quant Terminal</h1>
+      <div class="subtitle" id="metaLine">Lade Daten...</div>
+    </div>
+    <div class="status-bar">
+      <span class="pill" id="modePill">MODE: --</span>
+      <span class="pill" id="cbPill">CIRCUIT BREAKER: --</span>
+      <span class="pill" id="updatedPill">STAND: --</span>
+      <button class="reload-btn" id="reloadBtn">Aktualisieren</button>
+    </div>
+  </header>
+
+  <div class="error-banner" id="errorBanner"></div>
+
+  <section class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Total Equity</div>
+      <div class="kpi-val" id="kpiEquity">$--</div>
+      <div class="kpi-sub" id="kpiStart">Startkapital: $--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Total PnL</div>
+      <div class="kpi-val" id="kpiPnl">$--</div>
+      <div class="kpi-sub" id="kpiPnlPct">--%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Cash Reserve</div>
+      <div class="kpi-val" id="kpiCash">$--</div>
+      <div class="kpi-sub" id="kpiPosVal">Positionen: $--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Deployed Exposure (Cap 65%)</div>
+      <div class="kpi-val" id="kpiDeployed">--%</div>
+      <div class="cap-track"><div class="cap-fill" id="capFill" style="width: 0%"></div></div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Max Drawdown / Win-Rate</div>
+      <div class="kpi-val" id="kpiDd">--%</div>
+      <div class="kpi-sub" id="kpiWinRate">Trades: -- | Win-Rate: --</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Brier Score (Kalibrierung)</div>
+      <div class="kpi-val" id="kpiBrier">--</div>
+      <div class="kpi-sub" id="kpiForecastCount">Prognosen: --</div>
+    </div>
+  </section>
+
+  <section class="charts-grid">
+    <div class="panel" style="margin-bottom: 0;">
+      <div class="panel-header">
+        <span class="panel-title">Portfolio Equity Curve (USD)</span>
+        <span class="panel-note">Basis: PolySimulator API Wallet + Bot-Snapshots</span>
+      </div>
+      <div class="chart-box"><canvas id="equityChart"></canvas></div>
+    </div>
+    <div class="panel" style="margin-bottom: 0;">
+      <div class="panel-header">
+        <span class="panel-title">Exposure nach Kategorie</span>
+        <span class="panel-note">Max 25% pro Thema</span>
+      </div>
+      <div class="chart-box"><canvas id="categoryChart"></canvas></div>
+    </div>
+  </section>
+
+  <section class="panel" style="margin-top: 18px;">
+    <div class="panel-header">
+      <span class="panel-title">Offene Positionen</span>
+      <span class="panel-note" id="posCountNote">0 aktiv</span>
+    </div>
+    <div class="table-wrap" id="positionsWrap"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <span class="panel-title">AI Superforecaster Log (Anti-Anchoring + Bayesian Blend)</span>
+      <span class="panel-note">Blind-Schätzung ohne Marktpreis -> Log-Odds-Kombination in Python</span>
+    </div>
+    <div class="table-wrap" id="forecastsWrap"></div>
+    <div class="learn-box">
+      <strong>Lern-Notiz (Brier Score &amp; Anti-Anchoring):</strong>
+      Der Forecaster sieht beim Schätzen <code>p_blind</code> bewusst <strong>nicht</strong> den aktuellen Polymarket-Kurs, um Bestätigungsfehler zu vermeiden. Erst danach kombiniert Python beide per Log-Odds zu <code>p_blended</code>. Sobald ein Markt aufgelöst ist (<code>y = 0</code> oder <code>1</code>), misst der <strong>Brier Score</strong> <code>(p_blended - y)^2</code> die echte Prognosegüte (0.00 = perfekt, 0.25 = reines Raten bei 50/50).
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-header">
+      <span class="panel-title">Trade Journal</span>
+      <span class="panel-note">Maker post_only = 0% Gebühr | Taker bis 5% V2 Fee</span>
+    </div>
+    <div class="table-wrap" id="tradesWrap"></div>
+  </section>
+
+  <script>
+    let equityChartInst = null;
+    let categoryChartInst = null;
+
+    const fmtUsd = (n) => (n == null || isNaN(n)) ? "$--" : "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const fmtPct = (n) => (n == null || isNaN(n)) ? "--%" : (n >= 0 ? "+" : "") + Number(n).toFixed(2) + "%";
+    const fmtProb = (n) => (n == null || isNaN(n)) ? "--" : (Number(n) * 100).toFixed(1) + "%";
+    const fmtTs = (iso) => {
+      if (!iso) return "--";
+      const d = new Date(iso);
+      return isNaN(d.getTime()) ? iso : d.toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" });
+    };
+    const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
+
+    async function loadDashboard() {
+      const errEl = document.getElementById("errorBanner");
+      errEl.style.display = "none";
+      try {
+        const res = await fetch("./dashboard_data.json?t=" + Date.now(), { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        render(data);
+      } catch (err) {
+        errEl.style.display = "block";
+        errEl.innerHTML =
+          "<strong>dashboard_data.json konnte nicht geladen werden</strong> (" + esc(err.message) + "). " +
+          "Wenn du diese Datei direkt per Doppelklick (<code>file://</code>) geöffnet hast, blockiert der Browser lokale JSON-Fetches. " +
+          "Starte einfach lokal: <code>python -m http.server -d docs 8080</code> und öffne <code>http://localhost:8080</code> (oder nutze GitHub Pages online).";
+      }
+    }
+
+    function render(data) {
+      const k = data.kpis || {};
+      const limits = data.risk_limits || {};
+
+      document.getElementById("metaLine").textContent =
+        `Model: ${data.model || "--"} | Quarter-Kelly: ${limits.kelly_fraction ?? 0.25}x | Max Position: ${limits.max_single_market_pct ?? 10}% | Max Gesamt: ${limits.max_total_exposure_pct ?? 65}%`;
+
+      const modePill = document.getElementById("modePill");
+      if (data.dry_run) {
+        modePill.textContent = "MODE: DRY-RUN (PROBELAUF)";
+        modePill.className = "pill pill-dry";
+      } else {
+        modePill.textContent = "MODE: LIVE SIMULATION";
+        modePill.className = "pill pill-live";
+      }
+
+      const cbPill = document.getElementById("cbPill");
+      if (k.circuit_breaker_active) {
+        cbPill.textContent = "CIRCUIT BREAKER: AKTIV (-10% DD)";
+        cbPill.className = "pill pill-alert";
+      } else {
+        cbPill.textContent = "CIRCUIT BREAKER: NORMAL";
+        cbPill.className = "pill pill-ok";
+      }
+      document.getElementById("updatedPill").textContent = "STAND: " + fmtTs(data.generated_at);
+
+      document.getElementById("kpiEquity").textContent = fmtUsd(k.equity_usd);
+      document.getElementById("kpiStart").textContent = "Startkapital: " + fmtUsd(k.starting_balance_usd);
+
+      const pnlEl = document.getElementById("kpiPnl");
+      pnlEl.textContent = (k.total_pnl_usd >= 0 ? "+" : "") + fmtUsd(k.total_pnl_usd);
+      pnlEl.className = "kpi-val " + (k.total_pnl_usd >= 0 ? "pos" : "neg");
+      document.getElementById("kpiPnlPct").textContent = fmtPct(k.total_pnl_pct) + " | Unrealisiert: " + fmtUsd(k.unrealized_pnl_usd);
+
+      document.getElementById("kpiCash").textContent = fmtUsd(k.cash_usd);
+      document.getElementById("kpiPosVal").textContent = "Investiert: " + fmtUsd(k.positions_value_usd);
+
+      const dep = Number(k.deployed_pct || 0);
+      document.getElementById("kpiDeployed").textContent = dep.toFixed(1) + "%";
+      const fillRatio = Math.min(100, (dep / (limits.max_total_exposure_pct || 65)) * 100);
+      document.getElementById("capFill").style.width = fillRatio.toFixed(1) + "%";
+
+      document.getElementById("kpiDd").textContent = Number(k.max_drawdown_pct || 0).toFixed(2) + "%";
+      document.getElementById("kpiWinRate").textContent =
+        `Trades: ${k.total_trades ?? 0} | Win-Rate: ${k.win_rate_pct != null ? k.win_rate_pct + "%" : "n/a"}`;
+
+      document.getElementById("kpiBrier").textContent = k.brier_score != null ? Number(k.brier_score).toFixed(4) : "warte...";
+      document.getElementById("kpiForecastCount").textContent =
+        `Prognosen: ${k.total_forecasts ?? 0} | Aufgelöst: ${k.brier_resolved_count ?? 0}`;
+
+      renderEquityChart(data.equity_curve || [], k.starting_balance_usd || 10000);
+      renderCategoryChart(data.category_exposure || {});
+      renderPositions(data.open_positions || []);
+      renderForecasts(data.recent_forecasts || []);
+      renderTrades(data.trade_journal || []);
+    }
+
+    function renderEquityChart(curve, startBal) {
+      const ctx = document.getElementById("equityChart").getContext("2d");
+      if (equityChartInst) equityChartInst.destroy();
+
+      const pts = curve.length ? curve : [{ ts: new Date().toISOString(), equity: startBal }];
+      const labels = pts.map((p) => fmtTs(p.ts));
+      const values = pts.map((p) => Number(p.equity));
+      const baseline = pts.map(() => Number(startBal));
+
+      const grad = ctx.createLinearGradient(0, 0, 0, 280);
+      grad.addColorStop(0, "rgba(56, 189, 248, 0.30)");
+      grad.addColorStop(1, "rgba(56, 189, 248, 0.00)");
+
+      equityChartInst = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: "Equity ($)",
+              data: values,
+              borderColor: "#38bdf8",
+              backgroundColor: grad,
+              fill: true,
+              tension: 0.22,
+              pointRadius: pts.length <= 10 ? 4 : 2,
+              borderWidth: 2,
+            },
+            {
+              label: "Startkapital ($)",
+              data: baseline,
+              borderColor: "rgba(139, 155, 176, 0.45)",
+              borderDash: [5, 5],
+              pointRadius: 0,
+              borderWidth: 1,
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color: "#8b9bb0", font: { family: "monospace", size: 11 } } },
+          },
+          scales: {
+            x: { ticks: { color: "#8b9bb0", maxTicksLimit: 8 }, grid: { color: "rgba(36,48,66,0.45)" } },
+            y: { ticks: { color: "#8b9bb0", callback: (v) => "$" + v }, grid: { color: "rgba(36,48,66,0.45)" } },
+          },
+        },
+      });
+    }
+
+    function renderCategoryChart(catMap) {
+      const ctx = document.getElementById("categoryChart").getContext("2d");
+      if (categoryChartInst) categoryChartInst.destroy();
+
+      const entries = Object.entries(catMap).filter(([, v]) => Number(v) > 0);
+      const labels = entries.length ? entries.map(([k]) => k) : ["Cash (100%)"];
+      const vals = entries.length ? entries.map(([, v]) => Number(v)) : [1];
+      const palette = entries.length
+        ? ["#38bdf8", "#22c55e", "#f59e0b", "#a855f7", "#ec4899", "#14b8a6", "#64748b"]
+        : ["#243042"];
+
+      categoryChartInst = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels,
+          datasets: [{ data: vals, backgroundColor: palette, borderColor: "#121821", borderWidth: 2 }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: "bottom", labels: { color: "#e6edf3", font: { family: "monospace", size: 11 } } },
+          },
+        },
+      });
+    }
+
+    function renderPositions(rows) {
+      const wrap = document.getElementById("positionsWrap");
+      document.getElementById("posCountNote").textContent = `${rows.length} aktiv`;
+      if (!rows.length) {
+        wrap.innerHTML = `<div class="empty-state">Noch keine offenen Positionen im Portfolio.</div>`;
+        return;
+      }
+      wrap.innerHTML = `<table>
+        <thead><tr>
+          <th>Markt</th><th>Kategorie</th><th>Seite</th><th class="num">Shares</th>
+          <th class="num">Entry</th><th class="num">Kurs</th><th class="num">Wert</th>
+          <th class="num">uPnL</th><th class="num">Fair Value</th><th>Begründung</th>
+        </tr></thead>
+        <tbody>${rows.map((p) => `<tr>
+          <td>${esc(p.question)}</td>
+          <td><span class="tag">${esc(p.category)}</span></td>
+          <td><span class="tag ${String(p.outcome).toLowerCase() === "yes" ? "tag-yes" : "tag-no"}">${esc(p.outcome)}</span></td>
+          <td class="num">${Number(p.quantity).toFixed(2)}</td>
+          <td class="num">$${Number(p.avg_entry_price).toFixed(3)}</td>
+          <td class="num">$${Number(p.current_price).toFixed(3)}</td>
+          <td class="num">${fmtUsd(p.current_value)}</td>
+          <td class="num ${p.unrealized_pnl >= 0 ? "pos" : "neg"}">${fmtUsd(p.unrealized_pnl)}</td>
+          <td class="num">${p.p_blended != null ? fmtProb(p.p_blended) : "--"}</td>
+          <td>${esc(p.rationale || "--")}</td>
+        </tr>`).join("")}</tbody>
+      </table>`;
+    }
+
+    function renderForecasts(rows) {
+      const wrap = document.getElementById("forecastsWrap");
+      if (!rows.length) {
+        wrap.innerHTML = `<div class="empty-state">Noch keine Prognosen gespeichert.</div>`;
+        return;
+      }
+      wrap.innerHTML = `<table>
+        <thead><tr>
+          <th>Zeit</th><th>Markt</th><th>Strategie</th><th class="num">Markt</th>
+          <th class="num">Blind</th><th class="num">Blend</th><th class="num">Edge</th>
+          <th>News / Risk</th><th>Begründung (DE)</th>
+        </tr></thead>
+        <tbody>${rows.map((f) => {
+          const edgeNum = Number(f.edge_net || 0);
+          const summary = (f.reasoning && f.reasoning.summary_de) ? f.reasoning.summary_de : "--";
+          const trapClass = f.resolution_risk === "high" ? "tag-no" : (f.resolution_risk === "medium" ? "tag-warn" : "tag-yes");
+          return `<tr>
+            <td class="mono">${fmtTs(f.ts)}</td>
+            <td>${esc(f.question)}<br><span class="tag">${esc(f.category)}</span></td>
+            <td><span class="tag">${esc(f.strategy_type)}</span></td>
+            <td class="num">${fmtProb(f.market_price)}</td>
+            <td class="num">${fmtProb(f.p_blind)}</td>
+            <td class="num"><strong>${fmtProb(f.p_blended)}</strong></td>
+            <td class="num ${edgeNum >= 0.07 ? "pos" : ""}">${(edgeNum * 100).toFixed(1)} pp</td>
+            <td><span class="tag">${esc(f.catalyst_freshness)}</span><br><span class="tag ${trapClass}">Trap: ${esc(f.resolution_risk)}</span></td>
+            <td>${esc(summary)}</td>
+          </tr>`;
+        }).join("")}</tbody>
+      </table>`;
+    }
+
+    function renderTrades(rows) {
+      const wrap = document.getElementById("tradesWrap");
+      if (!rows.length) {
+        wrap.innerHTML = `<div class="empty-state">Noch keine Trades oder Dry-Run-Signale im Journal.</div>`;
+        return;
+      }
+      wrap.innerHTML = `<table>
+        <thead><tr>
+          <th>Zeit</th><th>Modus</th><th>Aktion</th><th>Markt</th>
+          <th class="num">Preis</th><th class="num">Shares</th><th class="num">Notional</th>
+          <th class="num">Fee</th><th>Status</th><th>Begründung</th>
+        </tr></thead>
+        <tbody>${rows.map((t) => `<tr>
+          <td class="mono">${fmtTs(t.ts)}</td>
+          <td><span class="tag ${t.dry_run ? "tag-warn" : "tag-yes"}">${t.dry_run ? "DRY_RUN" : "LIVE"}</span></td>
+          <td><span class="tag ${t.side === "BUY" ? "tag-yes" : "tag-no"}">${esc(t.side)} ${esc(t.outcome)}</span></td>
+          <td>${esc(t.question)}</td>
+          <td class="num">$${Number(t.price).toFixed(3)}</td>
+          <td class="num">${Number(t.quantity).toFixed(2)}</td>
+          <td class="num">${fmtUsd(t.notional_usd)}</td>
+          <td class="num">${fmtUsd(t.est_fee_usd)}</td>
+          <td><span class="tag">${esc(t.status)}</span></td>
+          <td>${esc(t.rationale)}</td>
+        </tr>`).join("")}</tbody>
+      </table>`;
+    }
+
+    document.getElementById("reloadBtn").addEventListener("click", loadDashboard);
+    loadDashboard();
+  </script>
+</body>
+</html>

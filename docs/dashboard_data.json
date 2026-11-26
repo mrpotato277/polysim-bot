@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-11-26T00:04:18.484725+00:00",
+  "dry_run": true,
+  "model": "gemini-3.5-flash-lite",
+  "risk_limits": {
+    "max_total_exposure_pct": 65.0,
+    "max_single_market_pct": 10.0,
+    "max_category_exposure_pct": 25.0,
+    "kelly_fraction": 0.25,
+    "circuit_breaker_24h_dd_pct": -10.0
+  },
+  "kpis": {
+    "starting_balance_usd": 10000.0,
+    "equity_usd": 10000.0,
+    "cash_usd": 10000.0,
+    "positions_value_usd": 0.0,
+    "deployed_pct": 0.0,
+    "total_pnl_usd": 0.0,
+    "total_pnl_pct": 0.0,
+    "unrealized_pnl_usd": 0.0,
+    "total_trades": 0,
+    "win_rate_pct": null,
+    "max_drawdown_pct": 0.0,
+    "brier_score": null,
+    "brier_resolved_count": 0,
+    "total_forecasts": 5,
+    "circuit_breaker_active": false
+  },
+  "category_exposure": {},
+  "equity_curve": [
+    {
+      "ts": "2026-11-26T00:04:09.557822+00:00",
+      "equity": 10000.0,
+      "cash": 10000.0,
+      "deployed_pct": 0.0,
+      "source": "bot"
+    }
+  ],
+  "open_positions": [],
+  "recent_forecasts": [
+    {
+      "id": 5,
+      "ts": "2026-11-26T00:04:18.369634+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1070",
+      "p_blind": "0.7000",
+      "p_blended": "0.3083",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Ensure definition of 'next Prime Minister' aligns with any ongoing election cycles or successful motions of confidence/investitures before the deadline.",
+        "base_rate": 0.65,
+        "bull_case": "Pedro Sánchez remains the incumbent leader of Spain's socialist party with an active government and ongoing political maneuvers, retaining high probability of remaining in power.",
+        "bear_case": "Intense challenges from conservative and far-right coalitions, combined with economic discontent and EU friction, threaten his government's stability.",
+        "summary_de": "Pedro Sánchez bleibt trotz wachsendem politischen Druck und heftiger Kritik an seiner Wirtschaftspolitik der aktuelle Ministerpräsident mit guten Chancen auf Fortbestand.",
+        "news_used": [
+          "5 charts show why Spaniards aren't feeling the benefits of economic growth under Sánchez - The New Indian Express",
+          "Pedro Sánchez pledges €22bn spending spree despite EU’s warnings - The Times",
+          "Does Spain’s Leftist Government Stand a Chance? - The Nation",
+          "Spain’s Anti-Trump Hero May Be Headed for a Fall - Bloomberg"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "ts": "2026-11-26T00:04:16.134918+00:00",
+      "market_id": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+      "question": "Will Puma Shen win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.4290",
+      "p_blind": "0.4200",
+      "p_blended": "0.4256",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0044",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taipei Mayor election in the 2026 nine-in-one elections.",
+        "base_rate": 0.4,
+        "bull_case": "Puma Shen is heavily discussed as a prominent DPP candidate with strong mobilization potential in local elections amid shifting cross-strait debates.",
+        "bear_case": "Recent controversies regarding campaign events and the inherent difficulty for DPP candidates in historically competitive or pan-Blue leaning Taipei create substantial headwinds.",
+        "summary_de": "Obwohl Puma Shen als prominenter Kandidat stark im Fokus steht, bleibt die Bürgermeisterwahl in Taipei traditionell umkämpft und bietet erhebliche Hürden für den Sieg der DPP.",
+        "news_used": [
+          "Taiwan’s 2026 Nine-in-One Elections: Things to Watch - CSIS | Center for Strategic and International Studies",
+          "Puma Shen cancels election-eve rally after public anger over stage construction and road closures - 联合早报",
+          "Fact check: Deepfakes and 'US abandons Taiwan' claims spread ahead of vote - DW.com",
+          "Puma Shen questions twin-city forum’s effectiveness, proposes Taipei-Beijing talks - 联合早报"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "ts": "2026-11-26T00:04:14.976004+00:00",
+      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
+      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.5750",
+      "p_blind": "0.7200",
+      "p_blended": "0.6304",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0604",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag klärt die offizielle Wahl zum Bürgermeister von Taipei, wobei Chiang Wan-an als amtierender Bürgermeister gute Chancen auf eine Wiederwahl hat.",
+        "base_rate": 0.7,
+        "bull_case": "Als amtierender KMT-Bürgermeister profitiert Chiang Wan-an von Amtsinhabervorteilen, starker Medienpräsenz und der traditionell konservativen Wählerschaft in Taipeh.",
+        "bear_case": "Aufkommende Konkurrenten wie Puma Shen (DPP) sowie eine mögliche landesweite Schwingung zugunsten der DPP könnten das Rennen enger machen als erwartet.",
+        "summary_de": "Chiang Wan-an geht als amtierender Bürgermeister und aufgrund der konservativen Wählerbasis in Taipeh als klarer Favorit in die Wiederwahl.",
+        "news_used": [
+          "Will Chen Jining’s downfall affect Shanghai–Taipei forum? Chiang Wan-an’s re-election is key, says Taiwan academic - 联合早报",
+          "Why Taiwan’s Local Elections Matter for Deterring China - Council on Foreign Relations",
+          "Taipei mayoral election: Can Puma Shen win his first electoral contest? - 联合早报",
+          "[Big read] Taiwan local elections: What a DPP surge means for the 2028 presidency and cross-strait relations - ThinkChina"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "ts": "2026-11-26T00:04:13.707470+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9350",
+      "p_blind": "0.7800",
+      "p_blended": "0.8790",
+      "confidence": "0.7500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if the Fed will increase interest rates by 25 bps after the December 2026 meeting.",
+        "base_rate": 0.2,
+        "bull_case": "Hotter-than-expected inflation readings (such as October PCE rising to 3.8%) heavily pressure the Fed to hike rates at the December meeting.",
+        "bear_case": "Fed policymakers remain divided on the underlying causes of inflation, and central banks frequently resist single-month data volatility.",
+        "summary_de": "Aktuelle Inflationsdaten und steigender Preisdruck erhöhen die Wahrscheinlichkeit einer Zinserhöhung durch die Fed im Dezember deutlich.",
+        "news_used": [
+          "Fed policymakers at odds over causes of high inflation - Reuters",
+          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
+          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch",
+          "Fed's favored inflation gauge rose in October ahead of expected Fed rate hike next month - Fox Business"
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "ts": "2026-11-26T00:04:11.756034+00:00",
+      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
+      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.0425",
+      "p_blind": "0.1500",
+      "p_blended": "0.0823",
+      "confidence": "0.8000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if there will be no change in Fed interest rates after the December 2026 meeting (i.e. rates remain unchanged).",
+        "base_rate": 0.2,
+        "bull_case": "Persistent inflation concerns could cause sudden hawkish surprises, but a pause is always structurally possible if economic indicators soften unexpectedly before the meeting.",
+        "bear_case": "Recent breaking news headlines uniformly point toward a likely rate hike due to hot inflation readings, making 'no change' (YES) less probable than a hike.",
+        "summary_de": "Aktuelle Wirtschaftsdaten und Medienberichte deuten stark darauf hin, dass die Fed im Dezember die Zinsen anheben wird, wodurch ein unverändertes Zinsniveau unwahrscheinlich ist.",
+        "news_used": [
+          "Fed policymakers at odds over causes of high inflation - Reuters",
+          "The Fed says inflation hasn’t gotten any better ahead of its key December vote to raise rates - MarketWatch",
+          "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again - The New York Times",
+          "Inflation gets worse. Now the Fed has no choice but to raise U.S. interest rates. - MarketWatch"
+        ]
+      }
+    }
+  ],
+  "trade_journal": [],
+  "recent_runs": [
+    {
+      "id": 1,
+      "ts": "2026-11-26T00:04:18.373878+00:00",
+      "dry_run": 1,
+      "markets_scanned": 428,
+      "candidates_found": 9,
+      "llm_calls": 5,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 32.74,
+      "errors": []
+    }
+  ]
+}

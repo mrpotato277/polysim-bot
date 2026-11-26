@@ -1,0 +1,24 @@
+# Secrets & local environment
+.env
+.env.*
+!.env.example
+
+# Python virtual environment & caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# SQLite transient files
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+# OS / IDE clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
