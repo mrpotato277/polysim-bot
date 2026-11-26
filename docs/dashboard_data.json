@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:51:22.440597+00:00",
+  "generated_at": "2026-11-26T12:01:51.031371+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9988.11,
+    "equity_usd": 9981.89,
     "cash_usd": 9054.73,
-    "positions_value_usd": 712.94,
-    "deployed_pct": 7.14,
-    "total_pnl_usd": -11.89,
-    "total_pnl_pct": -0.12,
-    "unrealized_pnl_usd": -11.89,
-    "total_trades": 3,
+    "positions_value_usd": 927.16,
+    "deployed_pct": 9.29,
+    "total_pnl_usd": -18.11,
+    "total_pnl_pct": -0.18,
+    "unrealized_pnl_usd": -18.11,
+    "total_trades": 17,
     "win_rate_pct": null,
-    "max_drawdown_pct": -0.14,
+    "max_drawdown_pct": -0.18,
     "brier_score": null,
     "brier_resolved_count": 0,
     "total_forecasts": 33,
@@ -28,7 +28,7 @@
   },
   "category_exposure": {
     "crypto": 390.86,
-    "politics": 322.08
+    "politics": 536.3
   },
   "equity_curve": [
     {
@@ -203,6 +203,19 @@
       "cash": 9054.73,
       "deployed_pct": 7.14,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-26T12:00:00+00:00",
+      "equity": 9981.66,
+      "cash": 9981.66,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-26T12:01:50.289168+00:00",
+      "equity": 9981.89,
+      "cash": 9054.73,
+      "deployed_pct": 9.29,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -219,6 +232,20 @@
       "p_blended": 0.0635,
       "edge_net": 0.0395,
       "rationale": "Da der Monat November fast abgelaufen ist und der Kurs deutlich über der Marke liegt, ist ein Erreichen von 55.000 Dollar ohne einen historischen Flash-Crash nahezu ausgeschlossen."
+    },
+    {
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "outcome": "Yes",
+      "quantity": 1777.73,
+      "avg_entry_price": 0.124,
+      "current_price": 0.1205,
+      "current_value": 214.22,
+      "unrealized_pnl": -6.22,
+      "p_blended": 0.2529,
+      "edge_net": 0.1289,
+      "rationale": "Pedro Sánchez kämpft in einer sehr knappen und polarisierten Neuwahl um seinen Verbleib im Amt, wobei die Umfragen und die wirtschaftliche Unzufriedenheit der Wähler gegen ihn sprechen."
     },
     {
       "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
@@ -1122,6 +1149,18 @@
     }
   ],
   "recent_runs": [
+    {
+      "id": 18,
+      "ts": "2026-11-26T12:01:50.291115+00:00",
+      "dry_run": 0,
+      "markets_scanned": 435,
+      "candidates_found": 6,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 36.36,
+      "errors": []
+    },
     {
       "id": 17,
       "ts": "2026-11-26T11:51:21.700174+00:00",
