@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:31:40.595487+00:00",
+  "generated_at": "2026-11-27T17:36:21.643557+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11092.41,
-    "reconciled_equity_usd": 11092.41,
+    "equity_usd": 10916.64,
+    "reconciled_equity_usd": 10916.64,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 5012.1,
-    "deployed_pct": 45.18,
-    "total_pnl_usd": 1092.41,
-    "total_pnl_pct": 10.92,
-    "unrealized_pnl_usd": 634.43,
+    "positions_value_usd": 4836.33,
+    "deployed_pct": 44.3,
+    "total_pnl_usd": 916.64,
+    "total_pnl_pct": 9.17,
+    "unrealized_pnl_usd": 458.66,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 242,
+    "total_forecasts": 244,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2361.38,
-    "crypto": 1846.95,
+    "politics": 2355.73,
+    "crypto": 1676.83,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -2672,6 +2672,13 @@
       "cash": 6080.31,
       "deployed_pct": 45.18,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T17:36:21.295781+00:00",
+      "equity": 10916.64,
+      "cash": 6080.31,
+      "deployed_pct": 44.3,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2697,9 +2704,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.38,
-      "current_value": 1846.95,
-      "unrealized_pnl": 1083.14,
+      "current_price": 0.345,
+      "current_value": 1676.83,
+      "unrealized_pnl": 913.02,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2772,9 +2779,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.575,
-      "current_value": 650.17,
-      "unrealized_pnl": -35.24,
+      "current_price": 0.57,
+      "current_value": 644.52,
+      "unrealized_pnl": -40.89,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2812,6 +2819,70 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 244,
+      "ts": "2026-11-27T17:36:21.293991+00:00",
+      "market_id": "0x5eb5d77d8607ce8b2859fb059e07859164b5096fe84c7b181c3ce034b19d7a5b",
+      "question": "Will Ethereum reach $1,800 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1350",
+      "p_blind": "0.2200",
+      "p_blended": "0.1559",
+      "confidence": "0.7500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0259",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract for ETH on major exchanges before the end of November 2026.",
+        "base_rate": 0.25,
+        "bull_case": "High crypto volatility allows a sudden upward spike of 8.2% to breach $1,800 within the remaining days of November.",
+        "bear_case": "ETH is currently trading around $1,664 with limited time left in November, requiring a significant macro catalyst that is currently absent.",
+        "summary_de": "Ethereum notiert derzeit bei rund 1.664 USD und müsste innerhalb der verbleibenden Tage im November um über 8 Prozent steigen, was angesichts der begrenzten verbleibenden Zeit und fehlender positiver Katalysatoren eher unwahrscheinlich ist.",
+        "news_used": [],
+        "market_data": "ETH/USD live spot (Kraken): $1,664.02 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,800.00: +8.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-6.4%, distance = 1.22 sigma): Gaussian one-touch ('dip/reach/hit') b"
+      }
+    },
+    {
+      "id": 243,
+      "ts": "2026-11-27T17:36:19.812520+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.4500",
+      "p_blended": "0.3146",
+      "confidence": "0.5000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0746",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.4,
+        "bull_case": "New Zealand finished Day 1 on level terms in Christchurch and playing at home provides a significant advantage to secure a victory over the remaining days.",
+        "bear_case": "India is a formidable touring side capable of shifting momentum on Days 2 through 5, making a New Zealand win far from guaranteed.",
+        "summary_de": "Nach einem ausgeglichenen ersten Tag in Christchurch gegen Indien stehen die Chancen für Neuseeland offen, wobei der Heimvorteil eine leichte Kurskorrektur rechtfertigt.",
+        "news_used": [
+          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
+          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
+          "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website",
+          "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks treble - The Guardian",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian"
+        ]
+      }
+    },
     {
       "id": 242,
       "ts": "2026-11-27T17:31:40.327827+00:00",
@@ -2928,7 +2999,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Marktversprechen bezieht sich klar auf das Test Match im Cricket oder Rugby zwischen Neuseeland und Indien.",
@@ -2963,7 +3034,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
@@ -3033,7 +3104,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3096,7 +3167,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard sports match outcome contract between New Zealand and India ending by December 3, 2026.",
@@ -3160,7 +3231,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3226,7 +3297,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3325,7 +3396,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3360,7 +3431,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
+      "last_checked_ts": "2026-11-27T17:35:32.510233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3430,7 +3501,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:44.820252+00:00",
+      "last_checked_ts": "2026-11-27T17:35:33.526977+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract with clear exchange feed rules.",
@@ -3556,73 +3627,6 @@
         "summary_de": "Bitcoin liegt nahe am Ziel von 62.500 US-Dollar, benötigt jedoch in den verbleibenden Novembertagen noch einen moderaten Anstieg von rund 4,3 Prozent.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $59,899.30 (24h range: $59,737.00 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $62,500.00: +4.3% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.6d (1-sigma move = +/-4.7%, distance = 0.90 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 219,
-      "ts": "2026-11-27T14:46:21.657432+00:00",
-      "market_id": "0x68f425a37a2bf693d43de418335b00841af699ef37cc5cb6634c83432c6541cd",
-      "question": "Will Bitcoin dip to $57,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.3650",
-      "p_blind": "0.4200",
-      "p_blended": "0.3863",
-      "confidence": "0.7500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0263",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.084061+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves YES if Bitcoin hits $57,500 at any point during November 2026.",
-        "base_rate": 0.45,
-        "bull_case": "Bitcoin is currently at ~$59,900 and needs only a modest 4.0% drop to reach $57,500 with several days left in November, and crypto markets are notoriously volatile.",
-        "bear_case": "BTC has rebounded toward $60,000+ and macroeconomic sentiment remains relatively resilient, meaning a sharp 4% flush in the remaining days may not materialize before the month closes.",
-        "summary_de": "Bitcoin handelt nahe 59.900 USD, wodurch ein Rücksetzer um 4% auf 57.500 USD bis Monatsende statistisch durchaus erreichbar ist, angesichts der aktuellen Markterholung jedoch etwas unwahrscheinlicher wird.",
-        "news_used": [
-          "Bitcoin, Ethereum and the Best Crypto Presale to Buy in 2026: Why Are Quiet Wallets Taking 10,000 BTC? - openPR.com",
-          "Bitcoin rebounds to $60,600 as DeFi and blockch... - Pluang"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $59,899.30 (24h range: $59,737.00 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $57,500.00: -4.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.6d (1-sigma move = +/-4.7%, distance = 0.87 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 218,
-      "ts": "2026-11-27T14:46:19.851497+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2650",
-      "p_blind": "0.4200",
-      "p_blended": "0.3293",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0693",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:55.937890+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
-        "base_rate": 0.45,
-        "bull_case": "Incumbent Pedro Sánchez and the PSOE historically outperform final polls by mobilizing left-leaning voters and defying expectations in tight finishes.",
-        "bear_case": "Most pre-election polls show the conservative Partido Popular (PP) leading or holding a solid advantage in seat projections as the campaign wraps up.",
-        "summary_de": "Trotz des engen Rennens und des Wahlkampfendes von Sánchez zeigen die Umfragen einen leichten Vorteil für die konservative Opposition bei der Parlamentswahl in Spanien.",
-        "news_used": [
-          "How Could The Outcome Of Spain's Election On Sunday Affect Relations With Washington? - Yahoo",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Spanish election: What you need to know and what's at stake - BBC",
-          "Spain’s election could pull Madrid closer to Trump’s Washington - CNBC",
-          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı",
-          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters"
-        ]
       }
     }
   ],
@@ -4550,6 +4554,18 @@
   ],
   "recent_runs": [
     {
+      "id": 344,
+      "ts": "2026-11-27T17:36:21.296610+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1171,
+      "candidates_found": 18,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 50.7,
+      "errors": []
+    },
+    {
       "id": 343,
       "ts": "2026-11-27T17:31:40.331209+00:00",
       "dry_run": 0,
@@ -4775,18 +4791,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 55.98,
-      "errors": []
-    },
-    {
-      "id": 324,
-      "ts": "2026-11-27T15:56:42.295506+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1141,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 60.9,
       "errors": []
     }
   ]
