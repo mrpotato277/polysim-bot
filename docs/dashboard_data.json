@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T01:56:19.163821+00:00",
+  "generated_at": "2026-11-27T01:58:27.509843+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9928.97,
-    "reconciled_equity_usd": 9325.29,
+    "equity_usd": 9921.39,
+    "reconciled_equity_usd": 9317.71,
     "equity_discrepancy_usd": 603.68,
     "cash_usd": 8013.11,
-    "positions_value_usd": 1312.18,
-    "deployed_pct": 13.22,
-    "total_pnl_usd": -71.03,
-    "total_pnl_pct": -0.71,
-    "unrealized_pnl_usd": -75.87,
+    "positions_value_usd": 1304.6,
+    "deployed_pct": 13.15,
+    "total_pnl_usd": -78.61,
+    "total_pnl_pct": -0.79,
+    "unrealized_pnl_usd": -83.45,
     "total_trades": 66,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -1.9,
@@ -28,11 +28,11 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 142,
+    "total_forecasts": 143,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 458.32,
+    "crypto": 450.74,
     "politics": 853.86
   },
   "equity_curve": [
@@ -1279,6 +1279,13 @@
       "cash": 8013.11,
       "deployed_pct": 13.22,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T01:58:27.175571+00:00",
+      "equity": 9921.39,
+      "cash": 8013.11,
+      "deployed_pct": 13.15,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1289,9 +1296,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.245,
-      "current_value": 185.65,
-      "unrealized_pnl": -3.79,
+      "current_price": 0.235,
+      "current_value": 178.07,
+      "unrealized_pnl": -11.37,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1345,6 +1352,39 @@
   ],
   "recent_forecasts": [
     {
+      "id": 143,
+      "ts": "2026-11-27T01:58:26.698676+00:00",
+      "market_id": "0xe232f2c2d14a5ab8275e34cbc068944206df7fa382c279fca0745c8dd0522e0e",
+      "question": "Will Ho Hsin-chun win the next Taichung Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.2055",
+      "p_blind": "0.4800",
+      "p_blended": "0.2862",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0822",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Taichung Mayor election as determined by Taiwan's Central Election Commission.",
+        "base_rate": 0.5,
+        "bull_case": "Strong active campaigning by high-profile party figures like former President Tsai Ing-wen provides significant momentum for Ho Hsin-chun in Taichung.",
+        "bear_case": "KMT opposition attacks regarding conflict-of-interest allegations and incumbent advantage pose substantial hurdles for the DPP candidate.",
+        "summary_de": "Die Wahl in Taichung ist hart umkämpft, wobei die regierende DPP durch Wahlkampfunterstützung mobilisiert, aber auch mit scharfen Vorwürfen der Opposition konfrontiert ist.",
+        "news_used": [
+          "KMT presses DPP's Ho Hsin-chun in Taichung over conflict-of-interest allegations - Taiwan News",
+          "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation",
+          "Taiwan parties, candidates step up campaigning as local elections near - Focus Taiwan",
+          "Tsai campaigns for Ho Hsin-chun in Taichung - Taiwan News"
+        ]
+      }
+    },
+    {
       "id": 142,
       "ts": "2026-11-27T01:51:31.178633+00:00",
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -1361,7 +1401,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T01:57:45.452592+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Kontrakt prüft, ob Bitcoin im November 2026 den Preis von $62.500 erreicht.",
@@ -1393,7 +1433,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:50:48.446439+00:00",
+      "last_checked_ts": "2026-11-27T01:57:45.861858+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -1452,7 +1492,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:45:39.058743+00:00",
+      "last_checked_ts": "2026-11-27T01:57:44.946465+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
@@ -1481,7 +1521,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:50:48.049184+00:00",
+      "last_checked_ts": "2026-11-27T01:57:45.452592+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on standard Bitcoin price hitting the $62,500 threshold before the end of November UTC.",
@@ -1512,7 +1552,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:50:48.191831+00:00",
+      "last_checked_ts": "2026-11-27T01:57:45.593924+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the New Taipei Mayor election.",
@@ -1547,7 +1587,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:50:48.314999+00:00",
+      "last_checked_ts": "2026-11-27T01:57:45.732186+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag löst sich basierend auf dem offiziellen Wahlergebnis der Bürgermeisterwahl in Neu-Taipeh 2026 auf.",
@@ -1711,7 +1751,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:50:49.132652+00:00",
+      "last_checked_ts": "2026-11-27T01:57:46.481521+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -1776,7 +1816,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:45:38.893654+00:00",
+      "last_checked_ts": "2026-11-27T01:57:44.781021+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -2082,7 +2122,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:50:49.132652+00:00",
+      "last_checked_ts": "2026-11-27T01:57:46.481521+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands und dessen allfällige formelle Verletzungen im Laufe des Dezember müssen exakt den offiziellen Kriterien entsprechen.",
@@ -2099,44 +2139,29 @@
           "US-Israel-Iran War Latest Live Updates: Trump Reveals January Funding Window For Military Campaign As Iran Refuses Hormuz Talks, Oil Tankers"
         ]
       }
-    },
-    {
-      "id": 118,
-      "ts": "2026-11-26T22:26:18.956812+00:00",
-      "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
-      "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.6250",
-      "p_blind": "0.9500",
-      "p_blended": "0.8655",
-      "confidence": "0.9000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.2238",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:50:48.757035+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
-        "base_rate": 0.85,
-        "bull_case": "Chiang Wan-an is the incumbent KMT mayor running in a traditional stronghold with strong name recognition and active campaign management.",
-        "bear_case": "Unforeseen political shifts or high-turnout opposition mobilizations could occasionally disrupt incumbent advantages in Taiwan's volatile local elections.",
-        "summary_de": "Der amtierende Bürgermeister Chiang Wan-an gilt als klarer Favorit für die Wiederwahl in Taipei, unterstützt durch starke Umfragewerte und den Heimvorteil der KMT.",
-        "news_used": [
-          "《TAIPEI TIMES》 2026 ELECTIONS: Puma Shen moves event online after traffic issues - 自由時報",
-          "2026 Elections: Election-eve permits secured in 1 second since 2020 - Taipei Times",
-          "A trader just placed a $19K bet on Chiang Wan-an winning Taipei’s mayor election - Quiver Quantitative",
-          "2026 Elections: Puma Shen moves event online after traffic issues - Taipei Times",
-          "Lu Shiow-yen poised to enter 2028 Taiwan presidential race - Taiwan News",
-          "Mayoral candidate Puma Shen cancels pre-election rally, Mayor Chiang Wan-an offers alternative - Rti 中央廣播電臺"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 21,
+      "ts": "2026-11-27T01:58:27.173995+00:00",
+      "client_order_id": "psb-20261127-015826-e232f2c2d1-buy-y-5220ef",
+      "order_id": "1733945",
+      "market_id": "0xe232f2c2d14a5ab8275e34cbc068944206df7fa382c279fca0745c8dd0522e0e",
+      "question": "Will Ho Hsin-chun win the next Taichung Mayor election?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.204",
+      "quantity": "1104.90",
+      "notional_usd": "225.39",
+      "est_fee_usd": "0",
+      "edge_net": "0.0822",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Die Wahl in Taichung ist hart umkämpft, wobei die regierende DPP durch Wahlkampfunterstützung mobilisiert, aber auch mit scharfen Vorwürfen der Opposition konfrontiert ist."
+    },
     {
       "id": 20,
       "ts": "2026-11-27T01:11:43.341938+00:00",
@@ -2540,6 +2565,18 @@
   ],
   "recent_runs": [
     {
+      "id": 159,
+      "ts": "2026-11-27T01:58:27.178013+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1132,
+      "candidates_found": 23,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 43.92,
+      "errors": []
+    },
+    {
       "id": 158,
       "ts": "2026-11-27T01:56:18.849921+00:00",
       "dry_run": 0,
@@ -2765,18 +2802,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 67.53,
-      "errors": []
-    },
-    {
-      "id": 139,
-      "ts": "2026-11-27T00:21:41.374501+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1130,
-      "candidates_found": 30,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 62.38,
       "errors": []
     }
   ]
