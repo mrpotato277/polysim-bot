@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:01:45.976592+00:00",
+  "generated_at": "2026-11-27T17:06:31.033551+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10698.73,
-    "reconciled_equity_usd": 10698.73,
+    "equity_usd": 10692.02,
+    "reconciled_equity_usd": 10692.02,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4618.42,
-    "deployed_pct": 43.17,
-    "total_pnl_usd": 698.73,
-    "total_pnl_pct": 6.99,
-    "unrealized_pnl_usd": 240.75,
+    "positions_value_usd": 4611.71,
+    "deployed_pct": 43.13,
+    "total_pnl_usd": 692.02,
+    "total_pnl_pct": 6.92,
+    "unrealized_pnl_usd": 234.04,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 236,
+    "total_forecasts": 237,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "politics": 2432.48,
-    "crypto": 1409.51,
+    "crypto": 1433.82,
     "geopolitics": 621.32,
-    "markets": 155.11
+    "markets": 124.09
   },
   "equity_curve": [
     {
@@ -2630,6 +2630,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.17,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T17:06:30.652784+00:00",
+      "equity": 10692.02,
+      "cash": 6080.31,
+      "deployed_pct": 43.13,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2655,9 +2662,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.29,
-      "current_value": 1409.51,
-      "unrealized_pnl": 645.7,
+      "current_price": 0.295,
+      "current_value": 1433.82,
+      "unrealized_pnl": 670.01,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2703,10 +2710,10 @@
       "current_price": 0.265,
       "current_value": 214.43,
       "unrealized_pnl": 4.05,
-      "p_yes": 0.3229,
-      "p_blended": 0.3229,
-      "edge_net": 0.0729,
-      "rationale": "Die aktuellen spanischen Wahlen zeigen ein sehr enges Rennen, wobei die konservative Opposition in vielen Umfragen leicht im Vorteil ist, was die Chancen der PSOE auf die meisten Sitze mindert."
+      "p_yes": 0.3132,
+      "p_blended": 0.3132,
+      "edge_net": 0.0532,
+      "rationale": "Umfragen und aktuelle Stimmungen sehen die konservative Opposition in einer starken Position, weshalb die Wahrscheinlichkeit für die PSOE, die meisten Sitze zu erringen, geringer eingeschätzt wird."
     },
     {
       "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
@@ -2760,9 +2767,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.05,
-      "current_value": 155.11,
-      "unrealized_pnl": -386.73,
+      "current_price": 0.04,
+      "current_value": 124.09,
+      "unrealized_pnl": -417.75,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -2770,6 +2777,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 237,
+      "ts": "2026-11-27T17:06:30.651282+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2650",
+      "p_blind": "0.3800",
+      "p_blended": "0.3132",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0532",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbency advantage and mobilization of progressive voters facing a potential right-wing coalition could keep PSOE in a competitive position for the most seats.",
+        "bear_case": "Recent polls and current momentum heavily favor the opposition Partido Popular (PP), alongside challenges from migrant crises and economic pressures.",
+        "summary_de": "Umfragen und aktuelle Stimmungen sehen die konservative Opposition in einer starken Position, weshalb die Wahrscheinlichkeit für die PSOE, die meisten Sitze zu erringen, geringer eingeschätzt wird.",
+        "news_used": [
+          "Spanish election: What you need to know and what's at stake - BBC",
+          "Spain’s election could pull Madrid closer to Trump’s Washington - CNBC",
+          "Who to watch in Spain's election race - BBC",
+          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı",
+          "Spain’s Snap Election: How Voting Works, Key Parties and Issues - SSBCrack",
+          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing"
+        ]
+      }
+    },
     {
       "id": 236,
       "ts": "2026-11-27T16:56:39.933272+00:00",
@@ -2787,7 +2829,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2850,7 +2892,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard sports match outcome contract between New Zealand and India ending by December 3, 2026.",
@@ -2914,7 +2956,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.901105+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2980,7 +3022,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.901105+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3079,7 +3121,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.901105+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3114,7 +3156,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.901105+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3184,7 +3226,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:45.361046+00:00",
+      "last_checked_ts": "2026-11-27T17:05:33.387320+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract with clear exchange feed rules.",
@@ -3329,7 +3371,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.542861+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.507235+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Bitcoin hits $57,500 at any point during November 2026.",
@@ -3396,7 +3438,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.901105+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3431,7 +3473,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.901105+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -3466,7 +3508,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:50:43.901105+00:00",
+      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag bezieht sich auf das Testergebnis zwischen Neuseeland und Indien, wobei sich der aktuelle Stand nach dem ersten Tag auf 246/5 beläuft.",
@@ -3553,42 +3595,6 @@
           "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times"
         ],
         "market_data": "WTI Crude Oil (CL=F) live reference: 84.59 (prev close: 83.98, +0.73%)."
-      }
-    },
-    {
-      "id": 212,
-      "ts": "2026-11-27T13:46:19.605787+00:00",
-      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
-      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "markets",
-      "end_date": "2026-12-01T04:59:59.999000+00:00",
-      "market_price": "0.1100",
-      "p_blind": "0.0800",
-      "p_blended": "0.0930",
-      "confidence": "0.8500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0170",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:05.546324+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires WTI spot or front-month futures to touch or exceed $90 at any point during November 2026.",
-        "base_rate": 0.25,
-        "bull_case": "Middle East tensions, Hormuz risk premiums, and supply fears can cause sudden intraday spikes toward the $90 level.",
-        "bear_case": "Current WTI spot is trading around $84.60 with only a few days left in November, leaving a wide gap to cover without an immediate massive supply shock.",
-        "summary_de": "WTI-Öl notiert aktuell bei rund 84,60 USD, und angesichts der verbleibenden Tage im November ist ein Anstieg auf 90 USD ohne einen extremen geopolitischen Schock sehr unwahrscheinlich.",
-        "news_used": [
-          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
-          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
-          "Standard Chartered Oil Needs a New Shock to Fall Further - Crude Oil Prices Today | OilPrice.com",
-          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox",
-          "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo",
-          "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times"
-        ],
-        "market_data": "WTI Crude Oil (CL=F) live reference: 84.60 (prev close: 83.98, +0.74%)."
       }
     }
   ],
@@ -4516,6 +4522,18 @@
   ],
   "recent_runs": [
     {
+      "id": 338,
+      "ts": "2026-11-27T17:06:30.653665+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1147,
+      "candidates_found": 16,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 61.16,
+      "errors": []
+    },
+    {
       "id": 337,
       "ts": "2026-11-27T17:01:45.677763+00:00",
       "dry_run": 0,
@@ -4741,18 +4759,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 54.91,
-      "errors": []
-    },
-    {
-      "id": 318,
-      "ts": "2026-11-27T15:26:30.612111+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1144,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 55.74,
       "errors": []
     }
   ]
