@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T14:36:48.337005+00:00",
+  "generated_at": "2026-11-27T14:41:37.062283+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10090.57,
-    "reconciled_equity_usd": 10066.26,
-    "equity_discrepancy_usd": 24.31,
+    "equity_usd": 10611.75,
+    "reconciled_equity_usd": 10611.75,
+    "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4975.17,
-    "deployed_pct": 49.31,
-    "total_pnl_usd": 90.57,
-    "total_pnl_pct": 0.91,
-    "unrealized_pnl_usd": 149.88,
+    "positions_value_usd": 5520.66,
+    "deployed_pct": 52.02,
+    "total_pnl_usd": 611.75,
+    "total_pnl_pct": 6.12,
+    "unrealized_pnl_usd": 695.37,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -7.39,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 216,
+    "total_forecasts": 217,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2184.45,
-    "crypto": 1874.69,
+    "politics": 2183.56,
+    "crypto": 2483.11,
     "geopolitics": 621.32,
-    "markets": 294.71
+    "markets": 232.67
   },
   "equity_curve": [
     {
@@ -2416,6 +2416,13 @@
       "cash": 5091.09,
       "deployed_pct": 49.31,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T14:41:36.603847+00:00",
+      "equity": 10611.75,
+      "cash": 5091.09,
+      "deployed_pct": 52.02,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2441,9 +2448,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.19,
-      "current_value": 923.47,
-      "unrealized_pnl": 159.66,
+      "current_price": 0.275,
+      "current_value": 1336.61,
+      "unrealized_pnl": 572.8,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2471,9 +2478,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.107,
-      "current_value": 190.22,
-      "unrealized_pnl": -30.22,
+      "current_price": 0.1065,
+      "current_value": 189.33,
+      "unrealized_pnl": -31.11,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2516,9 +2523,9 @@
       "outcome": "Yes",
       "quantity": 1259.89,
       "avg_entry_price": 0.5223,
-      "current_price": 0.755,
-      "current_value": 951.22,
-      "unrealized_pnl": 293.22,
+      "current_price": 0.91,
+      "current_value": 1146.5,
+      "unrealized_pnl": 488.5,
       "p_yes": 0.9342,
       "p_blended": 0.9342,
       "edge_net": 0.4217,
@@ -2546,9 +2553,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.095,
-      "current_value": 294.71,
-      "unrealized_pnl": -247.13,
+      "current_price": 0.075,
+      "current_value": 232.67,
+      "unrealized_pnl": -309.17,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -2556,6 +2563,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 217,
+      "ts": "2026-11-27T14:41:36.193524+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.4500",
+      "p_blended": "0.3085",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0685",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.4,
+        "bull_case": "New Zealand reached 246-5 at the end of day one in the second India Test, maintaining a competitive position in the match.",
+        "bear_case": "Test cricket matches are fluid, and India remains a formidable opponent capable of turning the match around on subsequent days.",
+        "summary_de": "Neuseeland befindet sich nach dem ersten Tag des Testspicits gegen Indien in einer wettbewerbsfähigen Ausgangslage, jedoch ist der Spielausgang noch völlig offen.",
+        "news_used": [
+          "Did you know? Miss Universe New Zealand's gown was made by a Filipino designer - ABS-CBN",
+          "Maro Itoje urges England to be ‘ruthless’ in second New Zealand clash - The Independent",
+          "New Zealand battle to 246-5 after day one of second India Test - Daily Sun",
+          "Blundell-Phillips take New Zealand to 246/5 at day one end - Times of Oman",
+          "Air New Zealand punctuality up 12 percentage points as airline increases focus on smoother summer journeys - WebWire",
+          "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet"
+        ]
+      }
+    },
     {
       "id": 216,
       "ts": "2026-11-27T14:26:21.969047+00:00",
@@ -2678,7 +2720,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T14:25:36.845270+00:00",
+      "last_checked_ts": "2026-11-27T14:40:42.418320+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil will hit $90 at any point during November 2026. Resolution depends on official spot/futures high print before December 1, 2026.",
@@ -2714,7 +2756,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T14:25:36.845270+00:00",
+      "last_checked_ts": "2026-11-27T14:40:42.418320+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires WTI spot or front-month futures to touch or exceed $90 at any point during November 2026.",
@@ -3264,7 +3306,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T14:25:36.845270+00:00",
+      "last_checked_ts": "2026-11-27T14:40:42.418320+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "WTI crude oil spot high during November 2026 based on standard exchange data.",
@@ -3382,38 +3424,49 @@
           "US Strategic Bitcoin Reserve Bill Advances, but Can It Pass Before 2027? - TradingView"
         ]
       }
-    },
-    {
-      "id": 192,
-      "ts": "2026-11-27T11:11:44.892562+00:00",
-      "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
-      "question": "Will Bitcoin reach $65,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.2250",
-      "p_blind": "0.3200",
-      "p_blended": "0.2491",
-      "confidence": "0.7000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0291",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T14:35:48.474250+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Bitcoin hits $65,000 in November, resolving based on standard exchange spot prices before December 1, 2026.",
-        "base_rate": 0.28,
-        "bull_case": "Bitcoin needs a ~5.6% move in about 3.7 days, which is within historical multi-day crypto volatility ranges given fat tails and potential sudden momentum breakouts.",
-        "bear_case": "Current spot is around $61,531 with low recent volatility and limited time left in November, making a nearly 6% upward surge unlikely without a specific fresh macro catalyst.",
-        "summary_de": "Bitcoin müsste in den verbleibenden Tagen des Novembers noch etwa 5,6 Prozent steigen, was angesichts der aktuellen Volatilität und des engen Zeitfensters möglich, aber eher unwahrscheinlich ist.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $61,531.50 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $65,000.00: +5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.7d (1-sigma move = +/-4.9%, distance = 1.12 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 42,
+      "ts": "2026-11-27T14:41:36.602499+00:00",
+      "client_order_id": "psb-20261127-144136-9d5472226e-buy-y-ec121d",
+      "order_id": "1734513",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.24",
+      "quantity": "876.74",
+      "notional_usd": "210.41",
+      "est_fee_usd": "0",
+      "edge_net": "0.0685",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Neuseeland befindet sich nach dem ersten Tag des Testspicits gegen Indien in einer wettbewerbsfähigen Ausgangslage, jedoch ist der Spielausgang noch völlig offen."
+    },
+    {
+      "id": 41,
+      "ts": "2026-11-27T14:41:31.282404+00:00",
+      "client_order_id": "psb-20261127-144130-cb123b5f45-sell-y-8a69f8",
+      "order_id": "1734512",
+      "market_id": "0xcb123b5f454942fd31017b662207a0b30970b21c1667dbd22972e095192eb2bb",
+      "question": "0xcb123b5f454942fd31017b662207a0b30970b21c1667dbd22972e095192eb2bb",
+      "outcome": "Yes",
+      "side": "SELL",
+      "order_mode": "maker_limit",
+      "price": "0.95",
+      "quantity": "1259.89",
+      "notional_usd": "1196.90",
+      "est_fee_usd": "0",
+      "edge_net": "-0.0158",
+      "strategy_type": "exit_take_profit",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "Take-Profit: Kurs 0.95 hat Fair Value 0.93 erreicht (Entry 0.52); Kapital wird für neue Chancen frei."
+    },
     {
       "id": 40,
       "ts": "2026-11-27T11:11:42.123727+00:00",
@@ -4217,6 +4270,18 @@
   ],
   "recent_runs": [
     {
+      "id": 310,
+      "ts": "2026-11-27T14:41:36.604710+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1207,
+      "candidates_found": 16,
+      "llm_calls": 1,
+      "trades_attempted": 2,
+      "trades_executed": 2,
+      "duration_sec": 57.91,
+      "errors": []
+    },
+    {
       "id": 309,
       "ts": "2026-11-27T14:36:47.945049+00:00",
       "dry_run": 0,
@@ -4442,18 +4507,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 56.18,
-      "errors": []
-    },
-    {
-      "id": 290,
-      "ts": "2026-11-27T13:02:06.940641+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1145,
-      "candidates_found": 16,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 62.58,
       "errors": []
     }
   ]
