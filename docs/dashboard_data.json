@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T23:51:21.129472+00:00",
+  "generated_at": "2026-11-27T23:56:20.811682+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10704.44,
-    "reconciled_equity_usd": 10704.44,
+    "equity_usd": 10674.32,
+    "reconciled_equity_usd": 10674.32,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4624.13,
-    "deployed_pct": 43.2,
-    "total_pnl_usd": 704.44,
-    "total_pnl_pct": 7.04,
-    "unrealized_pnl_usd": 246.46,
+    "positions_value_usd": 4594.01,
+    "deployed_pct": 43.04,
+    "total_pnl_usd": 674.32,
+    "total_pnl_pct": 6.74,
+    "unrealized_pnl_usd": 216.34,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 303,
+    "total_forecasts": 305,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2583.02,
-    "crypto": 1190.8,
+    "politics": 2601.51,
+    "crypto": 1142.19,
     "geopolitics": 664.17,
     "markets": 186.14
   },
@@ -3240,6 +3240,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.2,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T23:56:20.571999+00:00",
+      "equity": 10674.32,
+      "cash": 6080.31,
+      "deployed_pct": 43.04,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3250,9 +3257,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.25,
-      "current_value": 448.23,
-      "unrealized_pnl": 71.72,
+      "current_price": 0.255,
+      "current_value": 457.19,
+      "unrealized_pnl": 80.68,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -3265,9 +3272,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.245,
-      "current_value": 1190.8,
-      "unrealized_pnl": 426.99,
+      "current_price": 0.235,
+      "current_value": 1142.19,
+      "unrealized_pnl": 378.38,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3295,9 +3302,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.139,
-      "current_value": 247.1,
-      "unrealized_pnl": 26.66,
+      "current_price": 0.138,
+      "current_value": 245.33,
+      "unrealized_pnl": 24.89,
       "p_yes": 0.2248,
       "p_blended": 0.2248,
       "edge_net": 0.0868,
@@ -3340,9 +3347,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.555,
-      "current_value": 627.56,
-      "unrealized_pnl": -57.85,
+      "current_price": 0.565,
+      "current_value": 638.86,
+      "unrealized_pnl": -46.55,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3380,6 +3387,76 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 305,
+      "ts": "2026-11-27T23:56:20.570044+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2400",
+      "p_blind": "0.5200",
+      "p_blended": "0.3401",
+      "confidence": "0.5500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1101",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Das Spiel bezieht sich auf das Test-Match zwischen Neuseeland und Indien, das sich laut Live-Tickern am Tag 2 bei einem Zwischenstand von 324/8 befindet.",
+        "base_rate": 0.5,
+        "bull_case": "Neuseeland steht im 2. Test bei 324/8 und hat eine solide Ausgangsposition, um Indien unter Druck zu setzen.",
+        "bear_case": "Indiens Bowling-Attacke (z. B. Akash mit vier Wickets) kann die verbleibenden Wickets schnell abräumen und das Spiel drehen.",
+        "summary_de": "Neuseeland zeigt im laufenden Test-Match eine konkurrenzfähige Leistung, allerdings ist das Spiel gegen Indien noch völlig offen.",
+        "news_used": [
+          "India vs New Zealand, 2nd Test Day 2 LIVE score: Akash gets his fourth, dismisses Jamieson; NZ 324/8 (107) - Sportstar",
+          "Nathan Lyon, Marnus Labuschagne dropped! Pat Cummins continues as captain as Australia announce squad for - The Times of India",
+          "Australia squad for New Zealand Tests — Lyon, Labuschagne dropped; Rocchiccioli, Clayton called up - Sportstar",
+          "'Siraj needs help': R Ashwin urges India team to show compassion after pacer's repeated snubs - The Times of India",
+          "Nathan Lyon dropped as Australia name Test squad for New Zealand series - India Today",
+          "Mia Humphrey - ESPN"
+        ]
+      }
+    },
+    {
+      "id": 304,
+      "ts": "2026-11-27T23:56:19.105464+00:00",
+      "market_id": "0x9b1a03b41a1a68c209e9c3caf3d8af3f878420d6dbe8cb8afffd66049e73b114",
+      "question": "Another Fed rate hike in 2026?",
+      "category": "economics",
+      "end_date": "2026-12-10T04:59:00+00:00",
+      "market_price": "0.9575",
+      "p_blind": "0.2200",
+      "p_blended": "0.7461",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires an actual Federal Reserve rate hike enacted during calendar year 2026 before December 10, 2026.",
+        "base_rate": 0.15,
+        "bull_case": "Persistent inflation readings around 3.8% and market speculation increase pressure on the Fed to implement an unexpected rate hike before year-end.",
+        "bear_case": "The Fed's baseline stance remains focused on monetary easing or holding steady, and there are only a few FOMC meetings left in 2026 with no rate hike officially signaled.",
+        "summary_de": "Trotz aktueller Zinserhöhungsspekulationen infolge erhöhter Inflationszahlen bleibt eine Zinsanhebung der Fed im Jahr 2026 angesichts des übergeordneten geldpolitischen Kurses eher unwahrscheinlich.",
+        "news_used": [
+          "Fed Rate Hike Bets Harden as Inflation Hits 3.8% and Tech Stocks Slide - Around Prague",
+          "Gold Rebounds Above $3,660: What Fed Rate Hike Bets Mean Next - Around Prague",
+          "US stocks rally sharply as AI shares rebound, but Fed rate hike clouds outlook - The Financial Express",
+          "Gold price rebounds above $3,660 as tech stocks recover despite Fed rate hike fears - Equiti Global",
+          "Yen Hovers Near 159 as Thin Holiday Trading Meets Fresh Fed Rate-Hike Bets - BigGo Finance",
+          "Gold stabilizes at $3,567 per ounce after falling to a 15-month low - Українські Національні Новини (УНН)"
+        ]
+      }
+    },
     {
       "id": 303,
       "ts": "2026-11-27T23:46:42.056017+00:00",
@@ -3432,7 +3509,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T23:55:35.228969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung bestimmt wird.",
@@ -3607,7 +3684,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:40:50.277996+00:00",
+      "last_checked_ts": "2026-11-27T23:55:35.228969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain after the current political cycle or election process.",
@@ -3747,7 +3824,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:40:50.277996+00:00",
+      "last_checked_ts": "2026-11-27T23:55:35.228969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung im Parlament entschieden wird.",
@@ -4061,7 +4138,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:40:50.277996+00:00",
+      "last_checked_ts": "2026-11-27T23:55:35.228969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Ministerpräsident Spaniens wird.",
@@ -4131,7 +4208,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:40:50.277996+00:00",
+      "last_checked_ts": "2026-11-27T23:55:35.228969+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain after the current electoral cycle.",
@@ -4181,76 +4258,6 @@
           "Europe Braces for Election Season as Spain Votes - Bloomberg",
           "Sanchez makes last bid to beat the right ahead of Spanish vote - The Australian",
           "Spanish PM and rivals rally supporters in final pitch for votes - BBC"
-        ]
-      }
-    },
-    {
-      "id": 280,
-      "ts": "2026-11-27T22:11:29.581122+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4500",
-      "p_blended": "0.3271",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0771",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:50:35.726401+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand was positioned at 246/5 on Day 2 of the 2nd Test, giving them a solid platform to build a competitive total against India.",
-        "bear_case": "India is a formidable opponent in Test cricket, especially away from home or in swinging conditions, making a full recovery and victory by New Zealand challenging.",
-        "summary_de": "Neuseeland befindet sich im Testspiel gegen Indien in einer wettbewerbsfähigen Position, jedoch bleibt Indien ein starker Gegner mit guten Chancen auf den Sieg.",
-        "news_used": [
-          "England Chase Historic Third Straight Win Over New Zealand - Oz Arab Media",
-          "India vs New Zealand, 2nd Test Day 2 LIVE score: NZ resumes from 246/5; Blundell, Phillips batting - Sportstar",
-          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
-          "Hung parliament: Why Opportunity is essential to break the tie - 1News",
-          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 279,
-      "ts": "2026-11-27T22:11:28.334799+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8450",
-      "p_blind": "0.5800",
-      "p_blended": "0.7726",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0774",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:50:35.873086+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember hält.",
-        "base_rate": 0.65,
-        "bull_case": "Bestehende diplomatische Bemühungen und internationale Abschreckung halten beide Seiten vorerst von einer direkten Eskalation ab.",
-        "bear_case": "Andauernde Berichte über Debatten innerhalb des israelischen Sicherheitsapparats bezüglich möglicher Angriffe auf den Iran und anhaltende regionale Spannungen drohen den Waffenstillstand jederzeit zu brechen.",
-        "summary_de": "Trotz anhaltender interner Debatten in Israel über mögliche Schläge gegen den Iran bleibt die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis Mitte Dezember moderat hoch.",
-        "news_used": [
-          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
-          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
-          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
-          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
-          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English",
-          "Signs of Renewed War Emerge as Oil Prices Continue to Climb - نورنیوز"
         ]
       }
     }
@@ -5199,6 +5206,18 @@
   ],
   "recent_runs": [
     {
+      "id": 420,
+      "ts": "2026-11-27T23:56:20.572818+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1151,
+      "candidates_found": 21,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 47.72,
+      "errors": []
+    },
+    {
       "id": 419,
       "ts": "2026-11-27T23:51:20.748507+00:00",
       "dry_run": 0,
@@ -5424,18 +5443,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 42.4,
-      "errors": []
-    },
-    {
-      "id": 400,
-      "ts": "2026-11-27T22:16:50.897549+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1161,
-      "candidates_found": 19,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 69.6,
       "errors": []
     }
   ]
