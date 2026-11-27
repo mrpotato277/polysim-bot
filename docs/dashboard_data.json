@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:36:26.219397+00:00",
+  "generated_at": "2026-11-27T18:41:23.478292+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10655.07,
-    "reconciled_equity_usd": 10655.07,
+    "equity_usd": 10706.35,
+    "reconciled_equity_usd": 10706.35,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4574.76,
-    "deployed_pct": 42.94,
-    "total_pnl_usd": 655.07,
-    "total_pnl_pct": 6.55,
-    "unrealized_pnl_usd": 197.09,
+    "positions_value_usd": 4626.04,
+    "deployed_pct": 43.21,
+    "total_pnl_usd": 706.35,
+    "total_pnl_pct": 7.06,
+    "unrealized_pnl_usd": 248.37,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 254,
+    "total_forecasts": 257,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2401.29,
-    "crypto": 1385.21,
+    "politics": 2403.96,
+    "crypto": 1433.82,
     "geopolitics": 664.17,
     "markets": 124.09
   },
@@ -2769,6 +2769,13 @@
       "cash": 6080.31,
       "deployed_pct": 42.94,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T18:41:23.148902+00:00",
+      "equity": 10706.35,
+      "cash": 6080.31,
+      "deployed_pct": 43.21,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2794,9 +2801,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.285,
-      "current_value": 1385.21,
-      "unrealized_pnl": 621.4,
+      "current_price": 0.295,
+      "current_value": 1433.82,
+      "unrealized_pnl": 670.01,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2812,10 +2819,10 @@
       "current_price": 0.155,
       "current_value": 664.17,
       "unrealized_pnl": -21.42,
-      "p_yes": 0.6854,
-      "p_blended": 0.3146,
-      "edge_net": 0.1646,
-      "rationale": "Anhaltende regionale Spannungen und Berichte über interne israelische Debatten über mögliche Angriffe auf Iran gefährden die Stabilität eines Waffenstillstands."
+      "p_yes": 0.7394,
+      "p_blended": 0.2606,
+      "edge_net": 0.1106,
+      "rationale": "Anhaltende regionale Spannungen und Berichte über anhaltende Schläge lassen Zweifel an der Stabilität des Waffenstillstands bis Mitte Dezember aufkommen."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -2824,9 +2831,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.115,
-      "current_value": 204.44,
-      "unrealized_pnl": -16.0,
+      "current_price": 0.1165,
+      "current_value": 207.11,
+      "unrealized_pnl": -13.33,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2909,6 +2916,110 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 257,
+      "ts": "2026-11-27T18:41:23.147166+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.5000",
+      "p_blended": "0.3311",
+      "confidence": "0.5000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0911",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Das Testergebnis hängt vom offiziellen Ausgang des Test Matches zwischen Neuseeland und Indien ab.",
+        "base_rate": 0.5,
+        "bull_case": "Neuseeland zeigt auf heimischem Boden in Christchurch eine solide Leistung gegen Indien.",
+        "bear_case": "Indien hält nach dem ersten Tag gut dagegen und das Spiel ist völlig offen.",
+        "summary_de": "Das Test Match zwischen Neuseeland und Indien steht nach dem ersten Tag in Christchurch unentschieden, wodurch das Spiel völlig offen ist.",
+        "news_used": [
+          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
+          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
+          "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
+          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
+          "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website"
+        ]
+      }
+    },
+    {
+      "id": 256,
+      "ts": "2026-11-27T18:41:21.972087+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8450",
+      "p_blind": "0.4500",
+      "p_blended": "0.7394",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.1106",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Uncertainty regarding exact definition of ceasefire continuity and formal violations between Israel and Iran.",
+        "base_rate": 0.4,
+        "bull_case": "Ongoing US-Iran mediation and international diplomatic pressure reduce the immediate appetite for direct escalation.",
+        "bear_case": "Frequent skirmishes, regional friction, and internal divisions in Israel regarding strikes on Iran threaten the fragile status quo.",
+        "summary_de": "Anhaltende regionale Spannungen und Berichte über anhaltende Schläge lassen Zweifel an der Stabilität des Waffenstillstands bis Mitte Dezember aufkommen.",
+        "news_used": [
+          "AP Exclusive: Lebanon's prime minister says a proposal is underway to have UN peacekeepers stay on - Ahram Online",
+          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
+          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
+          "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews",
+          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
+          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English"
+        ]
+      }
+    },
+    {
+      "id": 255,
+      "ts": "2026-11-27T18:41:20.732413+00:00",
+      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
+      "question": "Will Bitcoin reach $62,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4200",
+      "p_blended": "0.3122",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0622",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Bitcoin will hit $62,500 at any point during November 2026 based on standard spot exchange feeds.",
+        "base_rate": 0.35,
+        "bull_case": "Bitcoin recently touched over $62,100 intraday and needs only a modest 4.5% upward move within the remaining days of November, well within historical volatility ranges.",
+        "bear_case": "Bitcoin is currently trading near $59,800 following a sustained weekly losing streak, leaving limited time before the end of November to bridge the gap to $62,500.",
+        "summary_de": "Bitcoin handelt nahe 59.800 USD und benötigt bis Monatsende einen Kursanstieg von rund 4,5 Prozent, um die Marke von 62.500 USD zu erreichen.",
+        "news_used": [
+          "Prediction Markets: Bitcoin $62,500 Odds Up, B300 Rents Ease | Nov 27 - Longbridge",
+          "Bitcoin loses more than 30% of its value as weekly losing streak reaches eight weeks - www.tmgm.com",
+          "Prediction Markets: Bitcoin $62.5K Odds Rise, AI Rent Cools… - Longbridge",
+          "Bitcoin at $62,500 by November 30: Polymarket Odds Swing 19 Points in a Day - shattered.io"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,808.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $62,500.00: +4.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.4d (1-sigma move = +/-4.6%, distance = 0.96 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 254,
       "ts": "2026-11-27T18:36:25.819463+00:00",
@@ -3166,7 +3277,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:25:33.166250+00:00",
+      "last_checked_ts": "2026-11-27T18:40:41.676408+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before December 1, 2026.",
@@ -3267,7 +3378,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:25:33.166250+00:00",
+      "last_checked_ts": "2026-11-27T18:40:41.676408+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract for ETH on major exchanges before the end of November 2026.",
@@ -3401,7 +3512,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:25:33.882441+00:00",
+      "last_checked_ts": "2026-11-27T18:40:42.355020+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on accepted spot exchange feeds before December 1, 2026.",
@@ -3643,107 +3754,6 @@
         "summary_de": "Bitcoin müsste in kurzer Zeit um über sechs Prozent steigen, was angesichts der aktuellen Kursnähe bei rund 60.260 US-Dollar und des begrenzten Zeitfensters unwahrscheinlich ist.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $60,260.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $64,000.00: +6.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.5d (1-sigma move = +/-3.9%, distance = 1.53 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 232,
-      "ts": "2026-11-27T16:41:42.533328+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4200",
-      "p_blended": "0.2894",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0394",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:35:33.705225+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand holds home-ground advantage and has a strong test match record in home conditions against India.",
-        "bear_case": "India possesses a world-class squad with deep batting and bowling reserves capable of winning away from home.",
-        "summary_de": "Die Chance für einen Sieg von Neuseeland gegen Indien basiert auf der historischen Heimstärke, wobei Indien als starker Gegner gilt.",
-        "news_used": [
-          "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
-          "How global markets shape NZ's red meat exports - NZ Herald",
-          "Finals weekend will show who really holds rugby power heading into World Cup year - The Guardian",
-          "New Zealand schools are ditching bells for bangers - The Spinoff",
-          "A New Zealand couple built a four-bedroom home using 1,300 recycled tyres and 7,000 glass bottles; after - The Times of India",
-          "New Zealand Dollar rises as the Opportunity Party takes the balance of power - FXStreet"
-        ]
-      }
-    },
-    {
-      "id": 231,
-      "ts": "2026-11-27T16:41:41.335201+00:00",
-      "market_id": "0x51cb05f3d4af8985141a29b81dcfdeec5081c4edc36640579823118ae91e516d",
-      "question": "Will Ethereum dip to $1,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.0910",
-      "p_blind": "0.0800",
-      "p_blended": "0.0876",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0064",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:30:53.355143+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Evaluates whether Ethereum touches or dips to $1,500 at any point during November 2026.",
-        "base_rate": 0.12,
-        "bull_case": "High crypto volatility and persistent macroeconomic pressures could trigger a sudden liquidation cascade or flash crash down to $1,500.",
-        "bear_case": "Current spot is around $1,677, requiring only a ~10.6% drop with only a few days left in November, and downside support currently holds above $1,630.",
-        "summary_de": "Ethereum handelt derzeit bei etwa 1.677 USD, sodass ein Rückgang auf 1.500 USD in den verbleibenden Tagen des Monats einen Einbruch von über 10 Prozent erfordern würde und angesichts der aktuellen Unterstützungen unwahrscheinlich ist.",
-        "news_used": [
-          "Ethereum Glamsterdam Upgrade Set for December Test - Wisevoter"
-        ],
-        "market_data": "ETH/USD live spot (Kraken): $1,677.95 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,500.00: -10.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-6.5%, distance = 1.73 sigma): Gaussian one-touch ('dip/reach/hit') "
-      }
-    },
-    {
-      "id": 230,
-      "ts": "2026-11-27T16:36:15.419783+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4500",
-      "p_blended": "0.2959",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0459",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:35:33.705225+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand holds a strong home-ground advantage and historical competitive edge in test cricket conditions against India.",
-        "bear_case": "India possesses a deep squad and elite bowling attack capable of winning in any condition.",
-        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland basiert auf historischen Testspiel-Leistungen und den üblichen Heimvorteilen gegen Indien.",
-        "news_used": [
-          "How global markets shape NZ's red meat exports - NZ Herald",
-          "Finals weekend will show who really holds rugby power heading into World Cup year - The Guardian",
-          "New Zealand schools are ditching bells for bangers - The Spinoff",
-          "A New Zealand couple built a four-bedroom home using 1,300 recycled tyres and 7,000 glass bottles; after - The Times of India",
-          "New Zealand Dollar rises as the Opportunity Party takes the balance of power - FXStreet",
-          "All Blacks have ‘no gas in the tank’ but stats show it’s England who should be out of juice - The Guardian"
-        ]
       }
     }
   ],
@@ -4671,6 +4681,18 @@
   ],
   "recent_runs": [
     {
+      "id": 357,
+      "ts": "2026-11-27T18:41:23.149826+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1129,
+      "candidates_found": 20,
+      "llm_calls": 3,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.93,
+      "errors": []
+    },
+    {
       "id": 356,
       "ts": "2026-11-27T18:36:25.821480+00:00",
       "dry_run": 0,
@@ -4896,18 +4918,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 61.16,
-      "errors": []
-    },
-    {
-      "id": 337,
-      "ts": "2026-11-27T17:01:45.677763+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1114,
-      "candidates_found": 16,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 41.42,
       "errors": []
     }
   ]
