@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T08:36:39.217251+00:00",
+  "generated_at": "2026-11-27T08:41:24.277873+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9654.34,
-    "reconciled_equity_usd": 9494.29,
+    "equity_usd": 9729.28,
+    "reconciled_equity_usd": 9569.23,
     "equity_discrepancy_usd": 160.05,
     "cash_usd": 5831.74,
-    "positions_value_usd": 3662.55,
-    "deployed_pct": 37.94,
-    "total_pnl_usd": -345.66,
-    "total_pnl_pct": -3.46,
-    "unrealized_pnl_usd": -404.87,
+    "positions_value_usd": 3737.49,
+    "deployed_pct": 38.41,
+    "total_pnl_usd": -270.72,
+    "total_pnl_pct": -2.71,
+    "unrealized_pnl_usd": -329.93,
     "total_trades": 227,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -5.76,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 178,
+    "total_forecasts": 179,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2170.55,
-    "crypto": 1245.93,
+    "politics": 2165.78,
+    "crypto": 1325.64,
     "geopolitics": 246.07
   },
   "equity_curve": [
@@ -1882,6 +1882,13 @@
       "cash": 5831.74,
       "deployed_pct": 37.94,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T08:41:23.843870+00:00",
+      "equity": 9729.28,
+      "cash": 5831.74,
+      "deployed_pct": 38.41,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1907,9 +1914,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.115,
-      "current_value": 558.94,
-      "unrealized_pnl": -204.87,
+      "current_price": 0.125,
+      "current_value": 607.55,
+      "unrealized_pnl": -156.26,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -1937,9 +1944,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0925,
-      "current_value": 164.44,
-      "unrealized_pnl": -56.0,
+      "current_price": 0.093,
+      "current_value": 165.33,
+      "unrealized_pnl": -55.11,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1967,9 +1974,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.185,
-      "current_value": 106.2,
-      "unrealized_pnl": -186.56,
+      "current_price": 0.21,
+      "current_value": 120.55,
+      "unrealized_pnl": -172.21,
       "p_yes": 0.827,
       "p_blended": 0.173,
       "edge_net": 0.007,
@@ -1982,9 +1989,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.585,
-      "current_value": 661.48,
-      "unrealized_pnl": -23.93,
+      "current_price": 0.58,
+      "current_value": 655.82,
+      "unrealized_pnl": -29.59,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -1997,9 +2004,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.52,
-      "current_value": 580.79,
-      "unrealized_pnl": 0.0,
+      "current_price": 0.535,
+      "current_value": 597.54,
+      "unrealized_pnl": 16.75,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -2022,6 +2029,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 179,
+      "ts": "2026-11-27T08:41:23.842703+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9450",
+      "p_blind": "0.8500",
+      "p_blended": "0.9070",
+      "confidence": "0.8000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob die Fed die Zinsen nach der Dezember-Sitzung 2026 um 25 bps anhebt.",
+        "base_rate": 0.15,
+        "bull_case": "Steigende PCE-Inflation und robustes Wachstum schüren Erwartungen an eine Zinserhöhung, wobei Märkte laut aktuellen Berichten eine hohe Wahrscheinlichkeit einpreisen.",
+        "bear_case": "Historisch gesehen sind Zinserhöhungen der Fed in diesem Zyklus weitgehend abgeschlossen, und unerwartete Straffungen sind trotz heißer Inflation selten.",
+        "summary_de": "Aktuelle Markterwartungen und Inflationsdaten deuten stark auf eine Zinserhöhung der Fed um 25 Basispunkte im Dezember hin.",
+        "news_used": [
+          "Is a US Fed rate hike confirmed in Dec meet? How will it impact Sensex, Nifty, Gold as US PCE inflation rises in October - Livemint",
+          "Hot Inflation and Strong Growth Sharpen Fed Policy Fight - streamlinefeed.co.ke",
+          "First Trust’s Fed Forecast: Interest Rate Hikes in 2027 May Fall Short of Expectations - Cryptonews.net",
+          "Robin Brooks Warns Hawkish Fed Could Trigger Risk-Asset Meltdown - www.tokenpost.com",
+          "Markets Price 99.5% Chance of 25-Basis-Point Fed Hike in December - www.tokenpost.com",
+          "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView"
+        ]
+      }
+    },
     {
       "id": 178,
       "ts": "2026-11-27T08:36:38.660903+00:00",
@@ -2068,7 +2110,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T08:40:42.278106+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if the Federal Reserve increases interest rates by 25 bps after the December 2026 FOMC meeting.",
@@ -2241,7 +2283,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:32.970837+00:00",
+      "last_checked_ts": "2026-11-27T08:40:42.894380+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through December 15, 2026; violation or renewal terms must be clearly defined.",
@@ -2342,7 +2384,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:33.187239+00:00",
+      "last_checked_ts": "2026-11-27T08:40:43.030727+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which involves defining whether tacit understandings or formal agreements qualify.",
@@ -2428,7 +2470,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:32.970837+00:00",
+      "last_checked_ts": "2026-11-27T08:40:42.894380+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob vereinbarte Waffenruhen über die Frist hinaus formell anhalten oder ob Zwischenfälle als Bruch gewertet werden.",
@@ -2497,7 +2539,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:33.464977+00:00",
+      "last_checked_ts": "2026-11-27T08:40:43.285831+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the ground stop, which might remain under protracted investigation past the deadline.",
@@ -2528,7 +2570,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:32.679612+00:00",
+      "last_checked_ts": "2026-11-27T08:40:42.698915+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $57,500 at any point during November 2026.",
@@ -2724,7 +2766,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:32.970837+00:00",
+      "last_checked_ts": "2026-11-27T08:40:42.894380+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung vor exakter Definition und Einhaltung des Waffenstillstands bis zum 15. Dezember 2026.",
@@ -2759,7 +2801,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:30:49.236343+00:00",
+      "last_checked_ts": "2026-11-27T08:40:43.606982+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -2799,37 +2841,6 @@
         "summary_de": "Bitcoin müsste in den verbleibenden Tagen des Monats November um rund 5,8 Prozent steigen, um die Marke von 65.000 USD zu erreichen, was bei historischer Volatilität durchaus möglich, aber kurzfristig sportlich ist.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $61,442.20 (24h range: $59,850.00 - $61,773.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $65,000.00: +5.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.0d (1-sigma move = +/-5.1%, distance = 1.11 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 154,
-      "ts": "2026-11-27T04:46:31.881891+00:00",
-      "market_id": "0x18c74c5f8c9eb6ed04f45d4675272e680669a6c9e17c81150f90351a82383d1f",
-      "question": "Will Bitcoin dip to $58,000 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.1450",
-      "p_blind": "0.9500",
-      "p_blended": "0.5768",
-      "confidence": "0.9000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.4368",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:30:49.509198+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
-        "base_rate": 0.2,
-        "bull_case": "Aktuelle Nachrichten bestätigen, dass Bitcoin bereits unter 58.000 USD gefallen ist, was die Bedingung direkt erfüllt.",
-        "bear_case": "Der aktuelle Spot-Preis liegt über 61.400 USD und das Zeitfenster schließt bald, sodass ein erneuter Rücksetzer unwahrscheinlich ist, falls der frühere Dip nicht offiziell vom Datenfeed erfasst wurde.",
-        "summary_de": "Berichte bestätigen, dass Bitcoin im fraglichen Zeitraum bereits unter 58.000 US-Dollar gefallen ist, womit das Ziel erreicht wurde.",
-        "news_used": [
-          "Bitcoin Slides Below $58,000 Amid High Inflation and Strong Dollar - KuCoin"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $61,442.20 (24h range: $59,850.00 - $61,773.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $58,000.00: -5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-4.4%, distance = 1.31 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -3477,6 +3488,18 @@
   ],
   "recent_runs": [
     {
+      "id": 239,
+      "ts": "2026-11-27T08:41:23.844328+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1128,
+      "candidates_found": 19,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.82,
+      "errors": []
+    },
+    {
       "id": 238,
       "ts": "2026-11-27T08:36:38.666940+00:00",
       "dry_run": 0,
@@ -3702,18 +3725,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 44.31,
-      "errors": []
-    },
-    {
-      "id": 219,
-      "ts": "2026-11-27T07:01:38.251704+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1215,
-      "candidates_found": 21,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 39.46,
       "errors": []
     }
   ]
