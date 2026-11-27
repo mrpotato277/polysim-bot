@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:41:26.695355+00:00",
+  "generated_at": "2026-11-27T17:47:07.873239+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11115.26,
-    "reconciled_equity_usd": 11115.26,
+    "equity_usd": 11143.59,
+    "reconciled_equity_usd": 11143.59,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 5034.95,
-    "deployed_pct": 45.3,
-    "total_pnl_usd": 1115.26,
-    "total_pnl_pct": 11.15,
-    "unrealized_pnl_usd": 657.28,
+    "positions_value_usd": 5063.28,
+    "deployed_pct": 45.44,
+    "total_pnl_usd": 1143.59,
+    "total_pnl_pct": 11.44,
+    "unrealized_pnl_usd": 685.61,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 245,
+    "total_forecasts": 246,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2359.93,
-    "crypto": 1871.25,
+    "politics": 2339.66,
+    "crypto": 1919.85,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -2686,6 +2686,13 @@
       "cash": 6080.31,
       "deployed_pct": 45.3,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T17:47:07.187092+00:00",
+      "equity": 11143.59,
+      "cash": 6080.31,
+      "deployed_pct": 45.44,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2696,9 +2703,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.22,
-      "current_value": 394.44,
-      "unrealized_pnl": 17.93,
+      "current_price": 0.215,
+      "current_value": 385.47,
+      "unrealized_pnl": 8.96,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -2711,9 +2718,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.385,
-      "current_value": 1871.25,
-      "unrealized_pnl": 1107.44,
+      "current_price": 0.395,
+      "current_value": 1919.85,
+      "unrealized_pnl": 1156.04,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2786,9 +2793,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.565,
-      "current_value": 638.86,
-      "unrealized_pnl": -46.55,
+      "current_price": 0.555,
+      "current_value": 627.56,
+      "unrealized_pnl": -57.85,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2826,6 +2833,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 246,
+      "ts": "2026-11-27T17:47:07.122822+00:00",
+      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
+      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.0410",
+      "p_blind": "0.5200",
+      "p_blended": "0.1206",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob es nach der Dezembersitzung 2026 keine Zinsänderung der Fed geben wird (weder Erhöhung noch Senkung).",
+        "base_rate": 0.55,
+        "bull_case": "Die Federal Reserve könnte angesichts anhaltend gemischter Konjunkturdaten und einer neutralen Zinspolitik die Zinsen unverändert lassen.",
+        "bear_case": "Makroökonomische Überraschungen bei Inflation oder Beschäftigung könnten die Fed zu einer Zinsänderung (Senkung oder Erhöhung) zwingen.",
+        "summary_de": "Da die Erwartungen für die Dezembersitzung 2026 noch stark von kommenden Wirtschaftsdaten abhängen, bleibt eine Wahrscheinlichkeit von knapp über 50 Prozent für eine Zinspause bestehen.",
+        "news_used": [
+          "The Big Pressures Facing the Fed - Bloomberg.com",
+          "How have interest rate expectations changed after this week's events? - investingLive",
+          "Sliding stock market confronts jobs data, rate view as next tests - WTVB",
+          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
+          "The Latest Interest Rate Forecast Is In, and It Spells Trouble for a Historically Expensive AI-Driven Bull Market - The Globe and Mail",
+          "Gold price forecast: Fed rate hike in December may limit recovery to ₹1.30 lakh per 10 grams by 2026-end, says expert - Livemint"
+        ]
+      }
+    },
     {
       "id": 245,
       "ts": "2026-11-27T17:41:26.322357+00:00",
@@ -2942,7 +2984,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T17:45:57.627770+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count of the 2026 Spanish general election.",
@@ -2977,7 +3019,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:55.937890+00:00",
+      "last_checked_ts": "2026-11-27T17:45:57.627770+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official results of the Spanish general election determining which party wins the most seats.",
@@ -3111,7 +3153,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:55.937890+00:00",
+      "last_checked_ts": "2026-11-27T17:45:57.627770+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election.",
@@ -3181,7 +3223,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:25:34.464795+00:00",
+      "last_checked_ts": "2026-11-27T17:45:55.346232+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition asking whether the Israel-Iran ceasefire holds through the end of November 2026.",
@@ -3244,7 +3286,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:55.057009+00:00",
+      "last_checked_ts": "2026-11-27T17:45:56.084174+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -3308,7 +3350,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:54.883971+00:00",
+      "last_checked_ts": "2026-11-27T17:45:55.849067+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Evaluates whether Ethereum touches or dips to $1,500 at any point during November 2026.",
@@ -3407,7 +3449,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:55.592315+00:00",
+      "last_checked_ts": "2026-11-27T17:45:56.954588+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on reliable crypto exchange or oracle feeds.",
@@ -3508,7 +3550,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:55.937890+00:00",
+      "last_checked_ts": "2026-11-27T17:45:57.627770+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the 2026 Spanish general election according to official results.",
@@ -3572,7 +3614,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:30:56.230350+00:00",
+      "last_checked_ts": "2026-11-27T17:45:58.320918+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, evaluated against major exchange spot/oracle feeds before December 1, 2026.",
@@ -3611,35 +3653,6 @@
         "summary_de": "Bitcoin müsste innerhalb weniger Tage um über 11 Prozent fallen, was angesichts der aktuellen Volatilität und des Abstands zur Marke ein extrem unwahrscheinliches Szenario darstellt.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $59,339.30 (24h range: $59,244.00 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $52,500.00: -11.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.6d (1-sigma move = +/-4.7%, distance = 2.59 sigma): Gaussian one-touch ('dip/reach/hi"
-      }
-    },
-    {
-      "id": 221,
-      "ts": "2026-11-27T14:46:23.886730+00:00",
-      "market_id": "0x459bb1954c553022e8d64b02acf6e752287947c7402a59edb8f4beb754b7804f",
-      "question": "Will Bitcoin dip to $56,000 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.0915",
-      "p_blind": "0.1100",
-      "p_blended": "0.0963",
-      "confidence": "0.7000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:40:37.858932+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
-        "base_rate": 0.12,
-        "bull_case": "Crypto markets exhibit heavy fat tails and sudden flash crashes; a sudden 6.5% drop within the remaining timeframe is well within historical volatility bounds.",
-        "bear_case": "Bitcoin is currently trading near $59,900 with only a few days remaining until November 29, making a drop to $56,000 less probable without a major sudden catalyst.",
-        "summary_de": "Bitcoin handelt aktuell bei rund 59.900 US-Dollar und ein Rücksetzer auf 56.000 US-Dollar in den verbleibenden Tagen ist zwar durch Krypto-Volatilität möglich, aber statistisch eher unwahrscheinlich.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $59,899.30 (24h range: $59,737.00 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $56,000.00: -6.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.6d (1-sigma move = +/-4.0%, distance = 1.68 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -4567,6 +4580,18 @@
   ],
   "recent_runs": [
     {
+      "id": 346,
+      "ts": "2026-11-27T17:47:07.188511+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1127,
+      "candidates_found": 18,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 73.43,
+      "errors": []
+    },
+    {
       "id": 345,
       "ts": "2026-11-27T17:41:26.325263+00:00",
       "dry_run": 0,
@@ -4792,18 +4817,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 47.64,
-      "errors": []
-    },
-    {
-      "id": 326,
-      "ts": "2026-11-27T16:06:22.461183+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1111,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 52.11,
       "errors": []
     }
   ]
