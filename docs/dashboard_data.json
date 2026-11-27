@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T01:51:31.511794+00:00",
+  "generated_at": "2026-11-27T01:56:19.163821+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9920.92,
-    "reconciled_equity_usd": 9317.24,
+    "equity_usd": 9928.97,
+    "reconciled_equity_usd": 9325.29,
     "equity_discrepancy_usd": 603.68,
     "cash_usd": 8013.11,
-    "positions_value_usd": 1304.13,
-    "deployed_pct": 13.15,
-    "total_pnl_usd": -79.08,
-    "total_pnl_pct": -0.79,
-    "unrealized_pnl_usd": -83.92,
+    "positions_value_usd": 1312.18,
+    "deployed_pct": 13.22,
+    "total_pnl_usd": -71.03,
+    "total_pnl_pct": -0.71,
+    "unrealized_pnl_usd": -75.87,
     "total_trades": 66,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -1.9,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 443.16,
-    "politics": 860.97
+    "crypto": 458.32,
+    "politics": 853.86
   },
   "equity_curve": [
     {
@@ -1272,6 +1272,13 @@
       "cash": 8013.11,
       "deployed_pct": 13.15,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T01:56:18.848747+00:00",
+      "equity": 9928.97,
+      "cash": 8013.11,
+      "deployed_pct": 13.22,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1282,9 +1289,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.225,
-      "current_value": 170.49,
-      "unrealized_pnl": -18.95,
+      "current_price": 0.245,
+      "current_value": 185.65,
+      "unrealized_pnl": -3.79,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1297,9 +1304,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0995,
-      "current_value": 176.88,
-      "unrealized_pnl": -43.56,
+      "current_price": 0.0955,
+      "current_value": 169.77,
+      "unrealized_pnl": -50.67,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1605,7 +1612,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:45:37.922632+00:00",
+      "last_checked_ts": "2026-11-27T01:55:42.512566+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -1801,7 +1808,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:40:48.502345+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.865117+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -1831,7 +1838,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:40:48.272596+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.772978+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -1862,7 +1869,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:45:37.155926+00:00",
+      "last_checked_ts": "2026-11-27T01:55:42.059391+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -1891,7 +1898,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:45:36.978152+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.962603+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1920,7 +1927,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:40:48.502345+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.865117+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -1948,7 +1955,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:40:48.272596+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.772978+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard spot price tracking for Bitcoin reaching a high watermark during November 2026.",
@@ -1977,7 +1984,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:40:48.116600+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.679403+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the next White House Press Secretary is officially announced by November 30, 2026.",
@@ -2012,7 +2019,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:40:47.913655+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.551294+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution checks if Bitcoin hits or dips to $58,000 at any point during November 23-29, 2026 according to standard market feeds.",
@@ -2044,7 +2051,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:40:47.712621+00:00",
+      "last_checked_ts": "2026-11-27T01:55:41.452761+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Tiefstwerts von Ethereum während des angegebenen Datumsfensters.",
@@ -2533,6 +2540,18 @@
   ],
   "recent_runs": [
     {
+      "id": 158,
+      "ts": "2026-11-27T01:56:18.849921+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1132,
+      "candidates_found": 23,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 38.76,
+      "errors": []
+    },
+    {
       "id": 157,
       "ts": "2026-11-27T01:51:31.181525+00:00",
       "dry_run": 0,
@@ -2758,18 +2777,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 62.38,
-      "errors": []
-    },
-    {
-      "id": 138,
-      "ts": "2026-11-27T00:16:36.780751+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1109,
-      "candidates_found": 29,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 61.34,
       "errors": []
     }
   ]
