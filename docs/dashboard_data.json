@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:36:16.140956+00:00",
+  "generated_at": "2026-11-27T20:41:40.046403+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10980.43,
-    "reconciled_equity_usd": 10707.52,
-    "equity_discrepancy_usd": 272.91,
+    "equity_usd": 11055.33,
+    "reconciled_equity_usd": 10781.31,
+    "equity_discrepancy_usd": 274.02,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4627.21,
-    "deployed_pct": 42.14,
-    "total_pnl_usd": 980.43,
-    "total_pnl_pct": 9.8,
-    "unrealized_pnl_usd": 474.94,
+    "positions_value_usd": 4701.0,
+    "deployed_pct": 42.52,
+    "total_pnl_usd": 1055.33,
+    "total_pnl_pct": 10.55,
+    "unrealized_pnl_usd": 548.73,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 267,
+    "total_forecasts": 268,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2269.21,
-    "crypto": 1433.82,
+    "politics": 2270.1,
+    "crypto": 1506.72,
     "geopolitics": 707.02,
     "markets": 217.16
   },
@@ -2949,6 +2949,13 @@
       "cash": 6080.31,
       "deployed_pct": 42.14,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T20:41:39.730818+00:00",
+      "equity": 11055.33,
+      "cash": 6080.31,
+      "deployed_pct": 42.52,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2974,9 +2981,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.295,
-      "current_value": 1433.82,
-      "unrealized_pnl": 670.01,
+      "current_price": 0.31,
+      "current_value": 1506.72,
+      "unrealized_pnl": 742.91,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3004,9 +3011,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.124,
-      "current_value": 220.44,
-      "unrealized_pnl": 0.0,
+      "current_price": 0.1245,
+      "current_value": 221.33,
+      "unrealized_pnl": 0.89,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3074,6 +3081,38 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 268,
+      "ts": "2026-11-27T20:41:39.657027+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9450",
+      "p_blind": "0.0800",
+      "p_blended": "0.6827",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Vertragsentscheidung hängt vom offiziellen Zinsentscheid der Fed nach dem Dezember-Meeting 2026 ab.",
+        "base_rate": 0.15,
+        "bull_case": "Anhaltender Inflationsdruck und hawkishe Tendenzen in den Medien schüren Erwartungen an unerwartete Zinserhöhungen.",
+        "bear_case": "Die Federal Reserve belässt die Zinsen historisch gesehen meist unverändert oder senkt sie, und Zinserhöhungen sind in diesem Zyklus unwahrscheinlich.",
+        "summary_de": "Trotz vereinzelter hawkishen Marktdiskussionen bleibt eine Zinserhöhung der Fed im Dezember 2026 ein sehr unwahrscheinliches Szenario.",
+        "news_used": [
+          "How have interest rate expectations changed after this week's events? - investingLive",
+          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
+          "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike"
+        ]
+      }
+    },
     {
       "id": 267,
       "ts": "2026-11-27T20:21:33.358298+00:00",
@@ -3196,7 +3235,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es handelt sich um ein klares Testergebnis zwischen Neuseeland und Indien im Cricket, Rugby oder einer anderen Sportart gemäß offiziellem Spielbericht.",
@@ -3266,7 +3305,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.580038+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.131070+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands zwischen Israel und Iran muss exakt im Sinne der Marktregeln erfüllt sein; unklare Grenzverletzungen oder verdeckte Operationen könnten die Auflösung beeinflussen.",
@@ -3337,7 +3376,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India ending by December 3, 2026.",
@@ -3372,7 +3411,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.783944+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.231676+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which depends on official verification and formal implementation.",
@@ -3400,7 +3439,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test match outcome between New Zealand and India resolving by December 3, 2026.",
@@ -3435,7 +3474,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Testergebnis hängt vom offiziellen Ausgang des Test Matches zwischen Neuseeland und Indien ab.",
@@ -3470,7 +3509,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.580038+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.131070+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Uncertainty regarding exact definition of ceasefire continuity and formal violations between Israel and Iran.",
@@ -3539,7 +3578,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3574,7 +3613,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:34.178999+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.507705+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error caused the November 13 FAA ground stop before December 1, 2026.",
@@ -3604,7 +3643,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test match between New Zealand and India resolving based on official match outcome.",
@@ -3639,7 +3678,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Test Match zwischen Neuseeland und Indien entscheidet über den Ausgang (YES für Sieg Neuseeland).",
@@ -3674,7 +3713,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test match result between New Zealand and India based on standard cricket rules.",
@@ -3744,7 +3783,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.029031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Testergebnis der Test Match Begegnung zwischen Neuseeland und Indien entscheidet eindeutig über den Ausgang (Sieg Neuseeland).",
@@ -3845,7 +3884,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.580038+00:00",
+      "last_checked_ts": "2026-11-27T20:40:40.131070+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires ongoing uninterrupted ceasefire between Israel and Iran through December 15, 2026, which depends on precise definitions of formal vs informal ceasefires and proxy escalations.",
@@ -3890,41 +3929,6 @@
         "summary_de": "Ethereum notiert derzeit bei rund 1.664 USD und müsste innerhalb der verbleibenden Tage im November um über 8 Prozent steigen, was angesichts der begrenzten verbleibenden Zeit und fehlender positiver Katalysatoren eher unwahrscheinlich ist.",
         "news_used": [],
         "market_data": "ETH/USD live spot (Kraken): $1,664.02 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,800.00: +8.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-6.4%, distance = 1.22 sigma): Gaussian one-touch ('dip/reach/hit') b"
-      }
-    },
-    {
-      "id": 243,
-      "ts": "2026-11-27T17:36:19.812520+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4500",
-      "p_blended": "0.3146",
-      "confidence": "0.5000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0746",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:33.411100+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand finished Day 1 on level terms in Christchurch and playing at home provides a significant advantage to secure a victory over the remaining days.",
-        "bear_case": "India is a formidable touring side capable of shifting momentum on Days 2 through 5, making a New Zealand win far from guaranteed.",
-        "summary_de": "Nach einem ausgeglichenen ersten Tag in Christchurch gegen Indien stehen die Chancen für Neuseeland offen, wobei der Heimvorteil eine leichte Kurskorrektur rechtfertigt.",
-        "news_used": [
-          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
-          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
-          "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website",
-          "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks treble - The Guardian",
-          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian"
-        ]
       }
     }
   ],
@@ -4872,6 +4876,18 @@
   ],
   "recent_runs": [
     {
+      "id": 381,
+      "ts": "2026-11-27T20:41:39.731766+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1223,
+      "candidates_found": 18,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 61.19,
+      "errors": []
+    },
+    {
       "id": 380,
       "ts": "2026-11-27T20:36:15.677808+00:00",
       "dry_run": 0,
@@ -5097,18 +5113,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 51.84,
-      "errors": []
-    },
-    {
-      "id": 361,
-      "ts": "2026-11-27T19:01:38.564880+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1167,
-      "candidates_found": 18,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 42.13,
       "errors": []
     }
   ]
