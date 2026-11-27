@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:01:38.592233+00:00",
+  "generated_at": "2026-11-27T07:06:16.015069+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9733.41,
-    "reconciled_equity_usd": 8494.88,
+    "equity_usd": 9721.04,
+    "reconciled_equity_usd": 8482.51,
     "equity_discrepancy_usd": 1238.53,
     "cash_usd": 5590.85,
-    "positions_value_usd": 2904.03,
-    "deployed_pct": 29.84,
-    "total_pnl_usd": -266.59,
-    "total_pnl_pct": -2.67,
-    "unrealized_pnl_usd": -328.59,
+    "positions_value_usd": 2891.66,
+    "deployed_pct": 29.75,
+    "total_pnl_usd": -278.96,
+    "total_pnl_pct": -2.79,
+    "unrealized_pnl_usd": -340.96,
     "total_trades": 225,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -4.89,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 169,
+    "total_forecasts": 170,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2155.84,
-    "crypto": 748.19
+    "politics": 2154.95,
+    "crypto": 736.71
   },
   "equity_curve": [
     {
@@ -1742,6 +1742,13 @@
       "cash": 5590.85,
       "deployed_pct": 29.84,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T07:06:15.700042+00:00",
+      "equity": 9721.04,
+      "cash": 5590.85,
+      "deployed_pct": 29.75,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1782,9 +1789,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.094,
-      "current_value": 167.11,
-      "unrealized_pnl": -53.33,
+      "current_price": 0.0935,
+      "current_value": 166.22,
+      "unrealized_pnl": -54.22,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1812,9 +1819,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.245,
-      "current_value": 140.64,
-      "unrealized_pnl": -152.12,
+      "current_price": 0.225,
+      "current_value": 129.16,
+      "unrealized_pnl": -163.6,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1853,6 +1860,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 170,
+      "ts": "2026-11-27T07:06:15.697994+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.3500",
+      "p_blended": "0.2888",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0388",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on which party wins the most seats in the Spanish general election.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbency advantage and mobilization of progressive voters facing a potential PP-Vox coalition.",
+        "bear_case": "Final polls indicate the conservative PP and Vox securing a clear majority, threatening PSOE's seat count lead.",
+        "summary_de": "Aktuelle Umfragen deuten auf eine klare Mehrheit für die konservative PP und Vox hin, wodurch die Chancen der PSOE auf die meisten Sitze sinken.",
+        "news_used": [
+          "Could housing decide Spain's general election?",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu",
+          "Spanish elections: What you need to know and what's at stake - BBC",
+          "Spain election polls: PP and Vox clear majority in final surveys - Il Politico Web"
+        ]
+      }
+    },
+    {
       "id": 169,
       "ts": "2026-11-27T06:56:23.129610+00:00",
       "market_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
@@ -1869,7 +1911,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T07:05:33.605708+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which involves defining whether tacit understandings or formal agreements qualify.",
@@ -1955,7 +1997,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:50:42.293583+00:00",
+      "last_checked_ts": "2026-11-27T07:05:33.496942+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob vereinbarte Waffenruhen über die Frist hinaus formell anhalten oder ob Zwischenfälle als Bruch gewertet werden.",
@@ -2024,7 +2066,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:50:42.714445+00:00",
+      "last_checked_ts": "2026-11-27T07:05:33.852777+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the ground stop, which might remain under protracted investigation past the deadline.",
@@ -2055,7 +2097,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:50:42.038305+00:00",
+      "last_checked_ts": "2026-11-27T07:05:33.262708+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $57,500 at any point during November 2026.",
@@ -2088,7 +2130,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:55:33.490910+00:00",
+      "last_checked_ts": "2026-11-27T07:05:34.683549+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 2026 auf 60.000 USD dippt, basierend auf Standard-Preisen der wichtigsten Marktplätze.",
@@ -2251,7 +2293,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:50:42.293583+00:00",
+      "last_checked_ts": "2026-11-27T07:05:33.496942+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung vor exakter Definition und Einhaltung des Waffenstillstands bis zum 15. Dezember 2026.",
@@ -2286,7 +2328,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:50:43.053827+00:00",
+      "last_checked_ts": "2026-11-27T07:05:34.185609+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -2345,7 +2387,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:55:33.078272+00:00",
+      "last_checked_ts": "2026-11-27T07:05:34.455618+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -2530,7 +2572,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:50:42.907990+00:00",
+      "last_checked_ts": "2026-11-27T07:05:34.078630+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -2591,7 +2633,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:50:41.762150+00:00",
+      "last_checked_ts": "2026-11-27T07:05:33.044871+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Election results must clearly show a winning margin of 12% or more for Chiang Wan-an based on official CEC data.",
@@ -2603,34 +2645,6 @@
           "What to know about Taiwan’s local elections and why they matter to China - Stamford Advocate",
           "Puma Shen canvasses pan-blue Taipei districts - Taiwan News"
         ]
-      }
-    },
-    {
-      "id": 145,
-      "ts": "2026-11-27T02:06:34.706534+00:00",
-      "market_id": "0xca5c9aac1854c8358c003993254bc069a21a58930ffe2cb2bfbebd4f7d34c214",
-      "question": "Kimberly Powell announced resignation or removal by November 30, 2026?",
-      "category": "technology",
-      "end_date": "2026-12-01T04:59:00+00:00",
-      "market_price": "0.0650",
-      "p_blind": "0.0200",
-      "p_blended": "0.0462",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0238",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:01:01.560174+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires formal announcement of resignation or removal by November 30, 2026.",
-        "base_rate": 0.05,
-        "bull_case": "Sudden unexpected departure or internal corporate restructuring at NVIDIA leading to a high-profile executive exit.",
-        "bear_case": "Kimberly Powell has been a stable long-term executive at NVIDIA with no indications of stepping down, making a sudden resignation extremely unlikely.",
-        "summary_de": "Es gibt keine Hinweise auf einen bevorstehenden Rücktritt oder eine Entlassung von Kimberly Powell bei Nvidia, weshalb ein Eintreten dieses Szenarios extrem unwahrscheinlich ist.",
-        "news_used": []
       }
     }
   ],
@@ -3218,6 +3232,18 @@
   ],
   "recent_runs": [
     {
+      "id": 220,
+      "ts": "2026-11-27T07:06:15.701327+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1199,
+      "candidates_found": 21,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 44.31,
+      "errors": []
+    },
+    {
       "id": 219,
       "ts": "2026-11-27T07:01:38.251704+00:00",
       "dry_run": 0,
@@ -3443,18 +3469,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 57.51,
-      "errors": []
-    },
-    {
-      "id": 200,
-      "ts": "2026-11-27T05:21:19.270980+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1119,
-      "candidates_found": 24,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 40.98,
       "errors": []
     }
   ]
