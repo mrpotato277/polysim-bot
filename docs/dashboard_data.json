@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T22:21:23.204486+00:00",
+  "generated_at": "2026-11-27T22:26:20.555116+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10991.19,
-    "reconciled_equity_usd": 10989.53,
-    "equity_discrepancy_usd": 1.66,
+    "equity_usd": 10997.83,
+    "reconciled_equity_usd": 10997.83,
+    "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4909.22,
-    "deployed_pct": 44.67,
-    "total_pnl_usd": 991.19,
-    "total_pnl_pct": 9.91,
-    "unrealized_pnl_usd": 531.55,
+    "positions_value_usd": 4917.52,
+    "deployed_pct": 44.71,
+    "total_pnl_usd": 997.83,
+    "total_pnl_pct": 9.98,
+    "unrealized_pnl_usd": 539.85,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 283,
+    "total_forecasts": 285,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2545.47,
+    "politics": 2553.77,
     "crypto": 1482.42,
     "geopolitics": 664.17,
     "markets": 217.16
@@ -3108,6 +3108,13 @@
       "cash": 6080.31,
       "deployed_pct": 44.67,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T22:26:20.280760+00:00",
+      "equity": 10997.83,
+      "cash": 6080.31,
+      "deployed_pct": 44.71,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3163,9 +3170,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.131,
-      "current_value": 232.88,
-      "unrealized_pnl": 12.44,
+      "current_price": 0.129,
+      "current_value": 229.33,
+      "unrealized_pnl": 8.89,
       "p_yes": 0.2319,
       "p_blended": 0.2319,
       "edge_net": 0.1019,
@@ -3208,9 +3215,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.555,
-      "current_value": 627.56,
-      "unrealized_pnl": -57.85,
+      "current_price": 0.565,
+      "current_value": 638.86,
+      "unrealized_pnl": -46.55,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3223,9 +3230,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.249,
-      "current_value": 275.12,
-      "unrealized_pnl": 49.72,
+      "current_price": 0.2495,
+      "current_value": 275.67,
+      "unrealized_pnl": 50.27,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -3248,6 +3255,76 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 285,
+      "ts": "2026-11-27T22:26:20.279088+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2500",
+      "p_blind": "0.3800",
+      "p_blended": "0.3009",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0509",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.35,
+        "bull_case": "New Zealand's batters are currently at the crease on Day 2 with a decent total (246/5), giving them a platform to build a strong innings against India.",
+        "bear_case": "India is traditionally a formidable opponent in Test cricket, especially as the match progresses into days 3, 4, and 5 where spin and depth usually favor India.",
+        "summary_de": "Neuseeland ist im zweiten Test gegen Indien am zweiten Tag gut im Spiel, jedoch bleibt Indien als Testgegner auswärts traditionell ein schwieriger Kontrahent für einen Sieg.",
+        "news_used": [
+          "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
+          "Dallas CUTHBERT Obituary (2026) - The New Zealand Herald - NZ Herald",
+          "Bugman Ruud Kleinpaste Connects With A New Zealand River - Scoop - New Zealand News",
+          "England Chase Historic Third Straight Win Over New Zealand - Oz Arab Media",
+          "India vs New Zealand, 2nd Test Day 2 LIVE score: NZ resumes from 246/5; Blundell, Phillips batting - Sportstar",
+          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post"
+        ]
+      }
+    },
+    {
+      "id": 284,
+      "ts": "2026-11-27T22:26:18.992170+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8650",
+      "p_blind": "0.3500",
+      "p_blended": "0.6817",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1771",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Ministerpräsident Spaniens wird.",
+        "base_rate": 0.4,
+        "bull_case": "Umfragen und die politische Dynamik begünstigen die konservative Volkspartei unter Feijóo, da die amtierende Regierung unter Druck steht.",
+        "bear_case": "Koalitionsbildungen in Spanien sind komplex, und linke Parteien oder andere Allianzen könnten Feijóo weiterhin von der Regierungsbildung ausschließen.",
+        "summary_de": "Obwohl die konservative Opposition gute Chancen hat, bleibt die tatsächliche Regierungsübernahme durch Koalitionshürden unsicher.",
+        "news_used": [
+          "Spanish PM and rivals rally supporters in final pitch for votes",
+          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
+          "Pedro Sánchez Seeks Unlikely Win With Plea for Spaniards to Go Vote - Bloomberg",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain's election campaign reaches its final day - RUSSPAIN.com",
+          "Don’t Bet on Spain’s Right to Fix Ties With Israel - The Times of Israel"
+        ]
+      }
+    },
     {
       "id": 283,
       "ts": "2026-11-27T22:21:22.891812+00:00",
@@ -3510,7 +3587,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
+      "last_checked_ts": "2026-11-27T22:25:39.093891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official parliamentary seat count of PP and Vox reaching an absolute majority following the general election.",
@@ -3778,7 +3855,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:10:47.459462+00:00",
+      "last_checked_ts": "2026-11-27T22:25:40.002125+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Vertragsentscheidung hängt vom offiziellen Zinsentscheid der Fed nach dem Dezember-Meeting 2026 ab.",
@@ -3810,7 +3887,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
+      "last_checked_ts": "2026-11-27T22:25:39.093891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether the PP and Vox secure a majority in the Spanish general election held on November 29, 2026.",
@@ -3845,7 +3922,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:10:46.714340+00:00",
+      "last_checked_ts": "2026-11-27T22:25:39.568550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -3880,7 +3957,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
+      "last_checked_ts": "2026-11-27T22:25:39.093891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count results of the snap general election on November 29, 2026, determining if PP and Vox achieve a combined absolute majority in parliament.",
@@ -3950,7 +4027,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
+      "last_checked_ts": "2026-11-27T22:25:39.093891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Spanish General Election regarding whether PP and Vox achieve a parliamentary majority.",
@@ -4037,69 +4114,6 @@
           "Bitcoin Stages Relief Rally, Bounces Above $61,000 as Investors Weigh Further Downside Risks - Tekedia"
         ],
         "market_data": "BTC/USD live spot (Kraken): $59,901.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $55,000.00: -8.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.4d (1-sigma move = +/-4.6%, distance = 1.86 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 260,
-      "ts": "2026-11-27T19:16:21.060981+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4500",
-      "p_blended": "0.2918",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0518",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:15:43.199390+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India ending by December 3, 2026.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand has strong home conditions and a historically competitive record against India in Test matches.",
-        "bear_case": "India possesses a highly skilled, deep squad capable of performing exceptionally well in all formats and overseas conditions.",
-        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland gegen Indien im Test-Match spiegelt eine ausgewogene historische Baseline wider, wobei Indien leicht favorisiert sein könnte.",
-        "news_used": [
-          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC",
-          "A Govt by Xmas? Luxon warns of 'challenging' deals, NZ First says 'next three months' crucial - NZ Herald",
-          "Psychedelics: Are We Repeating Timothy Leary’s Mistakes? - Psychology Today",
-          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
-          "Thanksgiving Isn't Over Yet - Psychology Today",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 259,
-      "ts": "2026-11-27T19:01:38.562328+00:00",
-      "market_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
-      "question": "US x Iran Effective Ceasefire by November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.7350",
-      "p_blind": "0.0200",
-      "p_blended": "0.3956",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.3444",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:15:43.581569+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which depends on official verification and formal implementation.",
-        "base_rate": 0.05,
-        "bull_case": "Sudden diplomatic breakthroughs or backchannel negotiations could materialize rapidly to de-escalate tensions before the deadline.",
-        "bear_case": "No active indications of an impending ceasefire or major diplomatic thaw exist, and current hostilities or lack of formal agreements make a pause by November 30 highly unlikely.",
-        "summary_de": "Angesichts fehlender aktueller Berichte oder diplomatenderkmaler über eine bevorstehende Waffenruhe zwischen den USA und dem Iran bis Ende November ist ein effektiver Waffenstillstand äußerst unwahrscheinlich.",
-        "news_used": []
       }
     }
   ],
@@ -5047,6 +5061,18 @@
   ],
   "recent_runs": [
     {
+      "id": 402,
+      "ts": "2026-11-27T22:26:20.281347+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1180,
+      "candidates_found": 19,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.53,
+      "errors": []
+    },
+    {
       "id": 401,
       "ts": "2026-11-27T22:21:22.895304+00:00",
       "dry_run": 0,
@@ -5272,18 +5298,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 69.78,
-      "errors": []
-    },
-    {
-      "id": 382,
-      "ts": "2026-11-27T20:46:39.564575+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1231,
-      "candidates_found": 19,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 56.36,
       "errors": []
     }
   ]
