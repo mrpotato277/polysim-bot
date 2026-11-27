@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T08:31:36.846990+00:00",
+  "generated_at": "2026-11-27T08:36:39.217251+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9677.56,
-    "reconciled_equity_usd": 8582.78,
-    "equity_discrepancy_usd": 1094.78,
-    "cash_usd": 5151.02,
-    "positions_value_usd": 3431.76,
-    "deployed_pct": 35.46,
-    "total_pnl_usd": -322.44,
-    "total_pnl_pct": -3.22,
-    "unrealized_pnl_usd": -381.65,
-    "total_trades": 226,
+    "equity_usd": 9654.34,
+    "reconciled_equity_usd": 9494.29,
+    "equity_discrepancy_usd": 160.05,
+    "cash_usd": 5831.74,
+    "positions_value_usd": 3662.55,
+    "deployed_pct": 37.94,
+    "total_pnl_usd": -345.66,
+    "total_pnl_pct": -3.46,
+    "unrealized_pnl_usd": -404.87,
+    "total_trades": 227,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -5.76,
     "brier_score": 0.1183,
@@ -28,12 +28,13 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 176,
+    "total_forecasts": 178,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2168.77,
-    "crypto": 1262.99
+    "politics": 2170.55,
+    "crypto": 1245.93,
+    "geopolitics": 246.07
   },
   "equity_curve": [
     {
@@ -1874,6 +1875,13 @@
       "cash": 5151.02,
       "deployed_pct": 35.46,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T08:36:38.663388+00:00",
+      "equity": 9654.34,
+      "cash": 5831.74,
+      "deployed_pct": 37.94,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1908,15 +1916,30 @@
       "rationale": "Berichte bestätigen, dass Bitcoin im fraglichen Zeitraum bereits unter 58.000 US-Dollar gefallen ist, womit das Ziel erreicht wurde."
     },
     {
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "outcome": "No",
+      "quantity": 1587.54,
+      "avg_entry_price": 0.16,
+      "current_price": 0.155,
+      "current_value": 246.07,
+      "unrealized_pnl": -7.94,
+      "p_yes": 0.7395,
+      "p_blended": 0.2605,
+      "edge_net": 0.1005,
+      "rationale": "Aufgrund der historischen Instabilität im Nahen Osten und des hohen Risikos von Waffenstillstandsbrüchen wird die Wahrscheinlichkeit eines anhaltenden Friedens bis Mitte Dezember als eher gering eingestuft."
+    },
+    {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
       "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
       "category": "politics",
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0915,
-      "current_value": 162.66,
-      "unrealized_pnl": -57.78,
+      "current_price": 0.0925,
+      "current_value": 164.44,
+      "unrealized_pnl": -56.0,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1944,9 +1967,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.205,
-      "current_value": 117.68,
-      "unrealized_pnl": -175.08,
+      "current_price": 0.185,
+      "current_value": 106.2,
+      "unrealized_pnl": -186.56,
       "p_yes": 0.827,
       "p_blended": 0.173,
       "edge_net": 0.007,
@@ -1974,9 +1997,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.525,
-      "current_value": 586.37,
-      "unrealized_pnl": 5.58,
+      "current_price": 0.52,
+      "current_value": 580.79,
+      "unrealized_pnl": 0.0,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -2000,6 +2023,70 @@
   ],
   "recent_forecasts": [
     {
+      "id": 178,
+      "ts": "2026-11-27T08:36:38.660903+00:00",
+      "market_id": "0x459bb1954c553022e8d64b02acf6e752287947c7402a59edb8f4beb754b7804f",
+      "question": "Will Bitcoin dip to $56,000 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.0445",
+      "p_blind": "0.0400",
+      "p_blended": "0.0431",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0019",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds during the specified dates.",
+        "base_rate": 0.05,
+        "bull_case": "Sudden macro shocks or liquidation cascades could trigger a sharp intra-week flash crash of roughly 9.2% down to $56,000 before the end of November 29.",
+        "bear_case": "Bitcoin is currently trading comfortably around $61,707 with high realized volatility already priced in, making a 9.2% drop within the remaining few days statistically unlikely given current distance and volatility.",
+        "summary_de": "Bitcoin liegt aktuell rund 9,2% über der Marke von 56.000 US-Dollar, weshalb ein plötzlicher Rücksetzer in der verbleibenden kurzen Zeit bei normaler Volatilität unwahrscheinlich ist.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $61,707.90 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $56,000.00: -9.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.3%, distance = 2.26 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 177,
+      "ts": "2026-11-27T08:36:36.676409+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9450",
+      "p_blind": "0.9500",
+      "p_blended": "0.9473",
+      "confidence": "0.9000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0073",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if the Federal Reserve increases interest rates by 25 bps after the December 2026 FOMC meeting.",
+        "base_rate": 0.15,
+        "bull_case": "Hot inflation readings and strong economic growth reports have pushed market pricing to suggest a potential rate hike at the December meeting.",
+        "bear_case": "Historically, rate hikes during an ongoing tightening cycle are rare when rates are already restrictive, and central banks typically pause or hold rather than re-accelerate hikes unless inflation surges drastically.",
+        "summary_de": "Marktdaten und aktuelle Nachrichten preisen eine sehr hohe Wahrscheinlichkeit von 99,5 Prozent für eine Zinserhöhung der Fed um 25 Basispunkte im Dezember 2026 ein.",
+        "news_used": [
+          "Hot Inflation and Strong Growth Sharpen Fed Policy Fight - streamlinefeed.co.ke",
+          "First Trust’s Fed Forecast: Interest Rate Hikes in 2027 May Fall Short of Expectations - Cryptonews.net",
+          "Markets Price 99.5% Chance of 25-Basis-Point Fed Hike in December - www.tokenpost.com",
+          "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView",
+          "EUR/USD might be bottoming out amid peak Fed hawkishness and dovish repricing risks - investingLive",
+          "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English"
+        ]
+      }
+    },
+    {
       "id": 176,
       "ts": "2026-11-27T08:21:38.102417+00:00",
       "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
@@ -2016,7 +2103,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:31.443685+00:00",
+      "last_checked_ts": "2026-11-27T08:35:37.680588+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of which party wins the most seats in the 2026 Spanish general election.",
@@ -2051,7 +2138,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:20:46.692505+00:00",
+      "last_checked_ts": "2026-11-27T08:35:37.102984+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 62.500 USD erreicht, gemessen an gängigen Spot-Börsen.",
@@ -2083,7 +2170,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:20:46.125152+00:00",
+      "last_checked_ts": "2026-11-27T08:35:36.524048+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil hits $90 in November 2026 based on official spot/futures data.",
@@ -2184,7 +2271,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:20:45.260961+00:00",
+      "last_checked_ts": "2026-11-27T08:35:35.413135+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether Bitcoin hits or dips to $55,000 in November 2026 based on standard exchange feeds.",
@@ -2220,7 +2307,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:31.443685+00:00",
+      "last_checked_ts": "2026-11-27T08:35:37.680588+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the Spanish general election.",
@@ -2283,7 +2370,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:20:45.984354+00:00",
+      "last_checked_ts": "2026-11-27T08:35:36.348883+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against standard crypto spot price feeds during the specified dates.",
@@ -2312,7 +2399,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:20:46.324860+00:00",
+      "last_checked_ts": "2026-11-27T08:35:36.725492+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2376,7 +2463,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:31.443685+00:00",
+      "last_checked_ts": "2026-11-27T08:35:37.680588+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich direkt darauf, ob die PSOE bei der spanischen Parlamentswahl 2026 die meisten Sitze gewinnt.",
@@ -2510,7 +2597,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:31.443685+00:00",
+      "last_checked_ts": "2026-11-27T08:35:37.680588+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -2602,7 +2689,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:25:31.643039+00:00",
+      "last_checked_ts": "2026-11-27T08:35:37.892247+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the Federal Reserve makes no change to interest rates after the December 2026 FOMC meeting.",
@@ -2743,70 +2830,6 @@
           "Bitcoin Slides Below $58,000 Amid High Inflation and Strong Dollar - KuCoin"
         ],
         "market_data": "BTC/USD live spot (Kraken): $61,442.20 (24h range: $59,850.00 - $61,773.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $58,000.00: -5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-4.4%, distance = 1.31 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 153,
-      "ts": "2026-11-27T04:46:30.629526+00:00",
-      "market_id": "0xa2fdb75238670fd4bd0576c3dc34fa873bee3a0e23b1ce72441f1485f3608dc1",
-      "question": "Will Ethereum dip to $1,600 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.1150",
-      "p_blind": "0.2200",
-      "p_blended": "0.1386",
-      "confidence": "0.7000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:30:50.485362+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
-        "base_rate": 0.22,
-        "bull_case": "Mit einem aktuellen Spotpreis von rund 1.734 USD ist ein Rücksetzer um ca. 7,7 % auf 1.600 USD innerhalb der nächsten Tage bei hoher Krypto-Volatilität (~67 %) statistisch durchaus im Bereich des Möglichen.",
-        "bear_case": "Der Kurs müsste sich in Richtung der unteren Grenze der letzten 24 Stunden bewegen und diese signifikant unterschreiten, während die Zeit bis zum 29. November knapp wird und kein akuter Abwärtstrend vorliegt.",
-        "summary_de": "Angesichts der volatilen Marktbedingungen und eines Abstands von rund 7,7 % zum Zielkurs ist ein Dip auf 1.600 USD bis Ende November zwar möglich, bleibt jedoch ein unwahrscheinlicheres Szenario.",
-        "news_used": [],
-        "market_data": "ETH/USD live spot (Kraken): $1,734.30 (24h range: $1,666.02 - $1,739.03, 30d realized annualized vol: ~67%).\nDistance from live spot to $1,600.00: -7.7% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-6.1%, distance = 1.32 sigma): Gaussian one-touch ('dip/reach/hit') b"
-      }
-    },
-    {
-      "id": 152,
-      "ts": "2026-11-27T04:46:29.013883+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9550",
-      "p_blind": "0.3000",
-      "p_blended": "0.8386",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:20:45.673023+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Achtung auf präzise Definitionen und offizielle Bestätigungen des Waffenstillstandsstatus zwischen Israel und Iran bis zum Fristende.",
-        "base_rate": 0.35,
-        "bull_case": "Bestehende diplomatische Bemühungen und momentane Deeskalationssignale könnten den brüchigen Waffenstillstand bis Monatsende halten.",
-        "bear_case": "Aktuelle Berichte über anhaltende Spannungen, Drohnenaktivitäten und harte Drohungen aus Israel und den USA deuten auf ein hohes Risiko eines erneuten Ausbruchs hin.",
-        "summary_de": "Aufgrund anhaltender regionaler Spannungen und militärischer Drohungen ist die Wahrscheinlichkeit eines stabilen Waffenstillstands zwischen Israel und Iran bis Ende November eher gering.",
-        "news_used": [
-          "Israeli Attacks Kill 10 Palestinians Across Gaza, Including Education Ministry Official and His Wife - Antiwar.com",
-          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
-          "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm - The Straits Times",
-          "Israel ready to strike Iran ‘at any moment’ without US support as Netanyahu pushes Trump for fresh offensiv... - Firstpost",
-          "Dubai and Middle East flight disruption: flight cancellations continue as Saudi Arabia intercepts missile and drone fire - Condé Nast Travel",
-          "Trump Says US Iran War Funded Through End of January - https://houseofsaud.com/"
-        ]
       }
     }
   ],
@@ -3454,6 +3477,18 @@
   ],
   "recent_runs": [
     {
+      "id": 238,
+      "ts": "2026-11-27T08:36:38.666940+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1121,
+      "candidates_found": 21,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 65.34,
+      "errors": []
+    },
+    {
       "id": 237,
       "ts": "2026-11-27T08:31:36.483827+00:00",
       "dry_run": 0,
@@ -3679,18 +3714,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 39.46,
-      "errors": []
-    },
-    {
-      "id": 218,
-      "ts": "2026-11-27T06:56:23.687117+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1160,
-      "candidates_found": 22,
-      "llm_calls": 2,
-      "trades_attempted": 1,
-      "trades_executed": 1,
-      "duration_sec": 52.49,
       "errors": []
     }
   ]
