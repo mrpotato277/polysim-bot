@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T02:01:42.103943+00:00",
+  "generated_at": "2026-11-27T02:06:35.674950+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9954.9,
-    "reconciled_equity_usd": 9071.41,
-    "equity_discrepancy_usd": 883.49,
+    "equity_usd": 9967.43,
+    "reconciled_equity_usd": 9068.52,
+    "equity_discrepancy_usd": 898.91,
     "cash_usd": 7787.71,
-    "positions_value_usd": 1283.7,
-    "deployed_pct": 12.9,
-    "total_pnl_usd": -45.1,
-    "total_pnl_pct": -0.45,
-    "unrealized_pnl_usd": -104.35,
+    "positions_value_usd": 1280.81,
+    "deployed_pct": 12.85,
+    "total_pnl_usd": -32.57,
+    "total_pnl_pct": -0.33,
+    "unrealized_pnl_usd": -107.24,
     "total_trades": 66,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -1.9,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 144,
+    "total_forecasts": 145,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 429.84,
-    "politics": 853.86
+    "crypto": 416.53,
+    "politics": 864.28
   },
   "equity_curve": [
     {
@@ -1299,6 +1299,13 @@
       "cash": 7787.71,
       "deployed_pct": 12.9,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T02:06:35.257546+00:00",
+      "equity": 9967.43,
+      "cash": 7787.71,
+      "deployed_pct": 12.85,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1309,9 +1316,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.215,
-      "current_value": 162.91,
-      "unrealized_pnl": -26.53,
+      "current_price": 0.205,
+      "current_value": 155.34,
+      "unrealized_pnl": -34.1,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1324,9 +1331,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0955,
-      "current_value": 169.77,
-      "unrealized_pnl": -50.67,
+      "current_price": 0.095,
+      "current_value": 168.88,
+      "unrealized_pnl": -51.56,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1339,9 +1346,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.465,
-      "current_value": 266.93,
-      "unrealized_pnl": -25.83,
+      "current_price": 0.455,
+      "current_value": 261.19,
+      "unrealized_pnl": -31.57,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1354,9 +1361,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.605,
-      "current_value": 684.09,
-      "unrealized_pnl": -1.32,
+      "current_price": 0.615,
+      "current_value": 695.4,
+      "unrealized_pnl": 9.99,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -1364,6 +1371,34 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 145,
+      "ts": "2026-11-27T02:06:34.706534+00:00",
+      "market_id": "0xca5c9aac1854c8358c003993254bc069a21a58930ffe2cb2bfbebd4f7d34c214",
+      "question": "Kimberly Powell announced resignation or removal by November 30, 2026?",
+      "category": "technology",
+      "end_date": "2026-12-01T04:59:00+00:00",
+      "market_price": "0.0650",
+      "p_blind": "0.0200",
+      "p_blended": "0.0462",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0238",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires formal announcement of resignation or removal by November 30, 2026.",
+        "base_rate": 0.05,
+        "bull_case": "Sudden unexpected departure or internal corporate restructuring at NVIDIA leading to a high-profile executive exit.",
+        "bear_case": "Kimberly Powell has been a stable long-term executive at NVIDIA with no indications of stepping down, making a sudden resignation extremely unlikely.",
+        "summary_de": "Es gibt keine Hinweise auf einen bevorstehenden Rücktritt oder eine Entlassung von Kimberly Powell bei Nvidia, weshalb ein Eintreten dieses Szenarios extrem unwahrscheinlich ist.",
+        "news_used": []
+      }
+    },
     {
       "id": 144,
       "ts": "2026-11-27T02:01:41.603814+00:00",
@@ -1381,7 +1416,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T02:05:39.481200+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI Crude Oil hits $90 at any point during November 2026 based on standard market data.",
@@ -1450,7 +1485,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:57:45.452592+00:00",
+      "last_checked_ts": "2026-11-27T02:05:39.978144+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Kontrakt prüft, ob Bitcoin im November 2026 den Preis von $62.500 erreicht.",
@@ -1482,7 +1517,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:57:45.861858+00:00",
+      "last_checked_ts": "2026-11-27T02:05:40.554313+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -1541,7 +1576,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:57:44.946465+00:00",
+      "last_checked_ts": "2026-11-27T02:05:39.313504+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
@@ -1570,7 +1605,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:57:45.452592+00:00",
+      "last_checked_ts": "2026-11-27T02:05:39.978144+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on standard Bitcoin price hitting the $62,500 threshold before the end of November UTC.",
@@ -1601,7 +1636,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:57:45.593924+00:00",
+      "last_checked_ts": "2026-11-27T02:05:40.134349+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the New Taipei Mayor election.",
@@ -1636,7 +1671,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:57:45.732186+00:00",
+      "last_checked_ts": "2026-11-27T02:05:40.368680+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag löst sich basierend auf dem offiziellen Wahlergebnis der Bürgermeisterwahl in Neu-Taipeh 2026 auf.",
@@ -1701,7 +1736,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:55:42.512566+00:00",
+      "last_checked_ts": "2026-11-27T02:05:38.176585+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -1865,7 +1900,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T01:57:44.781021+00:00",
+      "last_checked_ts": "2026-11-27T02:05:39.110568+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -2122,40 +2157,29 @@
         ],
         "market_data": "BTC/USD live spot (Kraken): $60,501.40 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $58,000.00: -4.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-4.5%, distance = 0.93 sigma): Gaussian one-touch ('dip/reach/hit"
       }
-    },
-    {
-      "id": 120,
-      "ts": "2026-11-26T22:41:25.748175+00:00",
-      "market_id": "0xb188dcda003345f78a61c4ef5c12f18755dd363ac5f30c32d6347ab0b74d0928",
-      "question": "Will Ethereum dip to $1,500 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.0550",
-      "p_blind": "0.0800",
-      "p_blended": "0.0642",
-      "confidence": "0.8000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:01:00.048692+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Bestimmt anhand des Tiefstwerts von Ethereum während des angegebenen Datumsfensters.",
-        "base_rate": 0.12,
-        "bull_case": "Die anhaltend schwache Marktstimmung und ein möglicher Abwärtstrend könnten Ethereum in Richtung der psychologischen Marke von $1.500 drücken.",
-        "bear_case": "Der aktuelle Kurs liegt bei rund $1.694 und eine verbleibende Restlaufzeit von nur knapp über drei Tagen macht einen Rückgang von über 11% ohne makroökonomischen Schock statistisch unwahrscheinlich.",
-        "summary_de": "Angesichts des aktuellen Abstands von rund elf Prozent zum Kursziel und der sehr kurzen Restlaufzeit von wenigen Tagen ist ein Rückgang auf 1.500 US-Dollar bis Ende November eher unwahrscheinlich.",
-        "news_used": [
-          "Ethereum Price Prediction: A Failed ETH Bounce Puts $1,500 Back in Play as AlphaPepe’s Presale Tops $3.47M - StreetInsider"
-        ],
-        "market_data": "ETH/USD live spot (Kraken): $1,694.58 (24h range: $1,666.02 - $1,728.63, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,500.00: -11.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-6.3%, distance = 1.94 sigma): Gaussian one-touch ('dip/reach/hit') "
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 22,
+      "ts": "2026-11-27T02:06:35.255954+00:00",
+      "client_order_id": "psb-20261127-020634-ca5c9aac18-buy-n-d35ba5",
+      "order_id": "1733946",
+      "market_id": "0xca5c9aac1854c8358c003993254bc069a21a58930ffe2cb2bfbebd4f7d34c214",
+      "question": "Kimberly Powell announced resignation or removal by November 30, 2026?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.93",
+      "quantity": "750.23",
+      "notional_usd": "697.71",
+      "est_fee_usd": "0",
+      "edge_net": "0.0238",
+      "strategy_type": "carry",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[carry] Es gibt keine Hinweise auf einen bevorstehenden Rücktritt oder eine Entlassung von Kimberly Powell bei Nvidia, weshalb ein Eintreten dieses Szenarios extrem unwahrscheinlich ist."
+    },
     {
       "id": 21,
       "ts": "2026-11-27T01:58:27.173995+00:00",
@@ -2579,6 +2603,18 @@
   ],
   "recent_runs": [
     {
+      "id": 161,
+      "ts": "2026-11-27T02:06:35.258472+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1132,
+      "candidates_found": 29,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 59.08,
+      "errors": []
+    },
+    {
       "id": 160,
       "ts": "2026-11-27T02:01:41.606670+00:00",
       "dry_run": 0,
@@ -2804,18 +2840,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 58.44,
-      "errors": []
-    },
-    {
-      "id": 141,
-      "ts": "2026-11-27T00:31:35.383215+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1196,
-      "candidates_found": 25,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 45.33,
       "errors": []
     }
   ]
