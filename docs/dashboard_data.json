@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:11:29.906018+00:00",
+  "generated_at": "2026-11-27T17:16:19.231082+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10696.22,
-    "reconciled_equity_usd": 10696.22,
+    "equity_usd": 10605.63,
+    "reconciled_equity_usd": 10605.63,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4615.91,
-    "deployed_pct": 43.15,
-    "total_pnl_usd": 696.22,
-    "total_pnl_pct": 6.96,
-    "unrealized_pnl_usd": 238.24,
+    "positions_value_usd": 4525.32,
+    "deployed_pct": 42.67,
+    "total_pnl_usd": 605.63,
+    "total_pnl_pct": 6.06,
+    "unrealized_pnl_usd": 147.65,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 238,
+    "total_forecasts": 240,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2421.17,
-    "crypto": 1433.82,
+    "politics": 2427.79,
+    "crypto": 1336.61,
     "geopolitics": 621.32,
     "markets": 139.6
   },
@@ -2644,6 +2644,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.15,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T17:16:18.946617+00:00",
+      "equity": 10605.63,
+      "cash": 6080.31,
+      "deployed_pct": 42.67,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2654,9 +2661,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.215,
-      "current_value": 385.47,
-      "unrealized_pnl": 8.96,
+      "current_price": 0.225,
+      "current_value": 403.4,
+      "unrealized_pnl": 26.89,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -2669,9 +2676,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.295,
-      "current_value": 1433.82,
-      "unrealized_pnl": 670.01,
+      "current_price": 0.275,
+      "current_value": 1336.61,
+      "unrealized_pnl": 572.8,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2744,9 +2751,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.605,
-      "current_value": 684.09,
-      "unrealized_pnl": -1.32,
+      "current_price": 0.595,
+      "current_value": 672.78,
+      "unrealized_pnl": -12.63,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2784,6 +2791,70 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 240,
+      "ts": "2026-11-27T17:16:18.944609+00:00",
+      "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
+      "question": "Will Bitcoin reach $65,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0850",
+      "p_blind": "0.0800",
+      "p_blended": "0.0835",
+      "confidence": "0.8500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract resolving based on accepted spot exchange feeds before December 1, 2026.",
+        "base_rate": 0.12,
+        "bull_case": "Crypto markets exhibit fat tails and rapid momentum bursts, meaning an 8.5% rally within a few days is entirely feasible given historical volatility.",
+        "bear_case": "Bitcoin currently sits near $59,913 with only a few days left in November, requiring a sharp and immediate reversal against current bearish momentum.",
+        "summary_de": "Mit Bitcoin bei rund 59.913 US-Dollar und dem Monatsende in wenigen Tagen ist ein Anstieg um 8,5 Prozent auf 65.000 US-Dollar angesichts der verbleibenden Zeit und der aktuellen Dynamik statistisch unwahrscheinlich.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,913.40 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $65,000.00: +8.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-4.6%, distance = 1.76 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 239,
+      "ts": "2026-11-27T17:16:17.604289+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.4500",
+      "p_blended": "0.2815",
+      "confidence": "0.3000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0415",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Das Marktversprechen bezieht sich klar auf das Test Match im Cricket oder Rugby zwischen Neuseeland und Indien.",
+        "base_rate": 0.5,
+        "bull_case": "Neuseeland hat im Heimvorteil oder in guter Form starke Chancen gegen Indien.",
+        "bear_case": "Indien verfügt über ein weltklasse Team und ist im internationalen Vergleich sehr stark aufgestellt.",
+        "summary_de": "Die Gewinnwahrscheinlichkeit hängt von der jeweiligen Sportart und der aktuellen Teamform ab, wobei Indien traditionell ein sehr starker Gegner ist.",
+        "news_used": [
+          "Qantas pilots pull up as Air New Zealand plane crosses Sydney runway - 1News",
+          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
+          "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks treble - The Guardian",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
+          "National needs NZ First, ACT and Opportunity to govern. Here's what to expect from coalition talks - RNZ"
+        ]
+      }
+    },
     {
       "id": 238,
       "ts": "2026-11-27T17:11:29.513270+00:00",
@@ -2836,7 +2907,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T17:15:40.022451+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election.",
@@ -2969,7 +3040,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:05.436685+00:00",
+      "last_checked_ts": "2026-11-27T17:15:39.318282+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -3033,7 +3104,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:05.330616+00:00",
+      "last_checked_ts": "2026-11-27T17:15:39.216358+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Evaluates whether Ethereum touches or dips to $1,500 at any point during November 2026.",
@@ -3132,7 +3203,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:06.051600+00:00",
+      "last_checked_ts": "2026-11-27T17:15:39.720082+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on reliable crypto exchange or oracle feeds.",
@@ -3233,7 +3304,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:06.433690+00:00",
+      "last_checked_ts": "2026-11-27T17:15:40.022451+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the 2026 Spanish general election according to official results.",
@@ -3297,7 +3368,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:06.677944+00:00",
+      "last_checked_ts": "2026-11-27T17:15:40.216050+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, evaluated against major exchange spot/oracle feeds before December 1, 2026.",
@@ -3384,7 +3455,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:06.051600+00:00",
+      "last_checked_ts": "2026-11-27T17:15:39.720082+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds before December 1, 2026.",
@@ -3445,7 +3516,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:06.433690+00:00",
+      "last_checked_ts": "2026-11-27T17:15:40.022451+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -3530,76 +3601,6 @@
           "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet",
           "Australia set to drop Lyon for first New Zealand Test - BBC",
           "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - AP News"
-        ]
-      }
-    },
-    {
-      "id": 215,
-      "ts": "2026-11-27T14:11:53.483522+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4500",
-      "p_blended": "0.3271",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0771",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag bezieht sich auf das Testergebnis zwischen Neuseeland und Indien, wobei sich der aktuelle Stand nach dem ersten Tag auf 246/5 beläuft.",
-        "base_rate": 0.4,
-        "bull_case": "Neuseeland hat sich am ersten Tag des zweiten Tests gegen Indien gut geschlagen (246-5) und hat in Heimspielen traditionell gute Chancen.",
-        "bear_case": "Indien verfügt über ein extrem starkes Test-Cricket-Team und kann in den verbleibenden Tagen das Ruder herumreißen.",
-        "summary_de": "Neuseeland zeigt im zweiten Testspiel gegen Indien eine ordentliche Leistung am ersten Tag, jedoch bleibt der Spielausgang gegen das starke indische Team völlig offen.",
-        "news_used": [
-          "Maro Itoje urges England to be ‘ruthless’ in second New Zealand clash - The Independent",
-          "Knicks assistant coach Jent returns to team after missing start of season",
-          "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
-          "New Zealand battle to 246-5 after day one of second India Test - Daily Sun",
-          "Blundell-Phillips take New Zealand to 246/5 at day one end - Times of Oman",
-          "Air New Zealand punctuality up 12 percentage points as airline increases focus on smoother summer journeys - WebWire"
-        ]
-      }
-    },
-    {
-      "id": 214,
-      "ts": "2026-11-27T14:06:34.932895+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4800",
-      "p_blended": "0.3418",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0918",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:06.433690+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election.",
-        "base_rate": 0.45,
-        "bull_case": "PSOE holds incumbent advantages and maintains strong mobilization among progressive voters amidst a tense political climate.",
-        "bear_case": "Polling leading up to the election indicates a strong challenge from the conservative Partido Popular (PP), which could secure more seats.",
-        "summary_de": "Da die spanischen Wahlen unmittelbar bevorstehen, bleibt das Rennen zwischen PSOE und der Opposition extrem knapp, wobei Umfragen einen leicht Vorteil für den Hauptkonkurrenten zeigen.",
-        "news_used": [
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Spanish election: What you need to know and what's at stake - BBC",
-          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı",
-          "Spain’s Snap Election: How Voting Works, Key Parties and Issues - SSBCrack",
-          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
-          "Spain’s 2026 election explained in maps and charts - Al Jazeera"
         ]
       }
     }
@@ -4528,6 +4529,18 @@
   ],
   "recent_runs": [
     {
+      "id": 340,
+      "ts": "2026-11-27T17:16:18.947464+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1240,
+      "candidates_found": 18,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 40.85,
+      "errors": []
+    },
+    {
       "id": 339,
       "ts": "2026-11-27T17:11:29.515964+00:00",
       "dry_run": 0,
@@ -4753,18 +4766,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 44.58,
-      "errors": []
-    },
-    {
-      "id": 320,
-      "ts": "2026-11-27T15:36:36.387917+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1176,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 61.69,
       "errors": []
     }
   ]
