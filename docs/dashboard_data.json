@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:41:21.520595+00:00",
+  "generated_at": "2026-11-27T04:46:33.993661+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9750.09,
-    "reconciled_equity_usd": 9750.09,
+    "equity_usd": 9774.89,
+    "reconciled_equity_usd": 9774.89,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6921.26,
-    "positions_value_usd": 2828.83,
-    "deployed_pct": 29.01,
-    "total_pnl_usd": -249.91,
-    "total_pnl_pct": -2.5,
-    "unrealized_pnl_usd": -235.71,
+    "positions_value_usd": 2853.63,
+    "deployed_pct": 29.19,
+    "total_pnl_usd": -225.11,
+    "total_pnl_pct": -2.25,
+    "unrealized_pnl_usd": -210.91,
     "total_trades": 149,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.49,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 151,
+    "total_forecasts": 155,
     "circuit_breaker_active": false
   },
   "category_exposure": {
     "politics": 2142.13,
-    "crypto": 248.67,
+    "crypto": 273.47,
     "technology": 438.03
   },
   "equity_curve": [
@@ -1536,6 +1536,13 @@
       "cash": 6921.26,
       "deployed_pct": 29.01,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T04:46:33.553375+00:00",
+      "equity": 9774.89,
+      "cash": 6921.26,
+      "deployed_pct": 29.19,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1561,13 +1568,13 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.135,
-      "current_value": 102.29,
-      "unrealized_pnl": -87.15,
-      "p_yes": 0.3148,
-      "p_blended": 0.3148,
-      "edge_net": 0.0648,
-      "rationale": "Bitcoin wird nahe 60.500 USD gehandelt, und da der Zeitraum bis zum 29. November kurz ist, sinkt die Wahrscheinlichkeit eines Rücksetzers auf 58.000 USD trotz anhaltender Volatilität leicht."
+      "current_price": 0.145,
+      "current_value": 109.87,
+      "unrealized_pnl": -79.57,
+      "p_yes": 0.5768,
+      "p_blended": 0.5768,
+      "edge_net": 0.4368,
+      "rationale": "Berichte bestätigen, dass Bitcoin im fraglichen Zeitraum bereits unter 58.000 US-Dollar gefallen ist, womit das Ziel erreicht wurde."
     },
     {
       "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
@@ -1621,9 +1628,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.255,
-      "current_value": 146.38,
-      "unrealized_pnl": -146.38,
+      "current_price": 0.285,
+      "current_value": 163.6,
+      "unrealized_pnl": -129.16,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1662,6 +1669,130 @@
   ],
   "recent_forecasts": [
     {
+      "id": 155,
+      "ts": "2026-11-27T04:46:33.551965+00:00",
+      "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
+      "question": "Will Bitcoin reach $65,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.2350",
+      "p_blind": "0.3500",
+      "p_blended": "0.2630",
+      "confidence": "0.6500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0330",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price hit contract based on exchange feeds before December 1, 2026.",
+        "base_rate": 0.3,
+        "bull_case": "Bitcoin needs a gain of less than 6% from current levels (~$61,442) with several days remaining in November, which is well within normal crypto volatility.",
+        "bear_case": "With only a few days left until the end of November and BTC hovering near $61.4k, momentum would require a rapid push upwards against prevailing macro headwinds or consolidation ranges.",
+        "summary_de": "Bitcoin müsste in den verbleibenden Tagen des Monats November um rund 5,8 Prozent steigen, um die Marke von 65.000 USD zu erreichen, was bei historischer Volatilität durchaus möglich, aber kurzfristig sportlich ist.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $61,442.20 (24h range: $59,850.00 - $61,773.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $65,000.00: +5.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.0d (1-sigma move = +/-5.1%, distance = 1.11 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 154,
+      "ts": "2026-11-27T04:46:31.881891+00:00",
+      "market_id": "0x18c74c5f8c9eb6ed04f45d4675272e680669a6c9e17c81150f90351a82383d1f",
+      "question": "Will Bitcoin dip to $58,000 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.1450",
+      "p_blind": "0.9500",
+      "p_blended": "0.5768",
+      "confidence": "0.9000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.4368",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
+        "base_rate": 0.2,
+        "bull_case": "Aktuelle Nachrichten bestätigen, dass Bitcoin bereits unter 58.000 USD gefallen ist, was die Bedingung direkt erfüllt.",
+        "bear_case": "Der aktuelle Spot-Preis liegt über 61.400 USD und das Zeitfenster schließt bald, sodass ein erneuter Rücksetzer unwahrscheinlich ist, falls der frühere Dip nicht offiziell vom Datenfeed erfasst wurde.",
+        "summary_de": "Berichte bestätigen, dass Bitcoin im fraglichen Zeitraum bereits unter 58.000 US-Dollar gefallen ist, womit das Ziel erreicht wurde.",
+        "news_used": [
+          "Bitcoin Slides Below $58,000 Amid High Inflation and Strong Dollar - KuCoin"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $61,442.20 (24h range: $59,850.00 - $61,773.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $58,000.00: -5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-4.4%, distance = 1.31 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 153,
+      "ts": "2026-11-27T04:46:30.629526+00:00",
+      "market_id": "0xa2fdb75238670fd4bd0576c3dc34fa873bee3a0e23b1ce72441f1485f3608dc1",
+      "question": "Will Ethereum dip to $1,600 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.1150",
+      "p_blind": "0.2200",
+      "p_blended": "0.1386",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
+        "base_rate": 0.22,
+        "bull_case": "Mit einem aktuellen Spotpreis von rund 1.734 USD ist ein Rücksetzer um ca. 7,7 % auf 1.600 USD innerhalb der nächsten Tage bei hoher Krypto-Volatilität (~67 %) statistisch durchaus im Bereich des Möglichen.",
+        "bear_case": "Der Kurs müsste sich in Richtung der unteren Grenze der letzten 24 Stunden bewegen und diese signifikant unterschreiten, während die Zeit bis zum 29. November knapp wird und kein akuter Abwärtstrend vorliegt.",
+        "summary_de": "Angesichts der volatilen Marktbedingungen und eines Abstands von rund 7,7 % zum Zielkurs ist ein Dip auf 1.600 USD bis Ende November zwar möglich, bleibt jedoch ein unwahrscheinlicheres Szenario.",
+        "news_used": [],
+        "market_data": "ETH/USD live spot (Kraken): $1,734.30 (24h range: $1,666.02 - $1,739.03, 30d realized annualized vol: ~67%).\nDistance from live spot to $1,600.00: -7.7% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-6.1%, distance = 1.32 sigma): Gaussian one-touch ('dip/reach/hit') b"
+      }
+    },
+    {
+      "id": 152,
+      "ts": "2026-11-27T04:46:29.013883+00:00",
+      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
+      "question": "Israel x Iran ceasefire continues through November 30?",
+      "category": "geopolitics",
+      "end_date": "2026-11-30T20:29:00+00:00",
+      "market_price": "0.9550",
+      "p_blind": "0.3000",
+      "p_blended": "0.8386",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Achtung auf präzise Definitionen und offizielle Bestätigungen des Waffenstillstandsstatus zwischen Israel und Iran bis zum Fristende.",
+        "base_rate": 0.35,
+        "bull_case": "Bestehende diplomatische Bemühungen und momentane Deeskalationssignale könnten den brüchigen Waffenstillstand bis Monatsende halten.",
+        "bear_case": "Aktuelle Berichte über anhaltende Spannungen, Drohnenaktivitäten und harte Drohungen aus Israel und den USA deuten auf ein hohes Risiko eines erneuten Ausbruchs hin.",
+        "summary_de": "Aufgrund anhaltender regionaler Spannungen und militärischer Drohungen ist die Wahrscheinlichkeit eines stabilen Waffenstillstands zwischen Israel und Iran bis Ende November eher gering.",
+        "news_used": [
+          "Israeli Attacks Kill 10 Palestinians Across Gaza, Including Education Ministry Official and His Wife - Antiwar.com",
+          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
+          "Israel defence minister threatens to displace 1 million Gazans if Hamas won’t disarm - The Straits Times",
+          "Israel ready to strike Iran ‘at any moment’ without US support as Netanyahu pushes Trump for fresh offensiv... - Firstpost",
+          "Dubai and Middle East flight disruption: flight cancellations continue as Saudi Arabia intercepts missile and drone fire - Condé Nast Travel",
+          "Trump Says US Iran War Funded Through End of January - https://houseofsaud.com/"
+        ]
+      }
+    },
+    {
       "id": 151,
       "ts": "2026-11-27T04:31:52.854475+00:00",
       "market_id": "0x10346101feeef8bc3152ace20ca9a165bd9ec5d744dbc1d11c1a9f77a5913e76",
@@ -1678,7 +1809,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:35:42.195936+00:00",
+      "last_checked_ts": "2026-11-27T04:45:38.768862+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -1768,7 +1899,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:50.954426+00:00",
+      "last_checked_ts": "2026-11-27T04:45:37.998975+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -1924,7 +2055,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:50.441473+00:00",
+      "last_checked_ts": "2026-11-27T04:45:37.549569+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taichung Mayor election as determined by Taiwan's Central Election Commission.",
@@ -2020,7 +2151,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:50.226205+00:00",
+      "last_checked_ts": "2026-11-27T04:45:37.370986+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (defined as a 2-week pause) between the US and Iran by November 30, 2026.",
@@ -2177,7 +2308,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:50.610732+00:00",
+      "last_checked_ts": "2026-11-27T04:45:37.707875+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage verlangt die offizielle Bestätigung, dass ein Software- oder Konfigurationsfehler die Ursache war; unbestätigte Berichte reichen möglicherweise nicht aus.",
@@ -2241,7 +2372,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:50.774627+00:00",
+      "last_checked_ts": "2026-11-27T04:45:37.845109+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -2276,7 +2407,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:50.441473+00:00",
+      "last_checked_ts": "2026-11-27T04:45:37.549569+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
@@ -2307,7 +2438,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:50.059432+00:00",
+      "last_checked_ts": "2026-11-27T04:45:37.220401+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -2324,132 +2455,29 @@
           "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
         ]
       }
-    },
-    {
-      "id": 130,
-      "ts": "2026-11-26T22:51:42.551923+00:00",
-      "market_id": "0x158304bcdd1ce7e8d15b4600e99f857aee5e233b781c2653367d67394d23e113",
-      "question": "Will Hsieh Lung-chieh win the next Tainan Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.0790",
-      "p_blind": "0.0100",
-      "p_blended": "0.0437",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0473",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:30:51.120063+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
-        "base_rate": 0.05,
-        "bull_case": "An unexpected political shift or major candidate disqualification could elevate long-shot contenders.",
-        "bear_case": "Incumbent or major party frontrunners dominate Tainan politics, making alternative candidates unlikely to win.",
-        "summary_de": "Hsieh Lung-chieh hat bei den Bürgermeisterwahlen in Tainan historisch und gegen etablierte Parteistrukturen nur geringe Siegchancen.",
-        "news_used": [
-          "Notes from Central Taiwan: The old is new again: Storm over solar - Taipei Times"
-        ]
-      }
-    },
-    {
-      "id": 129,
-      "ts": "2026-11-26T22:46:52.275120+00:00",
-      "market_id": "0xea3fc87eb93319e7ec9bc2d6c2b0b1a7aa9bdbfa9c74fcb268d1c98bda0d7e18",
-      "question": "Will Bitcoin reach $62,000 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.5350",
-      "p_blind": "0.5800",
-      "p_blended": "0.5513",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0213",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:35:44.846853+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch resolution based on specified index feeds.",
-        "base_rate": 0.6,
-        "bull_case": "Bitcoin is currently around $60,550 and needs only a modest ~2.4% upside move to touch $62,000 before the November 29 deadline, well within normal multi-day volatility ranges.",
-        "bear_case": "Bearish sentiment and rising option demand for $60,000 puts suggest downward pressure, keeping the price suppressed below the $62k resistance level.",
-        "summary_de": "Bitcoin handelt nahe 60.550 USD und benötigt einen Anstieg von rund 2,4 Prozent, um die Marke von 62.000 USD bis zum Fristende zu erreichen, was angesichts der Volatilität gut möglich ist.",
-        "news_used": [
-          "Bitcoin price predictions for Nov 29, 2026, sho... - Pluang",
-          "Bitcoin Options Traders Shift to $60,000 Puts as Bearish Bets Reach 2022 Levels - Hokanews"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $60,550.30 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $62,000.00: +2.4% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-4.5%, distance = 0.52 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 128,
-      "ts": "2026-11-26T22:46:51.096651+00:00",
-      "market_id": "0x133b51a6851a2ee619e841693c0f75f3c3fdc8d75d69eadd3f0c0fe9105c50ee",
-      "question": "Will Ko Chih-en win the next Kaohsiung Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.1845",
-      "p_blind": "0.2000",
-      "p_blended": "0.1887",
-      "confidence": "0.7000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0057",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:35:42.595470+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
-        "base_rate": 0.25,
-        "bull_case": "Ko Chih-en maintains a strong local presence and KMT opposition momentum in Kaohsiung.",
-        "bear_case": "Kaohsiung has historically been a strong DPP stronghold, making a KMT victory difficult.",
-        "summary_de": "Kaohsiung ist traditionell eine Hochburg der DPP, weshalb die Siegchancen für die KMT-Kandidatin Ko Chih-en statistisch eher gering bleiben.",
-        "news_used": [
-          "Kaohsiung mayoral candidates take campaign to the streets - Taiwan News"
-        ]
-      }
-    },
-    {
-      "id": 127,
-      "ts": "2026-11-26T22:46:50.054335+00:00",
-      "market_id": "0x215898981a482d275f91f8f9523f9cf7d582be172557e0c953f265a54936878a",
-      "question": "Will Bitcoin reach $67,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.0550",
-      "p_blind": "0.0400",
-      "p_blended": "0.0498",
-      "confidence": "0.9000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0062",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:35:42.407747+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
-        "base_rate": 0.05,
-        "bull_case": "Crypto markets exhibit extreme volatility and fat tails, allowing for rapid 11.5% rallies driven by sudden short squeezes or macro news.",
-        "bear_case": "Bitcoin is currently trading near $60,550 with only a few days left in November, requiring an 11.5% upward move against current downward macro pressures like elevated PCE inflation.",
-        "summary_de": "Bitcoin müsste innerhalb weniger Tage vor Monatsende um über elf Prozent steigen, was angesichts des aktuellen Kurses und der verbleibenden Zeit statistisch sehr unwahrscheinlich ist.",
-        "news_used": [
-          "Bitcoin Risks Further Decline as U.S. PCE Inflation Reaches 3.8% - Blockonomi"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $60,550.30 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $67,500.00: +11.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.3d (1-sigma move = +/-5.2%, distance = 2.10 sigma): Gaussian one-touch ('dip/reach/hi"
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 25,
+      "ts": "2026-11-27T04:46:32.390773+00:00",
+      "client_order_id": "psb-20261127-044631-18c74c5f8c-buy-y-c648e1",
+      "order_id": "1734004",
+      "market_id": "0x18c74c5f8c9eb6ed04f45d4675272e680669a6c9e17c81150f90351a82383d1f",
+      "question": "Will Bitcoin dip to $58,000 November 23-29?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.14",
+      "quantity": "4102.65",
+      "notional_usd": "574.37",
+      "est_fee_usd": "0",
+      "edge_net": "0.4368",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Berichte bestätigen, dass Bitcoin im fraglichen Zeitraum bereits unter 58.000 US-Dollar gefallen ist, womit das Ziel erreicht wurde."
+    },
     {
       "id": 24,
       "ts": "2026-11-27T04:31:53.441628+00:00",
@@ -2933,6 +2961,18 @@
   ],
   "recent_runs": [
     {
+      "id": 193,
+      "ts": "2026-11-27T04:46:33.554160+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1226,
+      "candidates_found": 30,
+      "llm_calls": 4,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 58.04,
+      "errors": []
+    },
+    {
       "id": 192,
       "ts": "2026-11-27T04:41:21.179010+00:00",
       "dry_run": 0,
@@ -3158,18 +3198,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 52.05,
-      "errors": []
-    },
-    {
-      "id": 173,
-      "ts": "2026-11-27T03:06:18.710827+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1111,
-      "candidates_found": 26,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 42.67,
       "errors": []
     }
   ]
