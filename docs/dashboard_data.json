@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:06:22.778418+00:00",
+  "generated_at": "2026-11-27T16:11:31.546887+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,14 +11,14 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10849.92,
+    "equity_usd": 10704.26,
     "reconciled_equity_usd": 8920.55,
-    "equity_discrepancy_usd": 1929.37,
+    "equity_discrepancy_usd": 1783.71,
     "cash_usd": 5681.36,
     "positions_value_usd": 3239.19,
-    "deployed_pct": 29.85,
-    "total_pnl_usd": 849.92,
-    "total_pnl_pct": 8.5,
+    "deployed_pct": 30.26,
+    "total_pnl_usd": 704.26,
+    "total_pnl_pct": 7.04,
     "unrealized_pnl_usd": -374.67,
     "total_trades": 297,
     "win_rate_pct": 50.0,
@@ -2546,6 +2546,13 @@
       "cash": 5681.36,
       "deployed_pct": 29.85,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T16:11:31.263099+00:00",
+      "equity": 10704.26,
+      "cash": 5681.36,
+      "deployed_pct": 30.26,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2781,7 +2788,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:55:45.820532+00:00",
+      "last_checked_ts": "2026-11-27T16:10:46.606035+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on exchange feeds before the end of November.",
@@ -2810,7 +2817,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:55:45.415057+00:00",
+      "last_checked_ts": "2026-11-27T16:10:46.283251+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -4433,6 +4440,18 @@
   ],
   "recent_runs": [
     {
+      "id": 327,
+      "ts": "2026-11-27T16:11:31.264487+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1134,
+      "candidates_found": 17,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 47.64,
+      "errors": []
+    },
+    {
       "id": 326,
       "ts": "2026-11-27T16:06:22.461183+00:00",
       "dry_run": 0,
@@ -4658,18 +4677,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 62.38,
-      "errors": []
-    },
-    {
-      "id": 307,
-      "ts": "2026-11-27T14:26:21.971798+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1152,
-      "candidates_found": 17,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 49.38,
       "errors": []
     }
   ]
