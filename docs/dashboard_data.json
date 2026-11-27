@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T05:36:37.958312+00:00",
+  "generated_at": "2026-11-27T05:41:30.057277+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9657.73,
-    "reconciled_equity_usd": 9158.92,
+    "equity_usd": 9740.25,
+    "reconciled_equity_usd": 9241.44,
     "equity_discrepancy_usd": 498.81,
     "cash_usd": 5848.08,
-    "positions_value_usd": 3310.84,
-    "deployed_pct": 34.28,
-    "total_pnl_usd": -342.27,
-    "total_pnl_pct": -3.42,
-    "unrealized_pnl_usd": -328.07,
+    "positions_value_usd": 3393.36,
+    "deployed_pct": 34.84,
+    "total_pnl_usd": -259.75,
+    "total_pnl_pct": -2.6,
+    "unrealized_pnl_usd": -245.55,
     "total_trades": 174,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -4.89,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2196.79,
-    "crypto": 665.14,
+    "politics": 2207.74,
+    "crypto": 736.71,
     "technology": 448.91
   },
   "equity_curve": [
@@ -1619,6 +1619,13 @@
       "cash": 5848.08,
       "deployed_pct": 34.28,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T05:41:29.674685+00:00",
+      "equity": 9740.25,
+      "cash": 5848.08,
+      "deployed_pct": 34.84,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1629,9 +1636,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.21,
-      "current_value": 376.51,
-      "unrealized_pnl": 0.0,
+      "current_price": 0.215,
+      "current_value": 385.47,
+      "unrealized_pnl": 8.96,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -1644,9 +1651,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.115,
-      "current_value": 558.94,
-      "unrealized_pnl": -204.87,
+      "current_price": 0.125,
+      "current_value": 607.55,
+      "unrealized_pnl": -156.26,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -1674,9 +1681,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1075,
-      "current_value": 191.11,
-      "unrealized_pnl": -29.33,
+      "current_price": 0.108,
+      "current_value": 191.99,
+      "unrealized_pnl": -28.45,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1704,9 +1711,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.185,
-      "current_value": 106.2,
-      "unrealized_pnl": -186.56,
+      "current_price": 0.225,
+      "current_value": 129.16,
+      "unrealized_pnl": -163.6,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1734,9 +1741,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.213,
-      "current_value": 235.34,
-      "unrealized_pnl": 9.94,
+      "current_price": 0.214,
+      "current_value": 236.45,
+      "unrealized_pnl": 11.05,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -1824,7 +1831,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:25:36.335528+00:00",
+      "last_checked_ts": "2026-11-27T05:40:40.975897+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Auflösung erfolgt anhand von Standardpreisdaten für Bitcoin (z. B. Binance oder Chainlink) bis zum Fristende.",
@@ -1923,7 +1930,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:25:35.529896+00:00",
+      "last_checked_ts": "2026-11-27T05:40:40.282175+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -1953,7 +1960,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:25:36.816909+00:00",
+      "last_checked_ts": "2026-11-27T05:40:41.388010+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange feeds before December 1, 2026.",
@@ -1982,7 +1989,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:25:35.833784+00:00",
+      "last_checked_ts": "2026-11-27T05:40:40.541501+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -2013,7 +2020,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:25:36.663524+00:00",
+      "last_checked_ts": "2026-11-27T05:40:41.262352+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
@@ -2077,7 +2084,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:25:36.146136+00:00",
+      "last_checked_ts": "2026-11-27T05:40:40.834906+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -2167,7 +2174,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:25:35.379998+00:00",
+      "last_checked_ts": "2026-11-27T05:40:40.159968+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -2198,7 +2205,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:30:53.926996+00:00",
+      "last_checked_ts": "2026-11-27T05:40:41.510674+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -3050,6 +3057,18 @@
   ],
   "recent_runs": [
     {
+      "id": 204,
+      "ts": "2026-11-27T05:41:29.676213+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1140,
+      "candidates_found": 23,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 51.29,
+      "errors": []
+    },
+    {
       "id": 203,
       "ts": "2026-11-27T05:36:37.491326+00:00",
       "dry_run": 0,
@@ -3275,18 +3294,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 39.04,
-      "errors": []
-    },
-    {
-      "id": 184,
-      "ts": "2026-11-27T04:01:58.548601+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1110,
-      "candidates_found": 29,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 59.7,
       "errors": []
     }
   ]
