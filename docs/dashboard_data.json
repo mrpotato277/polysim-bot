@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:01:52.633092+00:00",
+  "generated_at": "2026-11-27T15:06:16.416178+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,30 +11,30 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 12307.61,
-    "reconciled_equity_usd": 11818.88,
-    "equity_discrepancy_usd": 488.73,
+    "equity_usd": 11459.03,
+    "reconciled_equity_usd": 8783.13,
+    "equity_discrepancy_usd": 2675.9,
     "cash_usd": 5681.36,
-    "positions_value_usd": 6137.52,
-    "deployed_pct": 49.87,
-    "total_pnl_usd": 2307.61,
-    "total_pnl_pct": 23.08,
-    "unrealized_pnl_usd": 1876.63,
+    "positions_value_usd": 3101.77,
+    "deployed_pct": 27.07,
+    "total_pnl_usd": 1459.03,
+    "total_pnl_pct": 14.59,
+    "unrealized_pnl_usd": -395.31,
     "total_trades": 294,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -7.39,
-    "brier_score": 0.1183,
-    "brier_resolved_count": 2,
-    "brier_blind_score": 0.1764,
-    "brier_market_score": 0.2162,
-    "brier_unique_markets": 1,
+    "brier_score": 0.0521,
+    "brier_resolved_count": 6,
+    "brier_blind_score": 0.0895,
+    "brier_market_score": 0.2257,
+    "brier_unique_markets": 2,
     "total_forecasts": 224,
-    "circuit_breaker_active": false
+    "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2198.42,
-    "crypto": 3131.64,
+    "politics": 2199.31,
     "geopolitics": 621.32,
+    "crypto": 95.0,
     "markets": 186.14
   },
   "equity_curve": [
@@ -2457,6 +2457,13 @@
       "cash": 5681.36,
       "deployed_pct": 49.87,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T15:06:15.997205+00:00",
+      "equity": 11459.03,
+      "cash": 5681.36,
+      "deployed_pct": 27.07,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2474,21 +2481,6 @@
       "p_blended": 0.4043,
       "edge_net": 0.1943,
       "rationale": "Johnny Chiang hat zwar politische Relevanz in Taichung, aber interne Parteikonkurrenz und andere potenzielle Kandidaten machen seinen Sieg bei der nächsten Bürgermeisterwahl zu diesem Zeitpunkt zu einem eher unwahrscheinlichen Ereignis."
-    },
-    {
-      "market_id": "0x18c74c5f8c9eb6ed04f45d4675272e680669a6c9e17c81150f90351a82383d1f",
-      "question": "Will Bitcoin dip to $58,000 November 23-29?",
-      "category": "crypto",
-      "outcome": "Yes",
-      "quantity": 4860.39,
-      "avg_entry_price": 0.1571,
-      "current_price": 0.625,
-      "current_value": 3037.74,
-      "unrealized_pnl": 2273.93,
-      "p_yes": 0.5768,
-      "p_blended": 0.5768,
-      "edge_net": 0.4368,
-      "rationale": "Berichte bestätigen, dass Bitcoin im fraglichen Zeitraum bereits unter 58.000 US-Dollar gefallen ist, womit das Ziel erreicht wurde."
     },
     {
       "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
@@ -2512,9 +2504,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1085,
-      "current_value": 192.88,
-      "unrealized_pnl": -27.56,
+      "current_price": 0.109,
+      "current_value": 193.77,
+      "unrealized_pnl": -26.67,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2557,9 +2549,9 @@
       "outcome": "No",
       "quantity": 100.0,
       "avg_entry_price": 0.936,
-      "current_price": 0.939,
-      "current_value": 93.9,
-      "unrealized_pnl": 0.3,
+      "current_price": 0.95,
+      "current_value": 95.0,
+      "unrealized_pnl": 1.4,
       "p_yes": 0.0385,
       "p_blended": 0.9615,
       "edge_net": 0.0255,
@@ -2614,7 +2606,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T15:05:37.068438+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract with clear exchange feed rules.",
@@ -2701,7 +2693,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T14:50:47.309139+00:00",
+      "last_checked_ts": "2026-11-27T15:05:39.140906+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -3436,6 +3428,26 @@
     }
   ],
   "trade_journal": [
+    {
+      "id": 46,
+      "ts": "2026-11-27T15:06:12.919020+00:00",
+      "client_order_id": "psb-20261127-150612-c02b6d88da-sell-n-57a27f",
+      "order_id": "1734543",
+      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
+      "question": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
+      "outcome": "No",
+      "side": "SELL",
+      "order_mode": "maker_limit",
+      "price": "0.963",
+      "quantity": "100.00",
+      "notional_usd": "96.30",
+      "est_fee_usd": "0",
+      "edge_net": "-0.0015",
+      "strategy_type": "exit_take_profit",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "Take-Profit: Kurs 0.96 hat Fair Value 0.96 erreicht (Entry 0.94); Kapital wird für neue Chancen frei."
+    },
     {
       "id": 45,
       "ts": "2026-11-27T15:01:43.841416+00:00",
@@ -4339,6 +4351,18 @@
   ],
   "recent_runs": [
     {
+      "id": 315,
+      "ts": "2026-11-27T15:06:15.998627+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1109,
+      "candidates_found": 13,
+      "llm_calls": 0,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 40.24,
+      "errors": []
+    },
+    {
       "id": 314,
       "ts": "2026-11-27T15:01:52.328678+00:00",
       "dry_run": 0,
@@ -4564,18 +4588,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 54.43,
-      "errors": []
-    },
-    {
-      "id": 295,
-      "ts": "2026-11-27T13:26:31.895151+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1151,
-      "candidates_found": 16,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 54.99,
       "errors": []
     }
   ]
