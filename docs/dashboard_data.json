@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T08:51:20.413237+00:00",
+  "generated_at": "2026-11-27T08:56:27.259316+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9672.89,
-    "reconciled_equity_usd": 9672.89,
+    "equity_usd": 9678.57,
+    "reconciled_equity_usd": 9678.57,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5400.15,
-    "positions_value_usd": 4272.74,
-    "deployed_pct": 44.17,
-    "total_pnl_usd": -327.11,
-    "total_pnl_pct": -3.27,
-    "unrealized_pnl_usd": -386.31,
+    "positions_value_usd": 4278.42,
+    "deployed_pct": 44.21,
+    "total_pnl_usd": -321.43,
+    "total_pnl_pct": -3.21,
+    "unrealized_pnl_usd": -380.63,
     "total_trades": 272,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -5.76,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2146.88,
-    "crypto": 1305.86,
+    "politics": 2141.23,
+    "crypto": 1317.19,
     "geopolitics": 664.17,
     "markets": 155.83
   },
@@ -1904,6 +1904,13 @@
       "cash": 5400.15,
       "deployed_pct": 44.17,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T08:56:26.855704+00:00",
+      "equity": 9678.57,
+      "cash": 5400.15,
+      "deployed_pct": 44.21,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1989,9 +1996,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.195,
-      "current_value": 111.94,
-      "unrealized_pnl": -180.82,
+      "current_price": 0.205,
+      "current_value": 117.68,
+      "unrealized_pnl": -175.08,
       "p_yes": 0.827,
       "p_blended": 0.173,
       "edge_net": 0.007,
@@ -2004,9 +2011,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.59,
-      "current_value": 667.13,
-      "unrealized_pnl": -18.28,
+      "current_price": 0.585,
+      "current_value": 661.48,
+      "unrealized_pnl": -23.93,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2019,9 +2026,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.525,
-      "current_value": 586.37,
-      "unrealized_pnl": 5.58,
+      "current_price": 0.53,
+      "current_value": 591.96,
+      "unrealized_pnl": 11.17,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -2076,7 +2083,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T08:55:36.899783+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A ceasefire must explicitly remain in effect through December 15, 2026 without a major collapse or resumption of direct military hostilities.",
@@ -2313,7 +2320,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:45:41.000317+00:00",
+      "last_checked_ts": "2026-11-27T08:55:38.711468+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November auf 60.000 USD gefallen ist. Da der aktuelle Kurs bereits über 60.000 USD liegt und die Nachrichten bestätigen, dass Bitcoin in diesem Monat bereits unter 60.000 USD gehandelt wurde, ist das Ereignis bereits eingetreten.",
@@ -2348,7 +2355,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:40:42.894380+00:00",
+      "last_checked_ts": "2026-11-27T08:55:36.899783+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through December 15, 2026; violation or renewal terms must be clearly defined.",
@@ -2449,7 +2456,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:40:43.030727+00:00",
+      "last_checked_ts": "2026-11-27T08:55:37.073090+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which involves defining whether tacit understandings or formal agreements qualify.",
@@ -2535,7 +2542,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:40:42.894380+00:00",
+      "last_checked_ts": "2026-11-27T08:55:36.899783+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob vereinbarte Waffenruhen über die Frist hinaus formell anhalten oder ob Zwischenfälle als Bruch gewertet werden.",
@@ -2604,7 +2611,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:40:43.285831+00:00",
+      "last_checked_ts": "2026-11-27T08:55:37.372389+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the ground stop, which might remain under protracted investigation past the deadline.",
@@ -2635,7 +2642,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:40:42.698915+00:00",
+      "last_checked_ts": "2026-11-27T08:55:36.598836+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $57,500 at any point during November 2026.",
@@ -2668,7 +2675,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:45:41.000317+00:00",
+      "last_checked_ts": "2026-11-27T08:55:38.711468+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 2026 auf 60.000 USD dippt, basierend auf Standard-Preisen der wichtigsten Marktplätze.",
@@ -2767,7 +2774,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:45:41.278777+00:00",
+      "last_checked_ts": "2026-11-27T08:55:39.039715+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Auflösung erfolgt anhand von Standardpreisdaten für Bitcoin (z. B. Binance oder Chainlink) bis zum Fristende.",
@@ -2831,7 +2838,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:40:42.894380+00:00",
+      "last_checked_ts": "2026-11-27T08:55:36.899783+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung vor exakter Definition und Einhaltung des Waffenstillstands bis zum 15. Dezember 2026.",
@@ -2866,7 +2873,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:40:43.606982+00:00",
+      "last_checked_ts": "2026-11-27T08:55:37.968738+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -3544,6 +3551,18 @@
   ],
   "recent_runs": [
     {
+      "id": 242,
+      "ts": "2026-11-27T08:56:26.858069+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 20,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 52.15,
+      "errors": []
+    },
+    {
       "id": 241,
       "ts": "2026-11-27T08:51:20.029303+00:00",
       "dry_run": 0,
@@ -3769,18 +3788,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 66.2,
-      "errors": []
-    },
-    {
-      "id": 222,
-      "ts": "2026-11-27T07:16:38.699886+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1205,
-      "candidates_found": 21,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.81,
       "errors": []
     }
   ]
