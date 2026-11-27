@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T10:51:21.043233+00:00",
+  "generated_at": "2026-11-27T10:56:18.078041+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9640.55,
-    "reconciled_equity_usd": 9279.9,
-    "equity_discrepancy_usd": 360.65,
+    "equity_usd": 9602.19,
+    "reconciled_equity_usd": 9388.98,
+    "equity_discrepancy_usd": 213.21,
     "cash_usd": 5019.27,
-    "positions_value_usd": 4260.63,
-    "deployed_pct": 44.19,
-    "total_pnl_usd": -359.45,
-    "total_pnl_pct": -3.59,
-    "unrealized_pnl_usd": -404.79,
-    "total_trades": 275,
+    "positions_value_usd": 4369.71,
+    "deployed_pct": 45.51,
+    "total_pnl_usd": -397.81,
+    "total_pnl_pct": -3.98,
+    "unrealized_pnl_usd": -443.15,
+    "total_trades": 278,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -5.76,
     "brier_score": 0.1183,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 187,
+    "total_forecasts": 189,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2192.12,
-    "crypto": 1218.29,
+    "politics": 2176.36,
+    "crypto": 1223.49,
     "geopolitics": 664.17,
-    "markets": 186.05
+    "markets": 305.69
   },
   "equity_curve": [
     {
@@ -2084,6 +2084,13 @@
       "cash": 5019.27,
       "deployed_pct": 44.19,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T10:56:17.770213+00:00",
+      "equity": 9602.19,
+      "cash": 5019.27,
+      "deployed_pct": 45.51,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2139,9 +2146,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1065,
-      "current_value": 189.33,
-      "unrealized_pnl": -31.11,
+      "current_price": 0.104,
+      "current_value": 184.88,
+      "unrealized_pnl": -35.56,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2169,9 +2176,9 @@
       "outcome": "No",
       "quantity": 519.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.245,
-      "current_value": 127.16,
-      "unrealized_pnl": -137.55,
+      "current_price": 0.255,
+      "current_value": 132.36,
+      "unrealized_pnl": -132.35,
       "p_yes": 0.827,
       "p_blended": 0.173,
       "edge_net": 0.007,
@@ -2184,9 +2191,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.585,
-      "current_value": 661.48,
-      "unrealized_pnl": -23.93,
+      "current_price": 0.575,
+      "current_value": 650.17,
+      "unrealized_pnl": -35.24,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2227,18 +2234,89 @@
       "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
       "category": "markets",
       "outcome": "Yes",
-      "quantity": 1033.59,
-      "avg_entry_price": 0.1881,
-      "current_price": 0.18,
-      "current_value": 186.05,
-      "unrealized_pnl": -8.42,
-      "p_yes": 0.2499,
-      "p_blended": 0.2499,
-      "edge_net": 0.0699,
-      "rationale": "WTI-Öl notiert kurz vor Monatsende bei rund 85,70 US-Dollar, wodurch für das Erreichen der 90-Dollar-Marke im November noch ein signifikanter Preissprung erforderlich ist."
+      "quantity": 1852.68,
+      "avg_entry_price": 0.1845,
+      "current_price": 0.165,
+      "current_value": 305.69,
+      "unrealized_pnl": -36.22,
+      "p_yes": 0.2395,
+      "p_blended": 0.2395,
+      "edge_net": 0.0795,
+      "rationale": "WTI-Rohöl handelt aktuell nahe 85,71 US-Dollar und benötigt einen raschen Anstieg von rund 4 US-Dollar in den verbleibenden Tagen des Novembers, um die Marke von 90 US-Dollar zu erreichen."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 189,
+      "ts": "2026-11-27T10:56:17.325053+00:00",
+      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
+      "category": "markets",
+      "end_date": "2026-12-01T04:59:59.999000+00:00",
+      "market_price": "0.1650",
+      "p_blind": "0.3500",
+      "p_blended": "0.2395",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0795",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if WTI crude oil hits $90 at any point during November 2026, expiring December 1.",
+        "base_rate": 0.2,
+        "bull_case": "Middle East tensions, Hormuz risk premiums, and supply fears are pushing prices upward with upcoming OPEC+ meetings, keeping a spike to $90 plausible before month-end.",
+        "bear_case": "Current WTI spot is around $85.71 with only a few days left in November, meaning a sudden spike of over $4 is required against existing structural surplus narratives.",
+        "summary_de": "WTI-Rohöl handelt aktuell nahe 85,71 US-Dollar und benötigt einen raschen Anstieg von rund 4 US-Dollar in den verbleibenden Tagen des Novembers, um die Marke von 90 US-Dollar zu erreichen.",
+        "news_used": [
+          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
+          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
+          "Standard Chartered Oil Needs a New Shock to Fall Further - Crude Oil Prices Today | OilPrice.com",
+          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox",
+          "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo",
+          "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times"
+        ],
+        "market_data": "WTI Crude Oil (CL=F) live reference: 85.71 (prev close: 83.98, +2.06%)."
+      }
+    },
+    {
+      "id": 188,
+      "ts": "2026-11-27T10:56:12.191047+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4200",
+      "p_blended": "0.3229",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0729",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on official electoral results for which party wins the most seats in the Spanish general election.",
+        "base_rate": 0.45,
+        "bull_case": "Pedro Sánchez and the PSOE have mounted a strong final campaign push, leveraging incumbency and late momentum to mobilize left-wing voters against the conservative bloc.",
+        "bear_case": "Polling consistently shows a tight race with the opposition Partido Popular (PP) leading in several metrics, making a right-of-center plurality or victory the statistical favorite.",
+        "summary_de": "Die aktuellen Umfragen und der starke Druck der konservativen Opposition sprechen leicht gegen eine Mehrheit der Sitze für die PSOE, obwohl das Rennen extrem knapp bleibt.",
+        "news_used": [
+          "Sanchez makes last bid to beat the right ahead of Spanish vote - Yahoo",
+          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu",
+          "Spanish elections: What you need to know and what's at stake - BBC"
+        ]
+      }
+    },
     {
       "id": 187,
       "ts": "2026-11-27T10:41:19.192902+00:00",
@@ -2256,7 +2334,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:31.587517+00:00",
+      "last_checked_ts": "2026-11-27T10:55:32.693297+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract refers to a specific Test Match; news headlines regarding political elections and rugby are irrelevant noise.",
@@ -2327,7 +2405,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:42.767403+00:00",
+      "last_checked_ts": "2026-11-27T10:55:32.566913+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election occurring near the deadline.",
@@ -2397,7 +2475,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:41.955845+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on official election results showing which party won the most seats.",
@@ -2460,7 +2538,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:41.955845+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether PSOE will win the most seats in the 2026 Spanish general election, which resolves based on official electoral results.",
@@ -2495,7 +2573,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:31.740617+00:00",
+      "last_checked_ts": "2026-11-27T10:55:32.788846+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A ceasefire must explicitly remain in effect through December 15, 2026 without a major collapse or resumption of direct military hostilities.",
@@ -2530,7 +2608,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:42.284741+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.865590+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob die Fed die Zinsen nach der Dezember-Sitzung 2026 um 25 bps anhebt.",
@@ -2594,7 +2672,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:42.284741+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.865590+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if the Federal Reserve increases interest rates by 25 bps after the December 2026 FOMC meeting.",
@@ -2629,7 +2707,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:41.955845+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of which party wins the most seats in the 2026 Spanish general election.",
@@ -2664,7 +2742,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:41.628604+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.171028+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 62.500 USD erreicht, gemessen an gängigen Spot-Börsen.",
@@ -2767,7 +2845,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:31.740617+00:00",
+      "last_checked_ts": "2026-11-27T10:55:32.788846+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through December 15, 2026; violation or renewal terms must be clearly defined.",
@@ -2833,7 +2911,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:41.955845+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the Spanish general election.",
@@ -2868,7 +2946,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:31.887464+00:00",
+      "last_checked_ts": "2026-11-27T10:55:32.892160+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which involves defining whether tacit understandings or formal agreements qualify.",
@@ -2954,7 +3032,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:31.740617+00:00",
+      "last_checked_ts": "2026-11-27T10:55:32.788846+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob vereinbarte Waffenruhen über die Frist hinaus formell anhalten oder ob Zwischenfälle als Bruch gewertet werden.",
@@ -2989,7 +3067,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:41.955845+00:00",
+      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich direkt darauf, ob die PSOE bei der spanischen Parlamentswahl 2026 die meisten Sitze gewinnt.",
@@ -3005,73 +3083,29 @@
           "Spain election polls: PP and Vox clear majority in final surveys - Il Politico Web"
         ]
       }
-    },
-    {
-      "id": 164,
-      "ts": "2026-11-27T06:11:54.431385+00:00",
-      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
-      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
-      "category": "technology",
-      "end_date": "2026-12-01T04:59:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.3500",
-      "p_blended": "0.2709",
-      "confidence": "0.6500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0299",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:32.158830+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the ground stop, which might remain under protracted investigation past the deadline.",
-        "base_rate": 0.4,
-        "bull_case": "Complex aviation ground stops of this scale are overwhelmingly tied to software bugs, IT glitches, or bad configuration updates rather than physical attacks.",
-        "bear_case": "Official root-cause investigations by the FAA and NTSB typically take months, meaning definitive confirmation may not be released before the early December deadline.",
-        "summary_de": "Obwohl Software- oder Konfigurationsfehler bei solchen Ausfällen wahrscheinlich sind, dauert die offizielle Bestätigung durch die Behörden oft länger als die kurze Frist bis Dezember.",
-        "news_used": [
-          "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/",
-          "Microsoft, FAA outages and bomb hoaxes expose travel insurance gaps - https://www.thetraveler.org/"
-        ]
-      }
-    },
-    {
-      "id": 163,
-      "ts": "2026-11-27T06:02:03.628059+00:00",
-      "market_id": "0x68f425a37a2bf693d43de418335b00841af699ef37cc5cb6634c83432c6541cd",
-      "question": "Will Bitcoin dip to $57,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1550",
-      "p_blind": "0.2200",
-      "p_blended": "0.1785",
-      "confidence": "0.7500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0285",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:40:42.671377+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Bitcoin hits $57,500 at any point during November 2026.",
-        "base_rate": 0.2,
-        "bull_case": "Crypto markets exhibit fat tails and high volatility, meaning a sudden ~7% drop from current levels within the remaining few days of November is entirely plausible.",
-        "bear_case": "Bitcoin has recently rebounded above $60,600 and the 24-hour low is near $59,850, leaving only a few days left in November with a relatively safe distance of nearly 7% to the strike.",
-        "summary_de": "Bitcoin handelt derzeit stabil über $60.000 und angesichts der verbleibenden Tage im November ist ein Rücksetzer auf $57.500 zwar durch Volatilität möglich, aber eher unwahrscheinlich.",
-        "news_used": [
-          "Bitcoin rebounds to $60,600 as DeFi and blockch... - Pluang",
-          "Bitcoin Funds Head for Worst Month as Outflows Near $5 Billion - Bloomberg.com",
-          "Polymarket Odds: Taipei Mayor, Tesla-SpaceX, Super Bowl - RG.org"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $61,710.40 (24h range: $59,850.00 - $61,877.00, 30d realized annualized vol: ~49%).\nDistance from live spot to $57,500.00: -6.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.0d (1-sigma move = +/-5.1%, distance = 1.40 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 37,
+      "ts": "2026-11-27T10:56:17.768933+00:00",
+      "client_order_id": "psb-20261127-105617-e4e863179f-buy-y-fa1cc8",
+      "order_id": "1734272",
+      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.16",
+      "quantity": "1249.57",
+      "notional_usd": "199.93",
+      "est_fee_usd": "0",
+      "edge_net": "0.0795",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] WTI-Rohöl handelt aktuell nahe 85,71 US-Dollar und benötigt einen raschen Anstieg von rund 4 US-Dollar in den verbleibenden Tagen des Novembers, um die Marke von 90 US-Dollar zu erreichen."
+    },
     {
       "id": 36,
       "ts": "2026-11-27T10:41:19.746254+00:00",
@@ -3795,6 +3829,18 @@
   ],
   "recent_runs": [
     {
+      "id": 266,
+      "ts": "2026-11-27T10:56:17.771008+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1135,
+      "candidates_found": 18,
+      "llm_calls": 2,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 48.08,
+      "errors": []
+    },
+    {
       "id": 265,
       "ts": "2026-11-27T10:51:20.742405+00:00",
       "dry_run": 0,
@@ -4022,18 +4068,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 58.02,
-      "errors": []
-    },
-    {
-      "id": 246,
-      "ts": "2026-11-27T09:16:27.802656+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1195,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 47.37,
       "errors": []
     }
   ]
