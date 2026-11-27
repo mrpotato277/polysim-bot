@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:11:14.903371+00:00",
+  "generated_at": "2026-11-27T13:16:43.347992+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9439.85,
-    "reconciled_equity_usd": 9439.85,
+    "equity_usd": 9426.52,
+    "reconciled_equity_usd": 9426.52,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4348.76,
-    "deployed_pct": 46.07,
-    "total_pnl_usd": -560.15,
-    "total_pnl_pct": -5.6,
-    "unrealized_pnl_usd": -476.53,
+    "positions_value_usd": 4335.43,
+    "deployed_pct": 45.99,
+    "total_pnl_usd": -573.48,
+    "total_pnl_pct": -5.73,
+    "unrealized_pnl_usd": -489.86,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.63,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 207,
+    "total_forecasts": 208,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2186.23,
+    "politics": 2172.9,
     "crypto": 1110.58,
     "geopolitics": 664.17,
     "markets": 387.78
@@ -2291,6 +2291,13 @@
       "cash": 5091.09,
       "deployed_pct": 46.07,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T13:16:42.896158+00:00",
+      "equity": 9426.52,
+      "cash": 5091.09,
+      "deployed_pct": 45.99,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2346,9 +2353,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.108,
-      "current_value": 191.99,
-      "unrealized_pnl": -28.45,
+      "current_price": 0.1005,
+      "current_value": 178.66,
+      "unrealized_pnl": -41.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2431,6 +2438,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 208,
+      "ts": "2026-11-27T13:16:42.894215+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2600",
+      "p_blind": "0.4800",
+      "p_blended": "0.3501",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0901",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag entscheidet sich klar anhand der Sitzverteilung nach der spanischen Parlamentswahl.",
+        "base_rate": 0.45,
+        "bull_case": "Die regierende PSOE profitiert von der Amtsinhaberschaft und einer starken Mobilisierung der linken Wählerschaft in letzter Minute.",
+        "bear_case": "Umfragen und aktuelle Stimmungen sehen die konservative PP unter Feijóo oft knapp vorn oder gleichauf, getrieben durch Unzufriedenheit mit der Regierung.",
+        "summary_de": "Die spanischen Wahlen sind extrem umkämpft; die PP liegt in vielen Umfragen leicht vorne, aber ein Sieg der PSOE bleibt im Bereich des Möglichen.",
+        "news_used": [
+          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı",
+          "Spain’s Snap Election: How Voting Works, Key Parties and Issues - SSBCrack",
+          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu"
+        ]
+      }
+    },
     {
       "id": 207,
       "ts": "2026-11-27T13:11:14.644673+00:00",
@@ -2822,7 +2864,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:05:36.101649+00:00",
+      "last_checked_ts": "2026-11-27T13:15:48.216152+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "WTI crude oil spot high during November 2026 based on standard exchange data.",
@@ -2958,7 +3000,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:01:06.618485+00:00",
+      "last_checked_ts": "2026-11-27T13:15:46.214162+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $65,000 in November, resolving based on standard exchange spot prices before December 1, 2026.",
@@ -3052,7 +3094,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:05:36.101649+00:00",
+      "last_checked_ts": "2026-11-27T13:15:48.216152+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil hits $90 at any point during November 2026, expiring December 1.",
@@ -3158,7 +3200,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:05:36.101649+00:00",
+      "last_checked_ts": "2026-11-27T13:15:48.216152+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if WTI Crude Oil hits $90 or higher at any point during November 2026 based on standard market data.",
@@ -3229,7 +3271,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:01:07.785594+00:00",
+      "last_checked_ts": "2026-11-27T13:15:47.483344+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional processes.",
@@ -3244,40 +3286,6 @@
           "Here are the main issues driving Spain's national election and why they matter for Europe - ABC News - Breaking News, Latest News and Videos",
           "Leaders clash in final Spain election debate as housing dominates run-in - BBC",
           "Sánchez, Feijóo, Abascal and Colau Clash in Spain Election Debate Over Gaza, Migration: how 5 outlets framed it - NewsCord"
-        ]
-      }
-    },
-    {
-      "id": 183,
-      "ts": "2026-11-27T09:36:14.821905+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4800",
-      "p_blended": "0.3468",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0968",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:05:37.372041+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract resolves based on official election results showing which party won the most seats.",
-        "base_rate": 0.45,
-        "bull_case": "Recent polls show incumbent Pedro Sánchez's PSOE maintaining strong mobilization and competitive momentum against Feijóo's PP amidst intense national debates.",
-        "bear_case": "Persistent controversies surrounding governance, migration challenges, and infrastructure incidents create headwinds that could favor the conservative opposition (PP) in seat allocation.",
-        "summary_de": "Die Parlamentswahl in Spanien verläuft extrem knapp zwischen PSOE und PP, wobei die Umfragen ein sehr offenes Rennen zeigen.",
-        "news_used": [
-          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
-          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "How to watch the Spanish election like a pro - POLITICO.eu",
-          "Spanish elections: What you need to know and what's at stake - BBC"
         ]
       }
     }
@@ -4086,6 +4094,18 @@
   ],
   "recent_runs": [
     {
+      "id": 293,
+      "ts": "2026-11-27T13:16:42.897133+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1157,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 59.0,
+      "errors": []
+    },
+    {
       "id": 292,
       "ts": "2026-11-27T13:11:14.646778+00:00",
       "dry_run": 0,
@@ -4311,18 +4331,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 67.6,
-      "errors": []
-    },
-    {
-      "id": 273,
-      "ts": "2026-11-27T11:31:41.937347+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1149,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 49.45,
       "errors": []
     }
   ]
