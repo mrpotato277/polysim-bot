@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:01:58.304617+00:00",
+  "generated_at": "2026-11-27T21:06:20.908431+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10894.02,
-    "reconciled_equity_usd": 10590.72,
-    "equity_discrepancy_usd": 303.3,
+    "equity_usd": 10984.81,
+    "reconciled_equity_usd": 10687.04,
+    "equity_discrepancy_usd": 297.77,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4510.41,
-    "deployed_pct": 41.4,
-    "total_pnl_usd": 894.02,
-    "total_pnl_pct": 8.94,
-    "unrealized_pnl_usd": 358.14,
+    "positions_value_usd": 4606.73,
+    "deployed_pct": 41.94,
+    "total_pnl_usd": 984.81,
+    "total_pnl_pct": 9.85,
+    "unrealized_pnl_usd": 454.46,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 272,
+    "total_forecasts": 274,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2292.47,
-    "crypto": 1336.61,
+    "politics": 2291.58,
+    "crypto": 1433.82,
     "geopolitics": 664.17,
     "markets": 217.16
   },
@@ -2990,6 +2990,13 @@
       "cash": 6080.31,
       "deployed_pct": 41.4,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T21:06:20.531318+00:00",
+      "equity": 10984.81,
+      "cash": 6080.31,
+      "deployed_pct": 41.94,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3015,9 +3022,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.275,
-      "current_value": 1336.61,
-      "unrealized_pnl": 572.8,
+      "current_price": 0.295,
+      "current_value": 1433.82,
+      "unrealized_pnl": 670.01,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3045,9 +3052,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.127,
-      "current_value": 225.77,
-      "unrealized_pnl": 5.33,
+      "current_price": 0.1265,
+      "current_value": 224.88,
+      "unrealized_pnl": 4.44,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3115,6 +3122,70 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 274,
+      "ts": "2026-11-27T21:06:20.529634+00:00",
+      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
+      "question": "Will Bitcoin dip to $52,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0405",
+      "p_blind": "0.0100",
+      "p_blended": "0.0263",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0167",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 52.500 USD berührt; die Kursdefinition ist klar.",
+        "base_rate": 0.02,
+        "bull_case": "Fat-Tail-Risiken und plötzliche makroökonomische Schocks könnten vor Monatsende einen starken Rücksetzer auslösen.",
+        "bear_case": "Der aktuelle Kurs liegt bei ca. 59.740 USD, sodass für einen Dip auf 52.500 USD ein Rückgang von über 12 % innerhalb weniger Tage erforderlich wäre, was bei der gering verbleibenden Zeit statistisch sehr unwahrscheinlich ist.",
+        "summary_de": "Da der Bitcoin-Kurs aktuell weit über der Zielmarke von 52.500 USD liegt und nur noch wenige Tage im November verbleiben, ist die Wahrscheinlichkeit eines solchen Einbruchs äußerst gering.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,740.50 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $52,500.00: -12.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-4.5%, distance = 2.85 sigma): Gaussian one-touch ('dip/reach/hi"
+      }
+    },
+    {
+      "id": 273,
+      "ts": "2026-11-27T21:06:18.898897+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.4200",
+      "p_blended": "0.2853",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0453",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.45,
+        "bull_case": "New Zealand's cricket team has strong historic performances in test matches against India and could pull off an upset.",
+        "bear_case": "India is generally considered the stronger side in contemporary international test cricket, especially away or in neutral/home conditions depending on the fixture details.",
+        "summary_de": "Die Wahrscheinlichkeit für einen Sieg von Neuseeland gegen Indien basiert auf historischen Leistungsdaten und der aktuellen Form der beiden Test-Match-Teams.",
+        "news_used": [
+          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
+          "Hung parliament: Why Opportunity is essential to break the tie - 1News",
+          "Stumbling All Blacks: A mere hiccup or crisis time? - Japan Today",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
+          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC"
+        ]
+      }
+    },
     {
       "id": 272,
       "ts": "2026-11-27T20:51:51.766025+00:00",
@@ -3301,7 +3372,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:50:44.806147+00:00",
+      "last_checked_ts": "2026-11-27T21:05:34.975414+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether the PP and Vox secure a majority in the Spanish general election held on November 29, 2026.",
@@ -3336,7 +3407,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:50:45.604237+00:00",
+      "last_checked_ts": "2026-11-27T21:05:35.540089+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -3371,7 +3442,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:50:44.806147+00:00",
+      "last_checked_ts": "2026-11-27T21:05:34.975414+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count results of the snap general election on November 29, 2026, determining if PP and Vox achieve a combined absolute majority in parliament.",
@@ -3441,7 +3512,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:50:44.806147+00:00",
+      "last_checked_ts": "2026-11-27T21:05:34.975414+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Spanish General Election regarding whether PP and Vox achieve a parliamentary majority.",
@@ -3715,7 +3786,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:50:45.020197+00:00",
+      "last_checked_ts": "2026-11-27T21:05:35.111031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will hit $62,500 at any point during November 2026 based on standard spot exchange feeds.",
@@ -3899,76 +3970,6 @@
           "New-look England chase glorious end to rollercoaster year - The Times",
           "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
           "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website"
-        ]
-      }
-    },
-    {
-      "id": 249,
-      "ts": "2026-11-27T18:06:36.361189+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4200",
-      "p_blended": "0.3229",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0729",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:50:45.604237+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on official electoral commission seat count results for the 2026 Spanish general election.",
-        "base_rate": 0.45,
-        "bull_case": "Pedro Sanchez and PSOE are mobilizing the left-wing electorate strongly in the final stretch, potentially defying unfavourable polls.",
-        "bear_case": "Most pre-election polls consistently show the opposing Partido Popular (Feijóo) leading or holding an advantage in projected seats.",
-        "summary_de": "Trotz Pedro Sanchez' Schlussspurt bei der Mobilisierung der Wählerschaft zeigen die meisten Umfragen den Hauptkonkurrenten in Führung, weshalb ein Sieg der PSOE in den Sitzzahlen unwahrscheinlicher bleibt.",
-        "news_used": [
-          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
-          "Spanish election: What you need to know and what's at stake - BBC",
-          "Spain election 2026: The main proposals from the three largest parties - The Independent",
-          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "How to watch the Spanish election like a pro - POLITICO.eu"
-        ]
-      }
-    },
-    {
-      "id": 248,
-      "ts": "2026-11-27T17:56:25.545012+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4500",
-      "p_blended": "0.3236",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0836",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Das Testergebnis der Test Match Begegnung zwischen Neuseeland und Indien entscheidet eindeutig über den Ausgang (Sieg Neuseeland).",
-        "base_rate": 0.4,
-        "bull_case": "Neuseeland spielt im Heimvorteil in Christchurch, wobei der erste Tag nach Berichten ausgeglichen verlief und eine Chance auf einen Sieg besteht.",
-        "bear_case": "Indien ist im Test-Cricket traditionell stark und das Spiel steht nach Tag 1 unentschieden, was die Gewinnchancen offen hält.",
-        "summary_de": "Das Test Match zwischen Neuseeland und Indien in Christchurch ist nach dem ersten Tag ausgeglichen, wobei Neuseeland als Heimmannschaft intakte Siegchancen hat.",
-        "news_used": [
-          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
-          "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
-          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
-          "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website",
-          "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks treble - The Guardian"
         ]
       }
     }
@@ -4917,6 +4918,18 @@
   ],
   "recent_runs": [
     {
+      "id": 386,
+      "ts": "2026-11-27T21:06:20.532305+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1178,
+      "candidates_found": 20,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 47.84,
+      "errors": []
+    },
+    {
       "id": 385,
       "ts": "2026-11-27T21:01:57.753956+00:00",
       "dry_run": 0,
@@ -5142,18 +5155,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 58.25,
-      "errors": []
-    },
-    {
-      "id": 366,
-      "ts": "2026-11-27T19:26:27.171981+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1149,
-      "candidates_found": 17,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.68,
       "errors": []
     }
   ]
