@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T05:06:33.332314+00:00",
+  "generated_at": "2026-11-27T05:11:48.863543+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,18 +11,18 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9782.26,
-    "reconciled_equity_usd": 8723.08,
-    "equity_discrepancy_usd": 1059.18,
+    "equity_usd": 9692.9,
+    "reconciled_equity_usd": 9194.09,
+    "equity_discrepancy_usd": 498.81,
     "cash_usd": 5848.08,
-    "positions_value_usd": 2875.0,
-    "deployed_pct": 29.39,
-    "total_pnl_usd": -217.74,
-    "total_pnl_pct": -2.18,
-    "unrealized_pnl_usd": -203.54,
-    "total_trades": 151,
+    "positions_value_usd": 3346.01,
+    "deployed_pct": 34.52,
+    "total_pnl_usd": -307.1,
+    "total_pnl_pct": -3.07,
+    "unrealized_pnl_usd": -292.9,
+    "total_trades": 174,
     "win_rate_pct": 0.0,
-    "max_drawdown_pct": -3.49,
+    "max_drawdown_pct": -3.97,
     "brier_score": null,
     "brier_resolved_count": 0,
     "brier_blind_score": null,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2158.18,
-    "crypto": 267.91,
+    "politics": 2160.39,
+    "crypto": 736.71,
     "technology": 448.91
   },
   "equity_curve": [
@@ -1577,6 +1577,13 @@
       "cash": 5848.08,
       "deployed_pct": 29.39,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T05:11:48.358291+00:00",
+      "equity": 9692.9,
+      "cash": 5848.08,
+      "deployed_pct": 34.52,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1600,11 +1607,11 @@
       "question": "Will Bitcoin dip to $58,000 November 23-29?",
       "category": "crypto",
       "outcome": "Yes",
-      "quantity": 857.74,
-      "avg_entry_price": 0.2372,
-      "current_price": 0.135,
-      "current_value": 115.79,
-      "unrealized_pnl": -87.65,
+      "quantity": 4860.39,
+      "avg_entry_price": 0.1571,
+      "current_price": 0.125,
+      "current_value": 607.55,
+      "unrealized_pnl": -156.26,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -1662,9 +1669,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.265,
-      "current_value": 152.12,
-      "unrealized_pnl": -140.64,
+      "current_price": 0.225,
+      "current_value": 129.16,
+      "unrealized_pnl": -163.6,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1692,9 +1699,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.211,
-      "current_value": 233.13,
-      "unrealized_pnl": 7.73,
+      "current_price": 0.213,
+      "current_value": 235.34,
+      "unrealized_pnl": 9.94,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -1814,7 +1821,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:55:33.804989+00:00",
+      "last_checked_ts": "2026-11-27T05:10:50.238626+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung vor exakter Definition und Einhaltung des Waffenstillstands bis zum 15. Dezember 2026.",
@@ -1849,7 +1856,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:01:04.481552+00:00",
+      "last_checked_ts": "2026-11-27T05:10:51.278355+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -1908,7 +1915,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:01:04.827283+00:00",
+      "last_checked_ts": "2026-11-27T05:10:51.645093+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -2093,7 +2100,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:01:04.303543+00:00",
+      "last_checked_ts": "2026-11-27T05:10:51.055995+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -2154,7 +2161,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:55:33.278282+00:00",
+      "last_checked_ts": "2026-11-27T05:10:49.709200+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Election results must clearly show a winning margin of 12% or more for Chiang Wan-an based on official CEC data.",
@@ -2249,7 +2256,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:55:34.148852+00:00",
+      "last_checked_ts": "2026-11-27T05:10:50.566794+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taichung Mayor election as determined by Taiwan's Central Election Commission.",
@@ -2345,7 +2352,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:55:33.972518+00:00",
+      "last_checked_ts": "2026-11-27T05:10:50.405008+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (defined as a 2-week pause) between the US and Iran by November 30, 2026.",
@@ -3010,6 +3017,18 @@
   ],
   "recent_runs": [
     {
+      "id": 198,
+      "ts": "2026-11-27T05:11:48.359246+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1126,
+      "candidates_found": 23,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 60.74,
+      "errors": []
+    },
+    {
       "id": 197,
       "ts": "2026-11-27T05:06:32.890768+00:00",
       "dry_run": 0,
@@ -3235,18 +3254,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 44.74,
-      "errors": []
-    },
-    {
-      "id": 178,
-      "ts": "2026-11-27T03:33:10.745947+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1160,
-      "candidates_found": 31,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 132.69,
       "errors": []
     }
   ]
