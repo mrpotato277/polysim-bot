@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:46:41.481694+00:00",
+  "generated_at": "2026-11-27T07:51:23.769333+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9823.87,
-    "reconciled_equity_usd": 8889.14,
+    "equity_usd": 9765.63,
+    "reconciled_equity_usd": 8830.9,
     "equity_discrepancy_usd": 934.73,
     "cash_usd": 5311.07,
-    "positions_value_usd": 3578.07,
-    "deployed_pct": 36.42,
-    "total_pnl_usd": -176.13,
-    "total_pnl_pct": -1.76,
-    "unrealized_pnl_usd": -235.34,
+    "positions_value_usd": 3519.83,
+    "deployed_pct": 36.04,
+    "total_pnl_usd": -234.37,
+    "total_pnl_pct": -2.34,
+    "unrealized_pnl_usd": -293.58,
     "total_trades": 226,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -4.89,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2181.61,
-    "crypto": 1396.46
+    "politics": 2179.84,
+    "crypto": 1339.99
   },
   "equity_curve": [
     {
@@ -1805,6 +1805,13 @@
       "cash": 5311.07,
       "deployed_pct": 36.42,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T07:51:23.387885+00:00",
+      "equity": 9765.63,
+      "cash": 5311.07,
+      "deployed_pct": 36.04,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1845,9 +1852,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1085,
-      "current_value": 192.88,
-      "unrealized_pnl": -27.56,
+      "current_price": 0.1075,
+      "current_value": 191.11,
+      "unrealized_pnl": -29.33,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1875,9 +1882,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.275,
-      "current_value": 157.86,
-      "unrealized_pnl": -134.9,
+      "current_price": 0.235,
+      "current_value": 134.9,
+      "unrealized_pnl": -157.86,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1905,9 +1912,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.565,
-      "current_value": 631.05,
-      "unrealized_pnl": 50.26,
+      "current_price": 0.535,
+      "current_value": 597.54,
+      "unrealized_pnl": 16.75,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -1947,7 +1954,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:35:36.582860+00:00",
+      "last_checked_ts": "2026-11-27T07:50:45.284672+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November auf 60.000 USD gefallen ist. Da der aktuelle Kurs bereits über 60.000 USD liegt und die Nachrichten bestätigen, dass Bitcoin in diesem Monat bereits unter 60.000 USD gehandelt wurde, ist das Ereignis bereits eingetreten.",
@@ -2012,7 +2019,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:39.085051+00:00",
+      "last_checked_ts": "2026-11-27T07:50:46.862055+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether Bitcoin hits or dips to $55,000 in November 2026 based on standard exchange feeds.",
@@ -2302,7 +2309,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:35:36.582860+00:00",
+      "last_checked_ts": "2026-11-27T07:50:45.284672+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 2026 auf 60.000 USD dippt, basierend auf Standard-Preisen der wichtigsten Marktplätze.",
@@ -2401,7 +2408,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:35:36.851168+00:00",
+      "last_checked_ts": "2026-11-27T07:50:45.539124+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Auflösung erfolgt anhand von Standardpreisdaten für Bitcoin (z. B. Binance oder Chainlink) bis zum Fristende.",
@@ -2530,7 +2537,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:35:37.225137+00:00",
+      "last_checked_ts": "2026-11-27T07:50:45.928876+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange feeds before December 1, 2026.",
@@ -2559,7 +2566,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:35:36.313058+00:00",
+      "last_checked_ts": "2026-11-27T07:50:45.033236+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -2590,7 +2597,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:35:37.106426+00:00",
+      "last_checked_ts": "2026-11-27T07:50:45.789103+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
@@ -2654,7 +2661,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:35:36.736519+00:00",
+      "last_checked_ts": "2026-11-27T07:50:45.388737+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -2682,7 +2689,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:39.192689+00:00",
+      "last_checked_ts": "2026-11-27T07:50:47.004779+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -3352,6 +3359,18 @@
   ],
   "recent_runs": [
     {
+      "id": 229,
+      "ts": "2026-11-27T07:51:23.389094+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1144,
+      "candidates_found": 19,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.87,
+      "errors": []
+    },
+    {
       "id": 228,
       "ts": "2026-11-27T07:46:41.041545+00:00",
       "dry_run": 0,
@@ -3577,18 +3596,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 62.49,
-      "errors": []
-    },
-    {
-      "id": 209,
-      "ts": "2026-11-27T06:06:12.712506+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1129,
-      "candidates_found": 22,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 41.47,
       "errors": []
     }
   ]
