@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:46:33.993661+00:00",
+  "generated_at": "2026-11-27T04:51:53.269441+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9774.89,
-    "reconciled_equity_usd": 9774.89,
-    "equity_discrepancy_usd": 0.0,
-    "cash_usd": 6921.26,
-    "positions_value_usd": 2853.63,
-    "deployed_pct": 29.19,
-    "total_pnl_usd": -225.11,
-    "total_pnl_pct": -2.25,
-    "unrealized_pnl_usd": -210.91,
+    "equity_usd": 9761.97,
+    "reconciled_equity_usd": 9187.6,
+    "equity_discrepancy_usd": 574.37,
+    "cash_usd": 6346.89,
+    "positions_value_usd": 2840.71,
+    "deployed_pct": 29.1,
+    "total_pnl_usd": -238.03,
+    "total_pnl_pct": -2.38,
+    "unrealized_pnl_usd": -223.83,
     "total_trades": 149,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.49,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 155,
+    "total_forecasts": 157,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2142.13,
-    "crypto": 273.47,
+    "politics": 2123.47,
+    "crypto": 279.21,
     "technology": 438.03
   },
   "equity_curve": [
@@ -1543,6 +1543,13 @@
       "cash": 6921.26,
       "deployed_pct": 29.19,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T04:51:52.818634+00:00",
+      "equity": 9761.97,
+      "cash": 6346.89,
+      "deployed_pct": 29.1,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1598,9 +1605,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1,
-      "current_value": 177.77,
-      "unrealized_pnl": -42.67,
+      "current_price": 0.0895,
+      "current_value": 159.11,
+      "unrealized_pnl": -61.33,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1628,9 +1635,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.285,
-      "current_value": 163.6,
-      "unrealized_pnl": -129.16,
+      "current_price": 0.295,
+      "current_value": 169.34,
+      "unrealized_pnl": -123.42,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1668,6 +1675,71 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 157,
+      "ts": "2026-11-27T04:51:52.315794+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8350",
+      "p_blind": "0.2500",
+      "p_blended": "0.6449",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.1951",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Achtung vor exakter Definition und Einhaltung des Waffenstillstands bis zum 15. Dezember 2026.",
+        "base_rate": 0.35,
+        "bull_case": "Diplomatische Bemühungen und internationale Druckmittel könnten kurzfristig eine Verlängerung der Waffenruhe erzwingen.",
+        "bear_case": "Aktuelle Berichte über anhaltende militärische Drohungen, Grenzverletzungen und Vorbereitungen auf mögliche Schläge zeigen eine extrem fragile Lage.",
+        "summary_de": "Aufgrund anhaltender militärischer Drohungen und fortwährender Spannungen zwischen Israel und dem Iran ist ein Fortbestehen des Waffenstillstands bis zum 15. Dezember gefährdet.",
+        "news_used": [
+          "Red Sea shipping crisis explained: Suez lost $7bn in 2024 - DNE Africa",
+          "Israeli army says it's ready to strike Iran 'at any moment,' even without US - Türkiye Today",
+          "UN Tribunal Challenges UNRWA Dismissals as Gaza Strikes Continue - cwibc.co.id",
+          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
+          "US-Israel-Iran War Latest Live Updates: Trump Reveals January Funding Window For Military Campaign As Iran Refuses Hormuz Talks, Oil Tankers",
+          "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
+        ]
+      }
+    },
+    {
+      "id": 156,
+      "ts": "2026-11-27T04:51:50.630509+00:00",
+      "market_id": "0x158304bcdd1ce7e8d15b4600e99f857aee5e233b781c2653367d67394d23e113",
+      "question": "Will Hsieh Lung-chieh win the next Tainan Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.0840",
+      "p_blind": "0.1500",
+      "p_blended": "0.0995",
+      "confidence": "0.7500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
+        "base_rate": 0.1,
+        "bull_case": "Potential late surge in local support or shifting political dynamics in Tainan.",
+        "bear_case": "Incumbent party dominance and lack of prominent frontrunner status for Hsieh Lung-chieh in recent polling.",
+        "summary_de": "Hsieh Lung-chieh hat angesichts der starken politischen Dominanz der regierenden Partei in Tainan geringe Gewinnchancen.",
+        "news_used": [
+          "Notes from Central Taiwan: The old is new again: Storm over solar - Taipei Times"
+        ]
+      }
+    },
     {
       "id": 155,
       "ts": "2026-11-27T04:46:33.551965+00:00",
@@ -1774,7 +1846,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T04:50:46.647791+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung auf präzise Definitionen und offizielle Bestätigungen des Waffenstillstandsstatus zwischen Israel und Iran bis zum Fristende.",
@@ -1837,7 +1909,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:35:44.036337+00:00",
+      "last_checked_ts": "2026-11-27T04:50:46.063225+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1930,7 +2002,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:35:43.117603+00:00",
+      "last_checked_ts": "2026-11-27T04:50:45.131670+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -2019,7 +2091,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:40:43.313072+00:00",
+      "last_checked_ts": "2026-11-27T04:50:47.377545+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI Crude Oil hits $90 at any point during November 2026 based on standard market data.",
@@ -2088,7 +2160,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:40:43.662113+00:00",
+      "last_checked_ts": "2026-11-27T04:50:47.996613+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Kontrakt prüft, ob Bitcoin im November 2026 den Preis von $62.500 erreicht.",
@@ -2179,7 +2251,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:40:43.215121+00:00",
+      "last_checked_ts": "2026-11-27T04:50:47.211863+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
@@ -2208,7 +2280,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:40:43.662113+00:00",
+      "last_checked_ts": "2026-11-27T04:50:47.996613+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on standard Bitcoin price hitting the $62,500 threshold before the end of November UTC.",
@@ -2339,7 +2411,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:35:43.664378+00:00",
+      "last_checked_ts": "2026-11-27T04:50:45.717188+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2389,75 +2461,29 @@
           "Fed Beige Book Shows Hot US Economy With Modest Price Growth And Rising Wage Pressure - TradingView"
         ]
       }
-    },
-    {
-      "id": 132,
-      "ts": "2026-11-26T23:11:28.076626+00:00",
-      "market_id": "0xe232f2c2d14a5ab8275e34cbc068944206df7fa382c279fca0745c8dd0522e0e",
-      "question": "Will Ho Hsin-chun win the next Taichung Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.2005",
-      "p_blind": "0.4200",
-      "p_blended": "0.2756",
-      "confidence": "0.7500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0786",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:45:37.549569+00:00",
-      "reasoning": {
-        "model": "gemini-3.1-flash-lite",
-        "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
-        "base_rate": 0.45,
-        "bull_case": "Ho Hsin-chun benefits from strong DPP party mobilization and high-profile endorsements from figures like Tsai Ing-wen.",
-        "bear_case": "Recent KMT-led conflict-of-interest allegations may alienate swing voters and dampen turnout in the competitive Taichung district.",
-        "summary_de": "Trotz prominenter Unterstützung durch die DPP belasten aktuelle Vorwürfe wegen Interessenkonflikten die Wahlchancen von Ho Hsin-chun in einem hart umkämpften Umfeld.",
-        "news_used": [
-          "KMT presses DPP's Ho Hsin-chun in Taichung over conflict-of-interest allegations - Taiwan News",
-          "Tsai campaigns for Ho Hsin-chun in Taichung - Taiwan News"
-        ]
-      }
-    },
-    {
-      "id": 131,
-      "ts": "2026-11-26T22:51:44.891726+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8350",
-      "p_blind": "0.3000",
-      "p_blended": "0.6838",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.1562",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:45:37.220401+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
-        "base_rate": 0.35,
-        "bull_case": "International pressure and mutual deterrence may keep both sides from escalating back into direct military conflict through mid-December.",
-        "bear_case": "Recent reports indicate Israeli military readiness to strike Iran at any moment, signaling high fragility and a potential breakdown of the truce.",
-        "summary_de": "Trotz eines bestehenden Waffenstillstands bleibt das Risiko eines israelischen Schlags gegen den Iran hoch, weshalb ein Fortbestehen bis zum 15. Dezember unwahrscheinlich erscheint.",
-        "news_used": [
-          "Red Sea shipping crisis explained: Suez lost $7bn in 2024 - DNE Africa",
-          "Israeli army says it's ready to strike Iran 'at any moment,' even without US - Türkiye Today",
-          "Israeli Attacks Kill Nine Palestinians Across Gaza, Including an Education Ministry Official and His Wife - Countercurrents.org",
-          "UN Tribunal Challenges UNRWA Dismissals as Gaza Strikes Continue - cwibc.co.id",
-          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
-          "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 26,
+      "ts": "2026-11-27T04:51:52.816749+00:00",
+      "client_order_id": "psb-20261127-045152-3a0c86d7d9-buy-n-a1f707",
+      "order_id": "1734007",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.16",
+      "quantity": "3117.58",
+      "notional_usd": "498.81",
+      "est_fee_usd": "0",
+      "edge_net": "0.1951",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Aufgrund anhaltender militärischer Drohungen und fortwährender Spannungen zwischen Israel und dem Iran ist ein Fortbestehen des Waffenstillstands bis zum 15. Dezember gefährdet."
+    },
     {
       "id": 25,
       "ts": "2026-11-27T04:46:32.390773+00:00",
@@ -2961,6 +2987,18 @@
   ],
   "recent_runs": [
     {
+      "id": 194,
+      "ts": "2026-11-27T04:51:52.819412+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1188,
+      "candidates_found": 25,
+      "llm_calls": 2,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 69.85,
+      "errors": []
+    },
+    {
       "id": 193,
       "ts": "2026-11-27T04:46:33.554160+00:00",
       "dry_run": 0,
@@ -3186,18 +3224,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 58.86,
-      "errors": []
-    },
-    {
-      "id": 174,
-      "ts": "2026-11-27T03:11:29.957769+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1111,
-      "candidates_found": 32,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 52.05,
       "errors": []
     }
   ]
