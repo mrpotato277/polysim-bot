@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T11:06:36.375160+00:00",
+  "generated_at": "2026-11-27T11:11:45.337599+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,29 +11,29 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9683.28,
-    "reconciled_equity_usd": 9407.83,
+    "equity_usd": 9640.71,
+    "reconciled_equity_usd": 9365.26,
     "equity_discrepancy_usd": 275.45,
-    "cash_usd": 4897.24,
-    "positions_value_usd": 4510.59,
-    "deployed_pct": 46.58,
-    "total_pnl_usd": -316.72,
-    "total_pnl_pct": -3.17,
-    "unrealized_pnl_usd": -286.02,
-    "total_trades": 288,
-    "win_rate_pct": 50.0,
+    "cash_usd": 4955.45,
+    "positions_value_usd": 4409.81,
+    "deployed_pct": 45.74,
+    "total_pnl_usd": -359.29,
+    "total_pnl_pct": -3.59,
+    "unrealized_pnl_usd": -276.03,
+    "total_trades": 289,
+    "win_rate_pct": 33.3,
     "max_drawdown_pct": -5.76,
     "brier_score": 0.1183,
     "brier_resolved_count": 2,
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 189,
+    "total_forecasts": 192,
     "circuit_breaker_active": false
   },
   "category_exposure": {
     "politics": 2195.65,
-    "crypto": 1203.08,
+    "crypto": 1102.3,
     "geopolitics": 664.17,
     "markets": 447.69
   },
@@ -2111,6 +2111,13 @@
       "cash": 4897.24,
       "deployed_pct": 46.58,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T11:11:44.894194+00:00",
+      "equity": 9640.71,
+      "cash": 4955.45,
+      "deployed_pct": 45.74,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2136,9 +2143,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.11,
-      "current_value": 534.64,
-      "unrealized_pnl": -229.17,
+      "current_price": 0.105,
+      "current_value": 510.34,
+      "unrealized_pnl": -253.47,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2190,21 +2197,6 @@
       "rationale": "Da Lai Jui-lung kein führender Favorit in diesem Wahlrennen ist, liegt die Wahrscheinlichkeit eines Sieges sehr niedrig."
     },
     {
-      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
-      "question": "Will Bitcoin reach $62,500 in November?",
-      "category": "crypto",
-      "outcome": "No",
-      "quantity": 217.19,
-      "avg_entry_price": 0.51,
-      "current_price": 0.275,
-      "current_value": 59.73,
-      "unrealized_pnl": -51.04,
-      "p_yes": 0.827,
-      "p_blended": 0.173,
-      "edge_net": 0.007,
-      "rationale": "Da Bitcoin nahe der Marke von 61.783 USD handelt und nur noch ein minimaler Anstieg von rund 1,2 Prozent für das Erreichen von 62.500 USD im November nötig ist, steht die Wahrscheinlichkeit für ein Erreichen gut."
-    },
-    {
       "market_id": "0xbf7a9da08326512f76129d4accf9f7d852dbf1cb7dd2c512479ff40c872f5659",
       "question": "Will Chiang Wan-an win the next Taipei Mayor election?",
       "category": "politics",
@@ -2226,13 +2218,13 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.545,
-      "current_value": 608.71,
-      "unrealized_pnl": 27.92,
-      "p_yes": 0.9405,
-      "p_blended": 0.9405,
-      "edge_net": 0.418,
-      "rationale": "Da Bitcoin im Laufe des Monats November nachweislich bereits unter 60.000 USD gefallen ist, wird der Kontrakt mit an Sicherheit grenzender Wahrscheinlichkeit mit Ja (YES) abrechnen."
+      "current_price": 0.53,
+      "current_value": 591.96,
+      "unrealized_pnl": 11.17,
+      "p_yes": 0.8439,
+      "p_blended": 0.8439,
+      "edge_net": 0.3014,
+      "rationale": "Da aktuelle Marktdaten und Berichte bestätigen, dass Bitcoin im November bereits unter 60.000 USD gefallen ist, steht die Wahrscheinlichkeit für ein Ja-Ergebnis extrem hoch."
     },
     {
       "market_id": "0xe232f2c2d14a5ab8275e34cbc068944206df7fa382c279fca0745c8dd0522e0e",
@@ -2266,6 +2258,100 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 192,
+      "ts": "2026-11-27T11:11:44.892562+00:00",
+      "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
+      "question": "Will Bitcoin reach $65,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.2250",
+      "p_blind": "0.3200",
+      "p_blended": "0.2491",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0291",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Bitcoin hits $65,000 in November, resolving based on standard exchange spot prices before December 1, 2026.",
+        "base_rate": 0.28,
+        "bull_case": "Bitcoin needs a ~5.6% move in about 3.7 days, which is within historical multi-day crypto volatility ranges given fat tails and potential sudden momentum breakouts.",
+        "bear_case": "Current spot is around $61,531 with low recent volatility and limited time left in November, making a nearly 6% upward surge unlikely without a specific fresh macro catalyst.",
+        "summary_de": "Bitcoin müsste in den verbleibenden Tagen des Novembers noch etwa 5,6 Prozent steigen, was angesichts der aktuellen Volatilität und des engen Zeitfensters möglich, aber eher unwahrscheinlich ist.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $61,531.50 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $65,000.00: +5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.7d (1-sigma move = +/-4.9%, distance = 1.12 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 191,
+      "ts": "2026-11-27T11:11:43.408010+00:00",
+      "market_id": "0x215898981a482d275f91f8f9523f9cf7d582be172557e0c953f265a54936878a",
+      "question": "Will Bitcoin reach $67,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0685",
+      "p_blind": "0.0700",
+      "p_blended": "0.0689",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price hit contract based on exchange spot feeds through November 30.",
+        "base_rate": 0.08,
+        "bull_case": "High crypto volatility could spark a sudden squeeze of nearly 10% within the remaining days of November.",
+        "bear_case": "Bitcoin is currently trading around $61,531, requiring a swift ~9.7% rally in just a few days with no major positive catalysts in sight.",
+        "summary_de": "Bitcoin müsste in den verbleibenden Tagen des Monats noch um knapp zehn Prozent steigen, was angesichts der aktuellen Marktlage und des geringen verbleibenden Zeitfensters unwahrscheinlich ist.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $61,531.50 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $67,500.00: +9.7% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.7d (1-sigma move = +/-4.9%, distance = 1.89 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 190,
+      "ts": "2026-11-27T11:11:41.180866+00:00",
+      "market_id": "0xcb123b5f454942fd31017b662207a0b30970b21c1667dbd22972e095192eb2bb",
+      "question": "Will Bitcoin dip to $60,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.5300",
+      "p_blind": "0.9500",
+      "p_blended": "0.8439",
+      "confidence": "0.9000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.3014",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Bitcoin will dip to $60,000 in November based on standard spot prices.",
+        "base_rate": 0.85,
+        "bull_case": "News reports already indicate that Bitcoin has dipped below $60,000 recently during market pullbacks within November, meeting the threshold.",
+        "bear_case": "If exchange feeds used for resolution did not officially record a trade at or below $60,000 on certain spot indexes, the outcome could theoretically be contested, though current data confirms recent lows below this level.",
+        "summary_de": "Da aktuelle Marktdaten und Berichte bestätigen, dass Bitcoin im November bereits unter 60.000 USD gefallen ist, steht die Wahrscheinlichkeit für ein Ja-Ergebnis extrem hoch.",
+        "news_used": [
+          "Bitcoin dips below $62,000 on Binance, hitting $61,786 amid slight market pullback - Pluang",
+          "Large Bitcoin holders accumulate as price dips below US$60,000 - InvestorDaily",
+          "Bitcoin dips below $60,000, falling 0.78% to $5... - Pluang",
+          "Galaxy revises Bitcoin outlook, sets $58,525 as key level - ForkLog",
+          "Bitcoin rebounds above $60,000 amid $143M short liquidations despite ETF outflows - Pluang",
+          "Could Solana Fall to $60 if Bitcoin Loses $58,000? - 24/7 Wall St."
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $61,531.50 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $60,000.00: -2.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.7d (1-sigma move = +/-4.9%, distance = 0.51 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 189,
       "ts": "2026-11-27T10:56:17.325053+00:00",
@@ -2319,7 +2405,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T11:10:38.105756+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official electoral results for which party wins the most seats in the Spanish general election.",
@@ -2354,7 +2440,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:32.693297+00:00",
+      "last_checked_ts": "2026-11-27T11:10:40.019844+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract refers to a specific Test Match; news headlines regarding political elections and rugby are irrelevant noise.",
@@ -2425,7 +2511,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:32.566913+00:00",
+      "last_checked_ts": "2026-11-27T11:10:39.847364+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election occurring near the deadline.",
@@ -2495,7 +2581,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
+      "last_checked_ts": "2026-11-27T11:10:38.105756+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on official election results showing which party won the most seats.",
@@ -2558,7 +2644,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
+      "last_checked_ts": "2026-11-27T11:10:38.105756+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether PSOE will win the most seats in the 2026 Spanish general election, which resolves based on official electoral results.",
@@ -2593,7 +2679,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:32.788846+00:00",
+      "last_checked_ts": "2026-11-27T11:10:40.219558+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A ceasefire must explicitly remain in effect through December 15, 2026 without a major collapse or resumption of direct military hostilities.",
@@ -2628,7 +2714,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:31.865590+00:00",
+      "last_checked_ts": "2026-11-27T11:10:38.915128+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob die Fed die Zinsen nach der Dezember-Sitzung 2026 um 25 bps anhebt.",
@@ -2692,7 +2778,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:31.865590+00:00",
+      "last_checked_ts": "2026-11-27T11:10:38.915128+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if the Federal Reserve increases interest rates by 25 bps after the December 2026 FOMC meeting.",
@@ -2727,7 +2813,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
+      "last_checked_ts": "2026-11-27T11:10:38.105756+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of which party wins the most seats in the 2026 Spanish general election.",
@@ -2865,7 +2951,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:32.788846+00:00",
+      "last_checked_ts": "2026-11-27T11:10:40.219558+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through December 15, 2026; violation or renewal terms must be clearly defined.",
@@ -2931,7 +3017,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
+      "last_checked_ts": "2026-11-27T11:10:38.105756+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the Spanish general election.",
@@ -2966,7 +3052,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:32.892160+00:00",
+      "last_checked_ts": "2026-11-27T11:10:40.408173+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which involves defining whether tacit understandings or formal agreements qualify.",
@@ -3005,107 +3091,29 @@
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $61,645.30 (24h range: $59,850.00 - $61,925.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $64,000.00: +3.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.3%, distance = 0.86 sigma): Gaussian one-touch ('dip/reach/hit"
       }
-    },
-    {
-      "id": 167,
-      "ts": "2026-11-27T06:41:46.878408+00:00",
-      "market_id": "0x67907019102bb5b92fe70a966e259e5627d4f1280e4860e0991605d71a8e5afb",
-      "question": "Will Bitcoin reach $66,000 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.0945",
-      "p_blind": "0.1200",
-      "p_blended": "0.1014",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T11:05:41.056224+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract based on major exchange feeds.",
-        "base_rate": 0.15,
-        "bull_case": "Cryptocurrency markets exhibit fat tails and rapid momentum spikes, meaning a 7.1% rally over the remaining weekend days is entirely within historical crypto volatility parameters.",
-        "bear_case": "Bitcoin is currently trading near $61,616 with limited immediate macro catalysts, requiring a swift break above resistance to reach $66,000 within a tight multi-day window.",
-        "summary_de": "Bitcoin müsste in kurzer Zeit um über sieben Prozent steigen, was angesichts der aktuellen Volatilität und des Abstands zur Marke ein eher unwahrscheinliches Szenario bleibt.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $61,616.10 (24h range: $59,850.00 - $61,925.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $66,000.00: +7.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.3%, distance = 1.58 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 166,
-      "ts": "2026-11-27T06:41:45.368616+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8350",
-      "p_blind": "0.3500",
-      "p_blended": "0.6929",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "-0.1371",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:32.788846+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Es muss geprüft werden, ob vereinbarte Waffenruhen über die Frist hinaus formell anhalten oder ob Zwischenfälle als Bruch gewertet werden.",
-        "base_rate": 0.4,
-        "bull_case": "Trotz anhaltender Spannungen und begrenzter regionaler Zwischenfälle halten beide Seiten ein grundsätzliches Niveau der Deeskalation aufrecht.",
-        "bear_case": "Militärische Drohungen, wie die jüngsten Aussagen der israelischen Armee zur Bereitschaft für Schläge gegen Iran, deuten auf ein hohes Risiko einer schnellen Eskalation vor dem 15. Dezember hin.",
-        "summary_de": "Aufgrund der fortbestehenden militärischen Drohungen und anhaltenden regionalen Konflikte ist die Wahrscheinlichkeit eines vollständigen Fortbestehens der Waffenruhe bis zum 15. Dezember eher gering.",
-        "news_used": [
-          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English",
-          "Red Sea shipping crisis explained: Suez lost $7bn in 2024 - DNE Africa",
-          "Israeli army says it's ready to strike Iran 'at any moment,' even without US - Türkiye Today",
-          "UN Tribunal Challenges UNRWA Dismissals as Gaza Strikes Continue - cwibc.co.id",
-          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
-          "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
-        ]
-      }
-    },
-    {
-      "id": 165,
-      "ts": "2026-11-27T06:36:13.140448+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.3500",
-      "p_blended": "0.2970",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0470",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:55:31.539620+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Die Frage bezieht sich direkt darauf, ob die PSOE bei der spanischen Parlamentswahl 2026 die meisten Sitze gewinnt.",
-        "base_rate": 0.45,
-        "bull_case": "Pedro Sánchez und die PSOE könnten in der Schlussphase mobilisieren und von Wirtschaftsthemen wie bezahlbarem Wohnraum profitieren.",
-        "bear_case": "Aktuelle Umfragen vor der Wahl zeigen eine klare Mehrheit für die konservative PP und Vox, was die Chancen der PSOE auf die meisten Sitze mindert.",
-        "summary_de": "Aktuelle Umfragen deuten auf eine Führung der konservativen Opposition hin, wodurch die Wahrscheinlichkeit eines PSOE-Sieges bei den Sitzen geringer eingeschätzt wird.",
-        "news_used": [
-          "Could housing decide Spain's general election?",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "How to watch the Spanish election like a pro - POLITICO.eu",
-          "Spanish elections: What you need to know and what's at stake - BBC",
-          "Spain election polls: PP and Vox clear majority in final surveys - Il Politico Web"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 40,
+      "ts": "2026-11-27T11:11:42.123727+00:00",
+      "client_order_id": "psb-20261127-111141-cb123b5f45-buy-y-3a4bc4",
+      "order_id": "1734289",
+      "market_id": "0xcb123b5f454942fd31017b662207a0b30970b21c1667dbd22972e095192eb2bb",
+      "question": "Will Bitcoin dip to $60,000 in November?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "marketable_limit",
+      "price": "0.54",
+      "quantity": "153.49",
+      "notional_usd": "82.88",
+      "est_fee_usd": "0.36",
+      "edge_net": "0.3014",
+      "strategy_type": "news_lag",
+      "status": "FILLED",
+      "dry_run": 0,
+      "rationale": "[news_lag] Da aktuelle Marktdaten und Berichte bestätigen, dass Bitcoin im November bereits unter 60.000 USD gefallen ist, steht die Wahrscheinlichkeit für ein Ja-Ergebnis extrem hoch."
+    },
     {
       "id": 39,
       "ts": "2026-11-27T11:06:32.248368+00:00",
@@ -3889,6 +3897,18 @@
   ],
   "recent_runs": [
     {
+      "id": 269,
+      "ts": "2026-11-27T11:11:44.895677+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1130,
+      "candidates_found": 17,
+      "llm_calls": 3,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 69.07,
+      "errors": []
+    },
+    {
       "id": 268,
       "ts": "2026-11-27T11:06:35.934926+00:00",
       "dry_run": 0,
@@ -4117,18 +4137,6 @@
       "errors": [
         "Forecaster error for 0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062: All Gemini models failed for forecast: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
       ]
-    },
-    {
-      "id": 249,
-      "ts": "2026-11-27T09:31:39.229434+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1131,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 51.06,
-      "errors": []
     }
   ]
 }
