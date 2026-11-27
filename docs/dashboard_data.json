@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T23:32:09.554620+00:00",
+  "generated_at": "2026-11-27T23:36:14.383070+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10782.28,
-    "reconciled_equity_usd": 10782.28,
+    "equity_usd": 10734.57,
+    "reconciled_equity_usd": 10734.57,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4701.97,
-    "deployed_pct": 43.61,
-    "total_pnl_usd": 782.28,
-    "total_pnl_pct": 7.82,
-    "unrealized_pnl_usd": 324.3,
+    "positions_value_usd": 4654.26,
+    "deployed_pct": 43.36,
+    "total_pnl_usd": 734.57,
+    "total_pnl_pct": 7.35,
+    "unrealized_pnl_usd": 276.59,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 298,
+    "total_forecasts": 300,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2563.66,
-    "crypto": 1288.0,
+    "politics": 2564.55,
+    "crypto": 1239.4,
     "geopolitics": 664.17,
     "markets": 186.14
   },
@@ -3212,6 +3212,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.61,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T23:36:14.132721+00:00",
+      "equity": 10734.57,
+      "cash": 6080.31,
+      "deployed_pct": 43.36,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3237,9 +3244,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.265,
-      "current_value": 1288.0,
-      "unrealized_pnl": 524.19,
+      "current_price": 0.255,
+      "current_value": 1239.4,
+      "unrealized_pnl": 475.59,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3267,13 +3274,13 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1375,
-      "current_value": 244.44,
-      "unrealized_pnl": 24.0,
-      "p_yes": 0.2261,
-      "p_blended": 0.2261,
-      "edge_net": 0.0881,
-      "rationale": "Angesichts der anstehenden Parlamentswahlen und umstrittener Umfragewerte bleibt Pedro Sánchez' Verbleib im Amt unsicher, jedoch besteht eine reale Chance auf eine erneute Koalitionsbildung."
+      "current_price": 0.138,
+      "current_value": 245.33,
+      "unrealized_pnl": 24.89,
+      "p_yes": 0.2415,
+      "p_blended": 0.2415,
+      "edge_net": 0.1035,
+      "rationale": "Pedro Sánchez kämpft in einer sehr knappen Wahl gegen den konservativen Trend, wobei seine Chancen auf eine Regierungsbildung stark von Koalitionsverhandlungen abhängen."
     },
     {
       "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
@@ -3352,6 +3359,76 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 300,
+      "ts": "2026-11-27T23:36:14.131235+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2150",
+      "p_blind": "0.4200",
+      "p_blended": "0.2603",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0503",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Das Markt-Ergebnis hängt vom klaren Gewinner des Test-Matches zwischen Neuseeland und Indien ab.",
+        "base_rate": 0.45,
+        "bull_case": "Neuseeland hat starke Heimvorteile und eine kompetitive Test-Mannschaft.",
+        "bear_case": "Indien verfügt über ein weltklasse Team und gilt historisch oft als Favorit gegen Neuseeland.",
+        "summary_de": "Indien geht als statistischer Favorit in das Test-Match gegen Neuseeland, weshalb die Siegchance für Neuseeland unter 50 Prozent liegt.",
+        "news_used": [
+          "Australia leaves Lyon out of squad for New Zealand series - UA.NEWS",
+          "Nathan Lyon dropped for Australia's New Zealand Test series - Mezha.net",
+          "The giant turtles travelling 12,000km to New Zealand need our help - RNZ",
+          "Nathan Lyon dropped by Australia for their first Test against New Zealand - Radio Royal",
+          "Lyon dropped from Australia's test squad v New Zealand - Reuters",
+          "Selection shock as Aussies name squad for first New Zealand Test - ICC"
+        ]
+      }
+    },
+    {
+      "id": 299,
+      "ts": "2026-11-27T23:36:13.142555+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1385",
+      "p_blind": "0.4500",
+      "p_blended": "0.2415",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1035",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, basierend auf den aktuellen Wahlen und Regierungsbildungen.",
+        "base_rate": 0.4,
+        "bull_case": "Sánchez zeigt historisches Durchhaltevermögen, mobilisiert spät stark und hat Koalitionsoptionen mit linken und regionalen Parteien.",
+        "bear_case": "Umfragen deuten auf eine starke Position der Rechten hin, und die Regierungsbildung könnte an fehlenden Mehrheiten scheitern.",
+        "summary_de": "Pedro Sánchez kämpft in einer sehr knappen Wahl gegen den konservativen Trend, wobei seine Chancen auf eine Regierungsbildung stark von Koalitionsverhandlungen abhängen.",
+        "news_used": [
+          "Spain Elections - WV News",
+          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
+          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
+          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
+          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
+          "Spanish PM and rivals rally supporters in final pitch for votes"
+        ]
+      }
+    },
     {
       "id": 298,
       "ts": "2026-11-27T23:32:09.158846+00:00",
@@ -4154,67 +4231,6 @@
           "Vox leader Abascal poised as kingmaker in Spain’s election - Crypto Briefing",
           "Spain's far-right Vox leader Abascal nears power as election kingmaker - Reuters"
         ]
-      }
-    },
-    {
-      "id": 275,
-      "ts": "2026-11-27T21:46:32.372994+00:00",
-      "market_id": "0x51cb05f3d4af8985141a29b81dcfdeec5081c4edc36640579823118ae91e516d",
-      "question": "Will Ethereum dip to $1,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.0985",
-      "p_blind": "0.1200",
-      "p_blended": "0.1043",
-      "confidence": "0.7500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:25:33.507486+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Bestimmt anhand des Preises von Ethereum im November 2026 auf den gängigen Spot-Börsen.",
-        "base_rate": 0.15,
-        "bull_case": "Krypto-Märkte weisen fette Ränder und hohe Volatilität auf; ein plötzlicher makroökonomischer Schock oder Abverkauf könnte Ethereum um knapp 10 Prozent auf 1.500 US-Dollar drücken.",
-        "bear_case": "ETH hält sich stabil über 1.630 US-Dollar und die verbleibende Zeit bis zum Monatsende (November 2026) ist extrem kurz, wodurch die Wahrscheinlichkeit eines solchen Rücksetzers sinkt.",
-        "summary_de": "Ethereum notiert nahe 1.660 US-Dollar und die verbleibende Zeit im November ist sehr kurz, weshalb ein Rücksetzer auf 1.500 US-Dollar trotz hoher Volatilität unwahrscheinlich ist.",
-        "news_used": [
-          "Ethereum Glamsterdam Upgrade Cleared For December 15 Test: Will ETH Rally Like After Pectra? - TalkMarkets - Howl.Link",
-          "Ethereum Glamsterdam Upgrade Set for December Test - Wisevoter"
-        ],
-        "market_data": "ETH/USD live spot (Kraken): $1,662.90 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,500.00: -9.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-6.3%, distance = 1.64 sigma): Gaussian one-touch ('dip/reach/hit') b"
-      }
-    },
-    {
-      "id": 274,
-      "ts": "2026-11-27T21:06:20.529634+00:00",
-      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
-      "question": "Will Bitcoin dip to $52,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.0405",
-      "p_blind": "0.0100",
-      "p_blended": "0.0263",
-      "confidence": "0.9000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0167",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:25:32.838757+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 52.500 USD berührt; die Kursdefinition ist klar.",
-        "base_rate": 0.02,
-        "bull_case": "Fat-Tail-Risiken und plötzliche makroökonomische Schocks könnten vor Monatsende einen starken Rücksetzer auslösen.",
-        "bear_case": "Der aktuelle Kurs liegt bei ca. 59.740 USD, sodass für einen Dip auf 52.500 USD ein Rückgang von über 12 % innerhalb weniger Tage erforderlich wäre, was bei der gering verbleibenden Zeit statistisch sehr unwahrscheinlich ist.",
-        "summary_de": "Da der Bitcoin-Kurs aktuell weit über der Zielmarke von 52.500 USD liegt und nur noch wenige Tage im November verbleiben, ist die Wahrscheinlichkeit eines solchen Einbruchs äußerst gering.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $59,740.50 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $52,500.00: -12.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-4.5%, distance = 2.85 sigma): Gaussian one-touch ('dip/reach/hi"
       }
     }
   ],
@@ -5162,6 +5178,18 @@
   ],
   "recent_runs": [
     {
+      "id": 416,
+      "ts": "2026-11-27T23:36:14.133526+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1170,
+      "candidates_found": 22,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 41.16,
+      "errors": []
+    },
+    {
       "id": 415,
       "ts": "2026-11-27T23:32:09.166428+00:00",
       "dry_run": 0,
@@ -5387,18 +5415,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 60.07,
-      "errors": []
-    },
-    {
-      "id": 396,
-      "ts": "2026-11-27T21:56:21.896164+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1178,
-      "candidates_found": 20,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 48.53,
       "errors": []
     }
   ]
