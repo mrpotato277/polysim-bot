@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:51:23.769333+00:00",
+  "generated_at": "2026-11-27T07:56:10.051116+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9765.63,
-    "reconciled_equity_usd": 8830.9,
+    "equity_usd": 9683.2,
+    "reconciled_equity_usd": 8748.47,
     "equity_discrepancy_usd": 934.73,
     "cash_usd": 5311.07,
-    "positions_value_usd": 3519.83,
-    "deployed_pct": 36.04,
-    "total_pnl_usd": -234.37,
-    "total_pnl_pct": -2.34,
-    "unrealized_pnl_usd": -293.58,
+    "positions_value_usd": 3437.4,
+    "deployed_pct": 35.5,
+    "total_pnl_usd": -316.8,
+    "total_pnl_pct": -3.17,
+    "unrealized_pnl_usd": -376.01,
     "total_trades": 226,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -4.89,
@@ -33,7 +33,7 @@
   },
   "category_exposure": {
     "politics": 2179.84,
-    "crypto": 1339.99
+    "crypto": 1257.56
   },
   "equity_curve": [
     {
@@ -1812,6 +1812,13 @@
       "cash": 5311.07,
       "deployed_pct": 36.04,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T07:56:09.754125+00:00",
+      "equity": 9683.2,
+      "cash": 5311.07,
+      "deployed_pct": 35.5,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1837,9 +1844,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.125,
-      "current_value": 607.55,
-      "unrealized_pnl": -156.26,
+      "current_price": 0.115,
+      "current_value": 558.94,
+      "unrealized_pnl": -204.87,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -1882,9 +1889,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.235,
-      "current_value": 134.9,
-      "unrealized_pnl": -157.86,
+      "current_price": 0.215,
+      "current_value": 123.42,
+      "unrealized_pnl": -169.34,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1912,9 +1919,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.535,
-      "current_value": 597.54,
-      "unrealized_pnl": 16.75,
+      "current_price": 0.515,
+      "current_value": 575.2,
+      "unrealized_pnl": -5.59,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -2055,7 +2062,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
+      "last_checked_ts": "2026-11-27T07:55:36.223950+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the Spanish general election.",
@@ -2118,7 +2125,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:39.740909+00:00",
+      "last_checked_ts": "2026-11-27T07:55:35.375084+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against standard crypto spot price feeds during the specified dates.",
@@ -2147,7 +2154,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:39.949624+00:00",
+      "last_checked_ts": "2026-11-27T07:55:35.579849+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2211,7 +2218,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
+      "last_checked_ts": "2026-11-27T07:55:36.223950+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich direkt darauf, ob die PSOE bei der spanischen Parlamentswahl 2026 die meisten Sitze gewinnt.",
@@ -2345,7 +2352,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
+      "last_checked_ts": "2026-11-27T07:55:36.223950+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -2437,7 +2444,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:40.651633+00:00",
+      "last_checked_ts": "2026-11-27T07:55:36.326041+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the Federal Reserve makes no change to interest rates after the December 2026 FOMC meeting.",
@@ -2626,7 +2633,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:39.466171+00:00",
+      "last_checked_ts": "2026-11-27T07:55:35.171760+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung auf präzise Definitionen und offizielle Bestätigungen des Waffenstillstandsstatus zwischen Israel und Iran bis zum Fristende.",
@@ -2718,7 +2725,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
+      "last_checked_ts": "2026-11-27T07:55:36.223950+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count of the 2026 Spanish general election as reported by official electoral authorities.",
@@ -3359,6 +3366,18 @@
   ],
   "recent_runs": [
     {
+      "id": 230,
+      "ts": "2026-11-27T07:56:09.755286+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1163,
+      "candidates_found": 20,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 36.0,
+      "errors": []
+    },
+    {
       "id": 229,
       "ts": "2026-11-27T07:51:23.389094+00:00",
       "dry_run": 0,
@@ -3584,18 +3603,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 49.62,
-      "errors": []
-    },
-    {
-      "id": 210,
-      "ts": "2026-11-27T06:11:54.433649+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1132,
-      "candidates_found": 23,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 62.49,
       "errors": []
     }
   ]
