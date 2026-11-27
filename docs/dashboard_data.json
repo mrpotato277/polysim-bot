@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T14:01:44.116406+00:00",
+  "generated_at": "2026-11-27T14:06:35.293360+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9423.58,
-    "reconciled_equity_usd": 9423.58,
+    "equity_usd": 9436.98,
+    "reconciled_equity_usd": 9436.98,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4332.49,
-    "deployed_pct": 45.97,
-    "total_pnl_usd": -576.42,
-    "total_pnl_pct": -5.76,
-    "unrealized_pnl_usd": -492.8,
+    "positions_value_usd": 4345.89,
+    "deployed_pct": 46.05,
+    "total_pnl_usd": -563.02,
+    "total_pnl_pct": -5.63,
+    "unrealized_pnl_usd": -479.4,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.87,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 213,
+    "total_forecasts": 214,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2210.74,
+    "politics": 2224.14,
     "crypto": 1159.18,
     "geopolitics": 621.32,
     "markets": 341.25
@@ -2367,6 +2367,13 @@
       "cash": 5091.09,
       "deployed_pct": 45.97,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T14:06:34.935290+00:00",
+      "equity": 9436.98,
+      "cash": 5091.09,
+      "deployed_pct": 46.05,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2422,9 +2429,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1065,
-      "current_value": 189.33,
-      "unrealized_pnl": -31.11,
+      "current_price": 0.1045,
+      "current_value": 185.77,
+      "unrealized_pnl": -34.67,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2452,9 +2459,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.6,
-      "current_value": 678.44,
-      "unrealized_pnl": -6.97,
+      "current_price": 0.615,
+      "current_value": 695.4,
+      "unrealized_pnl": 9.99,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2507,6 +2514,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 214,
+      "ts": "2026-11-27T14:06:34.932895+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4800",
+      "p_blended": "0.3418",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0918",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election.",
+        "base_rate": 0.45,
+        "bull_case": "PSOE holds incumbent advantages and maintains strong mobilization among progressive voters amidst a tense political climate.",
+        "bear_case": "Polling leading up to the election indicates a strong challenge from the conservative Partido Popular (PP), which could secure more seats.",
+        "summary_de": "Da die spanischen Wahlen unmittelbar bevorstehen, bleibt das Rennen zwischen PSOE und der Opposition extrem knapp, wobei Umfragen einen leicht Vorteil für den Hauptkonkurrenten zeigen.",
+        "news_used": [
+          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
+          "Spanish election: What you need to know and what's at stake - BBC",
+          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı",
+          "Spain’s Snap Election: How Voting Works, Key Parties and Issues - SSBCrack",
+          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera"
+        ]
+      }
+    },
     {
       "id": 213,
       "ts": "2026-11-27T13:51:39.467374+00:00",
@@ -2596,7 +2638,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2631,7 +2673,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.712071+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.667856+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob es sich um einen offiziellen Waffenstillstand zwischen Israel und Iran direkt handelt oder ob regionale Stellvertreterkonflikte (Gaza/Libanon) einbrechen.",
@@ -2771,7 +2813,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.930770+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.831445+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026; 'effective' requires verifiable implementation rather than merely an agreement.",
@@ -2799,7 +2841,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2834,7 +2876,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2869,7 +2911,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
@@ -2904,7 +2946,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -2939,7 +2981,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test Match cricket between New Zealand and India, resolving based on the official match outcome.",
@@ -2974,7 +3016,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Marktversprechen bezieht sich eindeutig auf den Gewinner des Testspiels zwischen Neuseeland und Indien.",
@@ -3009,7 +3051,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether New Zealand wins the Test match against India.",
@@ -3044,7 +3086,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:47.381535+00:00",
+      "last_checked_ts": "2026-11-27T14:05:40.189299+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition von 'bestätigt' bezüglich eines Software- oder Konfigurationsfehlers durch offizielle Untersuchungsberichte muss eindeutig sein.",
@@ -3075,7 +3117,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:46.467860+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.457621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3146,7 +3188,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:45.973642+00:00",
+      "last_checked_ts": "2026-11-27T14:05:39.110533+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard crypto price touch contract evaluated against defined exchange feeds through November.",
@@ -3175,7 +3217,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:55:34.356208+00:00",
+      "last_checked_ts": "2026-11-27T14:05:41.530863+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin dips to $60,000 in November, resolvable by standard spot exchange pricing.",
@@ -3211,7 +3253,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:50:47.542256+00:00",
+      "last_checked_ts": "2026-11-27T14:05:40.445834+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any point during calendar year 2026.",
@@ -3304,7 +3346,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:55:34.356208+00:00",
+      "last_checked_ts": "2026-11-27T14:05:41.530863+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $60,000 in November based on standard spot prices.",
@@ -3321,42 +3363,6 @@
           "Could Solana Fall to $60 if Bitcoin Loses $58,000? - 24/7 Wall St."
         ],
         "market_data": "BTC/USD live spot (Kraken): $61,531.50 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $60,000.00: -2.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.7d (1-sigma move = +/-4.9%, distance = 0.51 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 189,
-      "ts": "2026-11-27T10:56:17.325053+00:00",
-      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
-      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "markets",
-      "end_date": "2026-12-01T04:59:59.999000+00:00",
-      "market_price": "0.1650",
-      "p_blind": "0.3500",
-      "p_blended": "0.2395",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0795",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T14:00:59.722606+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if WTI crude oil hits $90 at any point during November 2026, expiring December 1.",
-        "base_rate": 0.2,
-        "bull_case": "Middle East tensions, Hormuz risk premiums, and supply fears are pushing prices upward with upcoming OPEC+ meetings, keeping a spike to $90 plausible before month-end.",
-        "bear_case": "Current WTI spot is around $85.71 with only a few days left in November, meaning a sudden spike of over $4 is required against existing structural surplus narratives.",
-        "summary_de": "WTI-Rohöl handelt aktuell nahe 85,71 US-Dollar und benötigt einen raschen Anstieg von rund 4 US-Dollar in den verbleibenden Tagen des Novembers, um die Marke von 90 US-Dollar zu erreichen.",
-        "news_used": [
-          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
-          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
-          "Standard Chartered Oil Needs a New Shock to Fall Further - Crude Oil Prices Today | OilPrice.com",
-          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox",
-          "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo",
-          "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times"
-        ],
-        "market_data": "WTI Crude Oil (CL=F) live reference: 85.71 (prev close: 83.98, +2.06%)."
       }
     }
   ],
@@ -4164,6 +4170,18 @@
   ],
   "recent_runs": [
     {
+      "id": 303,
+      "ts": "2026-11-27T14:06:34.936149+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1153,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 57.86,
+      "errors": []
+    },
+    {
       "id": 302,
       "ts": "2026-11-27T14:01:43.779157+00:00",
       "dry_run": 0,
@@ -4389,18 +4407,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 60.54,
-      "errors": []
-    },
-    {
-      "id": 283,
-      "ts": "2026-11-27T12:26:09.091353+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1139,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 38.75,
       "errors": []
     }
   ]
