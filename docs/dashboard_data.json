@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:36:36.936025+00:00",
+  "generated_at": "2026-11-27T15:41:23.380263+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,18 +11,18 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10812.69,
-    "reconciled_equity_usd": 8908.42,
-    "equity_discrepancy_usd": 1904.27,
+    "equity_usd": 10665.41,
+    "reconciled_equity_usd": 8906.25,
+    "equity_discrepancy_usd": 1759.16,
     "cash_usd": 5681.36,
-    "positions_value_usd": 3227.06,
-    "deployed_pct": 29.85,
-    "total_pnl_usd": 812.69,
-    "total_pnl_pct": 8.13,
-    "unrealized_pnl_usd": -386.8,
+    "positions_value_usd": 3224.89,
+    "deployed_pct": 30.24,
+    "total_pnl_usd": 665.41,
+    "total_pnl_pct": 6.65,
+    "unrealized_pnl_usd": -388.97,
     "total_trades": 297,
     "win_rate_pct": 50.0,
-    "max_drawdown_pct": -12.15,
+    "max_drawdown_pct": -13.34,
     "brier_score": 0.0521,
     "brier_resolved_count": 6,
     "brier_blind_score": 0.0895,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2404.09,
+    "politics": 2417.43,
     "geopolitics": 621.32,
-    "markets": 201.65
+    "markets": 186.14
   },
   "equity_curve": [
     {
@@ -2498,6 +2498,13 @@
       "cash": 5681.36,
       "deployed_pct": 29.85,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T15:41:23.099975+00:00",
+      "equity": 10665.41,
+      "cash": 5681.36,
+      "deployed_pct": 30.24,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2538,9 +2545,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.109,
-      "current_value": 193.77,
-      "unrealized_pnl": -26.67,
+      "current_price": 0.1165,
+      "current_value": 207.11,
+      "unrealized_pnl": -13.33,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2613,9 +2620,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.065,
-      "current_value": 201.65,
-      "unrealized_pnl": -340.19,
+      "current_price": 0.06,
+      "current_value": 186.14,
+      "unrealized_pnl": -355.7,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -2733,7 +2740,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:25:39.645400+00:00",
+      "last_checked_ts": "2026-11-27T15:40:42.029498+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on exchange feeds before the end of November.",
@@ -2762,7 +2769,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:25:39.250420+00:00",
+      "last_checked_ts": "2026-11-27T15:40:41.754628+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -4385,6 +4392,18 @@
   ],
   "recent_runs": [
     {
+      "id": 321,
+      "ts": "2026-11-27T15:41:23.101576+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1176,
+      "candidates_found": 17,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 44.58,
+      "errors": []
+    },
+    {
       "id": 320,
       "ts": "2026-11-27T15:36:36.387917+00:00",
       "dry_run": 0,
@@ -4610,18 +4629,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 46.03,
-      "errors": []
-    },
-    {
-      "id": 301,
-      "ts": "2026-11-27T13:56:14.741188+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1153,
-      "candidates_found": 16,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 42.48,
       "errors": []
     }
   ]
