@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:06:20.908431+00:00",
+  "generated_at": "2026-11-27T21:11:34.453833+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10984.81,
-    "reconciled_equity_usd": 10687.04,
+    "equity_usd": 10924.9,
+    "reconciled_equity_usd": 10627.13,
     "equity_discrepancy_usd": 297.77,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4606.73,
-    "deployed_pct": 41.94,
-    "total_pnl_usd": 984.81,
-    "total_pnl_pct": 9.85,
-    "unrealized_pnl_usd": 454.46,
+    "positions_value_usd": 4546.82,
+    "deployed_pct": 41.62,
+    "total_pnl_usd": 924.9,
+    "total_pnl_pct": 9.25,
+    "unrealized_pnl_usd": 394.55,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2291.58,
-    "crypto": 1433.82,
+    "politics": 2280.28,
+    "crypto": 1385.21,
     "geopolitics": 664.17,
     "markets": 217.16
   },
@@ -2997,6 +2997,13 @@
       "cash": 6080.31,
       "deployed_pct": 41.94,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T21:11:33.724885+00:00",
+      "equity": 10924.9,
+      "cash": 6080.31,
+      "deployed_pct": 41.62,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3022,9 +3029,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.295,
-      "current_value": 1433.82,
-      "unrealized_pnl": 670.01,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3097,9 +3104,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.565,
-      "current_value": 638.86,
-      "unrealized_pnl": -46.55,
+      "current_price": 0.555,
+      "current_value": 627.56,
+      "unrealized_pnl": -57.85,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3168,7 +3175,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3203,7 +3210,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3238,7 +3245,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.220844+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.807376+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -3273,7 +3280,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:31.830684+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.347777+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob der Bitcoin-Preis im November 2026 jemals exakt oder unter $57.500 gefallen ist.",
@@ -3305,7 +3312,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3340,7 +3347,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:50:46.403070+00:00",
+      "last_checked_ts": "2026-11-27T21:10:43.400878+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Vertragsentscheidung hängt vom offiziellen Zinsentscheid der Fed nach dem Dezember-Meeting 2026 ab.",
@@ -3477,7 +3484,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es handelt sich um ein klares Testergebnis zwischen Neuseeland und Indien im Cricket, Rugby oder einer anderen Sportart gemäß offiziellem Spielbericht.",
@@ -3547,7 +3554,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.220844+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.807376+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands zwischen Israel und Iran muss exakt im Sinne der Marktregeln erfüllt sein; unklare Grenzverletzungen oder verdeckte Operationen könnten die Auflösung beeinflussen.",
@@ -3618,7 +3625,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India ending by December 3, 2026.",
@@ -3653,7 +3660,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.339490+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.984338+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which depends on official verification and formal implementation.",
@@ -3681,7 +3688,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test match outcome between New Zealand and India resolving by December 3, 2026.",
@@ -3716,7 +3723,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Testergebnis hängt vom offiziellen Ausgang des Test Matches zwischen Neuseeland und Indien ab.",
@@ -3751,7 +3758,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.220844+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.807376+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Uncertainty regarding exact definition of ceasefire continuity and formal violations between Israel and Iran.",
@@ -3820,7 +3827,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3855,7 +3862,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.593184+00:00",
+      "last_checked_ts": "2026-11-27T21:10:45.335189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error caused the November 13 FAA ground stop before December 1, 2026.",
@@ -3885,7 +3892,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test match between New Zealand and India resolving based on official match outcome.",
@@ -3920,7 +3927,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Test Match zwischen Neuseeland und Indien entscheidet über den Ausgang (YES für Sieg Neuseeland).",
@@ -3955,7 +3962,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:55:32.079459+00:00",
+      "last_checked_ts": "2026-11-27T21:10:44.656499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test match result between New Zealand and India based on standard cricket rules.",
@@ -4918,6 +4925,18 @@
   ],
   "recent_runs": [
     {
+      "id": 387,
+      "ts": "2026-11-27T21:11:33.726198+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1136,
+      "candidates_found": 18,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 52.05,
+      "errors": []
+    },
+    {
       "id": 386,
       "ts": "2026-11-27T21:06:20.532305+00:00",
       "dry_run": 0,
@@ -5143,18 +5162,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 57.9,
-      "errors": []
-    },
-    {
-      "id": 367,
-      "ts": "2026-11-27T19:31:52.452076+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1155,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.25,
       "errors": []
     }
   ]
