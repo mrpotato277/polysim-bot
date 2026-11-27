@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:01:59.286210+00:00",
+  "generated_at": "2026-11-27T04:06:17.411255+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9827.86,
-    "reconciled_equity_usd": 9827.86,
+    "equity_usd": 9838.45,
+    "reconciled_equity_usd": 9838.45,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 7297.77,
-    "positions_value_usd": 2530.09,
-    "deployed_pct": 25.74,
-    "total_pnl_usd": -172.14,
-    "total_pnl_pct": -1.72,
-    "unrealized_pnl_usd": -157.94,
+    "positions_value_usd": 2540.68,
+    "deployed_pct": 25.82,
+    "total_pnl_usd": -161.55,
+    "total_pnl_pct": -1.62,
+    "unrealized_pnl_usd": -147.35,
     "total_trades": 146,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.49,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 300.11,
+    "crypto": 311.59,
     "technology": 439.84,
-    "politics": 1790.14
+    "politics": 1789.25
   },
   "equity_curve": [
     {
@@ -1480,6 +1480,13 @@
       "cash": 7297.77,
       "deployed_pct": 25.74,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T04:06:17.092840+00:00",
+      "equity": 9838.45,
+      "cash": 7297.77,
+      "deployed_pct": 25.82,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1520,9 +1527,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.103,
-      "current_value": 183.11,
-      "unrealized_pnl": -37.33,
+      "current_price": 0.1025,
+      "current_value": 182.22,
+      "unrealized_pnl": -38.22,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1550,9 +1557,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.305,
-      "current_value": 175.08,
-      "unrealized_pnl": -117.68,
+      "current_price": 0.325,
+      "current_value": 186.56,
+      "unrealized_pnl": -106.2,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1669,7 +1676,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:52.865548+00:00",
+      "last_checked_ts": "2026-11-27T04:05:40.222877+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -1825,7 +1832,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:52.333541+00:00",
+      "last_checked_ts": "2026-11-27T04:05:39.856636+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taichung Mayor election as determined by Taiwan's Central Election Commission.",
@@ -1921,7 +1928,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:52.131555+00:00",
+      "last_checked_ts": "2026-11-27T04:05:39.750334+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (defined as a 2-week pause) between the US and Iran by November 30, 2026.",
@@ -2078,7 +2085,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:52.505235+00:00",
+      "last_checked_ts": "2026-11-27T04:05:39.954921+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage verlangt die offizielle Bestätigung, dass ein Software- oder Konfigurationsfehler die Ursache war; unbestätigte Berichte reichen möglicherweise nicht aus.",
@@ -2142,7 +2149,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:52.707557+00:00",
+      "last_checked_ts": "2026-11-27T04:05:40.083189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -2177,7 +2184,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:52.333541+00:00",
+      "last_checked_ts": "2026-11-27T04:05:39.856636+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
@@ -2208,7 +2215,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:51.935768+00:00",
+      "last_checked_ts": "2026-11-27T04:05:39.641588+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -2243,7 +2250,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:50:53.016191+00:00",
+      "last_checked_ts": "2026-11-27T04:05:40.362890+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -2305,7 +2312,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:55:36.088064+00:00",
+      "last_checked_ts": "2026-11-27T04:05:40.936106+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2335,7 +2342,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:55:35.865211+00:00",
+      "last_checked_ts": "2026-11-27T04:05:40.808322+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2843,6 +2850,18 @@
   ],
   "recent_runs": [
     {
+      "id": 185,
+      "ts": "2026-11-27T04:06:17.093964+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 28,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.04,
+      "errors": []
+    },
+    {
       "id": 184,
       "ts": "2026-11-27T04:01:58.548601+00:00",
       "dry_run": 0,
@@ -3068,18 +3087,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 43.4,
-      "errors": []
-    },
-    {
-      "id": 165,
-      "ts": "2026-11-27T02:26:18.563192+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1126,
-      "candidates_found": 31,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 49.9,
       "errors": []
     }
   ]
