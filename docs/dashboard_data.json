@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:31:44.940249+00:00",
+  "generated_at": "2026-11-27T13:36:34.834123+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9468.66,
-    "reconciled_equity_usd": 9468.66,
+    "equity_usd": 9486.61,
+    "reconciled_equity_usd": 9486.61,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4377.57,
-    "deployed_pct": 46.23,
-    "total_pnl_usd": -531.34,
-    "total_pnl_pct": -5.31,
-    "unrealized_pnl_usd": -447.72,
+    "positions_value_usd": 4395.52,
+    "deployed_pct": 46.33,
+    "total_pnl_usd": -513.39,
+    "total_pnl_pct": -5.13,
+    "unrealized_pnl_usd": -429.77,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.63,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 208,
+    "total_forecasts": 211,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2169.35,
-    "crypto": 1171.78,
-    "geopolitics": 664.17,
+    "politics": 2181.55,
+    "crypto": 1220.38,
+    "geopolitics": 621.32,
     "markets": 372.27
   },
   "equity_curve": [
@@ -2319,6 +2319,13 @@
       "cash": 5091.09,
       "deployed_pct": 46.23,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T13:36:34.215724+00:00",
+      "equity": 9486.61,
+      "cash": 5091.09,
+      "deployed_pct": 46.33,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2344,9 +2351,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.105,
-      "current_value": 510.34,
-      "unrealized_pnl": -253.47,
+      "current_price": 0.115,
+      "current_value": 558.94,
+      "unrealized_pnl": -204.87,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2359,13 +2366,13 @@
       "outcome": "No",
       "quantity": 4284.95,
       "avg_entry_price": 0.16,
-      "current_price": 0.155,
-      "current_value": 664.17,
-      "unrealized_pnl": -21.42,
-      "p_yes": 0.6129,
-      "p_blended": 0.3871,
-      "edge_net": 0.2271,
-      "rationale": "Anhaltende Spannungen und fortgesetzte israelische Militäraktionen sowie Drohungen gegenüber dem Iran machen einen stabilen Waffenstillstand bis Mitte Dezember unwahrscheinlich."
+      "current_price": 0.145,
+      "current_value": 621.32,
+      "unrealized_pnl": -64.27,
+      "p_yes": 0.6232,
+      "p_blended": 0.3768,
+      "edge_net": 0.2268,
+      "rationale": "Angesichts anhaltender militärischer Spannungen und der Bereitschaft zu neuen Schlägen zwischen Israel und Iran ist ein stabiler Waffenstillstand bis Mitte Dezember unwahrscheinlich."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -2374,9 +2381,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0985,
-      "current_value": 175.11,
-      "unrealized_pnl": -45.33,
+      "current_price": 0.099,
+      "current_value": 176.0,
+      "unrealized_pnl": -44.44,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2404,9 +2411,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.575,
-      "current_value": 650.17,
-      "unrealized_pnl": -35.24,
+      "current_price": 0.585,
+      "current_value": 661.48,
+      "unrealized_pnl": -23.93,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2460,6 +2467,111 @@
   ],
   "recent_forecasts": [
     {
+      "id": 211,
+      "ts": "2026-11-27T13:36:34.205941+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2500",
+      "p_blind": "0.4500",
+      "p_blended": "0.3271",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0771",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.4,
+        "bull_case": "New Zealand reached a solid position of 246-5 at the end of day one in the second Test against India, giving them a competitive platform.",
+        "bear_case": "The match is still early (end of day one), and India remains a formidable opponent capable of turning the test around.",
+        "summary_de": "Neuseeland zeigt nach dem ersten Tag des zweiten Testsp gegen Indien eine stabile Leistung mit 246-5, wobei das Spiel noch völlig offen ist.",
+        "news_used": [
+          "New Zealand battle to 246-5 after day one of second India Test - Daily Sun",
+          "Blundell-Phillips take New Zealand to 246/5 at day one end - Times of Oman",
+          "Air New Zealand punctuality up 12 percentage points as airline increases focus on smoother summer journeys - WebWire",
+          "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet",
+          "Australia set to drop Lyon for first New Zealand Test - BBC",
+          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW"
+        ]
+      }
+    },
+    {
+      "id": 210,
+      "ts": "2026-11-27T13:36:32.286881+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8550",
+      "p_blind": "0.2500",
+      "p_blended": "0.6232",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.2268",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Es muss geprüft werden, ob es sich um einen offiziellen Waffenstillstand zwischen Israel und Iran direkt handelt oder ob regionale Stellvertreterkonflikte (Gaza/Libanon) einbrechen.",
+        "base_rate": 0.35,
+        "bull_case": "USA und regionale Vermittler bemühen sich aktiv um Deeskalation und Verhandlungen zwischen Iran und Israel, um einen umfassenden Krieg zu verhindern.",
+        "bear_case": "Aktuelle Berichte zeigen anhaltende israelische Luftangriffe und Warnungen der israelischen Armee, den Iran jederzeit angreifen zu können, was einen dauerhaften Waffenstillstand unwahrscheinlich macht.",
+        "summary_de": "Angesichts anhaltender militärischer Spannungen und der Bereitschaft zu neuen Schlägen zwischen Israel und Iran ist ein stabiler Waffenstillstand bis Mitte Dezember unwahrscheinlich.",
+        "news_used": [
+          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
+          "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews",
+          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
+          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English",
+          "Red Sea shipping crisis explained: Suez lost $7bn in 2024 - DNE Africa",
+          "Israeli army says it's ready to strike Iran 'at any moment,' even without US - Türkiye Today"
+        ]
+      }
+    },
+    {
+      "id": 209,
+      "ts": "2026-11-27T13:36:30.400115+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4200",
+      "p_blended": "0.3229",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0729",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbent Prime Minister Pedro Sánchez and the PSOE have historically outperformed expectations in tight races and are mobilizing core voters strongly in the final campaign hours.",
+        "bear_case": "Recent polls consistently favor the opposition Partido Popular (PP) led by Feijóo, suggesting a shift in voter sentiment away from the incumbent government.",
+        "summary_de": "Die aktuellen Umfragen sehen die oppositionelle PP leicht im Vorteil, während Sánchez versucht, das Ruder im Endspurt noch einmal herumzureißen.",
+        "news_used": [
+          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı",
+          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
+          "Spain’s Snap Election: How Voting Works, Key Parties and Issues - SSBCrack",
+          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters"
+        ]
+      }
+    },
+    {
       "id": 208,
       "ts": "2026-11-27T13:16:42.894215+00:00",
       "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
@@ -2476,7 +2588,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:44.092871+00:00",
+      "last_checked_ts": "2026-11-27T13:35:34.923863+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag entscheidet sich klar anhand der Sitzverteilung nach der spanischen Parlamentswahl.",
@@ -2511,7 +2623,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:44.092871+00:00",
+      "last_checked_ts": "2026-11-27T13:35:34.923863+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -2546,7 +2658,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.777237+00:00",
+      "last_checked_ts": "2026-11-27T13:35:37.218011+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026; 'effective' requires verifiable implementation rather than merely an agreement.",
@@ -2574,7 +2686,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2609,7 +2721,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2644,7 +2756,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
@@ -2679,7 +2791,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -2714,7 +2826,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test Match cricket between New Zealand and India, resolving based on the official match outcome.",
@@ -2749,7 +2861,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Marktversprechen bezieht sich eindeutig auf den Gewinner des Testspiels zwischen Neuseeland und Indien.",
@@ -2784,7 +2896,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether New Zealand wins the Test match against India.",
@@ -2819,7 +2931,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:25:38.783410+00:00",
+      "last_checked_ts": "2026-11-27T13:35:37.567433+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition von 'bestätigt' bezüglich eines Software- oder Konfigurationsfehlers durch offizielle Untersuchungsberichte muss eindeutig sein.",
@@ -2850,7 +2962,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2921,7 +3033,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.162225+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.495699+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard crypto price touch contract evaluated against defined exchange feeds through November.",
@@ -2986,7 +3098,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:25:38.955912+00:00",
+      "last_checked_ts": "2026-11-27T13:35:37.931692+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any point during calendar year 2026.",
@@ -3151,7 +3263,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:44.092871+00:00",
+      "last_checked_ts": "2026-11-27T13:35:34.923863+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official electoral results for which party wins the most seats in the Spanish general election.",
@@ -3186,7 +3298,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.459791+00:00",
+      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract refers to a specific Test Match; news headlines regarding political elections and rugby are irrelevant noise.",
@@ -3201,112 +3313,6 @@
           "India’s Rishabh Pant makes surprise appearance for New Zealand club under fake name - The Independent",
           "Deadlocked Final Result in New Zealand’s Election Leaves a Centrist Newcomer as the Decider - TheWire.in",
           "England v New Zealand rugby Nations Championship 2026 TV channel, live stream, kick-off time - Radio Times"
-        ]
-      }
-    },
-    {
-      "id": 186,
-      "ts": "2026-11-27T10:16:27.222073+00:00",
-      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
-      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "markets",
-      "end_date": "2026-12-01T04:59:59.999000+00:00",
-      "market_price": "0.1800",
-      "p_blind": "0.3500",
-      "p_blended": "0.2499",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0699",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:30:53.502322+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves YES if WTI Crude Oil hits $90 or higher at any point during November 2026 based on standard market data.",
-        "base_rate": 0.25,
-        "bull_case": "Middle East tensions, upcoming OPEC+ meetings, and sudden supply shocks could push WTI above $90 during the remaining days of November.",
-        "bear_case": "WTI spot is currently around $85.70 with only a few days left in November, leaving a relatively narrow window and requiring a rapid spike to reach $90.",
-        "summary_de": "WTI-Öl notiert kurz vor Monatsende bei rund 85,70 US-Dollar, wodurch für das Erreichen der 90-Dollar-Marke im November noch ein signifikanter Preissprung erforderlich ist.",
-        "news_used": [
-          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
-          "Standard Chartered Oil Needs a New Shock to Fall Further - Crude Oil Prices Today | OilPrice.com",
-          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox",
-          "Oil Price Forecast According to Experts: November 2026 - MoneyMagpie",
-          "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo",
-          "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times"
-        ],
-        "market_data": "WTI Crude Oil (CL=F) live reference: 85.70 (prev close: 83.98, +2.05%)."
-      }
-    },
-    {
-      "id": 185,
-      "ts": "2026-11-27T10:16:25.772383+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1065",
-      "p_blind": "0.4500",
-      "p_blended": "0.2112",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:20:45.295830+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election occurring near the deadline.",
-        "base_rate": 0.5,
-        "bull_case": "Pedro Sánchez remains a resilient incumbent and holds a viable path to coalition formation despite fierce right-wing opposition.",
-        "bear_case": "High-stakes snap polls show intense pressure from right-wing rivals, threatening his political survival and potential coalition majority.",
-        "summary_de": "Pedro Sánchez kämpft in vorgezogenen Neuwahlen stark gegen rechte Konkurrenten, wobei sein Verbleib im Amt des Ministerpräsidenten angesichts einer ungewissen Regierungsbildung gefährdet ist.",
-        "news_used": [
-          "Spain election: what the main parties are proposing - Reuters",
-          "Factbox-Spain election: what the main parties are proposing - Internazionale",
-          "Spanish elections Opposition under fire for doctored AI video of Sánchez | The Guardian - newspaper - Magzter",
-          "Spain to vote for a new Prime Minister in Sunday snap election - CNN",
-          "Spain's Sanchez clashes with right-wing rivals over Gaza ahead of election - Türkiye Today",
-          "Video | Spain Votes In High-Stakes Snap Polls As PM Pedro Sanchez Battles For Political Survival - NDTV"
-        ]
-      }
-    },
-    {
-      "id": 184,
-      "ts": "2026-11-27T10:06:34.568871+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.8950",
-      "p_blind": "0.4000",
-      "p_blended": "0.7340",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:30:52.734243+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional processes.",
-        "base_rate": 0.35,
-        "bull_case": "Recent polls and media framing show Feijóo positioning himself strongly as a pragmatic manager amid an active election cycle, with his party contending for power.",
-        "bear_case": "Securing a parliamentary majority in Spain's fragmented political landscape remains difficult, and incumbent Pedro Sánchez or other coalitions may block his path to the premiership.",
-        "summary_de": "Alberto Núñez Feijóo hat im aktuellen Wahlkampf Chancen, positioniert sich jedoch in einem stark fragmentierten Parlament, wodurch eine Regierungsbildung weiterhin ungewiss ist.",
-        "news_used": [
-          "Does Spain's potential new PM Feijóo speak English? - The Local Spain",
-          "Centre-right leader Feijoo pitches himself as the manager Spain needs - Miami Herald",
-          "Spain election: what the main parties are proposing - The Straits Times",
-          "Here are the main issues driving Spain's national election and why they matter for Europe - ABC News - Breaking News, Latest News and Videos",
-          "Leaders clash in final Spain election debate as housing dominates run-in - BBC",
-          "Sánchez, Feijóo, Abascal and Colau Clash in Spain Election Debate Over Gaza, Migration: how 5 outlets framed it - NewsCord"
         ]
       }
     }
@@ -4115,6 +4121,18 @@
   ],
   "recent_runs": [
     {
+      "id": 297,
+      "ts": "2026-11-27T13:36:34.216602+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1109,
+      "candidates_found": 17,
+      "llm_calls": 3,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 60.92,
+      "errors": []
+    },
+    {
       "id": 296,
       "ts": "2026-11-27T13:31:44.460083+00:00",
       "dry_run": 0,
@@ -4340,18 +4358,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 48.97,
-      "errors": []
-    },
-    {
-      "id": 277,
-      "ts": "2026-11-27T11:56:45.552958+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1149,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 72.73,
       "errors": []
     }
   ]
