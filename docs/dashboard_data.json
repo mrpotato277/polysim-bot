@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T05:56:29.737367+00:00",
+  "generated_at": "2026-11-27T06:02:04.098480+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9736.58,
-    "reconciled_equity_usd": 8679.96,
+    "equity_usd": 9695.77,
+    "reconciled_equity_usd": 8639.15,
     "equity_discrepancy_usd": 1056.62,
     "cash_usd": 5290.27,
-    "positions_value_usd": 3389.69,
-    "deployed_pct": 34.81,
-    "total_pnl_usd": -263.42,
-    "total_pnl_pct": -2.63,
-    "unrealized_pnl_usd": -249.22,
+    "positions_value_usd": 3348.88,
+    "deployed_pct": 34.54,
+    "total_pnl_usd": -304.23,
+    "total_pnl_pct": -3.04,
+    "unrealized_pnl_usd": -290.03,
     "total_trades": 174,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -4.89,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 162,
+    "total_forecasts": 163,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2204.07,
-    "crypto": 736.71,
+    "politics": 2174.74,
+    "crypto": 725.23,
     "technology": 448.91
   },
   "equity_curve": [
@@ -1647,6 +1647,19 @@
       "cash": 5290.27,
       "deployed_pct": 34.81,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T06:00:00+00:00",
+      "equity": 8639.15,
+      "cash": 8639.15,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-27T06:02:03.630066+00:00",
+      "equity": 9695.77,
+      "cash": 5290.27,
+      "deployed_pct": 34.54,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1702,9 +1715,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.105,
-      "current_value": 186.66,
-      "unrealized_pnl": -33.78,
+      "current_price": 0.0885,
+      "current_value": 157.33,
+      "unrealized_pnl": -63.11,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1732,9 +1745,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.225,
-      "current_value": 129.16,
-      "unrealized_pnl": -163.6,
+      "current_price": 0.205,
+      "current_value": 117.68,
+      "unrealized_pnl": -175.08,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1772,6 +1785,39 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 163,
+      "ts": "2026-11-27T06:02:03.628059+00:00",
+      "market_id": "0x68f425a37a2bf693d43de418335b00841af699ef37cc5cb6634c83432c6541cd",
+      "question": "Will Bitcoin dip to $57,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1550",
+      "p_blind": "0.2200",
+      "p_blended": "0.1785",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0285",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Bitcoin hits $57,500 at any point during November 2026.",
+        "base_rate": 0.2,
+        "bull_case": "Crypto markets exhibit fat tails and high volatility, meaning a sudden ~7% drop from current levels within the remaining few days of November is entirely plausible.",
+        "bear_case": "Bitcoin has recently rebounded above $60,600 and the 24-hour low is near $59,850, leaving only a few days left in November with a relatively safe distance of nearly 7% to the strike.",
+        "summary_de": "Bitcoin handelt derzeit stabil über $60.000 und angesichts der verbleibenden Tage im November ist ein Rücksetzer auf $57.500 zwar durch Volatilität möglich, aber eher unwahrscheinlich.",
+        "news_used": [
+          "Bitcoin rebounds to $60,600 as DeFi and blockch... - Pluang",
+          "Bitcoin Funds Head for Worst Month as Outflows Near $5 Billion - Bloomberg.com",
+          "Polymarket Odds: Taipei Mayor, Tesla-SpaceX, Super Bowl - RG.org"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $61,710.40 (24h range: $59,850.00 - $61,877.00, 30d realized annualized vol: ~49%).\nDistance from live spot to $57,500.00: -6.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.0d (1-sigma move = +/-5.1%, distance = 1.40 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 162,
       "ts": "2026-11-27T05:51:30.137621+00:00",
@@ -1825,7 +1871,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.506675+00:00",
+      "last_checked_ts": "2026-11-27T06:01:01.720550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -1857,7 +1903,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:38.011800+00:00",
+      "last_checked_ts": "2026-11-27T06:01:00.125195+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,000 during November 23-29, 2026. Spot is close at $61,425 with ample time left.",
@@ -1917,7 +1963,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.679237+00:00",
+      "last_checked_ts": "2026-11-27T06:01:01.908562+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the Federal Reserve makes no change to interest rates after the December 2026 FOMC meeting.",
@@ -2198,7 +2244,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.506675+00:00",
+      "last_checked_ts": "2026-11-27T06:01:01.720550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count of the 2026 Spanish general election as reported by official electoral authorities.",
@@ -2292,7 +2338,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:50:40.916299+00:00",
+      "last_checked_ts": "2026-11-27T06:01:02.708386+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Election results must clearly show a winning margin of 12% or more for Chiang Wan-an based on official CEC data.",
@@ -2323,7 +2369,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.845317+00:00",
+      "last_checked_ts": "2026-11-27T06:01:02.112764+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal announcement of resignation or removal by November 30, 2026.",
@@ -2351,7 +2397,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:38.372350+00:00",
+      "last_checked_ts": "2026-11-27T06:01:00.532016+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI Crude Oil hits $90 at any point during November 2026 based on standard market data.",
@@ -2420,7 +2466,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.020432+00:00",
+      "last_checked_ts": "2026-11-27T06:01:01.093507+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Kontrakt prüft, ob Bitcoin im November 2026 den Preis von $62.500 erreicht.",
@@ -2452,7 +2498,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.506675+00:00",
+      "last_checked_ts": "2026-11-27T06:01:01.720550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -2511,7 +2557,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:38.199443+00:00",
+      "last_checked_ts": "2026-11-27T06:01:00.353929+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
@@ -2521,37 +2567,6 @@
         "summary_de": "Bitcoin handelt nahe 60.615 USD, und ein Anstieg um 5,6 % auf 64.000 USD innerhalb der verbleibenden Tage bis zum 29. November ist angesichts der verbleibenden Zeit und Volatilität eher unwahrscheinlich, aber durchaus möglich.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $60,615.90 (24h range: $59,850.00 - $61,037.50, 30d realized annualized vol: ~48%).\nDistance from live spot to $64,000.00: +5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.2d (1-sigma move = +/-4.4%, distance = 1.22 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 138,
-      "ts": "2026-11-27T00:46:28.271147+00:00",
-      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
-      "question": "Will Bitcoin reach $62,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.5150",
-      "p_blind": "0.5800",
-      "p_blended": "0.5386",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0286",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.020432+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on standard Bitcoin price hitting the $62,500 threshold before the end of November UTC.",
-        "base_rate": 0.55,
-        "bull_case": "Bitcoin needs a modest ~3.1% move up from $60,647 within the remaining days of November, well within historical volatility and supported by strong recent market momentum.",
-        "bear_case": "Time is running out with less than 4 days left in November, and Bitcoin is currently facing resistance below the $62,500 level.",
-        "summary_de": "Bitcoin benötigt nur noch einen Anstieg von rund drei Prozent, um die Marke von 62.500 US-Dollar im November zu erreichen, was angesichts der Volatilität durchaus machbar ist.",
-        "news_used": [
-          "Bitcoin at $62,500 by November 30: Polymarket Odds Swing 19 Points in a Day - shattered.io"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $60,647.00 (24h range: $59,850.00 - $61,037.50, 30d realized annualized vol: ~48%).\nDistance from live spot to $62,500.00: +3.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.2d (1-sigma move = +/-5.1%, distance = 0.59 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -3099,6 +3114,18 @@
   ],
   "recent_runs": [
     {
+      "id": 208,
+      "ts": "2026-11-27T06:02:03.631409+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1129,
+      "candidates_found": 25,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 65.58,
+      "errors": []
+    },
+    {
       "id": 207,
       "ts": "2026-11-27T05:56:29.244684+00:00",
       "dry_run": 0,
@@ -3324,18 +3351,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 63.1,
-      "errors": []
-    },
-    {
-      "id": 188,
-      "ts": "2026-11-27T04:21:17.039437+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1100,
-      "candidates_found": 26,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 38.75,
       "errors": []
     }
   ]
