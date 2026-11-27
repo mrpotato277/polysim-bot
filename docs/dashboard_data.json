@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:41:40.046403+00:00",
+  "generated_at": "2026-11-27T20:46:39.845647+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11055.33,
-    "reconciled_equity_usd": 10781.31,
+    "equity_usd": 10914.85,
+    "reconciled_equity_usd": 10640.83,
     "equity_discrepancy_usd": 274.02,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4701.0,
-    "deployed_pct": 42.52,
-    "total_pnl_usd": 1055.33,
-    "total_pnl_pct": 10.55,
-    "unrealized_pnl_usd": 548.73,
+    "positions_value_usd": 4560.52,
+    "deployed_pct": 41.78,
+    "total_pnl_usd": 914.85,
+    "total_pnl_pct": 9.15,
+    "unrealized_pnl_usd": 408.25,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 268,
+    "total_forecasts": 270,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2270.1,
-    "crypto": 1506.72,
+    "politics": 2275.43,
+    "crypto": 1360.91,
     "geopolitics": 707.02,
     "markets": 217.16
   },
@@ -2956,6 +2956,13 @@
       "cash": 6080.31,
       "deployed_pct": 42.52,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T20:46:39.562553+00:00",
+      "equity": 10914.85,
+      "cash": 6080.31,
+      "deployed_pct": 41.78,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2981,9 +2988,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.31,
-      "current_value": 1506.72,
-      "unrealized_pnl": 742.91,
+      "current_price": 0.28,
+      "current_value": 1360.91,
+      "unrealized_pnl": 597.1,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3011,9 +3018,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1245,
-      "current_value": 221.33,
-      "unrealized_pnl": 0.89,
+      "current_price": 0.1275,
+      "current_value": 226.66,
+      "unrealized_pnl": 6.22,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3081,6 +3088,73 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 270,
+      "ts": "2026-11-27T20:46:39.559523+00:00",
+      "market_id": "0x68f425a37a2bf693d43de418335b00841af699ef37cc5cb6634c83432c6541cd",
+      "question": "Will Bitcoin dip to $57,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.3150",
+      "p_blind": "0.2200",
+      "p_blended": "0.2751",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0449",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Prüft, ob der Bitcoin-Preis im November 2026 jemals exakt oder unter $57.500 gefallen ist.",
+        "base_rate": 0.35,
+        "bull_case": "Die verbleibende Zeit bis zum Monatsende ist sehr kurz (weniger als 4 Tage), aber Bitcoin zeigt anhaltende Volatilität und ein Rutschen um knapp 4 Prozent vom aktuellen Niveau ist bei Krypto-Märkten innerhalb von Stunden möglich.",
+        "bear_case": "Der aktuelle Spot-Kurs liegt bei knapp $59.770 und das 24-Stunden-Tief lag bei rund $58.730, womit ein Erreichen der $57.500 in den letzten verbleibenden Tagen des Monats statistisch unwahrscheinlich ist.",
+        "summary_de": "Da der Bitcoin-Kurs sich aktuell deutlich über der Marke von 57.500 US-Dollar hält und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Dip auf dieses Niveau zwar möglich, aber statistisch eher unwahrscheinlich.",
+        "news_used": [
+          "Bitcoin, Ethereum and the Best Crypto Presale to Buy in 2026: Why Are Quiet Wallets Taking 10,000 BTC? - openPR.com",
+          "Bitcoin rebounds to $60,600 as DeFi and blockch... - Pluang"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,772.20 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $57,500.00: -3.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-4.5%, distance = 0.85 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 269,
+      "ts": "2026-11-27T20:46:37.313094+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.4800",
+      "p_blended": "0.2963",
+      "confidence": "0.5500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0563",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.45,
+        "bull_case": "New Zealand's home conditions and historical strength in Test cricket give them a solid competitive edge against India.",
+        "bear_case": "India possesses a highly balanced squad and strong recent form across formats, making them formidable opponents away from home.",
+        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland gegen Indien im Test Match spiegelt eine ausgeglichene Begegnung wider, bei der Heimvorteil und aktuelle Teamform entscheidend sind.",
+        "news_used": [
+          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
+          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC",
+          "A Govt by Xmas? Luxon warns of 'challenging' deals, NZ First says 'next three months' crucial - NZ Herald",
+          "Psychedelics: Are We Repeating Timothy Leary’s Mistakes? - Psychology Today"
+        ]
+      }
+    },
     {
       "id": 268,
       "ts": "2026-11-27T20:41:39.657027+00:00",
@@ -3340,7 +3414,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:30:53.559775+00:00",
+      "last_checked_ts": "2026-11-27T20:45:46.326326+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether Bitcoin hits or dips to $55,000 during November 2026 based on standard exchange price feeds.",
@@ -3818,7 +3892,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:35.669352+00:00",
+      "last_checked_ts": "2026-11-27T20:45:44.408927+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before December 1, 2026.",
@@ -3865,70 +3939,6 @@
           "The Latest Interest Rate Forecast Is In, and It Spells Trouble for a Historically Expensive AI-Driven Bull Market - The Globe and Mail",
           "Gold price forecast: Fed rate hike in December may limit recovery to ₹1.30 lakh per 10 grams by 2026-end, says expert - Livemint"
         ]
-      }
-    },
-    {
-      "id": 245,
-      "ts": "2026-11-27T17:41:26.322357+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8450",
-      "p_blind": "0.3000",
-      "p_blended": "0.6854",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.1646",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:40:40.131070+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires ongoing uninterrupted ceasefire between Israel and Iran through December 15, 2026, which depends on precise definitions of formal vs informal ceasefires and proxy escalations.",
-        "base_rate": 0.35,
-        "bull_case": "Diplomatic mediation between Iran and the US continues alongside regional fatigue, reducing the immediate appetite for direct state-on-state escalations.",
-        "bear_case": "Ongoing strikes in Gaza, Lebanon, and regional air defense interceptions show active hostilities and deep divisions within Israel regarding potential unilateral strikes against Iran.",
-        "summary_de": "Anhaltende regionale Spannungen und Berichte über interne israelische Debatten über mögliche Angriffe auf Iran gefährden die Stabilität eines Waffenstillstands.",
-        "news_used": [
-          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
-          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
-          "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews",
-          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
-          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English",
-          "Red Sea shipping crisis explained: Suez lost $7bn in 2024 - DNE Africa"
-        ]
-      }
-    },
-    {
-      "id": 244,
-      "ts": "2026-11-27T17:36:21.293991+00:00",
-      "market_id": "0x5eb5d77d8607ce8b2859fb059e07859164b5096fe84c7b181c3ce034b19d7a5b",
-      "question": "Will Ethereum reach $1,800 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1350",
-      "p_blind": "0.2200",
-      "p_blended": "0.1559",
-      "confidence": "0.7500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0259",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:25:35.669352+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract for ETH on major exchanges before the end of November 2026.",
-        "base_rate": 0.25,
-        "bull_case": "High crypto volatility allows a sudden upward spike of 8.2% to breach $1,800 within the remaining days of November.",
-        "bear_case": "ETH is currently trading around $1,664 with limited time left in November, requiring a significant macro catalyst that is currently absent.",
-        "summary_de": "Ethereum notiert derzeit bei rund 1.664 USD und müsste innerhalb der verbleibenden Tage im November um über 8 Prozent steigen, was angesichts der begrenzten verbleibenden Zeit und fehlender positiver Katalysatoren eher unwahrscheinlich ist.",
-        "news_used": [],
-        "market_data": "ETH/USD live spot (Kraken): $1,664.02 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,800.00: +8.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-6.4%, distance = 1.22 sigma): Gaussian one-touch ('dip/reach/hit') b"
       }
     }
   ],
@@ -4876,6 +4886,18 @@
   ],
   "recent_runs": [
     {
+      "id": 382,
+      "ts": "2026-11-27T20:46:39.564575+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1231,
+      "candidates_found": 19,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 56.36,
+      "errors": []
+    },
+    {
       "id": 381,
       "ts": "2026-11-27T20:41:39.731766+00:00",
       "dry_run": 0,
@@ -5101,18 +5123,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 41.13,
-      "errors": []
-    },
-    {
-      "id": 362,
-      "ts": "2026-11-27T19:06:24.513903+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1140,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 51.84,
       "errors": []
     }
   ]
