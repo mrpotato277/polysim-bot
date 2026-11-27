@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:46:33.989727+00:00",
+  "generated_at": "2026-11-27T21:51:24.412905+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10831.42,
-    "reconciled_equity_usd": 10562.38,
-    "equity_discrepancy_usd": 269.04,
+    "equity_usd": 10878.8,
+    "reconciled_equity_usd": 10609.2,
+    "equity_discrepancy_usd": 269.6,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4482.07,
-    "deployed_pct": 41.38,
-    "total_pnl_usd": 831.42,
-    "total_pnl_pct": 8.31,
-    "unrealized_pnl_usd": 329.8,
+    "positions_value_usd": 4528.89,
+    "deployed_pct": 41.63,
+    "total_pnl_usd": 878.8,
+    "total_pnl_pct": 8.79,
+    "unrealized_pnl_usd": 376.62,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 276,
+    "total_forecasts": 277,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2264.13,
-    "crypto": 1336.61,
+    "politics": 2262.35,
+    "crypto": 1385.21,
     "geopolitics": 664.17,
     "markets": 217.16
   },
@@ -3053,6 +3053,13 @@
       "cash": 6080.31,
       "deployed_pct": 41.38,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T21:51:24.137380+00:00",
+      "equity": 10878.8,
+      "cash": 6080.31,
+      "deployed_pct": 41.63,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3078,9 +3085,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.275,
-      "current_value": 1336.61,
-      "unrealized_pnl": 572.8,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3108,9 +3115,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1275,
-      "current_value": 226.66,
-      "unrealized_pnl": 6.22,
+      "current_price": 0.1265,
+      "current_value": 224.88,
+      "unrealized_pnl": 4.44,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3179,6 +3186,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 277,
+      "ts": "2026-11-27T21:51:24.135494+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.5200",
+      "p_blended": "0.3438",
+      "confidence": "0.5500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1038",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.4,
+        "bull_case": "New Zealand is currently batting on Day 2 with a solid score of 246/5, putting them in a competitive position to secure a victory against India.",
+        "bear_case": "India remains a formidable Test side with strong bowling and batting depth, fully capable of turning the match around in the subsequent innings.",
+        "summary_de": "Neuseeland ist im zweiten Testspiel gegen Indien am zweiten Tag gut im Spiel, jedoch bleibt der Ausgang eines Testmatches angesichts der verbleibenden Zeit hochgradig offen.",
+        "news_used": [
+          "India vs New Zealand, 2nd Test Day 2 LIVE score: NZ resumes from 246/5; Blundell, Phillips batting - Sportstar",
+          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
+          "Hung parliament: Why Opportunity is essential to break the tie - 1News",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
+          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC"
+        ]
+      }
+    },
+    {
       "id": 276,
       "ts": "2026-11-27T21:46:33.718680+00:00",
       "market_id": "0xef750428b94a6323dbaa01a2fc26914bb888c42102d143d978464f5553c22135",
@@ -3195,7 +3237,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official parliamentary seat count of PP and Vox reaching an absolute majority following the general election.",
@@ -3230,7 +3272,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T21:50:38.453188+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Preises von Ethereum im November 2026 auf den gängigen Spot-Börsen.",
@@ -3262,7 +3304,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:35:30.138408+00:00",
+      "last_checked_ts": "2026-11-27T21:50:37.729354+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 52.500 USD berührt; die Kursdefinition ist klar.",
@@ -3495,7 +3537,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:35:31.848291+00:00",
+      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether the PP and Vox secure a majority in the Spanish general election held on November 29, 2026.",
@@ -3565,7 +3607,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:35:31.848291+00:00",
+      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count results of the snap general election on November 29, 2026, determining if PP and Vox achieve a combined absolute majority in parliament.",
@@ -3635,7 +3677,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:35:31.848291+00:00",
+      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Spanish General Election regarding whether PP and Vox achieve a parliamentary majority.",
@@ -3705,7 +3747,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:35:30.312953+00:00",
+      "last_checked_ts": "2026-11-27T21:50:37.871534+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether Bitcoin hits or dips to $55,000 during November 2026 based on standard exchange price feeds.",
@@ -3988,41 +4030,6 @@
         "summary_de": "Da landesweite FAA-Ausfälle historisch gesehen meist auf Software- oder Konfigurationsfehler zurückzuführen sind, ist eine offizielle Bestätigung wahrscheinlich, sofern der Untersuchungsbericht rechtzeitig vorliegt.",
         "news_used": [
           "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/"
-        ]
-      }
-    },
-    {
-      "id": 252,
-      "ts": "2026-11-27T18:21:38.326278+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.5200",
-      "p_blended": "0.3257",
-      "confidence": "0.4000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0857",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:40:49.084108+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Test match between New Zealand and India resolving based on official match outcome.",
-        "base_rate": 0.5,
-        "bull_case": "New Zealand is playing at home in Christchurch and finished Day 1 with honours even against India.",
-        "bear_case": "India is a formidable Test side capable of pushing for a victory over the remaining days of the match.",
-        "summary_de": "Nach dem ersten Tag in Christchurch steht das Test-Match zwischen Neuseeland und Indien ausgeglichen, wobei Neuseeland als Gastgeber leichte Vorteile haben könnte.",
-        "news_used": [
-          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
-          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
-          "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
-          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
-          "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website"
         ]
       }
     }
@@ -4971,6 +4978,18 @@
   ],
   "recent_runs": [
     {
+      "id": 395,
+      "ts": "2026-11-27T21:51:24.138185+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1277,
+      "candidates_found": 20,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 48.4,
+      "errors": []
+    },
+    {
       "id": 394,
       "ts": "2026-11-27T21:46:33.721529+00:00",
       "dry_run": 0,
@@ -5196,18 +5215,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 61.83,
-      "errors": []
-    },
-    {
-      "id": 375,
-      "ts": "2026-11-27T20:11:37.641476+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1147,
-      "candidates_found": 19,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 59.74,
       "errors": []
     }
   ]
