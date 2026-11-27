@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T23:26:17.955686+00:00",
+  "generated_at": "2026-11-27T23:32:09.554620+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10784.06,
-    "reconciled_equity_usd": 10784.06,
+    "equity_usd": 10782.28,
+    "reconciled_equity_usd": 10782.28,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4703.75,
-    "deployed_pct": 43.62,
-    "total_pnl_usd": 784.06,
-    "total_pnl_pct": 7.84,
-    "unrealized_pnl_usd": 326.08,
+    "positions_value_usd": 4701.97,
+    "deployed_pct": 43.61,
+    "total_pnl_usd": 782.28,
+    "total_pnl_pct": 7.82,
+    "unrealized_pnl_usd": 324.3,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 296,
+    "total_forecasts": 298,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2565.44,
+    "politics": 2563.66,
     "crypto": 1288.0,
     "geopolitics": 664.17,
     "markets": 186.14
@@ -3205,6 +3205,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.62,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T23:32:09.165579+00:00",
+      "equity": 10782.28,
+      "cash": 6080.31,
+      "deployed_pct": 43.61,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3260,9 +3267,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1385,
-      "current_value": 246.22,
-      "unrealized_pnl": 25.78,
+      "current_price": 0.1375,
+      "current_value": 244.44,
+      "unrealized_pnl": 24.0,
       "p_yes": 0.2261,
       "p_blended": 0.2261,
       "edge_net": 0.0881,
@@ -3278,10 +3285,10 @@
       "current_price": 0.265,
       "current_value": 214.43,
       "unrealized_pnl": 4.05,
-      "p_yes": 0.2898,
-      "p_blended": 0.2898,
-      "edge_net": 0.0298,
-      "rationale": "Trotz Pedro Sánchez' letztem Mobilisierungsversuch deuten Umfragen und aktuelle Berichte darauf hin, dass die PSOE voraussichtlich nicht die meisten Sitze bei der vorgezogenen Wahl gewinnen wird."
+      "p_yes": 0.301,
+      "p_blended": 0.301,
+      "edge_net": 0.041,
+      "rationale": "Die PSOE geht als Underdog in die vorgezogene Parlamentswahl am 29. November 2026, da die Umfragen die oppositionelle PP vorne sehen."
     },
     {
       "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
@@ -3346,6 +3353,76 @@
   ],
   "recent_forecasts": [
     {
+      "id": 298,
+      "ts": "2026-11-27T23:32:09.158846+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2650",
+      "p_blind": "0.3500",
+      "p_blended": "0.3010",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0410",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Die Frage betrifft direkt, welche Partei bei der vorgezogenen Parlamentswahl die meisten Sitze gewinnt. Das Ergebnis sollte kurz nach der Wahl am 29. November 2026 feststehen.",
+        "base_rate": 0.4,
+        "bull_case": "Pedro Sánchez setzt auf eine späte Mobilisierung der linken Wählerschaft und hofft, Umfragen im letzten Moment zu widerlegen.",
+        "bear_case": "Konsistente Umfragen vor der Wahl zeigen, dass die konservative PP zusammen mit Vox gute Chancen auf eine Mehrheit hat und die PSOE bei den Sitzen übertreffen könnte.",
+        "summary_de": "Die PSOE geht als Underdog in die vorgezogene Parlamentswahl am 29. November 2026, da die Umfragen die oppositionelle PP vorne sehen.",
+        "news_used": [
+          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
+          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform",
+          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
+          "Spanish election: What you need to know and what's at stake - BBC"
+        ]
+      }
+    },
+    {
+      "id": 297,
+      "ts": "2026-11-27T23:32:01.230077+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8650",
+      "p_blind": "0.5500",
+      "p_blended": "0.7616",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1084",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain after the current political cycle or election process.",
+        "base_rate": 0.4,
+        "bull_case": "Polling shows strong momentum for the conservative Partido Popular under Feijóo, with potential coalition pathways to form a government.",
+        "bear_case": "Pedro Sánchez and incumbent left-leaning allies could manage to cobble together a blocking majority or retain power despite unfavorable polls.",
+        "summary_de": "Trotz guter Umfrageergebnisse für die konservative Opposition bleibt die Bildung einer Regierungsmehrheit unter Feijóo unsicher, da Koalitionsoptionen komplex sind.",
+        "news_used": [
+          "Feijóo appeals to the left despite counting on a right-wing majority: “Lend us your vote to get back to honesty” - EL PAÍS English",
+          "Spanish PM and rivals rally supporters in final pitch for votes",
+          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain's election campaign reaches its final day - RUSSPAIN.com",
+          "Don’t Bet on Spain’s Right to Fix Ties With Israel - The Times of Israel"
+        ]
+      }
+    },
+    {
       "id": 296,
       "ts": "2026-11-27T23:26:17.657580+00:00",
       "market_id": "0xef750428b94a6323dbaa01a2fc26914bb888c42102d143d978464f5553c22135",
@@ -3397,7 +3474,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T23:30:58.001746+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the early Spanish general election held on November 29, 2026.",
@@ -3432,7 +3509,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T23:31:00.697547+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird; die Auflösung hängt von den offiziellen Regierungsbildungsprozessen ab.",
@@ -3502,7 +3579,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T23:31:00.697547+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the current election cycle.",
@@ -3537,7 +3614,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.889158+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India as listed in the title/context, though news mentions a series against Australia, indicating standard Test match cricket rules apply.",
@@ -3572,7 +3649,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:37.949477+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.697547+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Ministerpräsident Spaniens sein wird, was durch offizielle Regierungsbildung und Amtseinführung entschieden wird.",
@@ -3607,7 +3684,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.889158+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India ending by December 3, 2026.",
@@ -3642,7 +3719,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:37.349675+00:00",
+      "last_checked_ts": "2026-11-27T23:30:58.950918+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price check for Bitcoin above $64,000 at the specified deadline.",
@@ -3676,7 +3753,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.889158+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3711,7 +3788,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:37.949477+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.697547+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the current election cycle.",
@@ -3746,7 +3823,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.889158+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3816,7 +3893,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:37.949477+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.697547+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag entscheidet sich darüber, ob Pedro Sánchez der nächste Premierminister Spaniens sein wird, basierend auf den aktuellen Wahlen und Regierungsbildungsprozessen.",
@@ -3886,7 +3963,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:37.949477+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.697547+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, resolving based on official appointment.",
@@ -3921,7 +3998,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.889158+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3956,7 +4033,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.183898+00:00",
+      "last_checked_ts": "2026-11-27T23:31:01.089885+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember hält.",
@@ -4026,7 +4103,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
+      "last_checked_ts": "2026-11-27T23:31:00.889158+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -4138,76 +4215,6 @@
         "summary_de": "Da der Bitcoin-Kurs aktuell weit über der Zielmarke von 52.500 USD liegt und nur noch wenige Tage im November verbleiben, ist die Wahrscheinlichkeit eines solchen Einbruchs äußerst gering.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $59,740.50 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $52,500.00: -12.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-4.5%, distance = 2.85 sigma): Gaussian one-touch ('dip/reach/hi"
-      }
-    },
-    {
-      "id": 273,
-      "ts": "2026-11-27T21:06:18.898897+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4200",
-      "p_blended": "0.2853",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0453",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand's cricket team has strong historic performances in test matches against India and could pull off an upset.",
-        "bear_case": "India is generally considered the stronger side in contemporary international test cricket, especially away or in neutral/home conditions depending on the fixture details.",
-        "summary_de": "Die Wahrscheinlichkeit für einen Sieg von Neuseeland gegen Indien basiert auf historischen Leistungsdaten und der aktuellen Form der beiden Test-Match-Teams.",
-        "news_used": [
-          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
-          "Hung parliament: Why Opportunity is essential to break the tie - 1News",
-          "Stumbling All Blacks: A mere hiccup or crisis time? - Japan Today",
-          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
-          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC"
-        ]
-      }
-    },
-    {
-      "id": 272,
-      "ts": "2026-11-27T20:51:51.766025+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4500",
-      "p_blended": "0.2900",
-      "confidence": "0.5500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0500",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:15:38.078167+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand possesses strong home-ground advantages and historically competitive form against India in Test conditions.",
-        "bear_case": "India fields a world-class squad with superior depth and recent red-ball dominance across international venues.",
-        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland gegen Indien im Test-Match spiegelt die ausgeglichene historische Stärke beider Cricket-Nationalmannschaften wider.",
-        "news_used": [
-          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
-          "Stumbling All Blacks: A mere hiccup or crisis time? - Japan Today",
-          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
-          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC",
-          "Psychedelics: Are We Repeating Timothy Leary’s Mistakes? - Psychology Today"
-        ]
       }
     }
   ],
@@ -5155,6 +5162,18 @@
   ],
   "recent_runs": [
     {
+      "id": 415,
+      "ts": "2026-11-27T23:32:09.166428+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1170,
+      "candidates_found": 19,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 73.44,
+      "errors": []
+    },
+    {
       "id": 414,
       "ts": "2026-11-27T23:26:17.660240+00:00",
       "dry_run": 0,
@@ -5380,18 +5399,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 48.53,
-      "errors": []
-    },
-    {
-      "id": 395,
-      "ts": "2026-11-27T21:51:24.138185+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1277,
-      "candidates_found": 20,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 48.4,
       "errors": []
     }
   ]
