@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T02:11:44.775317+00:00",
+  "generated_at": "2026-11-27T02:16:34.393196+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9898.03,
-    "reconciled_equity_usd": 8297.8,
-    "equity_discrepancy_usd": 1600.23,
+    "equity_usd": 9909.82,
+    "reconciled_equity_usd": 8298.69,
+    "equity_discrepancy_usd": 1611.13,
     "cash_usd": 7090.0,
-    "positions_value_usd": 1207.8,
+    "positions_value_usd": 1208.69,
     "deployed_pct": 12.2,
-    "total_pnl_usd": -101.97,
-    "total_pnl_pct": -1.02,
-    "unrealized_pnl_usd": -180.25,
+    "total_pnl_usd": -90.18,
+    "total_pnl_pct": -0.9,
+    "unrealized_pnl_usd": -179.36,
     "total_trades": 66,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -1.94,
@@ -33,7 +33,7 @@
   },
   "category_exposure": {
     "crypto": 323.07,
-    "politics": 884.73
+    "politics": 885.62
   },
   "equity_curve": [
     {
@@ -1313,6 +1313,13 @@
       "cash": 7090.0,
       "deployed_pct": 12.2,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T02:16:33.984286+00:00",
+      "equity": 9909.82,
+      "cash": 7090.0,
+      "deployed_pct": 12.2,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1338,9 +1345,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1065,
-      "current_value": 189.33,
-      "unrealized_pnl": -31.11,
+      "current_price": 0.107,
+      "current_value": 190.22,
+      "unrealized_pnl": -30.22,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1423,7 +1430,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:05:39.481200+00:00",
+      "last_checked_ts": "2026-11-27T02:15:46.247755+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI Crude Oil hits $90 at any point during November 2026 based on standard market data.",
@@ -1583,7 +1590,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:05:39.313504+00:00",
+      "last_checked_ts": "2026-11-27T02:15:46.120604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
@@ -1743,7 +1750,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:05:38.176585+00:00",
+      "last_checked_ts": "2026-11-27T02:15:45.289016+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -1907,7 +1914,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:05:39.110568+00:00",
+      "last_checked_ts": "2026-11-27T02:15:45.979848+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -1939,7 +1946,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:01:00.744221+00:00",
+      "last_checked_ts": "2026-11-27T02:15:44.367945+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2000,7 +2007,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:01:01.021247+00:00",
+      "last_checked_ts": "2026-11-27T02:15:44.731276+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -2029,7 +2036,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:01:00.877968+00:00",
+      "last_checked_ts": "2026-11-27T02:15:44.563666+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2058,7 +2065,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:01:00.744221+00:00",
+      "last_checked_ts": "2026-11-27T02:15:44.367945+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2610,6 +2617,18 @@
   ],
   "recent_runs": [
     {
+      "id": 163,
+      "ts": "2026-11-27T02:16:33.987517+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1112,
+      "candidates_found": 31,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 51.33,
+      "errors": []
+    },
+    {
       "id": 162,
       "ts": "2026-11-27T02:11:43.943164+00:00",
       "dry_run": 0,
@@ -2835,18 +2854,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 53.44,
-      "errors": []
-    },
-    {
-      "id": 143,
-      "ts": "2026-11-27T00:41:21.252707+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1212,
-      "candidates_found": 31,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 43.44,
       "errors": []
     }
   ]
