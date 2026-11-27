@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T02:31:37.968527+00:00",
+  "generated_at": "2026-11-27T02:36:33.656260+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9798.62,
-    "reconciled_equity_usd": 8411.07,
-    "equity_discrepancy_usd": 1387.55,
-    "cash_usd": 7090.0,
-    "positions_value_usd": 1321.07,
-    "deployed_pct": 13.48,
-    "total_pnl_usd": -201.38,
-    "total_pnl_pct": -2.01,
-    "unrealized_pnl_usd": -292.38,
+    "equity_usd": 9802.85,
+    "reconciled_equity_usd": 8583.68,
+    "equity_discrepancy_usd": 1219.17,
+    "cash_usd": 7268.35,
+    "positions_value_usd": 1315.33,
+    "deployed_pct": 13.42,
+    "total_pnl_usd": -197.15,
+    "total_pnl_pct": -1.97,
+    "unrealized_pnl_usd": -298.12,
     "total_trades": 140,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -2.93,
@@ -28,11 +28,11 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 146,
+    "total_forecasts": 147,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 231.45,
+    "crypto": 225.71,
     "politics": 1089.62
   },
   "equity_curve": [
@@ -1341,6 +1341,13 @@
       "cash": 7090.0,
       "deployed_pct": 13.48,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T02:36:33.217900+00:00",
+      "equity": 9802.85,
+      "cash": 7268.35,
+      "deployed_pct": 13.42,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1381,9 +1388,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.225,
-      "current_value": 129.16,
-      "unrealized_pnl": -163.6,
+      "current_price": 0.215,
+      "current_value": 123.42,
+      "unrealized_pnl": -169.34,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1422,6 +1429,36 @@
   ],
   "recent_forecasts": [
     {
+      "id": 147,
+      "ts": "2026-11-27T02:36:32.683834+00:00",
+      "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
+      "question": "Will Lai Jui-lung win the next Kaohsiung Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.8100",
+      "p_blind": "0.0500",
+      "p_blended": "0.5590",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.2510",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
+        "base_rate": 0.15,
+        "bull_case": "Active campaigning and political momentum could lead to an upset.",
+        "bear_case": "Incumbent party advantage and historical polling strongly favor the main opposition or ruling party candidate over minor challengers.",
+        "summary_de": "Da Lai Jui-lung kein führender Favorit in diesem Wahlrennen ist, liegt die Wahrscheinlichkeit eines Sieges sehr niedrig.",
+        "news_used": [
+          "Kaohsiung mayoral candidates take campaign to the streets - Taiwan News"
+        ]
+      }
+    },
+    {
       "id": 146,
       "ts": "2026-11-27T02:31:37.630789+00:00",
       "market_id": "0x70f08e5b189bfad9bcc4b7c01c5e355e67cdd2acec23c3d93ef86e55536a71ff",
@@ -1438,7 +1475,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T02:35:33.379400+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Election results must clearly show a winning margin of 12% or more for Chiang Wan-an based on official CEC data.",
@@ -1533,7 +1570,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:20:42.304453+00:00",
+      "last_checked_ts": "2026-11-27T02:35:34.290421+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taichung Mayor election as determined by Taiwan's Central Election Commission.",
@@ -1629,7 +1666,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:20:42.207538+00:00",
+      "last_checked_ts": "2026-11-27T02:35:34.117761+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (defined as a 2-week pause) between the US and Iran by November 30, 2026.",
@@ -1786,7 +1823,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:20:42.401336+00:00",
+      "last_checked_ts": "2026-11-27T02:35:34.471448+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage verlangt die offizielle Bestätigung, dass ein Software- oder Konfigurationsfehler die Ursache war; unbestätigte Berichte reichen möglicherweise nicht aus.",
@@ -1850,7 +1887,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:30.471116+00:00",
+      "last_checked_ts": "2026-11-27T02:35:34.683025+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -1885,7 +1922,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:20:42.304453+00:00",
+      "last_checked_ts": "2026-11-27T02:35:34.290421+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
@@ -1916,7 +1953,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:20:42.072716+00:00",
+      "last_checked_ts": "2026-11-27T02:35:33.948952+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -1951,7 +1988,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:30.723687+00:00",
+      "last_checked_ts": "2026-11-27T02:35:34.870047+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -2013,7 +2050,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:31.513468+00:00",
+      "last_checked_ts": "2026-11-27T02:35:35.730103+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2043,7 +2080,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:31.380700+00:00",
+      "last_checked_ts": "2026-11-27T02:35:35.558517+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2103,7 +2140,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:31.723642+00:00",
+      "last_checked_ts": "2026-11-27T02:35:35.951754+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2132,7 +2169,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:31.513468+00:00",
+      "last_checked_ts": "2026-11-27T02:35:35.730103+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2160,7 +2197,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:31.380700+00:00",
+      "last_checked_ts": "2026-11-27T02:35:35.558517+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard spot price tracking for Bitcoin reaching a high watermark during November 2026.",
@@ -2171,44 +2208,29 @@
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $60,501.40 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $67,500.00: +11.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.3d (1-sigma move = +/-5.2%, distance = 2.12 sigma): Gaussian one-touch ('dip/reach/hi"
       }
-    },
-    {
-      "id": 122,
-      "ts": "2026-11-26T22:41:28.517000+00:00",
-      "market_id": "0xb0ea6c2f159bac649d481edc3d471fd8b9a912793ce16585e2a2333ad98821c3",
-      "question": "Next White House Press Secretary announced by November 30, 2026?",
-      "category": "politics",
-      "end_date": "2026-12-01T04:59:00+00:00",
-      "market_price": "0.0650",
-      "p_blind": "0.9000",
-      "p_blended": "0.2102",
-      "confidence": "0.7000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:25:31.194129+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves YES if the next White House Press Secretary is officially announced by November 30, 2026.",
-        "base_rate": 0.85,
-        "bull_case": "Karoline Leavitt is currently acting/serving or expected to be named, and announcements regarding major staff positions typically happen quickly during transitions.",
-        "bear_case": "The timeline of November 30, 2026 is far in the future relative to typical short-term prediction markets, meaning unexpected delays or vacancy continuation could occur.",
-        "summary_de": "Da die Ankündigung einer Personalie wie des Pressesprechers im üblichen politischen Betrieb zeitnah erfolgt und die Frist weit in der Zukunft liegt, ist ein Ausgang zugunsten von YES sehr wahrscheinlich.",
-        "news_used": [
-          "Trump's Thanksgiving Morning Tirade Targets NYT Reporter With 'Lowlife' Insult After Brutal Stock Market Questions - RadarOnline",
-          "Fraud against the American taxpayer: SNAP, COVID, medical benefits, homelessness - National News Desk",
-          "Karoline Leavitt says she has been quietly lobbying Trump for policies that ‘encourage the nuclear family’ and help moms stay home with thei",
-          "Katie Zacharia's White House Ousting: Why Was She Fired? - RadarOnline",
-          "Henry Schein One Announces Appointment of Albert Ko as Executive Chair and Chief Executive Officer - Business Wire",
-          "Leavitt says Trump administration ‘vindicated’ by Abrego Garcia’s departure - Fox News"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 23,
+      "ts": "2026-11-27T02:36:33.216555+00:00",
+      "client_order_id": "psb-20261127-023632-a157fcc18d-buy-n-8681b1",
+      "order_id": "1733956",
+      "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
+      "question": "Will Lai Jui-lung win the next Kaohsiung Mayor election?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.19",
+      "quantity": "3517.30",
+      "notional_usd": "668.28",
+      "est_fee_usd": "0",
+      "edge_net": "0.2510",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Da Lai Jui-lung kein führender Favorit in diesem Wahlrennen ist, liegt die Wahrscheinlichkeit eines Sieges sehr niedrig."
+    },
     {
       "id": 22,
       "ts": "2026-11-27T02:06:35.255954+00:00",
@@ -2652,6 +2674,18 @@
   ],
   "recent_runs": [
     {
+      "id": 167,
+      "ts": "2026-11-27T02:36:33.218685+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1188,
+      "candidates_found": 31,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 61.8,
+      "errors": []
+    },
+    {
       "id": 166,
       "ts": "2026-11-27T02:31:37.633110+00:00",
       "dry_run": 0,
@@ -2877,18 +2911,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 57.64,
-      "errors": []
-    },
-    {
-      "id": 147,
-      "ts": "2026-11-27T01:01:47.121714+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1132,
-      "candidates_found": 30,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 47.41,
       "errors": []
     }
   ]
