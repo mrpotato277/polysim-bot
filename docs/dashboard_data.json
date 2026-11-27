@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:26:42.093840+00:00",
+  "generated_at": "2026-11-27T04:31:53.881701+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -28,7 +28,7 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 150,
+    "total_forecasts": 151,
     "circuit_breaker_active": false
   },
   "category_exposure": {
@@ -1515,6 +1515,13 @@
       "cash": 7297.77,
       "deployed_pct": 25.48,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T04:31:53.443106+00:00",
+      "equity": 9792.95,
+      "cash": 7297.77,
+      "deployed_pct": 25.48,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1626,6 +1633,34 @@
   ],
   "recent_forecasts": [
     {
+      "id": 151,
+      "ts": "2026-11-27T04:31:52.854475+00:00",
+      "market_id": "0x10346101feeef8bc3152ace20ca9a165bd9ec5d744dbc1d11c1a9f77a5913e76",
+      "question": "Will Johnny Chiang win the next Taichung Mayor election?",
+      "category": "politics",
+      "end_date": "2026-11-29T04:59:00+00:00",
+      "market_price": "0.7850",
+      "p_blind": "0.1200",
+      "p_blended": "0.5957",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.1943",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
+        "base_rate": 0.15,
+        "bull_case": "Johnny Chiang ist ein prominenter kuomintang (KMT) Politiker und Gesetzgeber mit starken Verbindungen in Taichung, was ihm eine solide Ausgangslage verschaffen könnte.",
+        "bear_case": "Es gibt andere etablierte KMT- und DPP-Konkurrenten in Taichung (wie den aktuellen stellvertretenden Bürgermeister oder andere Minister), und Chiang hat keine garantierte Nominierung.",
+        "summary_de": "Johnny Chiang hat zwar politische Relevanz in Taichung, aber interne Parteikonkurrenz und andere potenzielle Kandidaten machen seinen Sieg bei der nächsten Bürgermeisterwahl zu diesem Zeitpunkt zu einem eher unwahrscheinlichen Ereignis.",
+        "news_used": []
+      }
+    },
+    {
       "id": 150,
       "ts": "2026-11-27T03:16:35.067277+00:00",
       "market_id": "0x1f5575d09bc24465235fcab6c220865df6fa596ab5d7dd37c9d5c36ce54f7a5f",
@@ -1704,7 +1739,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:39.998306+00:00",
+      "last_checked_ts": "2026-11-27T04:30:50.954426+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -1765,7 +1800,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:15:44.698471+00:00",
+      "last_checked_ts": "2026-11-27T04:30:49.474050+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Election results must clearly show a winning margin of 12% or more for Chiang Wan-an based on official CEC data.",
@@ -1860,7 +1895,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:15:45.217929+00:00",
+      "last_checked_ts": "2026-11-27T04:30:50.441473+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taichung Mayor election as determined by Taiwan's Central Election Commission.",
@@ -1956,7 +1991,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:15:45.122645+00:00",
+      "last_checked_ts": "2026-11-27T04:30:50.226205+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (defined as a 2-week pause) between the US and Iran by November 30, 2026.",
@@ -2113,7 +2148,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:15:45.309712+00:00",
+      "last_checked_ts": "2026-11-27T04:30:50.610732+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage verlangt die offizielle Bestätigung, dass ein Software- oder Konfigurationsfehler die Ursache war; unbestätigte Berichte reichen möglicherweise nicht aus.",
@@ -2177,7 +2212,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:39.891466+00:00",
+      "last_checked_ts": "2026-11-27T04:30:50.774627+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -2212,7 +2247,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:15:45.217929+00:00",
+      "last_checked_ts": "2026-11-27T04:30:50.441473+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The election outcome is binary and the winner will be officially declared by the Central Election Commission.",
@@ -2243,7 +2278,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:15:45.012736+00:00",
+      "last_checked_ts": "2026-11-27T04:30:50.059432+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -2278,7 +2313,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:40.098522+00:00",
+      "last_checked_ts": "2026-11-27T04:30:51.120063+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -2383,38 +2418,29 @@
         ],
         "market_data": "BTC/USD live spot (Kraken): $60,550.30 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $67,500.00: +11.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.3d (1-sigma move = +/-5.2%, distance = 2.10 sigma): Gaussian one-touch ('dip/reach/hi"
       }
-    },
-    {
-      "id": 126,
-      "ts": "2026-11-26T22:41:33.358565+00:00",
-      "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
-      "question": "Will Bitcoin reach $65,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1450",
-      "p_blind": "0.1800",
-      "p_blended": "0.1544",
-      "confidence": "0.7500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0144",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:40.837030+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
-        "base_rate": 0.2,
-        "bull_case": "Bitcoin historically exhibits explosive volatility and rapid rallies capable of closing a 7.4% gap within a few days.",
-        "bear_case": "With only about 4 to 5 days left in November, BTC sits near $60,500, requiring a swift breakout that momentum does not currently support.",
-        "summary_de": "Bitcoin müsste in den verbleibenden Tagen des Novembers um rund 7,4 Prozent steigen, was angesichts der aktuellen Marktlage und des engen Zeitfensters unwahrscheinlich, aber im Krypto-Sektor nicht völlig ausgeschlossen ist.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $60,501.40 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $65,000.00: +7.4% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.3d (1-sigma move = +/-5.2%, distance = 1.39 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 24,
+      "ts": "2026-11-27T04:31:53.441628+00:00",
+      "client_order_id": "psb-20261127-043152-10346101fe-buy-n-3d7e35",
+      "order_id": "1734000",
+      "market_id": "0x10346101feeef8bc3152ace20ca9a165bd9ec5d744dbc1d11c1a9f77a5913e76",
+      "question": "Will Johnny Chiang win the next Taichung Mayor election?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.21",
+      "quantity": "1792.90",
+      "notional_usd": "376.50",
+      "est_fee_usd": "0",
+      "edge_net": "0.1943",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Johnny Chiang hat zwar politische Relevanz in Taichung, aber interne Parteikonkurrenz und andere potenzielle Kandidaten machen seinen Sieg bei der nächsten Bürgermeisterwahl zu diesem Zeitpunkt zu einem eher unwahrscheinlichen Ereignis."
+    },
     {
       "id": 23,
       "ts": "2026-11-27T02:36:33.216555+00:00",
@@ -2878,6 +2904,18 @@
   ],
   "recent_runs": [
     {
+      "id": 190,
+      "ts": "2026-11-27T04:31:53.443926+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1088,
+      "candidates_found": 25,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 66.52,
+      "errors": []
+    },
+    {
       "id": 189,
       "ts": "2026-11-27T04:26:40.723749+00:00",
       "dry_run": 0,
@@ -3103,18 +3141,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 62.18,
-      "errors": []
-    },
-    {
-      "id": 170,
-      "ts": "2026-11-27T02:51:28.895047+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1112,
-      "candidates_found": 30,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 52.4,
       "errors": []
     }
   ]
