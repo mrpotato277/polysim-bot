@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T03:11:30.384262+00:00",
+  "generated_at": "2026-11-27T03:16:35.536256+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9744.44,
-    "reconciled_equity_usd": 8378.44,
-    "equity_discrepancy_usd": 1366.0,
+    "equity_usd": 9762.1,
+    "reconciled_equity_usd": 9064.39,
+    "equity_discrepancy_usd": 697.71,
     "cash_usd": 6600.06,
-    "positions_value_usd": 1778.38,
-    "deployed_pct": 18.25,
-    "total_pnl_usd": -255.56,
-    "total_pnl_pct": -2.56,
-    "unrealized_pnl_usd": -241.36,
-    "total_trades": 140,
+    "positions_value_usd": 2464.33,
+    "deployed_pct": 25.24,
+    "total_pnl_usd": -237.9,
+    "total_pnl_pct": -2.38,
+    "unrealized_pnl_usd": -223.7,
+    "total_trades": 146,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.46,
     "brier_score": null,
@@ -28,13 +28,13 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 149,
+    "total_forecasts": 150,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 253.38,
-    "technology": 451.63,
-    "politics": 1073.37
+    "crypto": 270.6,
+    "technology": 464.33,
+    "politics": 1729.4
   },
   "equity_curve": [
     {
@@ -1404,6 +1404,13 @@
       "cash": 6600.06,
       "deployed_pct": 18.25,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T03:16:35.069943+00:00",
+      "equity": 9762.1,
+      "cash": 6600.06,
+      "deployed_pct": 25.24,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1429,9 +1436,9 @@
       "outcome": "Yes",
       "quantity": 1813.78,
       "avg_entry_price": 0.224,
-      "current_price": 0.249,
-      "current_value": 451.63,
-      "unrealized_pnl": 45.34,
+      "current_price": 0.256,
+      "current_value": 464.33,
+      "unrealized_pnl": 58.04,
       "p_yes": 0.3684,
       "p_blended": 0.3684,
       "edge_net": 0.1444,
@@ -1444,13 +1451,28 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0835,
-      "current_value": 148.44,
-      "unrealized_pnl": -72.0,
+      "current_price": 0.0865,
+      "current_value": 153.77,
+      "unrealized_pnl": -66.67,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
       "rationale": "Pedro Sánchez steht unter starkem politischen Druck und Umfragen zeigen die Konservativen im Vorteil, wodurch die Wahrscheinlichkeit einer Kontinuität sinkt."
+    },
+    {
+      "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
+      "question": "Will Lai Jui-lung win the next Kaohsiung Mayor election?",
+      "category": "politics",
+      "outcome": "No",
+      "quantity": 3517.3,
+      "avg_entry_price": 0.19,
+      "current_price": 0.185,
+      "current_value": 650.7,
+      "unrealized_pnl": -17.59,
+      "p_yes": 0.559,
+      "p_blended": 0.441,
+      "edge_net": 0.251,
+      "rationale": "Da Lai Jui-lung kein führender Favorit in diesem Wahlrennen ist, liegt die Wahrscheinlichkeit eines Sieges sehr niedrig."
     },
     {
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -1459,9 +1481,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.25,
-      "current_value": 143.51,
-      "unrealized_pnl": -149.25,
+      "current_price": 0.28,
+      "current_value": 160.73,
+      "unrealized_pnl": -132.03,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1499,6 +1521,35 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 150,
+      "ts": "2026-11-27T03:16:35.067277+00:00",
+      "market_id": "0x1f5575d09bc24465235fcab6c220865df6fa596ab5d7dd37c9d5c36ce54f7a5f",
+      "question": "Will Ethereum reach $1,800 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.3850",
+      "p_blind": "0.5200",
+      "p_blended": "0.4202",
+      "confidence": "0.6500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0402",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract based on major exchange feeds.",
+        "base_rate": 0.45,
+        "bull_case": "Ethereum trades near $1,726 and needs a ~4.3% move upward over the remaining days until November 29, well within typical multi-day crypto volatility given ~67% annualized vol.",
+        "bear_case": "Time remaining in the specific date window is very short (only two days until Nov 29), and momentum has stalled below the $1,740 24-hour resistance level.",
+        "summary_de": "Ethereum befindet sich nahe am Zielpreis von 1.800 US-Dollar, benötigt jedoch einen Anstieg von rund 4,3 Prozent innerhalb weniger verbleibender Tage im angegebenen Zeitraum.",
+        "news_used": [],
+        "market_data": "ETH/USD live spot (Kraken): $1,725.97 (24h range: $1,666.02 - $1,737.04, 30d realized annualized vol: ~67%).\nDistance from live spot to $1,800.00: +4.3% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.1d (1-sigma move = +/-6.2%, distance = 0.68 sigma): Gaussian one-touch ('dip/reach/hit') b"
+      }
+    },
     {
       "id": 149,
       "ts": "2026-11-27T03:06:18.708164+00:00",
@@ -1549,7 +1600,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:01:13.372377+00:00",
+      "last_checked_ts": "2026-11-27T03:15:38.373281+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -1580,7 +1631,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:05:37.838213+00:00",
+      "last_checked_ts": "2026-11-27T03:15:40.034225+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1989,7 +2040,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:05:38.173091+00:00",
+      "last_checked_ts": "2026-11-27T03:15:40.566405+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2022,7 +2073,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:01:13.242268+00:00",
+      "last_checked_ts": "2026-11-27T03:15:38.208808+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -2123,7 +2174,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:01:13.508233+00:00",
+      "last_checked_ts": "2026-11-27T03:15:38.529931+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -2185,7 +2236,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:01:14.099259+00:00",
+      "last_checked_ts": "2026-11-27T03:15:39.496697+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2215,7 +2266,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:01:13.966629+00:00",
+      "last_checked_ts": "2026-11-27T03:15:39.317632+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2246,7 +2297,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:05:37.737492+00:00",
+      "last_checked_ts": "2026-11-27T03:15:39.852161+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -2256,35 +2307,6 @@
         "summary_de": "Bitcoin müsste in den verbleibenden Tagen des Novembers um rund 7,4 Prozent steigen, was angesichts der aktuellen Marktlage und des engen Zeitfensters unwahrscheinlich, aber im Krypto-Sektor nicht völlig ausgeschlossen ist.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $60,501.40 (24h range: $59,850.00 - $61,533.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $65,000.00: +7.4% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.3d (1-sigma move = +/-5.2%, distance = 1.39 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 125,
-      "ts": "2026-11-26T22:41:32.166891+00:00",
-      "market_id": "0xa2fdb75238670fd4bd0576c3dc34fa873bee3a0e23b1ce72441f1485f3608dc1",
-      "question": "Will Ethereum dip to $1,600 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.2650",
-      "p_blind": "0.3800",
-      "p_blended": "0.2955",
-      "confidence": "0.7500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0355",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:05:37.582213+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract based on major exchange feeds.",
-        "base_rate": 0.4,
-        "bull_case": "Ethereum is currently trading around $1,694 and only needs a ~5.6% drop to hit $1,600 before the end of November 29, which is well within the expected volatility range over the remaining days given 66% annualized vol.",
-        "bear_case": "With only a few days left until the deadline and the current spot safely above the $1,600 threshold, further downside momentum may stall unless a fresh macro shock occurs.",
-        "summary_de": "Ethereum handelt derzeit bei etwa 1694 USD und ein Rückgang auf 1600 USD ist angesichts der verbleibenden Zeit und Volatilität durchaus plausibel, wenn auch nicht garantiert.",
-        "news_used": [],
-        "market_data": "ETH/USD live spot (Kraken): $1,694.58 (24h range: $1,666.02 - $1,728.63, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,600.00: -5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-6.3%, distance = 0.92 sigma): Gaussian one-touch ('dip/reach/hit') b"
       }
     }
   ],
@@ -2752,6 +2774,18 @@
   ],
   "recent_runs": [
     {
+      "id": 175,
+      "ts": "2026-11-27T03:16:35.070843+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 27,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 58.86,
+      "errors": []
+    },
+    {
       "id": 174,
       "ts": "2026-11-27T03:11:29.957769+00:00",
       "dry_run": 0,
@@ -2977,18 +3011,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 64.66,
-      "errors": []
-    },
-    {
-      "id": 155,
-      "ts": "2026-11-27T01:41:42.273112+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1200,
-      "candidates_found": 30,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.35,
       "errors": []
     }
   ]
