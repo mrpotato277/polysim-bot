@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T09:41:22.526916+00:00",
+  "generated_at": "2026-11-27T09:46:42.196113+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9552.88,
-    "reconciled_equity_usd": 9552.88,
+    "equity_usd": 9640.9,
+    "reconciled_equity_usd": 9640.9,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5400.15,
-    "positions_value_usd": 4152.73,
-    "deployed_pct": 43.47,
-    "total_pnl_usd": -447.12,
-    "total_pnl_pct": -4.47,
-    "unrealized_pnl_usd": -506.32,
+    "positions_value_usd": 4240.75,
+    "deployed_pct": 43.99,
+    "total_pnl_usd": -359.1,
+    "total_pnl_pct": -3.59,
+    "unrealized_pnl_usd": -418.3,
     "total_trades": 272,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -5.76,
@@ -29,13 +29,13 @@
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
     "total_forecasts": 183,
-    "circuit_breaker_active": true
+    "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2175.37,
-    "crypto": 1165.78,
+    "politics": 2171.49,
+    "crypto": 1249.26,
     "geopolitics": 664.17,
-    "markets": 147.41
+    "markets": 155.83
   },
   "equity_curve": [
     {
@@ -1980,6 +1980,13 @@
       "cash": 5400.15,
       "deployed_pct": 43.47,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T09:46:41.572949+00:00",
+      "equity": 9640.9,
+      "cash": 5400.15,
+      "deployed_pct": 43.99,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2005,9 +2012,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.11,
-      "current_value": 534.64,
-      "unrealized_pnl": -229.17,
+      "current_price": 0.115,
+      "current_value": 558.94,
+      "unrealized_pnl": -204.87,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2035,9 +2042,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1005,
-      "current_value": 178.66,
-      "unrealized_pnl": -41.78,
+      "current_price": 0.1015,
+      "current_value": 180.44,
+      "unrealized_pnl": -40.0,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -2065,9 +2072,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.185,
-      "current_value": 106.2,
-      "unrealized_pnl": -186.56,
+      "current_price": 0.22,
+      "current_value": 126.29,
+      "unrealized_pnl": -166.47,
       "p_yes": 0.827,
       "p_blended": 0.173,
       "edge_net": 0.007,
@@ -2080,9 +2087,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.585,
-      "current_value": 661.48,
-      "unrealized_pnl": -23.93,
+      "current_price": 0.58,
+      "current_value": 655.82,
+      "unrealized_pnl": -29.59,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2095,9 +2102,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.47,
-      "current_value": 524.94,
-      "unrealized_pnl": -55.85,
+      "current_price": 0.505,
+      "current_value": 564.03,
+      "unrealized_pnl": -16.76,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -2125,9 +2132,9 @@
       "outcome": "Yes",
       "quantity": 842.35,
       "avg_entry_price": 0.19,
-      "current_price": 0.175,
-      "current_value": 147.41,
-      "unrealized_pnl": -12.64,
+      "current_price": 0.185,
+      "current_value": 155.83,
+      "unrealized_pnl": -4.22,
       "p_yes": 0.2503,
       "p_blended": 0.2503,
       "edge_net": 0.0603,
@@ -2152,7 +2159,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T09:45:43.179631+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on official election results showing which party won the most seats.",
@@ -2215,7 +2222,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:51.625724+00:00",
+      "last_checked_ts": "2026-11-27T09:45:43.179631+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether PSOE will win the most seats in the 2026 Spanish general election, which resolves based on official electoral results.",
@@ -2285,7 +2292,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:52.132695+00:00",
+      "last_checked_ts": "2026-11-27T09:45:43.724659+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob die Fed die Zinsen nach der Dezember-Sitzung 2026 um 25 bps anhebt.",
@@ -2349,7 +2356,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:52.132695+00:00",
+      "last_checked_ts": "2026-11-27T09:45:43.724659+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if the Federal Reserve increases interest rates by 25 bps after the December 2026 FOMC meeting.",
@@ -2384,7 +2391,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:51.625724+00:00",
+      "last_checked_ts": "2026-11-27T09:45:43.179631+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of which party wins the most seats in the 2026 Spanish general election.",
@@ -2419,7 +2426,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:51.211247+00:00",
+      "last_checked_ts": "2026-11-27T09:45:42.540188+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 62.500 USD erreicht, gemessen an gängigen Spot-Börsen.",
@@ -2451,7 +2458,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:50.823118+00:00",
+      "last_checked_ts": "2026-11-27T09:45:42.033852+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil hits $90 in November 2026 based on official spot/futures data.",
@@ -2588,7 +2595,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:51.625724+00:00",
+      "last_checked_ts": "2026-11-27T09:45:43.179631+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the Spanish general election.",
@@ -2651,7 +2658,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:50.696585+00:00",
+      "last_checked_ts": "2026-11-27T09:45:41.872046+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against standard crypto spot price feeds during the specified dates.",
@@ -2680,7 +2687,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:50.959246+00:00",
+      "last_checked_ts": "2026-11-27T09:45:42.197709+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2744,7 +2751,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:51.625724+00:00",
+      "last_checked_ts": "2026-11-27T09:45:43.179631+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich direkt darauf, ob die PSOE bei der spanischen Parlamentswahl 2026 die meisten Sitze gewinnt.",
@@ -2809,7 +2816,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:35:38.639628+00:00",
+      "last_checked_ts": "2026-11-27T09:45:44.563033+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $57,500 at any point during November 2026.",
@@ -2878,7 +2885,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T09:30:51.625724+00:00",
+      "last_checked_ts": "2026-11-27T09:45:43.179631+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -3618,6 +3625,18 @@
   ],
   "recent_runs": [
     {
+      "id": 252,
+      "ts": "2026-11-27T09:46:41.573962+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1106,
+      "candidates_found": 17,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 61.96,
+      "errors": []
+    },
+    {
       "id": 251,
       "ts": "2026-11-27T09:41:22.143658+00:00",
       "dry_run": 0,
@@ -3845,18 +3864,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 55.32,
-      "errors": []
-    },
-    {
-      "id": 232,
-      "ts": "2026-11-27T08:06:05.752023+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1241,
-      "candidates_found": 22,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 37.71,
       "errors": []
     }
   ]
