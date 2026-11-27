@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:06:15.048562+00:00",
+  "generated_at": "2026-11-27T20:11:38.303761+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10834.86,
-    "reconciled_equity_usd": 10834.86,
+    "equity_usd": 10913.4,
+    "reconciled_equity_usd": 10913.4,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4754.55,
-    "deployed_pct": 43.88,
-    "total_pnl_usd": 834.86,
-    "total_pnl_pct": 8.35,
-    "unrealized_pnl_usd": 376.88,
+    "positions_value_usd": 4833.09,
+    "deployed_pct": 44.29,
+    "total_pnl_usd": 913.4,
+    "total_pnl_pct": 9.13,
+    "unrealized_pnl_usd": 455.42,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2518.06,
-    "crypto": 1312.31,
+    "politics": 2523.7,
+    "crypto": 1385.21,
     "geopolitics": 707.02,
     "markets": 217.16
   },
@@ -2907,6 +2907,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.88,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T20:11:37.630407+00:00",
+      "equity": 10913.4,
+      "cash": 6080.31,
+      "deployed_pct": 44.29,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2932,9 +2939,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.27,
-      "current_value": 1312.31,
-      "unrealized_pnl": 548.5,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2962,9 +2969,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1155,
-      "current_value": 205.33,
-      "unrealized_pnl": -15.11,
+      "current_price": 0.1165,
+      "current_value": 207.11,
+      "unrealized_pnl": -13.33,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3022,9 +3029,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.2545,
-      "current_value": 281.2,
-      "unrealized_pnl": 55.8,
+      "current_price": 0.258,
+      "current_value": 285.06,
+      "unrealized_pnl": 59.66,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -3169,7 +3176,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T19:50:41.485188+00:00",
+      "last_checked_ts": "2026-11-27T20:10:39.581215+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands zwischen Israel und Iran muss exakt im Sinne der Marktregeln erfüllt sein; unklare Grenzverletzungen oder verdeckte Operationen könnten die Auflösung beeinflussen.",
@@ -3275,7 +3282,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T19:50:41.585926+00:00",
+      "last_checked_ts": "2026-11-27T20:10:39.758748+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which depends on official verification and formal implementation.",
@@ -3373,7 +3380,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T19:50:41.485188+00:00",
+      "last_checked_ts": "2026-11-27T20:10:39.581215+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Uncertainty regarding exact definition of ceasefire continuity and formal violations between Israel and Iran.",
@@ -3477,7 +3484,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T19:55:38.964745+00:00",
+      "last_checked_ts": "2026-11-27T20:10:40.103323+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error caused the November 13 FAA ground stop before December 1, 2026.",
@@ -3682,7 +3689,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T19:55:41.409243+00:00",
+      "last_checked_ts": "2026-11-27T20:10:41.551916+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before December 1, 2026.",
@@ -3748,7 +3755,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T19:50:41.485188+00:00",
+      "last_checked_ts": "2026-11-27T20:10:39.581215+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires ongoing uninterrupted ceasefire between Israel and Iran through December 15, 2026, which depends on precise definitions of formal vs informal ceasefires and proxy escalations.",
@@ -3783,7 +3790,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T19:55:41.409243+00:00",
+      "last_checked_ts": "2026-11-27T20:10:41.551916+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract for ETH on major exchanges before the end of November 2026.",
@@ -4825,6 +4832,18 @@
   ],
   "recent_runs": [
     {
+      "id": 375,
+      "ts": "2026-11-27T20:11:37.641476+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1147,
+      "candidates_found": 19,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 59.74,
+      "errors": []
+    },
+    {
       "id": 374,
       "ts": "2026-11-27T20:06:14.796469+00:00",
       "dry_run": 0,
@@ -5050,18 +5069,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 55.08,
-      "errors": []
-    },
-    {
-      "id": 355,
-      "ts": "2026-11-27T18:31:45.871591+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1169,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 55.28,
       "errors": []
     }
   ]
