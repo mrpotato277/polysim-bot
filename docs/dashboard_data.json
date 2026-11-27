@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:06:38.542288+00:00",
+  "generated_at": "2026-11-27T18:11:28.001559+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10676.76,
-    "reconciled_equity_usd": 10676.76,
+    "equity_usd": 10543.48,
+    "reconciled_equity_usd": 10543.48,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4596.45,
-    "deployed_pct": 43.05,
-    "total_pnl_usd": 676.76,
-    "total_pnl_pct": 6.77,
-    "unrealized_pnl_usd": 218.78,
+    "positions_value_usd": 4463.17,
+    "deployed_pct": 42.33,
+    "total_pnl_usd": 543.48,
+    "total_pnl_pct": 5.43,
+    "unrealized_pnl_usd": 85.5,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2350.07,
-    "crypto": 1458.12,
+    "politics": 2386.91,
+    "crypto": 1288.0,
     "geopolitics": 664.17,
     "markets": 124.09
   },
@@ -2727,6 +2727,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.05,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T18:11:27.604069+00:00",
+      "equity": 10543.48,
+      "cash": 6080.31,
+      "deployed_pct": 42.33,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2752,9 +2759,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.3,
-      "current_value": 1458.12,
-      "unrealized_pnl": 694.31,
+      "current_price": 0.265,
+      "current_value": 1288.0,
+      "unrealized_pnl": 524.19,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2782,9 +2789,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.109,
-      "current_value": 193.77,
-      "unrealized_pnl": -26.67,
+      "current_price": 0.117,
+      "current_value": 207.99,
+      "unrealized_pnl": -12.45,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2827,9 +2834,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.565,
-      "current_value": 638.86,
-      "unrealized_pnl": -46.55,
+      "current_price": 0.585,
+      "current_value": 661.48,
+      "unrealized_pnl": -23.93,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2989,7 +2996,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T18:10:40.450418+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before December 1, 2026.",
@@ -3090,7 +3097,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:55:35.957828+00:00",
+      "last_checked_ts": "2026-11-27T18:10:40.450418+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract for ETH on major exchanges before the end of November 2026.",
@@ -3224,7 +3231,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:55:36.633306+00:00",
+      "last_checked_ts": "2026-11-27T18:10:41.438891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on accepted spot exchange feeds before December 1, 2026.",
@@ -3586,7 +3593,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:55:36.059669+00:00",
+      "last_checked_ts": "2026-11-27T18:10:40.619266+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard binary contract checking Bitcoin price relative to $58,000 threshold at the exact deadline date.",
@@ -4628,6 +4635,18 @@
   ],
   "recent_runs": [
     {
+      "id": 351,
+      "ts": "2026-11-27T18:11:27.606101+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1228,
+      "candidates_found": 19,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 48.96,
+      "errors": []
+    },
+    {
       "id": 350,
       "ts": "2026-11-27T18:06:38.097144+00:00",
       "dry_run": 0,
@@ -4853,18 +4872,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 44.38,
-      "errors": []
-    },
-    {
-      "id": 331,
-      "ts": "2026-11-27T16:31:33.141179+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1149,
-      "candidates_found": 16,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 41.07,
       "errors": []
     }
   ]
