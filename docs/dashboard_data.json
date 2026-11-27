@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:56:31.916563+00:00",
+  "generated_at": "2026-11-27T05:02:08.056986+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9772.12,
-    "reconciled_equity_usd": 8698.94,
+    "equity_usd": 9797.56,
+    "reconciled_equity_usd": 8724.38,
     "equity_discrepancy_usd": 1073.18,
     "cash_usd": 5848.08,
-    "positions_value_usd": 2850.86,
-    "deployed_pct": 29.17,
-    "total_pnl_usd": -227.88,
-    "total_pnl_pct": -2.28,
-    "unrealized_pnl_usd": -213.68,
+    "positions_value_usd": 2876.3,
+    "deployed_pct": 29.36,
+    "total_pnl_usd": -202.44,
+    "total_pnl_pct": -2.02,
+    "unrealized_pnl_usd": -188.24,
     "total_trades": 149,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.49,
@@ -28,13 +28,13 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 157,
+    "total_forecasts": 160,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2115.47,
-    "crypto": 298.27,
-    "technology": 437.12
+    "politics": 2140.6,
+    "crypto": 286.79,
+    "technology": 448.91
   },
   "equity_curve": [
     {
@@ -1557,6 +1557,19 @@
       "cash": 5848.08,
       "deployed_pct": 29.17,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T05:00:00+00:00",
+      "equity": 8728.32,
+      "cash": 8728.32,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-27T05:02:07.599259+00:00",
+      "equity": 9797.56,
+      "cash": 5848.08,
+      "deployed_pct": 29.36,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1597,9 +1610,9 @@
       "outcome": "Yes",
       "quantity": 1813.78,
       "avg_entry_price": 0.224,
-      "current_price": 0.241,
-      "current_value": 437.12,
-      "unrealized_pnl": 30.83,
+      "current_price": 0.2475,
+      "current_value": 448.91,
+      "unrealized_pnl": 42.62,
       "p_yes": 0.3684,
       "p_blended": 0.3684,
       "edge_net": 0.1444,
@@ -1612,9 +1625,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.085,
-      "current_value": 151.11,
-      "unrealized_pnl": -69.33,
+      "current_price": 0.1055,
+      "current_value": 187.55,
+      "unrealized_pnl": -32.89,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1642,9 +1655,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.315,
-      "current_value": 180.82,
-      "unrealized_pnl": -111.94,
+      "current_price": 0.295,
+      "current_value": 169.34,
+      "unrealized_pnl": -123.42,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1657,9 +1670,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.615,
-      "current_value": 695.4,
-      "unrealized_pnl": 9.99,
+      "current_price": 0.605,
+      "current_value": 684.09,
+      "unrealized_pnl": -1.32,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -1682,6 +1695,101 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 160,
+      "ts": "2026-11-27T05:02:07.597752+00:00",
+      "market_id": "0xea3fc87eb93319e7ec9bc2d6c2b0b1a7aa9bdbfa9c74fcb268d1c98bda0d7e18",
+      "question": "Will Bitcoin reach $62,000 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.8050",
+      "p_blind": "0.8300",
+      "p_blended": "0.8122",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0122",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Bitcoin hits $62,000 during November 23-29, 2026. Spot is close at $61,425 with ample time left.",
+        "base_rate": 0.82,
+        "bull_case": "Bitcoin is currently trading near $61,425, requiring only a modest +0.9% move to touch the $62,000 threshold before November 29.",
+        "bear_case": "Recent bearish options positioning and macroeconomic pressures could trigger a downward leg away from the target before the deadline.",
+        "summary_de": "Da Bitcoin nahe bei 61.425 US-Dollar notiert und nur ein geringer Anstieg von knapp einem Prozent erforderlich ist, liegt die Wahrscheinlichkeit eines Erreichens der Marke von 62.000 US-Dollar vor Ablauf der Frist hoch.",
+        "news_used": [
+          "Bitcoin Options Traders Shift to $60,000 Puts as Bearish Bets Reach 2022 Levels - Hokanews"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $61,425.00 (24h range: $59,850.00 - $61,773.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $62,000.00: +0.9% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-4.4%, distance = 0.21 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 159,
+      "ts": "2026-11-27T05:02:06.261703+00:00",
+      "market_id": "0x215898981a482d275f91f8f9523f9cf7d582be172557e0c953f265a54936878a",
+      "question": "Will Bitcoin reach $67,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0745",
+      "p_blind": "0.0600",
+      "p_blended": "0.0698",
+      "confidence": "0.8500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0052",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Die Auflösung erfolgt anhand von Standardpreisdaten für Bitcoin (z. B. Binance oder Chainlink) bis zum Fristende.",
+        "base_rate": 0.08,
+        "bull_case": "Krypto-Märkte neigen zu plötzlichen, heftigen Aufwärtsimpulsen ('Short Squeezes'), die innerhalb weniger Tage eine Bewegung von rund 10% ermöglichen könnten.",
+        "bear_case": "Der aktuelle Spotpreis liegt bei rund $61.425, und das verbleibende Zeitfenster bis zum Monatsende beträgt nur noch weniger als 72 Stunden, was eine Distanz von knapp 10% in einem ruhigen Markt sehr unwahrscheinlich macht.",
+        "summary_de": "Mit dem aktuellen Bitcoin-Preis nahe 61.425 USD und weniger als drei verbleibenden Tagen im November ist ein Anstieg um fast 10% auf 67.500 USD statistisch extrem unwahrscheinlich.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $61,425.00 (24h range: $59,850.00 - $61,773.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $67,500.00: +9.9% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.0d (1-sigma move = +/-5.1%, distance = 1.87 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 158,
+      "ts": "2026-11-27T05:02:04.111893+00:00",
+      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
+      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.0460",
+      "p_blind": "0.4500",
+      "p_blended": "0.1134",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves YES if the Federal Reserve makes no change to interest rates after the December 2026 FOMC meeting.",
+        "base_rate": 0.65,
+        "bull_case": "Despite some recent hawkish commentary and inflation stickiness, historical precedent shows the Fed often pauses in December to assess economic data before making a move.",
+        "bear_case": "Recent market sentiment and news indicate rising expectations of a potential rate hike due to resilient economic conditions and persistent inflation pressures.",
+        "summary_de": "Trotz historischer Pausierungstendenzen im Dezember deuten aktuelle Markterwartungen und Diskussionen über mögliche Zinserhöhungen auf eine geringere Wahrscheinlichkeit für unveränderte Zinsen hin.",
+        "news_used": [
+          "First Trust’s Fed Forecast: Interest Rate Hikes in 2027 May Fall Short of Expectations - Cryptonews.net",
+          "Fed rate hike odds rise to almost 100%: can AI selloff force a rethink? - TradingView",
+          "The Fed Recently Held Rates but a Hike Could Be Coming. Here's What That Means for Your CD - money.com",
+          "What will happen to gold rates? Crash or surge after the US Fed FOMC meeting outcome - Scenarios explained - Livemint",
+          "Hawkish Fed poised to raise rates despite stock market turmoil - Financial Times",
+          "Opinion | The Next Fed Leader Should Be a Bot - The New York Times"
+        ]
+      }
+    },
     {
       "id": 157,
       "ts": "2026-11-27T04:51:52.315794+00:00",
@@ -1734,7 +1842,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T05:01:04.481552+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -1764,7 +1872,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T05:01:05.830347+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange feeds before December 1, 2026.",
@@ -1793,7 +1901,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T05:01:04.827283+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -1824,7 +1932,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T05:01:05.674539+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
@@ -1888,7 +1996,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:45:38.768862+00:00",
+      "last_checked_ts": "2026-11-27T05:01:05.109377+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -1978,7 +2086,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:45:37.998975+00:00",
+      "last_checked_ts": "2026-11-27T05:01:04.303543+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -2009,7 +2117,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:50:45.131670+00:00",
+      "last_checked_ts": "2026-11-27T05:01:05.977120+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -2367,105 +2475,6 @@
           "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation",
           "[Big read] Taiwan local elections: What a DPP surge means for the 2028 presidency and cross-strait relations - ThinkChina",
           "New Taipei City’s KMT candidate apologizes for volunteer's sexist remarks -News-Radio Taiwan International - Rti 中央廣播電臺"
-        ]
-      }
-    },
-    {
-      "id": 135,
-      "ts": "2026-11-27T00:06:31.829875+00:00",
-      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
-      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
-      "category": "technology",
-      "end_date": "2026-12-01T04:59:00+00:00",
-      "market_price": "0.2410",
-      "p_blind": "0.6500",
-      "p_blended": "0.3684",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.1444",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:55:34.356327+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Die Frage verlangt die offizielle Bestätigung, dass ein Software- oder Konfigurationsfehler die Ursache war; unbestätigte Berichte reichen möglicherweise nicht aus.",
-        "base_rate": 0.5,
-        "bull_case": "Typischerweise werden solche landesweiten Systemausfälle bei der FAA rasch auf Software- oder IT-Konfigurationsfehler zurückgeführt.",
-        "bear_case": "Untersuchungen können länger dauern, oder die offizielle Ursache wird als Hardwaredefekt, Cyberangriff oder externer Kommunikationsausfall eingestuft.",
-        "summary_de": "Es ist wahrscheinlich, dass eine Untersuchung einen Software- oder Konfigurationsfehler als Ursache des FAA-Ausfalls bestätigt, jedoch bleibt ein Restrisiko bezüglich des genauen Untersuchungsergebnisses.",
-        "news_used": [
-          "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/",
-          "Microsoft, FAA outages and bomb hoaxes expose travel insurance gaps - https://www.thetraveler.org/"
-        ]
-      }
-    },
-    {
-      "id": 134,
-      "ts": "2026-11-26T23:26:26.279534+00:00",
-      "market_id": "0x33b2636d05ee172f370049ccc84d185aedf23cc893f4c82e7997e13ecc29c704",
-      "question": "Iran full airspace closure by November 30, 2026?",
-      "category": "geopolitics",
-      "end_date": "2026-12-01T04:59:00+00:00",
-      "market_price": "0.0520",
-      "p_blind": "0.0800",
-      "p_blended": "0.0617",
-      "confidence": "0.7500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:50:45.717188+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
-        "base_rate": 0.05,
-        "bull_case": "Escalating regional military tensions and US warnings of Iranian attacks could precipitate a complete emergency closure of Iranian airspace before November 30.",
-        "bear_case": "Despite regional conflict and flight delays, full nationwide airspace closures are extremely rare events mostly reserved for active total war, and Iran has kept corridors partially open.",
-        "summary_de": "Trotz anhaltender regionaler Spannungen und Angriffswarnungen ist eine vollständige, landesweite Schließung des iranischen Luftraums bis Ende November ein extremes Ereignis mit geringer historischer Wahrscheinlichkeit.",
-        "news_used": [
-          "Is it safe to travel to Saudi Arabia? The latest advice, as the kingdom confirms another spate of attacks - Condé Nast Traveller Middle East",
-          "UAE flights status update: Latest cancellations and delays for November 25 as regional tensions escalate - Gulf News",
-          "Etihad flight from Abu Dhabi to Tel Aviv turns back, apparently due to Iran attacks in Gulf - The Times of Israel",
-          "US warns Americans in the Middle East of Iranian, Houthi attack threats - Gulf News"
-        ]
-      }
-    },
-    {
-      "id": 133,
-      "ts": "2026-11-26T23:11:37.551934+00:00",
-      "market_id": "0x9b1a03b41a1a68c209e9c3caf3d8af3f878420d6dbe8cb8afffd66049e73b114",
-      "question": "Another Fed rate hike in 2026?",
-      "category": "economics",
-      "end_date": "2026-12-10T04:59:00+00:00",
-      "market_price": "0.9545",
-      "p_blind": "0.5500",
-      "p_blended": "0.8641",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:55:34.525515+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
-        "base_rate": 0.2,
-        "bull_case": "Persistent inflation surprises and a hot economy with rising wage pressures, as highlighted by recent Fed Beige Book reports and market expectations, increase the probability of a resumption in rate hikes.",
-        "bear_case": "The Federal Reserve has generally been in an easing or neutral pause phase, and actual rate hikes require severe upside shocks that policy makers may prefer to manage through prolonged pauses rather than tightening further.",
-        "summary_de": "Angesichts anhaltender Inflationssorgen und steigender Markterwartungen bezüglich weiterer Zinsschritte ist die Wahrscheinlichkeit einer Zinserhöhung durch die Fed im Jahr 2026 spürbar gestiegen.",
-        "news_used": [
-          "Fed rate hike odds rise to almost 100%: can AI selloff force a rethink? - TradingView",
-          "Gold hovers near 15-month low as Fed rate hike bets grow - Traders Union",
-          "US Strategic Bitcoin Reserve Bill Advances, but Can It Pass Before 2027? - TradingView",
-          "Gold falls again amid accelerating inflation in the United States and expectations of another Fed rate hike - Українські Національні Новини ",
-          "Australian Dollar gathers strength above 0.6600 on hotter CPI inflation data - www.tmgm.com",
-          "Fed Beige Book Shows Hot US Economy With Modest Price Growth And Rising Wage Pressure - TradingView"
         ]
       }
     }
@@ -2994,6 +3003,18 @@
   ],
   "recent_runs": [
     {
+      "id": 196,
+      "ts": "2026-11-27T05:02:07.600044+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1120,
+      "candidates_found": 23,
+      "llm_calls": 3,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 65.42,
+      "errors": []
+    },
+    {
       "id": 195,
       "ts": "2026-11-27T04:56:31.399800+00:00",
       "dry_run": 0,
@@ -3219,18 +3240,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 63.59,
-      "errors": []
-    },
-    {
-      "id": 176,
-      "ts": "2026-11-27T03:21:29.637896+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1100,
-      "candidates_found": 31,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 51.44,
       "errors": []
     }
   ]
