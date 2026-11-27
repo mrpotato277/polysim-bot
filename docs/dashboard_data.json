@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T03:51:46.671423+00:00",
+  "generated_at": "2026-11-27T03:56:30.323666+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9821.65,
-    "reconciled_equity_usd": 9821.65,
-    "equity_discrepancy_usd": 0.0,
+    "equity_usd": 9807.02,
+    "reconciled_equity_usd": 9812.76,
+    "equity_discrepancy_usd": -5.74,
     "cash_usd": 7297.77,
-    "positions_value_usd": 2523.88,
-    "deployed_pct": 25.7,
-    "total_pnl_usd": -178.35,
-    "total_pnl_pct": -1.78,
-    "unrealized_pnl_usd": -164.15,
+    "positions_value_usd": 2514.99,
+    "deployed_pct": 25.64,
+    "total_pnl_usd": -192.98,
+    "total_pnl_pct": -1.93,
+    "unrealized_pnl_usd": -173.04,
     "total_trades": 146,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.49,
@@ -34,7 +34,7 @@
   "category_exposure": {
     "crypto": 286.79,
     "technology": 439.84,
-    "politics": 1797.25
+    "politics": 1788.36
   },
   "equity_curve": [
     {
@@ -1460,6 +1460,13 @@
       "cash": 7297.77,
       "deployed_pct": 25.7,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T03:56:29.887051+00:00",
+      "equity": 9807.02,
+      "cash": 7297.77,
+      "deployed_pct": 25.64,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1500,9 +1507,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.107,
-      "current_value": 190.22,
-      "unrealized_pnl": -30.22,
+      "current_price": 0.102,
+      "current_value": 181.33,
+      "unrealized_pnl": -39.11,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1587,7 +1594,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:45:40.538609+00:00",
+      "last_checked_ts": "2026-11-27T03:55:37.545058+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1680,7 +1687,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:40:50.515752+00:00",
+      "last_checked_ts": "2026-11-27T03:55:36.581426+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -2089,7 +2096,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:45:40.069624+00:00",
+      "last_checked_ts": "2026-11-27T03:55:37.148444+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2285,7 +2292,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:40:49.728826+00:00",
+      "last_checked_ts": "2026-11-27T03:55:36.088064+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2315,7 +2322,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:40:49.559464+00:00",
+      "last_checked_ts": "2026-11-27T03:55:35.865211+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2346,7 +2353,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:40:50.348186+00:00",
+      "last_checked_ts": "2026-11-27T03:55:36.423427+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -2823,6 +2830,18 @@
   ],
   "recent_runs": [
     {
+      "id": 183,
+      "ts": "2026-11-27T03:56:29.897499+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1100,
+      "candidates_found": 30,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 56.84,
+      "errors": []
+    },
+    {
       "id": 182,
       "ts": "2026-11-27T03:51:46.160563+00:00",
       "dry_run": 0,
@@ -3048,18 +3067,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 41.15,
-      "errors": []
-    },
-    {
-      "id": 163,
-      "ts": "2026-11-27T02:16:33.987517+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1112,
-      "candidates_found": 31,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 51.33,
       "errors": []
     }
   ]
