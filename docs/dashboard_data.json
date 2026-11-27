@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:16:23.471592+00:00",
+  "generated_at": "2026-11-27T04:21:17.374858+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9794.79,
-    "reconciled_equity_usd": 9800.53,
-    "equity_discrepancy_usd": -5.74,
+    "equity_usd": 9806.27,
+    "reconciled_equity_usd": 9806.27,
+    "equity_discrepancy_usd": 0.0,
     "cash_usd": 7297.77,
-    "positions_value_usd": 2502.76,
-    "deployed_pct": 25.55,
-    "total_pnl_usd": -205.21,
-    "total_pnl_pct": -2.05,
-    "unrealized_pnl_usd": -185.27,
+    "positions_value_usd": 2508.5,
+    "deployed_pct": 25.58,
+    "total_pnl_usd": -193.73,
+    "total_pnl_pct": -1.94,
+    "unrealized_pnl_usd": -179.53,
     "total_trades": 146,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.49,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 286.79,
+    "crypto": 292.53,
     "technology": 438.03,
     "politics": 1777.94
   },
@@ -1501,6 +1501,13 @@
       "cash": 7297.77,
       "deployed_pct": 25.55,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T04:21:17.037425+00:00",
+      "equity": 9806.27,
+      "cash": 7297.77,
+      "deployed_pct": 25.58,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1571,9 +1578,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.295,
-      "current_value": 169.34,
-      "unrealized_pnl": -123.42,
+      "current_price": 0.305,
+      "current_value": 175.08,
+      "unrealized_pnl": -117.68,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1690,7 +1697,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:05:40.222877+00:00",
+      "last_checked_ts": "2026-11-27T04:20:39.998306+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -1721,7 +1728,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:10:44.706378+00:00",
+      "last_checked_ts": "2026-11-27T04:20:40.936280+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -2130,7 +2137,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:10:45.139246+00:00",
+      "last_checked_ts": "2026-11-27T04:20:41.240184+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2163,7 +2170,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:05:40.083189+00:00",
+      "last_checked_ts": "2026-11-27T04:20:39.891466+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any meeting in 2026 before December 10, 2026.",
@@ -2264,7 +2271,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:05:40.362890+00:00",
+      "last_checked_ts": "2026-11-27T04:20:40.098522+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -2326,7 +2333,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:05:40.936106+00:00",
+      "last_checked_ts": "2026-11-27T04:20:40.635964+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2356,7 +2363,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:05:40.808322+00:00",
+      "last_checked_ts": "2026-11-27T04:20:40.527402+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2387,7 +2394,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:10:44.585273+00:00",
+      "last_checked_ts": "2026-11-27T04:20:40.837030+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -2864,6 +2871,18 @@
   ],
   "recent_runs": [
     {
+      "id": 188,
+      "ts": "2026-11-27T04:21:17.039437+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1100,
+      "candidates_found": 26,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 38.75,
+      "errors": []
+    },
+    {
       "id": 187,
       "ts": "2026-11-27T04:16:23.076069+00:00",
       "dry_run": 0,
@@ -3089,18 +3108,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 66.03,
-      "errors": []
-    },
-    {
-      "id": 168,
-      "ts": "2026-11-27T02:41:27.060095+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1192,
-      "candidates_found": 28,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 39.57,
       "errors": []
     }
   ]
