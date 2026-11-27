@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:16:19.871173+00:00",
+  "generated_at": "2026-11-27T18:21:39.948118+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -28,7 +28,7 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 251,
+    "total_forecasts": 253,
     "circuit_breaker_active": true
   },
   "category_exposure": {
@@ -2741,6 +2741,13 @@
       "cash": 6080.31,
       "deployed_pct": 42.94,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T18:21:39.548774+00:00",
+      "equity": 10656.85,
+      "cash": 6080.31,
+      "deployed_pct": 42.94,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2882,6 +2889,71 @@
   ],
   "recent_forecasts": [
     {
+      "id": 253,
+      "ts": "2026-11-27T18:21:39.547126+00:00",
+      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
+      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
+      "category": "technology",
+      "end_date": "2026-12-01T04:59:00+00:00",
+      "market_price": "0.2155",
+      "p_blind": "0.6500",
+      "p_blended": "0.3102",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0982",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires official confirmation that a software or configuration error caused the November 13 FAA ground stop before December 1, 2026.",
+        "base_rate": 0.7,
+        "bull_case": "Modern aviation technology failures of nationwide scale almost invariably trace back to software bugs, database corruption, or faulty configuration deployments.",
+        "bear_case": "Investigations into complex FAA system outages can take months, and the official report might not be finalized or explicitly confirm a software/configuration error before the deadline.",
+        "summary_de": "Da landesweite FAA-Ausfälle historisch gesehen meist auf Software- oder Konfigurationsfehler zurückzuführen sind, ist eine offizielle Bestätigung wahrscheinlich, sofern der Untersuchungsbericht rechtzeitig vorliegt.",
+        "news_used": [
+          "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/"
+        ]
+      }
+    },
+    {
+      "id": 252,
+      "ts": "2026-11-27T18:21:38.326278+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.5200",
+      "p_blended": "0.3257",
+      "confidence": "0.4000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0857",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Test match between New Zealand and India resolving based on official match outcome.",
+        "base_rate": 0.5,
+        "bull_case": "New Zealand is playing at home in Christchurch and finished Day 1 with honours even against India.",
+        "bear_case": "India is a formidable Test side capable of pushing for a victory over the remaining days of the match.",
+        "summary_de": "Nach dem ersten Tag in Christchurch steht das Test-Match zwischen Neuseeland und Indien ausgeglichen, wobei Neuseeland als Gastgeber leichte Vorteile haben könnte.",
+        "news_used": [
+          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
+          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
+          "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
+          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
+          "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website"
+        ]
+      }
+    },
+    {
       "id": 251,
       "ts": "2026-11-27T18:16:19.631297+00:00",
       "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
@@ -2898,7 +2970,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Test Match zwischen Neuseeland und Indien entscheidet über den Ausgang (YES für Sieg Neuseeland).",
@@ -2933,7 +3005,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test match result between New Zealand and India based on standard cricket rules.",
@@ -3003,7 +3075,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Testergebnis der Test Match Begegnung zwischen Neuseeland und Indien entscheidet eindeutig über den Ausgang (Sieg Neuseeland).",
@@ -3104,7 +3176,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.660183+00:00",
+      "last_checked_ts": "2026-11-27T18:20:49.194038+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires ongoing uninterrupted ceasefire between Israel and Iran through December 15, 2026, which depends on precise definitions of formal vs informal ceasefires and proxy escalations.",
@@ -3168,7 +3240,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3302,7 +3374,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Marktversprechen bezieht sich klar auf das Test Match im Cricket oder Rugby zwischen Neuseeland und Indien.",
@@ -3337,7 +3409,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
@@ -3407,7 +3479,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3470,7 +3542,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard sports match outcome contract between New Zealand and India ending by December 3, 2026.",
@@ -3534,7 +3606,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3600,7 +3672,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
+      "last_checked_ts": "2026-11-27T18:20:48.893302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3649,72 +3721,6 @@
           "Bitcoin price eyes $61K as Talos warns of thin Thanksgiving liquidity"
         ],
         "market_data": "BTC/USD live spot (Kraken): $60,434.00 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $58,000.00: -4.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.0d (1-sigma move = +/-3.5%, distance = 1.16 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 228,
-      "ts": "2026-11-27T16:31:33.138255+00:00",
-      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
-      "question": "Will Bitcoin reach $62,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.3150",
-      "p_blind": "0.4200",
-      "p_blended": "0.3622",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0522",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:15:42.010887+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price hit contract based on reliable crypto exchange or oracle feeds.",
-        "base_rate": 0.35,
-        "bull_case": "Bitcoin has already touched $62,139 in the last 24 hours, meaning it only needs a modest ~0.6% further upward spike to reach the $62,500 threshold with several days left in November.",
-        "bear_case": "Current spot is around $60,030, requiring a ~4.1% rally in a short timeframe, and downward macro pressure could cap rallies.",
-        "summary_de": "Bitcoin liegt aktuell bei rund 60.030 US-Dollar und war im Laufe des Monats bereits nahe an der Marke, weshalb ein Erreichen von 62.500 US-Dollar in den verbleibenden Tagen durchaus im Bereich des Möglichen liegt.",
-        "news_used": [
-          "Prediction Markets: Bitcoin $62,500 Odds Up, B300 Rents Ease… - Longbridge"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $60,029.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $62,500.00: +4.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-4.7%, distance = 0.86 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 227,
-      "ts": "2026-11-27T16:21:30.720928+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4500",
-      "p_blended": "0.2959",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0459",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T18:05:36.466148+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand possesses strong home-ground advantages and competitive cricket squad depth.",
-        "bear_case": "India is consistently ranked as one of the top global cricket teams across formats, making them formidable favorites.",
-        "summary_de": "Indien geht als statistischer Favorit in das Test-Match gegen Neuseeland, obwohl die Mannschaft Neuseelands im Heimvorteil überraschen kann.",
-        "news_used": [
-          "How global markets shape NZ's red meat exports - NZ Herald",
-          "New Zealand schools are ditching bells for bangers - The Spinoff",
-          "A New Zealand couple built a four-bedroom home using 1,300 recycled tyres and 7,000 glass bottles; after - The Times of India",
-          "New Zealand Dollar rises as the Opportunity Party takes the balance of power - FXStreet",
-          "All Blacks have ‘no gas in the tank’ but stats show it’s England who should be out of juice - The Guardian",
-          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - AP News"
-        ]
       }
     }
   ],
@@ -4642,6 +4648,18 @@
   ],
   "recent_runs": [
     {
+      "id": 353,
+      "ts": "2026-11-27T18:21:39.549550+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1217,
+      "candidates_found": 19,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 53.17,
+      "errors": []
+    },
+    {
       "id": 352,
       "ts": "2026-11-27T18:16:19.634091+00:00",
       "dry_run": 0,
@@ -4867,18 +4885,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 43.16,
-      "errors": []
-    },
-    {
-      "id": 333,
-      "ts": "2026-11-27T16:41:44.016194+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1112,
-      "candidates_found": 18,
-      "llm_calls": 3,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 60.01,
       "errors": []
     }
   ]
