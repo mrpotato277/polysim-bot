@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T06:36:13.484178+00:00",
+  "generated_at": "2026-11-27T06:41:47.316371+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9713.95,
-    "reconciled_equity_usd": 8654.63,
-    "equity_discrepancy_usd": 1059.32,
+    "equity_usd": 9745.42,
+    "reconciled_equity_usd": 8684.29,
+    "equity_discrepancy_usd": 1061.13,
     "cash_usd": 5789.08,
-    "positions_value_usd": 2865.55,
-    "deployed_pct": 29.5,
-    "total_pnl_usd": -286.05,
-    "total_pnl_pct": -2.86,
-    "unrealized_pnl_usd": -367.07,
+    "positions_value_usd": 2895.21,
+    "deployed_pct": 29.71,
+    "total_pnl_usd": -254.58,
+    "total_pnl_pct": -2.55,
+    "unrealized_pnl_usd": -337.41,
     "total_trades": 174,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -4.89,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 165,
+    "total_forecasts": 167,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2146.06,
-    "crypto": 719.49
+    "politics": 2158.5,
+    "crypto": 736.71
   },
   "equity_curve": [
     {
@@ -1701,6 +1701,13 @@
       "cash": 5789.08,
       "deployed_pct": 29.5,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T06:41:46.879990+00:00",
+      "equity": 9745.42,
+      "cash": 5789.08,
+      "deployed_pct": 29.71,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1741,9 +1748,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0885,
-      "current_value": 157.33,
-      "unrealized_pnl": -63.11,
+      "current_price": 0.0955,
+      "current_value": 169.77,
+      "unrealized_pnl": -50.67,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1771,9 +1778,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.195,
-      "current_value": 111.94,
-      "unrealized_pnl": -180.82,
+      "current_price": 0.225,
+      "current_value": 129.16,
+      "unrealized_pnl": -163.6,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1811,6 +1818,70 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 167,
+      "ts": "2026-11-27T06:41:46.878408+00:00",
+      "market_id": "0x67907019102bb5b92fe70a966e259e5627d4f1280e4860e0991605d71a8e5afb",
+      "question": "Will Bitcoin reach $66,000 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.0945",
+      "p_blind": "0.1200",
+      "p_blended": "0.1014",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract based on major exchange feeds.",
+        "base_rate": 0.15,
+        "bull_case": "Cryptocurrency markets exhibit fat tails and rapid momentum spikes, meaning a 7.1% rally over the remaining weekend days is entirely within historical crypto volatility parameters.",
+        "bear_case": "Bitcoin is currently trading near $61,616 with limited immediate macro catalysts, requiring a swift break above resistance to reach $66,000 within a tight multi-day window.",
+        "summary_de": "Bitcoin müsste in kurzer Zeit um über sieben Prozent steigen, was angesichts der aktuellen Volatilität und des Abstands zur Marke ein eher unwahrscheinliches Szenario bleibt.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $61,616.10 (24h range: $59,850.00 - $61,925.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $66,000.00: +7.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.3%, distance = 1.58 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 166,
+      "ts": "2026-11-27T06:41:45.368616+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8350",
+      "p_blind": "0.3500",
+      "p_blended": "0.6929",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "-0.1371",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Es muss geprüft werden, ob vereinbarte Waffenruhen über die Frist hinaus formell anhalten oder ob Zwischenfälle als Bruch gewertet werden.",
+        "base_rate": 0.4,
+        "bull_case": "Trotz anhaltender Spannungen und begrenzter regionaler Zwischenfälle halten beide Seiten ein grundsätzliches Niveau der Deeskalation aufrecht.",
+        "bear_case": "Militärische Drohungen, wie die jüngsten Aussagen der israelischen Armee zur Bereitschaft für Schläge gegen Iran, deuten auf ein hohes Risiko einer schnellen Eskalation vor dem 15. Dezember hin.",
+        "summary_de": "Aufgrund der fortbestehenden militärischen Drohungen und anhaltenden regionalen Konflikte ist die Wahrscheinlichkeit eines vollständigen Fortbestehens der Waffenruhe bis zum 15. Dezember eher gering.",
+        "news_used": [
+          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English",
+          "Red Sea shipping crisis explained: Suez lost $7bn in 2024 - DNE Africa",
+          "Israeli army says it's ready to strike Iran 'at any moment,' even without US - Türkiye Today",
+          "UN Tribunal Challenges UNRWA Dismissals as Gaza Strikes Continue - cwibc.co.id",
+          "Gaza Health Officials Warn of Spread of Meningitis as Israel Continues to Violate Ceasefire Deal - Democracy Now!",
+          "Dubai and Middle East flight disruption: flight cancellations and route suspensions continue as Saudi Arabia confirms another attack - Condé"
+        ]
+      }
+    },
     {
       "id": 165,
       "ts": "2026-11-27T06:36:13.140448+00:00",
@@ -1926,7 +1997,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:46.533067+00:00",
+      "last_checked_ts": "2026-11-27T06:40:50.409951+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 2026 auf 60.000 USD dippt, basierend auf Standard-Preisen der wichtigsten Marktplätze.",
@@ -2025,7 +2096,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:46.853745+00:00",
+      "last_checked_ts": "2026-11-27T06:40:50.813589+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Auflösung erfolgt anhand von Standardpreisdaten für Bitcoin (z. B. Binance oder Chainlink) bis zum Fristende.",
@@ -2124,7 +2195,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:45.921173+00:00",
+      "last_checked_ts": "2026-11-27T06:40:49.643854+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -2154,7 +2225,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:47.349949+00:00",
+      "last_checked_ts": "2026-11-27T06:40:51.364178+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange feeds before December 1, 2026.",
@@ -2183,7 +2254,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:46.197915+00:00",
+      "last_checked_ts": "2026-11-27T06:40:50.079137+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -2214,7 +2285,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:47.183716+00:00",
+      "last_checked_ts": "2026-11-27T06:40:51.203016+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
@@ -2278,7 +2349,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:46.727815+00:00",
+      "last_checked_ts": "2026-11-27T06:40:50.601559+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -2368,7 +2439,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:20:45.749256+00:00",
+      "last_checked_ts": "2026-11-27T06:40:49.462689+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -2399,7 +2470,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:30:56.539354+00:00",
+      "last_checked_ts": "2026-11-27T06:40:51.838413+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -2537,69 +2608,6 @@
           "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation",
           "Taiwan parties, candidates step up campaigning as local elections near - Focus Taiwan",
           "Tsai campaigns for Ho Hsin-chun in Taichung - Taiwan News"
-        ]
-      }
-    },
-    {
-      "id": 142,
-      "ts": "2026-11-27T01:51:31.178633+00:00",
-      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
-      "question": "Will Bitcoin reach $62,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.5250",
-      "p_blind": "0.5800",
-      "p_blended": "0.5450",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0250",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:30:58.966973+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Kontrakt prüft, ob Bitcoin im November 2026 den Preis von $62.500 erreicht.",
-        "base_rate": 0.55,
-        "bull_case": "Der Kurs steht bei rund $60.578 und benötigt nur noch einen Anstieg von ca. 3,2%, was angesichts der Volatilität von Kryptowährungen in wenigen Tagen leicht erreichbar ist.",
-        "bear_case": "Bitcoin befindet sich in einer anhaltenden Korrekturphase mit einer wochenlangen Verlustserie, und der verbleibende Zeitraum bis zum Monatsende beträgt nur noch knapp vier Tage.",
-        "summary_de": "Mit dem aktuellen Kurs knapp unter der Marke von 62.500 USD und einer hohen verbleibenden Volatilität besteht eine moderate bis gute Wahrscheinlichkeit, dass Bitcoin die Zielmarke im Laufe des Novembers noch berührt.",
-        "news_used": [
-          "Bitcoin loses more than 30% of its value as weekly losing streak reaches eight weeks - www.tmgm.com",
-          "Bitcoin at $62,500 by November 30: Polymarket Odds Swing 19 Points in a Day - shattered.io"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $60,578.80 (24h range: $59,850.00 - $61,037.50, 30d realized annualized vol: ~48%).\nDistance from live spot to $62,500.00: +3.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.1d (1-sigma move = +/-5.1%, distance = 0.62 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 141,
-      "ts": "2026-11-27T00:56:33.484743+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4200",
-      "p_blended": "0.3024",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0624",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T06:35:33.960182+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official results of the 2026 Spanish general election for the party winning the most seats.",
-        "base_rate": 0.45,
-        "bull_case": "Incumbency advantage and recent polling momentum could keep PSOE ahead of the Partido Popular (PP).",
-        "bear_case": "Recent polls and general trends indicate strong momentum for Feijoo's PP, threatening PSOE's seat plurality.",
-        "summary_de": "Die PP führt in vielen aktuellen Umfragen vor der PSOE, weshalb die Chancen für die Sozialisten auf die meisten Sitze leicht unter 50 Prozent liegen.",
-        "news_used": [
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "Spanish elections: What you need to know and what's at stake - BBC"
         ]
       }
     }
@@ -3168,6 +3176,18 @@
   ],
   "recent_runs": [
     {
+      "id": 215,
+      "ts": "2026-11-27T06:41:46.880434+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1131,
+      "candidates_found": 21,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 59.77,
+      "errors": []
+    },
+    {
       "id": 214,
       "ts": "2026-11-27T06:36:13.143749+00:00",
       "dry_run": 0,
@@ -3393,18 +3413,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 65.42,
-      "errors": []
-    },
-    {
-      "id": 195,
-      "ts": "2026-11-27T04:56:31.399800+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1120,
-      "candidates_found": 26,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 61.51,
       "errors": []
     }
   ]
