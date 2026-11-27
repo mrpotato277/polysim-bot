@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:21:41.825439+00:00",
+  "generated_at": "2026-11-27T17:26:20.916377+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10635.41,
-    "reconciled_equity_usd": 10635.41,
+    "equity_usd": 10696.34,
+    "reconciled_equity_usd": 10696.34,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4555.1,
-    "deployed_pct": 42.83,
-    "total_pnl_usd": 635.41,
-    "total_pnl_pct": 6.35,
-    "unrealized_pnl_usd": 177.43,
+    "positions_value_usd": 4616.03,
+    "deployed_pct": 43.16,
+    "total_pnl_usd": 696.34,
+    "total_pnl_pct": 6.96,
+    "unrealized_pnl_usd": 238.36,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 240,
+    "total_forecasts": 241,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2408.97,
-    "crypto": 1385.21,
+    "politics": 2372.69,
+    "crypto": 1482.42,
     "geopolitics": 621.32,
     "markets": 139.6
   },
@@ -2658,6 +2658,13 @@
       "cash": 6080.31,
       "deployed_pct": 42.83,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T17:26:20.598020+00:00",
+      "equity": 10696.34,
+      "cash": 6080.31,
+      "deployed_pct": 43.16,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2683,9 +2690,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.285,
-      "current_value": 1385.21,
-      "unrealized_pnl": 621.4,
+      "current_price": 0.305,
+      "current_value": 1482.42,
+      "unrealized_pnl": 718.61,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2713,9 +2720,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1185,
-      "current_value": 210.66,
-      "unrealized_pnl": -9.78,
+      "current_price": 0.109,
+      "current_value": 193.77,
+      "unrealized_pnl": -26.67,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2728,13 +2735,13 @@
       "outcome": "Yes",
       "quantity": 809.16,
       "avg_entry_price": 0.26,
-      "current_price": 0.265,
-      "current_value": 214.43,
-      "unrealized_pnl": 4.05,
-      "p_yes": 0.3132,
-      "p_blended": 0.3132,
-      "edge_net": 0.0532,
-      "rationale": "Umfragen und aktuelle Stimmungen sehen die konservative Opposition in einer starken Position, weshalb die Wahrscheinlichkeit für die PSOE, die meisten Sitze zu erringen, geringer eingeschätzt wird."
+      "current_price": 0.255,
+      "current_value": 206.34,
+      "unrealized_pnl": -4.04,
+      "p_yes": 0.3229,
+      "p_blended": 0.3229,
+      "edge_net": 0.0729,
+      "rationale": "Trotz Pedro Sánchez' spätem Mobilisierungsversuch zeigen aktuelle Umfragen und Berichte, dass die konservative Opposition gute Chancen auf die meisten Sitze hat."
     },
     {
       "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
@@ -2758,9 +2765,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.595,
-      "current_value": 672.78,
-      "unrealized_pnl": -12.63,
+      "current_price": 0.585,
+      "current_value": 661.48,
+      "unrealized_pnl": -23.93,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2799,6 +2806,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 241,
+      "ts": "2026-11-27T17:26:20.595984+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4200",
+      "p_blended": "0.3229",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0729",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on official results of the Spanish general election determining which party wins the most seats.",
+        "base_rate": 0.45,
+        "bull_case": "Pedro Sánchez and the PSOE are fighting hard in the final stretch, hoping for a late left-wing mobilization surge to defy trailing poll numbers.",
+        "bear_case": "Recent polls and media reports consistently point toward Feijóo's conservative party leading or threatening PSOE's seat count, with voter fatigue weighing heavily on Sánchez.",
+        "summary_de": "Trotz Pedro Sánchez' spätem Mobilisierungsversuch zeigen aktuelle Umfragen und Berichte, dass die konservative Opposition gute Chancen auf die meisten Sitze hat.",
+        "news_used": [
+          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
+          "Spanish election: What you need to know and what's at stake - BBC",
+          "Spain’s Sánchez stood up against Trump. His own voters may be about to bring him down - CNN",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu"
+        ]
+      }
+    },
+    {
       "id": 240,
       "ts": "2026-11-27T17:16:18.944609+00:00",
       "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
@@ -2815,7 +2857,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T17:25:33.099515+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on accepted spot exchange feeds before December 1, 2026.",
@@ -2984,7 +3026,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:10:43.080774+00:00",
+      "last_checked_ts": "2026-11-27T17:25:34.464795+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition asking whether the Israel-Iran ceasefire holds through the end of November 2026.",
@@ -3177,7 +3219,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:10:40.516678+00:00",
+      "last_checked_ts": "2026-11-27T17:25:32.283579+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard binary contract checking Bitcoin price relative to $58,000 threshold at the exact deadline date.",
@@ -3404,7 +3446,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:10:42.552516+00:00",
+      "last_checked_ts": "2026-11-27T17:25:33.862464+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on exchange feeds before the end of November.",
@@ -3433,7 +3475,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:10:42.269756+00:00",
+      "last_checked_ts": "2026-11-27T17:25:33.543306+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -3573,41 +3615,6 @@
           "Blundell-Phillips take New Zealand to 246/5 at day one end - Times of Oman",
           "Air New Zealand punctuality up 12 percentage points as airline increases focus on smoother summer journeys - WebWire",
           "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet"
-        ]
-      }
-    },
-    {
-      "id": 216,
-      "ts": "2026-11-27T14:26:21.969047+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4800",
-      "p_blended": "0.3213",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0713",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand has strong home-condition advantages and an in-form batting lineup as seen in recent day-one performances.",
-        "bear_case": "India possesses a deep squad and elite bowling attack capable of overcoming foreign conditions.",
-        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland im Test Match gegen Indien liegt aufgrund leichter Heimvorteile und starker aktueller Leistungen nahe bei fünfzig Prozent.",
-        "news_used": [
-          "Maro Itoje urges England to be ‘ruthless’ in second New Zealand clash - The Independent",
-          "Blundell-Phillips take New Zealand to 246/5 at day one end - Times of Oman",
-          "Air New Zealand punctuality up 12 percentage points as airline increases focus on smoother summer journeys - WebWire",
-          "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet",
-          "Australia set to drop Lyon for first New Zealand Test - BBC",
-          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - AP News"
         ]
       }
     }
@@ -4536,6 +4543,18 @@
   ],
   "recent_runs": [
     {
+      "id": 342,
+      "ts": "2026-11-27T17:26:20.598904+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1169,
+      "candidates_found": 16,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 49.81,
+      "errors": []
+    },
+    {
       "id": 341,
       "ts": "2026-11-27T17:21:41.391332+00:00",
       "dry_run": 0,
@@ -4761,18 +4780,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 58.8,
-      "errors": []
-    },
-    {
-      "id": 322,
-      "ts": "2026-11-27T15:46:42.358646+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1176,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 64.6,
       "errors": []
     }
   ]
