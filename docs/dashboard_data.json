@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:31:58.485799+00:00",
+  "generated_at": "2026-11-27T12:36:22.957588+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9485.49,
-    "reconciled_equity_usd": 9485.49,
+    "equity_usd": 9478.3,
+    "reconciled_equity_usd": 9478.3,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4394.4,
-    "deployed_pct": 46.33,
-    "total_pnl_usd": -514.51,
-    "total_pnl_pct": -5.15,
-    "unrealized_pnl_usd": -430.89,
+    "positions_value_usd": 4387.21,
+    "deployed_pct": 46.29,
+    "total_pnl_usd": -521.7,
+    "total_pnl_pct": -5.22,
+    "unrealized_pnl_usd": -438.08,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.46,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 200,
+    "total_forecasts": 201,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2190.32,
-    "crypto": 1074.57,
+    "politics": 2189.43,
+    "crypto": 1068.27,
     "geopolitics": 664.17,
     "markets": 465.34
   },
@@ -2229,6 +2229,13 @@
       "cash": 5091.09,
       "deployed_pct": 46.33,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T12:36:22.633055+00:00",
+      "equity": 9478.3,
+      "cash": 5091.09,
+      "deployed_pct": 46.29,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2284,9 +2291,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.103,
-      "current_value": 183.11,
-      "unrealized_pnl": -37.33,
+      "current_price": 0.1025,
+      "current_value": 182.22,
+      "unrealized_pnl": -38.22,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2329,9 +2336,9 @@
       "outcome": "Yes",
       "quantity": 1259.89,
       "avg_entry_price": 0.5223,
-      "current_price": 0.525,
-      "current_value": 661.44,
-      "unrealized_pnl": 3.44,
+      "current_price": 0.52,
+      "current_value": 655.14,
+      "unrealized_pnl": -2.86,
       "p_yes": 0.9342,
       "p_blended": 0.9342,
       "edge_net": 0.4217,
@@ -2369,6 +2376,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 201,
+      "ts": "2026-11-27T12:36:22.631077+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2500",
+      "p_blind": "0.4500",
+      "p_blended": "0.3182",
+      "confidence": "0.5000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0682",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Test Match cricket between New Zealand and India, resolving based on the official match outcome.",
+        "base_rate": 0.35,
+        "bull_case": "New Zealand reached 246/5 at stumps on day one of the 2nd Test, showing solid resilience through Phillips and Blundell.",
+        "bear_case": "India is traditionally a dominant side across conditions, and the match is ongoing with four days left to play.",
+        "summary_de": "Neuseeland zeigt im zweiten Testmatch gegen Indien eine stabile Leistung nach dem ersten Tag, doch der Spielausgang nach vier verbleibenden Tagen bleibt völlig offen.",
+        "news_used": [
+          "Australia set to drop Lyon for first New Zealand Test - BBC",
+          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
+          "Nations Championship bronze match: three key England v New Zealand head-to-heads - RFI",
+          "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
+          "The World Cup lesson England can learn in All Blacks rematch - The Independent",
+          "NZ vs IND, 2nd Test: Blundell-Phillips take New Zealand to 246/5 at day one end (Stumps) - The Indian EYE"
+        ]
+      }
+    },
     {
       "id": 200,
       "ts": "2026-11-27T12:31:57.974188+00:00",
@@ -2522,7 +2564,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:20:44.815475+00:00",
+      "last_checked_ts": "2026-11-27T12:35:35.629663+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "WTI crude oil spot high during November 2026 based on standard exchange data.",
@@ -2752,7 +2794,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:20:44.815475+00:00",
+      "last_checked_ts": "2026-11-27T12:35:35.629663+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil hits $90 at any point during November 2026, expiring December 1.",
@@ -2788,7 +2830,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:31.636544+00:00",
+      "last_checked_ts": "2026-11-27T12:35:36.498891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official electoral results for which party wins the most seats in the Spanish general election.",
@@ -2858,7 +2900,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:20:44.815475+00:00",
+      "last_checked_ts": "2026-11-27T12:35:35.629663+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if WTI Crude Oil hits $90 or higher at any point during November 2026 based on standard market data.",
@@ -2929,7 +2971,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:20:44.093277+00:00",
+      "last_checked_ts": "2026-11-27T12:35:35.052180+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional processes.",
@@ -2964,7 +3006,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:31.636544+00:00",
+      "last_checked_ts": "2026-11-27T12:35:36.498891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on official election results showing which party won the most seats.",
@@ -3027,7 +3069,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:31.636544+00:00",
+      "last_checked_ts": "2026-11-27T12:35:36.498891+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether PSOE will win the most seats in the 2026 Spanish general election, which resolves based on official electoral results.",
@@ -3176,41 +3218,6 @@
           "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView",
           "EUR/USD might be bottoming out amid peak Fed hawkishness and dovish repricing risks - investingLive",
           "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English"
-        ]
-      }
-    },
-    {
-      "id": 176,
-      "ts": "2026-11-27T08:21:38.102417+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4800",
-      "p_blended": "0.3418",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0918",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:31.636544+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official results of which party wins the most seats in the 2026 Spanish general election.",
-        "base_rate": 0.45,
-        "bull_case": "Incumbent advantage under Pedro Sánchez and late debate momentum focusing on key progressive social issues like housing.",
-        "bear_case": "Consistently competitive polling favoring the conservative PP (Feijóo) and voter fatigue after years of current administration.",
-        "summary_de": "Die spanischen Parlamentswahlen sind äußerst knapp, wobei Umfragen ein enges Rennen zwischen PSOE und der konservativen Volkspartei (PP) zeigen.",
-        "news_used": [
-          "Could housing decide Spain's general election?",
-          "Leaders clash in final Spain election debate as housing dominates run-in - BBC",
-          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "How to watch the Spanish election like a pro - POLITICO.eu",
-          "Spanish elections: What you need to know and what's at stake - BBC"
         ]
       }
     }
@@ -4019,6 +4026,18 @@
   ],
   "recent_runs": [
     {
+      "id": 285,
+      "ts": "2026-11-27T12:36:22.633817+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1176,
+      "candidates_found": 18,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 50.0,
+      "errors": []
+    },
+    {
       "id": 284,
       "ts": "2026-11-27T12:31:57.975767+00:00",
       "dry_run": 0,
@@ -4244,18 +4263,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 48.08,
-      "errors": []
-    },
-    {
-      "id": 265,
-      "ts": "2026-11-27T10:51:20.742405+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1144,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 39.94,
       "errors": []
     }
   ]
