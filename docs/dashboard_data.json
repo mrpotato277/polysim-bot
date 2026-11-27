@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T10:56:18.078041+00:00",
+  "generated_at": "2026-11-27T11:01:58.726430+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9602.19,
-    "reconciled_equity_usd": 9388.98,
-    "equity_discrepancy_usd": 213.21,
-    "cash_usd": 5019.27,
-    "positions_value_usd": 4369.71,
-    "deployed_pct": 45.51,
-    "total_pnl_usd": -397.81,
-    "total_pnl_pct": -3.98,
-    "unrealized_pnl_usd": -443.15,
-    "total_trades": 278,
+    "equity_usd": 9663.73,
+    "reconciled_equity_usd": 9388.28,
+    "equity_discrepancy_usd": 275.45,
+    "cash_usd": 4819.34,
+    "positions_value_usd": 4568.94,
+    "deployed_pct": 47.28,
+    "total_pnl_usd": -336.27,
+    "total_pnl_pct": -3.36,
+    "unrealized_pnl_usd": -381.61,
+    "total_trades": 287,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -5.76,
     "brier_score": 0.1183,
@@ -32,10 +32,10 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2176.36,
-    "crypto": 1223.49,
+    "politics": 2190.34,
+    "crypto": 1266.74,
     "geopolitics": 664.17,
-    "markets": 305.69
+    "markets": 447.69
   },
   "equity_curve": [
     {
@@ -2091,6 +2091,19 @@
       "cash": 5019.27,
       "deployed_pct": 45.51,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T11:00:00+00:00",
+      "equity": 9388.27,
+      "cash": 9388.27,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-27T11:01:58.230525+00:00",
+      "equity": 9663.73,
+      "cash": 4819.34,
+      "deployed_pct": 47.28,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2116,9 +2129,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.105,
-      "current_value": 510.34,
-      "unrealized_pnl": -253.47,
+      "current_price": 0.11,
+      "current_value": 534.64,
+      "unrealized_pnl": -229.17,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2146,9 +2159,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.104,
-      "current_value": 184.88,
-      "unrealized_pnl": -35.56,
+      "current_price": 0.1055,
+      "current_value": 187.55,
+      "unrealized_pnl": -32.89,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2176,9 +2189,9 @@
       "outcome": "No",
       "quantity": 519.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.255,
-      "current_value": 132.36,
-      "unrealized_pnl": -132.35,
+      "current_price": 0.27,
+      "current_value": 140.14,
+      "unrealized_pnl": -124.57,
       "p_yes": 0.827,
       "p_blended": 0.173,
       "edge_net": 0.007,
@@ -2191,9 +2204,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.575,
-      "current_value": 650.17,
-      "unrealized_pnl": -35.24,
+      "current_price": 0.585,
+      "current_value": 661.48,
+      "unrealized_pnl": -23.93,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2206,9 +2219,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.52,
-      "current_value": 580.79,
-      "unrealized_pnl": 0.0,
+      "current_price": 0.53,
+      "current_value": 591.96,
+      "unrealized_pnl": 11.17,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -2234,11 +2247,11 @@
       "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
       "category": "markets",
       "outcome": "Yes",
-      "quantity": 1852.68,
-      "avg_entry_price": 0.1845,
+      "quantity": 2713.26,
+      "avg_entry_price": 0.1768,
       "current_price": 0.165,
-      "current_value": 305.69,
-      "unrealized_pnl": -36.22,
+      "current_value": 447.69,
+      "unrealized_pnl": -31.91,
       "p_yes": 0.2395,
       "p_blended": 0.2395,
       "edge_net": 0.0795,
@@ -2509,7 +2522,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:32.493598+00:00",
+      "last_checked_ts": "2026-11-27T11:01:05.449285+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before December 2026.",
@@ -2810,7 +2823,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T10:45:33.220740+00:00",
+      "last_checked_ts": "2026-11-27T11:01:06.025728+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November auf 60.000 USD gefallen ist. Da der aktuelle Kurs bereits über 60.000 USD liegt und die Nachrichten bestätigen, dass Bitcoin in diesem Monat bereits unter 60.000 USD gehandelt wurde, ist das Ereignis bereits eingetreten.",
@@ -3086,6 +3099,26 @@
     }
   ],
   "trade_journal": [
+    {
+      "id": 38,
+      "ts": "2026-11-27T11:01:40.324471+00:00",
+      "client_order_id": "psb-20261127-110139-aa7e93dd82-sell-n-d31cd3",
+      "order_id": "1734283",
+      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
+      "question": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
+      "outcome": "No",
+      "side": "SELL",
+      "order_mode": "marketable_limit",
+      "price": "0.26",
+      "quantity": "519.04",
+      "notional_usd": "134.95",
+      "est_fee_usd": "0.58",
+      "edge_net": "-0.0870",
+      "strategy_type": "exit_thesis_break",
+      "status": "FILLED",
+      "dry_run": 0,
+      "rationale": "Thesis-Break: Fair Value 0.17 < Bid 0.26; Kapital schützen."
+    },
     {
       "id": 37,
       "ts": "2026-11-27T10:56:17.768933+00:00",
@@ -3829,6 +3862,18 @@
   ],
   "recent_runs": [
     {
+      "id": 267,
+      "ts": "2026-11-27T11:01:58.231797+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1104,
+      "candidates_found": 17,
+      "llm_calls": 0,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 54.55,
+      "errors": []
+    },
+    {
       "id": 266,
       "ts": "2026-11-27T10:56:17.771008+00:00",
       "dry_run": 0,
@@ -4056,18 +4101,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 51.43,
-      "errors": []
-    },
-    {
-      "id": 247,
-      "ts": "2026-11-27T09:21:46.402345+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1223,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.02,
       "errors": []
     }
   ]
