@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:06:31.033551+00:00",
+  "generated_at": "2026-11-27T17:11:29.906018+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10692.02,
-    "reconciled_equity_usd": 10692.02,
+    "equity_usd": 10696.22,
+    "reconciled_equity_usd": 10696.22,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4611.71,
-    "deployed_pct": 43.13,
-    "total_pnl_usd": 692.02,
-    "total_pnl_pct": 6.92,
-    "unrealized_pnl_usd": 234.04,
+    "positions_value_usd": 4615.91,
+    "deployed_pct": 43.15,
+    "total_pnl_usd": 696.22,
+    "total_pnl_pct": 6.96,
+    "unrealized_pnl_usd": 238.24,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 237,
+    "total_forecasts": 238,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2432.48,
+    "politics": 2421.17,
     "crypto": 1433.82,
     "geopolitics": 621.32,
-    "markets": 124.09
+    "markets": 139.6
   },
   "equity_curve": [
     {
@@ -2637,6 +2637,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.13,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T17:11:29.515204+00:00",
+      "equity": 10696.22,
+      "cash": 6080.31,
+      "deployed_pct": 43.15,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2737,9 +2744,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.615,
-      "current_value": 695.4,
-      "unrealized_pnl": 9.99,
+      "current_price": 0.605,
+      "current_value": 684.09,
+      "unrealized_pnl": -1.32,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2767,9 +2774,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.04,
-      "current_value": 124.09,
-      "unrealized_pnl": -417.75,
+      "current_price": 0.045,
+      "current_value": 139.6,
+      "unrealized_pnl": -402.24,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -2777,6 +2784,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 238,
+      "ts": "2026-11-27T17:11:29.513270+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4000",
+      "p_blended": "0.2890",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0390",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
+        "base_rate": 0.35,
+        "bull_case": "New Zealand playing at home historically presents strong conditions for their pace attack, giving them an edge over India in Test matches.",
+        "bear_case": "India possesses a deep squad, world-class batting depth, and a formidable bowling attack capable of winning away from home.",
+        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland im Test-Match gegen Indien hängt stark von den Platzverhältnissen ab, wobei Indien als leichter Favorit in die Partie geht.",
+        "news_used": [
+          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
+          "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
+          "New Zealand schools are ditching bells for bangers - The Spinoff",
+          "NZ’s Luxon loses majority, centrists now kingmakers - Taipei Times",
+          "A New Zealand couple built a four-bedroom home using 1,300 recycled tyres and 7,000 glass bottles; after - The Times of India"
+        ]
+      }
+    },
     {
       "id": 237,
       "ts": "2026-11-27T17:06:30.651282+00:00",
@@ -2864,7 +2906,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:55:44.735012+00:00",
+      "last_checked_ts": "2026-11-27T17:10:43.080774+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition asking whether the Israel-Iran ceasefire holds through the end of November 2026.",
@@ -3057,7 +3099,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:55:42.284884+00:00",
+      "last_checked_ts": "2026-11-27T17:10:40.516678+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard binary contract checking Bitcoin price relative to $58,000 threshold at the exact deadline date.",
@@ -3284,7 +3326,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:55:44.001864+00:00",
+      "last_checked_ts": "2026-11-27T17:10:42.552516+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on exchange feeds before the end of November.",
@@ -3313,7 +3355,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:55:43.667114+00:00",
+      "last_checked_ts": "2026-11-27T17:10:42.269756+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -3559,42 +3601,6 @@
           "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
           "Spain’s 2026 election explained in maps and charts - Al Jazeera"
         ]
-      }
-    },
-    {
-      "id": 213,
-      "ts": "2026-11-27T13:51:39.467374+00:00",
-      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
-      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "markets",
-      "end_date": "2026-12-01T04:59:59.999000+00:00",
-      "market_price": "0.1050",
-      "p_blind": "0.1500",
-      "p_blended": "0.1262",
-      "confidence": "0.8000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:01:05.546324+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if WTI crude oil will hit $90 at any point during November 2026. Resolution depends on official spot/futures high print before December 1, 2026.",
-        "base_rate": 0.2,
-        "bull_case": "Geopolitical tensions in the Middle East and upcoming OPEC+ meetings create supply disruption fears that could rapidly spike spot WTI toward the $90 threshold.",
-        "bear_case": "WTI is currently trading around $84.59 with only a few days left in November, making a sudden upward spike of over $5 unlikely given existing oil surpluses.",
-        "summary_de": "Da der WTI-Ölpreis aktuell bei rund 84,59 USD steht und nur noch wenige Tage im November verbleiben, ist ein Anstieg auf 90 USD trotz geopolitischer Risiken eher unwahrscheinlich.",
-        "news_used": [
-          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
-          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
-          "Standard Chartered Oil Needs a New Shock to Fall Further - Crude Oil Prices Today | OilPrice.com",
-          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox",
-          "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo",
-          "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times"
-        ],
-        "market_data": "WTI Crude Oil (CL=F) live reference: 84.59 (prev close: 83.98, +0.73%)."
       }
     }
   ],
@@ -4522,6 +4528,18 @@
   ],
   "recent_runs": [
     {
+      "id": 339,
+      "ts": "2026-11-27T17:11:29.515964+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1230,
+      "candidates_found": 18,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 50.44,
+      "errors": []
+    },
+    {
       "id": 338,
       "ts": "2026-11-27T17:06:30.653665+00:00",
       "dry_run": 0,
@@ -4747,18 +4765,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 61.69,
-      "errors": []
-    },
-    {
-      "id": 319,
-      "ts": "2026-11-27T15:31:45.668883+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1153,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 54.91,
       "errors": []
     }
   ]
