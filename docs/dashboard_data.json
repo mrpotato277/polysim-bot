@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:46:39.845647+00:00",
+  "generated_at": "2026-11-27T20:51:52.147964+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10914.85,
-    "reconciled_equity_usd": 10640.83,
-    "equity_discrepancy_usd": 274.02,
+    "equity_usd": 10985.47,
+    "reconciled_equity_usd": 10682.17,
+    "equity_discrepancy_usd": 303.3,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4560.52,
-    "deployed_pct": 41.78,
-    "total_pnl_usd": 914.85,
-    "total_pnl_pct": 9.15,
-    "unrealized_pnl_usd": 408.25,
+    "positions_value_usd": 4601.86,
+    "deployed_pct": 41.89,
+    "total_pnl_usd": 985.47,
+    "total_pnl_pct": 9.85,
+    "unrealized_pnl_usd": 449.59,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 270,
+    "total_forecasts": 272,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2275.43,
-    "crypto": 1360.91,
+    "politics": 2292.47,
+    "crypto": 1385.21,
     "geopolitics": 707.02,
     "markets": 217.16
   },
@@ -2963,6 +2963,13 @@
       "cash": 6080.31,
       "deployed_pct": 41.78,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T20:51:51.768081+00:00",
+      "equity": 10985.47,
+      "cash": 6080.31,
+      "deployed_pct": 41.89,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2973,9 +2980,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.245,
-      "current_value": 439.26,
-      "unrealized_pnl": 62.75,
+      "current_price": 0.255,
+      "current_value": 457.19,
+      "unrealized_pnl": 80.68,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -2988,9 +2995,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.28,
-      "current_value": 1360.91,
-      "unrealized_pnl": 597.1,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3006,10 +3013,10 @@
       "current_price": 0.165,
       "current_value": 707.02,
       "unrealized_pnl": 21.43,
-      "p_yes": 0.7256,
-      "p_blended": 0.2744,
-      "edge_net": 0.1244,
-      "rationale": "Obwohl anhaltende regionale Spannungen und Berichte über israelische Debatten bezüglich Iran das Risiko erhöhen, bleibt eine Fortführung des Waffenstillstands bis Mitte Dezember unter Berücksichtigung historischer Muster und diplomatischer Interventionen möglich."
+      "p_yes": 0.7457,
+      "p_blended": 0.2543,
+      "edge_net": 0.0943,
+      "rationale": "Trotz anhaltender Spannungen und interner Debatten in Israel bezüglich möglicher Angriffe halten diplomatische Bemühungen und ein brüchiger Status quo die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis Mitte Dezember über 50 Prozent."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3018,9 +3025,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1275,
-      "current_value": 226.66,
-      "unrealized_pnl": 6.22,
+      "current_price": 0.127,
+      "current_value": 225.77,
+      "unrealized_pnl": 5.33,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3088,6 +3095,76 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 272,
+      "ts": "2026-11-27T20:51:51.766025+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.4500",
+      "p_blended": "0.2900",
+      "confidence": "0.5500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0500",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.45,
+        "bull_case": "New Zealand possesses strong home-ground advantages and historically competitive form against India in Test conditions.",
+        "bear_case": "India fields a world-class squad with superior depth and recent red-ball dominance across international venues.",
+        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland gegen Indien im Test-Match spiegelt die ausgeglichene historische Stärke beider Cricket-Nationalmannschaften wider.",
+        "news_used": [
+          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
+          "Stumbling All Blacks: A mere hiccup or crisis time? - Japan Today",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
+          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC",
+          "Psychedelics: Are We Repeating Timothy Leary’s Mistakes? - Psychology Today"
+        ]
+      }
+    },
+    {
+      "id": 271,
+      "ts": "2026-11-27T20:51:50.465238+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8350",
+      "p_blind": "0.5800",
+      "p_blended": "0.7457",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0943",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
+        "base_rate": 0.65,
+        "bull_case": "Ongoing mediation efforts between Iran and the US continue to exert pressure to avoid a direct escalation, keeping a fragile ceasefire or non-engagement status quo intact through mid-December.",
+        "bear_case": "Israeli security officials remain internally divided regarding a potential strike on Iran, and ongoing military operations across the region leave a high risk of sudden escalation before December 15.",
+        "summary_de": "Trotz anhaltender Spannungen und interner Debatten in Israel bezüglich möglicher Angriffe halten diplomatische Bemühungen und ein brüchiger Status quo die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis Mitte Dezember über 50 Prozent.",
+        "news_used": [
+          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
+          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
+          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
+          "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews",
+          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
+          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English"
+        ]
+      }
+    },
     {
       "id": 270,
       "ts": "2026-11-27T20:46:39.559523+00:00",
@@ -3172,7 +3249,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T20:50:46.403070+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Vertragsentscheidung hängt vom offiziellen Zinsentscheid der Fed nach dem Dezember-Meeting 2026 ab.",
@@ -3204,7 +3281,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:35:36.849984+00:00",
+      "last_checked_ts": "2026-11-27T20:50:44.806147+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether the PP and Vox secure a majority in the Spanish general election held on November 29, 2026.",
@@ -3239,7 +3316,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:35:37.362918+00:00",
+      "last_checked_ts": "2026-11-27T20:50:45.604237+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -3274,7 +3351,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:35:36.849984+00:00",
+      "last_checked_ts": "2026-11-27T20:50:44.806147+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count results of the snap general election on November 29, 2026, determining if PP and Vox achieve a combined absolute majority in parliament.",
@@ -3344,7 +3421,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:35:36.849984+00:00",
+      "last_checked_ts": "2026-11-27T20:50:44.806147+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Spanish General Election regarding whether PP and Vox achieve a parliamentary majority.",
@@ -3618,7 +3695,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:35:36.965084+00:00",
+      "last_checked_ts": "2026-11-27T20:50:45.020197+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will hit $62,500 at any point during November 2026 based on standard spot exchange feeds.",
@@ -3822,7 +3899,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:35:37.362918+00:00",
+      "last_checked_ts": "2026-11-27T20:50:45.604237+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official electoral commission seat count results for the 2026 Spanish general election.",
@@ -3872,72 +3949,6 @@
           "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website",
           "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
           "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks treble - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 247,
-      "ts": "2026-11-27T17:56:24.370046+00:00",
-      "market_id": "0x5eb5d77d8607ce8b2859fb059e07859164b5096fe84c7b181c3ce034b19d7a5b",
-      "question": "Will Ethereum reach $1,800 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1350",
-      "p_blind": "0.2800",
-      "p_blended": "0.1926",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0626",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:45:44.408927+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price hit contract based on major exchange feeds before December 1, 2026.",
-        "base_rate": 0.22,
-        "bull_case": "ETH tested $1,800 resistance recently, and crypto markets feature high intraday volatility with fat tails that can trigger an 8.1% upward spike in the remaining 3.5 days of November.",
-        "bear_case": "ETH is currently at $1,664 within a descending channel, requiring a substantial ~8.1% rally in under 4 days while trading below recent local highs near $1,752.",
-        "summary_de": "Ether testet aktuell die Widerstandsmarke von 1800 US-Dollar, benötigt jedoch in den verbleibenden Tagen des Novembers noch einen Anstieg von rund acht Prozent.",
-        "news_used": [
-          "Ether Tests $1,800 Resistance as Recovery Stays in Descending Channel - www.tokenpost.com"
-        ],
-        "market_data": "ETH/USD live spot (Kraken): $1,664.41 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,800.00: +8.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-6.4%, distance = 1.22 sigma): Gaussian one-touch ('dip/reach/hit') b"
-      }
-    },
-    {
-      "id": 246,
-      "ts": "2026-11-27T17:47:07.122822+00:00",
-      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
-      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.0410",
-      "p_blind": "0.5200",
-      "p_blended": "0.1206",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:35:37.464787+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob es nach der Dezembersitzung 2026 keine Zinsänderung der Fed geben wird (weder Erhöhung noch Senkung).",
-        "base_rate": 0.55,
-        "bull_case": "Die Federal Reserve könnte angesichts anhaltend gemischter Konjunkturdaten und einer neutralen Zinspolitik die Zinsen unverändert lassen.",
-        "bear_case": "Makroökonomische Überraschungen bei Inflation oder Beschäftigung könnten die Fed zu einer Zinsänderung (Senkung oder Erhöhung) zwingen.",
-        "summary_de": "Da die Erwartungen für die Dezembersitzung 2026 noch stark von kommenden Wirtschaftsdaten abhängen, bleibt eine Wahrscheinlichkeit von knapp über 50 Prozent für eine Zinspause bestehen.",
-        "news_used": [
-          "The Big Pressures Facing the Fed - Bloomberg.com",
-          "How have interest rate expectations changed after this week's events? - investingLive",
-          "Sliding stock market confronts jobs data, rate view as next tests - WTVB",
-          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
-          "The Latest Interest Rate Forecast Is In, and It Spells Trouble for a Historically Expensive AI-Driven Bull Market - The Globe and Mail",
-          "Gold price forecast: Fed rate hike in December may limit recovery to ₹1.30 lakh per 10 grams by 2026-end, says expert - Livemint"
         ]
       }
     }
@@ -4886,6 +4897,18 @@
   ],
   "recent_runs": [
     {
+      "id": 383,
+      "ts": "2026-11-27T20:51:51.768953+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1227,
+      "candidates_found": 17,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 69.78,
+      "errors": []
+    },
+    {
       "id": 382,
       "ts": "2026-11-27T20:46:39.564575+00:00",
       "dry_run": 0,
@@ -5111,18 +5134,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 40.57,
-      "errors": []
-    },
-    {
-      "id": 363,
-      "ts": "2026-11-27T19:11:21.286933+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1197,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 41.13,
       "errors": []
     }
   ]
