@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T03:26:37.594501+00:00",
+  "generated_at": "2026-11-27T03:33:11.402211+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,18 +11,18 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9746.42,
-    "reconciled_equity_usd": 9048.71,
+    "equity_usd": 9742.16,
+    "reconciled_equity_usd": 9044.45,
     "equity_discrepancy_usd": 697.71,
     "cash_usd": 6600.06,
-    "positions_value_usd": 2448.65,
-    "deployed_pct": 25.12,
-    "total_pnl_usd": -253.58,
-    "total_pnl_pct": -2.54,
-    "unrealized_pnl_usd": -239.38,
+    "positions_value_usd": 2444.39,
+    "deployed_pct": 25.09,
+    "total_pnl_usd": -257.84,
+    "total_pnl_pct": -2.58,
+    "unrealized_pnl_usd": -243.64,
     "total_trades": 146,
     "win_rate_pct": 0.0,
-    "max_drawdown_pct": -3.46,
+    "max_drawdown_pct": -3.49,
     "brier_score": null,
     "brier_resolved_count": 0,
     "brier_blind_score": null,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 256.25,
-    "technology": 441.66,
-    "politics": 1750.74
+    "crypto": 237.19,
+    "technology": 439.84,
+    "politics": 1767.36
   },
   "equity_curve": [
     {
@@ -1425,6 +1425,13 @@
       "cash": 6600.06,
       "deployed_pct": 25.12,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T03:33:10.745273+00:00",
+      "equity": 9742.16,
+      "cash": 6600.06,
+      "deployed_pct": 25.09,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1435,9 +1442,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.145,
-      "current_value": 109.87,
-      "unrealized_pnl": -79.57,
+      "current_price": 0.135,
+      "current_value": 102.29,
+      "unrealized_pnl": -87.15,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1450,9 +1457,9 @@
       "outcome": "Yes",
       "quantity": 1813.78,
       "avg_entry_price": 0.224,
-      "current_price": 0.2435,
-      "current_value": 441.66,
-      "unrealized_pnl": 35.37,
+      "current_price": 0.2425,
+      "current_value": 439.84,
+      "unrealized_pnl": 33.55,
       "p_yes": 0.3684,
       "p_blended": 0.3684,
       "edge_net": 0.1444,
@@ -1465,9 +1472,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0985,
-      "current_value": 175.11,
-      "unrealized_pnl": -45.33,
+      "current_price": 0.108,
+      "current_value": 191.99,
+      "unrealized_pnl": -28.45,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1495,9 +1502,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.255,
-      "current_value": 146.38,
-      "unrealized_pnl": -146.38,
+      "current_price": 0.235,
+      "current_value": 134.9,
+      "unrealized_pnl": -157.86,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1510,9 +1517,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.625,
-      "current_value": 706.71,
-      "unrealized_pnl": 21.3,
+      "current_price": 0.615,
+      "current_value": 695.4,
+      "unrealized_pnl": 9.99,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -1525,9 +1532,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.1975,
-      "current_value": 218.22,
-      "unrealized_pnl": -7.18,
+      "current_price": 0.2075,
+      "current_value": 229.27,
+      "unrealized_pnl": 3.87,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -1552,7 +1559,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:20:39.857705+00:00",
+      "last_checked_ts": "2026-11-27T03:31:01.012514+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1645,7 +1652,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:15:40.034225+00:00",
+      "last_checked_ts": "2026-11-27T03:31:00.371921+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1894,7 +1901,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:20:40.633763+00:00",
+      "last_checked_ts": "2026-11-27T03:31:01.566653+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
@@ -2054,7 +2061,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:15:40.566405+00:00",
+      "last_checked_ts": "2026-11-27T03:31:00.731724+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2218,7 +2225,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:20:40.481837+00:00",
+      "last_checked_ts": "2026-11-27T03:31:01.463077+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -2250,7 +2257,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:15:39.496697+00:00",
+      "last_checked_ts": "2026-11-27T03:31:00.055378+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2280,7 +2287,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:15:39.317632+00:00",
+      "last_checked_ts": "2026-11-27T03:30:59.924400+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2311,7 +2318,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:15:39.852161+00:00",
+      "last_checked_ts": "2026-11-27T03:31:00.253166+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -2788,6 +2795,18 @@
   ],
   "recent_runs": [
     {
+      "id": 178,
+      "ts": "2026-11-27T03:33:10.745947+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1160,
+      "candidates_found": 31,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 132.69,
+      "errors": []
+    },
+    {
       "id": 177,
       "ts": "2026-11-27T03:26:37.092195+00:00",
       "dry_run": 0,
@@ -3013,18 +3032,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 43.92,
-      "errors": []
-    },
-    {
-      "id": 158,
-      "ts": "2026-11-27T01:56:18.849921+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1132,
-      "candidates_found": 23,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 38.76,
       "errors": []
     }
   ]
