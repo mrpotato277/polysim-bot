@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:41:46.412319+00:00",
+  "generated_at": "2026-11-27T13:46:19.872073+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9450.44,
-    "reconciled_equity_usd": 9450.44,
+    "equity_usd": 9492.17,
+    "reconciled_equity_usd": 9492.17,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4359.35,
-    "deployed_pct": 46.13,
-    "total_pnl_usd": -549.56,
-    "total_pnl_pct": -5.5,
-    "unrealized_pnl_usd": -465.94,
+    "positions_value_usd": 4401.08,
+    "deployed_pct": 46.37,
+    "total_pnl_usd": -507.83,
+    "total_pnl_pct": -5.08,
+    "unrealized_pnl_usd": -424.21,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.63,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 211,
+    "total_forecasts": 212,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2225.0,
-    "crypto": 1171.78,
+    "politics": 2218.13,
+    "crypto": 1220.38,
     "geopolitics": 621.32,
     "markets": 341.25
   },
@@ -2333,6 +2333,13 @@
       "cash": 5091.09,
       "deployed_pct": 46.13,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T13:46:19.607506+00:00",
+      "equity": 9492.17,
+      "cash": 5091.09,
+      "deployed_pct": 46.37,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2358,9 +2365,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.105,
-      "current_value": 510.34,
-      "unrealized_pnl": -253.47,
+      "current_price": 0.115,
+      "current_value": 558.94,
+      "unrealized_pnl": -204.87,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2388,9 +2395,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.098,
-      "current_value": 174.22,
-      "unrealized_pnl": -46.22,
+      "current_price": 0.1005,
+      "current_value": 178.66,
+      "unrealized_pnl": -41.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2418,9 +2425,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.625,
-      "current_value": 706.71,
-      "unrealized_pnl": 21.3,
+      "current_price": 0.615,
+      "current_value": 695.4,
+      "unrealized_pnl": 9.99,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2466,13 +2473,49 @@
       "current_price": 0.11,
       "current_value": 341.25,
       "unrealized_pnl": -200.59,
-      "p_yes": 0.15,
-      "p_blended": 0.15,
-      "edge_net": 0.0,
-      "rationale": "Da der aktuelle WTI-Preis bei rund 85,28 US-Dollar liegt und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Anstieg auf 90 US-Dollar trotz geopolitischer Risiken eher unwahrscheinlich."
+      "p_yes": 0.093,
+      "p_blended": 0.093,
+      "edge_net": 0.017,
+      "rationale": "WTI-Öl notiert aktuell bei rund 84,60 USD, und angesichts der verbleibenden Tage im November ist ein Anstieg auf 90 USD ohne einen extremen geopolitischen Schock sehr unwahrscheinlich."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 212,
+      "ts": "2026-11-27T13:46:19.605787+00:00",
+      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
+      "category": "markets",
+      "end_date": "2026-12-01T04:59:59.999000+00:00",
+      "market_price": "0.1100",
+      "p_blind": "0.0800",
+      "p_blended": "0.0930",
+      "confidence": "0.8500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0170",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires WTI spot or front-month futures to touch or exceed $90 at any point during November 2026.",
+        "base_rate": 0.25,
+        "bull_case": "Middle East tensions, Hormuz risk premiums, and supply fears can cause sudden intraday spikes toward the $90 level.",
+        "bear_case": "Current WTI spot is trading around $84.60 with only a few days left in November, leaving a wide gap to cover without an immediate massive supply shock.",
+        "summary_de": "WTI-Öl notiert aktuell bei rund 84,60 USD, und angesichts der verbleibenden Tage im November ist ein Anstieg auf 90 USD ohne einen extremen geopolitischen Schock sehr unwahrscheinlich.",
+        "news_used": [
+          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
+          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
+          "Standard Chartered Oil Needs a New Shock to Fall Further - Crude Oil Prices Today | OilPrice.com",
+          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox",
+          "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo",
+          "Oil Price Today (November 26): Brent crude rises to $95 as fresh attacks renew supply fears. What are expe - The Economic Times"
+        ],
+        "market_data": "WTI Crude Oil (CL=F) live reference: 84.60 (prev close: 83.98, +0.74%)."
+      }
+    },
     {
       "id": 211,
       "ts": "2026-11-27T13:36:34.205941+00:00",
@@ -2560,7 +2603,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T13:45:39.848432+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -2595,7 +2638,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:35:34.923863+00:00",
+      "last_checked_ts": "2026-11-27T13:45:39.848432+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag entscheidet sich klar anhand der Sitzverteilung nach der spanischen Parlamentswahl.",
@@ -2630,7 +2673,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:35:34.923863+00:00",
+      "last_checked_ts": "2026-11-27T13:45:39.848432+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -3004,7 +3047,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:30:53.502322+00:00",
+      "last_checked_ts": "2026-11-27T13:45:39.179292+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "WTI crude oil spot high during November 2026 based on standard exchange data.",
@@ -3234,7 +3277,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:30:53.502322+00:00",
+      "last_checked_ts": "2026-11-27T13:45:39.179292+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil hits $90 at any point during November 2026, expiring December 1.",
@@ -3270,7 +3313,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:35:34.923863+00:00",
+      "last_checked_ts": "2026-11-27T13:45:39.848432+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official electoral results for which party wins the most seats in the Spanish general election.",
@@ -3285,41 +3328,6 @@
           "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
           "How to watch the Spanish election like a pro - POLITICO.eu",
           "Spanish elections: What you need to know and what's at stake - BBC"
-        ]
-      }
-    },
-    {
-      "id": 187,
-      "ts": "2026-11-27T10:41:19.192902+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4200",
-      "p_blended": "0.3164",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0764",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:35:36.840571+00:00",
-      "reasoning": {
-        "model": "gemini-3.1-flash-lite",
-        "resolution_note": "The contract refers to a specific Test Match; news headlines regarding political elections and rugby are irrelevant noise.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand has shown resilience in recent sessions, taking three wickets and maintaining competitive pressure on the Indian batting lineup.",
-        "bear_case": "India historically dominates Test cricket at home and maintains a superior squad depth and world ranking compared to New Zealand.",
-        "summary_de": "Trotz der aktuellen sportlichen Wettbewerbsfähigkeit von Neuseeland bleibt Indien aufgrund der historischen Dominanz im Test-Cricket der Favorit.",
-        "news_used": [
-          "New Zealand PM Luxon loses majority as centrist party holds balance of power - Free Press Kashmir",
-          "Akash Deep backs India’s patience after three-wicket session against New Zealand - Telangana Today",
-          "India’s Rishabh Pant makes surprise appearance for New Zealand club under fake name - Yahoo Sports",
-          "India’s Rishabh Pant makes surprise appearance for New Zealand club under fake name - The Independent",
-          "Deadlocked Final Result in New Zealand’s Election Leaves a Centrist Newcomer as the Decider - TheWire.in",
-          "England v New Zealand rugby Nations Championship 2026 TV channel, live stream, kick-off time - Radio Times"
         ]
       }
     }
@@ -4128,6 +4136,18 @@
   ],
   "recent_runs": [
     {
+      "id": 299,
+      "ts": "2026-11-27T13:46:19.608583+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1217,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.43,
+      "errors": []
+    },
+    {
       "id": 298,
       "ts": "2026-11-27T13:41:45.969883+00:00",
       "dry_run": 0,
@@ -4353,18 +4373,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 43.25,
-      "errors": []
-    },
-    {
-      "id": 279,
-      "ts": "2026-11-27T12:06:17.525261+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1109,
-      "candidates_found": 17,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 46.43,
       "errors": []
     }
   ]
