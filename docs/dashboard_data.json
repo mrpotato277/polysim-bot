@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T22:06:12.367984+00:00",
+  "generated_at": "2026-11-27T22:11:29.809401+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10935.24,
-    "reconciled_equity_usd": 10935.24,
-    "equity_discrepancy_usd": 0.0,
+    "equity_usd": 10995.84,
+    "reconciled_equity_usd": 10996.39,
+    "equity_discrepancy_usd": -0.55,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4854.93,
-    "deployed_pct": 44.4,
-    "total_pnl_usd": 935.24,
-    "total_pnl_pct": 9.35,
-    "unrealized_pnl_usd": 477.26,
+    "positions_value_usd": 4916.08,
+    "deployed_pct": 44.71,
+    "total_pnl_usd": 995.84,
+    "total_pnl_pct": 9.96,
+    "unrealized_pnl_usd": 538.41,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 277,
+    "total_forecasts": 280,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2539.78,
-    "crypto": 1433.82,
+    "politics": 2552.33,
+    "crypto": 1482.42,
     "geopolitics": 664.17,
     "markets": 217.16
   },
@@ -3087,6 +3087,13 @@
       "cash": 6080.31,
       "deployed_pct": 44.4,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T22:11:29.583095+00:00",
+      "equity": 10995.84,
+      "cash": 6080.31,
+      "deployed_pct": 44.71,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3097,9 +3104,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.245,
-      "current_value": 439.26,
-      "unrealized_pnl": 62.75,
+      "current_price": 0.25,
+      "current_value": 448.23,
+      "unrealized_pnl": 71.72,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -3112,9 +3119,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.295,
-      "current_value": 1433.82,
-      "unrealized_pnl": 670.01,
+      "current_price": 0.305,
+      "current_value": 1482.42,
+      "unrealized_pnl": 718.61,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3130,10 +3137,10 @@
       "current_price": 0.155,
       "current_value": 664.17,
       "unrealized_pnl": -21.42,
-      "p_yes": 0.7457,
-      "p_blended": 0.2543,
-      "edge_net": 0.0943,
-      "rationale": "Trotz anhaltender Spannungen und interner Debatten in Israel bezüglich möglicher Angriffe halten diplomatische Bemühungen und ein brüchiger Status quo die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis Mitte Dezember über 50 Prozent."
+      "p_yes": 0.7726,
+      "p_blended": 0.2274,
+      "edge_net": 0.0774,
+      "rationale": "Trotz anhaltender interner Debatten in Israel über mögliche Schläge gegen den Iran bleibt die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis Mitte Dezember moderat hoch."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3142,9 +3149,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.125,
-      "current_value": 222.22,
-      "unrealized_pnl": 1.78,
+      "current_price": 0.1295,
+      "current_value": 230.22,
+      "unrealized_pnl": 9.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3202,9 +3209,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.2535,
-      "current_value": 280.09,
-      "unrealized_pnl": 54.69,
+      "current_price": 0.2495,
+      "current_value": 275.67,
+      "unrealized_pnl": 50.27,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -3227,6 +3234,111 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 280,
+      "ts": "2026-11-27T22:11:29.581122+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2500",
+      "p_blind": "0.4500",
+      "p_blended": "0.3271",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0771",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.4,
+        "bull_case": "New Zealand was positioned at 246/5 on Day 2 of the 2nd Test, giving them a solid platform to build a competitive total against India.",
+        "bear_case": "India is a formidable opponent in Test cricket, especially away from home or in swinging conditions, making a full recovery and victory by New Zealand challenging.",
+        "summary_de": "Neuseeland befindet sich im Testspiel gegen Indien in einer wettbewerbsfähigen Position, jedoch bleibt Indien ein starker Gegner mit guten Chancen auf den Sieg.",
+        "news_used": [
+          "England Chase Historic Third Straight Win Over New Zealand - Oz Arab Media",
+          "India vs New Zealand, 2nd Test Day 2 LIVE score: NZ resumes from 246/5; Blundell, Phillips batting - Sportstar",
+          "New Zealand faces uncertain political future as coalition talks begin - Qazinform",
+          "Hung parliament: Why Opportunity is essential to break the tie - 1News",
+          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
+          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian"
+        ]
+      }
+    },
+    {
+      "id": 279,
+      "ts": "2026-11-27T22:11:28.334799+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8450",
+      "p_blind": "0.5800",
+      "p_blended": "0.7726",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0774",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember hält.",
+        "base_rate": 0.65,
+        "bull_case": "Bestehende diplomatische Bemühungen und internationale Abschreckung halten beide Seiten vorerst von einer direkten Eskalation ab.",
+        "bear_case": "Andauernde Berichte über Debatten innerhalb des israelischen Sicherheitsapparats bezüglich möglicher Angriffe auf den Iran und anhaltende regionale Spannungen drohen den Waffenstillstand jederzeit zu brechen.",
+        "summary_de": "Trotz anhaltender interner Debatten in Israel über mögliche Schläge gegen den Iran bleibt die Wahrscheinlichkeit eines Fortbestehens des Waffenstillstands bis Mitte Dezember moderat hoch.",
+        "news_used": [
+          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
+          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
+          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
+          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
+          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English",
+          "Signs of Renewed War Emerge as Oil Prices Continue to Climb - نورنیوز"
+        ]
+      }
+    },
+    {
+      "id": 278,
+      "ts": "2026-11-27T22:11:27.107133+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8650",
+      "p_blind": "0.3000",
+      "p_blended": "0.6456",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.2132",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment or succession.",
+        "base_rate": 0.35,
+        "bull_case": "Ominous polls and intense opposition pressure suggest Pedro Sánchez could lose power or a new investiture process could favor the right.",
+        "bear_case": "Incumbent Pedro Sánchez remains defiant and confident despite adverse polls, and forming a majority coalition remains extremely difficult for the conservative PP.",
+        "summary_de": "Trotz ungünstiger Umfragen für den amtierenden Premierminister Pedro Sánchez bleibt eine Regierungsübernahme durch Alberto Núñez Feijóo aufgrund der schwierigen Mehrheitsverhältnisse im spanischen Parlament unsichere Zukunftsmusik.",
+        "news_used": [
+          "Spanish PM and rivals rally supporters in final pitch for votes",
+          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Don’t Bet on Spain’s Right to Fix Ties With Israel - The Times of Israel",
+          "Spanish prime minister Pedro Sánchez confident of election victory despite polls – as it happened - The Guardian",
+          "‘What do you owe Netanyahu?’: Spanish election debate erupts over Israel and Hamas - Ynetnews"
+        ]
+      }
+    },
     {
       "id": 277,
       "ts": "2026-11-27T21:51:24.135494+00:00",
@@ -3279,7 +3391,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
+      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official parliamentary seat count of PP and Vox reaching an absolute majority following the general election.",
@@ -3480,7 +3592,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:55:36.621780+00:00",
+      "last_checked_ts": "2026-11-27T22:10:47.869046+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob der Bitcoin-Preis im November 2026 jemals exakt oder unter $57.500 gefallen ist.",
@@ -3547,7 +3659,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:55:36.017334+00:00",
+      "last_checked_ts": "2026-11-27T22:10:47.459462+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Vertragsentscheidung hängt vom offiziellen Zinsentscheid der Fed nach dem Dezember-Meeting 2026 ab.",
@@ -3579,7 +3691,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
+      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether the PP and Vox secure a majority in the Spanish general election held on November 29, 2026.",
@@ -3614,7 +3726,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:55:35.395663+00:00",
+      "last_checked_ts": "2026-11-27T22:10:46.714340+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -3649,7 +3761,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
+      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count results of the snap general election on November 29, 2026, determining if PP and Vox achieve a combined absolute majority in parliament.",
@@ -3719,7 +3831,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:50:39.105461+00:00",
+      "last_checked_ts": "2026-11-27T22:10:46.227912+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Spanish General Election regarding whether PP and Vox achieve a parliamentary majority.",
@@ -3973,105 +4085,6 @@
           "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews",
           "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
           "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English"
-        ]
-      }
-    },
-    {
-      "id": 255,
-      "ts": "2026-11-27T18:41:20.732413+00:00",
-      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
-      "question": "Will Bitcoin reach $62,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4200",
-      "p_blended": "0.3122",
-      "confidence": "0.7000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0622",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:55:34.874107+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Bitcoin will hit $62,500 at any point during November 2026 based on standard spot exchange feeds.",
-        "base_rate": 0.35,
-        "bull_case": "Bitcoin recently touched over $62,100 intraday and needs only a modest 4.5% upward move within the remaining days of November, well within historical volatility ranges.",
-        "bear_case": "Bitcoin is currently trading near $59,800 following a sustained weekly losing streak, leaving limited time before the end of November to bridge the gap to $62,500.",
-        "summary_de": "Bitcoin handelt nahe 59.800 USD und benötigt bis Monatsende einen Kursanstieg von rund 4,5 Prozent, um die Marke von 62.500 USD zu erreichen.",
-        "news_used": [
-          "Prediction Markets: Bitcoin $62,500 Odds Up, B300 Rents Ease | Nov 27 - Longbridge",
-          "Bitcoin loses more than 30% of its value as weekly losing streak reaches eight weeks - www.tmgm.com",
-          "Prediction Markets: Bitcoin $62.5K Odds Rise, AI Rent Cools… - Longbridge",
-          "Bitcoin at $62,500 by November 30: Polymarket Odds Swing 19 Points in a Day - shattered.io"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $59,808.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $62,500.00: +4.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.4d (1-sigma move = +/-4.6%, distance = 0.96 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 254,
-      "ts": "2026-11-27T18:36:25.819463+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4500",
-      "p_blended": "0.2918",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0518",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:55:36.895979+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand holds home-ground advantage and has a strong test match record in favorable conditions against India.",
-        "bear_case": "India possesses a world-class squad with deep batting and bowling depth, making them formidable opponents in any test series.",
-        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland im Testmatch gegen Indien spiegelt die historische Bilanz und die Stärke des indischen Teams wider.",
-        "news_used": [
-          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
-          "Three months, zero pay: kebab shop owner hit with $44K order - Human Resources Director",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
-          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
-          "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
-          "Qantas pilots pull up as Air New Zealand plane crosses Sydney runway - 1News"
-        ]
-      }
-    },
-    {
-      "id": 253,
-      "ts": "2026-11-27T18:21:39.547126+00:00",
-      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
-      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
-      "category": "technology",
-      "end_date": "2026-12-01T04:59:00+00:00",
-      "market_price": "0.2155",
-      "p_blind": "0.6500",
-      "p_blended": "0.3102",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0982",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:01:01.908529+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires official confirmation that a software or configuration error caused the November 13 FAA ground stop before December 1, 2026.",
-        "base_rate": 0.7,
-        "bull_case": "Modern aviation technology failures of nationwide scale almost invariably trace back to software bugs, database corruption, or faulty configuration deployments.",
-        "bear_case": "Investigations into complex FAA system outages can take months, and the official report might not be finalized or explicitly confirm a software/configuration error before the deadline.",
-        "summary_de": "Da landesweite FAA-Ausfälle historisch gesehen meist auf Software- oder Konfigurationsfehler zurückzuführen sind, ist eine offizielle Bestätigung wahrscheinlich, sofern der Untersuchungsbericht rechtzeitig vorliegt.",
-        "news_used": [
-          "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/"
         ]
       }
     }
@@ -5020,6 +5033,18 @@
   ],
   "recent_runs": [
     {
+      "id": 399,
+      "ts": "2026-11-27T22:11:29.584240+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1177,
+      "candidates_found": 20,
+      "llm_calls": 3,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 44.88,
+      "errors": []
+    },
+    {
       "id": 398,
       "ts": "2026-11-27T22:06:12.069510+00:00",
       "dry_run": 0,
@@ -5245,18 +5270,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 40.45,
-      "errors": []
-    },
-    {
-      "id": 379,
-      "ts": "2026-11-27T20:31:43.595017+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1131,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 53.23,
       "errors": []
     }
   ]
