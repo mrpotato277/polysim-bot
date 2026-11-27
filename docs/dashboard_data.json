@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T14:46:24.140777+00:00",
+  "generated_at": "2026-11-27T14:51:39.381162+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10838.24,
-    "reconciled_equity_usd": 10627.82,
-    "equity_discrepancy_usd": 210.42,
-    "cash_usd": 6077.57,
-    "positions_value_usd": 4550.25,
-    "deployed_pct": 41.98,
-    "total_pnl_usd": 838.24,
-    "total_pnl_pct": 8.38,
-    "unrealized_pnl_usd": 382.96,
+    "equity_usd": 11670.13,
+    "reconciled_equity_usd": 11249.33,
+    "equity_discrepancy_usd": 420.8,
+    "cash_usd": 5867.19,
+    "positions_value_usd": 5382.14,
+    "deployed_pct": 46.12,
+    "total_pnl_usd": 1670.13,
+    "total_pnl_pct": 16.7,
+    "unrealized_pnl_usd": 1214.85,
     "total_trades": 293,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -7.39,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 221,
+    "total_forecasts": 222,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2174.03,
-    "crypto": 1506.72,
+    "politics": 2177.58,
+    "crypto": 2381.59,
     "geopolitics": 621.32,
-    "markets": 248.18
+    "markets": 201.65
   },
   "equity_curve": [
     {
@@ -2430,6 +2430,13 @@
       "cash": 6077.57,
       "deployed_pct": 41.98,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T14:51:39.033815+00:00",
+      "equity": 11670.13,
+      "cash": 5867.19,
+      "deployed_pct": 46.12,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2455,9 +2462,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.31,
-      "current_value": 1506.72,
-      "unrealized_pnl": 742.91,
+      "current_price": 0.49,
+      "current_value": 2381.59,
+      "unrealized_pnl": 1617.78,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2485,9 +2492,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1075,
-      "current_value": 191.11,
-      "unrealized_pnl": -29.33,
+      "current_price": 0.1095,
+      "current_value": 194.66,
+      "unrealized_pnl": -25.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2545,9 +2552,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.08,
-      "current_value": 248.18,
-      "unrealized_pnl": -293.66,
+      "current_price": 0.065,
+      "current_value": 201.65,
+      "unrealized_pnl": -340.19,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -2555,6 +2562,35 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 222,
+      "ts": "2026-11-27T14:51:38.601941+00:00",
+      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
+      "question": "Will Bitcoin dip to $52,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0585",
+      "p_blind": "0.0150",
+      "p_blended": "0.0385",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0255",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch resolution based on exchange feeds before the end of November.",
+        "base_rate": 0.02,
+        "bull_case": "Severe macroeconomic shocks or crypto market liquidations could trigger a flash crash of over 11% within the remaining days of November.",
+        "bear_case": "Bitcoin is currently trading near $59,339, requiring an 11.5% drop in less than four days with low historical probability of such an extreme move.",
+        "summary_de": "Bitcoin müsste innerhalb weniger Tage um über 11 Prozent fallen, was angesichts der aktuellen Volatilität und des Abstands zur Marke ein extrem unwahrscheinliches Szenario darstellt.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,339.30 (24h range: $59,244.00 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $52,500.00: -11.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.6d (1-sigma move = +/-4.7%, distance = 2.59 sigma): Gaussian one-touch ('dip/reach/hi"
+      }
+    },
     {
       "id": 221,
       "ts": "2026-11-27T14:46:23.886730+00:00",
@@ -2572,7 +2608,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T14:50:47.309139+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -3370,44 +3406,29 @@
           "Microsoft, FAA outages and bomb hoaxes expose travel insurance gaps - https://www.thetraveler.org/"
         ]
       }
-    },
-    {
-      "id": 197,
-      "ts": "2026-11-27T12:16:26.389978+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4500",
-      "p_blended": "0.3271",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0771",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T14:45:42.541656+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand finished day one of the 2nd Test at a respectable 246/5, giving them a solid platform to build a competitive total.",
-        "bear_case": "India is a formidable opponent in Test cricket across all conditions, and Day 1 is still early in a multi-day match with plenty of variance remaining.",
-        "summary_de": "Das Testmatch zwischen Neuseeland und Indien ist nach dem ersten Tag noch völlig offen, wobei sich Neuseeland in einer stabilen Position befindet.",
-        "news_used": [
-          "NZ vs IND, 2nd Test: Blundell-Phillips take New Zealand to 246/5 at day one end (Stumps) - The Indian EYE",
-          "New Zealand Dollar gains against US Dollar as NZ election outcome eases political uncertainty - FXStreet",
-          "New Zealand Dollar's Recovery Held Back by Coalition Uncertainty - Pound Sterling Live",
-          "GGPoker Announces Plans to Relaunch in New Zealand With Local Partner - Poker Industry PRO",
-          "New Zealand’s Tom Blundell opens up on difficulty of being one-format player - The Indian Express",
-          "New Zealand election results leave Luxon one seat short of a majority - finchannel"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 44,
+      "ts": "2026-11-27T14:51:39.032181+00:00",
+      "client_order_id": "psb-20261127-145138-c02b6d88da-buy-n-131108",
+      "order_id": "1734522",
+      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
+      "question": "Will Bitcoin dip to $52,500 in November?",
+      "outcome": "No",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.936",
+      "quantity": "198.54",
+      "notional_usd": "185.83",
+      "est_fee_usd": "0",
+      "edge_net": "0.0255",
+      "strategy_type": "carry",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[carry] Bitcoin müsste innerhalb weniger Tage um über 11 Prozent fallen, was angesichts der aktuellen Volatilität und des Abstands zur Marke ein extrem unwahrscheinliches Szenario darstellt."
+    },
     {
       "id": 43,
       "ts": "2026-11-27T14:46:20.186788+00:00",
@@ -4271,6 +4292,18 @@
   ],
   "recent_runs": [
     {
+      "id": 312,
+      "ts": "2026-11-27T14:51:39.034690+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1225,
+      "candidates_found": 13,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 56.45,
+      "errors": []
+    },
+    {
       "id": 311,
       "ts": "2026-11-27T14:46:23.890580+00:00",
       "dry_run": 0,
@@ -4496,18 +4529,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 59.0,
-      "errors": []
-    },
-    {
-      "id": 292,
-      "ts": "2026-11-27T13:11:14.646778+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1151,
-      "candidates_found": 17,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 39.7,
       "errors": []
     }
   ]
