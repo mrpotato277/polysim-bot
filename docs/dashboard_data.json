@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:16:19.231082+00:00",
+  "generated_at": "2026-11-27T17:21:41.825439+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10605.63,
-    "reconciled_equity_usd": 10605.63,
+    "equity_usd": 10635.41,
+    "reconciled_equity_usd": 10635.41,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4525.32,
-    "deployed_pct": 42.67,
-    "total_pnl_usd": 605.63,
-    "total_pnl_pct": 6.06,
-    "unrealized_pnl_usd": 147.65,
+    "positions_value_usd": 4555.1,
+    "deployed_pct": 42.83,
+    "total_pnl_usd": 635.41,
+    "total_pnl_pct": 6.35,
+    "unrealized_pnl_usd": 177.43,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2427.79,
-    "crypto": 1336.61,
+    "politics": 2408.97,
+    "crypto": 1385.21,
     "geopolitics": 621.32,
     "markets": 139.6
   },
@@ -2651,6 +2651,13 @@
       "cash": 6080.31,
       "deployed_pct": 42.67,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T17:21:41.389430+00:00",
+      "equity": 10635.41,
+      "cash": 6080.31,
+      "deployed_pct": 42.83,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2661,9 +2668,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.225,
-      "current_value": 403.4,
-      "unrealized_pnl": 26.89,
+      "current_price": 0.215,
+      "current_value": 385.47,
+      "unrealized_pnl": 8.96,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -2676,9 +2683,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.275,
-      "current_value": 1336.61,
-      "unrealized_pnl": 572.8,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2706,9 +2713,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.119,
-      "current_value": 211.55,
-      "unrealized_pnl": -8.89,
+      "current_price": 0.1185,
+      "current_value": 210.66,
+      "unrealized_pnl": -9.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2837,7 +2844,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Marktversprechen bezieht sich klar auf das Test Match im Cricket oder Rugby zwischen Neuseeland und Indien.",
@@ -2872,7 +2879,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
@@ -2942,7 +2949,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3005,7 +3012,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard sports match outcome contract between New Zealand and India ending by December 3, 2026.",
@@ -3069,7 +3076,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3135,7 +3142,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3234,7 +3241,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3269,7 +3276,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3339,7 +3346,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:33.387320+00:00",
+      "last_checked_ts": "2026-11-27T17:20:44.820252+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract with clear exchange feed rules.",
@@ -3484,7 +3491,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.507235+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.084061+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Bitcoin hits $57,500 at any point during November 2026.",
@@ -3551,7 +3558,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3586,7 +3593,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T17:05:31.868247+00:00",
+      "last_checked_ts": "2026-11-27T17:20:43.514634+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -4529,6 +4536,18 @@
   ],
   "recent_runs": [
     {
+      "id": 341,
+      "ts": "2026-11-27T17:21:41.391332+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1265,
+      "candidates_found": 16,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 60.37,
+      "errors": []
+    },
+    {
       "id": 340,
       "ts": "2026-11-27T17:16:18.947464+00:00",
       "dry_run": 0,
@@ -4754,18 +4773,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 64.6,
-      "errors": []
-    },
-    {
-      "id": 321,
-      "ts": "2026-11-27T15:41:23.101576+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1176,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 44.58,
       "errors": []
     }
   ]
