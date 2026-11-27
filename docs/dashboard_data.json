@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:31:53.881701+00:00",
+  "generated_at": "2026-11-27T04:36:43.274981+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9792.95,
-    "reconciled_equity_usd": 9792.95,
+    "equity_usd": 9764.92,
+    "reconciled_equity_usd": 9764.92,
     "equity_discrepancy_usd": 0.0,
-    "cash_usd": 7297.77,
-    "positions_value_usd": 2495.18,
-    "deployed_pct": 25.48,
-    "total_pnl_usd": -207.05,
-    "total_pnl_pct": -2.07,
-    "unrealized_pnl_usd": -192.85,
-    "total_trades": 146,
+    "cash_usd": 6921.26,
+    "positions_value_usd": 2843.66,
+    "deployed_pct": 29.12,
+    "total_pnl_usd": -235.08,
+    "total_pnl_pct": -2.35,
+    "unrealized_pnl_usd": -220.88,
+    "total_trades": 149,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.49,
     "brier_score": null,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 279.21,
-    "technology": 438.03,
-    "politics": 1777.94
+    "politics": 2145.48,
+    "crypto": 260.15,
+    "technology": 438.03
   },
   "equity_curve": [
     {
@@ -1522,9 +1522,31 @@
       "cash": 7297.77,
       "deployed_pct": 25.48,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T04:36:42.388106+00:00",
+      "equity": 9764.92,
+      "cash": 6921.26,
+      "deployed_pct": 29.12,
+      "source": "bot"
     }
   ],
   "open_positions": [
+    {
+      "market_id": "0x10346101feeef8bc3152ace20ca9a165bd9ec5d744dbc1d11c1a9f77a5913e76",
+      "question": "Will Johnny Chiang win the next Taichung Mayor election?",
+      "category": "politics",
+      "outcome": "No",
+      "quantity": 1792.9,
+      "avg_entry_price": 0.21,
+      "current_price": 0.205,
+      "current_value": 367.54,
+      "unrealized_pnl": -8.97,
+      "p_yes": 0.5957,
+      "p_blended": 0.4043,
+      "edge_net": 0.1943,
+      "rationale": "Johnny Chiang hat zwar politische Relevanz in Taichung, aber interne Parteikonkurrenz und andere potenzielle Kandidaten machen seinen Sieg bei der nächsten Bürgermeisterwahl zu diesem Zeitpunkt zu einem eher unwahrscheinlichen Ereignis."
+    },
     {
       "market_id": "0x18c74c5f8c9eb6ed04f45d4675272e680669a6c9e17c81150f90351a82383d1f",
       "question": "Will Bitcoin dip to $58,000 November 23-29?",
@@ -1532,9 +1554,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.145,
-      "current_value": 109.87,
-      "unrealized_pnl": -79.57,
+      "current_price": 0.135,
+      "current_value": 102.29,
+      "unrealized_pnl": -87.15,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1592,9 +1614,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.295,
-      "current_value": 169.34,
-      "unrealized_pnl": -123.42,
+      "current_price": 0.275,
+      "current_value": 157.86,
+      "unrealized_pnl": -134.9,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1649,7 +1671,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T04:35:42.195936+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -1677,7 +1699,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:25:39.655811+00:00",
+      "last_checked_ts": "2026-11-27T04:35:44.036337+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -1770,7 +1792,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:40.936280+00:00",
+      "last_checked_ts": "2026-11-27T04:35:43.117603+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -2179,7 +2201,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:41.240184+00:00",
+      "last_checked_ts": "2026-11-27T04:35:43.664378+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2343,7 +2365,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:25:40.394606+00:00",
+      "last_checked_ts": "2026-11-27T04:35:44.846853+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -2375,7 +2397,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:40.635964+00:00",
+      "last_checked_ts": "2026-11-27T04:35:42.595470+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2405,7 +2427,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T04:20:40.527402+00:00",
+      "last_checked_ts": "2026-11-27T04:35:42.407747+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2904,6 +2926,18 @@
   ],
   "recent_runs": [
     {
+      "id": 191,
+      "ts": "2026-11-27T04:36:42.389370+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1157,
+      "candidates_found": 28,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 62.25,
+      "errors": []
+    },
+    {
       "id": 190,
       "ts": "2026-11-27T04:31:53.443926+00:00",
       "dry_run": 0,
@@ -3129,18 +3163,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 43.59,
-      "errors": []
-    },
-    {
-      "id": 171,
-      "ts": "2026-11-27T02:56:32.093846+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1111,
-      "candidates_found": 30,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 62.18,
       "errors": []
     }
   ]
