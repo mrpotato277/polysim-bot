@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T22:51:36.759287+00:00",
+  "generated_at": "2026-11-27T22:56:13.656308+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10771.04,
-    "reconciled_equity_usd": 10771.04,
+    "equity_usd": 10771.38,
+    "reconciled_equity_usd": 10771.38,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4690.73,
+    "positions_value_usd": 4691.07,
     "deployed_pct": 43.55,
-    "total_pnl_usd": 771.04,
+    "total_pnl_usd": 771.38,
     "total_pnl_pct": 7.71,
-    "unrealized_pnl_usd": 313.06,
+    "unrealized_pnl_usd": 313.4,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 287,
+    "total_forecasts": 289,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2552.42,
+    "politics": 2552.76,
     "crypto": 1288.0,
     "geopolitics": 664.17,
     "markets": 186.14
@@ -3150,6 +3150,13 @@
       "cash": 6080.31,
       "deployed_pct": 43.55,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T22:56:13.384025+00:00",
+      "equity": 10771.38,
+      "cash": 6080.31,
+      "deployed_pct": 43.55,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3205,9 +3212,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.127,
-      "current_value": 225.77,
-      "unrealized_pnl": 5.33,
+      "current_price": 0.1275,
+      "current_value": 226.66,
+      "unrealized_pnl": 6.22,
       "p_yes": 0.232,
       "p_blended": 0.232,
       "edge_net": 0.104,
@@ -3265,9 +3272,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.2515,
-      "current_value": 277.88,
-      "unrealized_pnl": 52.48,
+      "current_price": 0.251,
+      "current_value": 277.33,
+      "unrealized_pnl": 51.93,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -3290,6 +3297,75 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 289,
+      "ts": "2026-11-27T22:56:13.382064+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2300",
+      "p_blind": "0.4500",
+      "p_blended": "0.2792",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0592",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India ending by December 3, 2026.",
+        "base_rate": 0.45,
+        "bull_case": "New Zealand has strong home conditions and a competitive Test squad capable of defeating India in any given match.",
+        "bear_case": "India possesses a formidable Test team with deep bowling and batting depth, making them slight favorites in most conditions.",
+        "summary_de": "Das Test-Match zwischen Neuseeland und Indien ist ausgeglichen, wobei Indien aufgrund seiner Tiefe leichte Vorteile hat, Neuseeland aber im Heimvorteil überraschen kann.",
+        "news_used": [
+          "Selection shock as Aussies name squad for first New Zealand Test - ICC",
+          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
+          "Clayton and Rocchiccioli named in Australia Test squad for New Zealand series - ESPN",
+          "Clayton and Rocchiccioli named in Australia Test squad for New Zealand series - Cricinfo",
+          "Bugman Ruud Kleinpaste Connects With A New Zealand River - Scoop - New Zealand News",
+          "England Chase Historic Third Straight Win Over New Zealand - Oz Arab Media"
+        ]
+      }
+    },
+    {
+      "id": 288,
+      "ts": "2026-11-27T22:56:12.343234+00:00",
+      "market_id": "0xc3df044e236b0255f3b8b283957754d936cfc45f091ae7041409a1b545d268dc",
+      "question": "Will the price of Bitcoin be above $64,000 on December 1?",
+      "category": "crypto",
+      "end_date": "2026-12-01T17:00:00+00:00",
+      "market_price": "0.0750",
+      "p_blind": "0.1200",
+      "p_blended": "0.0946",
+      "confidence": "0.7500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price check for Bitcoin above $64,000 at the specified deadline.",
+        "base_rate": 0.15,
+        "bull_case": "Bitcoin historically exhibits rapid mean reversion and high volatility, allowing a potential 7% bounce back above $64,000 within a few days.",
+        "bear_case": "Bitcoin has recently dropped below $59,000 with weak technical support, making a swift recovery of over 7% in under four days unlikely.",
+        "summary_de": "Da Bitcoin aktuell nahe 59.700 US-Dollar gehandelt wird und in den verbleibenden vier Tagen ein Anstieg von über sieben Prozent nötig ist, ist ein Überschreiten der Marke von 64.000 US-Dollar unwahrscheinlich.",
+        "news_used": [
+          "Here’s what happened in crypto today",
+          "Bitcoin price drops below $59K as Anthropic joins tech stock rebound",
+          "Bitcoin supply metric hits 11-year low as new ‘capitulation’ signal arrives",
+          "Bitcoin’s $64K rally fizzles. Can $60K hold? - Crypto News"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,748.70 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $64,000.00: +7.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.8d (1-sigma move = +/-4.8%, distance = 1.43 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 287,
       "ts": "2026-11-27T22:36:34.724580+00:00",
@@ -3412,7 +3488,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:35:38.681133+00:00",
+      "last_checked_ts": "2026-11-27T22:55:33.475426+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Ministerpräsident Spaniens wird.",
@@ -3482,7 +3558,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:35:38.681133+00:00",
+      "last_checked_ts": "2026-11-27T22:55:33.475426+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain after the current electoral cycle.",
@@ -3622,7 +3698,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:35:38.681133+00:00",
+      "last_checked_ts": "2026-11-27T22:55:33.475426+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment or succession.",
@@ -3692,7 +3768,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:40:41.336161+00:00",
+      "last_checked_ts": "2026-11-27T22:55:34.503123+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official parliamentary seat count of PP and Vox reaching an absolute majority following the general election.",
@@ -3727,7 +3803,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:40:40.434643+00:00",
+      "last_checked_ts": "2026-11-27T22:55:33.945921+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Preises von Ethereum im November 2026 auf den gängigen Spot-Börsen.",
@@ -3992,7 +4068,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:40:41.336161+00:00",
+      "last_checked_ts": "2026-11-27T22:55:34.503123+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether the PP and Vox secure a majority in the Spanish general election held on November 29, 2026.",
@@ -4027,7 +4103,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:40:42.114216+00:00",
+      "last_checked_ts": "2026-11-27T22:55:35.019571+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -4062,7 +4138,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:40:41.336161+00:00",
+      "last_checked_ts": "2026-11-27T22:55:34.503123+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count results of the snap general election on November 29, 2026, determining if PP and Vox achieve a combined absolute majority in parliament.",
@@ -4077,76 +4153,6 @@
           "Spain elections: Israel’s ‘greatest’ far-right ally in Europe poised to shape next government’s foreign policy - Middle East Eye",
           "Vox leader Abascal poised as kingmaker in Spain’s election - Crypto Briefing",
           "Spain's far-right Vox leader Abascal nears power as election kingmaker - Reuters"
-        ]
-      }
-    },
-    {
-      "id": 264,
-      "ts": "2026-11-27T20:06:13.308316+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.5000",
-      "p_blended": "0.2983",
-      "confidence": "0.5000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0583",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:45:40.962979+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Es handelt sich um ein klares Testergebnis zwischen Neuseeland und Indien im Cricket, Rugby oder einer anderen Sportart gemäß offiziellem Spielbericht.",
-        "base_rate": 0.5,
-        "bull_case": "Neuseeland zeigt historisch starke Leistungen und könnte als Favorit in die Partie gegen Indien gehen.",
-        "bear_case": "Indien ist insbesondere in bestimmten Formaten ein sehr starker Gegner, was die Siegchancen für Neuseeland mindert.",
-        "summary_de": "Da keine spezifischen aktuellen Teamaufstellungen oder Quoten vorliegen, wird eine ausgeglichene Wahrscheinlichkeit für einen Sieg von Neuseeland angesetzt.",
-        "news_used": [
-          "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian",
-          "Analysis: Luxon folds on Opportunity, but will Peters? - 1News",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
-          "England v New Zealand: Nations Championship game chance for All Blacks to arrest decline - BBC",
-          "A Govt by Xmas? Luxon warns of 'challenging' deals, NZ First says 'next three months' crucial - NZ Herald",
-          "Psychedelics: Are We Repeating Timothy Leary’s Mistakes? - Psychology Today"
-        ]
-      }
-    },
-    {
-      "id": 263,
-      "ts": "2026-11-27T20:01:59.886556+00:00",
-      "market_id": "0xef750428b94a6323dbaa01a2fc26914bb888c42102d143d978464f5553c22135",
-      "question": "Spain General Election: PP + Vox Majority?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.8350",
-      "p_blind": "0.6800",
-      "p_blended": "0.7717",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0683",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T22:40:41.336161+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official outcome of the Spanish General Election regarding whether PP and Vox achieve a parliamentary majority.",
-        "base_rate": 0.65,
-        "bull_case": "Polls consistently show the Partido Popular (PP) and Vox leading, with combined projections frequently hovering near or above the absolute majority threshold of 176 seats in the Congress of Deputies.",
-        "bear_case": "Incumbent Prime Minister Pedro Sánchez and the left-wing bloc could mobilize voters in the final hours to outperform poll expectations and deny the right-wing coalition a majority, similar to past election cycles.",
-        "summary_de": "Umfragen deuten darauf hin, dass die konservative PP und die rechtspopulistische Vox eine parlamentarische Mehrheit erreichen könnten, obwohl ein letzter Mobilisierungsschub der linken Kräfte das Rennen noch verknappen kann.",
-        "news_used": [
-          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
-          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
-          "Spain elections: Israel’s ‘greatest’ far-right ally in Europe poised to shape next government’s foreign policy - Middle East Eye",
-          "Vox leader Abascal poised as kingmaker in Spain’s election - Crypto Briefing",
-          "Spain's far-right Vox leader Abascal nears power as election kingmaker - Reuters",
-          "Spain’s election could pull Madrid closer to Trump’s Washington - CNBC"
         ]
       }
     }
@@ -5095,6 +5101,18 @@
   ],
   "recent_runs": [
     {
+      "id": 408,
+      "ts": "2026-11-27T22:56:13.384971+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1174,
+      "candidates_found": 19,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 41.13,
+      "errors": []
+    },
+    {
       "id": 407,
       "ts": "2026-11-27T22:51:36.077841+00:00",
       "dry_run": 0,
@@ -5320,18 +5338,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 59.22,
-      "errors": []
-    },
-    {
-      "id": 388,
-      "ts": "2026-11-27T21:16:22.286516+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1136,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 43.44,
       "errors": []
     }
   ]
