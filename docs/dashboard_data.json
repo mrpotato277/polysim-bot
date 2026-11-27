@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T03:01:54.882430+00:00",
+  "generated_at": "2026-11-27T03:06:19.027868+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9839.54,
-    "reconciled_equity_usd": 8473.54,
+    "equity_usd": 9808.08,
+    "reconciled_equity_usd": 8442.08,
     "equity_discrepancy_usd": 1366.0,
     "cash_usd": 6600.06,
-    "positions_value_usd": 1873.48,
-    "deployed_pct": 19.04,
-    "total_pnl_usd": -160.46,
-    "total_pnl_pct": -1.6,
-    "unrealized_pnl_usd": -146.26,
+    "positions_value_usd": 1842.02,
+    "deployed_pct": 18.78,
+    "total_pnl_usd": -191.92,
+    "total_pnl_pct": -1.92,
+    "unrealized_pnl_usd": -177.72,
     "total_trades": 140,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -2.93,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 148,
+    "total_forecasts": 149,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 324.9,
-    "technology": 475.21,
+    "crypto": 292.53,
+    "technology": 476.12,
     "politics": 1073.37
   },
   "equity_curve": [
@@ -1390,6 +1390,13 @@
       "cash": 6600.06,
       "deployed_pct": 19.04,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T03:06:18.709988+00:00",
+      "equity": 9808.08,
+      "cash": 6600.06,
+      "deployed_pct": 18.78,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1400,9 +1407,9 @@
       "outcome": "Yes",
       "quantity": 757.74,
       "avg_entry_price": 0.25,
-      "current_price": 0.175,
-      "current_value": 132.6,
-      "unrealized_pnl": -56.84,
+      "current_price": 0.155,
+      "current_value": 117.45,
+      "unrealized_pnl": -71.99,
       "p_yes": 0.3148,
       "p_blended": 0.3148,
       "edge_net": 0.0648,
@@ -1415,9 +1422,9 @@
       "outcome": "Yes",
       "quantity": 1813.78,
       "avg_entry_price": 0.224,
-      "current_price": 0.262,
-      "current_value": 475.21,
-      "unrealized_pnl": 68.92,
+      "current_price": 0.2625,
+      "current_value": 476.12,
+      "unrealized_pnl": 69.83,
       "p_yes": 0.3684,
       "p_blended": 0.3684,
       "edge_net": 0.1444,
@@ -1445,9 +1452,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.335,
-      "current_value": 192.3,
-      "unrealized_pnl": -100.46,
+      "current_price": 0.305,
+      "current_value": 175.08,
+      "unrealized_pnl": -117.68,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1485,6 +1492,39 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 149,
+      "ts": "2026-11-27T03:06:18.708164+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.3800",
+      "p_blended": "0.2920",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0520",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official seat count of the 2026 Spanish general election as reported by official electoral authorities.",
+        "base_rate": 0.45,
+        "bull_case": "Pedro Sánchez and the PSOE can outperform expectations due to late momentum and voter mobilization against the right.",
+        "bear_case": "Final polling averages indicate the PP (Popular Party) leading with Vox potentially securing a majority block, threatening PSOE's seat plurality.",
+        "summary_de": "Aktuelle Umfragen deuten auf einen Vorsprung der konservativen PP hin, wodurch die Wahrscheinlichkeit sinkt, dass die PSOE die meisten Sitze gewinnt.",
+        "news_used": [
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu",
+          "Spanish elections: What you need to know and what's at stake - BBC",
+          "Spain election polls: PP and Vox clear majority in final surveys - Il Politico Web"
+        ]
+      }
+    },
     {
       "id": 148,
       "ts": "2026-11-27T02:46:42.023422+00:00",
@@ -1533,7 +1573,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:50:39.648369+00:00",
+      "last_checked_ts": "2026-11-27T03:05:37.838213+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1622,7 +1662,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:55:32.951863+00:00",
+      "last_checked_ts": "2026-11-27T03:05:38.959916+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI Crude Oil hits $90 at any point during November 2026 based on standard market data.",
@@ -1782,7 +1822,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:55:32.759404+00:00",
+      "last_checked_ts": "2026-11-27T03:05:38.855445+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
@@ -1942,7 +1982,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:50:40.524848+00:00",
+      "last_checked_ts": "2026-11-27T03:05:38.173091+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2106,7 +2146,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:55:32.554384+00:00",
+      "last_checked_ts": "2026-11-27T03:05:38.753216+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -2199,7 +2239,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:50:39.431229+00:00",
+      "last_checked_ts": "2026-11-27T03:05:37.737492+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -2228,7 +2268,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:50:39.307440+00:00",
+      "last_checked_ts": "2026-11-27T03:05:37.582213+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2238,34 +2278,6 @@
         "summary_de": "Ethereum handelt derzeit bei etwa 1694 USD und ein Rückgang auf 1600 USD ist angesichts der verbleibenden Zeit und Volatilität durchaus plausibel, wenn auch nicht garantiert.",
         "news_used": [],
         "market_data": "ETH/USD live spot (Kraken): $1,694.58 (24h range: $1,666.02 - $1,728.63, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,600.00: -5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-6.3%, distance = 0.92 sigma): Gaussian one-touch ('dip/reach/hit') b"
-      }
-    },
-    {
-      "id": 124,
-      "ts": "2026-11-26T22:41:30.751550+00:00",
-      "market_id": "0x133b51a6851a2ee619e841693c0f75f3c3fdc8d75d69eadd3f0c0fe9105c50ee",
-      "question": "Will Ko Chih-en win the next Kaohsiung Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.1845",
-      "p_blind": "0.2500",
-      "p_blended": "0.2000",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0170",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T03:01:14.099259+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
-        "base_rate": 0.2,
-        "bull_case": "Ko Chih-en remains a prominent Kuomintang figure and could capitalize on shifting local political dynamics in Kaohsiung.",
-        "bear_case": "Kaohsiung has historically been a strong stronghold for the Democratic Progressive Party (DPP), making a KMT victory a steep uphill battle.",
-        "summary_de": "Kaohsiung ist traditionell eine Hochburg der Demokratischen Fortschrittspartei (DPP), wodurch die Siegchancen für die KMT-Kandidatin Ko Chih-en als eher gering einzustufen sind.",
-        "news_used": []
       }
     }
   ],
@@ -2733,6 +2745,18 @@
   ],
   "recent_runs": [
     {
+      "id": 173,
+      "ts": "2026-11-27T03:06:18.710827+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 26,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.67,
+      "errors": []
+    },
+    {
       "id": 172,
       "ts": "2026-11-27T03:01:54.534610+00:00",
       "dry_run": 0,
@@ -2958,18 +2982,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 48.31,
-      "errors": []
-    },
-    {
-      "id": 153,
-      "ts": "2026-11-27T01:31:56.219282+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1200,
-      "candidates_found": 30,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 64.88,
       "errors": []
     }
   ]
