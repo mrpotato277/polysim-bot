@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T05:11:48.863543+00:00",
+  "generated_at": "2026-11-27T05:16:16.128627+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9692.9,
-    "reconciled_equity_usd": 9194.09,
-    "equity_discrepancy_usd": 498.81,
+    "equity_usd": 9745.87,
+    "reconciled_equity_usd": 9239.95,
+    "equity_discrepancy_usd": 505.92,
     "cash_usd": 5848.08,
-    "positions_value_usd": 3346.01,
-    "deployed_pct": 34.52,
-    "total_pnl_usd": -307.1,
-    "total_pnl_pct": -3.07,
-    "unrealized_pnl_usd": -292.9,
+    "positions_value_usd": 3391.87,
+    "deployed_pct": 34.8,
+    "total_pnl_usd": -254.13,
+    "total_pnl_pct": -2.54,
+    "unrealized_pnl_usd": -247.04,
     "total_trades": 174,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -3.97,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 160,
+    "total_forecasts": 161,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2160.39,
-    "crypto": 736.71,
+    "politics": 2146.17,
+    "crypto": 796.79,
     "technology": 448.91
   },
   "equity_curve": [
@@ -1584,6 +1584,13 @@
       "cash": 5848.08,
       "deployed_pct": 34.52,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T05:16:15.792383+00:00",
+      "equity": 9745.87,
+      "cash": 5848.08,
+      "deployed_pct": 34.8,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1609,9 +1616,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.125,
-      "current_value": 607.55,
-      "unrealized_pnl": -156.26,
+      "current_price": 0.135,
+      "current_value": 656.15,
+      "unrealized_pnl": -107.66,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -1639,9 +1646,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1055,
-      "current_value": 187.55,
-      "unrealized_pnl": -32.89,
+      "current_price": 0.0975,
+      "current_value": 173.33,
+      "unrealized_pnl": -47.11,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1669,9 +1676,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.225,
-      "current_value": 129.16,
-      "unrealized_pnl": -163.6,
+      "current_price": 0.245,
+      "current_value": 140.64,
+      "unrealized_pnl": -152.12,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1710,6 +1717,38 @@
   ],
   "recent_forecasts": [
     {
+      "id": 161,
+      "ts": "2026-11-27T05:16:15.790765+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4600",
+      "p_blended": "0.3223",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0723",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbency advantage and recent polling momentum for Sanchez's PSOE against Feijoo's PP.",
+        "bear_case": "PP leads in multiple consolidated polling aggregates, presenting a formidable challenge to PSOE maintaining the most seats.",
+        "summary_de": "Die Umfragen zeigen ein enges Rennen zwischen PSOE und PP, wobei die PP in vielen Regionen leicht vorne liegt, was die Chancen der PSOE dämpft.",
+        "news_used": [
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "Spanish elections: What you need to know and what's at stake - BBC",
+          "The town in Spain where PP and PSOE tied exactly with 1,243 votes in the last general elections - Demócrata"
+        ]
+      }
+    },
+    {
       "id": 160,
       "ts": "2026-11-27T05:02:07.597752+00:00",
       "market_id": "0xea3fc87eb93319e7ec9bc2d6c2b0b1a7aa9bdbfa9c74fcb268d1c98bda0d7e18",
@@ -1726,7 +1765,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:05:38.651776+00:00",
+      "last_checked_ts": "2026-11-27T05:15:38.953295+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,000 during November 23-29, 2026. Spot is close at $61,425 with ample time left.",
@@ -1757,7 +1796,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T05:15:37.344921+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Auflösung erfolgt anhand von Standardpreisdaten für Bitcoin (z. B. Binance oder Chainlink) bis zum Fristende.",
@@ -1886,7 +1925,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:01:05.830347+00:00",
+      "last_checked_ts": "2026-11-27T05:15:37.649582+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange feeds before December 1, 2026.",
@@ -1946,7 +1985,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:01:05.674539+00:00",
+      "last_checked_ts": "2026-11-27T05:15:37.556084+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
@@ -1975,7 +2014,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:05:38.263385+00:00",
+      "last_checked_ts": "2026-11-27T05:15:38.737953+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung auf präzise Definitionen und offizielle Bestätigungen des Waffenstillstandsstatus zwischen Israel und Iran bis zum Fristende.",
@@ -2010,7 +2049,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:01:05.109377+00:00",
+      "last_checked_ts": "2026-11-27T05:15:37.241457+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -2038,7 +2077,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:05:37.877092+00:00",
+      "last_checked_ts": "2026-11-27T05:15:38.455367+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2131,7 +2170,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:01:05.977120+00:00",
+      "last_checked_ts": "2026-11-27T05:15:37.746418+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -2455,40 +2494,6 @@
           "Taiwan’s 2026 Nine-in-One Elections: Things to Watch - CSIS | Center for Strategic and International Studies",
           "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation",
           "As Taiwan’s local elections loom, voters want an end to ‘constant confrontation’ - South China Morning Post"
-        ]
-      }
-    },
-    {
-      "id": 136,
-      "ts": "2026-11-27T00:41:21.249409+00:00",
-      "market_id": "0x598c99fbef3a7d4fb2c3a5af62e67e4ef5f5f7447e966569aee6c917bff12a25",
-      "question": "Will Su Chiao-hui win the next New Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.6150",
-      "p_blind": "0.5200",
-      "p_blended": "0.5829",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0371",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:05:39.876619+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag löst sich basierend auf dem offiziellen Wahlergebnis der Bürgermeisterwahl in Neu-Taipeh 2026 auf.",
-        "base_rate": 0.5,
-        "bull_case": "Su Chiao-hui verfügt über starke organisatorische Unterstützung und die DPP zeigt in Umfragen eine stabile Mobilisierung, während die KMT mit Kontroversen zu kämpfen hat.",
-        "bear_case": "Neu-Taipeh ist historisch eine Hochburg der KMT, und der starke Gegenkandidat (Lee Shu-chuan bzw. der KMT-Kandidat) könnte konservative Wähler mobilisieren.",
-        "summary_de": "Die Wahlen für das Amt des Bürgermeisters von Neu-Taipeh sind im Gange, wobei Su Chiao-hui starke organisatorische Vorteile hat, das Rennen jedoch traditionell hart umkämpft ist.",
-        "news_used": [
-          "Could New Taipei change hands? Su Chiao-hui has organisational edge as Lee Shu-chuan looks to turnout - 联合早报",
-          "2026 ELECTIONS Candidates, party leaders step up campaigning ahead of Saturday's elections - Focus Taiwan",
-          "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation",
-          "[Big read] Taiwan local elections: What a DPP surge means for the 2028 presidency and cross-strait relations - ThinkChina",
-          "New Taipei City’s KMT candidate apologizes for volunteer's sexist remarks -News-Radio Taiwan International - Rti 中央廣播電臺"
         ]
       }
     }
@@ -3017,6 +3022,18 @@
   ],
   "recent_runs": [
     {
+      "id": 199,
+      "ts": "2026-11-27T05:16:15.793087+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1125,
+      "candidates_found": 19,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.93,
+      "errors": []
+    },
+    {
       "id": 198,
       "ts": "2026-11-27T05:11:48.359246+00:00",
       "dry_run": 0,
@@ -3242,18 +3259,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 62.68,
-      "errors": []
-    },
-    {
-      "id": 179,
-      "ts": "2026-11-27T03:36:17.220517+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1201,
-      "candidates_found": 31,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 44.74,
       "errors": []
     }
   ]
