@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:16:39.457699+00:00",
+  "generated_at": "2026-11-27T07:21:45.222047+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9721.75,
-    "reconciled_equity_usd": 8483.22,
+    "equity_usd": 9661.66,
+    "reconciled_equity_usd": 8423.13,
     "equity_discrepancy_usd": 1238.53,
     "cash_usd": 5590.85,
-    "positions_value_usd": 2892.37,
-    "deployed_pct": 29.75,
-    "total_pnl_usd": -278.25,
-    "total_pnl_pct": -2.78,
-    "unrealized_pnl_usd": -340.25,
+    "positions_value_usd": 2832.28,
+    "deployed_pct": 29.31,
+    "total_pnl_usd": -338.34,
+    "total_pnl_pct": -3.38,
+    "unrealized_pnl_usd": -400.34,
     "total_trades": 225,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -4.89,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 170,
+    "total_forecasts": 171,
     "circuit_breaker_active": false
   },
   "category_exposure": {
     "politics": 2167.14,
-    "crypto": 725.23
+    "crypto": 665.14
   },
   "equity_curve": [
     {
@@ -1763,6 +1763,13 @@
       "cash": 5590.85,
       "deployed_pct": 29.75,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T07:21:44.785006+00:00",
+      "equity": 9661.66,
+      "cash": 5590.85,
+      "deployed_pct": 29.31,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1788,9 +1795,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.125,
-      "current_value": 607.55,
-      "unrealized_pnl": -156.26,
+      "current_price": 0.115,
+      "current_value": 558.94,
+      "unrealized_pnl": -204.87,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -1833,9 +1840,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.205,
-      "current_value": 117.68,
-      "unrealized_pnl": -175.08,
+      "current_price": 0.185,
+      "current_value": 106.2,
+      "unrealized_pnl": -186.56,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1873,6 +1880,42 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 171,
+      "ts": "2026-11-27T07:21:44.783580+00:00",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0565",
+      "p_blind": "0.2200",
+      "p_blended": "0.0970",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks whether Bitcoin hits or dips to $55,000 in November 2026 based on standard exchange feeds.",
+        "base_rate": 0.15,
+        "bull_case": "Bitcoin has faced heavy downside pressure and massive fund outflows, with recent news noting the asset nearing $55,000 amid thin holiday liquidity and risk-off macro sentiment.",
+        "bear_case": "Bitcoin recently rebounded above $61,000 and with only a few days left in November, reaching a ~11% drop requires a sharp flash crash or cascade.",
+        "summary_de": "Obwohl Bitcoin jüngst unter Abwärtsdruck stand und sich in Richtung 55.000 US-Dollar bewegte, notiert der Kurs aktuell über 61.000 US-Dollar, wodurch ein Erreichen des Schwellenwerts in den verbleibenden Tagen des Monats unwahrscheinlicher wird.",
+        "news_used": [
+          "Bitcoin has lost half its value: Can it recover before the end of 2026? - Al-Bawaba",
+          "Bitfinex Sees Record $4.94B BTC Fund Exodus in November as Bitcoin Nears $55,000 - CryptoDaily",
+          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
+          "Ed Zitron says the AI trade peaked at Anthropic's IPO — and Bitcoin's slide to $55,000 is riding the same unwind - BigGo Finance",
+          "Bitcoin Stages Relief Rally, Bounces Above $61,000 as Investors Weigh Further Downside Risks - Tekedia",
+          "Talos warns of thin Thanksgiving liquidity as Bitcoin eyes $61K - TradingView"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $61,758.80 (24h range: $59,850.00 - $61,925.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $55,000.00: -10.9% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.9d (1-sigma move = +/-5.0%, distance = 2.30 sigma): Gaussian one-touch ('dip/reach/hi"
+      }
+    },
     {
       "id": 170,
       "ts": "2026-11-27T07:06:15.697994+00:00",
@@ -1925,7 +1968,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:33.605708+00:00",
+      "last_checked_ts": "2026-11-27T07:20:40.940451+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which involves defining whether tacit understandings or formal agreements qualify.",
@@ -2011,7 +2054,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:33.496942+00:00",
+      "last_checked_ts": "2026-11-27T07:20:40.725229+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob vereinbarte Waffenruhen über die Frist hinaus formell anhalten oder ob Zwischenfälle als Bruch gewertet werden.",
@@ -2080,7 +2123,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:33.852777+00:00",
+      "last_checked_ts": "2026-11-27T07:20:41.371510+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the ground stop, which might remain under protracted investigation past the deadline.",
@@ -2144,7 +2187,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:34.683549+00:00",
+      "last_checked_ts": "2026-11-27T07:20:42.918429+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 2026 auf 60.000 USD dippt, basierend auf Standard-Preisen der wichtigsten Marktplätze.",
@@ -2243,7 +2286,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:10:41.600729+00:00",
+      "last_checked_ts": "2026-11-27T07:20:43.419650+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Auflösung erfolgt anhand von Standardpreisdaten für Bitcoin (z. B. Binance oder Chainlink) bis zum Fristende.",
@@ -2307,7 +2350,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:33.496942+00:00",
+      "last_checked_ts": "2026-11-27T07:20:40.725229+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung vor exakter Definition und Einhaltung des Waffenstillstands bis zum 15. Dezember 2026.",
@@ -2342,7 +2385,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:34.185609+00:00",
+      "last_checked_ts": "2026-11-27T07:20:42.112499+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -2401,7 +2444,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:34.455618+00:00",
+      "last_checked_ts": "2026-11-27T07:20:42.507044+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -2432,7 +2475,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:10:41.804743+00:00",
+      "last_checked_ts": "2026-11-27T07:20:43.810195+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against major exchange spot feeds during the specified dates.",
@@ -2496,7 +2539,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:10:41.441647+00:00",
+      "last_checked_ts": "2026-11-27T07:20:43.137233+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
@@ -2586,7 +2629,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:05:34.078630+00:00",
+      "last_checked_ts": "2026-11-27T07:20:41.789790+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -2627,37 +2670,6 @@
         "summary_de": "Da Lai Jui-lung kein führender Favorit in diesem Wahlrennen ist, liegt die Wahrscheinlichkeit eines Sieges sehr niedrig.",
         "news_used": [
           "Kaohsiung mayoral candidates take campaign to the streets - Taiwan News"
-        ]
-      }
-    },
-    {
-      "id": 146,
-      "ts": "2026-11-27T02:31:37.630789+00:00",
-      "market_id": "0x70f08e5b189bfad9bcc4b7c01c5e355e67cdd2acec23c3d93ef86e55536a71ff",
-      "question": "Will Chiang Wan-an win the 2026 Taipei Mayoral Election by 12% or more?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.0695",
-      "p_blind": "0.3200",
-      "p_blended": "0.1072",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:15:43.825425+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Election results must clearly show a winning margin of 12% or more for Chiang Wan-an based on official CEC data.",
-        "base_rate": 0.35,
-        "bull_case": "As the incumbent Kuomintang mayor in a traditionally pan-blue leaning stronghold, Chiang Wan-an commands strong party loyalty and advantages that could lead to a landslide victory margin.",
-        "bear_case": "Taiwanese local elections are notoriously competitive, and opposition DPP mobilization or independent factors often compress winning margins well below the 12% threshold.",
-        "summary_de": "Obwohl Chiang Wan-an als Amtsinhaber in Taipeh gute Chancen auf die Wiederwahl hat, erscheint ein überaus hoher Vorsprung von 12 Prozent oder mehr angesichts der üblichen parteipolitischen Dynamiken in Taiwan ambitioniert.",
-        "news_used": [
-          "What to know about Taiwan’s local elections and why they matter to China - Stamford Advocate",
-          "Puma Shen canvasses pan-blue Taipei districts - Taiwan News"
         ]
       }
     }
@@ -3246,6 +3258,18 @@
   ],
   "recent_runs": [
     {
+      "id": 223,
+      "ts": "2026-11-27T07:21:44.785699+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1201,
+      "candidates_found": 21,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 66.2,
+      "errors": []
+    },
+    {
       "id": 222,
       "ts": "2026-11-27T07:16:38.699886+00:00",
       "dry_run": 0,
@@ -3471,18 +3495,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 51.29,
-      "errors": []
-    },
-    {
-      "id": 203,
-      "ts": "2026-11-27T05:36:37.491326+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1147,
-      "candidates_found": 23,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 65.43,
       "errors": []
     }
   ]
