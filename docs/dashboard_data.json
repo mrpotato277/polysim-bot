@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T02:46:42.490838+00:00",
+  "generated_at": "2026-11-27T02:51:29.334656+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9864.8,
-    "reconciled_equity_usd": 7976.45,
-    "equity_discrepancy_usd": 1888.35,
+    "equity_usd": 9851.47,
+    "reconciled_equity_usd": 8485.47,
+    "equity_discrepancy_usd": 1366.0,
     "cash_usd": 6600.06,
-    "positions_value_usd": 1376.39,
-    "deployed_pct": 13.95,
-    "total_pnl_usd": -135.2,
-    "total_pnl_pct": -1.35,
-    "unrealized_pnl_usd": -237.06,
+    "positions_value_usd": 1885.41,
+    "deployed_pct": 19.14,
+    "total_pnl_usd": -148.53,
+    "total_pnl_pct": -1.49,
+    "unrealized_pnl_usd": -134.33,
     "total_trades": 140,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -2.93,
@@ -33,7 +33,8 @@
   },
   "category_exposure": {
     "crypto": 300.11,
-    "politics": 1076.28
+    "technology": 521.46,
+    "politics": 1063.84
   },
   "equity_curve": [
     {
@@ -1362,6 +1363,13 @@
       "cash": 6600.06,
       "deployed_pct": 13.95,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T02:51:28.893633+00:00",
+      "equity": 9851.47,
+      "cash": 6600.06,
+      "deployed_pct": 19.14,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1381,15 +1389,30 @@
       "rationale": "Bitcoin wird nahe 60.500 USD gehandelt, und da der Zeitraum bis zum 29. November kurz ist, sinkt die Wahrscheinlichkeit eines Rücksetzers auf 58.000 USD trotz anhaltender Volatilität leicht."
     },
     {
+      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
+      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
+      "category": "technology",
+      "outcome": "Yes",
+      "quantity": 1813.78,
+      "avg_entry_price": 0.224,
+      "current_price": 0.2875,
+      "current_value": 521.46,
+      "unrealized_pnl": 115.17,
+      "p_yes": 0.3684,
+      "p_blended": 0.3684,
+      "edge_net": 0.1444,
+      "rationale": "Es ist wahrscheinlich, dass eine Untersuchung einen Software- oder Konfigurationsfehler als Ursache des FAA-Ausfalls bestätigt, jedoch bleibt ein Restrisiko bezüglich des genauen Untersuchungsergebnisses."
+    },
+    {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
       "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
       "category": "politics",
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0915,
-      "current_value": 162.66,
-      "unrealized_pnl": -57.78,
+      "current_price": 0.0845,
+      "current_value": 150.22,
+      "unrealized_pnl": -70.22,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1459,7 +1482,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T02:50:38.335778+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -1490,7 +1513,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:40:49.063948+00:00",
+      "last_checked_ts": "2026-11-27T02:50:39.648369+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Kaohsiung Mayor election.",
@@ -1899,7 +1922,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:40:49.429662+00:00",
+      "last_checked_ts": "2026-11-27T02:50:40.524848+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -2033,7 +2056,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:35:34.870047+00:00",
+      "last_checked_ts": "2026-11-27T02:50:38.503356+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Tainan Mayor election.",
@@ -2095,7 +2118,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:35:35.730103+00:00",
+      "last_checked_ts": "2026-11-27T02:50:39.178995+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2125,7 +2148,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:35:35.558517+00:00",
+      "last_checked_ts": "2026-11-27T02:50:39.039512+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on recognized crypto exchanges before the December 1 deadline.",
@@ -2156,7 +2179,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:40:48.937946+00:00",
+      "last_checked_ts": "2026-11-27T02:50:39.431229+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on standard crypto spot exchange price feeds hitting $65,000 before the end of November UTC.",
@@ -2185,7 +2208,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:35:35.951754+00:00",
+      "last_checked_ts": "2026-11-27T02:50:39.307440+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2214,7 +2237,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T02:35:35.730103+00:00",
+      "last_checked_ts": "2026-11-27T02:50:39.178995+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Kaohsiung Mayor election.",
@@ -2690,6 +2713,18 @@
   ],
   "recent_runs": [
     {
+      "id": 170,
+      "ts": "2026-11-27T02:51:28.895047+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1112,
+      "candidates_found": 30,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 52.4,
+      "errors": []
+    },
+    {
       "id": 169,
       "ts": "2026-11-27T02:46:42.026364+00:00",
       "dry_run": 0,
@@ -2915,18 +2950,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 53.59,
-      "errors": []
-    },
-    {
-      "id": 150,
-      "ts": "2026-11-27T01:16:32.666776+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1132,
-      "candidates_found": 27,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 53.03,
       "errors": []
     }
   ]
