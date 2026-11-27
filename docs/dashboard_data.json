@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:11:14.378275+00:00",
+  "generated_at": "2026-11-27T15:21:45.368769+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11118.81,
-    "reconciled_equity_usd": 8688.13,
-    "equity_discrepancy_usd": 2430.68,
+    "equity_usd": 11377.76,
+    "reconciled_equity_usd": 8890.59,
+    "equity_discrepancy_usd": 2487.17,
     "cash_usd": 5681.36,
-    "positions_value_usd": 3006.77,
-    "deployed_pct": 27.04,
-    "total_pnl_usd": 1118.81,
-    "total_pnl_pct": 11.19,
-    "unrealized_pnl_usd": -396.71,
-    "total_trades": 294,
+    "positions_value_usd": 3209.23,
+    "deployed_pct": 28.21,
+    "total_pnl_usd": 1377.76,
+    "total_pnl_pct": 13.78,
+    "unrealized_pnl_usd": -404.63,
+    "total_trades": 297,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -9.66,
     "brier_score": 0.0521,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 224,
+    "total_forecasts": 225,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2199.31,
+    "politics": 2401.77,
     "geopolitics": 621.32,
     "markets": 186.14
   },
@@ -2470,6 +2470,13 @@
       "cash": 5681.36,
       "deployed_pct": 27.04,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T15:21:44.982351+00:00",
+      "equity": 11377.76,
+      "cash": 5681.36,
+      "deployed_pct": 28.21,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2510,13 +2517,28 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.109,
-      "current_value": 193.77,
-      "unrealized_pnl": -26.67,
+      "current_price": 0.11,
+      "current_value": 195.55,
+      "unrealized_pnl": -24.89,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
       "rationale": "Pedro Sánchez kämpft in vorgezogenen Neuwahlen stark gegen rechte Konkurrenten, wobei sein Verbleib im Amt des Ministerpräsidenten angesichts einer ungewissen Regierungsbildung gefährdet ist."
+    },
+    {
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "outcome": "Yes",
+      "quantity": 809.16,
+      "avg_entry_price": 0.26,
+      "current_price": 0.255,
+      "current_value": 206.34,
+      "unrealized_pnl": -4.04,
+      "p_yes": 0.3229,
+      "p_blended": 0.3229,
+      "edge_net": 0.0729,
+      "rationale": "Die aktuellen spanischen Wahlen zeigen ein sehr enges Rennen, wobei die konservative Opposition in vielen Umfragen leicht im Vorteil ist, was die Chancen der PSOE auf die meisten Sitze mindert."
     },
     {
       "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
@@ -2540,9 +2562,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.625,
-      "current_value": 706.71,
-      "unrealized_pnl": 21.3,
+      "current_price": 0.62,
+      "current_value": 701.05,
+      "unrealized_pnl": 15.64,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2580,6 +2602,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 225,
+      "ts": "2026-11-27T15:21:44.980762+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4200",
+      "p_blended": "0.3229",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0729",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on which party wins the most seats in the 2026 Spanish general election according to official results.",
+        "base_rate": 0.45,
+        "bull_case": "PSOE has a mobilized base and incumbent advantages, keeping them competitive in seat projections despite a challenging political climate.",
+        "bear_case": "Recent polls and political momentum favor the opposition PP under Feijóo, with voter fatigue and international pressures threatening Sánchez's standing.",
+        "summary_de": "Die aktuellen spanischen Wahlen zeigen ein sehr enges Rennen, wobei die konservative Opposition in vielen Umfragen leicht im Vorteil ist, was die Chancen der PSOE auf die meisten Sitze mindert.",
+        "news_used": [
+          "Spanish election: What you need to know and what's at stake - BBC",
+          "Spain’s election could pull Madrid closer to Trump’s Washington - CNBC",
+          "Spain’s Sánchez stood up against Trump. His own voters may be about to bring him down - CNN",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu"
+        ]
+      }
+    },
     {
       "id": 224,
       "ts": "2026-11-27T15:01:52.325590+00:00",
@@ -2626,7 +2683,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:01.912398+00:00",
+      "last_checked_ts": "2026-11-27T15:20:41.961407+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, evaluated against major exchange spot/oracle feeds before December 1, 2026.",
@@ -2742,7 +2799,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:02.869929+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.071047+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Bitcoin hits $57,500 at any point during November 2026.",
@@ -2809,7 +2866,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2844,7 +2901,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -2879,7 +2936,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag bezieht sich auf das Testergebnis zwischen Neuseeland und Indien, wobei sich der aktuelle Stand nach dem ersten Tag auf 246/5 beläuft.",
@@ -3021,7 +3078,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3056,7 +3113,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.304191+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.548591+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob es sich um einen offiziellen Waffenstillstand zwischen Israel und Iran direkt handelt oder ob regionale Stellvertreterkonflikte (Gaza/Libanon) einbrechen.",
@@ -3196,7 +3253,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.448130+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.749392+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026; 'effective' requires verifiable implementation rather than merely an agreement.",
@@ -3224,7 +3281,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3259,7 +3316,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3294,7 +3351,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
@@ -3329,7 +3386,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -3364,7 +3421,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
+      "last_checked_ts": "2026-11-27T15:20:43.389138+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test Match cricket between New Zealand and India, resolving based on the official match outcome.",
@@ -3379,41 +3436,6 @@
           "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
           "The World Cup lesson England can learn in All Blacks rematch - The Independent",
           "NZ vs IND, 2nd Test: Blundell-Phillips take New Zealand to 246/5 at day one end (Stumps) - The Indian EYE"
-        ]
-      }
-    },
-    {
-      "id": 200,
-      "ts": "2026-11-27T12:31:57.974188+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.4500",
-      "p_blended": "0.3182",
-      "confidence": "0.5000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0682",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:01:03.136474+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Das Marktversprechen bezieht sich eindeutig auf den Gewinner des Testspiels zwischen Neuseeland und Indien.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand hat nach einem schwierigen Start am ersten Tag des zweiten Tests (246/5 bei Stumps) durch Phillips und Blundell stabilisiert und hält sich im Spiel gegen Indien.",
-        "bear_case": "Indien ist im Test-Cricket traditionell auswärts und gegen Neuseeland stark, und die Partie ist nach dem ersten Tag noch völlig offen und unberechenbar.",
-        "summary_de": "Das Testspiel zwischen Neuseeland und Indien ist nach dem ersten Tag ausgeglichen, wobei Neuseeland nach einem schwachen Start recovery zeigt.",
-        "news_used": [
-          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
-          "Nations Championship bronze match: three key England v New Zealand head-to-heads - RFI",
-          "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
-          "The World Cup lesson England can learn in All Blacks rematch - The Independent",
-          "NZ vs IND, 2nd Test: Blundell-Phillips take New Zealand to 246/5 at day one end (Stumps) - The Indian EYE",
-          "New Zealand Dollar gains against US Dollar as NZ election outcome eases political uncertainty - FXStreet"
         ]
       }
     }
@@ -4342,6 +4364,18 @@
   ],
   "recent_runs": [
     {
+      "id": 317,
+      "ts": "2026-11-27T15:21:44.983043+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1141,
+      "candidates_found": 19,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 65.03,
+      "errors": []
+    },
+    {
       "id": 316,
       "ts": "2026-11-27T15:11:14.131603+00:00",
       "dry_run": 0,
@@ -4567,18 +4601,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 61.99,
-      "errors": []
-    },
-    {
-      "id": 297,
-      "ts": "2026-11-27T13:36:34.216602+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1109,
-      "candidates_found": 17,
-      "llm_calls": 3,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 60.92,
       "errors": []
     }
   ]
