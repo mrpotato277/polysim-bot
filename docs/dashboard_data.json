@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:26:25.130484+00:00",
+  "generated_at": "2026-11-27T16:31:33.411464+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,30 +11,30 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10596.88,
-    "reconciled_equity_usd": 9121.45,
-    "equity_discrepancy_usd": 1475.43,
-    "cash_usd": 5891.78,
-    "positions_value_usd": 3229.67,
-    "deployed_pct": 30.48,
-    "total_pnl_usd": 596.88,
-    "total_pnl_pct": 5.97,
-    "unrealized_pnl_usd": -384.19,
+    "equity_usd": 10501.99,
+    "reconciled_equity_usd": 9167.14,
+    "equity_discrepancy_usd": 1334.85,
+    "cash_usd": 5984.01,
+    "positions_value_usd": 3183.13,
+    "deployed_pct": 30.31,
+    "total_pnl_usd": 501.99,
+    "total_pnl_pct": 5.02,
+    "unrealized_pnl_usd": -430.73,
     "total_trades": 297,
     "win_rate_pct": 50.0,
-    "max_drawdown_pct": -13.9,
+    "max_drawdown_pct": -14.67,
     "brier_score": 0.0521,
     "brier_resolved_count": 6,
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 227,
+    "total_forecasts": 228,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "politics": 2422.21,
     "geopolitics": 621.32,
-    "markets": 186.14
+    "markets": 139.6
   },
   "equity_curve": [
     {
@@ -2574,6 +2574,13 @@
       "cash": 5891.78,
       "deployed_pct": 30.48,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T16:31:33.140322+00:00",
+      "equity": 10501.99,
+      "cash": 5984.01,
+      "deployed_pct": 30.31,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2689,9 +2696,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.06,
-      "current_value": 186.14,
-      "unrealized_pnl": -355.7,
+      "current_price": 0.045,
+      "current_value": 139.6,
+      "unrealized_pnl": -402.24,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -2699,6 +2706,37 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 228,
+      "ts": "2026-11-27T16:31:33.138255+00:00",
+      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
+      "question": "Will Bitcoin reach $62,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.3150",
+      "p_blind": "0.4200",
+      "p_blended": "0.3622",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0522",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price hit contract based on reliable crypto exchange or oracle feeds.",
+        "base_rate": 0.35,
+        "bull_case": "Bitcoin has already touched $62,139 in the last 24 hours, meaning it only needs a modest ~0.6% further upward spike to reach the $62,500 threshold with several days left in November.",
+        "bear_case": "Current spot is around $60,030, requiring a ~4.1% rally in a short timeframe, and downward macro pressure could cap rallies.",
+        "summary_de": "Bitcoin liegt aktuell bei rund 60.030 US-Dollar und war im Laufe des Monats bereits nahe an der Marke, weshalb ein Erreichen von 62.500 US-Dollar in den verbleibenden Tagen durchaus im Bereich des Möglichen liegt.",
+        "news_used": [
+          "Prediction Markets: Bitcoin $62,500 Odds Up, B300 Rents Ease… - Longbridge"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $60,029.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $62,500.00: +4.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.5d (1-sigma move = +/-4.7%, distance = 0.86 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 227,
       "ts": "2026-11-27T16:21:30.720928+00:00",
@@ -2786,7 +2824,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.456721+00:00",
+      "last_checked_ts": "2026-11-27T16:30:54.173550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the 2026 Spanish general election according to official results.",
@@ -2850,7 +2888,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.683390+00:00",
+      "last_checked_ts": "2026-11-27T16:30:54.450637+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, evaluated against major exchange spot/oracle feeds before December 1, 2026.",
@@ -2937,7 +2975,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.119582+00:00",
+      "last_checked_ts": "2026-11-27T16:30:53.759064+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds before December 1, 2026.",
@@ -2998,7 +3036,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.456721+00:00",
+      "last_checked_ts": "2026-11-27T16:30:54.173550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -3138,7 +3176,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.456721+00:00",
+      "last_checked_ts": "2026-11-27T16:30:54.173550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election.",
@@ -3173,7 +3211,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:48.667511+00:00",
+      "last_checked_ts": "2026-11-27T16:30:53.358387+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil will hit $90 at any point during November 2026. Resolution depends on official spot/futures high print before December 1, 2026.",
@@ -3209,7 +3247,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:48.667511+00:00",
+      "last_checked_ts": "2026-11-27T16:30:53.358387+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires WTI spot or front-month futures to touch or exceed $90 at any point during November 2026.",
@@ -3315,7 +3353,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.456721+00:00",
+      "last_checked_ts": "2026-11-27T16:30:54.173550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -3350,7 +3388,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.456721+00:00",
+      "last_checked_ts": "2026-11-27T16:30:54.173550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag entscheidet sich klar anhand der Sitzverteilung nach der spanischen Parlamentswahl.",
@@ -3385,7 +3423,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:15:49.456721+00:00",
+      "last_checked_ts": "2026-11-27T16:30:54.173550+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -3493,41 +3531,6 @@
         "summary_de": "Neuseeland zeigt im zweiten Testspiel gegen Indien eine stabile Leistung am ersten Tag, jedoch bleibt der Ausgang des Spiels völlig offen.",
         "news_used": [
           "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet",
-          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
-          "Nations Championship bronze match: three key England v New Zealand head-to-heads - RFI",
-          "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
-          "The World Cup lesson England can learn in All Blacks rematch - The Independent",
-          "NZ vs IND, 2nd Test: Blundell-Phillips take New Zealand to 246/5 at day one end (Stumps) - The Indian EYE"
-        ]
-      }
-    },
-    {
-      "id": 203,
-      "ts": "2026-11-27T12:46:40.406508+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4500",
-      "p_blended": "0.3305",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0805",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand finished day one of the 2nd Test at 246/5 with Phillips and Blundell staging a strong rebuild, giving them a competitive platform.",
-        "bear_case": "India is playing away but remains a formidable Test side with strong bowling options capable of restricting New Zealand's total and chasing effectively.",
-        "summary_de": "Das Testspiel zwischen Neuseeland und Indien ist nach dem ersten Tag noch völlig offen, weshalb die Chancen für Neuseeland auf einen Sieg moderat eingeschätzt werden.",
-        "news_used": [
-          "Australia set to drop Lyon for first New Zealand Test - BBC",
           "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
           "Nations Championship bronze match: three key England v New Zealand head-to-heads - RFI",
           "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
@@ -4461,6 +4464,18 @@
   ],
   "recent_runs": [
     {
+      "id": 331,
+      "ts": "2026-11-27T16:31:33.141179+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1149,
+      "candidates_found": 16,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 41.07,
+      "errors": []
+    },
+    {
       "id": 330,
       "ts": "2026-11-27T16:26:24.279141+00:00",
       "dry_run": 0,
@@ -4686,18 +4701,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 56.45,
-      "errors": []
-    },
-    {
-      "id": 311,
-      "ts": "2026-11-27T14:46:23.890580+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1225,
-      "candidates_found": 15,
-      "llm_calls": 4,
-      "trades_attempted": 1,
-      "trades_executed": 1,
-      "duration_sec": 43.55,
       "errors": []
     }
   ]
