@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:31:33.411464+00:00",
+  "generated_at": "2026-11-27T16:36:15.730949+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,30 +11,30 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10501.99,
-    "reconciled_equity_usd": 9167.14,
-    "equity_discrepancy_usd": 1334.85,
-    "cash_usd": 5984.01,
-    "positions_value_usd": 3183.13,
-    "deployed_pct": 30.31,
-    "total_pnl_usd": 501.99,
-    "total_pnl_pct": 5.02,
-    "unrealized_pnl_usd": -430.73,
-    "total_trades": 297,
-    "win_rate_pct": 50.0,
-    "max_drawdown_pct": -14.67,
+    "equity_usd": 10233.9,
+    "reconciled_equity_usd": 9286.12,
+    "equity_discrepancy_usd": 947.78,
+    "cash_usd": 6080.31,
+    "positions_value_usd": 3205.81,
+    "deployed_pct": 31.33,
+    "total_pnl_usd": 233.9,
+    "total_pnl_pct": 2.34,
+    "unrealized_pnl_usd": -408.05,
+    "total_trades": 298,
+    "win_rate_pct": 60.0,
+    "max_drawdown_pct": -16.85,
     "brier_score": 0.0521,
     "brier_resolved_count": 6,
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 228,
+    "total_forecasts": 230,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2422.21,
+    "politics": 2429.38,
     "geopolitics": 621.32,
-    "markets": 139.6
+    "markets": 155.11
   },
   "equity_curve": [
     {
@@ -2581,6 +2581,13 @@
       "cash": 5984.01,
       "deployed_pct": 30.31,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T16:36:15.421336+00:00",
+      "equity": 10233.9,
+      "cash": 6080.31,
+      "deployed_pct": 31.33,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2591,9 +2598,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.205,
-      "current_value": 367.54,
-      "unrealized_pnl": -8.97,
+      "current_price": 0.215,
+      "current_value": 385.47,
+      "unrealized_pnl": 8.96,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -2666,9 +2673,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.625,
-      "current_value": 706.71,
-      "unrealized_pnl": 21.3,
+      "current_price": 0.615,
+      "current_value": 695.4,
+      "unrealized_pnl": 9.99,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2681,9 +2688,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.2145,
-      "current_value": 237.0,
-      "unrealized_pnl": 11.6,
+      "current_price": 0.215,
+      "current_value": 237.55,
+      "unrealized_pnl": 12.15,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -2696,9 +2703,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.045,
-      "current_value": 139.6,
-      "unrealized_pnl": -402.24,
+      "current_price": 0.05,
+      "current_value": 155.11,
+      "unrealized_pnl": -386.73,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -2706,6 +2713,74 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 230,
+      "ts": "2026-11-27T16:36:15.419783+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2500",
+      "p_blind": "0.4500",
+      "p_blended": "0.2959",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0459",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
+        "base_rate": 0.45,
+        "bull_case": "New Zealand holds a strong home-ground advantage and historical competitive edge in test cricket conditions against India.",
+        "bear_case": "India possesses a deep squad and elite bowling attack capable of winning in any condition.",
+        "summary_de": "Die Gewinnwahrscheinlichkeit für Neuseeland basiert auf historischen Testspiel-Leistungen und den üblichen Heimvorteilen gegen Indien.",
+        "news_used": [
+          "How global markets shape NZ's red meat exports - NZ Herald",
+          "Finals weekend will show who really holds rugby power heading into World Cup year - The Guardian",
+          "New Zealand schools are ditching bells for bangers - The Spinoff",
+          "A New Zealand couple built a four-bedroom home using 1,300 recycled tyres and 7,000 glass bottles; after - The Times of India",
+          "New Zealand Dollar rises as the Opportunity Party takes the balance of power - FXStreet",
+          "All Blacks have ‘no gas in the tank’ but stats show it’s England who should be out of juice - The Guardian"
+        ]
+      }
+    },
+    {
+      "id": 229,
+      "ts": "2026-11-27T16:36:14.404527+00:00",
+      "market_id": "0x132658373016396f442ee6f6d4a6164ac313e71afdf72c36e0da41674df774a4",
+      "question": "Will the price of Bitcoin be above $58,000 on November 29?",
+      "category": "crypto",
+      "end_date": "2026-11-29T17:00:00+00:00",
+      "market_price": "0.9465",
+      "p_blind": "0.7800",
+      "p_blended": "0.9039",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard binary contract checking Bitcoin price relative to $58,000 threshold at the exact deadline date.",
+        "base_rate": 0.82,
+        "bull_case": "BTC spot is currently trading around $60,434, giving a comfortable 4% buffer above the $58,000 strike with less than 48 hours remaining until expiration.",
+        "bear_case": "Crypto markets exhibit extreme volatility and thin holiday liquidity, meaning a sudden ~4% drop or flash crash within two days is entirely plausible.",
+        "summary_de": "Bitcoin handelt derzeit über dem Schwellenwert von 58.000 USD, jedoch birgt die verbleibende kurze Frist bei hoher Krypto-Volatilität ein Restrisiko für abrupte Kursrücksetzer.",
+        "news_used": [
+          "Here’s what happened in crypto today",
+          "Bitcoin supply metric hits 11-year low as new ‘capitulation’ signal arrives",
+          "Bitcoin price eyes $61K as Talos warns of thin Thanksgiving liquidity"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $60,434.00 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~48%).\nDistance from live spot to $58,000.00: -4.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.0d (1-sigma move = +/-3.5%, distance = 1.16 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 228,
       "ts": "2026-11-27T16:31:33.138255+00:00",
@@ -2754,7 +2829,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T16:35:32.450189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2789,7 +2864,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.450189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2859,7 +2934,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:44.328397+00:00",
+      "last_checked_ts": "2026-11-27T16:35:33.841622+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract with clear exchange feed rules.",
@@ -3004,7 +3079,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:42.955593+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.177366+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if Bitcoin hits $57,500 at any point during November 2026.",
@@ -3071,7 +3146,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.450189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3106,7 +3181,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.450189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -3141,7 +3216,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.450189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag bezieht sich auf das Testergebnis zwischen Neuseeland und Indien, wobei sich der aktuelle Stand nach dem ersten Tag auf 246/5 beläuft.",
@@ -3283,7 +3358,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.450189+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3318,7 +3393,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.416224+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.574150+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob es sich um einen offiziellen Waffenstillstand zwischen Israel und Iran direkt handelt oder ob regionale Stellvertreterkonflikte (Gaza/Libanon) einbrechen.",
@@ -3458,7 +3533,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.570300+00:00",
+      "last_checked_ts": "2026-11-27T16:35:32.676508+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026; 'effective' requires verifiable implementation rather than merely an agreement.",
@@ -3467,76 +3542,6 @@
         "bear_case": "There are no active major ceasefire talks reported in recent news, and historical tensions between the US and Iran rarely yield sudden, documented pauses within a 72-hour window.",
         "summary_de": "Ohne aktuelle Berichte über Verhandlungen ist ein effektiver Waffenstillstand zwischen den USA und dem Iran innerhalb von nur drei Tagen extrem unwahrscheinlich.",
         "news_used": []
-      }
-    },
-    {
-      "id": 205,
-      "ts": "2026-11-27T12:56:34.182004+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4500",
-      "p_blended": "0.3305",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0805",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "Live reporting indicates New Zealand (Blackcaps) are actively rebuilding and competing well in the match against India through players like Phillips and Blundell.",
-        "bear_case": "India remains a formidable test side in world cricket, and New Zealand's middle-order stumble earlier in the fixture leaves them vulnerable to a strong Indian comeback.",
-        "summary_de": "Das Test-Match zwischen Neuseeland und Indien läuft, wobei die Neuseeländer nach einem schwachen Start versuchen, das Spiel offen zu halten.",
-        "news_used": [
-          "Air New Zealand punctuality up 12 percentage points as airline increases focus on smoother summer journeys - WebWire",
-          "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet",
-          "Australia set to drop Lyon for first New Zealand Test - BBC",
-          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
-          "Nations Championship bronze match: three key England v New Zealand head-to-heads - France 24",
-          "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation"
-        ]
-      }
-    },
-    {
-      "id": 204,
-      "ts": "2026-11-27T12:51:29.898341+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4500",
-      "p_blended": "0.3305",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0805",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:20:43.264599+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.4,
-        "bull_case": "New Zealand reached 246/5 at stumps on day one of the 2nd Test, showing a solid recovery by Phillips and Blundell to set up a competitive position.",
-        "bear_case": "India is a strong touring side and early day one struggles indicate New Zealand remains vulnerable to collapse against India's bowling attack.",
-        "summary_de": "Neuseeland zeigt im zweiten Testspiel gegen Indien eine stabile Leistung am ersten Tag, jedoch bleibt der Ausgang des Spiels völlig offen.",
-        "news_used": [
-          "Deadlocked final result in New Zealand's election leaves a centrist newcomer as the decider - Castanet",
-          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
-          "Nations Championship bronze match: three key England v New Zealand head-to-heads - RFI",
-          "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
-          "The World Cup lesson England can learn in All Blacks rematch - The Independent",
-          "NZ vs IND, 2nd Test: Blundell-Phillips take New Zealand to 246/5 at day one end (Stumps) - The Indian EYE"
-        ]
       }
     }
   ],
@@ -3577,7 +3582,7 @@
       "est_fee_usd": "0",
       "edge_net": "-0.0532",
       "strategy_type": "exit_take_profit",
-      "status": "PENDING",
+      "status": "CANCELLED",
       "dry_run": 0,
       "rationale": "Take-Profit: Kurs 0.63 hat Fair Value 0.58 erreicht (Entry 0.16); Kapital wird für neue Chancen frei."
     },
@@ -4464,6 +4469,18 @@
   ],
   "recent_runs": [
     {
+      "id": 332,
+      "ts": "2026-11-27T16:36:15.422157+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1149,
+      "candidates_found": 17,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 44.38,
+      "errors": []
+    },
+    {
       "id": 331,
       "ts": "2026-11-27T16:31:33.141179+00:00",
       "dry_run": 0,
@@ -4689,18 +4706,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 60.42,
-      "errors": []
-    },
-    {
-      "id": 312,
-      "ts": "2026-11-27T14:51:39.034690+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1225,
-      "candidates_found": 13,
-      "llm_calls": 1,
-      "trades_attempted": 1,
-      "trades_executed": 1,
-      "duration_sec": 56.45,
       "errors": []
     }
   ]
