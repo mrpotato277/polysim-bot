@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T00:21:41.899817+00:00",
+  "generated_at": "2026-11-27T00:26:41.904360+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9857.99,
-    "reconciled_equity_usd": 8539.55,
-    "equity_discrepancy_usd": 1318.44,
+    "equity_usd": 9889.68,
+    "reconciled_equity_usd": 8575.02,
+    "equity_discrepancy_usd": 1314.66,
     "cash_usd": 6873.02,
-    "positions_value_usd": 1666.53,
-    "deployed_pct": 16.91,
-    "total_pnl_usd": -142.01,
-    "total_pnl_pct": -1.42,
-    "unrealized_pnl_usd": -127.81,
+    "positions_value_usd": 1702.0,
+    "deployed_pct": 17.21,
+    "total_pnl_usd": -110.32,
+    "total_pnl_pct": -1.1,
+    "unrealized_pnl_usd": -92.34,
     "total_trades": 66,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -1.43,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 483.11,
-    "technology": 314.69,
-    "politics": 868.73
+    "crypto": 488.85,
+    "technology": 334.64,
+    "politics": 878.51
   },
   "equity_curve": [
     {
@@ -1141,6 +1141,13 @@
       "cash": 6873.02,
       "deployed_pct": 16.91,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T00:26:41.429615+00:00",
+      "equity": 9889.68,
+      "cash": 6873.02,
+      "deployed_pct": 17.21,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1166,9 +1173,9 @@
       "outcome": "Yes",
       "quantity": 1813.78,
       "avg_entry_price": 0.224,
-      "current_price": 0.1735,
-      "current_value": 314.69,
-      "unrealized_pnl": -91.6,
+      "current_price": 0.1845,
+      "current_value": 334.64,
+      "unrealized_pnl": -71.65,
       "p_yes": 0.3684,
       "p_blended": 0.3684,
       "edge_net": 0.1444,
@@ -1181,9 +1188,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0975,
-      "current_value": 173.33,
-      "unrealized_pnl": -47.11,
+      "current_price": 0.103,
+      "current_value": 183.11,
+      "unrealized_pnl": -37.33,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1196,9 +1203,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.505,
-      "current_value": 289.89,
-      "unrealized_pnl": -2.87,
+      "current_price": 0.515,
+      "current_value": 295.63,
+      "unrealized_pnl": 2.87,
       "p_yes": 0.4245,
       "p_blended": 0.5755,
       "edge_net": 0.0655,
@@ -1269,7 +1276,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:10:37.189492+00:00",
+      "last_checked_ts": "2026-11-27T00:25:36.512876+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A full airspace closure requires official nationwide implementation rather than temporary flight diversions or advisories.",
@@ -1433,7 +1440,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:15:38.142423+00:00",
+      "last_checked_ts": "2026-11-27T00:25:37.425011+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -1879,7 +1886,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:15:37.519824+00:00",
+      "last_checked_ts": "2026-11-27T00:25:36.881995+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob Alberto Núñez Feijóo vor dem Stichtag offiziell als Ministerpräsident vereidigt wird oder das Amt übernimmt.",
@@ -1914,7 +1921,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:15:37.519824+00:00",
+      "last_checked_ts": "2026-11-27T00:25:36.881995+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment before the deadline.",
@@ -1984,7 +1991,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:15:37.519824+00:00",
+      "last_checked_ts": "2026-11-27T00:25:36.881995+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, basierend auf den aktuellen Wahlen und Regierungsbildungsprozessen bis zum Fristende.",
@@ -2019,7 +2026,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:15:37.519824+00:00",
+      "last_checked_ts": "2026-11-27T00:25:36.881995+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain by the deadline.",
@@ -2095,7 +2102,7 @@
       "est_fee_usd": "0",
       "edge_net": "0.1562",
       "strategy_type": "news_lag",
-      "status": "PENDING",
+      "status": "CANCELLED",
       "dry_run": 0,
       "rationale": "[news_lag] Trotz eines bestehenden Waffenstillstands bleibt das Risiko eines israelischen Schlags gegen den Iran hoch, weshalb ein Fortbestehen bis zum 15. Dezember unwahrscheinlich erscheint."
     },
@@ -2115,7 +2122,7 @@
       "est_fee_usd": "0",
       "edge_net": "0.0473",
       "strategy_type": "carry",
-      "status": "PENDING",
+      "status": "CANCELLED",
       "dry_run": 0,
       "rationale": "[carry] Hsieh Lung-chieh hat bei den Bürgermeisterwahlen in Tainan historisch und gegen etablierte Parteistrukturen nur geringe Siegchancen."
     },
@@ -2402,6 +2409,18 @@
   ],
   "recent_runs": [
     {
+      "id": 140,
+      "ts": "2026-11-27T00:26:41.430649+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1134,
+      "candidates_found": 31,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 67.53,
+      "errors": []
+    },
+    {
       "id": 139,
       "ts": "2026-11-27T00:21:41.374501+00:00",
       "dry_run": 0,
@@ -2627,18 +2646,6 @@
       "trades_attempted": 2,
       "trades_executed": 2,
       "duration_sec": 68.82,
-      "errors": []
-    },
-    {
-      "id": 120,
-      "ts": "2026-11-26T22:46:52.277286+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1214,
-      "candidates_found": 31,
-      "llm_calls": 3,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 73.2,
       "errors": []
     }
   ]
