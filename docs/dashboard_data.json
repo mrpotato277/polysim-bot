@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:41:25.359824+00:00",
+  "generated_at": "2026-11-27T12:46:40.963571+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9475.63,
-    "reconciled_equity_usd": 9475.63,
+    "equity_usd": 9460.76,
+    "reconciled_equity_usd": 9460.76,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4384.54,
-    "deployed_pct": 46.27,
-    "total_pnl_usd": -524.37,
-    "total_pnl_pct": -5.24,
-    "unrealized_pnl_usd": -440.75,
+    "positions_value_usd": 4369.67,
+    "deployed_pct": 46.19,
+    "total_pnl_usd": -539.24,
+    "total_pnl_pct": -5.39,
+    "unrealized_pnl_usd": -455.62,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.46,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 202,
+    "total_forecasts": 203,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2186.76,
-    "crypto": 1068.27,
+    "politics": 2181.1,
+    "crypto": 1074.57,
     "geopolitics": 664.17,
-    "markets": 465.34
+    "markets": 449.83
   },
   "equity_curve": [
     {
@@ -2243,6 +2243,13 @@
       "cash": 5091.09,
       "deployed_pct": 46.27,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T12:46:40.409015+00:00",
+      "equity": 9460.76,
+      "cash": 5091.09,
+      "deployed_pct": 46.19,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2328,9 +2335,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.585,
-      "current_value": 661.48,
-      "unrealized_pnl": -23.93,
+      "current_price": 0.58,
+      "current_value": 655.82,
+      "unrealized_pnl": -29.59,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2343,9 +2350,9 @@
       "outcome": "Yes",
       "quantity": 1259.89,
       "avg_entry_price": 0.5223,
-      "current_price": 0.52,
-      "current_value": 655.14,
-      "unrealized_pnl": -2.86,
+      "current_price": 0.525,
+      "current_value": 661.44,
+      "unrealized_pnl": 3.44,
       "p_yes": 0.9342,
       "p_blended": 0.9342,
       "edge_net": 0.4217,
@@ -2373,9 +2380,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.15,
-      "current_value": 465.34,
-      "unrealized_pnl": -76.5,
+      "current_price": 0.145,
+      "current_value": 449.83,
+      "unrealized_pnl": -92.01,
       "p_yes": 0.15,
       "p_blended": 0.15,
       "edge_net": 0.0,
@@ -2383,6 +2390,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 203,
+      "ts": "2026-11-27T12:46:40.406508+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4500",
+      "p_blended": "0.3305",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0805",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
+        "base_rate": 0.4,
+        "bull_case": "New Zealand finished day one of the 2nd Test at 246/5 with Phillips and Blundell staging a strong rebuild, giving them a competitive platform.",
+        "bear_case": "India is playing away but remains a formidable Test side with strong bowling options capable of restricting New Zealand's total and chasing effectively.",
+        "summary_de": "Das Testspiel zwischen Neuseeland und Indien ist nach dem ersten Tag noch völlig offen, weshalb die Chancen für Neuseeland auf einen Sieg moderat eingeschätzt werden.",
+        "news_used": [
+          "Australia set to drop Lyon for first New Zealand Test - BBC",
+          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
+          "Nations Championship bronze match: three key England v New Zealand head-to-heads - RFI",
+          "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
+          "The World Cup lesson England can learn in All Blacks rematch - The Independent",
+          "NZ vs IND, 2nd Test: Blundell-Phillips take New Zealand to 246/5 at day one end (Stumps) - The Indian EYE"
+        ]
+      }
+    },
     {
       "id": 202,
       "ts": "2026-11-27T12:41:25.087141+00:00",
@@ -2671,7 +2713,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:31:00.614545+00:00",
+      "last_checked_ts": "2026-11-27T12:45:41.246610+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin dips to $60,000 in November, resolvable by standard spot exchange pricing.",
@@ -2742,7 +2784,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:31:01.579723+00:00",
+      "last_checked_ts": "2026-11-27T12:45:42.462032+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $65,000 in November, resolving based on standard exchange spot prices before December 1, 2026.",
@@ -2771,7 +2813,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:31:00.977384+00:00",
+      "last_checked_ts": "2026-11-27T12:45:41.921514+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange spot feeds through November 30.",
@@ -2800,7 +2842,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:31:00.614545+00:00",
+      "last_checked_ts": "2026-11-27T12:45:41.246610+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $60,000 in November based on standard spot prices.",
@@ -3013,7 +3055,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:35:35.052180+00:00",
+      "last_checked_ts": "2026-11-27T12:45:43.720127+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain according to constitutional processes.",
@@ -3197,35 +3239,6 @@
           "Markets Price 99.5% Chance of 25-Basis-Point Fed Hike in December - www.tokenpost.com",
           "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView"
         ]
-      }
-    },
-    {
-      "id": 178,
-      "ts": "2026-11-27T08:36:38.660903+00:00",
-      "market_id": "0x459bb1954c553022e8d64b02acf6e752287947c7402a59edb8f4beb754b7804f",
-      "question": "Will Bitcoin dip to $56,000 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.0445",
-      "p_blind": "0.0400",
-      "p_blended": "0.0431",
-      "confidence": "0.8000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0019",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:31:02.077673+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds during the specified dates.",
-        "base_rate": 0.05,
-        "bull_case": "Sudden macro shocks or liquidation cascades could trigger a sharp intra-week flash crash of roughly 9.2% down to $56,000 before the end of November 29.",
-        "bear_case": "Bitcoin is currently trading comfortably around $61,707 with high realized volatility already priced in, making a 9.2% drop within the remaining few days statistically unlikely given current distance and volatility.",
-        "summary_de": "Bitcoin liegt aktuell rund 9,2% über der Marke von 56.000 US-Dollar, weshalb ein plötzlicher Rücksetzer in der verbleibenden kurzen Zeit bei normaler Volatilität unwahrscheinlich ist.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $61,707.90 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $56,000.00: -9.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.3%, distance = 2.26 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -4033,6 +4046,18 @@
   ],
   "recent_runs": [
     {
+      "id": 287,
+      "ts": "2026-11-27T12:46:40.410512+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1186,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 61.35,
+      "errors": []
+    },
+    {
       "id": 286,
       "ts": "2026-11-27T12:41:25.088981+00:00",
       "dry_run": 0,
@@ -4258,18 +4283,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 58.77,
-      "errors": []
-    },
-    {
-      "id": 267,
-      "ts": "2026-11-27T11:01:58.231797+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1104,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 1,
-      "trades_executed": 1,
-      "duration_sec": 54.55,
       "errors": []
     }
   ]
