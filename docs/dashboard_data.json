@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:21:31.045876+00:00",
+  "generated_at": "2026-11-27T16:26:25.130484+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,18 +11,18 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10719.28,
-    "reconciled_equity_usd": 9122.34,
-    "equity_discrepancy_usd": 1596.94,
+    "equity_usd": 10596.88,
+    "reconciled_equity_usd": 9121.45,
+    "equity_discrepancy_usd": 1475.43,
     "cash_usd": 5891.78,
-    "positions_value_usd": 3230.56,
-    "deployed_pct": 30.14,
-    "total_pnl_usd": 719.28,
-    "total_pnl_pct": 7.19,
-    "unrealized_pnl_usd": -383.3,
+    "positions_value_usd": 3229.67,
+    "deployed_pct": 30.48,
+    "total_pnl_usd": 596.88,
+    "total_pnl_pct": 5.97,
+    "unrealized_pnl_usd": -384.19,
     "total_trades": 297,
     "win_rate_pct": 50.0,
-    "max_drawdown_pct": -13.66,
+    "max_drawdown_pct": -13.9,
     "brier_score": 0.0521,
     "brier_resolved_count": 6,
     "brier_blind_score": 0.0895,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2423.1,
+    "politics": 2422.21,
     "geopolitics": 621.32,
     "markets": 186.14
   },
@@ -2567,6 +2567,13 @@
       "cash": 5891.78,
       "deployed_pct": 30.14,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T16:26:24.277594+00:00",
+      "equity": 10596.88,
+      "cash": 5891.78,
+      "deployed_pct": 30.48,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2607,9 +2614,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.119,
-      "current_value": 211.55,
-      "unrealized_pnl": -8.89,
+      "current_price": 0.1185,
+      "current_value": 210.66,
+      "unrealized_pnl": -9.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2872,7 +2879,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:10:46.606035+00:00",
+      "last_checked_ts": "2026-11-27T16:25:35.350569+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on exchange feeds before the end of November.",
@@ -2901,7 +2908,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T16:10:46.283251+00:00",
+      "last_checked_ts": "2026-11-27T16:25:35.041343+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -3587,7 +3594,7 @@
       "est_fee_usd": "0",
       "edge_net": "0.0255",
       "strategy_type": "carry",
-      "status": "PENDING",
+      "status": "CANCELLED",
       "dry_run": 0,
       "rationale": "[carry] Bitcoin müsste innerhalb weniger Tage um über 11 Prozent fallen, was angesichts der aktuellen Volatilität und des Abstands zur Marke ein extrem unwahrscheinliches Szenario darstellt."
     },
@@ -4454,6 +4461,18 @@
   ],
   "recent_runs": [
     {
+      "id": 330,
+      "ts": "2026-11-27T16:26:24.279141+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1143,
+      "candidates_found": 17,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 52.09,
+      "errors": []
+    },
+    {
       "id": 329,
       "ts": "2026-11-27T16:21:30.723342+00:00",
       "dry_run": 0,
@@ -4679,18 +4698,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 43.55,
-      "errors": []
-    },
-    {
-      "id": 310,
-      "ts": "2026-11-27T14:41:36.604710+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1207,
-      "candidates_found": 16,
-      "llm_calls": 1,
-      "trades_attempted": 2,
-      "trades_executed": 2,
-      "duration_sec": 57.91,
       "errors": []
     }
   ]
