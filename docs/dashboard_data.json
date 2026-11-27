@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T08:16:42.979162+00:00",
+  "generated_at": "2026-11-27T08:21:38.532573+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,29 +11,29 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9572.21,
-    "reconciled_equity_usd": 8477.4296,
-    "equity_discrepancy_usd": 1094.78,
+    "equity_usd": 9512.86,
+    "reconciled_equity_usd": 8406.9096,
+    "equity_discrepancy_usd": 1105.95,
     "cash_usd": 5151.02,
-    "positions_value_usd": 3326.4096,
-    "deployed_pct": 34.75,
-    "total_pnl_usd": -427.79,
-    "total_pnl_pct": -4.28,
-    "unrealized_pnl_usd": -487.0,
+    "positions_value_usd": 3255.8896,
+    "deployed_pct": 34.23,
+    "total_pnl_usd": -487.14,
+    "total_pnl_pct": -4.87,
+    "unrealized_pnl_usd": -557.52,
     "total_trades": 226,
     "win_rate_pct": 50.0,
-    "max_drawdown_pct": -5.23,
+    "max_drawdown_pct": -5.76,
     "brier_score": 0.1183,
     "brier_resolved_count": 2,
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 175,
+    "total_forecasts": 176,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "politics": 2185.39,
-    "crypto": 1141.02
+    "crypto": 1070.5
   },
   "equity_curve": [
     {
@@ -1853,6 +1853,13 @@
       "cash": 5151.02,
       "deployed_pct": 34.75,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T08:21:38.105279+00:00",
+      "equity": 9512.86,
+      "cash": 5151.02,
+      "deployed_pct": 34.23,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1923,9 +1930,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.155,
-      "current_value": 88.98,
-      "unrealized_pnl": -203.78,
+      "current_price": 0.11,
+      "current_value": 63.14,
+      "unrealized_pnl": -229.62,
       "p_yes": 0.827,
       "p_blended": 0.173,
       "edge_net": 0.007,
@@ -1953,9 +1960,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.485,
-      "current_value": 541.7,
-      "unrealized_pnl": -39.09,
+      "current_price": 0.445,
+      "current_value": 497.02,
+      "unrealized_pnl": -83.77,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -1979,6 +1986,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 176,
+      "ts": "2026-11-27T08:21:38.102417+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4800",
+      "p_blended": "0.3418",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0918",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official results of which party wins the most seats in the 2026 Spanish general election.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbent advantage under Pedro Sánchez and late debate momentum focusing on key progressive social issues like housing.",
+        "bear_case": "Consistently competitive polling favoring the conservative PP (Feijóo) and voter fatigue after years of current administration.",
+        "summary_de": "Die spanischen Parlamentswahlen sind äußerst knapp, wobei Umfragen ein enges Rennen zwischen PSOE und der konservativen Volkspartei (PP) zeigen.",
+        "news_used": [
+          "Could housing decide Spain's general election?",
+          "Leaders clash in final Spain election debate as housing dominates run-in - BBC",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu",
+          "Spanish elections: What you need to know and what's at stake - BBC"
+        ]
+      }
+    },
+    {
       "id": 175,
       "ts": "2026-11-27T08:11:39.597024+00:00",
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -1995,7 +2037,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T08:20:46.692505+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 62.500 USD erreicht, gemessen an gängigen Spot-Börsen.",
@@ -2027,7 +2069,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:05:30.953547+00:00",
+      "last_checked_ts": "2026-11-27T08:20:46.125152+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil hits $90 in November 2026 based on official spot/futures data.",
@@ -2128,7 +2170,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:05:30.250357+00:00",
+      "last_checked_ts": "2026-11-27T08:20:45.260961+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether Bitcoin hits or dips to $55,000 in November 2026 based on standard exchange feeds.",
@@ -2227,7 +2269,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:05:30.853858+00:00",
+      "last_checked_ts": "2026-11-27T08:20:45.984354+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against standard crypto spot price feeds during the specified dates.",
@@ -2256,7 +2298,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:10:46.174116+00:00",
+      "last_checked_ts": "2026-11-27T08:20:46.324860+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2735,7 +2777,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:05:30.596260+00:00",
+      "last_checked_ts": "2026-11-27T08:20:45.673023+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung auf präzise Definitionen und offizielle Bestätigungen des Waffenstillstandsstatus zwischen Israel und Iran bis zum Fristende.",
@@ -2751,34 +2793,6 @@
           "Dubai and Middle East flight disruption: flight cancellations continue as Saudi Arabia intercepts missile and drone fire - Condé Nast Travel",
           "Trump Says US Iran War Funded Through End of January - https://houseofsaud.com/"
         ]
-      }
-    },
-    {
-      "id": 151,
-      "ts": "2026-11-27T04:31:52.854475+00:00",
-      "market_id": "0x10346101feeef8bc3152ace20ca9a165bd9ec5d744dbc1d11c1a9f77a5913e76",
-      "question": "Will Johnny Chiang win the next Taichung Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.7850",
-      "p_blind": "0.1200",
-      "p_blended": "0.5957",
-      "confidence": "0.7000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.1943",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T08:15:50.326122+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Die Frage bezieht sich auf den Gewinner der nächsten Taichung-Bürgermeisterwahl, deren genauer Termin und Ergebnis klar definiert sind.",
-        "base_rate": 0.15,
-        "bull_case": "Johnny Chiang ist ein prominenter kuomintang (KMT) Politiker und Gesetzgeber mit starken Verbindungen in Taichung, was ihm eine solide Ausgangslage verschaffen könnte.",
-        "bear_case": "Es gibt andere etablierte KMT- und DPP-Konkurrenten in Taichung (wie den aktuellen stellvertretenden Bürgermeister oder andere Minister), und Chiang hat keine garantierte Nominierung.",
-        "summary_de": "Johnny Chiang hat zwar politische Relevanz in Taichung, aber interne Parteikonkurrenz und andere potenzielle Kandidaten machen seinen Sieg bei der nächsten Bürgermeisterwahl zu diesem Zeitpunkt zu einem eher unwahrscheinlichen Ereignis.",
-        "news_used": []
       }
     }
   ],
@@ -3426,6 +3440,18 @@
   ],
   "recent_runs": [
     {
+      "id": 235,
+      "ts": "2026-11-27T08:21:38.108183+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1218,
+      "candidates_found": 21,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 55.5,
+      "errors": []
+    },
+    {
       "id": 234,
       "ts": "2026-11-27T08:16:42.440352+00:00",
       "dry_run": 0,
@@ -3651,18 +3677,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 50.99,
-      "errors": []
-    },
-    {
-      "id": 215,
-      "ts": "2026-11-27T06:41:46.880434+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1131,
-      "candidates_found": 21,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 59.77,
       "errors": []
     }
   ]
