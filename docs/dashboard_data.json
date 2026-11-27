@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:02:07.319798+00:00",
+  "generated_at": "2026-11-27T13:06:31.103921+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,18 +11,18 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9431.66,
-    "reconciled_equity_usd": 9431.66,
+    "equity_usd": 9424.59,
+    "reconciled_equity_usd": 9424.59,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4340.57,
-    "deployed_pct": 46.02,
-    "total_pnl_usd": -568.34,
-    "total_pnl_pct": -5.68,
-    "unrealized_pnl_usd": -484.72,
+    "positions_value_usd": 4333.5,
+    "deployed_pct": 45.98,
+    "total_pnl_usd": -575.41,
+    "total_pnl_pct": -5.75,
+    "unrealized_pnl_usd": -491.79,
     "total_trades": 292,
     "win_rate_pct": 33.3,
-    "max_drawdown_pct": -6.56,
+    "max_drawdown_pct": -6.63,
     "brier_score": 0.1183,
     "brier_resolved_count": 2,
     "brier_blind_score": 0.1764,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2184.34,
-    "crypto": 1104.28,
+    "politics": 2183.57,
+    "crypto": 1097.98,
     "geopolitics": 664.17,
     "markets": 387.78
   },
@@ -2277,6 +2277,13 @@
       "cash": 5091.09,
       "deployed_pct": 46.02,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T13:06:30.641279+00:00",
+      "equity": 9424.59,
+      "cash": 5091.09,
+      "deployed_pct": 45.98,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2332,9 +2339,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.106,
-      "current_value": 188.44,
-      "unrealized_pnl": -32.0,
+      "current_price": 0.1065,
+      "current_value": 189.33,
+      "unrealized_pnl": -31.11,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2377,9 +2384,9 @@
       "outcome": "Yes",
       "quantity": 1259.89,
       "avg_entry_price": 0.5223,
-      "current_price": 0.51,
-      "current_value": 642.54,
-      "unrealized_pnl": -15.46,
+      "current_price": 0.505,
+      "current_value": 636.24,
+      "unrealized_pnl": -21.76,
       "p_yes": 0.9342,
       "p_blended": 0.9342,
       "edge_net": 0.4217,
@@ -2392,9 +2399,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.2165,
-      "current_value": 239.21,
-      "unrealized_pnl": 13.81,
+      "current_price": 0.215,
+      "current_value": 237.55,
+      "unrealized_pnl": 12.15,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -2773,7 +2780,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:50:42.218999+00:00",
+      "last_checked_ts": "2026-11-27T13:05:36.101649+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "WTI crude oil spot high during November 2026 based on standard exchange data.",
@@ -2809,7 +2816,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.618951+00:00",
+      "last_checked_ts": "2026-11-27T13:05:39.172151+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard crypto price touch contract evaluated against defined exchange feeds through November.",
@@ -3003,7 +3010,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:50:42.218999+00:00",
+      "last_checked_ts": "2026-11-27T13:05:36.101649+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI crude oil hits $90 at any point during November 2026, expiring December 1.",
@@ -3039,7 +3046,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:50:43.328784+00:00",
+      "last_checked_ts": "2026-11-27T13:05:37.372041+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official electoral results for which party wins the most seats in the Spanish general election.",
@@ -3109,7 +3116,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:50:42.218999+00:00",
+      "last_checked_ts": "2026-11-27T13:05:36.101649+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if WTI Crude Oil hits $90 or higher at any point during November 2026 based on standard market data.",
@@ -3145,7 +3152,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.794657+00:00",
+      "last_checked_ts": "2026-11-27T13:05:39.351848+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election occurring near the deadline.",
@@ -3215,7 +3222,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:50:43.328784+00:00",
+      "last_checked_ts": "2026-11-27T13:05:37.372041+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract resolves based on official election results showing which party won the most seats.",
@@ -4066,6 +4073,18 @@
   ],
   "recent_runs": [
     {
+      "id": 291,
+      "ts": "2026-11-27T13:06:30.643015+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1151,
+      "candidates_found": 16,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 56.18,
+      "errors": []
+    },
+    {
       "id": 290,
       "ts": "2026-11-27T13:02:06.940641+00:00",
       "dry_run": 0,
@@ -4291,18 +4310,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 38.94,
-      "errors": []
-    },
-    {
-      "id": 271,
-      "ts": "2026-11-27T11:21:23.443489+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1189,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 39.65,
       "errors": []
     }
   ]
