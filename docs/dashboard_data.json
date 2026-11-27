@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T11:11:45.337599+00:00",
+  "generated_at": "2026-11-27T11:16:20.231777+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9640.71,
-    "reconciled_equity_usd": 9365.26,
+    "equity_usd": 9609.52,
+    "reconciled_equity_usd": 9334.07,
     "equity_discrepancy_usd": 275.45,
-    "cash_usd": 4955.45,
-    "positions_value_usd": 4409.81,
-    "deployed_pct": 45.74,
-    "total_pnl_usd": -359.29,
-    "total_pnl_pct": -3.59,
-    "unrealized_pnl_usd": -276.03,
-    "total_trades": 289,
+    "cash_usd": 4877.88,
+    "positions_value_usd": 4456.19,
+    "deployed_pct": 46.37,
+    "total_pnl_usd": -390.48,
+    "total_pnl_pct": -3.9,
+    "unrealized_pnl_usd": -306.86,
+    "total_trades": 290,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -5.76,
     "brier_score": 0.1183,
@@ -32,10 +32,10 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2195.65,
-    "crypto": 1102.3,
+    "politics": 2186.12,
+    "crypto": 1171.78,
     "geopolitics": 664.17,
-    "markets": 447.69
+    "markets": 434.12
   },
   "equity_curve": [
     {
@@ -2118,6 +2118,13 @@
       "cash": 4955.45,
       "deployed_pct": 45.74,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T11:16:19.883291+00:00",
+      "equity": 9609.52,
+      "cash": 4877.88,
+      "deployed_pct": 46.37,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2173,9 +2180,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.106,
-      "current_value": 188.44,
-      "unrealized_pnl": -32.0,
+      "current_price": 0.107,
+      "current_value": 190.22,
+      "unrealized_pnl": -30.22,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2203,9 +2210,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.585,
-      "current_value": 661.48,
-      "unrealized_pnl": -23.93,
+      "current_price": 0.575,
+      "current_value": 650.17,
+      "unrealized_pnl": -35.24,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2216,11 +2223,11 @@
       "question": "Will Bitcoin dip to $60,000 in November?",
       "category": "crypto",
       "outcome": "Yes",
-      "quantity": 1116.9,
-      "avg_entry_price": 0.52,
-      "current_price": 0.53,
-      "current_value": 591.96,
-      "unrealized_pnl": 11.17,
+      "quantity": 1259.89,
+      "avg_entry_price": 0.5223,
+      "current_price": 0.525,
+      "current_value": 661.44,
+      "unrealized_pnl": 3.44,
       "p_yes": 0.8439,
       "p_blended": 0.8439,
       "edge_net": 0.3014,
@@ -2248,9 +2255,9 @@
       "outcome": "Yes",
       "quantity": 2713.26,
       "avg_entry_price": 0.1768,
-      "current_price": 0.165,
-      "current_value": 447.69,
-      "unrealized_pnl": -31.91,
+      "current_price": 0.16,
+      "current_value": 434.12,
+      "unrealized_pnl": -45.48,
       "p_yes": 0.2395,
       "p_blended": 0.2395,
       "edge_net": 0.0795,
@@ -2275,7 +2282,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T11:15:40.459114+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $65,000 in November, resolving based on standard exchange spot prices before December 1, 2026.",
@@ -2304,7 +2311,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T11:15:39.959276+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange spot feeds through November 30.",
@@ -2333,7 +2340,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T11:15:39.616030+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $60,000 in November based on standard spot prices.",
@@ -2615,7 +2622,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T11:01:05.449285+00:00",
+      "last_checked_ts": "2026-11-27T11:15:38.553485+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before December 2026.",
@@ -2749,7 +2756,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T11:05:39.403937+00:00",
+      "last_checked_ts": "2026-11-27T11:15:40.888391+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract resolving based on exchange spot feeds during the specified dates.",
@@ -2916,7 +2923,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T11:01:06.025728+00:00",
+      "last_checked_ts": "2026-11-27T11:15:39.616030+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Bitcoin im November auf 60.000 USD gefallen ist. Da der aktuelle Kurs bereits über 60.000 USD liegt und die Nachrichten bestätigen, dass Bitcoin in diesem Monat bereits unter 60.000 USD gehandelt wurde, ist das Ereignis bereits eingetreten.",
@@ -3897,6 +3904,18 @@
   ],
   "recent_runs": [
     {
+      "id": 270,
+      "ts": "2026-11-27T11:16:19.884586+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1183,
+      "candidates_found": 17,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 43.17,
+      "errors": []
+    },
+    {
       "id": 269,
       "ts": "2026-11-27T11:11:44.895677+00:00",
       "dry_run": 0,
@@ -4123,20 +4142,6 @@
       "trades_executed": 0,
       "duration_sec": 45.15,
       "errors": []
-    },
-    {
-      "id": 250,
-      "ts": "2026-11-27T09:37:03.393056+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1131,
-      "candidates_found": 18,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 86.54,
-      "errors": [
-        "Forecaster error for 0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062: All Gemini models failed for forecast: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}"
-      ]
     }
   ]
 }
