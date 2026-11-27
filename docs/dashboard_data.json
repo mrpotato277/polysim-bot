@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T05:46:36.673161+00:00",
+  "generated_at": "2026-11-27T05:51:31.218740+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9727.0,
-    "reconciled_equity_usd": 9228.19,
+    "equity_usd": 9731.85,
+    "reconciled_equity_usd": 9233.04,
     "equity_discrepancy_usd": 498.81,
     "cash_usd": 5848.08,
-    "positions_value_usd": 3380.11,
-    "deployed_pct": 34.75,
-    "total_pnl_usd": -273.0,
-    "total_pnl_pct": -2.73,
-    "unrealized_pnl_usd": -258.8,
+    "positions_value_usd": 3384.96,
+    "deployed_pct": 34.78,
+    "total_pnl_usd": -268.15,
+    "total_pnl_pct": -2.68,
+    "unrealized_pnl_usd": -253.95,
     "total_trades": 174,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -4.89,
@@ -28,12 +28,12 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 161,
+    "total_forecasts": 162,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2205.97,
-    "crypto": 725.23,
+    "politics": 2205.08,
+    "crypto": 730.97,
     "technology": 448.91
   },
   "equity_curve": [
@@ -1633,6 +1633,13 @@
       "cash": 5848.08,
       "deployed_pct": 34.75,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T05:51:30.831419+00:00",
+      "equity": 9731.85,
+      "cash": 5848.08,
+      "deployed_pct": 34.78,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1688,9 +1695,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.107,
-      "current_value": 190.22,
-      "unrealized_pnl": -30.22,
+      "current_price": 0.1065,
+      "current_value": 189.33,
+      "unrealized_pnl": -31.11,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1718,9 +1725,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.205,
-      "current_value": 117.68,
-      "unrealized_pnl": -175.08,
+      "current_price": 0.215,
+      "current_value": 123.42,
+      "unrealized_pnl": -169.34,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1758,6 +1765,42 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 162,
+      "ts": "2026-11-27T05:51:30.137621+00:00",
+      "market_id": "0xcb123b5f454942fd31017b662207a0b30970b21c1667dbd22972e095192eb2bb",
+      "question": "Will Bitcoin dip to $60,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.5150",
+      "p_blind": "0.9500",
+      "p_blended": "0.7915",
+      "confidence": "0.9000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.2815",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob Bitcoin im November 2026 auf 60.000 USD dippt, basierend auf Standard-Preisen der wichtigsten Marktplätze.",
+        "base_rate": 0.6,
+        "bull_case": "Aktuelle Nachrichten bestätigen, dass Bitcoin im November bereits unter 60.000 USD gefallen ist (und sogar unter 58.000 USD dippte).",
+        "bear_case": "Der Kurs steht aktuell bei über 61.600 USD und es verbleiben nur noch wenige Stunden bis zum Monatsende, wobei keine weiteren starken Abverkäufe garantiert sind.",
+        "summary_de": "Da Bitcoin im Laufe des Novembers bereits nachweislich unter die Marke von 60.000 USD gefallen ist, gilt das Ergebnis als sehr wahrscheinlich eingetreten.",
+        "news_used": [
+          "Bitcoin dips below $60,000, falling 0.78% to $5... - Pluang",
+          "Galaxy revises Bitcoin outlook, sets $58,525 as key level - ForkLog",
+          "Bitcoin rebounds above $60,000 amid $143M short liquidations despite ETF outflows - Pluang",
+          "Could Solana Fall to $60 if Bitcoin Loses $58,000? - 24/7 Wall St.",
+          "Bitcoin Slides Below $58,000 Amid High Inflation and Strong Dollar - KuCoin",
+          "Bitcoin exchange reserves drop 42,000 BTC amid price dip below $59,000, signaling potential rebound. - Pluang"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $61,657.40 (24h range: $59,850.00 - $61,877.00, 30d realized annualized vol: ~49%).\nDistance from live spot to $60,000.00: -2.7% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.0d (1-sigma move = +/-5.1%, distance = 0.54 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 161,
       "ts": "2026-11-27T05:16:15.790765+00:00",
@@ -1902,7 +1945,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:35:37.905924+00:00",
+      "last_checked_ts": "2026-11-27T05:50:41.384390+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung vor exakter Definition und Einhaltung des Waffenstillstands bis zum 15. Dezember 2026.",
@@ -1937,7 +1980,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:40:40.282175+00:00",
+      "last_checked_ts": "2026-11-27T05:50:42.308892+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official winner of the Tainan Mayor election.",
@@ -1996,7 +2039,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:40:40.541501+00:00",
+      "last_checked_ts": "2026-11-27T05:50:42.613308+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Bestimmt anhand des Erreichens eines Tiefpunkts im angegebenen Zeitraum.",
@@ -2181,7 +2224,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:40:40.159968+00:00",
+      "last_checked_ts": "2026-11-27T05:50:42.166724+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or exceeding $70,000 before the end of November 2026 according to standard spot price feeds.",
@@ -2242,7 +2285,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:35:37.475865+00:00",
+      "last_checked_ts": "2026-11-27T05:50:40.916299+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Election results must clearly show a winning margin of 12% or more for Chiang Wan-an based on official CEC data.",
@@ -2337,7 +2380,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:35:38.242064+00:00",
+      "last_checked_ts": "2026-11-27T05:50:41.676835+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taichung Mayor election as determined by Taiwan's Central Election Commission.",
@@ -2433,7 +2476,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:35:38.064150+00:00",
+      "last_checked_ts": "2026-11-27T05:50:41.517866+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (defined as a 2-week pause) between the US and Iran by November 30, 2026.",
@@ -2503,44 +2546,29 @@
         ],
         "market_data": "BTC/USD live spot (Kraken): $60,647.00 (24h range: $59,850.00 - $61,037.50, 30d realized annualized vol: ~48%).\nDistance from live spot to $62,500.00: +3.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 4.2d (1-sigma move = +/-5.1%, distance = 0.59 sigma): Gaussian one-touch ('dip/reach/hit"
       }
-    },
-    {
-      "id": 137,
-      "ts": "2026-11-27T00:46:26.771479+00:00",
-      "market_id": "0x0ff4131bebd7e76a8d4e10951cf22ed92616ed2b5631d71e80721e7afd94f6ed",
-      "question": "Will Lee Shu-chuan win the next New Taipei Mayor election?",
-      "category": "politics",
-      "end_date": "2026-11-29T04:59:00+00:00",
-      "market_price": "0.3900",
-      "p_blind": "0.4800",
-      "p_blended": "0.4219",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0319",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T05:45:39.187234+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official outcome of the New Taipei Mayor election.",
-        "base_rate": 0.5,
-        "bull_case": "Lee Shu-chuan benefits from strong local organization and party backing to secure the mayoralty.",
-        "bear_case": "Su Chiao-hui holds a strong organizational edge and competitive momentum heading into the final stretch.",
-        "summary_de": "Das Rennen um das Amt des Bürgermeisters von Neu-Taipeh ist extrem ausgeglichen, wobei Lee Shu-chuan stark auf die Wahlbeteiligung setzt, während seine Hauptkonkurrentin organisatorische Vorteile hat.",
-        "news_used": [
-          "Could New Taipei change hands? Su Chiao-hui has organisational edge as Lee Shu-chuan looks to turnout - 联合早报",
-          "2026 ELECTIONS Candidates, party leaders step up campaigning ahead of Saturday's elections - Focus Taiwan",
-          "Well wishes - Taipei Times",
-          "Taiwan’s 2026 Nine-in-One Elections: Things to Watch - CSIS | Center for Strategic and International Studies",
-          "Local Elections to set Stage for Taiwan’s Next President - The Jamestown Foundation",
-          "As Taiwan’s local elections loom, voters want an end to ‘constant confrontation’ - South China Morning Post"
-        ]
-      }
     }
   ],
   "trade_journal": [
+    {
+      "id": 27,
+      "ts": "2026-11-27T05:51:30.829217+00:00",
+      "client_order_id": "psb-20261127-055130-cb123b5f45-buy-y-9a2588",
+      "order_id": "1734028",
+      "market_id": "0xcb123b5f454942fd31017b662207a0b30970b21c1667dbd22972e095192eb2bb",
+      "question": "Will Bitcoin dip to $60,000 in November?",
+      "outcome": "Yes",
+      "side": "BUY",
+      "order_mode": "maker_limit",
+      "price": "0.51",
+      "quantity": "1093.74",
+      "notional_usd": "557.80",
+      "est_fee_usd": "0",
+      "edge_net": "0.2815",
+      "strategy_type": "news_lag",
+      "status": "PENDING",
+      "dry_run": 0,
+      "rationale": "[news_lag] Da Bitcoin im Laufe des Novembers bereits nachweislich unter die Marke von 60.000 USD gefallen ist, gilt das Ergebnis als sehr wahrscheinlich eingetreten."
+    },
     {
       "id": 26,
       "ts": "2026-11-27T04:51:52.816749+00:00",
@@ -3064,6 +3092,18 @@
   ],
   "recent_runs": [
     {
+      "id": 206,
+      "ts": "2026-11-27T05:51:30.833338+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1113,
+      "candidates_found": 20,
+      "llm_calls": 1,
+      "trades_attempted": 1,
+      "trades_executed": 1,
+      "duration_sec": 52.12,
+      "errors": []
+    },
+    {
       "id": 205,
       "ts": "2026-11-27T05:46:36.111733+00:00",
       "dry_run": 0,
@@ -3289,18 +3329,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 40.56,
-      "errors": []
-    },
-    {
-      "id": 186,
-      "ts": "2026-11-27T04:11:31.166949+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1111,
-      "candidates_found": 28,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 48.29,
       "errors": []
     }
   ]
