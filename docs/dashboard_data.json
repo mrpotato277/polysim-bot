@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:41:43.670082+00:00",
+  "generated_at": "2026-11-27T21:46:33.989727+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,14 +11,14 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10831.98,
+    "equity_usd": 10831.42,
     "reconciled_equity_usd": 10562.38,
-    "equity_discrepancy_usd": 269.6,
+    "equity_discrepancy_usd": 269.04,
     "cash_usd": 6080.31,
     "positions_value_usd": 4482.07,
     "deployed_pct": 41.38,
-    "total_pnl_usd": 831.98,
-    "total_pnl_pct": 8.32,
+    "total_pnl_usd": 831.42,
+    "total_pnl_pct": 8.31,
     "unrealized_pnl_usd": 329.8,
     "total_trades": 298,
     "win_rate_pct": 60.0,
@@ -28,7 +28,7 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 274,
+    "total_forecasts": 276,
     "circuit_breaker_active": true
   },
   "category_exposure": {
@@ -3046,6 +3046,13 @@
       "cash": 6080.31,
       "deployed_pct": 41.38,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T21:46:33.720498+00:00",
+      "equity": 10831.42,
+      "cash": 6080.31,
+      "deployed_pct": 41.38,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3171,6 +3178,73 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 276,
+      "ts": "2026-11-27T21:46:33.718680+00:00",
+      "market_id": "0xef750428b94a6323dbaa01a2fc26914bb888c42102d143d978464f5553c22135",
+      "question": "Spain General Election: PP + Vox Majority?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8400",
+      "p_blind": "0.6200",
+      "p_blended": "0.7530",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0870",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official parliamentary seat count of PP and Vox reaching an absolute majority following the general election.",
+        "base_rate": 0.45,
+        "bull_case": "Polling and late-breaking news indicate strong momentum for the conservative PP and the far-right Vox, putting them within striking distance of the absolute majority threshold.",
+        "bear_case": "Pedro Sanchez's left-wing coalition could mobilize late voters to defy the polls and block the right-wing bloc from securing a majority.",
+        "summary_de": "Aktuelle Umfragen und Berichte zeigen eine starke Position für PP und Vox, was die Wahrscheinlichkeit einer absoluten Mehrheit erhöht.",
+        "news_used": [
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain election: Will Vox be the kingmaker, and will housing decide the vote? - Euronews.com",
+          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
+          "Spain elections: Israel’s ‘greatest’ far-right ally in Europe poised to shape next government’s foreign policy - Middle East Eye",
+          "Vox leader Abascal poised as kingmaker in Spain’s election - Crypto Briefing",
+          "Spain's far-right Vox leader Abascal nears power as election kingmaker - Reuters"
+        ]
+      }
+    },
+    {
+      "id": 275,
+      "ts": "2026-11-27T21:46:32.372994+00:00",
+      "market_id": "0x51cb05f3d4af8985141a29b81dcfdeec5081c4edc36640579823118ae91e516d",
+      "question": "Will Ethereum dip to $1,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0985",
+      "p_blind": "0.1200",
+      "p_blended": "0.1043",
+      "confidence": "0.7500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Bestimmt anhand des Preises von Ethereum im November 2026 auf den gängigen Spot-Börsen.",
+        "base_rate": 0.15,
+        "bull_case": "Krypto-Märkte weisen fette Ränder und hohe Volatilität auf; ein plötzlicher makroökonomischer Schock oder Abverkauf könnte Ethereum um knapp 10 Prozent auf 1.500 US-Dollar drücken.",
+        "bear_case": "ETH hält sich stabil über 1.630 US-Dollar und die verbleibende Zeit bis zum Monatsende (November 2026) ist extrem kurz, wodurch die Wahrscheinlichkeit eines solchen Rücksetzers sinkt.",
+        "summary_de": "Ethereum notiert nahe 1.660 US-Dollar und die verbleibende Zeit im November ist sehr kurz, weshalb ein Rücksetzer auf 1.500 US-Dollar trotz hoher Volatilität unwahrscheinlich ist.",
+        "news_used": [
+          "Ethereum Glamsterdam Upgrade Cleared For December 15 Test: Will ETH Rally Like After Pectra? - TalkMarkets - Howl.Link",
+          "Ethereum Glamsterdam Upgrade Set for December Test - Wisevoter"
+        ],
+        "market_data": "ETH/USD live spot (Kraken): $1,662.90 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~66%).\nDistance from live spot to $1,500.00: -9.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.3d (1-sigma move = +/-6.3%, distance = 1.64 sigma): Gaussian one-touch ('dip/reach/hit') b"
+      }
+    },
     {
       "id": 274,
       "ts": "2026-11-27T21:06:20.529634+00:00",
@@ -3904,7 +3978,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:25:42.612329+00:00",
+      "last_checked_ts": "2026-11-27T21:45:38.941147+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error caused the November 13 FAA ground stop before December 1, 2026.",
@@ -3947,76 +4021,6 @@
           "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
           "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
           "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
-          "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
-          "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website"
-        ]
-      }
-    },
-    {
-      "id": 251,
-      "ts": "2026-11-27T18:16:19.631297+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4200",
-      "p_blended": "0.2853",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0453",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:40:49.084108+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Das Test Match zwischen Neuseeland und Indien entscheidet über den Ausgang (YES für Sieg Neuseeland).",
-        "base_rate": 0.45,
-        "bull_case": "Neuseeland hat im Heimvorteil traditionell starke Test-Cricket-Leistungen gezeigt und verfügt über ein erfahrenes Kader.",
-        "bear_case": "Indien ist eine Weltranglisten-Spitzenmannschaft mit einer dominanten Bowling- und Batting-Aufstellung.",
-        "summary_de": "Indien geht als leichter Favorit in das Test Match gegen Neuseeland, obwohl die Bedingungen vor Ort den Gastgebern entgegenkommen könnten.",
-        "news_used": [
-          "'Something new is happening here' analyst says on deadlock in New Zealand's election - Daily Gate City",
-          "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks rematch - The Guardian",
-          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
-          "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
-          "Qantas pilots pull up as Air New Zealand plane crosses Sydney runway - 1News",
-          "New-look England chase glorious end to rollercoaster year - The Times"
-        ]
-      }
-    },
-    {
-      "id": 250,
-      "ts": "2026-11-27T18:06:38.093843+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4800",
-      "p_blended": "0.3296",
-      "confidence": "0.5500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0896",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:40:49.084108+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Test match result between New Zealand and India based on standard cricket rules.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand ended Day 1 in Christchurch with honours even against India, showing competitive strength on home soil.",
-        "bear_case": "India remains a formidable touring side across all conditions, and the match is currently deadlocked after Day 1.",
-        "summary_de": "Nach dem ersten Tag des Test-Matches zwischen Neuseeland und Indien stehen die Chancen nach einem ausgeglichenen Start relativ offen.",
-        "news_used": [
-          "New Zealand election deadlock leaves centrist newcomer holding balance of power - The Country Today",
-          "Australia and New Zealand Preview night of Nov. 27, 2026 - TwinSpires",
-          "Qantas pilots pull up as Air New Zealand plane crosses Sydney runway - 1News",
-          "New-look England chase glorious end to rollercoaster year - The Times",
           "New Zealand red meat exports: How global markets shape cuts and prices – Nick Beeby - NZ Herald",
           "India and New Zealand honours even on Day 1 in Christchurch - Royal Challengers Bengaluru Official Website"
         ]
@@ -4967,6 +4971,18 @@
   ],
   "recent_runs": [
     {
+      "id": 394,
+      "ts": "2026-11-27T21:46:33.721529+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1277,
+      "candidates_found": 20,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 56.13,
+      "errors": []
+    },
+    {
       "id": 393,
       "ts": "2026-11-27T21:41:43.234868+00:00",
       "dry_run": 0,
@@ -5192,18 +5208,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 59.74,
-      "errors": []
-    },
-    {
-      "id": 374,
-      "ts": "2026-11-27T20:06:14.796469+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1168,
-      "candidates_found": 20,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 43.0,
       "errors": []
     }
   ]
