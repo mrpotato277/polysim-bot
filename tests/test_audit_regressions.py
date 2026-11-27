@@ -12,7 +12,7 @@ import pytest
 import bot.market_data as mkt_mod
 from bot.config import BotConfig, _parse_bool
 from bot.dashboard import _parse_win_rate_pct, export_dashboard_data
-from bot.forecaster import Superforecaster
+from bot.forecaster import ForecastFailedError, Superforecaster
 from bot.market_data import build_market_data_context, estimate_barrier_probabilities
 from bot.news import _parse_feed_entries, build_news_query
 from bot.orchestrator import _update_brier_scores
@@ -603,3 +603,93 @@ def test_overseer_event_group_cap_prevents_correlated_double_stack() -> None:
     )
     assert not dec.approved
     assert "event_rem" in dec.reason
+
+
+def test_dashboard_brier_identical_methods_give_identical_scores(tmp_path: Any) -> None:
+    db_path = tmp_path / "brier_eq.db"
+    dash_path = tmp_path / "dash.json"
+    cfg = BotConfig(
+        polysim_api_key="x",
+        gemini_api_key="y",
+        db_path=db_path,
+        dashboard_json_path=dash_path,
+    )
+    fake_client = SimpleNamespace(
+        sdk=SimpleNamespace(list_wallets=lambda: [{"kind": "API", "baseline": "10000"}]),
+        get_equity_history=lambda limit=200: [],
+    )
+    with StateStore(db_path) as state:
+        # Market A: 1 initial forecast (0.20) + 4 updated forecasts (0.60), identical across all 3 methods
+        for p_val in ("0.20", "0.60", "0.60", "0.60", "0.60"):
+            state.record_forecast(
+                {
+                    "market_id": "mkt-a",
+                    "question": "Market A?",
+                    "category": "politics",
+                    "market_price": p_val,
+                    "p_blind": p_val,
+                    "p_blended": p_val,
+                    "confidence": "0.70",
+                    "catalyst_freshness": "recent_24h",
+                    "edge_net": "0.00",
+                    "strategy_type": "news_lag",
+                    "resolution_risk": "low",
+                    "reasoning": {},
+                }
+            )
+        # Market B: 1 forecast (0.80), identical across all 3 methods
+        state.record_forecast(
+            {
+                "market_id": "mkt-b",
+                "question": "Market B?",
+                "category": "politics",
+                "market_price": "0.80",
+                "p_blind": "0.80",
+                "p_blended": "0.80",
+                "confidence": "0.70",
+                "catalyst_freshness": "recent_24h",
+                "edge_net": "0.00",
+                "strategy_type": "news_lag",
+                "resolution_risk": "low",
+                "reasoning": {},
+            }
+        )
+        state.update_resolved_market_brier("mkt-a", False)
+        state.update_resolved_market_brier("mkt-b", True)
+
+        payload = export_dashboard_data(
+            config=cfg,
+            client=fake_client,  # type: ignore[arg-type]
+            state=state,
+            balance={"balance": "10000", "total_value": "10000"},
+            portfolio={"total_trades": 0},
+            positions=[],
+            market_categories={},
+            circuit_breaker_active=False,
+        )
+
+    kpis = payload["kpis"]
+    assert kpis["brier_score"] == 0.04
+    assert kpis["brier_blind_score"] == 0.04
+    assert kpis["brier_market_score"] == 0.04
+    assert kpis["brier_resolved_count"] == 6
+    assert kpis["brier_unique_markets"] == 2
+
+
+def test_forecaster_failed_attempts_exposed_on_exception(monkeypatch: pytest.MonkeyPatch) -> None:
+    cfg = BotConfig(polysim_api_key="x", gemini_api_key="y")
+    fc = Superforecaster(cfg)
+    monkeypatch.setattr(
+        fc.client.models,
+        "generate_content",
+        lambda **_kw: SimpleNamespace(text="{}"),
+    )
+    with pytest.raises(ForecastFailedError) as exc_info:
+        fc.forecast(
+            question="Will X happen?",
+            description="Official rules",
+            end_date_iso="2026-12-10T00:00:00Z",
+            market_price_yes=Decimal("0.50"),
+            news_articles=[],
+        )
+    assert exc_info.value.api_attempts == 3

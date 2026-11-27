@@ -97,7 +97,7 @@ def _re_evaluate_positions(
         if question:
             q = build_news_query(question)
             raw_news = fetch_market_news(q, category=cat, max_age_hours=48, max_items=10)
-            news_articles, new_cnt = state.filter_and_record_news(mid, raw_news)
+            news_articles, new_cnt = state.annotate_news(mid, raw_news)
             if new_cnt > 0:
                 need_reforecast = True
             elif latest is not None:
@@ -142,6 +142,7 @@ def _re_evaluate_positions(
                     market_context=mkt_ctx,
                 )
                 llm_calls += fc.api_attempts
+                state.mark_news_seen(mid, news_articles)
                 p_true_outcome = fc.p_blended if outcome.lower() == "yes" else (Decimal("1") - fc.p_blended)
                 edge_now = p_true_outcome - met["mid"]
                 state.record_forecast(
@@ -162,6 +163,7 @@ def _re_evaluate_positions(
                     }
                 )
             except Exception as exc:
+                llm_calls += int(getattr(exc, "api_attempts", 0))
                 log.warning("Position re-forecast failed for %s: %s", mid, exc)
 
         if p_true_outcome is None and latest is not None:
@@ -402,6 +404,7 @@ def run_cycle(dry_run_override: bool | None = None) -> int:
                     llm_calls += fc.api_attempts
                     state.mark_news_seen(cand.condition_id, arts)
                 except Exception as exc:
+                    llm_calls += int(getattr(exc, "api_attempts", 0))
                     err = f"Forecaster error for {cand.condition_id}: {exc}"
                     log.warning(err)
                     errors.append(err)

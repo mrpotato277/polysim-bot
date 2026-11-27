@@ -143,7 +143,6 @@ def export_dashboard_data(
     total_pnl_pct = (total_pnl_usd / starting_balance * Decimal("100")) if starting_balance > 0 else Decimal("0")
     deployed_pct = (positions_val / equity * Decimal("100")) if equity > 0 else Decimal("0")
 
-    brier_avg, brier_count = state.get_brier_stats()
     brier_comp = state.get_brier_comparison()
     max_dd = state.get_max_drawdown_pct() * Decimal("100")
     win_rate = portfolio.get("win_rate")
@@ -204,8 +203,8 @@ def export_dashboard_data(
             "total_trades": total_trades,
             "win_rate_pct": _parse_win_rate_pct(win_rate),
             "max_drawdown_pct": round(float(max_dd), 2),
-            "brier_score": round(float(brier_avg), 4) if brier_avg is not None else None,
-            "brier_resolved_count": brier_count,
+            "brier_score": brier_comp["brier_blended"],
+            "brier_resolved_count": brier_comp["resolved_rows"],
             "brier_blind_score": brier_comp["brier_blind"],
             "brier_market_score": brier_comp["brier_market"],
             "brier_unique_markets": brier_comp["unique_markets"],

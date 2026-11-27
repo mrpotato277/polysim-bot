@@ -42,6 +42,14 @@ class ForecastResult:
     api_attempts: int = 1
 
 
+class ForecastFailedError(RuntimeError):
+    """Raised when all configured models fail, preserving total API call attempts made."""
+
+    def __init__(self, message: str, *, api_attempts: int) -> None:
+        super().__init__(message)
+        self.api_attempts = api_attempts
+
+
 _VALID_FRESHNESS = {"breaking_lt_6h", "recent_24h", "stale_or_none"}
 _VALID_TRAP_RISK = {"low", "medium", "high"}
 _REQUIRED_FORECAST_KEYS = (
@@ -188,7 +196,10 @@ Return ONLY valid JSON with these exact keys:
                 last_exc = exc
 
         if parsed is None:
-            raise RuntimeError(f"All Gemini models failed for forecast: {last_exc}")
+            raise ForecastFailedError(
+                f"All Gemini models failed for forecast: {last_exc}",
+                api_attempts=attempts,
+            )
 
         p_blind_f = clamp_prob(float(parsed["p_blind"]), eps=0.01)
         base_rate_f = clamp_prob(float(parsed["base_rate"]), eps=0.01)
