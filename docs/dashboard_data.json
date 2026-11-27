@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T07:36:14.634582+00:00",
+  "generated_at": "2026-11-27T07:41:17.288126+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9628.0,
-    "reconciled_equity_usd": 8693.27,
+    "equity_usd": 9770.77,
+    "reconciled_equity_usd": 8836.04,
     "equity_discrepancy_usd": 934.73,
     "cash_usd": 5311.07,
-    "positions_value_usd": 3382.2,
-    "deployed_pct": 35.13,
-    "total_pnl_usd": -372.0,
-    "total_pnl_pct": -3.72,
-    "unrealized_pnl_usd": -431.21,
+    "positions_value_usd": 3524.97,
+    "deployed_pct": 36.08,
+    "total_pnl_usd": -229.23,
+    "total_pnl_pct": -2.29,
+    "unrealized_pnl_usd": -288.44,
     "total_trades": 226,
     "win_rate_pct": 50.0,
     "max_drawdown_pct": -4.89,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "politics": 2141.86,
-    "crypto": 1240.34
+    "politics": 2145.42,
+    "crypto": 1379.55
   },
   "equity_curve": [
     {
@@ -1791,6 +1791,13 @@
       "cash": 5311.07,
       "deployed_pct": 35.13,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T07:41:16.955123+00:00",
+      "equity": 9770.77,
+      "cash": 5311.07,
+      "deployed_pct": 36.08,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1816,9 +1823,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.115,
-      "current_value": 558.94,
-      "unrealized_pnl": -204.87,
+      "current_price": 0.125,
+      "current_value": 607.55,
+      "unrealized_pnl": -156.26,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -1831,9 +1838,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.0925,
-      "current_value": 164.44,
-      "unrealized_pnl": -56.0,
+      "current_price": 0.0945,
+      "current_value": 168.0,
+      "unrealized_pnl": -52.44,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1861,9 +1868,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.185,
-      "current_value": 106.2,
-      "unrealized_pnl": -186.56,
+      "current_price": 0.265,
+      "current_value": 152.12,
+      "unrealized_pnl": -140.64,
       "p_yes": 0.545,
       "p_blended": 0.455,
       "edge_net": 0.025,
@@ -1891,9 +1898,9 @@
       "outcome": "Yes",
       "quantity": 1116.9,
       "avg_entry_price": 0.52,
-      "current_price": 0.515,
-      "current_value": 575.2,
-      "unrealized_pnl": -5.59,
+      "current_price": 0.555,
+      "current_value": 619.88,
+      "unrealized_pnl": 39.09,
       "p_yes": 0.9405,
       "p_blended": 0.9405,
       "edge_net": 0.418,
@@ -1998,7 +2005,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:25:38.297019+00:00",
+      "last_checked_ts": "2026-11-27T07:40:39.085051+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether Bitcoin hits or dips to $55,000 in November 2026 based on standard exchange feeds.",
@@ -2034,7 +2041,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:30:55.140517+00:00",
+      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on which party wins the most seats in the Spanish general election.",
@@ -2097,7 +2104,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:25:38.840615+00:00",
+      "last_checked_ts": "2026-11-27T07:40:39.740909+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract evaluated against standard crypto spot price feeds during the specified dates.",
@@ -2126,7 +2133,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:25:39.046410+00:00",
+      "last_checked_ts": "2026-11-27T07:40:39.949624+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2190,7 +2197,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:30:55.140517+00:00",
+      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich direkt darauf, ob die PSOE bei der spanischen Parlamentswahl 2026 die meisten Sitze gewinnt.",
@@ -2324,7 +2331,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:30:55.140517+00:00",
+      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -2416,7 +2423,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:30:55.284252+00:00",
+      "last_checked_ts": "2026-11-27T07:40:40.651633+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves YES if the Federal Reserve makes no change to interest rates after the December 2026 FOMC meeting.",
@@ -2605,7 +2612,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:25:38.647646+00:00",
+      "last_checked_ts": "2026-11-27T07:40:39.466171+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Achtung auf präzise Definitionen und offizielle Bestätigungen des Waffenstillstandsstatus zwischen Israel und Iran bis zum Fristende.",
@@ -2668,7 +2675,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:25:38.405183+00:00",
+      "last_checked_ts": "2026-11-27T07:40:39.192689+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract based on major exchange feeds.",
@@ -2697,7 +2704,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T07:30:55.140517+00:00",
+      "last_checked_ts": "2026-11-27T07:40:40.554748+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count of the 2026 Spanish general election as reported by official electoral authorities.",
@@ -3338,6 +3345,18 @@
   ],
   "recent_runs": [
     {
+      "id": 227,
+      "ts": "2026-11-27T07:41:16.956981+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1129,
+      "candidates_found": 21,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.61,
+      "errors": []
+    },
+    {
       "id": 226,
       "ts": "2026-11-27T07:36:14.256191+00:00",
       "dry_run": 0,
@@ -3563,18 +3582,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 65.58,
-      "errors": []
-    },
-    {
-      "id": 207,
-      "ts": "2026-11-27T05:56:29.244684+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1113,
-      "candidates_found": 22,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 60.35,
       "errors": []
     }
   ]
