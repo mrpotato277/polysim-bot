@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:21:45.368769+00:00",
+  "generated_at": "2026-11-27T15:26:30.989113+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,18 +11,18 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11377.76,
-    "reconciled_equity_usd": 8890.59,
-    "equity_discrepancy_usd": 2487.17,
+    "equity_usd": 10865.52,
+    "reconciled_equity_usd": 8888.09,
+    "equity_discrepancy_usd": 1977.43,
     "cash_usd": 5681.36,
-    "positions_value_usd": 3209.23,
-    "deployed_pct": 28.21,
-    "total_pnl_usd": 1377.76,
-    "total_pnl_pct": 13.78,
-    "unrealized_pnl_usd": -404.63,
+    "positions_value_usd": 3206.73,
+    "deployed_pct": 29.51,
+    "total_pnl_usd": 865.52,
+    "total_pnl_pct": 8.66,
+    "unrealized_pnl_usd": -407.13,
     "total_trades": 297,
     "win_rate_pct": 50.0,
-    "max_drawdown_pct": -9.66,
+    "max_drawdown_pct": -11.72,
     "brier_score": 0.0521,
     "brier_resolved_count": 6,
     "brier_blind_score": 0.0895,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2401.77,
+    "politics": 2399.27,
     "geopolitics": 621.32,
     "markets": 186.14
   },
@@ -2477,6 +2477,13 @@
       "cash": 5681.36,
       "deployed_pct": 28.21,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T15:26:30.610808+00:00",
+      "equity": 10865.52,
+      "cash": 5681.36,
+      "deployed_pct": 29.51,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2517,9 +2524,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.11,
-      "current_value": 195.55,
-      "unrealized_pnl": -24.89,
+      "current_price": 0.1095,
+      "current_value": 194.66,
+      "unrealized_pnl": -25.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2532,9 +2539,9 @@
       "outcome": "Yes",
       "quantity": 809.16,
       "avg_entry_price": 0.26,
-      "current_price": 0.255,
-      "current_value": 206.34,
-      "unrealized_pnl": -4.04,
+      "current_price": 0.26,
+      "current_value": 210.38,
+      "unrealized_pnl": 0.0,
       "p_yes": 0.3229,
       "p_blended": 0.3229,
       "edge_net": 0.0729,
@@ -2562,9 +2569,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.62,
-      "current_value": 701.05,
-      "unrealized_pnl": 15.64,
+      "current_price": 0.615,
+      "current_value": 695.4,
+      "unrealized_pnl": 9.99,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -2654,7 +2661,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:05:37.068438+00:00",
+      "last_checked_ts": "2026-11-27T15:25:36.628699+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract with clear exchange feed rules.",
@@ -2712,7 +2719,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:10:39.429939+00:00",
+      "last_checked_ts": "2026-11-27T15:25:39.645400+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on exchange feeds before the end of November.",
@@ -2741,7 +2748,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T15:05:39.140906+00:00",
+      "last_checked_ts": "2026-11-27T15:25:39.250420+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on Bitcoin hitting or dipping to $56,000 during the specified date range according to standard exchange or oracle data.",
@@ -4364,6 +4371,18 @@
   ],
   "recent_runs": [
     {
+      "id": 318,
+      "ts": "2026-11-27T15:26:30.612111+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1144,
+      "candidates_found": 18,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 55.74,
+      "errors": []
+    },
+    {
       "id": 317,
       "ts": "2026-11-27T15:21:44.983043+00:00",
       "dry_run": 0,
@@ -4589,18 +4608,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 42.43,
-      "errors": []
-    },
-    {
-      "id": 298,
-      "ts": "2026-11-27T13:41:45.969883+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1146,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 61.99,
       "errors": []
     }
   ]
