@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:16:41.302202+00:00",
+  "generated_at": "2026-11-27T20:21:33.754415+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11082.83,
-    "reconciled_equity_usd": 11082.83,
+    "equity_usd": 11032.91,
+    "reconciled_equity_usd": 11032.91,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6080.31,
-    "positions_value_usd": 5002.52,
-    "deployed_pct": 45.14,
-    "total_pnl_usd": 1082.83,
-    "total_pnl_pct": 10.83,
-    "unrealized_pnl_usd": 624.85,
+    "positions_value_usd": 4952.6,
+    "deployed_pct": 44.89,
+    "total_pnl_usd": 1032.91,
+    "total_pnl_pct": 10.33,
+    "unrealized_pnl_usd": 574.93,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 266,
+    "total_forecasts": 267,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2571.62,
-    "crypto": 1506.72,
+    "politics": 2570.3,
+    "crypto": 1458.12,
     "geopolitics": 707.02,
     "markets": 217.16
   },
@@ -2921,6 +2921,13 @@
       "cash": 6080.31,
       "deployed_pct": 45.14,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T20:21:33.360248+00:00",
+      "equity": 11032.91,
+      "cash": 6080.31,
+      "deployed_pct": 44.89,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2946,9 +2953,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.31,
-      "current_value": 1506.72,
-      "unrealized_pnl": 742.91,
+      "current_price": 0.3,
+      "current_value": 1458.12,
+      "unrealized_pnl": 694.31,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -2976,9 +2983,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1215,
-      "current_value": 215.99,
-      "unrealized_pnl": -4.45,
+      "current_price": 0.122,
+      "current_value": 216.88,
+      "unrealized_pnl": -3.56,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3036,9 +3043,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.2615,
-      "current_value": 288.93,
-      "unrealized_pnl": 63.53,
+      "current_price": 0.2595,
+      "current_value": 286.72,
+      "unrealized_pnl": 61.32,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -3062,6 +3069,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 267,
+      "ts": "2026-11-27T20:21:33.358298+00:00",
+      "market_id": "0xef750428b94a6323dbaa01a2fc26914bb888c42102d143d978464f5553c22135",
+      "question": "Spain General Election: PP + Vox Majority?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8350",
+      "p_blind": "0.6800",
+      "p_blended": "0.7717",
+      "confidence": "0.7000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0683",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on whether the PP and Vox secure a majority in the Spanish general election held on November 29, 2026.",
+        "base_rate": 0.55,
+        "bull_case": "Recent polls indicate a strong performance by the PP and Vox, putting them within striking distance of an absolute majority as Sánchez's PSOE struggles against a right-wing momentum.",
+        "bear_case": "Sánchez's campaign has rallied left-wing voters in the final stretch, and polls could underestimate progressive turnout, potentially falling short of the required majority threshold.",
+        "summary_de": "Umfragen und aktuelle Berichte vor den Wahlen am 29. November deuten darauf hin, dass PP und Vox eine solide Chance auf eine absolute Mehrheit haben.",
+        "news_used": [
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform",
+          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
+          "Spain elections: Israel’s ‘greatest’ far-right ally in Europe poised to shape next government’s foreign policy - Middle East Eye",
+          "Vox leader Abascal poised as kingmaker in Spain’s election - Crypto Briefing",
+          "Spain's far-right Vox leader Abascal nears power as election kingmaker - Reuters"
+        ]
+      }
+    },
+    {
       "id": 266,
       "ts": "2026-11-27T20:16:40.906949+00:00",
       "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
@@ -3078,7 +3120,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T20:20:41.111443+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the Spanish general election determining which party wins the most seats.",
@@ -3113,7 +3155,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T20:20:40.528835+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official seat count results of the snap general election on November 29, 2026, determining if PP and Vox achieve a combined absolute majority in parliament.",
@@ -3183,7 +3225,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:05:32.988984+00:00",
+      "last_checked_ts": "2026-11-27T20:20:40.528835+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the Spanish General Election regarding whether PP and Vox achieve a parliamentary majority.",
@@ -3457,7 +3499,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:05:33.086346+00:00",
+      "last_checked_ts": "2026-11-27T20:20:40.677629+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will hit $62,500 at any point during November 2026 based on standard spot exchange feeds.",
@@ -3661,7 +3703,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:05:33.398171+00:00",
+      "last_checked_ts": "2026-11-27T20:20:41.111443+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official electoral commission seat count results for the 2026 Spanish general election.",
@@ -3762,7 +3804,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:05:33.501249+00:00",
+      "last_checked_ts": "2026-11-27T20:20:41.293228+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob es nach der Dezembersitzung 2026 keine Zinsänderung der Fed geben wird (weder Erhöhung noch Senkung).",
@@ -3876,41 +3918,6 @@
           "Tamils in New Zealand among first to mark Maaveerar Naal - Tamil Guardian",
           "‘We need to be ruthless’: Itoje issues England battle cry for All Blacks treble - The Guardian",
           "Finals weekend will show who really holds rugby power heading into World Cup year | Ugo Monye - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 242,
-      "ts": "2026-11-27T17:31:40.327827+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2550",
-      "p_blind": "0.4200",
-      "p_blended": "0.3229",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0729",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T20:05:33.398171+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official seat count of the 2026 Spanish general election.",
-        "base_rate": 0.45,
-        "bull_case": "Pedro Sánchez and the PSOE can outperform polls via a late left-wing voting surge and strong mobilization.",
-        "bear_case": "Polls indicate competitive pressure from right and far-right alternatives poised to challenge the incumbent government.",
-        "summary_de": "Die aktuellen Berichte zeigen ein enges Rennen, wobei die PSOE trotz Mobilisierungsversuchen unter Druck steht, die meisten Sitze zu verteidigen.",
-        "news_used": [
-          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
-          "Spain elections: Israel’s ‘greatest’ far-right ally in Europe poised to shape next government’s foreign policy - Middle East Eye",
-          "Spanish election: What you need to know and what's at stake - BBC",
-          "Spain’s election could pull Madrid closer to Trump’s Washington - CNBC",
-          "Who to watch in Spain's election race - BBC",
-          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı"
         ]
       }
     }
@@ -4839,6 +4846,18 @@
   ],
   "recent_runs": [
     {
+      "id": 377,
+      "ts": "2026-11-27T20:21:33.361018+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1151,
+      "candidates_found": 18,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 55.8,
+      "errors": []
+    },
+    {
       "id": 376,
       "ts": "2026-11-27T20:16:40.909820+00:00",
       "dry_run": 0,
@@ -5064,18 +5083,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 60.02,
-      "errors": []
-    },
-    {
-      "id": 357,
-      "ts": "2026-11-27T18:41:23.149826+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1129,
-      "candidates_found": 20,
-      "llm_calls": 3,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 42.93,
       "errors": []
     }
   ]
