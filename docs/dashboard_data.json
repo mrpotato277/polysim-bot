@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:56:22.263337+00:00",
+  "generated_at": "2026-11-27T22:02:00.107536+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10854.5,
-    "reconciled_equity_usd": 10584.9,
-    "equity_discrepancy_usd": 269.6,
+    "equity_usd": 10925.3,
+    "reconciled_equity_usd": 10655.15,
+    "equity_discrepancy_usd": 270.15,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4504.59,
-    "deployed_pct": 41.5,
-    "total_pnl_usd": 854.5,
-    "total_pnl_pct": 8.54,
-    "unrealized_pnl_usd": 352.32,
+    "positions_value_usd": 4574.84,
+    "deployed_pct": 41.87,
+    "total_pnl_usd": 925.3,
+    "total_pnl_pct": 9.25,
+    "unrealized_pnl_usd": 422.57,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2262.35,
-    "crypto": 1360.91,
+    "politics": 2259.69,
+    "crypto": 1433.82,
     "geopolitics": 664.17,
     "markets": 217.16
   },
@@ -3067,6 +3067,19 @@
       "cash": 6080.31,
       "deployed_pct": 41.5,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T22:00:00+00:00",
+      "equity": 10655.13,
+      "cash": 10655.13,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-27T22:01:59.704258+00:00",
+      "equity": 10925.3,
+      "cash": 6080.31,
+      "deployed_pct": 41.87,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3092,9 +3105,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.28,
-      "current_value": 1360.91,
-      "unrealized_pnl": 597.1,
+      "current_price": 0.295,
+      "current_value": 1433.82,
+      "unrealized_pnl": 670.01,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3122,9 +3135,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1265,
-      "current_value": 224.88,
-      "unrealized_pnl": 4.44,
+      "current_price": 0.125,
+      "current_value": 222.22,
+      "unrealized_pnl": 1.78,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -3825,7 +3838,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:40:49.483649+00:00",
+      "last_checked_ts": "2026-11-27T22:01:01.480454+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026, which depends on official verification and formal implementation.",
@@ -4027,7 +4040,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T21:45:38.941147+00:00",
+      "last_checked_ts": "2026-11-27T22:01:01.908529+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error caused the November 13 FAA ground stop before December 1, 2026.",
@@ -4058,7 +4071,7 @@
       "est_fee_usd": "0",
       "edge_net": "0.0062",
       "strategy_type": "exit_take_profit",
-      "status": "PENDING",
+      "status": "CANCELLED",
       "dry_run": 0,
       "rationale": "Take-Profit: Kurs 0.28 hat Fair Value 0.29 erreicht (Entry 0.20); Kapital wird für neue Chancen frei."
     },
@@ -4985,6 +4998,18 @@
   ],
   "recent_runs": [
     {
+      "id": 397,
+      "ts": "2026-11-27T22:01:59.705498+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1177,
+      "candidates_found": 19,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 60.07,
+      "errors": []
+    },
+    {
       "id": 396,
       "ts": "2026-11-27T21:56:21.896164+00:00",
       "dry_run": 0,
@@ -5210,18 +5235,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 56.59,
-      "errors": []
-    },
-    {
-      "id": 377,
-      "ts": "2026-11-27T20:21:33.361018+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1151,
-      "candidates_found": 18,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 55.8,
       "errors": []
     }
   ]
