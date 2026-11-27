@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T00:46:28.683987+00:00",
+  "generated_at": "2026-11-27T00:51:33.420862+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9932.51,
-    "reconciled_equity_usd": 9717.4,
-    "equity_discrepancy_usd": 215.11,
-    "cash_usd": 7976.35,
-    "positions_value_usd": 1741.05,
-    "deployed_pct": 17.53,
-    "total_pnl_usd": -67.49,
-    "total_pnl_pct": -0.67,
-    "unrealized_pnl_usd": -53.29,
+    "equity_usd": 9868.2,
+    "reconciled_equity_usd": 9868.2,
+    "equity_discrepancy_usd": 0.0,
+    "cash_usd": 8191.46,
+    "positions_value_usd": 1676.74,
+    "deployed_pct": 16.99,
+    "total_pnl_usd": -131.8,
+    "total_pnl_pct": -1.32,
+    "unrealized_pnl_usd": -117.6,
     "total_trades": 66,
     "win_rate_pct": 0.0,
     "max_drawdown_pct": -1.43,
@@ -28,13 +28,13 @@
     "brier_blind_score": null,
     "brier_market_score": null,
     "brier_unique_markets": 0,
-    "total_forecasts": 138,
+    "total_forecasts": 140,
     "circuit_breaker_active": false
   },
   "category_exposure": {
-    "crypto": 456.48,
-    "technology": 395.4,
-    "politics": 889.17
+    "crypto": 462.22,
+    "technology": 374.55,
+    "politics": 839.97
   },
   "equity_curve": [
     {
@@ -1176,6 +1176,13 @@
       "cash": 7976.35,
       "deployed_pct": 17.53,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T00:51:33.033396+00:00",
+      "equity": 9868.2,
+      "cash": 8191.46,
+      "deployed_pct": 16.99,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -1201,9 +1208,9 @@
       "outcome": "Yes",
       "quantity": 1813.78,
       "avg_entry_price": 0.224,
-      "current_price": 0.218,
-      "current_value": 395.4,
-      "unrealized_pnl": -10.89,
+      "current_price": 0.2065,
+      "current_value": 374.55,
+      "unrealized_pnl": -31.74,
       "p_yes": 0.3684,
       "p_blended": 0.3684,
       "edge_net": 0.1444,
@@ -1216,9 +1223,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.109,
-      "current_value": 193.77,
-      "unrealized_pnl": -26.67,
+      "current_price": 0.0845,
+      "current_value": 150.22,
+      "unrealized_pnl": -70.22,
       "p_yes": 0.1652,
       "p_blended": 0.1652,
       "edge_net": 0.0,
@@ -1231,9 +1238,9 @@
       "outcome": "No",
       "quantity": 574.04,
       "avg_entry_price": 0.51,
-      "current_price": 0.485,
-      "current_value": 278.41,
-      "unrealized_pnl": -14.35,
+      "current_price": 0.495,
+      "current_value": 284.15,
+      "unrealized_pnl": -8.61,
       "p_yes": 0.5386,
       "p_blended": 0.4614,
       "edge_net": 0.0286,
@@ -1246,9 +1253,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.615,
-      "current_value": 695.4,
-      "unrealized_pnl": 9.99,
+      "current_price": 0.61,
+      "current_value": 689.75,
+      "unrealized_pnl": 4.34,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -1256,6 +1263,63 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 140,
+      "ts": "2026-11-27T00:51:33.031921+00:00",
+      "market_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
+      "question": "US x Iran Effective Ceasefire by November 30?",
+      "category": "geopolitics",
+      "end_date": "2026-11-30T20:29:00+00:00",
+      "market_price": "0.7300",
+      "p_blind": "0.0200",
+      "p_blended": "0.3705",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "-0.3595",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires an effective ceasefire (defined as a 2-week pause) between the US and Iran by November 30, 2026.",
+        "base_rate": 0.05,
+        "bull_case": "Sudden diplomatic breakthroughs or secret backchannel negotiations could materialize rapidly.",
+        "bear_case": "Deep-seated geopolitical hostility and lack of active public mediation make a formal effective ceasefire within a few days extremely unlikely.",
+        "summary_de": "Angesichts der tiefen Feindseligkeiten und des fehlenden diplomatischen Fortschritts ist ein effektiver Waffenstillstand bis Ende November äußerst unwahrscheinlich.",
+        "news_used": []
+      }
+    },
+    {
+      "id": 139,
+      "ts": "2026-11-27T00:51:31.875168+00:00",
+      "market_id": "0x22b069c1d8ef9af798919c707b50f2d49b4d82acbdaa37c9169739469b2a19ff",
+      "question": "Will Bitcoin reach $64,000 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.1650",
+      "p_blind": "0.2800",
+      "p_blended": "0.1924",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0324",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract resolving based on specified exchange or oracle feeds during the date window.",
+        "base_rate": 0.22,
+        "bull_case": "A rapid macro catalyst or sudden short squeeze could push BTC up by 5.6% over the remaining days of the window.",
+        "bear_case": "Current spot is around $60,615 with only a few days left, making a 5.6% rally less likely given prevailing realized volatility.",
+        "summary_de": "Bitcoin handelt nahe 60.615 USD, und ein Anstieg um 5,6 % auf 64.000 USD innerhalb der verbleibenden Tage bis zum 29. November ist angesichts der verbleibenden Zeit und Volatilität eher unwahrscheinlich, aber durchaus möglich.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $60,615.90 (24h range: $59,850.00 - $61,037.50, 30d realized annualized vol: ~48%).\nDistance from live spot to $64,000.00: +5.6% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.2d (1-sigma move = +/-4.4%, distance = 1.22 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 138,
       "ts": "2026-11-27T00:46:28.271147+00:00",
@@ -1273,7 +1337,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T00:50:41.560489+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on standard Bitcoin price hitting the $62,500 threshold before the end of November UTC.",
@@ -1304,7 +1368,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T00:50:41.706415+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official outcome of the New Taipei Mayor election.",
@@ -1339,7 +1403,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T00:50:41.854094+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag löst sich basierend auf dem offiziellen Wahlergebnis der Bürgermeisterwahl in Neu-Taipeh 2026 auf.",
@@ -1503,7 +1567,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:40:40.459178+00:00",
+      "last_checked_ts": "2026-11-27T00:50:43.010619+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire between Israel and Iran to remain in effect through December 15, 2026.",
@@ -1568,7 +1632,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:35:37.350451+00:00",
+      "last_checked_ts": "2026-11-27T00:50:40.749216+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch resolution based on specified index feeds.",
@@ -1874,7 +1938,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:40:40.459178+00:00",
+      "last_checked_ts": "2026-11-27T00:50:43.010619+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition des Waffenstillstands und dessen allfällige formelle Verletzungen im Laufe des Dezember müssen exakt den offiziellen Kriterien entsprechen.",
@@ -1909,7 +1973,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:40:40.082588+00:00",
+      "last_checked_ts": "2026-11-27T00:50:42.600823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Taipei mayoral election.",
@@ -1944,7 +2008,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:40:40.082588+00:00",
+      "last_checked_ts": "2026-11-27T00:50:42.600823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official winner of the Taipei Mayor election, coinciding with the 2026 Taiwan local elections.",
@@ -1979,7 +2043,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:40:40.292396+00:00",
+      "last_checked_ts": "2026-11-27T00:50:42.883316+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, focusing on the current political cycle and upcoming leadership transition.",
@@ -1994,76 +2058,6 @@
           "Spain Elections - chronicleonline.com",
           "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
           "Spanish Polls: Anti-Israel Prime Minister Pedro Sánchez Trails Conservatives - Middle East Forum"
-        ]
-      }
-    },
-    {
-      "id": 115,
-      "ts": "2026-11-26T22:06:14.226151+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.9050",
-      "p_blind": "0.3000",
-      "p_blended": "0.6925",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:45:38.561357+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Prüft, ob Alberto Núñez Feijóo vor dem Stichtag offiziell als Ministerpräsident vereidigt wird oder das Amt übernimmt.",
-        "base_rate": 0.35,
-        "bull_case": "Umfragen und Neuwahlen positionieren die konservative PP stark, während die amtierende Regierung unter Druck steht.",
-        "bear_case": "Pedro Sánchez könnte trotz politischer Turbulenzen Koalitionen schmieden und an der Macht bleiben.",
-        "summary_de": "Trotz anhaltender politischer Debatten und Neuwahlspekulationen in Spanien ist eine Regierungsübernahme durch Feijóo vor Ende November unwahrscheinlich.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spain Elections - Goshen News",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
-          "Explainer-Spain’s snap election — why it matters and who might win? - Internazionale"
-        ]
-      }
-    },
-    {
-      "id": 114,
-      "ts": "2026-11-26T21:56:06.354033+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.9050",
-      "p_blind": "0.2200",
-      "p_blended": "0.6314",
-      "confidence": "0.7500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T00:45:38.561357+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Alberto Núñez Feijóo will be the next Prime Minister of Spain, resolving based on official appointment before the deadline.",
-        "base_rate": 0.45,
-        "bull_case": "Feijóo leads the Partido Popular, which has polled strongly and capitalized on controversies surrounding Pedro Sánchez's government, creating a viable path to power if a snap election or coalition shift occurs.",
-        "bear_case": "Pedro Sánchez currently retains control of the government and parliamentary alliances, making a sudden transition of power before November 30, 2026, unlikely without a major unforeseen political collapse.",
-        "summary_de": "Trotz aktueller politischer Spannungen und anhaltender Neuwahlen-Debatten ist eine Regierungsübernahme durch Alberto Núñez Feijóo vor Ende November 2026 angesichts der parlamentari-schen Mehrheiten von Pedro Sánchez eher unwahrscheinlich.",
-        "news_used": [
-          "The Debate - Sanchez's big gamble: Will Spain swing from Socialists to hard right? - France 24",
-          "Spain Elections - WV News",
-          "Spain Elections - The Batesville Daily Guard",
-          "Spain Elections - Goshen News",
-          "Spanish opposition criticised for AI video of Pedro Sánchez in Morocco shirt - The Guardian",
-          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters"
         ]
       }
     }
@@ -2432,6 +2426,18 @@
   ],
   "recent_runs": [
     {
+      "id": 145,
+      "ts": "2026-11-27T00:51:33.034190+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1132,
+      "candidates_found": 25,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 53.99,
+      "errors": []
+    },
+    {
       "id": 144,
       "ts": "2026-11-27T00:46:28.274832+00:00",
       "dry_run": 0,
@@ -2657,18 +2663,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 63.98,
-      "errors": []
-    },
-    {
-      "id": 125,
-      "ts": "2026-11-26T23:11:37.553706+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1111,
-      "candidates_found": 23,
-      "llm_calls": 3,
-      "trades_attempted": 1,
-      "trades_executed": 1,
-      "duration_sec": 54.03,
       "errors": []
     }
   ]
