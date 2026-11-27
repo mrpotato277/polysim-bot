@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:36:22.957588+00:00",
+  "generated_at": "2026-11-27T12:41:25.359824+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9478.3,
-    "reconciled_equity_usd": 9478.3,
+    "equity_usd": 9475.63,
+    "reconciled_equity_usd": 9475.63,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4387.21,
-    "deployed_pct": 46.29,
-    "total_pnl_usd": -521.7,
-    "total_pnl_pct": -5.22,
-    "unrealized_pnl_usd": -438.08,
+    "positions_value_usd": 4384.54,
+    "deployed_pct": 46.27,
+    "total_pnl_usd": -524.37,
+    "total_pnl_pct": -5.24,
+    "unrealized_pnl_usd": -440.75,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.46,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 201,
+    "total_forecasts": 202,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2189.43,
+    "politics": 2186.76,
     "crypto": 1068.27,
     "geopolitics": 664.17,
     "markets": 465.34
@@ -2236,6 +2236,13 @@
       "cash": 5091.09,
       "deployed_pct": 46.29,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T12:41:25.088535+00:00",
+      "equity": 9475.63,
+      "cash": 5091.09,
+      "deployed_pct": 46.27,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2291,9 +2298,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1025,
-      "current_value": 182.22,
-      "unrealized_pnl": -38.22,
+      "current_price": 0.101,
+      "current_value": 179.55,
+      "unrealized_pnl": -40.89,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2377,6 +2384,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 202,
+      "ts": "2026-11-27T12:41:25.087141+00:00",
+      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
+      "question": "Will New Zealand win?",
+      "category": "sports",
+      "end_date": "2026-12-03T22:00:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4500",
+      "p_blended": "0.3305",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0805",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
+        "base_rate": 0.4,
+        "bull_case": "Live match reports indicate New Zealand (Blackcaps) are actively rebuilding and competing in the ongoing Test against India, giving them a realistic chance of victory.",
+        "bear_case": "India is traditionally a very strong Test cricket side across conditions, and mid-match reconstructions do not guarantee a successful win outcome against their bowling attack.",
+        "summary_de": "Das Test-Match zwischen Neuseeland und Indien läuft, wobei die Blackcaps nach zwischenzeitlichen Problemen versuchen, das Spiel zu drehen, jedoch bleibt Indien ein starker Gegner.",
+        "news_used": [
+          "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
+          "Australia set to drop Lyon for first New Zealand Test - BBC",
+          "Deadlocked final result in New Zealand’s election leaves a centrist newcomer as the decider - WBTW",
+          "Nations Championship bronze match: three key England v New Zealand head-to-heads - RFI",
+          "New Zealand vs India: Phillips and Blundell rebuild Blackcaps after second session stumble - Sport Nation",
+          "The World Cup lesson England can learn in All Blacks rematch - The Independent"
+        ]
+      }
+    },
+    {
       "id": 201,
       "ts": "2026-11-27T12:36:22.631077+00:00",
       "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
@@ -2393,7 +2435,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T12:40:48.110837+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test Match cricket between New Zealand and India, resolving based on the official match outcome.",
@@ -2428,7 +2470,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T12:40:48.110837+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Marktversprechen bezieht sich eindeutig auf den Gewinner des Testspiels zwischen Neuseeland und Indien.",
@@ -2463,7 +2505,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.823210+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.110837+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether New Zealand wins the Test match against India.",
@@ -2498,7 +2540,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:33.287750+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.653576+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition von 'bestätigt' bezüglich eines Software- oder Konfigurationsfehlers durch offizielle Untersuchungsberichte muss eindeutig sein.",
@@ -2529,7 +2571,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.823210+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.110837+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2600,7 +2642,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.568815+00:00",
+      "last_checked_ts": "2026-11-27T12:40:47.905097+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard crypto price touch contract evaluated against defined exchange feeds through November.",
@@ -2665,7 +2707,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:33.391061+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.808863+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any point during calendar year 2026.",
@@ -2865,7 +2907,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.823210+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.110837+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract refers to a specific Test Match; news headlines regarding political elections and rugby are irrelevant noise.",
@@ -2936,7 +2978,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.692495+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.004554+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election occurring near the deadline.",
@@ -3040,7 +3082,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:30:59.496340+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.919829+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before December 2026.",
@@ -3104,7 +3146,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.949920+00:00",
+      "last_checked_ts": "2026-11-27T12:40:48.226343+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A ceasefire must explicitly remain in effect through December 15, 2026 without a major collapse or resumption of direct military hostilities.",
@@ -3139,7 +3181,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.106987+00:00",
+      "last_checked_ts": "2026-11-27T12:40:47.472913+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob die Fed die Zinsen nach der Dezember-Sitzung 2026 um 25 bps anhebt.",
@@ -3184,41 +3226,6 @@
         "summary_de": "Bitcoin liegt aktuell rund 9,2% über der Marke von 56.000 US-Dollar, weshalb ein plötzlicher Rücksetzer in der verbleibenden kurzen Zeit bei normaler Volatilität unwahrscheinlich ist.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $61,707.90 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $56,000.00: -9.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.3%, distance = 2.26 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 177,
-      "ts": "2026-11-27T08:36:36.676409+00:00",
-      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
-      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.9450",
-      "p_blind": "0.9500",
-      "p_blended": "0.9473",
-      "confidence": "0.9000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0073",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:25:32.106987+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if the Federal Reserve increases interest rates by 25 bps after the December 2026 FOMC meeting.",
-        "base_rate": 0.15,
-        "bull_case": "Hot inflation readings and strong economic growth reports have pushed market pricing to suggest a potential rate hike at the December meeting.",
-        "bear_case": "Historically, rate hikes during an ongoing tightening cycle are rare when rates are already restrictive, and central banks typically pause or hold rather than re-accelerate hikes unless inflation surges drastically.",
-        "summary_de": "Marktdaten und aktuelle Nachrichten preisen eine sehr hohe Wahrscheinlichkeit von 99,5 Prozent für eine Zinserhöhung der Fed um 25 Basispunkte im Dezember 2026 ein.",
-        "news_used": [
-          "Hot Inflation and Strong Growth Sharpen Fed Policy Fight - streamlinefeed.co.ke",
-          "First Trust’s Fed Forecast: Interest Rate Hikes in 2027 May Fall Short of Expectations - Cryptonews.net",
-          "Markets Price 99.5% Chance of 25-Basis-Point Fed Hike in December - www.tokenpost.com",
-          "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December? - TradingView",
-          "EUR/USD might be bottoming out amid peak Fed hawkishness and dovish repricing risks - investingLive",
-          "Rupiah Hits Rp18,400 per Dollar, Its Weakest Level in History - Tempo.co English"
-        ]
       }
     }
   ],
@@ -4026,6 +4033,18 @@
   ],
   "recent_runs": [
     {
+      "id": 286,
+      "ts": "2026-11-27T12:41:25.088981+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1186,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 38.79,
+      "errors": []
+    },
+    {
       "id": 285,
       "ts": "2026-11-27T12:36:22.633817+00:00",
       "dry_run": 0,
@@ -4251,18 +4270,6 @@
       "trades_attempted": 1,
       "trades_executed": 1,
       "duration_sec": 54.55,
-      "errors": []
-    },
-    {
-      "id": 266,
-      "ts": "2026-11-27T10:56:17.771008+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1135,
-      "candidates_found": 18,
-      "llm_calls": 2,
-      "trades_attempted": 1,
-      "trades_executed": 1,
-      "duration_sec": 48.08,
       "errors": []
     }
   ]
