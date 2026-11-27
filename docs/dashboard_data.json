@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T13:06:31.103921+00:00",
+  "generated_at": "2026-11-27T13:11:14.903371+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 9424.59,
-    "reconciled_equity_usd": 9424.59,
+    "equity_usd": 9439.85,
+    "reconciled_equity_usd": 9439.85,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 5091.09,
-    "positions_value_usd": 4333.5,
-    "deployed_pct": 45.98,
-    "total_pnl_usd": -575.41,
-    "total_pnl_pct": -5.75,
-    "unrealized_pnl_usd": -491.79,
+    "positions_value_usd": 4348.76,
+    "deployed_pct": 46.07,
+    "total_pnl_usd": -560.15,
+    "total_pnl_pct": -5.6,
+    "unrealized_pnl_usd": -476.53,
     "total_trades": 292,
     "win_rate_pct": 33.3,
     "max_drawdown_pct": -6.63,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.1764,
     "brier_market_score": 0.2162,
     "brier_unique_markets": 1,
-    "total_forecasts": 206,
+    "total_forecasts": 207,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2183.57,
-    "crypto": 1097.98,
+    "politics": 2186.23,
+    "crypto": 1110.58,
     "geopolitics": 664.17,
     "markets": 387.78
   },
@@ -2284,6 +2284,13 @@
       "cash": 5091.09,
       "deployed_pct": 45.98,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-27T13:11:14.646010+00:00",
+      "equity": 9439.85,
+      "cash": 5091.09,
+      "deployed_pct": 46.07,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -2339,9 +2346,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1065,
-      "current_value": 189.33,
-      "unrealized_pnl": -31.11,
+      "current_price": 0.108,
+      "current_value": 191.99,
+      "unrealized_pnl": -28.45,
       "p_yes": 0.2112,
       "p_blended": 0.2112,
       "edge_net": 0.0,
@@ -2384,9 +2391,9 @@
       "outcome": "Yes",
       "quantity": 1259.89,
       "avg_entry_price": 0.5223,
-      "current_price": 0.505,
-      "current_value": 636.24,
-      "unrealized_pnl": -21.76,
+      "current_price": 0.515,
+      "current_value": 648.84,
+      "unrealized_pnl": -9.16,
       "p_yes": 0.9342,
       "p_blended": 0.9342,
       "edge_net": 0.4217,
@@ -2425,6 +2432,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 207,
+      "ts": "2026-11-27T13:11:14.644673+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.4200",
+      "p_blended": "0.3229",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0729",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election determining which party wins the most seats.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbent Pedro Sánchez and the PSOE have mobilized their base effectively in the final stretch, maintaining competitive polling numbers against the right-wing bloc.",
+        "bear_case": "Recent polling and momentum heavily favor Alberto Núñez Feijóo's PP, capitalizing on current national challenges such as migration and infrastructure issues.",
+        "summary_de": "Die neuesten Umfragen und Nachrichten deuten darauf hin, dass die konservative Opposition gute Chancen hat, vor der PSOE zu landen, weshalb ein Sieg der Sozialisten bei diesen Wahlen eher unwahrscheinlich ist.",
+        "news_used": [
+          "FACTBOX – Spain’s general election: Key candidates and political agendas - Anadolu Ajansı",
+          "Sanchez makes last bid to beat the right ahead of Spanish vote - Yahoo",
+          "Spain’s election nears amid train accident, migrant crisis challenges - Crypto Briefing",
+          "Spain’s 2026 election explained in maps and charts - Al Jazeera",
+          "Spain general election 2026: polls, Sanchez vs Feijoo and what happens next - Reuters",
+          "How to watch the Spanish election like a pro - POLITICO.eu"
+        ]
+      }
+    },
+    {
       "id": 206,
       "ts": "2026-11-27T12:56:35.674325+00:00",
       "market_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
@@ -2441,7 +2483,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T13:10:37.371484+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by November 30, 2026; 'effective' requires verifiable implementation rather than merely an agreement.",
@@ -2469,7 +2511,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2504,7 +2546,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2539,7 +2581,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official winner of the Test Match between New Zealand and India.",
@@ -2574,7 +2616,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official Test Match result between New Zealand and India.",
@@ -2609,7 +2651,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Test Match cricket between New Zealand and India, resolving based on the official match outcome.",
@@ -2644,7 +2686,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Marktversprechen bezieht sich eindeutig auf den Gewinner des Testspiels zwischen Neuseeland und Indien.",
@@ -2679,7 +2721,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether New Zealand wins the Test match against India.",
@@ -2714,7 +2756,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:36.712844+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.589636+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Definition von 'bestätigt' bezüglich eines Software- oder Konfigurationsfehlers durch offizielle Untersuchungsberichte muss eindeutig sein.",
@@ -2745,7 +2787,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -2845,7 +2887,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:38.763494+00:00",
+      "last_checked_ts": "2026-11-27T13:10:38.403391+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin dips to $60,000 in November, resolvable by standard spot exchange pricing.",
@@ -2881,7 +2923,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:37.325356+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.688479+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve implements another interest rate hike at any point during calendar year 2026.",
@@ -2945,7 +2987,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T13:01:06.140004+00:00",
+      "last_checked_ts": "2026-11-27T13:10:38.656371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on exchange spot feeds through November 30.",
@@ -2974,7 +3016,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:38.763494+00:00",
+      "last_checked_ts": "2026-11-27T13:10:38.403391+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin will dip to $60,000 in November based on standard spot prices.",
@@ -3081,7 +3123,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:35.981947+00:00",
+      "last_checked_ts": "2026-11-27T13:10:37.147456+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract refers to a specific Test Match; news headlines regarding political elections and rugby are irrelevant noise.",
@@ -3237,35 +3279,6 @@
           "How to watch the Spanish election like a pro - POLITICO.eu",
           "Spanish elections: What you need to know and what's at stake - BBC"
         ]
-      }
-    },
-    {
-      "id": 182,
-      "ts": "2026-11-27T09:11:24.093801+00:00",
-      "market_id": "0x4e217b91f484e4b1169728aca5eebe858015bca82719140cfd240e8a3f39736f",
-      "question": "Will Bitcoin reach $70,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.0400",
-      "p_blind": "0.0200",
-      "p_blended": "0.0323",
-      "confidence": "0.9000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0097",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T12:55:37.529374+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price hit contract based on major exchange feeds before December 2026.",
-        "base_rate": 0.05,
-        "bull_case": "Crypto markets exhibit fat tails and rapid momentum surges, making a 13.5% rally achievable within a few days under high volatility.",
-        "bear_case": "Bitcoin trades around $61,672 with only roughly 3.5 days remaining in November, requiring an exceptionally steep upward move of over 13% with no major immediate catalysts.",
-        "summary_de": "Bitcoin müsste innerhalb der verbleibenden Tage im November um mehr als 13 Prozent auf 70.000 Dollar steigen, was angesichts des aktuellen Kurses und der kurzen Restlaufzeit extrem unwahrscheinlich ist.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $61,672.10 (24h range: $59,850.00 - $62,139.10, 30d realized annualized vol: ~49%).\nDistance from live spot to $70,000.00: +13.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.8d (1-sigma move = +/-5.0%, distance = 2.55 sigma): Gaussian one-touch ('dip/reach/hi"
       }
     }
   ],
@@ -4073,6 +4086,18 @@
   ],
   "recent_runs": [
     {
+      "id": 292,
+      "ts": "2026-11-27T13:11:14.646778+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1151,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.7,
+      "errors": []
+    },
+    {
       "id": 291,
       "ts": "2026-11-27T13:06:30.643015+00:00",
       "dry_run": 0,
@@ -4298,18 +4323,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 49.45,
-      "errors": []
-    },
-    {
-      "id": 272,
-      "ts": "2026-11-27T11:26:06.226905+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1149,
-      "candidates_found": 17,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 38.94,
       "errors": []
     }
   ]
