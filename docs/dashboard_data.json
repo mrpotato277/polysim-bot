@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T07:01:46.506908+00:00",
+  "generated_at": "2026-11-28T07:06:20.612538+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10759.69,
-    "reconciled_equity_usd": 10759.69,
+    "equity_usd": 10856.9,
+    "reconciled_equity_usd": 10856.9,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4384.36,
-    "deployed_pct": 40.75,
-    "total_pnl_usd": 759.69,
-    "total_pnl_pct": 7.6,
-    "unrealized_pnl_usd": 232.09,
+    "positions_value_usd": 4481.57,
+    "deployed_pct": 41.28,
+    "total_pnl_usd": 856.9,
+    "total_pnl_pct": 8.57,
+    "unrealized_pnl_usd": 329.3,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 341,
+    "total_forecasts": 343,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "politics": 2253.74,
-    "crypto": 1385.21,
+    "crypto": 1482.42,
     "geopolitics": 621.32,
     "markets": 124.09
   },
@@ -3848,6 +3848,13 @@
       "cash": 6375.33,
       "deployed_pct": 40.75,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T07:06:20.282387+00:00",
+      "equity": 10856.9,
+      "cash": 6375.33,
+      "deployed_pct": 41.28,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3873,9 +3880,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.285,
-      "current_value": 1385.21,
-      "unrealized_pnl": 621.4,
+      "current_price": 0.305,
+      "current_value": 1482.42,
+      "unrealized_pnl": 718.61,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3974,6 +3981,63 @@
   ],
   "recent_forecasts": [
     {
+      "id": 343,
+      "ts": "2026-11-28T07:06:20.280037+00:00",
+      "market_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
+      "question": "US x Iran Effective Ceasefire by November 30?",
+      "category": "geopolitics",
+      "end_date": "2026-11-30T20:29:00+00:00",
+      "market_price": "0.7850",
+      "p_blind": "0.0100",
+      "p_blended": "0.3676",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.4224",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
+        "base_rate": 0.05,
+        "bull_case": "Sudden diplomatic breakthroughs or secret back-channel negotiations could lead to a rapidly implemented temporary cessation of hostilities.",
+        "bear_case": "Current geopolitical tensions are high, no active signals or reports of impending ceasefires exist, and the 48-hour deadline makes an agreement virtually impossible.",
+        "summary_de": "Angesichts der extrem kurzen verbleibenden Frist und fehlender diplomatischer Berichte ist ein effektiver Waffenstillstand bis Ende November äußerst unwahrscheinlich.",
+        "news_used": []
+      }
+    },
+    {
+      "id": 342,
+      "ts": "2026-11-28T07:06:19.012697+00:00",
+      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
+      "question": "Will Bitcoin dip to $52,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0410",
+      "p_blind": "0.0100",
+      "p_blended": "0.0265",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0155",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
+        "base_rate": 0.05,
+        "bull_case": "Crypto markets are notoriously volatile, and unexpected macro shocks, liquidations, or flash crashes could theoretically bridge an 11.8% gap in the remaining few days of November.",
+        "bear_case": "Bitcoin is currently trading near $59,536, requiring a sharp drop of over 11.8% in less than 3 days, which exceeds standard statistical expectations given current volatility levels.",
+        "summary_de": "Angesichts des aktuellen Kurses von rund 59.500 USD und des engen Zeitfensters bis Monatsende ist ein Rücksetzer um fast 12 Prozent statistisch sehr unwahrscheinlich.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,536.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $52,500.00: -11.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.1%, distance = 3.07 sigma): Gaussian one-touch ('dip/reach/hi"
+      }
+    },
+    {
       "id": 341,
       "ts": "2026-11-28T06:51:20.506197+00:00",
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -4021,7 +4085,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T07:05:35.298696+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4056,7 +4120,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:44.245763+00:00",
+      "last_checked_ts": "2026-11-28T07:05:35.742422+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4121,7 +4185,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.848057+00:00",
+      "last_checked_ts": "2026-11-28T07:05:35.298696+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
@@ -4213,7 +4277,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.848057+00:00",
+      "last_checked_ts": "2026-11-28T07:05:35.298696+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -4419,7 +4483,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.432034+00:00",
+      "last_checked_ts": "2026-11-28T07:05:34.763975+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract for November; checks if BTC hits $57,500 at any point during November 2026.",
@@ -4587,7 +4651,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.568839+00:00",
+      "last_checked_ts": "2026-11-28T07:05:34.895893+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, was durch offizielle Amtseinführung oder Regierungsbildung nach den aktuellen Wahlen eindeutig entschieden wird.",
@@ -4622,7 +4686,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.678011+00:00",
+      "last_checked_ts": "2026-11-28T07:05:35.045137+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India, as indicated by live score reports.",
@@ -4657,7 +4721,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.678011+00:00",
+      "last_checked_ts": "2026-11-28T07:05:35.045137+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -4721,7 +4785,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:45:47.106953+00:00",
+      "last_checked_ts": "2026-11-28T07:05:34.342493+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es wird die Gesamtzahl der Tweets von Elon Musk im angegebenen Zeitraum auf X gezählt, wobei Retweets und Antworten je nach Plattformdefinition einfließen können.",
@@ -4730,76 +4794,6 @@
         "bear_case": "220 bis 239 Tweets in 8 Tagen entspricht einem Schnitt von 27 bis 30 Tweets pro Tag, was über seinem langfristigen Durchschnitt von meist um die 15-25 Tweets liegt.",
         "summary_de": "Da der geforderte Durchschnitt von rund 28 Tweets pro Tag über dem typischen Aktivitätsniveau von Elon Musk liegt, erscheint die Wahrscheinlichkeit für diesen spezifischen Bereich moderat.",
         "news_used": []
-      }
-    },
-    {
-      "id": 318,
-      "ts": "2026-11-28T01:16:26.159730+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8450",
-      "p_blind": "0.3500",
-      "p_blended": "0.6618",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1782",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.848057+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Prüfung ob ein formeller Waffenstillstand zwischen Israel und dem Iran vorliegt oder ob anhaltende Scharmützel als Waffenstillstandsbruch gewertet werden.",
-        "base_rate": 0.4,
-        "bull_case": "Die diplomatischen Bemühungen und die bisherige Vermeidung eines direkten totalen Krieges könnten das fragile Arrangement bis Mitte Dezember halten.",
-        "bear_case": "Aktuelle Berichte über iranische Drohungen und israelische Debatten über präventive Schläge zeigen hohe Spannungen und das Risiko plötzlicher Eskalationen.",
-        "summary_de": "Angesichts anhaltender iranischer Drohungen und interner israelischer Debatten über mögliche Militärschläge ist das Risiko eines Scheiterns des Waffenstillstands vor dem 15. Dezember erheblich.",
-        "news_used": [
-          "Iran issues new threats as war stalemate drags on - KABB",
-          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
-          "Evening recap: Aoun, Salam propose extending UNIFIL mandate; Kuwait summons Iranian ambassador; Khalil al-Hayya’s son survives assassination",
-          "Black Friday shopping: What to buy now and what can wait - NBC 15 WPMI",
-          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
-          "Israel divided over whether to strike Iran without US backing - The Arab Weekly"
-        ]
-      }
-    },
-    {
-      "id": 317,
-      "ts": "2026-11-28T01:06:17.839026+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1205",
-      "p_blind": "0.5000",
-      "p_blended": "0.2400",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1200",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:50:43.568839+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing snap election.",
-        "base_rate": 0.45,
-        "bull_case": "Sanchez's late mobilization efforts and strong base support could enable him to piece together a coalition or win the election outright.",
-        "bear_case": "Polling consistently shows a strong challenge from the right-wing opposition, making his path to retaining the premiership uncertain.",
-        "summary_de": "Da die spanischen Wahlen unmittelbar bevorstehen und das Rennen hart umkämpft ist, bleibt der Ausgang für Pedro Sánchez äußerst offen.",
-        "news_used": [
-          "Spain's Sanchez makes final appeal to voters before election - DW.com",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Pedro Sánchez Says He Can’t Conceive Losing Ahead of Spain’s Snap Election: 12 outlets compared - NewsCord",
-          "Spain Elections - Goshen News",
-          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias"
-        ]
       }
     }
   ],
@@ -5767,6 +5761,18 @@
   ],
   "recent_runs": [
     {
+      "id": 500,
+      "ts": "2026-11-28T07:06:20.283181+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1222,
+      "candidates_found": 13,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 47.62,
+      "errors": []
+    },
+    {
       "id": 499,
       "ts": "2026-11-28T07:01:46.148215+00:00",
       "dry_run": 0,
@@ -5992,18 +5998,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 37.39,
-      "errors": []
-    },
-    {
-      "id": 480,
-      "ts": "2026-11-28T05:21:31.093467+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1129,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 55.1,
       "errors": []
     }
   ]
