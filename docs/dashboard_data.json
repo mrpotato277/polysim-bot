@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T15:56:20.636053+00:00",
+  "generated_at": "2026-11-28T16:01:54.203304+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11260.44,
-    "reconciled_equity_usd": 11260.44,
+    "equity_usd": 11211.83,
+    "reconciled_equity_usd": 11211.83,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2017.22,
-    "deployed_pct": 17.91,
-    "total_pnl_usd": 1260.44,
-    "total_pnl_pct": 12.6,
-    "unrealized_pnl_usd": -22.93,
+    "positions_value_usd": 1968.61,
+    "deployed_pct": 17.56,
+    "total_pnl_usd": 1211.83,
+    "total_pnl_pct": 12.12,
+    "unrealized_pnl_usd": -71.54,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,10 +32,10 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 911.33,
+    "crypto": 862.72,
     "geopolitics": 535.62,
     "politics": 455.49,
-    "other": 114.78
+    "markets": 114.78
   },
   "equity_curve": [
     {
@@ -151,13 +151,6 @@
       "equity": 9228.77,
       "cash": 9228.77,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T21:21:17.804310+00:00",
-      "equity": 9925.07,
-      "cash": 8091.18,
-      "deployed_pct": 11.46,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T21:26:10.888714+00:00",
@@ -3903,6 +3896,19 @@
       "cash": 9243.22,
       "deployed_pct": 17.91,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T16:00:00+00:00",
+      "equity": 11211.84,
+      "cash": 11211.84,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T16:01:53.759588+00:00",
+      "equity": 11211.83,
+      "cash": 9243.22,
+      "deployed_pct": 17.56,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3913,9 +3919,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.375,
-      "current_value": 911.33,
-      "unrealized_pnl": 529.43,
+      "current_price": 0.355,
+      "current_value": 862.72,
+      "unrealized_pnl": 480.82,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3969,7 +3975,7 @@
     {
       "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
       "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "other",
+      "category": "markets",
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
@@ -4194,7 +4200,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.848012+00:00",
+      "last_checked_ts": "2026-11-28T16:00:57.719685+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Counts total tweets and replies by Elon Musk on X within the strict date range specified.",
@@ -4439,7 +4445,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.951997+00:00",
+      "last_checked_ts": "2026-11-28T16:00:57.912218+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation of the exact root cause of the FAA ground stop.",
@@ -4502,7 +4508,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:45:46.797910+00:00",
+      "last_checked_ts": "2026-11-28T16:00:59.591729+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard Polymarket crypto spot price touch rule for November.",
@@ -4533,7 +4539,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:42.068774+00:00",
+      "last_checked_ts": "2026-11-28T16:00:58.099319+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve raises its target federal funds rate at any FOMC meeting in 2026. Deadline is Dec 10, 2026.",
@@ -5780,6 +5786,18 @@
   ],
   "recent_runs": [
     {
+      "id": 604,
+      "ts": "2026-11-28T16:01:53.761321+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1174,
+      "candidates_found": 12,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 57.87,
+      "errors": []
+    },
+    {
       "id": 603,
       "ts": "2026-11-28T15:56:20.327986+00:00",
       "dry_run": 0,
@@ -6005,18 +6023,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 35.75,
-      "errors": []
-    },
-    {
-      "id": 584,
-      "ts": "2026-11-28T14:21:29.218391+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1171,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 50.13,
       "errors": []
     }
   ]
