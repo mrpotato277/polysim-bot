@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T05:46:29.988230+00:00",
+  "generated_at": "2026-11-28T05:51:26.520138+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10847.05,
-    "reconciled_equity_usd": 10847.05,
+    "equity_usd": 10807.08,
+    "reconciled_equity_usd": 10807.08,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4471.72,
-    "deployed_pct": 41.23,
-    "total_pnl_usd": 847.05,
-    "total_pnl_pct": 8.47,
-    "unrealized_pnl_usd": 319.45,
+    "positions_value_usd": 4431.75,
+    "deployed_pct": 41.01,
+    "total_pnl_usd": 807.08,
+    "total_pnl_pct": 8.07,
+    "unrealized_pnl_usd": 279.48,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2234.13,
-    "crypto": 1433.82,
+    "politics": 2242.77,
+    "crypto": 1385.21,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -3731,6 +3731,13 @@
       "cash": 6375.33,
       "deployed_pct": 41.23,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T05:51:26.148138+00:00",
+      "equity": 10807.08,
+      "cash": 6375.33,
+      "deployed_pct": 41.01,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3756,9 +3763,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.295,
-      "current_value": 1433.82,
-      "unrealized_pnl": 670.01,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3786,9 +3793,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1195,
-      "current_value": 212.44,
-      "unrealized_pnl": -8.0,
+      "current_price": 0.118,
+      "current_value": 209.77,
+      "unrealized_pnl": -10.67,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3831,9 +3838,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.565,
-      "current_value": 638.86,
-      "unrealized_pnl": -46.55,
+      "current_price": 0.575,
+      "current_value": 650.17,
+      "unrealized_pnl": -35.24,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3873,7 +3880,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:35:34.275835+00:00",
+      "last_checked_ts": "2026-11-28T05:50:42.814960+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -3902,7 +3909,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:35:36.206395+00:00",
+      "last_checked_ts": "2026-11-28T05:50:44.450844+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
@@ -4000,7 +4007,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:35:34.822884+00:00",
+      "last_checked_ts": "2026-11-28T05:50:43.629221+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract verified via major spot exchange oracle before November 30, 2026.",
@@ -4031,7 +4038,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:35:36.004312+00:00",
+      "last_checked_ts": "2026-11-28T05:50:44.307055+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -4409,7 +4416,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:25:33.921068+00:00",
+      "last_checked_ts": "2026-11-28T05:50:42.632078+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
@@ -4564,7 +4571,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:35:36.004312+00:00",
+      "last_checked_ts": "2026-11-28T05:50:44.307055+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -5648,6 +5655,18 @@
   ],
   "recent_runs": [
     {
+      "id": 485,
+      "ts": "2026-11-28T05:51:26.150530+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1163,
+      "candidates_found": 11,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 45.36,
+      "errors": []
+    },
+    {
       "id": 484,
       "ts": "2026-11-28T05:46:29.573519+00:00",
       "dry_run": 0,
@@ -5873,18 +5892,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 56.55,
-      "errors": []
-    },
-    {
-      "id": 465,
-      "ts": "2026-11-28T03:56:35.656074+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1257,
-      "candidates_found": 19,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 57.43,
       "errors": []
     }
   ]
