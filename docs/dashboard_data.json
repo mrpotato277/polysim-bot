@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:16:26.441575+00:00",
+  "generated_at": "2026-11-28T01:21:34.527832+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10402.05,
-    "reconciled_equity_usd": 10402.05,
+    "equity_usd": 10327.46,
+    "reconciled_equity_usd": 10327.46,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4026.72,
-    "deployed_pct": 38.71,
-    "total_pnl_usd": 402.05,
-    "total_pnl_pct": 4.02,
-    "unrealized_pnl_usd": -125.55,
+    "positions_value_usd": 3952.13,
+    "deployed_pct": 38.27,
+    "total_pnl_usd": 327.46,
+    "total_pnl_pct": 3.27,
+    "unrealized_pnl_usd": -200.14,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2259.66,
-    "crypto": 947.78,
+    "politics": 2282.28,
+    "crypto": 850.57,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3364,6 +3364,13 @@
       "cash": 6375.33,
       "deployed_pct": 38.71,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T01:21:34.117113+00:00",
+      "equity": 10327.46,
+      "cash": 6375.33,
+      "deployed_pct": 38.27,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3389,9 +3396,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.195,
-      "current_value": 947.78,
-      "unrealized_pnl": 183.97,
+      "current_price": 0.175,
+      "current_value": 850.57,
+      "unrealized_pnl": 86.76,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3464,9 +3471,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.535,
-      "current_value": 604.94,
-      "unrealized_pnl": -80.47,
+      "current_price": 0.555,
+      "current_value": 627.56,
+      "unrealized_pnl": -57.85,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3604,7 +3611,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
+      "last_checked_ts": "2026-11-28T01:20:43.745312+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -3906,7 +3913,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
+      "last_checked_ts": "2026-11-28T01:20:43.745312+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain.",
@@ -4046,7 +4053,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
+      "last_checked_ts": "2026-11-28T01:20:43.745312+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung bestimmt wird.",
@@ -4221,7 +4228,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
+      "last_checked_ts": "2026-11-28T01:20:43.745312+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain after the current political cycle or election process.",
@@ -5309,6 +5316,18 @@
   ],
   "recent_runs": [
     {
+      "id": 436,
+      "ts": "2026-11-28T01:21:34.118406+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1223,
+      "candidates_found": 18,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 54.61,
+      "errors": []
+    },
+    {
       "id": 435,
       "ts": "2026-11-28T01:16:26.163214+00:00",
       "dry_run": 0,
@@ -5534,18 +5553,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 61.37,
-      "errors": []
-    },
-    {
-      "id": 416,
-      "ts": "2026-11-27T23:36:14.133526+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1170,
-      "candidates_found": 22,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 41.16,
       "errors": []
     }
   ]
