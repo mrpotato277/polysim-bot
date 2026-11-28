@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T02:46:19.813315+00:00",
+  "generated_at": "2026-11-28T02:51:28.874771+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10566.2,
-    "reconciled_equity_usd": 10566.2,
+    "equity_usd": 10622.89,
+    "reconciled_equity_usd": 10622.89,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4190.87,
-    "deployed_pct": 39.66,
-    "total_pnl_usd": 566.2,
-    "total_pnl_pct": 5.66,
-    "unrealized_pnl_usd": 38.6,
+    "positions_value_usd": 4247.56,
+    "deployed_pct": 39.98,
+    "total_pnl_usd": 622.89,
+    "total_pnl_pct": 6.23,
+    "unrealized_pnl_usd": 95.29,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 327,
+    "total_forecasts": 328,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2293.51,
-    "crypto": 1093.59,
+    "politics": 2301.6,
+    "crypto": 1142.19,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -3489,6 +3489,13 @@
       "cash": 6375.33,
       "deployed_pct": 39.66,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T02:51:28.526556+00:00",
+      "equity": 10622.89,
+      "cash": 6375.33,
+      "deployed_pct": 39.98,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3514,9 +3521,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.225,
-      "current_value": 1093.59,
-      "unrealized_pnl": 329.78,
+      "current_price": 0.235,
+      "current_value": 1142.19,
+      "unrealized_pnl": 378.38,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3559,9 +3566,9 @@
       "outcome": "Yes",
       "quantity": 809.16,
       "avg_entry_price": 0.26,
-      "current_price": 0.265,
-      "current_value": 214.43,
-      "unrealized_pnl": 4.05,
+      "current_price": 0.275,
+      "current_value": 222.52,
+      "unrealized_pnl": 12.14,
       "p_yes": 0.3132,
       "p_blended": 0.3132,
       "edge_net": 0.0532,
@@ -3615,6 +3622,38 @@
   ],
   "recent_forecasts": [
     {
+      "id": 328,
+      "ts": "2026-11-28T02:51:28.524260+00:00",
+      "market_id": "0x68f425a37a2bf693d43de418335b00841af699ef37cc5cb6634c83432c6541cd",
+      "question": "Will Bitcoin dip to $57,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.2850",
+      "p_blind": "0.4200",
+      "p_blended": "0.3330",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0530",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price-touch contract for November; checks if BTC hits $57,500 at any point during November 2026.",
+        "base_rate": 0.35,
+        "bull_case": "Bitcoin is currently trading near $59,900 and has a 24h low of $58,728; with only a few days left in November, a sudden 4% downward volatility spike or flash crash could easily touch the $57,500 threshold.",
+        "bear_case": "BTC has rebounded to around $60,600 recently, remaining comfortably above the $57,500 level with decreasing time remaining in the month.",
+        "summary_de": "Bitcoin handelt nahe der Marke von 60.000 US-Dollar, ist jedoch aufgrund historischer Volatilität und eines Abstands von nur vier Prozent zum Zielkurs gefährdet, die Schwelle von 57.500 US-Dollar noch im Laufe des Novembers zu berühren.",
+        "news_used": [
+          "Bitcoin, Ethereum and the Best Crypto Presale to Buy in 2026: Why Are Quiet Wallets Taking 10,000 BTC? - openPR.com",
+          "Bitcoin rebounds to $60,600 as DeFi and blockch... - Pluang"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,902.70 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $57,500.00: -4.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.1d (1-sigma move = +/-4.2%, distance = 0.97 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
       "id": 327,
       "ts": "2026-11-28T02:26:15.925160+00:00",
       "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
@@ -3631,7 +3670,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:30:53.319662+00:00",
+      "last_checked_ts": "2026-11-28T02:50:36.939370+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current price is ~$83.08 with only ~3 days left in the month.",
@@ -3667,7 +3706,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:30:54.646656+00:00",
+      "last_checked_ts": "2026-11-28T02:50:38.048253+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -3702,7 +3741,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:30:53.319662+00:00",
+      "last_checked_ts": "2026-11-28T02:50:36.939370+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether WTI Crude Oil hits $90 at any point during November 2026 based on standard market pricing.",
@@ -3738,7 +3777,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:30:53.319662+00:00",
+      "last_checked_ts": "2026-11-28T02:50:36.939370+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether WTI spot/futures touch $90.00 or higher during November 2026.",
@@ -4027,7 +4066,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:25:39.619672+00:00",
+      "last_checked_ts": "2026-11-28T02:50:36.282781+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -4062,7 +4101,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:30:54.098297+00:00",
+      "last_checked_ts": "2026-11-28T02:50:37.569994+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
@@ -4329,7 +4368,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:25:39.619672+00:00",
+      "last_checked_ts": "2026-11-28T02:50:36.282781+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain.",
@@ -4414,41 +4453,6 @@
           "Gold price rebounds above $3,660 as tech stocks recover despite Fed rate hike fears - Equiti Global",
           "Yen Hovers Near 159 as Thin Holiday Trading Meets Fresh Fed Rate-Hike Bets - BigGo Finance",
           "Gold stabilizes at $3,567 per ounce after falling to a 15-month low - Українські Національні Новини (УНН)"
-        ]
-      }
-    },
-    {
-      "id": 303,
-      "ts": "2026-11-27T23:46:42.056017+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8450",
-      "p_blind": "0.4500",
-      "p_blended": "0.7108",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1292",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:35:31.969767+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Es muss klar definiert sein, was einen offiziellen Bruch des Waffenstillstands zwischen Israel und Iran bis zum 15. Dezember darstellt (z.B. direkte militärische Schläge).",
-        "base_rate": 0.4,
-        "bull_case": "Bestehende diplomatische Bemühungen und internationale Druckmittel könnten einen erneuten direkten Schlagabtausch bis Mitte Dezember verhindern.",
-        "bear_case": "Aktuelle Berichte über israelische Überlegungen zu einem Angriff auf Iran und anhaltende regionale Spannungen erhöhen das Risiko einer Eskalation vor dem Stichtag.",
-        "summary_de": "Trotz anhaltender diplomatischer Bemühungen bleibt die Lage zwischen Israel und Iran angespannt, wobei Berichte über mögliche israelische Militärschläge das Risiko eines Bruchs des Waffenstillstands bis Mitte Dezember erhöhen.",
-        "news_used": [
-          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
-          "Evening recap: Aoun, Salam propose extending UNIFIL mandate; Kuwait summons Iranian ambassador; Khalil al-Hayya’s son survives assassination",
-          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
-          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
-          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M",
-          "Israeli airstrikes destroy 5 residential buildings in Gaza City - Yeni Safak English"
         ]
       }
     }
@@ -5417,6 +5421,18 @@
   ],
   "recent_runs": [
     {
+      "id": 453,
+      "ts": "2026-11-28T02:51:28.527349+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1115,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 54.16,
+      "errors": []
+    },
+    {
       "id": 452,
       "ts": "2026-11-28T02:46:19.548719+00:00",
       "dry_run": 0,
@@ -5642,18 +5658,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 116.26,
-      "errors": []
-    },
-    {
-      "id": 433,
-      "ts": "2026-11-28T01:06:17.840742+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1223,
-      "candidates_found": 19,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 40.49,
       "errors": []
     }
   ]
