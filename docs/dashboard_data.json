@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T15:51:19.890345+00:00",
+  "generated_at": "2026-11-28T15:56:20.636053+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11211.83,
-    "reconciled_equity_usd": 11211.83,
+    "equity_usd": 11260.44,
+    "reconciled_equity_usd": 11260.44,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 1968.61,
-    "deployed_pct": 17.56,
-    "total_pnl_usd": 1211.83,
-    "total_pnl_pct": 12.12,
-    "unrealized_pnl_usd": -71.54,
+    "positions_value_usd": 2017.22,
+    "deployed_pct": 17.91,
+    "total_pnl_usd": 1260.44,
+    "total_pnl_pct": 12.6,
+    "unrealized_pnl_usd": -22.93,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 862.72,
+    "crypto": 911.33,
     "geopolitics": 535.62,
     "politics": 455.49,
     "other": 114.78
@@ -151,13 +151,6 @@
       "equity": 9228.77,
       "cash": 9228.77,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T21:16:07.915144+00:00",
-      "equity": 9933.68,
-      "cash": 8091.18,
-      "deployed_pct": 11.54,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T21:21:17.804310+00:00",
@@ -3903,6 +3896,13 @@
       "cash": 9243.22,
       "deployed_pct": 17.56,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T15:56:20.326112+00:00",
+      "equity": 11260.44,
+      "cash": 9243.22,
+      "deployed_pct": 17.91,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3913,9 +3913,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.355,
-      "current_value": 862.72,
-      "unrealized_pnl": 480.82,
+      "current_price": 0.375,
+      "current_value": 911.33,
+      "unrealized_pnl": 529.43,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -4035,7 +4035,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.033905+00:00",
+      "last_checked_ts": "2026-11-28T15:55:35.631155+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Monatsendabwicklung für November 2026, klare Preisberührung.",
@@ -4064,7 +4064,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.469447+00:00",
+      "last_checked_ts": "2026-11-28T15:55:36.197536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming whether an Israel-Iran ceasefire persists continuously through December 15, subject to precise definitions of ceasefire status.",
@@ -4099,7 +4099,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:35:39.962623+00:00",
+      "last_checked_ts": "2026-11-28T15:55:34.188095+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Monatsende November 2026, eindeutiger Tiefstkurs während des Monats.",
@@ -4128,7 +4128,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.469447+00:00",
+      "last_checked_ts": "2026-11-28T15:55:36.197536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A ceasefire must formally hold through December 15; ambiguous low-level skirmishes or proxy attacks could complicate definition of 'ceasefire continues'.",
@@ -4159,7 +4159,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.469447+00:00",
+      "last_checked_ts": "2026-11-28T15:55:36.197536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if the Israel-Iran ceasefire continues through December 15, 2026. Resolution depends on whether active hostilities resume before the deadline.",
@@ -4222,7 +4222,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.236186+00:00",
+      "last_checked_ts": "2026-11-28T15:55:35.907604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England über Zinserhöhungen im Dezember 2026.",
@@ -4257,7 +4257,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:40.655011+00:00",
+      "last_checked_ts": "2026-11-28T15:55:35.224253+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Counts total tweets and replies on Elon Musk's official X account within the exact specified date range.",
@@ -4285,7 +4285,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.469447+00:00",
+      "last_checked_ts": "2026-11-28T15:55:36.197536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires verifying whether a formal ceasefire remains intact through the exact deadline of December 15, 2026.",
@@ -4320,7 +4320,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.635776+00:00",
+      "last_checked_ts": "2026-11-28T15:55:36.330868+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by the deadline, which is tightly defined and hard to verify if unofficial.",
@@ -4348,7 +4348,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.469447+00:00",
+      "last_checked_ts": "2026-11-28T15:55:36.197536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming that the ceasefire officially persists continuously through December 15 without a formal resumption of hostilities.",
@@ -4467,7 +4467,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.469447+00:00",
+      "last_checked_ts": "2026-11-28T15:55:36.197536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining the precise start and continuation criteria of an Israel-Iran ceasefire by December 15, 2026.",
@@ -4561,7 +4561,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:35:40.329997+00:00",
+      "last_checked_ts": "2026-11-28T15:55:34.644721+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price check against a specific fiat threshold at a precise timestamp.",
@@ -4660,7 +4660,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.236186+00:00",
+      "last_checked_ts": "2026-11-28T15:55:35.907604+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
@@ -4695,7 +4695,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.033905+00:00",
+      "last_checked_ts": "2026-11-28T15:55:35.631155+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4727,7 +4727,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.236186+00:00",
+      "last_checked_ts": "2026-11-28T15:55:35.907604+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England nach der Dezembersitzung 2026 hinsichtlich einer Zinserhöhung um 25 Basispunkte.",
@@ -4762,7 +4762,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:35:40.491589+00:00",
+      "last_checked_ts": "2026-11-28T15:55:34.824856+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official FOMC rate decision following the December 2026 meeting.",
@@ -5780,6 +5780,18 @@
   ],
   "recent_runs": [
     {
+      "id": 603,
+      "ts": "2026-11-28T15:56:20.327986+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1259,
+      "candidates_found": 13,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 47.61,
+      "errors": []
+    },
+    {
       "id": 602,
       "ts": "2026-11-28T15:51:19.641763+00:00",
       "dry_run": 0,
@@ -6005,18 +6017,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 50.13,
-      "errors": []
-    },
-    {
-      "id": 583,
-      "ts": "2026-11-28T14:16:23.184413+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1172,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 47.71,
       "errors": []
     }
   ]
