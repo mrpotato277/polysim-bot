@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T12:01:49.441508+00:00",
+  "generated_at": "2026-11-28T12:06:12.396151+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11314.39,
-    "reconciled_equity_usd": 11314.39,
+    "equity_usd": 11316.17,
+    "reconciled_equity_usd": 11316.17,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3189.06,
-    "deployed_pct": 28.19,
-    "total_pnl_usd": 1314.39,
-    "total_pnl_pct": 13.14,
-    "unrealized_pnl_usd": 98.71,
+    "positions_value_usd": 3190.84,
+    "deployed_pct": 28.2,
+    "total_pnl_usd": 1316.17,
+    "total_pnl_pct": 13.16,
+    "unrealized_pnl_usd": 100.49,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 355,
+    "total_forecasts": 356,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "crypto": 2017.06,
     "geopolitics": 621.32,
-    "politics": 435.9,
+    "politics": 437.68,
     "markets": 114.78
   },
   "equity_curve": [
@@ -127,13 +127,6 @@
       "equity": 9962.09,
       "cash": 9962.09,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T17:01:22.739295+00:00",
-      "equity": 9962.1,
-      "cash": 8998.81,
-      "deployed_pct": 9.67,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T17:06:02.478966+00:00",
@@ -3885,6 +3878,13 @@
       "cash": 8125.33,
       "deployed_pct": 28.19,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T12:06:12.165192+00:00",
+      "equity": 11316.17,
+      "cash": 8125.33,
+      "deployed_pct": 28.2,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3925,9 +3925,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1135,
-      "current_value": 201.77,
-      "unrealized_pnl": -18.67,
+      "current_price": 0.1145,
+      "current_value": 203.55,
+      "unrealized_pnl": -16.89,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3980,6 +3980,37 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 356,
+      "ts": "2026-11-28T12:06:12.162967+00:00",
+      "market_id": "0x5eb5d77d8607ce8b2859fb059e07859164b5096fe84c7b181c3ce034b19d7a5b",
+      "question": "Will Ethereum reach $1,800 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0900",
+      "p_blind": "0.1200",
+      "p_blended": "0.1009",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard Polymarket crypto spot price touch rule for November.",
+        "base_rate": 0.15,
+        "bull_case": "ETH recently tested the $1,800 resistance zone and crypto markets exhibit high intraday volatility with fat tails.",
+        "bear_case": "ETH spot is currently around $1,651 with only ~2.7 days left in November, requiring a ~9% upward spike in a short timeframe.",
+        "summary_de": "Ethereum handelt kurz vor Monatsende bei rund 1.651 US-Dollar, wodurch ein Erreichen der Marke von 1.800 US-Dollar in den verbleibenden Tagen statistisch unwahrscheinlich ist.",
+        "news_used": [
+          "Ether Tests $1,800 Resistance as Recovery Stays in Descending Channel - www.tokenpost.com"
+        ],
+        "market_data": "ETH/USD live spot (Kraken): $1,651.01 (24h range: $1,632.16 - $1,726.69, 30d realized annualized vol: ~65%).\nDistance from live spot to $1,800.00: +9.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.7d (1-sigma move = +/-5.6%, distance = 1.55 sigma): Gaussian one-touch ('dip/reach/hit') b"
+      }
+    },
     {
       "id": 355,
       "ts": "2026-11-28T12:01:49.164678+00:00",
@@ -4059,7 +4090,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:50:38.578029+00:00",
+      "last_checked_ts": "2026-11-28T12:05:34.315205+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on whether Bitcoin hits or dips to $55,000 in November 2026.",
@@ -4095,7 +4126,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:50:39.088008+00:00",
+      "last_checked_ts": "2026-11-28T12:05:34.763599+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, resolved by spot oracle before December 1, 2026.",
@@ -4284,7 +4315,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:50:39.294742+00:00",
+      "last_checked_ts": "2026-11-28T12:05:34.976795+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current live price is ~$83.08 with only 2 days remaining in November.",
@@ -4355,7 +4386,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:50:38.578029+00:00",
+      "last_checked_ts": "2026-11-28T12:05:34.315205+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $55,000 at any point during November 2026 based on standard exchange aggregates.",
@@ -4417,7 +4448,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:45:44.197016+00:00",
+      "last_checked_ts": "2026-11-28T12:05:34.150494+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
@@ -4641,7 +4672,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:50:38.985787+00:00",
+      "last_checked_ts": "2026-11-28T12:05:34.661764+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
@@ -4739,7 +4770,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:45:43.834724+00:00",
+      "last_checked_ts": "2026-11-28T12:05:33.886910+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract verified via major spot exchange oracle before November 30, 2026.",
@@ -4751,41 +4782,6 @@
           "Bitcoin price predictions for November 23-29: Live Odds - Crypto Briefing"
         ],
         "market_data": "BTC/USD live spot (Kraken): $59,871.60 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $56,000.00: -6.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.1d (1-sigma move = +/-3.5%, distance = 1.94 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 331,
-      "ts": "2026-11-28T03:46:41.445222+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.8850",
-      "p_blind": "0.4500",
-      "p_blended": "0.7501",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:50:38.879922+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
-        "base_rate": 0.4,
-        "bull_case": "Feijóo leads the Partido Popular, which has polled strongly and made a final push appealing to moderate voters, positioning him as a primary contender to form a government.",
-        "bear_case": "Incumbent Pedro Sánchez and progressive allies retain viable coalition paths or alternative parliamentary majorities to secure another term.",
-        "summary_de": "Alberto Núñez Feijóo hat realistische Chancen auf das Amt des Ministerpräsidenten, jedoch hängt der Erfolg von knappen parlament Mehrheiten und Koalitionsdynamiken ab.",
-        "news_used": [
-          "Spain's Sanchez makes final appeal to voters before election - DW.com",
-          "Feijóo appeals to the left despite counting on a right-wing majority: “Lend us your vote to get back to honesty” - EL PAÍS English",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Spanish PM and rivals rally supporters in final pitch for votes",
-          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
-          "Pedro Sánchez confident he can secure another term for Spain’s progressive government - EL PAÍS English"
-        ]
       }
     }
   ],
@@ -5793,6 +5789,18 @@
   ],
   "recent_runs": [
     {
+      "id": 558,
+      "ts": "2026-11-28T12:06:12.166104+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1180,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.75,
+      "errors": []
+    },
+    {
       "id": 557,
       "ts": "2026-11-28T12:01:49.166793+00:00",
       "dry_run": 0,
@@ -6018,18 +6026,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 57.93,
-      "errors": []
-    },
-    {
-      "id": 538,
-      "ts": "2026-11-28T10:16:15.665701+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1165,
-      "candidates_found": 13,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 37.13,
       "errors": []
     }
   ]
