@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T06:36:06.938776+00:00",
+  "generated_at": "2026-11-28T06:41:20.364653+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10637.03,
-    "reconciled_equity_usd": 10637.03,
+    "equity_usd": 10588.43,
+    "reconciled_equity_usd": 10588.43,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4261.7,
-    "deployed_pct": 40.06,
-    "total_pnl_usd": 637.03,
-    "total_pnl_pct": 6.37,
-    "unrealized_pnl_usd": 109.43,
+    "positions_value_usd": 4213.1,
+    "deployed_pct": 39.79,
+    "total_pnl_usd": 588.43,
+    "total_pnl_pct": 5.88,
+    "unrealized_pnl_usd": 60.83,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -33,7 +33,7 @@
   },
   "category_exposure": {
     "politics": 2218.53,
-    "crypto": 1239.4,
+    "crypto": 1190.8,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -3807,6 +3807,13 @@
       "cash": 6375.33,
       "deployed_pct": 40.06,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T06:41:20.128359+00:00",
+      "equity": 10588.43,
+      "cash": 6375.33,
+      "deployed_pct": 39.79,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3832,9 +3839,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.255,
-      "current_value": 1239.4,
-      "unrealized_pnl": 475.59,
+      "current_price": 0.245,
+      "current_value": 1190.8,
+      "unrealized_pnl": 426.99,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -4049,7 +4056,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:20:45.455769+00:00",
+      "last_checked_ts": "2026-11-28T06:40:45.575664+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -4078,7 +4085,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:25:41.421615+00:00",
+      "last_checked_ts": "2026-11-28T06:40:46.648569+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
@@ -4176,7 +4183,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:25:40.379350+00:00",
+      "last_checked_ts": "2026-11-28T06:40:45.992654+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract verified via major spot exchange oracle before November 30, 2026.",
@@ -4207,7 +4214,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:25:41.262251+00:00",
+      "last_checked_ts": "2026-11-28T06:40:46.504660+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -4344,7 +4351,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:25:42.046632+00:00",
+      "last_checked_ts": "2026-11-28T06:40:47.001655+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current price is ~$83.08 with only ~3 days left in the month.",
@@ -4415,7 +4422,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:25:42.046632+00:00",
+      "last_checked_ts": "2026-11-28T06:40:47.001655+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether WTI Crude Oil hits $90 at any point during November 2026 based on standard market pricing.",
@@ -4451,7 +4458,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:25:42.046632+00:00",
+      "last_checked_ts": "2026-11-28T06:40:47.001655+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether WTI spot/futures touch $90.00 or higher during November 2026.",
@@ -4585,7 +4592,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:20:45.287947+00:00",
+      "last_checked_ts": "2026-11-28T06:40:45.423182+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
@@ -4740,7 +4747,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:25:41.262251+00:00",
+      "last_checked_ts": "2026-11-28T06:40:46.504660+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -5723,6 +5730,18 @@
   ],
   "recent_runs": [
     {
+      "id": 495,
+      "ts": "2026-11-28T06:41:20.129550+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1158,
+      "candidates_found": 12,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 35.88,
+      "errors": []
+    },
+    {
       "id": 494,
       "ts": "2026-11-28T06:36:06.520584+00:00",
       "dry_run": 0,
@@ -5948,18 +5967,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 37.73,
-      "errors": []
-    },
-    {
-      "id": 475,
-      "ts": "2026-11-28T04:51:18.258319+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1246,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 41.13,
       "errors": []
     }
   ]
