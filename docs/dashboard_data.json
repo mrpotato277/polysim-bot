@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:21:34.527832+00:00",
+  "generated_at": "2026-11-28T01:26:37.588782+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10327.46,
-    "reconciled_equity_usd": 10327.46,
+    "equity_usd": 10424.67,
+    "reconciled_equity_usd": 10424.67,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 3952.13,
-    "deployed_pct": 38.27,
-    "total_pnl_usd": 327.46,
-    "total_pnl_pct": 3.27,
-    "unrealized_pnl_usd": -200.14,
+    "positions_value_usd": 4049.34,
+    "deployed_pct": 38.84,
+    "total_pnl_usd": 424.67,
+    "total_pnl_pct": 4.25,
+    "unrealized_pnl_usd": -102.93,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 318,
+    "total_forecasts": 320,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "politics": 2282.28,
-    "crypto": 850.57,
+    "crypto": 947.78,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3371,6 +3371,13 @@
       "cash": 6375.33,
       "deployed_pct": 38.27,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T01:26:37.125874+00:00",
+      "equity": 10424.67,
+      "cash": 6375.33,
+      "deployed_pct": 38.84,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3396,9 +3403,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.175,
-      "current_value": 850.57,
-      "unrealized_pnl": 86.76,
+      "current_price": 0.195,
+      "current_value": 947.78,
+      "unrealized_pnl": 183.97,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3496,6 +3503,63 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 320,
+      "ts": "2026-11-28T01:26:37.121771+00:00",
+      "market_id": "0xa2fdb75238670fd4bd0576c3dc34fa873bee3a0e23b1ce72441f1485f3608dc1",
+      "question": "Will Ethereum dip to $1,600 November 23-29?",
+      "category": "crypto",
+      "end_date": "2026-11-30T05:00:00+00:00",
+      "market_price": "0.2450",
+      "p_blind": "0.4800",
+      "p_blended": "0.3002",
+      "confidence": "0.6500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0602",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
+        "base_rate": 0.42,
+        "bull_case": "Mit dem aktuellen Spotpreis von 1.666 USD und einer hohen Volatilität ist ein Rücksetzer um rund 4 % bis zum 29. November statistisch gut erreichbar.",
+        "bear_case": "Die Zeit bis zum Ablauf am 29. November ist extrem kurz (ca. 2 Tage), und der Abstand von 4 % erfordert eine plötzliche Bewegung nach unten, die ohne akuten Katalysator ausbleiben könnte.",
+        "summary_de": "Ethereum ist nur rund vier Prozent von der Marke von 1.600 US-Dollar entfernt, wodurch ein Rücksetzer bei typischer Krypto-Volatilität innerhalb der verbleibenden zwei Tage eine realistische Wahrscheinlichkeit besitzt.",
+        "news_used": [],
+        "market_data": "ETH/USD live spot (Kraken): $1,666.12 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~65%).\nDistance from live spot to $1,600.00: -4.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.1d (1-sigma move = +/-5.0%, distance = 0.81 sigma): Gaussian one-touch ('dip/reach/hit') b"
+      }
+    },
+    {
+      "id": 319,
+      "ts": "2026-11-28T01:26:35.602691+00:00",
+      "market_id": "0x9ab1642765c326fa3d83c5350e53bffd9aef79b66fe29720e0a7aab8b7219861",
+      "question": "Will Elon Musk post 220-239 tweets from November 24 to December 1, 2026?",
+      "category": "politics",
+      "end_date": "2026-12-01T17:00:00+00:00",
+      "market_price": "0.0750",
+      "p_blind": "0.2200",
+      "p_blended": "0.1016",
+      "confidence": "0.6500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Es wird die Gesamtzahl der Tweets von Elon Musk im angegebenen Zeitraum auf X gezählt, wobei Retweets und Antworten je nach Plattformdefinition einfließen können.",
+        "base_rate": 0.25,
+        "bull_case": "Elon Musk tweetet oft in hohem Tempo, wenn er in Kontroversen verwickelt ist oder neue Produktupdates bewirbt, wodurch er den Bereich von 220-239 Tweets in acht Tagen erreichen kann.",
+        "bear_case": "220 bis 239 Tweets in 8 Tagen entspricht einem Schnitt von 27 bis 30 Tweets pro Tag, was über seinem langfristigen Durchschnitt von meist um die 15-25 Tweets liegt.",
+        "summary_de": "Da der geforderte Durchschnitt von rund 28 Tweets pro Tag über dem typischen Aktivitätsniveau von Elon Musk liegt, erscheint die Wahrscheinlichkeit für diesen spezifischen Bereich moderat.",
+        "news_used": []
+      }
+    },
     {
       "id": 318,
       "ts": "2026-11-28T01:16:26.159730+00:00",
@@ -3646,7 +3710,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:10:50.899477+00:00",
+      "last_checked_ts": "2026-11-28T01:25:38.239366+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
@@ -4193,7 +4257,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:10:51.526716+00:00",
+      "last_checked_ts": "2026-11-28T01:25:38.788360+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage betrifft direkt, welche Partei bei der vorgezogenen Parlamentswahl die meisten Sitze gewinnt. Das Ergebnis sollte kurz nach der Wahl am 29. November 2026 feststehen.",
@@ -4263,7 +4327,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:10:50.708746+00:00",
+      "last_checked_ts": "2026-11-28T01:25:38.071824+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether PP and Vox achieve a majority in the Spanish general election held on 29 November 2026.",
@@ -4278,76 +4342,6 @@
           "Spain election: Will Vox be the kingmaker, and will housing decide the vote? - Euronews.com",
           "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
           "Spain elections: Israel’s ‘greatest’ far-right ally in Europe poised to shape next government’s foreign policy - Middle East Eye"
-        ]
-      }
-    },
-    {
-      "id": 295,
-      "ts": "2026-11-27T23:26:16.303334+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2650",
-      "p_blind": "0.3200",
-      "p_blended": "0.2898",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0298",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:10:51.526716+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on which party wins the most seats in the early Spanish general election held on November 29, 2026.",
-        "base_rate": 0.35,
-        "bull_case": "Pedro Sánchez's late mobilization strategy and left-wing voting surges could outperform expectations, defying unfavorable pre-election polls.",
-        "bear_case": "Polls consistently show the conservative opposition leading or tying with momentum, and voter dissatisfaction threatens to unseat Sánchez.",
-        "summary_de": "Trotz Pedro Sánchez' letztem Mobilisierungsversuch deuten Umfragen und aktuelle Berichte darauf hin, dass die PSOE voraussichtlich nicht die meisten Sitze bei der vorgezogenen Wahl gewinnen wird.",
-        "news_used": [
-          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
-          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
-          "Spain’s election could pull Madrid closer to Trump’s Washington - CNBC",
-          "Spain’s Sánchez stood up against Trump. His own voters may be about to bring him down - CNN"
-        ]
-      }
-    },
-    {
-      "id": 294,
-      "ts": "2026-11-27T23:26:14.842851+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1385",
-      "p_blind": "0.4000",
-      "p_blended": "0.2261",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0881",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird; die Auflösung hängt von den offiziellen Regierungsbildungsprozessen ab.",
-        "base_rate": 0.45,
-        "bull_case": "Sánchez zeigt starke Mobilisierung im Endspurt und könnte durch Koalitionsverhandlungen eine Mehrheit sichern, selbst wenn er in Umfragen hinterherhinkt.",
-        "bear_case": "Die Umfragen zeigen den rechten Block vorne, und Sánchez' Rivalen könnten eine stabile Koalition verhindern, wodurch ein anderer Kandidat Ministerpräsident wird.",
-        "summary_de": "Angesichts der anstehenden Parlamentswahlen und umstrittener Umfragewerte bleibt Pedro Sánchez' Verbleib im Amt unsicher, jedoch besteht eine reale Chance auf eine erneute Koalitionsbildung.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
-          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
-          "Spanish PM and rivals rally supporters in final pitch for votes"
         ]
       }
     }
@@ -5316,6 +5310,18 @@
   ],
   "recent_runs": [
     {
+      "id": 437,
+      "ts": "2026-11-28T01:26:37.143579+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1134,
+      "candidates_found": 23,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 61.67,
+      "errors": []
+    },
+    {
       "id": 436,
       "ts": "2026-11-28T01:21:34.118406+00:00",
       "dry_run": 0,
@@ -5541,18 +5547,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 63.69,
-      "errors": []
-    },
-    {
-      "id": 417,
-      "ts": "2026-11-27T23:41:48.382176+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1143,
-      "candidates_found": 20,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 61.37,
       "errors": []
     }
   ]
