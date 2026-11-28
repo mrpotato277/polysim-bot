@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T09:56:28.445189+00:00",
+  "generated_at": "2026-11-28T10:01:43.271033+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10969.7,
-    "reconciled_equity_usd": 10969.7,
+    "equity_usd": 11009.41,
+    "reconciled_equity_usd": 11009.41,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 2844.37,
-    "deployed_pct": 25.93,
-    "total_pnl_usd": 969.7,
-    "total_pnl_pct": 9.7,
-    "unrealized_pnl_usd": -245.98,
+    "positions_value_usd": 2884.08,
+    "deployed_pct": 26.2,
+    "total_pnl_usd": 1009.41,
+    "total_pnl_pct": 10.09,
+    "unrealized_pnl_usd": -206.27,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1628.23,
+    "crypto": 1676.83,
     "geopolitics": 621.32,
-    "politics": 480.04,
+    "politics": 471.15,
     "markets": 114.78
   },
   "equity_curve": [
@@ -115,13 +115,6 @@
       "equity": 9991.86,
       "cash": 9991.86,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T15:06:14.659822+00:00",
-      "equity": 9982.49,
-      "cash": 9054.73,
-      "deployed_pct": 9.29,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T15:11:23.542841+00:00",
@@ -3867,6 +3860,19 @@
       "cash": 8125.33,
       "deployed_pct": 25.93,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T10:00:00+00:00",
+      "equity": 10964.35,
+      "cash": 10964.35,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T10:01:42.950012+00:00",
+      "equity": 11009.41,
+      "cash": 8125.33,
+      "deployed_pct": 26.2,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3877,9 +3883,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.335,
-      "current_value": 1628.23,
-      "unrealized_pnl": 864.42,
+      "current_price": 0.345,
+      "current_value": 1676.83,
+      "unrealized_pnl": 913.02,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3907,9 +3913,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1225,
-      "current_value": 217.77,
-      "unrealized_pnl": -2.67,
+      "current_price": 0.1175,
+      "current_value": 208.88,
+      "unrealized_pnl": -11.56,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3979,7 +3985,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T10:00:59.933214+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, resolved by spot oracle before December 1, 2026.",
@@ -4168,7 +4174,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:45:47.440348+00:00",
+      "last_checked_ts": "2026-11-28T10:01:00.279307+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current live price is ~$83.08 with only 2 days remaining in November.",
@@ -4239,7 +4245,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:40:44.359921+00:00",
+      "last_checked_ts": "2026-11-28T10:00:59.274407+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $55,000 at any point during November 2026 based on standard exchange aggregates.",
@@ -4330,7 +4336,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:45:48.193911+00:00",
+      "last_checked_ts": "2026-11-28T10:01:00.866850+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,500 in November; standard spot price reference applies with clear 2026-12-01 05:00 UTC deadline.",
@@ -4426,7 +4432,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:45:48.901607+00:00",
+      "last_checked_ts": "2026-11-28T10:01:01.450443+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob der Leitzins nach dem Dezember-2026-Treffen unverändert bleibt.",
@@ -4525,7 +4531,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:40:44.945479+00:00",
+      "last_checked_ts": "2026-11-28T10:00:59.760690+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
@@ -4588,7 +4594,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:45:48.743863+00:00",
+      "last_checked_ts": "2026-11-28T10:01:01.271490+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election held on November 29, 2026.",
@@ -4654,7 +4660,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:40:44.706555+00:00",
+      "last_checked_ts": "2026-11-28T10:00:59.608450+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -4689,7 +4695,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:45:48.039073+00:00",
+      "last_checked_ts": "2026-11-28T10:01:00.730319+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official election results and seat counts determining if PP and Vox secure a majority in the Spanish Congress of Deputies following the November 29, 2026 snap election.",
@@ -4724,7 +4730,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T09:45:48.743863+00:00",
+      "last_checked_ts": "2026-11-28T10:01:01.271490+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -5779,6 +5785,18 @@
   ],
   "recent_runs": [
     {
+      "id": 535,
+      "ts": "2026-11-28T10:01:42.951437+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1173,
+      "candidates_found": 13,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 45.11,
+      "errors": []
+    },
+    {
       "id": 534,
       "ts": "2026-11-28T09:56:28.023987+00:00",
       "dry_run": 0,
@@ -6004,18 +6022,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 35.61,
-      "errors": []
-    },
-    {
-      "id": 515,
-      "ts": "2026-11-28T08:21:15.394617+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1239,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 35.66,
       "errors": []
     }
   ]
