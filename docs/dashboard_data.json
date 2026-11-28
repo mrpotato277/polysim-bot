@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T04:11:16.190250+00:00",
+  "generated_at": "2026-11-28T04:16:21.146854+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10468.93,
-    "reconciled_equity_usd": 10469.82,
-    "equity_discrepancy_usd": -0.89,
+    "equity_usd": 10419.44,
+    "reconciled_equity_usd": 10419.44,
+    "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4094.49,
-    "deployed_pct": 39.11,
-    "total_pnl_usd": 468.93,
-    "total_pnl_pct": 4.69,
-    "unrealized_pnl_usd": -57.78,
+    "positions_value_usd": 4044.11,
+    "deployed_pct": 38.81,
+    "total_pnl_usd": 419.44,
+    "total_pnl_pct": 4.19,
+    "unrealized_pnl_usd": -108.16,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2278.83,
-    "crypto": 996.38,
+    "politics": 2277.05,
+    "crypto": 947.78,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3606,6 +3606,13 @@
       "cash": 6375.33,
       "deployed_pct": 39.11,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T04:16:20.814732+00:00",
+      "equity": 10419.44,
+      "cash": 6375.33,
+      "deployed_pct": 38.81,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3631,9 +3638,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.205,
-      "current_value": 996.38,
-      "unrealized_pnl": 232.57,
+      "current_price": 0.195,
+      "current_value": 947.78,
+      "unrealized_pnl": 183.97,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3661,9 +3668,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1185,
-      "current_value": 210.66,
-      "unrealized_pnl": -9.78,
+      "current_price": 0.1175,
+      "current_value": 208.88,
+      "unrealized_pnl": -11.56,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -4192,7 +4199,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:55:41.742711+00:00",
+      "last_checked_ts": "2026-11-28T04:15:36.305566+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
@@ -4518,7 +4525,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:50:42.443087+00:00",
+      "last_checked_ts": "2026-11-28T04:15:34.466901+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the alleged FAA ground stop on November 13.",
@@ -5531,6 +5538,18 @@
   ],
   "recent_runs": [
     {
+      "id": 468,
+      "ts": "2026-11-28T04:16:20.819012+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1113,
+      "candidates_found": 17,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 47.78,
+      "errors": []
+    },
+    {
       "id": 467,
       "ts": "2026-11-28T04:11:15.946542+00:00",
       "dry_run": 0,
@@ -5756,18 +5775,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 39.14,
-      "errors": []
-    },
-    {
-      "id": 448,
-      "ts": "2026-11-28T02:21:38.380282+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1249,
-      "candidates_found": 19,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 57.05,
       "errors": []
     }
   ]
