@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T06:06:06.169930+00:00",
+  "generated_at": "2026-11-28T06:11:31.292397+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10959.43,
-    "reconciled_equity_usd": 10959.43,
+    "equity_usd": 10847.6,
+    "reconciled_equity_usd": 10847.6,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4584.1,
-    "deployed_pct": 41.83,
-    "total_pnl_usd": 959.43,
-    "total_pnl_pct": 9.59,
-    "unrealized_pnl_usd": 431.83,
+    "positions_value_usd": 4472.27,
+    "deployed_pct": 41.23,
+    "total_pnl_usd": 847.6,
+    "total_pnl_pct": 8.48,
+    "unrealized_pnl_usd": 320.0,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 336,
+    "total_forecasts": 337,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2249.31,
-    "crypto": 1531.02,
+    "politics": 2234.68,
+    "crypto": 1433.82,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -3765,6 +3765,13 @@
       "cash": 6375.33,
       "deployed_pct": 41.83,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T06:11:30.978265+00:00",
+      "equity": 10847.6,
+      "cash": 6375.33,
+      "deployed_pct": 41.23,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3790,9 +3797,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.315,
-      "current_value": 1531.02,
-      "unrealized_pnl": 767.21,
+      "current_price": 0.295,
+      "current_value": 1433.82,
+      "unrealized_pnl": 670.01,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3808,10 +3815,10 @@
       "current_price": 0.155,
       "current_value": 664.17,
       "unrealized_pnl": -21.42,
-      "p_yes": 0.6905,
-      "p_blended": 0.3095,
-      "edge_net": 0.1495,
-      "rationale": "Trotz diplomatischer Bemühungen bleiben die Spannungen zwischen Israel und Iran hoch, weshalb ein Fortbestehen der Waffenruhe bis Mitte Dezember fraglich ist."
+      "p_yes": 0.7108,
+      "p_blended": 0.2892,
+      "edge_net": 0.1292,
+      "rationale": "Trotz anhaltender diplomatischer Bemühungen und Mediation bleibt die Sicherheitslage zwischen Israel und dem Iran volatil, was das Risiko eines Waffenstillstandsbruchs bis Mitte Dezember erhöht."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3820,9 +3827,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1185,
-      "current_value": 210.66,
-      "unrealized_pnl": -9.78,
+      "current_price": 0.118,
+      "current_value": 209.77,
+      "unrealized_pnl": -10.67,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3835,9 +3842,9 @@
       "outcome": "Yes",
       "quantity": 809.16,
       "avg_entry_price": 0.26,
-      "current_price": 0.275,
-      "current_value": 222.52,
-      "unrealized_pnl": 12.14,
+      "current_price": 0.265,
+      "current_value": 214.43,
+      "unrealized_pnl": 4.05,
       "p_yes": 0.3193,
       "p_blended": 0.3193,
       "edge_net": 0.0493,
@@ -3865,9 +3872,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.58,
-      "current_value": 655.82,
-      "unrealized_pnl": -29.59,
+      "current_price": 0.575,
+      "current_value": 650.17,
+      "unrealized_pnl": -35.24,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3890,6 +3897,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 337,
+      "ts": "2026-11-28T06:11:30.976444+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8450",
+      "p_blind": "0.4500",
+      "p_blended": "0.7108",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1292",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
+        "base_rate": 0.4,
+        "bull_case": "Trotz anhaltender rhetorischer Spannungen und vereinzelter Konflikte in der Region verhandeln Parteien weiterhin über Mediation, und ein vollständiger Kriegsausbruch wird kurzfristig vermieden.",
+        "bear_case": "Iranische Drohungen und interne Debatten in Israel über Luftschläge deuten auf ein hohes Risiko einer schnellen Eskalation hin, die den Waffenruhe-Status vor dem Stichtag brechen kann.",
+        "summary_de": "Trotz anhaltender diplomatischer Bemühungen und Mediation bleibt die Sicherheitslage zwischen Israel und dem Iran volatil, was das Risiko eines Waffenstillstandsbruchs bis Mitte Dezember erhöht.",
+        "news_used": [
+          "Iran issues new threats as war stalemate drags on - NBC 15 WPMI",
+          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
+          "Black Friday shopping: What to buy now and what can wait - NBC 15 WPMI",
+          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
+          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
+          "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews"
+        ]
+      }
+    },
     {
       "id": 336,
       "ts": "2026-11-28T05:16:36.704866+00:00",
@@ -3936,7 +3978,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:50:44.450844+00:00",
+      "last_checked_ts": "2026-11-28T06:10:41.242906+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
@@ -3999,7 +4041,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:37.122051+00:00",
+      "last_checked_ts": "2026-11-28T06:10:42.912534+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election held on November 29, 2026.",
@@ -4065,7 +4107,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:50:44.307055+00:00",
+      "last_checked_ts": "2026-11-28T06:10:41.045250+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -4100,7 +4142,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:36.434395+00:00",
+      "last_checked_ts": "2026-11-28T06:10:42.144580+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official election results and seat counts determining if PP and Vox secure a majority in the Spanish Congress of Deputies following the November 29, 2026 snap election.",
@@ -4135,7 +4177,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:37.122051+00:00",
+      "last_checked_ts": "2026-11-28T06:10:42.912534+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -4202,7 +4244,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:35.892987+00:00",
+      "last_checked_ts": "2026-11-28T06:10:41.697490+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current price is ~$83.08 with only ~3 days left in the month.",
@@ -4238,7 +4280,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:37.122051+00:00",
+      "last_checked_ts": "2026-11-28T06:10:42.912534+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -4273,7 +4315,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:35.892987+00:00",
+      "last_checked_ts": "2026-11-28T06:10:41.697490+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether WTI Crude Oil hits $90 at any point during November 2026 based on standard market pricing.",
@@ -4309,7 +4351,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:35.892987+00:00",
+      "last_checked_ts": "2026-11-28T06:10:41.697490+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether WTI spot/futures touch $90.00 or higher during November 2026.",
@@ -4598,7 +4640,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:50:44.307055+00:00",
+      "last_checked_ts": "2026-11-28T06:10:41.045250+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -4633,7 +4675,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:55:36.599923+00:00",
+      "last_checked_ts": "2026-11-28T06:10:42.276557+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
@@ -4672,41 +4714,6 @@
         "bull_case": "Pedro Sánchez demonstrates strong late mobilization and historical ability to defy trailing poll numbers to retain power.",
         "bear_case": "Recent news headlines indicate tight polls with the right-wing opposition gaining momentum ahead of the snap election.",
         "summary_de": "Pedro Sánchez kämpft in einer sehr knappen Wahl gegen das konservative Lager, wobei aktuelle Umfragen und Berichte über den Wahlausgang ein offenes Rennen nahelegen.",
-        "news_used": [
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Pedro Sánchez Says He Can’t Conceive Losing Ahead of Spain’s Snap Election: 12 outlets compared - NewsCord",
-          "Spain Elections - Goshen News",
-          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
-          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine"
-        ]
-      }
-    },
-    {
-      "id": 312,
-      "ts": "2026-11-28T00:41:17.875541+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1205",
-      "p_blind": "0.4800",
-      "p_blended": "0.2339",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1139",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T06:01:07.462315+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Evaluates whether Pedro Sánchez becomes the next Prime Minister following the ongoing Spanish election cycle ending around November 2026.",
-        "base_rate": 0.45,
-        "bull_case": "Sánchez demonstrates resilient late-campaign mobilization and historically outperforms pessimistic poll expectations.",
-        "bear_case": "Polls consistently show strong momentum for the political right in Spain, threatening Sánchez's re-election bids.",
-        "summary_de": "Pedro Sánchez kämpft kurz vor den spanischen Wahlen um den Verbleib im Amt, wobei Umfragen ein enges Rennen gegen das rechte Lager zeigen.",
         "news_used": [
           "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
           "Pedro Sánchez Says He Can’t Conceive Losing Ahead of Spain’s Snap Election: 12 outlets compared - NewsCord",
@@ -5682,6 +5689,18 @@
   ],
   "recent_runs": [
     {
+      "id": 489,
+      "ts": "2026-11-28T06:11:30.979329+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1148,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 51.61,
+      "errors": []
+    },
+    {
       "id": 488,
       "ts": "2026-11-28T06:06:05.928218+00:00",
       "dry_run": 0,
@@ -5907,18 +5926,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 56.77,
-      "errors": []
-    },
-    {
-      "id": 469,
-      "ts": "2026-11-28T04:21:46.409094+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1112,
-      "candidates_found": 19,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.29,
       "errors": []
     }
   ]
