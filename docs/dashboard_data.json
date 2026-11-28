@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T12:36:31.470730+00:00",
+  "generated_at": "2026-11-28T12:41:38.610094+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11479.61,
-    "reconciled_equity_usd": 11479.61,
+    "equity_usd": 11491.12,
+    "reconciled_equity_usd": 11491.12,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3354.28,
-    "deployed_pct": 29.22,
-    "total_pnl_usd": 1479.61,
-    "total_pnl_pct": 14.8,
-    "unrealized_pnl_usd": 263.93,
+    "positions_value_usd": 3365.79,
+    "deployed_pct": 29.29,
+    "total_pnl_usd": 1491.12,
+    "total_pnl_pct": 14.91,
+    "unrealized_pnl_usd": 275.44,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 2162.87,
-    "geopolitics": 621.32,
+    "crypto": 2260.08,
+    "geopolitics": 535.62,
     "politics": 455.31,
     "markets": 114.78
   },
@@ -127,13 +127,6 @@
       "equity": 9962.09,
       "cash": 9962.09,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T17:31:12.934308+00:00",
-      "equity": 9965.8,
-      "cash": 8998.81,
-      "deployed_pct": 9.7,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T17:36:23.098681+00:00",
@@ -3885,6 +3878,13 @@
       "cash": 8125.33,
       "deployed_pct": 29.22,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T12:41:38.142086+00:00",
+      "equity": 11491.12,
+      "cash": 8125.33,
+      "deployed_pct": 29.29,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3895,9 +3895,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.445,
-      "current_value": 2162.87,
-      "unrealized_pnl": 1399.06,
+      "current_price": 0.465,
+      "current_value": 2260.08,
+      "unrealized_pnl": 1496.27,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3910,9 +3910,9 @@
       "outcome": "No",
       "quantity": 4284.95,
       "avg_entry_price": 0.16,
-      "current_price": 0.145,
-      "current_value": 621.32,
-      "unrealized_pnl": -64.27,
+      "current_price": 0.125,
+      "current_value": 535.62,
+      "unrealized_pnl": -149.97,
       "p_yes": 0.7211,
       "p_blended": 0.2789,
       "edge_net": 0.1389,
@@ -4060,7 +4060,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:37.261185+00:00",
+      "last_checked_ts": "2026-11-28T12:40:48.088381+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard Polymarket crypto spot price touch rule for November.",
@@ -4511,7 +4511,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:25:35.803462+00:00",
+      "last_checked_ts": "2026-11-28T12:40:50.092061+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
@@ -4706,7 +4706,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:25:34.850633+00:00",
+      "last_checked_ts": "2026-11-28T12:40:49.246371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -5786,6 +5786,18 @@
   ],
   "recent_runs": [
     {
+      "id": 564,
+      "ts": "2026-11-28T12:41:38.143952+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1137,
+      "candidates_found": 14,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 52.42,
+      "errors": []
+    },
+    {
       "id": 563,
       "ts": "2026-11-28T12:36:31.058647+00:00",
       "dry_run": 0,
@@ -6011,18 +6023,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 41.63,
-      "errors": []
-    },
-    {
-      "id": 544,
-      "ts": "2026-11-28T10:46:18.576302+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1266,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 40.27,
       "errors": []
     }
   ]
