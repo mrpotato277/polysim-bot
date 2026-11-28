@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T02:01:57.716323+00:00",
+  "generated_at": "2026-11-28T02:06:12.560442+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10358.13,
-    "reconciled_equity_usd": 10358.13,
+    "equity_usd": 10352.48,
+    "reconciled_equity_usd": 10352.48,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 3982.8,
-    "deployed_pct": 38.45,
-    "total_pnl_usd": 358.13,
-    "total_pnl_pct": 3.58,
-    "unrealized_pnl_usd": -169.47,
+    "positions_value_usd": 3977.15,
+    "deployed_pct": 38.42,
+    "total_pnl_usd": 352.48,
+    "total_pnl_pct": 3.52,
+    "unrealized_pnl_usd": -175.12,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 325,
+    "total_forecasts": 326,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2279.86,
+    "politics": 2274.21,
     "crypto": 899.17,
     "geopolitics": 664.17,
     "markets": 139.6
@@ -3433,6 +3433,13 @@
       "cash": 6375.33,
       "deployed_pct": 38.45,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T02:06:12.263136+00:00",
+      "equity": 10352.48,
+      "cash": 6375.33,
+      "deployed_pct": 38.42,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3506,10 +3513,10 @@
       "current_price": 0.265,
       "current_value": 214.43,
       "unrealized_pnl": 4.05,
-      "p_yes": 0.301,
-      "p_blended": 0.301,
-      "edge_net": 0.041,
-      "rationale": "Die PSOE geht als Underdog in die vorgezogene Parlamentswahl am 29. November 2026, da die Umfragen die oppositionelle PP vorne sehen."
+      "p_yes": 0.3132,
+      "p_blended": 0.3132,
+      "edge_net": 0.0532,
+      "rationale": "Trotz Pedro Sánchez' Hoffnungen auf eine späte Mobilisierung deuten die Umfragen darauf hin, dass die konservative Volkspartei (PP) die meisten Sitze bei den Wahlen erlangen wird."
     },
     {
       "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
@@ -3533,9 +3540,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.56,
-      "current_value": 633.21,
-      "unrealized_pnl": -52.2,
+      "current_price": 0.555,
+      "current_value": 627.56,
+      "unrealized_pnl": -57.85,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3558,6 +3565,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 326,
+      "ts": "2026-11-28T02:06:12.260757+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2650",
+      "p_blind": "0.3800",
+      "p_blended": "0.3132",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0532",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election for the party winning the most seats.",
+        "base_rate": 0.35,
+        "bull_case": "Pedro Sánchez's campaign historically overperforms polls in the final stretch by mobilizing left-wing turnout against the PP-Vox threat.",
+        "bear_case": "Most pre-election polls consistently show the Partido Popular (PP) leading PSOE in seat projections ahead of the November 29 vote.",
+        "summary_de": "Trotz Pedro Sánchez' Hoffnungen auf eine späte Mobilisierung deuten die Umfragen darauf hin, dass die konservative Volkspartei (PP) die meisten Sitze bei den Wahlen erlangen wird.",
+        "news_used": [
+          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
+          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform",
+          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
+          "Spanish prime minister Pedro Sánchez confident of election victory despite polls – as it happened - The Guardian"
+        ]
+      }
+    },
     {
       "id": 325,
       "ts": "2026-11-28T02:01:57.310942+00:00",
@@ -3872,7 +3914,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:39.117627+00:00",
+      "last_checked_ts": "2026-11-28T02:05:33.401302+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause lasting at least the specified duration by November 30, which leaves very little time given current diplomatic stalemate.",
@@ -4071,7 +4113,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:39.455129+00:00",
+      "last_checked_ts": "2026-11-28T02:05:33.697827+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the alleged FAA ground stop on November 13.",
@@ -4171,7 +4213,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:50:38.665491+00:00",
+      "last_checked_ts": "2026-11-28T02:05:34.611407+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Market resolves based on standard spot price feeds reaching $1,800 before the end of November.",
@@ -4272,7 +4314,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:39.678330+00:00",
+      "last_checked_ts": "2026-11-28T02:05:33.812216+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an actual Federal Reserve rate hike enacted during calendar year 2026 before December 10, 2026.",
@@ -4357,41 +4399,6 @@
           "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
           "Pedro Sánchez confident he can secure another term for Spain’s progressive government - EL PAÍS English",
           "Don’t Bet on Spain’s Right to Fix Ties With Israel - The Times of Israel"
-        ]
-      }
-    },
-    {
-      "id": 301,
-      "ts": "2026-11-27T23:41:46.812680+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1380",
-      "p_blind": "0.3800",
-      "p_blended": "0.2248",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0868",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T02:00:59.968244+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag klärt, ob Pedro Sánchez der nächste Premierminister von Spanien wird, basierend auf den Wahlen bis zum Fristende.",
-        "base_rate": 0.4,
-        "bull_case": "Sánchez zeigt in den letzten Wahlkampftagen eine starke Mobilisierung und kämpft gegen den Trend der Umfragen an, um eine Koalition der Linken zu retten.",
-        "bear_case": "Aktuelle Umfragen und die geschlossene Front der Rechten deuten darauf hin, dass die oppositionellen Parteien die Mehrheit erlangen könnten.",
-        "summary_de": "Angesichts der aktuellen Umfragen und der anstehenden Wahlen in Spanien ist Sánchez ein Außenseiter, obwohl er im Wahlkampffinale auf eine späte Mobilisierung setzt.",
-        "news_used": [
-          "Pedro Sánchez Says He Can’t Conceive Losing Ahead of Spain’s Snap Election: 12 outlets compared - NewsCord",
-          "Spain Elections - WV News",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
-          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine"
         ]
       }
     }
@@ -5360,6 +5367,18 @@
   ],
   "recent_runs": [
     {
+      "id": 445,
+      "ts": "2026-11-28T02:06:12.263952+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1164,
+      "candidates_found": 17,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.99,
+      "errors": []
+    },
+    {
       "id": 444,
       "ts": "2026-11-28T02:01:57.313890+00:00",
       "dry_run": 0,
@@ -5585,18 +5604,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 50.59,
-      "errors": []
-    },
-    {
-      "id": 425,
-      "ts": "2026-11-28T00:21:38.169183+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1247,
-      "candidates_found": 19,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 60.88,
       "errors": []
     }
   ]
