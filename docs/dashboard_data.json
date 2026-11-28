@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T11:56:10.182429+00:00",
+  "generated_at": "2026-11-28T12:01:49.441508+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11557.41,
-    "reconciled_equity_usd": 11557.41,
+    "equity_usd": 11314.39,
+    "reconciled_equity_usd": 11314.39,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3432.08,
-    "deployed_pct": 29.7,
-    "total_pnl_usd": 1557.41,
-    "total_pnl_pct": 15.57,
-    "unrealized_pnl_usd": 341.73,
+    "positions_value_usd": 3189.06,
+    "deployed_pct": 28.19,
+    "total_pnl_usd": 1314.39,
+    "total_pnl_pct": 13.14,
+    "unrealized_pnl_usd": 98.71,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 354,
+    "total_forecasts": 355,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 2260.08,
+    "crypto": 2017.06,
     "geopolitics": 621.32,
     "politics": 435.9,
     "markets": 114.78
@@ -121,13 +121,6 @@
       "equity": 9967.76,
       "cash": 9967.76,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T16:55:50.228908+00:00",
-      "equity": 9963.87,
-      "cash": 8998.81,
-      "deployed_pct": 9.69,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T17:00:00+00:00",
@@ -3879,6 +3872,19 @@
       "cash": 8125.33,
       "deployed_pct": 29.7,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T12:00:00+00:00",
+      "equity": 11265.79,
+      "cash": 11265.79,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T12:01:49.166163+00:00",
+      "equity": 11314.39,
+      "cash": 8125.33,
+      "deployed_pct": 28.19,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3889,9 +3895,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.465,
-      "current_value": 2260.08,
-      "unrealized_pnl": 1496.27,
+      "current_price": 0.415,
+      "current_value": 2017.06,
+      "unrealized_pnl": 1253.25,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3974,6 +3980,34 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 355,
+      "ts": "2026-11-28T12:01:49.164678+00:00",
+      "market_id": "0x9b1a03b41a1a68c209e9c3caf3d8af3f878420d6dbe8cb8afffd66049e73b114",
+      "question": "Another Fed rate hike in 2026?",
+      "category": "economics",
+      "end_date": "2026-12-10T04:59:00+00:00",
+      "market_price": "0.9570",
+      "p_blind": "0.0500",
+      "p_blended": "0.7900",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves YES if the Federal Reserve raises its target federal funds rate at any FOMC meeting in 2026. Deadline is Dec 10, 2026.",
+        "base_rate": 0.15,
+        "bull_case": "Persistent inflation surprises or resilient economic growth could force the Fed to resume rate hikes.",
+        "bear_case": "Current monetary policy stance is restrictive, inflation has largely cooled, and consensus points towards steady rates or further cuts.",
+        "summary_de": "Die Wahrscheinlichkeit einer weiteren Zinserhöhung der Fed im Jahr 2026 ist gering, da sich der geldpolitische Kurs tendenziell auf Lockerung oder Stabilität verlagert.",
+        "news_used": []
+      }
+    },
     {
       "id": 354,
       "ts": "2026-11-28T11:01:38.150299+00:00",
@@ -4478,7 +4512,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:40:47.063802+00:00",
+      "last_checked_ts": "2026-11-28T12:01:07.662291+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4578,7 +4612,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:45:43.309267+00:00",
+      "last_checked_ts": "2026-11-28T12:01:09.296255+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -4751,41 +4785,6 @@
           "Spanish PM and rivals rally supporters in final pitch for votes",
           "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
           "Pedro Sánchez confident he can secure another term for Spain’s progressive government - EL PAÍS English"
-        ]
-      }
-    },
-    {
-      "id": 330,
-      "ts": "2026-11-28T03:41:43.556628+00:00",
-      "market_id": "0xef750428b94a6323dbaa01a2fc26914bb888c42102d143d978464f5553c22135",
-      "question": "Spain General Election: PP + Vox Majority?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.8350",
-      "p_blind": "0.6200",
-      "p_blended": "0.7541",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0859",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:50:39.745182+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on official election results and seat counts determining if PP and Vox secure a majority in the Spanish Congress of Deputies following the November 29, 2026 snap election.",
-        "base_rate": 0.55,
-        "bull_case": "Final pre-election polls consistently show the Popular Party (PP) and far-right Vox leading and within striking distance of the absolute majority threshold in parliament.",
-        "bear_case": "Sánchez's PSOE has proven resilient against negative poll trends in past campaigns, and left-wing mobilization or regional parties could deny the right-wing bloc a working majority.",
-        "summary_de": "Kurz vor der vorgezogenen Parlamentswahl in Spanien führen die Konservativen (PP) und Vox in den Umfragen, was eine Regierungsmehrheit des rechten Blocks wahrscheinlicher macht, wenngleich der Ausgang umkämpft bleibt.",
-        "news_used": [
-          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
-          "Popular Party and far-right Vox lead polls in tightly contested Spanish election - World Socialist Web Site",
-          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform",
-          "Spain election: Will Vox be the kingmaker, and will housing decide the vote? - Euronews.com"
         ]
       }
     }
@@ -5794,6 +5793,18 @@
   ],
   "recent_runs": [
     {
+      "id": 557,
+      "ts": "2026-11-28T12:01:49.166793+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1180,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.39,
+      "errors": []
+    },
+    {
       "id": 556,
       "ts": "2026-11-28T11:56:09.879689+00:00",
       "dry_run": 0,
@@ -6019,18 +6030,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 37.13,
-      "errors": []
-    },
-    {
-      "id": 537,
-      "ts": "2026-11-28T10:11:33.213321+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1165,
-      "candidates_found": 13,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 53.46,
       "errors": []
     }
   ]
