@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T08:36:07.711689+00:00",
+  "generated_at": "2026-11-28T08:41:19.960280+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11057.15,
-    "reconciled_equity_usd": 11057.15,
+    "equity_usd": 11008.53,
+    "reconciled_equity_usd": 11008.53,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 2931.82,
-    "deployed_pct": 26.52,
-    "total_pnl_usd": 1057.15,
-    "total_pnl_pct": 10.57,
-    "unrealized_pnl_usd": -158.53,
+    "positions_value_usd": 2883.2,
+    "deployed_pct": 26.19,
+    "total_pnl_usd": 1008.53,
+    "total_pnl_pct": 10.09,
+    "unrealized_pnl_usd": -207.15,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 346,
+    "total_forecasts": 347,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1676.83,
+    "crypto": 1628.23,
     "geopolitics": 664.17,
-    "politics": 476.04,
+    "politics": 476.02,
     "markets": 114.78
   },
   "equity_curve": [
@@ -97,13 +97,6 @@
       "equity": 9981.66,
       "cash": 9981.66,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T12:11:24.708191+00:00",
-      "equity": 9980.11,
-      "cash": 9054.73,
-      "deployed_pct": 9.27,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T12:21:13.954165+00:00",
@@ -3861,6 +3854,13 @@
       "cash": 8125.33,
       "deployed_pct": 26.52,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T08:41:19.687745+00:00",
+      "equity": 11008.53,
+      "cash": 8125.33,
+      "deployed_pct": 26.19,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3871,9 +3871,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.345,
-      "current_value": 1676.83,
-      "unrealized_pnl": 913.02,
+      "current_price": 0.335,
+      "current_value": 1628.23,
+      "unrealized_pnl": 864.42,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3901,9 +3901,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1155,
-      "current_value": 205.33,
-      "unrealized_pnl": -15.11,
+      "current_price": 0.1145,
+      "current_value": 203.55,
+      "unrealized_pnl": -16.89,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3931,9 +3931,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.016,
-      "current_value": 56.28,
-      "unrealized_pnl": -612.01,
+      "current_price": 0.0165,
+      "current_value": 58.04,
+      "unrealized_pnl": -610.25,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3956,6 +3956,34 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 347,
+      "ts": "2026-11-28T08:41:19.685313+00:00",
+      "market_id": "0xd5175b9e717fb4cf4de5fe69ed13465c831917782f2224ac330e260ee35b02a8",
+      "question": "Bank of England increases interest rates by 25 bps after December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-17T23:59:00+00:00",
+      "market_price": "0.7750",
+      "p_blind": "0.1200",
+      "p_blended": "0.5855",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "-0.1845",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
+        "base_rate": 0.15,
+        "bull_case": "Anhaltende Inflation oder Lohndruck könnten die Bank of England zu einer unerwarteten Zinserhöhung im Dezember zwingen.",
+        "bear_case": "Der langfristige globale Trend geht zu Zinssenkungen oder stabilen Zinsen, und eine Erhöhung um 25 bps ist im aktuellen Zinszyklus eher unwahrscheinlich.",
+        "summary_de": "Da im aktuellen makroökonomischen Umfeld Zinssenkungen oder stabile Zinsen wahrscheinlicher sind als plötzliche Zinserhöhungen, wird eine Anhebung um 25 Basispunkte im Dezember 2026 als gering eingestuft.",
+        "news_used": []
+      }
+    },
     {
       "id": 346,
       "ts": "2026-11-28T07:56:33.601136+00:00",
@@ -4135,7 +4163,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:20:41.913975+00:00",
+      "last_checked_ts": "2026-11-28T08:40:40.264923+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,500 in November; standard spot price reference applies with clear 2026-12-01 05:00 UTC deadline.",
@@ -4231,7 +4259,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:29.364244+00:00",
+      "last_checked_ts": "2026-11-28T08:40:40.734642+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob der Leitzins nach dem Dezember-2026-Treffen unverändert bleibt.",
@@ -4393,7 +4421,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:20:42.279176+00:00",
+      "last_checked_ts": "2026-11-28T08:40:40.614570+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election held on November 29, 2026.",
@@ -4529,7 +4557,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:20:42.279176+00:00",
+      "last_checked_ts": "2026-11-28T08:40:40.614570+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -4564,7 +4592,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.382904+00:00",
+      "last_checked_ts": "2026-11-28T08:40:41.712263+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract for November; checks if BTC hits $57,500 at any point during November 2026.",
@@ -4632,7 +4660,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:20:42.279176+00:00",
+      "last_checked_ts": "2026-11-28T08:40:40.614570+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -4732,7 +4760,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.483552+00:00",
+      "last_checked_ts": "2026-11-28T08:40:41.811184+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, was durch offizielle Amtseinführung oder Regierungsbildung nach den aktuellen Wahlen eindeutig entschieden wird.",
@@ -4747,41 +4775,6 @@
           "Spain Elections - Goshen News",
           "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
           "Spain candidates hold closing election rallies - EFE - Agencia de noticias"
-        ]
-      }
-    },
-    {
-      "id": 322,
-      "ts": "2026-11-28T01:46:39.103912+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2800",
-      "p_blind": "0.5200",
-      "p_blended": "0.3529",
-      "confidence": "0.4000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0829",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.642477+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India, as indicated by live score reports.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand is currently in a competitive position in the Test match (e.g. 330-8 at lunch on day two), showing strong batting resilience against India.",
-        "bear_case": "India remains a formidable Test side, and late-innings collapses or strong bowling spells from India could easily reverse New Zealand's current advantage.",
-        "summary_de": "Das Testspiel zwischen Neuseeland und Indien läuft, wobei Neuseeland nach aktuellen Zwischenständen eine wettbewerbsfähige Ausgangslage besitzt.",
-        "news_used": [
-          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
-          "Wild Kiwi Return to New Zealand’s Capital After More Than 150 Years - GreekReporter.com",
-          "Bailey reveals ‘challenging’ Lyon conversation as retirement looms after axing - Nine.com.au",
-          "Lyon's international future in doubt after being dropped for New Zealand series - CNA",
-          "Nathan Lyon omitted from Australia squad for New Zealand Test series - Rediff.com",
-          "Blundell guides New Zealand to 330-8 at lunch on day two of India Test - RTL Today"
         ]
       }
     }
@@ -5790,6 +5783,18 @@
   ],
   "recent_runs": [
     {
+      "id": 519,
+      "ts": "2026-11-28T08:41:19.688582+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1175,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 40.47,
+      "errors": []
+    },
+    {
       "id": 518,
       "ts": "2026-11-28T08:36:07.446030+00:00",
       "dry_run": 0,
@@ -6015,18 +6020,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 47.62,
-      "errors": []
-    },
-    {
-      "id": 499,
-      "ts": "2026-11-28T07:01:46.148215+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1156,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 49.56,
       "errors": []
     }
   ]
