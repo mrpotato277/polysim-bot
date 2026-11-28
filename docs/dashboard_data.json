@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T05:41:25.705590+00:00",
+  "generated_at": "2026-11-28T05:46:29.988230+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10824.65,
-    "reconciled_equity_usd": 10824.65,
+    "equity_usd": 10847.05,
+    "reconciled_equity_usd": 10847.05,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4449.32,
-    "deployed_pct": 41.1,
-    "total_pnl_usd": 824.65,
-    "total_pnl_pct": 8.25,
-    "unrealized_pnl_usd": 297.05,
+    "positions_value_usd": 4471.72,
+    "deployed_pct": 41.23,
+    "total_pnl_usd": 847.05,
+    "total_pnl_pct": 8.47,
+    "unrealized_pnl_usd": 319.45,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2260.34,
-    "crypto": 1385.21,
+    "politics": 2234.13,
+    "crypto": 1433.82,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -3724,6 +3724,13 @@
       "cash": 6375.33,
       "deployed_pct": 41.1,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T05:46:29.572359+00:00",
+      "equity": 10847.05,
+      "cash": 6375.33,
+      "deployed_pct": 41.23,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3734,9 +3741,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.24,
-      "current_value": 430.3,
-      "unrealized_pnl": 53.79,
+      "current_price": 0.245,
+      "current_value": 439.26,
+      "unrealized_pnl": 62.75,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -3749,9 +3756,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.285,
-      "current_value": 1385.21,
-      "unrealized_pnl": 621.4,
+      "current_price": 0.295,
+      "current_value": 1433.82,
+      "unrealized_pnl": 670.01,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3809,9 +3816,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.215,
-      "current_value": 756.22,
-      "unrealized_pnl": 87.93,
+      "current_price": 0.205,
+      "current_value": 721.05,
+      "unrealized_pnl": 52.76,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3923,7 +3930,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:40.217067+00:00",
+      "last_checked_ts": "2026-11-28T05:45:42.235929+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -4297,7 +4304,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:39.836182+00:00",
+      "last_checked_ts": "2026-11-28T05:45:41.713515+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, was durch offizielle Amtseinführung oder Regierungsbildung nach den aktuellen Wahlen eindeutig entschieden wird.",
@@ -4332,7 +4339,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:40.040215+00:00",
+      "last_checked_ts": "2026-11-28T05:45:41.921430+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India, as indicated by live score reports.",
@@ -4367,7 +4374,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:40.040215+00:00",
+      "last_checked_ts": "2026-11-28T05:45:41.921430+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -4459,7 +4466,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:40.217067+00:00",
+      "last_checked_ts": "2026-11-28T05:45:42.235929+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüfung ob ein formeller Waffenstillstand zwischen Israel und dem Iran vorliegt oder ob anhaltende Scharmützel als Waffenstillstandsbruch gewertet werden.",
@@ -4494,7 +4501,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:39.836182+00:00",
+      "last_checked_ts": "2026-11-28T05:45:41.713515+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing snap election.",
@@ -4529,7 +4536,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:40.389423+00:00",
+      "last_checked_ts": "2026-11-28T05:45:42.488003+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause lasting at least the specified duration by November 30, which leaves very little time given current diplomatic stalemate.",
@@ -4623,7 +4630,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:39.836182+00:00",
+      "last_checked_ts": "2026-11-28T05:45:41.713515+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain following the ongoing election cycle.",
@@ -4658,7 +4665,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:39.836182+00:00",
+      "last_checked_ts": "2026-11-28T05:45:41.713515+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Evaluates whether Pedro Sánchez becomes the next Prime Minister following the ongoing Spanish election cycle ending around November 2026.",
@@ -5641,6 +5648,18 @@
   ],
   "recent_runs": [
     {
+      "id": 484,
+      "ts": "2026-11-28T05:46:29.573519+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1168,
+      "candidates_found": 11,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 49.44,
+      "errors": []
+    },
+    {
       "id": 483,
       "ts": "2026-11-28T05:41:25.363475+00:00",
       "dry_run": 0,
@@ -5866,18 +5885,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 57.43,
-      "errors": []
-    },
-    {
-      "id": 464,
-      "ts": "2026-11-28T03:51:30.835822+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1253,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 51.74,
       "errors": []
     }
   ]
