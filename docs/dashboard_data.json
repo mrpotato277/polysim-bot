@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T10:56:25.598371+00:00",
+  "generated_at": "2026-11-28T11:01:38.387839+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11571.55,
-    "reconciled_equity_usd": 11571.55,
+    "equity_usd": 11532.66,
+    "reconciled_equity_usd": 11532.66,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3446.22,
-    "deployed_pct": 29.78,
-    "total_pnl_usd": 1571.55,
-    "total_pnl_pct": 15.72,
-    "unrealized_pnl_usd": 355.87,
+    "positions_value_usd": 3407.33,
+    "deployed_pct": 29.55,
+    "total_pnl_usd": 1532.66,
+    "total_pnl_pct": 15.33,
+    "unrealized_pnl_usd": 316.98,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 352,
+    "total_forecasts": 354,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 2260.08,
+    "crypto": 2211.48,
     "geopolitics": 621.32,
-    "politics": 450.04,
+    "politics": 459.75,
     "markets": 114.78
   },
   "equity_curve": [
@@ -121,13 +121,6 @@
       "equity": 9967.76,
       "cash": 9967.76,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T16:06:22.008445+00:00",
-      "equity": 9975.26,
-      "cash": 9054.73,
-      "deployed_pct": 9.23,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T16:11:32.285757+00:00",
@@ -3873,6 +3866,19 @@
       "cash": 8125.33,
       "deployed_pct": 29.78,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T11:00:00+00:00",
+      "equity": 11581.26,
+      "cash": 11581.26,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T11:01:38.151448+00:00",
+      "equity": 11532.66,
+      "cash": 8125.33,
+      "deployed_pct": 29.55,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3883,9 +3889,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.465,
-      "current_value": 2260.08,
-      "unrealized_pnl": 1496.27,
+      "current_price": 0.455,
+      "current_value": 2211.48,
+      "unrealized_pnl": 1447.67,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3913,9 +3919,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1175,
-      "current_value": 208.88,
-      "unrealized_pnl": -11.56,
+      "current_price": 0.119,
+      "current_value": 211.55,
+      "unrealized_pnl": -8.89,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3943,9 +3949,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.003,
-      "current_value": 10.55,
-      "unrealized_pnl": -657.74,
+      "current_price": 0.005,
+      "current_value": 17.59,
+      "unrealized_pnl": -650.7,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3968,6 +3974,76 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 354,
+      "ts": "2026-11-28T11:01:38.150299+00:00",
+      "market_id": "0xc3df044e236b0255f3b8b283957754d936cfc45f091ae7041409a1b545d268dc",
+      "question": "Will the price of Bitcoin be above $64,000 on December 1?",
+      "category": "crypto",
+      "end_date": "2026-12-01T17:00:00+00:00",
+      "market_price": "0.0650",
+      "p_blind": "0.0800",
+      "p_blended": "0.0708",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price check against a specific fiat threshold at a precise timestamp.",
+        "base_rate": 0.15,
+        "bull_case": "Bitcoin historically exhibits sharp volatile rebounds, and a quick recovery above $64,000 within three days is technically possible given crypto's high volatility.",
+        "bear_case": "Bitcoin is currently trading near $59,200 with recent news highlighting failed rallies and dropping below $59K, requiring an ~8.1% gain in just 3 days to cross $64,000.",
+        "summary_de": "Bitcoin liegt derzeit deutlich unter dem Schwellenwert von 64.000 USD und ein so schneller Anstieg innerhalb von nur drei Tagen ist bei der aktuellen Marktschwäche unwahrscheinlich.",
+        "news_used": [
+          "Here’s what happened in crypto today",
+          "Bitcoin price drops below $59K as Anthropic joins tech stock rebound",
+          "Bitcoin supply metric hits 11-year low as new ‘capitulation’ signal arrives",
+          "Bitcoin’s $64K rally fizzles. Can $60K hold? - Crypto News"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,199.70 (24h range: $58,728.70 - $61,750.50, 30d realized annualized vol: ~46%).\nDistance from live spot to $64,000.00: +8.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.2d (1-sigma move = +/-4.3%, distance = 1.80 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 353,
+      "ts": "2026-11-28T11:01:37.019567+00:00",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1410",
+      "p_blind": "0.9500",
+      "p_blended": "0.6964",
+      "confidence": "0.9000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.5481",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolution depends on whether Bitcoin hits or dips to $55,000 in November 2026.",
+        "base_rate": 0.05,
+        "bull_case": "Recent news reports confirm Bitcoin has dropped to or neared $55,000 amid a broad crypto sell-off.",
+        "bear_case": "Current spot is around $59,200 with only a few days left in November, making a further dip to $55,000 unlikely unless severe liquidation occurs.",
+        "summary_de": "Aktuelle Marktdaten und Nachrichtenberichte bestätigen, dass Bitcoin im November die Marke von 55.000 USD erreicht hat, weshalb ein Ja-Ergebnis hochwahrscheinlich ist.",
+        "news_used": [
+          "Bitcoin drops to $55,000 amid broad crypto sell-off; historical data shows mixed short-term rebounds. - Pluang",
+          "Bitcoin finds strongest buying support since Au... - Pluang",
+          "Bitcoin has lost half its value: Can it recover before the end of 2026? - Al-Bawaba",
+          "Bitfinex Sees Record $4.94B BTC Fund Exodus in November as Bitcoin Nears $55,000 - CryptoDaily",
+          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
+          "Ed Zitron says the AI trade peaked at Anthropic's IPO — and Bitcoin's slide to $55,000 is riding the same unwind - BigGo Finance"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,199.70 (24h range: $58,728.70 - $61,750.50, 30d realized annualized vol: ~46%).\nDistance from live spot to $55,000.00: -7.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.7d (1-sigma move = +/-4.0%, distance = 1.85 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 352,
       "ts": "2026-11-28T09:46:42.750017+00:00",
@@ -4402,7 +4478,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:40:43.479215+00:00",
+      "last_checked_ts": "2026-11-28T11:01:01.848830+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4502,7 +4578,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:45:40.868160+00:00",
+      "last_checked_ts": "2026-11-28T11:01:04.202823+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -4711,73 +4787,6 @@
           "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform",
           "Spain election: Will Vox be the kingmaker, and will housing decide the vote? - Euronews.com"
         ]
-      }
-    },
-    {
-      "id": 329,
-      "ts": "2026-11-28T03:36:14.244010+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2750",
-      "p_blind": "0.3800",
-      "p_blended": "0.3216",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0516",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:50:44.296501+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
-        "base_rate": 0.45,
-        "bull_case": "Pedro Sánchez's late campaign mobilization and potential left-wing turnout surges could enable PSOE to defy lagging polls and outperform expectations.",
-        "bear_case": "Consensus polling consistently indicates that PP holds a lead and is favored to win the most seats in parliament.",
-        "summary_de": "Trotz Pedro Sánchez' Schlussmobilisierung führen konservative Parteien in den Umfragen, weshalb die Wahrscheinlichkeit für die meisten Sitze für die PSOE unter 50 Prozent liegt.",
-        "news_used": [
-          "Spain's Sanchez makes final appeal to voters before election - DW.com",
-          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
-          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
-          "Spanish election: What you need to know and what's at stake - BBC"
-        ]
-      }
-    },
-    {
-      "id": 328,
-      "ts": "2026-11-28T02:51:28.524260+00:00",
-      "market_id": "0x68f425a37a2bf693d43de418335b00841af699ef37cc5cb6634c83432c6541cd",
-      "question": "Will Bitcoin dip to $57,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.2850",
-      "p_blind": "0.4200",
-      "p_blended": "0.3330",
-      "confidence": "0.7000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0530",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:55:38.506263+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price-touch contract for November; checks if BTC hits $57,500 at any point during November 2026.",
-        "base_rate": 0.35,
-        "bull_case": "Bitcoin is currently trading near $59,900 and has a 24h low of $58,728; with only a few days left in November, a sudden 4% downward volatility spike or flash crash could easily touch the $57,500 threshold.",
-        "bear_case": "BTC has rebounded to around $60,600 recently, remaining comfortably above the $57,500 level with decreasing time remaining in the month.",
-        "summary_de": "Bitcoin handelt nahe der Marke von 60.000 US-Dollar, ist jedoch aufgrund historischer Volatilität und eines Abstands von nur vier Prozent zum Zielkurs gefährdet, die Schwelle von 57.500 US-Dollar noch im Laufe des Novembers zu berühren.",
-        "news_used": [
-          "Bitcoin, Ethereum and the Best Crypto Presale to Buy in 2026: Why Are Quiet Wallets Taking 10,000 BTC? - openPR.com",
-          "Bitcoin rebounds to $60,600 as DeFi and blockch... - Pluang"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $59,902.70 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $57,500.00: -4.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.1d (1-sigma move = +/-4.2%, distance = 0.97 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -5785,6 +5794,18 @@
   ],
   "recent_runs": [
     {
+      "id": 547,
+      "ts": "2026-11-28T11:01:38.151924+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1185,
+      "candidates_found": 13,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 37.47,
+      "errors": []
+    },
+    {
       "id": 546,
       "ts": "2026-11-28T10:56:25.213810+00:00",
       "dry_run": 0,
@@ -6010,18 +6031,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 35.46,
-      "errors": []
-    },
-    {
-      "id": 527,
-      "ts": "2026-11-28T09:21:37.852968+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1165,
-      "candidates_found": 13,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 56.69,
       "errors": []
     }
   ]
