@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T13:02:06.185416+00:00",
+  "generated_at": "2026-11-28T13:06:31.588527+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11434.2,
-    "reconciled_equity_usd": 11434.2,
+    "equity_usd": 11385.6,
+    "reconciled_equity_usd": 11385.6,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3308.87,
-    "deployed_pct": 28.94,
-    "total_pnl_usd": 1434.2,
-    "total_pnl_pct": 14.34,
-    "unrealized_pnl_usd": 218.52,
+    "positions_value_usd": 3260.27,
+    "deployed_pct": 28.64,
+    "total_pnl_usd": 1385.6,
+    "total_pnl_pct": 13.86,
+    "unrealized_pnl_usd": 169.92,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 359,
+    "total_forecasts": 360,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 2260.08,
+    "crypto": 2211.48,
     "geopolitics": 492.77,
     "politics": 441.24,
     "markets": 114.78
@@ -127,13 +127,6 @@
       "equity": 9962.09,
       "cash": 9962.09,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T17:55:52.256541+00:00",
-      "equity": 9962.02,
-      "cash": 8998.81,
-      "deployed_pct": 9.67,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T18:00:00+00:00",
@@ -3891,6 +3884,13 @@
       "cash": 8125.33,
       "deployed_pct": 28.94,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T13:06:31.162152+00:00",
+      "equity": 11385.6,
+      "cash": 8125.33,
+      "deployed_pct": 28.64,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3901,9 +3901,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.465,
-      "current_value": 2260.08,
-      "unrealized_pnl": 1496.27,
+      "current_price": 0.455,
+      "current_value": 2211.48,
+      "unrealized_pnl": 1447.67,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3987,6 +3987,35 @@
   ],
   "recent_forecasts": [
     {
+      "id": 360,
+      "ts": "2026-11-28T13:06:31.159736+00:00",
+      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
+      "question": "Will Bitcoin dip to $52,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0500",
+      "p_blind": "0.0100",
+      "p_blended": "0.0305",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0225",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on whether Bitcoin hits or dips to $52,500 at any point during November 2026 UTC.",
+        "base_rate": 0.05,
+        "bull_case": "Sudden macro shocks, regulatory crackdowns, or massive exchange liquidations could trigger a sharp cascade of liquidations down to $52,500 within the remaining 3 days of November.",
+        "bear_case": "Bitcoin is currently trading near $59,192, requiring an ~11.3% drop in less than three days. With moderate volatility and only ~72 hours left, such a rapid plunge without any active macro catalysts is statistically unlikely.",
+        "summary_de": "Bitcoin müsste innerhalb von weniger als drei Tagen um über elf Prozent fallen, um die Marke von 52.500 US-Dollar zu erreichen. Angesichts des aktuellen Niveaus und der verbleibenden Zeit ist ein solcher Absturz äußerst unwahrscheinlich.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,192.60 (24h range: $58,728.70 - $61,496.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $52,500.00: -11.3% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.7d (1-sigma move = +/-3.9%, distance = 3.06 sigma): Gaussian one-touch ('dip/reach/hi"
+      }
+    },
+    {
       "id": 359,
       "ts": "2026-11-28T12:51:38.400436+00:00",
       "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
@@ -4003,7 +4032,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T13:05:37.345805+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,500 in November, resolving based on standard spot index feeds before December 1.",
@@ -4157,7 +4186,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:50:42.507364+00:00",
+      "last_checked_ts": "2026-11-28T13:05:38.647709+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price check against a specific fiat threshold at a precise timestamp.",
@@ -4291,7 +4320,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:50:43.629785+00:00",
+      "last_checked_ts": "2026-11-28T13:05:39.734385+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4358,7 +4387,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:50:42.665381+00:00",
+      "last_checked_ts": "2026-11-28T13:05:38.854461+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official FOMC rate decision following the December 2026 meeting.",
@@ -4578,7 +4607,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:45:40.434307+00:00",
+      "last_checked_ts": "2026-11-28T13:05:37.345805+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,500 in November; standard spot price reference applies with clear 2026-12-01 05:00 UTC deadline.",
@@ -4674,7 +4703,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:45:40.930813+00:00",
+      "last_checked_ts": "2026-11-28T13:05:38.112752+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüft, ob der Leitzins nach dem Dezember-2026-Treffen unverändert bleibt.",
@@ -4754,34 +4783,6 @@
         "summary_de": "Bitcoin müsste innerhalb von nur drei Tagen um fast neun Prozent steigen, was angesichts des aktuellen Kurses und der verbleibenden Zeit ein unwahrscheinliches Szenario ist.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $59,739.30 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $65,000.00: +8.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-4.2%, distance = 2.03 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 335,
-      "ts": "2026-11-28T05:01:36.282828+00:00",
-      "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
-      "question": "Israel x Iran ceasefire continues through November 30?",
-      "category": "geopolitics",
-      "end_date": "2026-11-30T20:29:00+00:00",
-      "market_price": "0.9585",
-      "p_blind": "0.8800",
-      "p_blended": "0.9434",
-      "confidence": "0.7500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:01:11.564239+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
-        "base_rate": 0.85,
-        "bull_case": "Existing ceasefires between Israel and Iran or its proxies often hold for short multi-day windows once established, and the current date is nearly at the deadline with no reported breaches in the context window.",
-        "bear_case": "Middle Eastern ceasefires are fragile and can collapse rapidly due to unexpected escalations, minor skirmishes, or retaliatory strikes with very little notice.",
-        "summary_de": "Da der Stichtag Ende November kurz bevorsteht und keine aktuellen Meldungen über einen Bruch vorliegen, hält die Waffenruhe mit hoher Wahrscheinlichkeit bis zum Fristende.",
-        "news_used": []
       }
     }
   ],
@@ -5789,6 +5790,18 @@
   ],
   "recent_runs": [
     {
+      "id": 569,
+      "ts": "2026-11-28T13:06:31.163049+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1225,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 55.51,
+      "errors": []
+    },
+    {
       "id": 568,
       "ts": "2026-11-28T13:02:05.752982+00:00",
       "dry_run": 0,
@@ -6014,18 +6027,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 55.19,
-      "errors": []
-    },
-    {
-      "id": 549,
-      "ts": "2026-11-28T11:11:43.574300+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1167,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 53.32,
       "errors": []
     }
   ]
