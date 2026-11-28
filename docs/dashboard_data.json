@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T16:36:20.492381+00:00",
+  "generated_at": "2026-11-28T16:41:17.108141+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11260.44,
-    "reconciled_equity_usd": 11260.44,
+    "equity_usd": 11236.13,
+    "reconciled_equity_usd": 11236.13,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2017.22,
-    "deployed_pct": 17.91,
-    "total_pnl_usd": 1260.44,
-    "total_pnl_pct": 12.6,
-    "unrealized_pnl_usd": -22.93,
+    "positions_value_usd": 1992.91,
+    "deployed_pct": 17.74,
+    "total_pnl_usd": 1236.13,
+    "total_pnl_pct": 12.36,
+    "unrealized_pnl_usd": -47.24,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 911.33,
+    "crypto": 887.02,
     "geopolitics": 535.62,
     "politics": 455.49,
     "markets": 114.78
@@ -151,13 +151,6 @@
       "equity": 9228.77,
       "cash": 9228.77,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T21:56:06.356138+00:00",
-      "equity": 9928.42,
-      "cash": 8091.18,
-      "deployed_pct": 11.49,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T22:00:00+00:00",
@@ -3909,6 +3902,13 @@
       "cash": 9243.22,
       "deployed_pct": 17.91,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T16:41:16.776763+00:00",
+      "equity": 11236.13,
+      "cash": 9243.22,
+      "deployed_pct": 17.74,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3919,9 +3919,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.375,
-      "current_value": 911.33,
-      "unrealized_pnl": 529.43,
+      "current_price": 0.365,
+      "current_value": 887.02,
+      "unrealized_pnl": 505.12,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -4576,7 +4576,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:20:37.884757+00:00",
+      "last_checked_ts": "2026-11-28T16:40:40.373346+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard Polymarket crypto spot price touch rule for November.",
@@ -5789,6 +5789,18 @@
   ],
   "recent_runs": [
     {
+      "id": 611,
+      "ts": "2026-11-28T16:41:16.778379+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1206,
+      "candidates_found": 13,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 38.41,
+      "errors": []
+    },
+    {
       "id": 610,
       "ts": "2026-11-28T16:36:20.127904+00:00",
       "dry_run": 0,
@@ -6014,18 +6026,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 56.23,
-      "errors": []
-    },
-    {
-      "id": 591,
-      "ts": "2026-11-28T14:56:07.736870+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1274,
-      "candidates_found": 14,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 36.84,
       "errors": []
     }
   ]
