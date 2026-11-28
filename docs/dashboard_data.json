@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:12:45.144244+00:00",
+  "generated_at": "2026-11-28T01:16:26.441575+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10424.67,
-    "reconciled_equity_usd": 10424.67,
+    "equity_usd": 10402.05,
+    "reconciled_equity_usd": 10402.05,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4049.34,
-    "deployed_pct": 38.84,
-    "total_pnl_usd": 424.67,
-    "total_pnl_pct": 4.25,
-    "unrealized_pnl_usd": -102.93,
+    "positions_value_usd": 4026.72,
+    "deployed_pct": 38.71,
+    "total_pnl_usd": 402.05,
+    "total_pnl_pct": 4.02,
+    "unrealized_pnl_usd": -125.55,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 317,
+    "total_forecasts": 318,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2282.28,
+    "politics": 2259.66,
     "crypto": 947.78,
     "geopolitics": 664.17,
     "markets": 155.11
@@ -3357,6 +3357,13 @@
       "cash": 6375.33,
       "deployed_pct": 38.84,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T01:16:26.162450+00:00",
+      "equity": 10402.05,
+      "cash": 6375.33,
+      "deployed_pct": 38.71,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3400,10 +3407,10 @@
       "current_price": 0.155,
       "current_value": 664.17,
       "unrealized_pnl": -21.42,
-      "p_yes": 0.7538,
-      "p_blended": 0.2462,
-      "edge_net": 0.0962,
-      "rationale": "Trotz anhaltender diplomatischer Vermittlungsversuche und einer bisherigen Waffenruhe bleibt die israelische Führung zerstritten, was das Risiko von Militärschlägen gegen Iran bis Mitte Dezember erhöht."
+      "p_yes": 0.6618,
+      "p_blended": 0.3382,
+      "edge_net": 0.1782,
+      "rationale": "Angesichts anhaltender iranischer Drohungen und interner israelischer Debatten über mögliche Militärschläge ist das Risiko eines Scheiterns des Waffenstillstands vor dem 15. Dezember erheblich."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3457,9 +3464,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.555,
-      "current_value": 627.56,
-      "unrealized_pnl": -57.85,
+      "current_price": 0.535,
+      "current_value": 604.94,
+      "unrealized_pnl": -80.47,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3483,6 +3490,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 318,
+      "ts": "2026-11-28T01:16:26.159730+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8450",
+      "p_blind": "0.3500",
+      "p_blended": "0.6618",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1782",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Prüfung ob ein formeller Waffenstillstand zwischen Israel und dem Iran vorliegt oder ob anhaltende Scharmützel als Waffenstillstandsbruch gewertet werden.",
+        "base_rate": 0.4,
+        "bull_case": "Die diplomatischen Bemühungen und die bisherige Vermeidung eines direkten totalen Krieges könnten das fragile Arrangement bis Mitte Dezember halten.",
+        "bear_case": "Aktuelle Berichte über iranische Drohungen und israelische Debatten über präventive Schläge zeigen hohe Spannungen und das Risiko plötzlicher Eskalationen.",
+        "summary_de": "Angesichts anhaltender iranischer Drohungen und interner israelischer Debatten über mögliche Militärschläge ist das Risiko eines Scheiterns des Waffenstillstands vor dem 15. Dezember erheblich.",
+        "news_used": [
+          "Iran issues new threats as war stalemate drags on - KABB",
+          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
+          "Evening recap: Aoun, Salam propose extending UNIFIL mandate; Kuwait summons Iranian ambassador; Khalil al-Hayya’s son survives assassination",
+          "Black Friday shopping: What to buy now and what can wait - NBC 15 WPMI",
+          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
+          "Israel divided over whether to strike Iran without US backing - The Arab Weekly"
+        ]
+      }
+    },
+    {
       "id": 317,
       "ts": "2026-11-28T01:06:17.839026+00:00",
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3499,7 +3541,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing snap election.",
@@ -3534,7 +3576,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T01:15:45.296154+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause lasting at least the specified duration by November 30, which leaves very little time given current diplomatic stalemate.",
@@ -3628,7 +3670,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
+      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain following the ongoing election cycle.",
@@ -3663,7 +3705,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
+      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Evaluates whether Pedro Sánchez becomes the next Prime Minister following the ongoing Spanish election cycle ending around November 2026.",
@@ -3698,7 +3740,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:40.003244+00:00",
+      "last_checked_ts": "2026-11-28T01:15:45.175624+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining whether ongoing low-level skirmishes or proxy clashes constitute a breach of the Israel-Iran ceasefire through December 15.",
@@ -3733,7 +3775,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:01:01.849427+00:00",
+      "last_checked_ts": "2026-11-28T01:15:45.540027+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the alleged FAA ground stop on November 13.",
@@ -3763,7 +3805,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
+      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election context.",
@@ -3798,7 +3840,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:40.003244+00:00",
+      "last_checked_ts": "2026-11-28T01:15:45.175624+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining whether ongoing low-level clashes or rhetoric constitute a ceasefire breach before December 15.",
@@ -3833,7 +3875,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:01:03.472708+00:00",
+      "last_checked_ts": "2026-11-28T01:15:46.423308+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Market resolves based on standard spot price feeds reaching $1,800 before the end of November.",
@@ -3899,7 +3941,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.791908+00:00",
+      "last_checked_ts": "2026-11-28T01:15:45.074782+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel bezieht sich auf das Test-Match zwischen Neuseeland und Indien, das sich laut Live-Tickern am Tag 2 bei einem Zwischenstand von 324/8 befindet.",
@@ -3934,7 +3976,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:01:01.976111+00:00",
+      "last_checked_ts": "2026-11-28T01:15:45.647856+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an actual Federal Reserve rate hike enacted during calendar year 2026 before December 10, 2026.",
@@ -3969,7 +4011,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:40.003244+00:00",
+      "last_checked_ts": "2026-11-28T01:15:45.175624+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, was einen offiziellen Bruch des Waffenstillstands zwischen Israel und Iran bis zum 15. Dezember darstellt (z.B. direkte militärische Schläge).",
@@ -4039,7 +4081,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
+      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag klärt, ob Pedro Sánchez der nächste Premierminister von Spanien wird, basierend auf den Wahlen bis zum Fristende.",
@@ -4074,7 +4116,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.791908+00:00",
+      "last_checked_ts": "2026-11-28T01:15:45.074782+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Markt-Ergebnis hängt vom klaren Gewinner des Test-Matches zwischen Neuseeland und Indien ab.",
@@ -4109,7 +4151,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
+      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, basierend auf den aktuellen Wahlen und Regierungsbildungen.",
@@ -4284,7 +4326,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
+      "last_checked_ts": "2026-11-28T01:15:44.957614+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird; die Auflösung hängt von den offiziellen Regierungsbildungsprozessen ab.",
@@ -4299,41 +4341,6 @@
           "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
           "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
           "Spanish PM and rivals rally supporters in final pitch for votes"
-        ]
-      }
-    },
-    {
-      "id": 293,
-      "ts": "2026-11-27T23:16:20.125232+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.8650",
-      "p_blind": "0.5200",
-      "p_blended": "0.7448",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1252",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung im Parlament entschieden wird.",
-        "base_rate": 0.45,
-        "bull_case": "Umfragen und Medienberichte deuten auf eine starke Position der konservativen PP unter Feijóo hin, während Pedro Sánchez unter Druck steht.",
-        "bear_case": "Sánchez zeigt sich kämpferisch und könnte durch Koalitionen mit kleineren Parteien erneut eine Mehrheit sichern.",
-        "summary_de": "Trotz optimistischer Umfragen für die konservative Opposition bleibt die Regierungsbildung in Spanien ungewiss, da auch amtierende Koalitionen eine Mehrheit erreichen könnten.",
-        "news_used": [
-          "Spanish PM and rivals rally supporters in final pitch for votes",
-          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Don’t Bet on Spain’s Right to Fix Ties With Israel - The Times of Israel",
-          "Spanish prime minister Pedro Sánchez confident of election victory despite polls – as it happened - The Guardian",
-          "‘What do you owe Netanyahu?’: Spanish election debate erupts over Israel and Hamas - Ynetnews"
         ]
       }
     }
@@ -5302,6 +5309,18 @@
   ],
   "recent_runs": [
     {
+      "id": 435,
+      "ts": "2026-11-28T01:16:26.163214+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1223,
+      "candidates_found": 21,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.58,
+      "errors": []
+    },
+    {
       "id": 434,
       "ts": "2026-11-28T01:12:44.683857+00:00",
       "dry_run": 0,
@@ -5527,18 +5546,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 41.16,
-      "errors": []
-    },
-    {
-      "id": 415,
-      "ts": "2026-11-27T23:32:09.166428+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1170,
-      "candidates_found": 19,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 73.44,
       "errors": []
     }
   ]
