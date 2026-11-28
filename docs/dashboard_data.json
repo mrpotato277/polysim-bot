@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:56:08.110743+00:00",
+  "generated_at": "2026-11-28T02:01:57.716323+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10362.58,
-    "reconciled_equity_usd": 10362.58,
+    "equity_usd": 10358.13,
+    "reconciled_equity_usd": 10358.13,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 3987.25,
-    "deployed_pct": 38.48,
-    "total_pnl_usd": 362.58,
-    "total_pnl_pct": 3.63,
-    "unrealized_pnl_usd": -165.02,
+    "positions_value_usd": 3982.8,
+    "deployed_pct": 38.45,
+    "total_pnl_usd": 358.13,
+    "total_pnl_pct": 3.58,
+    "unrealized_pnl_usd": -169.47,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 324,
+    "total_forecasts": 325,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2284.31,
+    "politics": 2279.86,
     "crypto": 899.17,
     "geopolitics": 664.17,
     "markets": 139.6
@@ -3420,6 +3420,19 @@
       "cash": 6375.33,
       "deployed_pct": 38.48,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T02:00:00+00:00",
+      "equity": 10360.79,
+      "cash": 10360.79,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T02:01:57.313049+00:00",
+      "equity": 10358.13,
+      "cash": 6375.33,
+      "deployed_pct": 38.45,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3475,9 +3488,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1155,
-      "current_value": 205.33,
-      "unrealized_pnl": -15.11,
+      "current_price": 0.113,
+      "current_value": 200.88,
+      "unrealized_pnl": -19.56,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3538,13 +3551,49 @@
       "current_price": 0.045,
       "current_value": 139.6,
       "unrealized_pnl": -402.24,
-      "p_yes": 0.0279,
-      "p_blended": 0.0279,
-      "edge_net": 0.0221,
-      "rationale": "Da der aktuelle WTI-Preis bei rund 83 Dollar liegt und nur noch wenige Tage im November verbleiben, ist ein Anstieg auf 90 Dollar extrem unwahrscheinlich."
+      "p_yes": 0.0315,
+      "p_blended": 0.0315,
+      "edge_net": 0.0185,
+      "rationale": "Da der aktuelle WTI-Preis bei rund 83 Dollar liegt und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Anstieg auf 90 Dollar extrem unwahrscheinlich."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 325,
+      "ts": "2026-11-28T02:01:57.310942+00:00",
+      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
+      "category": "markets",
+      "end_date": "2026-12-01T04:59:59.999000+00:00",
+      "market_price": "0.0450",
+      "p_blind": "0.0200",
+      "p_blended": "0.0315",
+      "confidence": "0.9000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0185",
+      "strategy_type": "carry",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks whether WTI Crude Oil hits $90 at any point during November 2026 based on standard market pricing.",
+        "base_rate": 0.15,
+        "bull_case": "Geopolitical tensions in the Middle East and risks surrounding the upcoming OPEC+ meeting could trigger a sudden supply shock spike, pushing WTI towards upside targets near $88.50-$90.",
+        "bear_case": "Current WTI spot price is sitting significantly lower around $83.08 with only a few days remaining in November, making a sudden surge of nearly $7 highly unlikely given ample supply surpluses.",
+        "summary_de": "Da der aktuelle WTI-Preis bei rund 83 Dollar liegt und nur noch wenige Tage im November verbleiben, ist ein plötzlicher Anstieg auf 90 Dollar extrem unwahrscheinlich.",
+        "news_used": [
+          "Oil Price Forecast — WTI ($83.74) $88.50 and Brent ($95.20) $100 Upside Targets on Saudi Refinery Strikes - TradingNEWS",
+          "Brent Crude Prices Slip Below $90 A Barrel: Patrick De Haan Says Oil, Refined Products Are ‘Oversold,’ While Hanke Sees Prices Staying Eleva",
+          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
+          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox",
+          "Oil Price Forecast According to Experts: November 2026 - MoneyMagpie",
+          "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo"
+        ],
+        "market_data": "WTI Crude Oil (CL=F) live reference: 83.08 (prev close: 80.17, +3.63%)."
+      }
+    },
     {
       "id": 324,
       "ts": "2026-11-28T01:56:07.569677+00:00",
@@ -3591,7 +3640,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T02:00:59.968244+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, was durch offizielle Amtseinführung oder Regierungsbildung nach den aktuellen Wahlen eindeutig entschieden wird.",
@@ -3626,7 +3675,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T02:01:00.177719+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India, as indicated by live score reports.",
@@ -3661,7 +3710,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.781733+00:00",
+      "last_checked_ts": "2026-11-28T02:01:00.177719+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
@@ -3725,7 +3774,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:37.869123+00:00",
+      "last_checked_ts": "2026-11-28T02:00:59.269979+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es wird die Gesamtzahl der Tweets von Elon Musk im angegebenen Zeitraum auf X gezählt, wobei Retweets und Antworten je nach Plattformdefinition einfließen können.",
@@ -3753,7 +3802,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.952469+00:00",
+      "last_checked_ts": "2026-11-28T02:01:00.357873+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Prüfung ob ein formeller Waffenstillstand zwischen Israel und dem Iran vorliegt oder ob anhaltende Scharmützel als Waffenstillstandsbruch gewertet werden.",
@@ -3788,7 +3837,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.571373+00:00",
+      "last_checked_ts": "2026-11-28T02:00:59.968244+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing snap election.",
@@ -3917,7 +3966,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.571373+00:00",
+      "last_checked_ts": "2026-11-28T02:00:59.968244+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain following the ongoing election cycle.",
@@ -3952,7 +4001,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.571373+00:00",
+      "last_checked_ts": "2026-11-28T02:00:59.968244+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Evaluates whether Pedro Sánchez becomes the next Prime Minister following the ongoing Spanish election cycle ending around November 2026.",
@@ -3987,7 +4036,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.952469+00:00",
+      "last_checked_ts": "2026-11-28T02:01:00.357873+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining whether ongoing low-level skirmishes or proxy clashes constitute a breach of the Israel-Iran ceasefire through December 15.",
@@ -4052,7 +4101,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.571373+00:00",
+      "last_checked_ts": "2026-11-28T02:00:59.968244+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the snap election context.",
@@ -4087,7 +4136,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.952469+00:00",
+      "last_checked_ts": "2026-11-28T02:01:00.357873+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining whether ongoing low-level clashes or rhetoric constitute a ceasefire breach before December 15.",
@@ -4188,7 +4237,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.781733+00:00",
+      "last_checked_ts": "2026-11-28T02:01:00.177719+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Das Spiel bezieht sich auf das Test-Match zwischen Neuseeland und Indien, das sich laut Live-Tickern am Tag 2 bei einem Zwischenstand von 324/8 befindet.",
@@ -4258,7 +4307,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.952469+00:00",
+      "last_checked_ts": "2026-11-28T02:01:00.357873+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, was einen offiziellen Bruch des Waffenstillstands zwischen Israel und Iran bis zum 15. Dezember darstellt (z.B. direkte militärische Schläge).",
@@ -4328,7 +4377,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.571373+00:00",
+      "last_checked_ts": "2026-11-28T02:00:59.968244+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag klärt, ob Pedro Sánchez der nächste Premierminister von Spanien wird, basierend auf den Wahlen bis zum Fristende.",
@@ -4343,41 +4392,6 @@
           "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
           "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
           "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine"
-        ]
-      }
-    },
-    {
-      "id": 300,
-      "ts": "2026-11-27T23:36:14.131235+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2150",
-      "p_blind": "0.4200",
-      "p_blended": "0.2603",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0503",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T01:45:38.781733+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Das Markt-Ergebnis hängt vom klaren Gewinner des Test-Matches zwischen Neuseeland und Indien ab.",
-        "base_rate": 0.45,
-        "bull_case": "Neuseeland hat starke Heimvorteile und eine kompetitive Test-Mannschaft.",
-        "bear_case": "Indien verfügt über ein weltklasse Team und gilt historisch oft als Favorit gegen Neuseeland.",
-        "summary_de": "Indien geht als statistischer Favorit in das Test-Match gegen Neuseeland, weshalb die Siegchance für Neuseeland unter 50 Prozent liegt.",
-        "news_used": [
-          "Australia leaves Lyon out of squad for New Zealand series - UA.NEWS",
-          "Nathan Lyon dropped for Australia's New Zealand Test series - Mezha.net",
-          "The giant turtles travelling 12,000km to New Zealand need our help - RNZ",
-          "Nathan Lyon dropped by Australia for their first Test against New Zealand - Radio Royal",
-          "Lyon dropped from Australia's test squad v New Zealand - Reuters",
-          "Selection shock as Aussies name squad for first New Zealand Test - ICC"
         ]
       }
     }
@@ -5346,6 +5360,18 @@
   ],
   "recent_runs": [
     {
+      "id": 444,
+      "ts": "2026-11-28T02:01:57.313890+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1161,
+      "candidates_found": 20,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 61.4,
+      "errors": []
+    },
+    {
       "id": 443,
       "ts": "2026-11-28T01:56:07.828123+00:00",
       "dry_run": 0,
@@ -5571,18 +5597,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 60.88,
-      "errors": []
-    },
-    {
-      "id": 424,
-      "ts": "2026-11-28T00:16:44.111393+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1222,
-      "candidates_found": 19,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 65.02,
       "errors": []
     }
   ]
