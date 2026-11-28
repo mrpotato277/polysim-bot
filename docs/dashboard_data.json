@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T07:51:20.166641+00:00",
+  "generated_at": "2026-11-28T07:56:34.047057+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10732.95,
-    "reconciled_equity_usd": 10732.95,
+    "equity_usd": 10783.34,
+    "reconciled_equity_usd": 10783.34,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4357.62,
-    "deployed_pct": 40.6,
-    "total_pnl_usd": 732.95,
-    "total_pnl_pct": 7.33,
-    "unrealized_pnl_usd": 205.35,
+    "positions_value_usd": 4408.01,
+    "deployed_pct": 40.88,
+    "total_pnl_usd": 783.34,
+    "total_pnl_pct": 7.83,
+    "unrealized_pnl_usd": 255.74,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 344,
+    "total_forecasts": 346,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2281.36,
-    "crypto": 1288.0,
+    "politics": 2283.14,
+    "crypto": 1336.61,
     "geopolitics": 664.17,
     "markets": 124.09
   },
@@ -85,13 +85,6 @@
       "equity": 10000.0,
       "cash": 10000.0,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T10:41:16.743567+00:00",
-      "equity": 9992.64,
-      "cash": 9600.0,
-      "deployed_pct": 3.93,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T10:51:24.658090+00:00",
@@ -3855,6 +3848,13 @@
       "cash": 6375.33,
       "deployed_pct": 40.6,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T07:56:33.602463+00:00",
+      "equity": 10783.34,
+      "cash": 6375.33,
+      "deployed_pct": 40.88,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3880,9 +3880,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.265,
-      "current_value": 1288.0,
-      "unrealized_pnl": 524.19,
+      "current_price": 0.275,
+      "current_value": 1336.61,
+      "unrealized_pnl": 572.8,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3898,10 +3898,10 @@
       "current_price": 0.155,
       "current_value": 664.17,
       "unrealized_pnl": -21.42,
-      "p_yes": 0.7394,
-      "p_blended": 0.2606,
-      "edge_net": 0.1106,
-      "rationale": "Trotz laufender Vermittlungsbemühungen bleibt die Lage zwischen Israel und Iran angespannt, wobei anhaltende militärische Operationen und neue Drohungen das Risiko eines Bruchs des Waffenstillstands erhöhen."
+      "p_yes": 0.6734,
+      "p_blended": 0.3266,
+      "edge_net": 0.1666,
+      "rationale": "Trotz anhaltender militärischer Stagnation bleibt die Lage zwischen Israel und Iran äusserst volatil und neue Drohungen erhöhen das Risiko eines Bruchs vor dem 15. Dezember."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3910,9 +3910,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.114,
-      "current_value": 202.66,
-      "unrealized_pnl": -17.78,
+      "current_price": 0.115,
+      "current_value": 204.44,
+      "unrealized_pnl": -16.0,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3973,13 +3973,84 @@
       "current_price": 0.04,
       "current_value": 124.09,
       "unrealized_pnl": -417.75,
-      "p_yes": 0.0315,
-      "p_blended": 0.0315,
-      "edge_net": 0.0185,
-      "rationale": "Angesichts des aktuellen Ölpreises von rund 83 Dollar und der verbleibenden wenigen Tage im November ist ein sprunghafter Anstieg auf 90 Dollar extrem unwahrscheinlich."
+      "p_yes": 0.0453,
+      "p_blended": 0.0453,
+      "edge_net": 0.0,
+      "rationale": "Trotz geopolitischer Spannungen liegt der WTI-Preis kurz vor Monatsende bei rund 83 Dollar, wodurch ein plötzlicher Anstieg auf 90 Dollar in den verbleibenden zwei Tagen sehr unwahrscheinlich ist."
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 346,
+      "ts": "2026-11-28T07:56:33.601136+00:00",
+      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
+      "category": "markets",
+      "end_date": "2026-12-01T04:59:59.999000+00:00",
+      "market_price": "0.0400",
+      "p_blind": "0.0500",
+      "p_blended": "0.0453",
+      "confidence": "0.9000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current live price is ~$83.08 with only 2 days remaining in November.",
+        "base_rate": 0.05,
+        "bull_case": "Geopolitical tensions and Middle East supply attacks could trigger a sudden intraday spike past $90 before the end of November.",
+        "bear_case": "WTI is currently trading near $83.08 with only 2 days left in November, requiring an immediate ~8.3% vertical surge which is statistically unlikely despite supply risks.",
+        "summary_de": "Trotz geopolitischer Spannungen liegt der WTI-Preis kurz vor Monatsende bei rund 83 Dollar, wodurch ein plötzlicher Anstieg auf 90 Dollar in den verbleibenden zwei Tagen sehr unwahrscheinlich ist.",
+        "news_used": [
+          "Crude Oil Prices Climb as Brent Nears $96 a Barrel - JournalArta",
+          "Middle East Attacks Push Oil Prices Higher, Halting Recent Slide - SSBCrack",
+          "Oil Price Forecast — WTI ($83.74) $88.50 and Brent ($95.20) $100 Upside Targets on Saudi Refinery Strikes - TradingNEWS",
+          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
+          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
+          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox"
+        ],
+        "market_data": "WTI Crude Oil (CL=F) live reference: 83.08 (prev close: 80.17, +3.63%)."
+      }
+    },
+    {
+      "id": 345,
+      "ts": "2026-11-28T07:56:31.972763+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8450",
+      "p_blind": "0.3500",
+      "p_blended": "0.6734",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1666",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember anhält.",
+        "base_rate": 0.4,
+        "bull_case": "Die laufende militärische Stagnation und diplomatische Bemühungen könnten eine kurzfristige Verlängerung des Status quo bis Mitte Dezember begünstigen.",
+        "bear_case": "Aktuelle Berichte zeigen anhaltende Spannungen, neue Drohungen aus Iran und israelische Diskussionen über mögliche Schläge, was einen Waffenstillstand jederzeit gefährden kann.",
+        "summary_de": "Trotz anhaltender militärischer Stagnation bleibt die Lage zwischen Israel und Iran äusserst volatil und neue Drohungen erhöhen das Risiko eines Bruchs vor dem 15. Dezember.",
+        "news_used": [
+          "62 of the most stupid things Donald Trump has ever said - Indy100",
+          "Iran issues new threats as war stalemate drags on - NBC 15 WPMI",
+          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
+          "Black Friday shopping: What to buy now and what can wait - NBC 15 WPMI",
+          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
+          "Israel divided over whether to strike Iran without US backing - The Arab Weekly"
+        ]
+      }
+    },
     {
       "id": 344,
       "ts": "2026-11-28T07:31:23.933396+00:00",
@@ -4031,7 +4102,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:40:38.501743+00:00",
+      "last_checked_ts": "2026-11-28T07:55:34.467058+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4119,7 +4190,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:40:38.355308+00:00",
+      "last_checked_ts": "2026-11-28T07:55:34.259424+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4154,7 +4225,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:40:38.772541+00:00",
+      "last_checked_ts": "2026-11-28T07:55:34.801741+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4219,7 +4290,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:40:38.355308+00:00",
+      "last_checked_ts": "2026-11-28T07:55:34.259424+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
@@ -4311,7 +4382,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:40:38.355308+00:00",
+      "last_checked_ts": "2026-11-28T07:55:34.259424+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -4517,7 +4588,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:35:34.939349+00:00",
+      "last_checked_ts": "2026-11-28T07:55:33.660159+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract for November; checks if BTC hits $57,500 at any point during November 2026.",
@@ -4685,7 +4756,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:35:35.049544+00:00",
+      "last_checked_ts": "2026-11-28T07:55:33.878344+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, was durch offizielle Amtseinführung oder Regierungsbildung nach den aktuellen Wahlen eindeutig entschieden wird.",
@@ -4720,7 +4791,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:35:35.168224+00:00",
+      "last_checked_ts": "2026-11-28T07:55:34.086811+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India, as indicated by live score reports.",
@@ -4736,70 +4807,6 @@
           "Nathan Lyon omitted from Australia squad for New Zealand Test series - Rediff.com",
           "Blundell guides New Zealand to 330-8 at lunch on day two of India Test - RTL Today"
         ]
-      }
-    },
-    {
-      "id": 321,
-      "ts": "2026-11-28T01:36:26.366808+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2950",
-      "p_blind": "0.4800",
-      "p_blended": "0.3684",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0784",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:35:35.168224+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The market resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand is currently in a competitive position in the ongoing Test match against India, holding 330-8 on day two as reported by recent headlines.",
-        "bear_case": "India has historically strong Test match capabilities and set formidable records, posing a tough challenge for New Zealand to secure a win.",
-        "summary_de": "Das Testspiel zwischen Neuseeland und Indien läuft, wobei die aktuellen Zwischenstände beide Resultate offen lassen.",
-        "news_used": [
-          "Wild Kiwi Return to New Zealand’s Capital After More Than 150 Years - GreekReporter.com",
-          "Lyon's international future in doubt after being dropped for New Zealand series - CNA",
-          "Nathan Lyon omitted from Australia squad for New Zealand Test series - Rediff.com",
-          "Blundell guides New Zealand to 330-8 at lunch on day two of India Test - RTL Today",
-          "In New Zealand, India set a 720-run Test record – and didn’t have time to win - The Indian Express",
-          "New Zealand has stalled. You can’t sell a country, so let’s reimagine it - NZ Herald"
-        ]
-      }
-    },
-    {
-      "id": 320,
-      "ts": "2026-11-28T01:26:37.121771+00:00",
-      "market_id": "0xa2fdb75238670fd4bd0576c3dc34fa873bee3a0e23b1ce72441f1485f3608dc1",
-      "question": "Will Ethereum dip to $1,600 November 23-29?",
-      "category": "crypto",
-      "end_date": "2026-11-30T05:00:00+00:00",
-      "market_price": "0.2450",
-      "p_blind": "0.4800",
-      "p_blended": "0.3002",
-      "confidence": "0.6500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0602",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:45:43.137480+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
-        "base_rate": 0.42,
-        "bull_case": "Mit dem aktuellen Spotpreis von 1.666 USD und einer hohen Volatilität ist ein Rücksetzer um rund 4 % bis zum 29. November statistisch gut erreichbar.",
-        "bear_case": "Die Zeit bis zum Ablauf am 29. November ist extrem kurz (ca. 2 Tage), und der Abstand von 4 % erfordert eine plötzliche Bewegung nach unten, die ohne akuten Katalysator ausbleiben könnte.",
-        "summary_de": "Ethereum ist nur rund vier Prozent von der Marke von 1.600 US-Dollar entfernt, wodurch ein Rücksetzer bei typischer Krypto-Volatilität innerhalb der verbleibenden zwei Tage eine realistische Wahrscheinlichkeit besitzt.",
-        "news_used": [],
-        "market_data": "ETH/USD live spot (Kraken): $1,666.12 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~65%).\nDistance from live spot to $1,600.00: -4.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.1d (1-sigma move = +/-5.0%, distance = 0.81 sigma): Gaussian one-touch ('dip/reach/hit') b"
       }
     }
   ],
@@ -5767,6 +5774,18 @@
   ],
   "recent_runs": [
     {
+      "id": 510,
+      "ts": "2026-11-28T07:56:33.603202+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1170,
+      "candidates_found": 12,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 61.85,
+      "errors": []
+    },
+    {
       "id": 509,
       "ts": "2026-11-28T07:51:19.890577+00:00",
       "dry_run": 0,
@@ -5992,18 +6011,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 52.41,
-      "errors": []
-    },
-    {
-      "id": 490,
-      "ts": "2026-11-28T06:16:23.492448+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1224,
-      "candidates_found": 11,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 46.1,
       "errors": []
     }
   ]
