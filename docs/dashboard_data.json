@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T05:11:18.250515+00:00",
+  "generated_at": "2026-11-28T05:16:37.309824+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10854.45,
-    "reconciled_equity_usd": 10854.45,
+    "equity_usd": 10807.63,
+    "reconciled_equity_usd": 10807.63,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4479.12,
-    "deployed_pct": 41.27,
-    "total_pnl_usd": 854.45,
-    "total_pnl_pct": 8.54,
-    "unrealized_pnl_usd": 326.85,
+    "positions_value_usd": 4432.3,
+    "deployed_pct": 41.01,
+    "total_pnl_usd": 807.63,
+    "total_pnl_pct": 8.08,
+    "unrealized_pnl_usd": 280.03,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 335,
+    "total_forecasts": 336,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2259.12,
-    "crypto": 1385.21,
+    "politics": 2260.9,
+    "crypto": 1336.61,
     "geopolitics": 664.17,
     "markets": 170.62
   },
@@ -3689,6 +3689,13 @@
       "cash": 6375.33,
       "deployed_pct": 41.27,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T05:16:36.708222+00:00",
+      "equity": 10807.63,
+      "cash": 6375.33,
+      "deployed_pct": 41.01,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3714,9 +3721,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.285,
-      "current_value": 1385.21,
-      "unrealized_pnl": 621.4,
+      "current_price": 0.275,
+      "current_value": 1336.61,
+      "unrealized_pnl": 572.8,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3744,9 +3751,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1175,
-      "current_value": 208.88,
-      "unrealized_pnl": -11.56,
+      "current_price": 0.1185,
+      "current_value": 210.66,
+      "unrealized_pnl": -9.78,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3815,6 +3822,35 @@
   ],
   "recent_forecasts": [
     {
+      "id": 336,
+      "ts": "2026-11-28T05:16:36.704866+00:00",
+      "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
+      "question": "Will Bitcoin reach $65,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0550",
+      "p_blind": "0.0800",
+      "p_blended": "0.0615",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
+        "base_rate": 0.15,
+        "bull_case": "Bitcoin historically exhibits extreme volatility and sudden liquidity squeezes that can cover an 8.8% gap in less than 3 days.",
+        "bear_case": "BTC is trading around $59,739 with only about 71 hours left until the November 30/December 1 cutoff, requiring a swift and sustained rally without immediate macroeconomic catalysts.",
+        "summary_de": "Bitcoin müsste innerhalb von nur drei Tagen um fast neun Prozent steigen, was angesichts des aktuellen Kurses und der verbleibenden Zeit ein unwahrscheinliches Szenario ist.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,739.30 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $65,000.00: +8.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.0d (1-sigma move = +/-4.2%, distance = 2.03 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
       "id": 335,
       "ts": "2026-11-28T05:01:36.282828+00:00",
       "market_id": "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba",
@@ -3831,7 +3867,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T05:15:40.145130+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
@@ -3960,7 +3996,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:00:59.654553+00:00",
+      "last_checked_ts": "2026-11-28T05:15:39.977117+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -3995,7 +4031,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:01:00.444510+00:00",
+      "last_checked_ts": "2026-11-28T05:15:41.277963+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official election results and seat counts determining if PP and Vox secure a majority in the Spanish Congress of Deputies following the November 29, 2026 snap election.",
@@ -4097,7 +4133,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:01:00.143090+00:00",
+      "last_checked_ts": "2026-11-28T05:15:40.707023+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current price is ~$83.08 with only ~3 days left in the month.",
@@ -4168,7 +4204,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:01:00.143090+00:00",
+      "last_checked_ts": "2026-11-28T05:15:40.707023+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether WTI Crude Oil hits $90 at any point during November 2026 based on standard market pricing.",
@@ -4204,7 +4240,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:01:00.143090+00:00",
+      "last_checked_ts": "2026-11-28T05:15:40.707023+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether WTI spot/futures touch $90.00 or higher during November 2026.",
@@ -4493,7 +4529,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:00:59.654553+00:00",
+      "last_checked_ts": "2026-11-28T05:15:39.977117+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -4528,7 +4564,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:01:00.614100+00:00",
+      "last_checked_ts": "2026-11-28T05:15:41.485047+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
@@ -4609,41 +4645,6 @@
           "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
           "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
           "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine"
-        ]
-      }
-    },
-    {
-      "id": 311,
-      "ts": "2026-11-28T00:36:30.474169+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8450",
-      "p_blind": "0.5800",
-      "p_blended": "0.7538",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0962",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:05:39.135675+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires defining whether ongoing low-level skirmishes or proxy clashes constitute a breach of the Israel-Iran ceasefire through December 15.",
-        "base_rate": 0.65,
-        "bull_case": "Ongoing diplomatic mediation between Iran and the US continues to hold a fragile status quo without direct military exchanges between Israel and Iran.",
-        "bear_case": "Israeli security officials remain divided and actively debate striking Iran, raising the risk of an escalation breaking the truce before December 15.",
-        "summary_de": "Trotz anhaltender diplomatischer Vermittlungsversuche und einer bisherigen Waffenruhe bleibt die israelische Führung zerstritten, was das Risiko von Militärschlägen gegen Iran bis Mitte Dezember erhöht.",
-        "news_used": [
-          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
-          "Evening recap: Aoun, Salam propose extending UNIFIL mandate; Kuwait summons Iranian ambassador; Khalil al-Hayya’s son survives assassination",
-          "Black Friday shopping: What to buy now and what can wait - NBC 15 WPMI",
-          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
-          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
-          "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews"
         ]
       }
     }
@@ -5612,6 +5613,18 @@
   ],
   "recent_runs": [
     {
+      "id": 479,
+      "ts": "2026-11-28T05:16:36.924641+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 59.46,
+      "errors": []
+    },
+    {
       "id": 478,
       "ts": "2026-11-28T05:11:17.973587+00:00",
       "dry_run": 0,
@@ -5837,18 +5850,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 81.61,
-      "errors": []
-    },
-    {
-      "id": 459,
-      "ts": "2026-11-28T03:26:22.703955+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1153,
-      "candidates_found": 20,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 48.37,
       "errors": []
     }
   ]
