@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T16:01:54.203304+00:00",
+  "generated_at": "2026-11-28T16:06:33.130953+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11211.83,
-    "reconciled_equity_usd": 11211.83,
+    "equity_usd": 11185.76,
+    "reconciled_equity_usd": 11185.76,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 1968.61,
-    "deployed_pct": 17.56,
-    "total_pnl_usd": 1211.83,
-    "total_pnl_pct": 12.12,
-    "unrealized_pnl_usd": -71.54,
+    "positions_value_usd": 1942.54,
+    "deployed_pct": 17.37,
+    "total_pnl_usd": 1185.76,
+    "total_pnl_pct": 11.86,
+    "unrealized_pnl_usd": -97.61,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.3296,
     "brier_market_score": 0.1619,
     "brier_unique_markets": 3,
-    "total_forecasts": 372,
+    "total_forecasts": 373,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 862.72,
+    "crypto": 838.42,
     "geopolitics": 535.62,
-    "politics": 455.49,
+    "politics": 453.72,
     "markets": 114.78
   },
   "equity_curve": [
@@ -151,13 +151,6 @@
       "equity": 9228.77,
       "cash": 9228.77,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T21:26:10.888714+00:00",
-      "equity": 9927.94,
-      "cash": 8091.18,
-      "deployed_pct": 11.49,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T21:31:42.310112+00:00",
@@ -3909,6 +3902,13 @@
       "cash": 9243.22,
       "deployed_pct": 17.56,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T16:06:32.769929+00:00",
+      "equity": 11185.76,
+      "cash": 9243.22,
+      "deployed_pct": 17.37,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3919,9 +3919,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.355,
-      "current_value": 862.72,
-      "unrealized_pnl": 480.82,
+      "current_price": 0.345,
+      "current_value": 838.42,
+      "unrealized_pnl": 456.52,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3937,10 +3937,10 @@
       "current_price": 0.125,
       "current_value": 535.62,
       "unrealized_pnl": -149.97,
-      "p_yes": 0.6362,
-      "p_blended": 0.3638,
-      "edge_net": 0.2438,
-      "rationale": "Die aktuellen Nachrichten und anhaltenden militärischen Spannungen zwischen Israel und Iran deuten darauf hin, dass ein stabiler Waffenstillstand bis Mitte Dezember unwahrscheinlich ist."
+      "p_yes": 0.7432,
+      "p_blended": 0.2568,
+      "edge_net": 0.1368,
+      "rationale": "Aufgrund anhaltender militärischer Spannungen und Berichte über Drohnenvorfälle ist die Wahrscheinlichkeit eines stabilen Waffenstillstands bis Mitte Dezember moderat niedrig."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3949,9 +3949,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1265,
-      "current_value": 224.88,
-      "unrealized_pnl": 4.44,
+      "current_price": 0.1255,
+      "current_value": 223.11,
+      "unrealized_pnl": 2.67,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3990,6 +3990,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 373,
+      "ts": "2026-11-28T16:06:32.766566+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8750",
+      "p_blind": "0.3500",
+      "p_blended": "0.7432",
+      "confidence": "0.6000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.1368",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Es muss geprüft werden, wie eine formelle Waffenruhe zwischen Israel und dem Iran genau definiert ist und ob vereinzelte Zwischenfälle oder Proxy-Aktivitäten als Bruch gewertet werden.",
+        "base_rate": 0.4,
+        "bull_case": "Bestehende diplomatische Bemühungen und Kriegsmüdigkeit könnten einen temporären Waffenstillstand stabil halten.",
+        "bear_case": "Anhaltende Spannungen und Drohnenzwischenfälle in der Region (unter anderem im Persischen Golf) lassen das Risiko einer Eskalation und eines Waffenstillstandsbruchs hoch erscheinen.",
+        "summary_de": "Aufgrund anhaltender militärischer Spannungen und Berichte über Drohnenvorfälle ist die Wahrscheinlichkeit eines stabilen Waffenstillstands bis Mitte Dezember moderat niedrig.",
+        "news_used": [
+          "Lebanon-Israel ceasefire, two years on: What is happening? - The New Arab",
+          "35 Palestinians, Including Four Children, Killed in Israeli Attacks Across Gaza Over Four Days - Countercurrents",
+          "Iran points to Europe’s war role after Italians killed in Kuwait strike",
+          "Bethlehem businesses hopeful tourism will return this Christmas - WTAQ",
+          "Norse Atlantic ends flights: How Iran war continues to batter aviation",
+          "62 of the most stupid things Donald Trump has ever said - Indy100"
+        ]
+      }
+    },
+    {
       "id": 372,
       "ts": "2026-11-28T15:51:19.639359+00:00",
       "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
@@ -4006,7 +4041,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T16:05:37.182922+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires Bitcoin to have hit $55,000 at any point during November 2026 according to resolution source.",
@@ -4384,7 +4419,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:45:48.547417+00:00",
+      "last_checked_ts": "2026-11-28T16:05:37.019673+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Bitcoin hits or dips to $52,500 at any point during November 2026 UTC.",
@@ -4601,7 +4636,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:50:41.014197+00:00",
+      "last_checked_ts": "2026-11-28T16:05:37.182922+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on whether Bitcoin hits or dips to $55,000 in November 2026.",
@@ -4637,7 +4672,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:50:41.519269+00:00",
+      "last_checked_ts": "2026-11-28T16:05:37.990647+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, resolved by spot oracle before December 1, 2026.",
@@ -4748,36 +4783,6 @@
           "Middle East energy shock pushes global central banks back into rate-hike cycle - Anadolu Ajansı",
           "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
           "BoE rate hike bets cushion British Pound downside as pressure persists vs USD - www.tmgm.com"
-        ]
-      }
-    },
-    {
-      "id": 348,
-      "ts": "2026-11-28T08:46:27.934302+00:00",
-      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
-      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.9450",
-      "p_blind": "0.1200",
-      "p_blended": "0.7197",
-      "confidence": "0.7500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:55:34.824856+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolves based on the official FOMC rate decision following the December 2026 meeting.",
-        "base_rate": 0.15,
-        "bull_case": "Persistent inflation risks and sticky economic data prompt the Fed to pivot hawkish and enact a surprise 25 bps rate hike in December.",
-        "bear_case": "The historical central bank base rate for December meetings during easing or pausing cycles overwhelmingly favors holding rates steady rather than hiking.",
-        "summary_de": "Trotz einzelner hawkisher Berichte bleibt eine Zinserhöhung im Dezember historisch und angesichts der allgemeinen geldpolitischen Erwartungen ein unwahrscheinliches Szenario.",
-        "news_used": [
-          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express"
         ]
       }
     }
@@ -5786,6 +5791,18 @@
   ],
   "recent_runs": [
     {
+      "id": 605,
+      "ts": "2026-11-28T16:06:32.770654+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1174,
+      "candidates_found": 13,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 58.25,
+      "errors": []
+    },
+    {
       "id": 604,
       "ts": "2026-11-28T16:01:53.761321+00:00",
       "dry_run": 0,
@@ -6011,18 +6028,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 48.67,
-      "errors": []
-    },
-    {
-      "id": 585,
-      "ts": "2026-11-28T14:26:09.509043+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1183,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 35.75,
       "errors": []
     }
   ]
