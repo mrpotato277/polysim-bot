@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T17:06:11.733970+00:00",
+  "generated_at": "2026-11-28T17:11:35.464100+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11047.77,
-    "reconciled_equity_usd": 11047.77,
+    "equity_usd": 11000.95,
+    "reconciled_equity_usd": 11000.95,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 1804.55,
-    "deployed_pct": 16.33,
-    "total_pnl_usd": 1047.77,
-    "total_pnl_pct": 10.48,
-    "unrealized_pnl_usd": -235.6,
+    "positions_value_usd": 1757.73,
+    "deployed_pct": 15.98,
+    "total_pnl_usd": 1000.95,
+    "total_pnl_pct": 10.01,
+    "unrealized_pnl_usd": -282.42,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.3296,
     "brier_market_score": 0.1619,
     "brier_unique_markets": 3,
-    "total_forecasts": 375,
+    "total_forecasts": 377,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 765.51,
+    "crypto": 716.91,
     "geopolitics": 514.19,
-    "politics": 410.07,
-    "markets": 114.78
+    "politics": 411.85,
+    "other": 114.78
   },
   "equity_curve": [
     {
@@ -157,13 +157,6 @@
       "equity": 9249.62,
       "cash": 9249.62,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T22:31:25.706671+00:00",
-      "equity": 9961.97,
-      "cash": 8787.19,
-      "deployed_pct": 11.79,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T22:36:07.042094+00:00",
@@ -3915,6 +3908,13 @@
       "cash": 9243.22,
       "deployed_pct": 16.33,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T17:11:35.119498+00:00",
+      "equity": 11000.95,
+      "cash": 9243.22,
+      "deployed_pct": 15.98,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3925,9 +3925,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.315,
-      "current_value": 765.51,
-      "unrealized_pnl": 383.61,
+      "current_price": 0.295,
+      "current_value": 716.91,
+      "unrealized_pnl": 335.01,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3955,9 +3955,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1055,
-      "current_value": 187.55,
-      "unrealized_pnl": -32.89,
+      "current_price": 0.1065,
+      "current_value": 189.33,
+      "unrealized_pnl": -31.11,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3981,7 +3981,7 @@
     {
       "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
       "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "markets",
+      "category": "other",
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
@@ -3995,6 +3995,62 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 377,
+      "ts": "2026-11-28T17:11:35.111035+00:00",
+      "market_id": "0x9b2f80dfb3995f29c38551acbb87b27a9f95f8e63f280b3ada760430707983e0",
+      "question": "Will Elon Musk post 280-299 tweets from November 24 to December 1, 2026?",
+      "category": "politics",
+      "end_date": "2026-12-01T17:00:00+00:00",
+      "market_price": "0.2150",
+      "p_blind": "0.1200",
+      "p_blended": "0.1852",
+      "confidence": "0.6500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0348",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Counting tweets by a specific user over a defined date range is standard and verifiable via X API.",
+        "base_rate": 0.15,
+        "bull_case": "Elon Musk frequently increases his posting volume during holidays or high-engagement news cycles, potentially hitting 35-40 tweets per day over the 8-day period (total ~280-320).",
+        "bear_case": "A total of 280-299 tweets in 8 days requires an extremely narrow range (average 35-37 per day), which is statistically unlikely compared to broader outcomes.",
+        "summary_de": "Das Intervall von 280 bis 299 Tweets in acht Tagen erfordert eine sehr spezifische Posting-Frequenz, was die Wahrscheinlichkeit eines Treffers statistisch einschränkt.",
+        "news_used": []
+      }
+    },
+    {
+      "id": 376,
+      "ts": "2026-11-28T17:11:33.723120+00:00",
+      "market_id": "0xebeb1e5e8c3d6911d40c1db487919336a2ac993b5508266ce07307d0dbd386e1",
+      "question": "Will Elon Musk post 260-279 tweets from November 24 to December 1, 2026?",
+      "category": "politics",
+      "end_date": "2026-12-01T17:00:00+00:00",
+      "market_price": "0.1950",
+      "p_blind": "0.0800",
+      "p_blended": "0.1544",
+      "confidence": "0.7000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0456",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Die Auswertung basiert auf der genauen Anzahl der von Elon Musk im angegebenen Zeitraum veröffentlichten Tweets gemäß der Plattform-Definition.",
+        "base_rate": 0.15,
+        "bull_case": "Musk ist für sein hohes Tweet-Volumen bekannt und könnte in einer intensiven Phase genau in diesem Bereich von 260-279 Tweets landen.",
+        "bear_case": "Eine Spanne von nur 20 Tweets ist sehr eng gefasst, und die tägliche Tweet-Aktivität unterliegt starker Varianz, was die Wahrscheinlichkeit eines Treffers in diesem exakten Intervall statistisch gering hält.",
+        "summary_de": "Da das Zielintervall von 260 bis 279 Tweets extrem eng ist und Musks Posting-Verhalten stark schwankt, ist eine exakte Punktlandung unwahrscheinlich.",
+        "news_used": []
+      }
+    },
     {
       "id": 375,
       "ts": "2026-11-28T16:51:43.095795+00:00",
@@ -4012,7 +4068,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.250967+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.767089+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Auswertung basiert auf der genauen Anzahl der Tweets von Elon Musk im angegebenen Zeitraum.",
@@ -4040,7 +4096,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:50:48.614414+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.310329+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract asks if ETH reaches $1,700 in November; with only ~36 hours remaining, the window for volatility is extremely narrow.",
@@ -4073,7 +4129,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.398808+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.919371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, wie eine formelle Waffenruhe zwischen Israel und dem Iran genau definiert ist und ob vereinzelte Zwischenfälle oder Proxy-Aktivitäten als Bruch gewertet werden.",
@@ -4143,7 +4199,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:50:48.281502+00:00",
+      "last_checked_ts": "2026-11-28T17:10:42.978733+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Monatsendabwicklung für November 2026, klare Preisberührung.",
@@ -4172,7 +4228,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.398808+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.919371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming whether an Israel-Iran ceasefire persists continuously through December 15, subject to precise definitions of ceasefire status.",
@@ -4236,7 +4292,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.398808+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.919371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "A ceasefire must formally hold through December 15; ambiguous low-level skirmishes or proxy attacks could complicate definition of 'ceasefire continues'.",
@@ -4267,7 +4323,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.398808+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.919371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if the Israel-Iran ceasefire continues through December 15, 2026. Resolution depends on whether active hostilities resume before the deadline.",
@@ -4302,7 +4358,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.955171+00:00",
+      "last_checked_ts": "2026-11-28T17:10:44.363701+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Counts total tweets and replies by Elon Musk on X within the strict date range specified.",
@@ -4330,7 +4386,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:50:48.843810+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.467620+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England über Zinserhöhungen im Dezember 2026.",
@@ -4393,7 +4449,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.398808+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.919371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires verifying whether a formal ceasefire remains intact through the exact deadline of December 15, 2026.",
@@ -4428,7 +4484,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.611078+00:00",
+      "last_checked_ts": "2026-11-28T17:10:44.099801+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by the deadline, which is tightly defined and hard to verify if unofficial.",
@@ -4456,7 +4512,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.398808+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.919371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming that the ceasefire officially persists continuously through December 15 without a formal resumption of hostilities.",
@@ -4547,7 +4603,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:31.118343+00:00",
+      "last_checked_ts": "2026-11-28T17:10:44.547317+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation of the exact root cause of the FAA ground stop.",
@@ -4575,7 +4631,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:30.398808+00:00",
+      "last_checked_ts": "2026-11-28T17:10:43.919371+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining the precise start and continuation criteria of an Israel-Iran ceasefire by December 15, 2026.",
@@ -4641,7 +4697,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:55:31.274374+00:00",
+      "last_checked_ts": "2026-11-28T17:10:44.686659+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve raises its target federal funds rate at any FOMC meeting in 2026. Deadline is Dec 10, 2026.",
@@ -4720,70 +4776,6 @@
           "Ed Zitron says the AI trade peaked at Anthropic's IPO — and Bitcoin's slide to $55,000 is riding the same unwind - BigGo Finance"
         ],
         "market_data": "BTC/USD live spot (Kraken): $59,199.70 (24h range: $58,728.70 - $61,750.50, 30d realized annualized vol: ~46%).\nDistance from live spot to $55,000.00: -7.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.7d (1-sigma move = +/-4.0%, distance = 1.85 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 352,
-      "ts": "2026-11-28T09:46:42.750017+00:00",
-      "market_id": "0x51cb05f3d4af8985141a29b81dcfdeec5081c4edc36640579823118ae91e516d",
-      "question": "Will Ethereum dip to $1,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1145",
-      "p_blind": "0.1400",
-      "p_blended": "0.1213",
-      "confidence": "0.7500",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T17:01:07.976461+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price hit contract, resolved by spot oracle before December 1, 2026.",
-        "base_rate": 0.12,
-        "bull_case": "Crypto markets exhibit high volatility (~65% annualized) with heavy fat tails; Ethereum is currently at $1,648, only 9% away from $1,500 with a few days left in November, meaning a sudden flash crash could trigger the level.",
-        "bear_case": "With only about 2.8 days left until the end of November and ETH sitting at $1,648, a 9% drop requires a significant downward move that exceeds standard statistical expectations without a specific macro catalyst.",
-        "summary_de": "Ethereum handelt bei 1.648 USD und ist rund 9% von der Marke von 1.500 USD entfernt, was bei einer verbleibenden Zeit von weniger als drei Tagen und historischer Krypto-Volatilität zwar möglich, aber statistisch eher unwahrscheinlich ist.",
-        "news_used": [],
-        "market_data": "ETH/USD live spot (Kraken): $1,648.21 (24h range: $1,632.16 - $1,730.53, 30d realized annualized vol: ~65%).\nDistance from live spot to $1,500.00: -9.0% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.8d (1-sigma move = +/-5.7%, distance = 1.66 sigma): Gaussian one-touch ('dip/reach/hit') b"
-      }
-    },
-    {
-      "id": 351,
-      "ts": "2026-11-28T09:06:14.304626+00:00",
-      "market_id": "0xd5175b9e717fb4cf4de5fe69ed13465c831917782f2224ac330e260ee35b02a8",
-      "question": "Bank of England increases interest rates by 25 bps after December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-17T23:59:00+00:00",
-      "market_price": "0.7750",
-      "p_blind": "0.4200",
-      "p_blended": "0.6625",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.1175",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:50:48.843810+00:00",
-      "reasoning": {
-        "model": "gemini-3.1-flash-lite",
-        "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
-        "base_rate": 0.35,
-        "bull_case": "Recent geopolitical energy shocks are forcing central banks, including the BoE, to reconsider hawkish pivots to combat imported inflation.",
-        "bear_case": "The BoE has historically been cautious and may prefer to hold rates steady to avoid stifling a fragile UK economy, despite market speculation.",
-        "summary_de": "Trotz zunehmender Marktspekulationen über Zinserhöhungen aufgrund globaler Energiepreisrisiken bleibt eine tatsächliche Anhebung um 25 Basispunkte durch die Bank of England im Dezember unsicher.",
-        "news_used": [
-          "Fixed rates near 6% this week, says Moneyfacts - Mortgage Strategy",
-          "How have interest rate expectations changed after this week's events? - investingLive",
-          "Middle East energy shock pushes global central banks back into rate-hike cycle - Anadolu Ajansı",
-          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
-          "BoE rate hike bets cushion British Pound downside as pressure persists vs USD - www.tmgm.com",
-          "British Pound remains on the back foot vs USD as BoE rate hike bets limit downside - FXStreet"
-        ]
       }
     }
   ],
@@ -5791,6 +5783,18 @@
   ],
   "recent_runs": [
     {
+      "id": 617,
+      "ts": "2026-11-28T17:11:35.120792+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1153,
+      "candidates_found": 16,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 53.94,
+      "errors": []
+    },
+    {
       "id": 616,
       "ts": "2026-11-28T17:06:11.492141+00:00",
       "dry_run": 0,
@@ -6016,18 +6020,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 55.59,
-      "errors": []
-    },
-    {
-      "id": 597,
-      "ts": "2026-11-28T15:26:30.324681+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1142,
-      "candidates_found": 15,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 54.92,
       "errors": []
     }
   ]
