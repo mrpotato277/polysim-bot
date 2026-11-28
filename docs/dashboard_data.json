@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T12:51:39.180288+00:00",
+  "generated_at": "2026-11-28T12:56:17.290086+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11448.27,
-    "reconciled_equity_usd": 11448.27,
+    "equity_usd": 11400.55,
+    "reconciled_equity_usd": 11400.55,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3322.94,
-    "deployed_pct": 29.03,
-    "total_pnl_usd": 1448.27,
-    "total_pnl_pct": 14.48,
-    "unrealized_pnl_usd": 232.59,
+    "positions_value_usd": 3275.22,
+    "deployed_pct": 28.73,
+    "total_pnl_usd": 1400.55,
+    "total_pnl_pct": 14.01,
+    "unrealized_pnl_usd": 184.87,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 2260.08,
+    "crypto": 2211.48,
     "geopolitics": 492.77,
-    "politics": 455.31,
+    "politics": 456.19,
     "markets": 114.78
   },
   "equity_curve": [
@@ -127,13 +127,6 @@
       "equity": 9962.09,
       "cash": 9962.09,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T17:45:47.920770+00:00",
-      "equity": 9959.35,
-      "cash": 8998.81,
-      "deployed_pct": 9.64,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T17:51:02.118883+00:00",
@@ -3885,6 +3878,13 @@
       "cash": 8125.33,
       "deployed_pct": 29.03,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T12:56:16.960340+00:00",
+      "equity": 11400.55,
+      "cash": 8125.33,
+      "deployed_pct": 28.73,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3895,9 +3895,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.465,
-      "current_value": 2260.08,
-      "unrealized_pnl": 1496.27,
+      "current_price": 0.455,
+      "current_value": 2211.48,
+      "unrealized_pnl": 1447.67,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3925,9 +3925,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1165,
-      "current_value": 207.11,
-      "unrealized_pnl": -13.33,
+      "current_price": 0.117,
+      "current_value": 207.99,
+      "unrealized_pnl": -12.45,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -4029,7 +4029,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T12:55:32.821111+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation of the exact root cause of the FAA ground stop.",
@@ -4092,7 +4092,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:40:48.088381+00:00",
+      "last_checked_ts": "2026-11-28T12:55:34.142092+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard Polymarket crypto spot price touch rule for November.",
@@ -4123,7 +4123,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:35:39.358656+00:00",
+      "last_checked_ts": "2026-11-28T12:55:32.994318+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve raises its target federal funds rate at any FOMC meeting in 2026. Deadline is Dec 10, 2026.",
@@ -4638,7 +4638,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:35:39.201358+00:00",
+      "last_checked_ts": "2026-11-28T12:55:32.821111+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4738,7 +4738,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:40:49.246371+00:00",
+      "last_checked_ts": "2026-11-28T12:55:35.077453+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -5783,6 +5783,18 @@
   ],
   "recent_runs": [
     {
+      "id": 567,
+      "ts": "2026-11-28T12:56:16.961974+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1137,
+      "candidates_found": 13,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 45.75,
+      "errors": []
+    },
+    {
       "id": 566,
       "ts": "2026-11-28T12:51:38.403485+00:00",
       "dry_run": 0,
@@ -6008,18 +6020,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 92.61,
-      "errors": []
-    },
-    {
-      "id": 547,
-      "ts": "2026-11-28T11:01:38.151924+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1185,
-      "candidates_found": 13,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 37.47,
       "errors": []
     }
   ]
