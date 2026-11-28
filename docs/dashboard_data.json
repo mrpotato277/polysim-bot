@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T16:56:23.558100+00:00",
+  "generated_at": "2026-11-28T17:02:00.181768+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11129.65,
-    "reconciled_equity_usd": 11129.65,
+    "equity_usd": 11023.47,
+    "reconciled_equity_usd": 11023.47,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 1886.43,
-    "deployed_pct": 16.95,
-    "total_pnl_usd": 1129.65,
-    "total_pnl_pct": 11.3,
-    "unrealized_pnl_usd": -153.72,
+    "positions_value_usd": 1780.25,
+    "deployed_pct": 16.15,
+    "total_pnl_usd": 1023.47,
+    "total_pnl_pct": 10.23,
+    "unrealized_pnl_usd": -259.9,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 801.97,
+    "crypto": 741.21,
     "geopolitics": 514.19,
-    "politics": 455.49,
+    "politics": 410.07,
     "markets": 114.78
   },
   "equity_curve": [
@@ -157,13 +157,6 @@
       "equity": 9249.62,
       "cash": 9249.62,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T22:21:15.435960+00:00",
-      "equity": 9962.86,
-      "cash": 8787.19,
-      "deployed_pct": 11.8,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T22:26:18.958733+00:00",
@@ -3909,6 +3902,19 @@
       "cash": 9243.22,
       "deployed_pct": 16.95,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T17:00:00+00:00",
+      "equity": 11047.78,
+      "cash": 11047.78,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T17:01:59.772494+00:00",
+      "equity": 11023.47,
+      "cash": 9243.22,
+      "deployed_pct": 16.15,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3919,9 +3925,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.33,
-      "current_value": 801.97,
-      "unrealized_pnl": 420.07,
+      "current_price": 0.305,
+      "current_value": 741.21,
+      "unrealized_pnl": 359.31,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3949,9 +3955,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1265,
-      "current_value": 224.88,
-      "unrealized_pnl": 4.44,
+      "current_price": 0.1055,
+      "current_value": 187.55,
+      "unrealized_pnl": -32.89,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3964,9 +3970,9 @@
       "outcome": "Yes",
       "quantity": 809.16,
       "avg_entry_price": 0.26,
-      "current_price": 0.285,
-      "current_value": 230.61,
-      "unrealized_pnl": 20.23,
+      "current_price": 0.275,
+      "current_value": 222.52,
+      "unrealized_pnl": 12.14,
       "p_yes": 0.3193,
       "p_blended": 0.3193,
       "edge_net": 0.0493,
@@ -4102,7 +4108,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:45:41.455745+00:00",
+      "last_checked_ts": "2026-11-28T17:01:06.912315+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires Bitcoin to have hit $55,000 at any point during November 2026 according to resolution source.",
@@ -4480,7 +4486,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:45:41.303068+00:00",
+      "last_checked_ts": "2026-11-28T17:01:06.693623+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Bitcoin hits or dips to $52,500 at any point during November 2026 UTC.",
@@ -4697,7 +4703,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:45:41.455745+00:00",
+      "last_checked_ts": "2026-11-28T17:01:06.912315+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on whether Bitcoin hits or dips to $55,000 in November 2026.",
@@ -4733,7 +4739,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T16:45:42.120279+00:00",
+      "last_checked_ts": "2026-11-28T17:01:07.976461+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, resolved by spot oracle before December 1, 2026.",
@@ -5785,6 +5791,18 @@
   ],
   "recent_runs": [
     {
+      "id": 615,
+      "ts": "2026-11-28T17:01:59.773960+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1154,
+      "candidates_found": 13,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 56.27,
+      "errors": []
+    },
+    {
       "id": 614,
       "ts": "2026-11-28T16:56:23.189410+00:00",
       "dry_run": 0,
@@ -6010,18 +6028,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 90.53,
-      "errors": []
-    },
-    {
-      "id": 595,
-      "ts": "2026-11-28T15:16:39.005060+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1142,
-      "candidates_found": 13,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 56.55,
       "errors": []
     }
   ]
