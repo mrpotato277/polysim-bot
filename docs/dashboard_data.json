@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T00:21:38.554629+00:00",
+  "generated_at": "2026-11-28T00:26:21.227324+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,31 +11,31 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10625.68,
-    "reconciled_equity_usd": 10332.33,
-    "equity_discrepancy_usd": 293.35,
-    "cash_usd": 6080.31,
-    "positions_value_usd": 4252.02,
-    "deployed_pct": 40.02,
-    "total_pnl_usd": 625.68,
-    "total_pnl_pct": 6.26,
-    "unrealized_pnl_usd": 99.75,
-    "total_trades": 298,
-    "win_rate_pct": 60.0,
+    "equity_usd": 10595.45,
+    "reconciled_equity_usd": 10595.45,
+    "equity_discrepancy_usd": 0.0,
+    "cash_usd": 6375.33,
+    "positions_value_usd": 4220.12,
+    "deployed_pct": 39.83,
+    "total_pnl_usd": 595.45,
+    "total_pnl_pct": 5.95,
+    "unrealized_pnl_usd": 67.85,
+    "total_trades": 304,
+    "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
     "brier_score": 0.1224,
     "brier_resolved_count": 6,
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 309,
+    "total_forecasts": 310,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2323.64,
+    "politics": 2307.25,
     "crypto": 1093.59,
     "geopolitics": 664.17,
-    "markets": 170.62
+    "markets": 155.11
   },
   "equity_curve": [
     {
@@ -3288,6 +3288,13 @@
       "cash": 6080.31,
       "deployed_pct": 40.02,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T00:26:20.854368+00:00",
+      "equity": 10595.45,
+      "cash": 6375.33,
+      "deployed_pct": 39.83,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3298,9 +3305,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.28,
-      "current_value": 502.01,
-      "unrealized_pnl": 125.5,
+      "current_price": 0.275,
+      "current_value": 493.05,
+      "unrealized_pnl": 116.54,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -3343,9 +3350,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1225,
-      "current_value": 217.77,
-      "unrealized_pnl": -2.67,
+      "current_price": 0.1215,
+      "current_value": 215.99,
+      "unrealized_pnl": -4.45,
       "p_yes": 0.2174,
       "p_blended": 0.2174,
       "edge_net": 0.0954,
@@ -3388,9 +3395,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.56,
-      "current_value": 633.21,
-      "unrealized_pnl": -52.2,
+      "current_price": 0.555,
+      "current_value": 627.56,
+      "unrealized_pnl": -57.85,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3403,9 +3410,9 @@
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
-      "current_price": 0.055,
-      "current_value": 170.62,
-      "unrealized_pnl": -371.22,
+      "current_price": 0.05,
+      "current_value": 155.11,
+      "unrealized_pnl": -386.73,
       "p_yes": 0.1262,
       "p_blended": 0.1262,
       "edge_net": 0.0,
@@ -3413,6 +3420,36 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 310,
+      "ts": "2026-11-28T00:26:20.852434+00:00",
+      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
+      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
+      "category": "technology",
+      "end_date": "2026-12-01T04:59:00+00:00",
+      "market_price": "0.2125",
+      "p_blind": "0.2000",
+      "p_blended": "0.2091",
+      "confidence": "0.6500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0059",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the alleged FAA ground stop on November 13.",
+        "base_rate": 0.35,
+        "bull_case": "Complex modern aviation ground stops are frequently attributed to software glitches or configuration updates gone wrong, and preliminary reports often point in this direction.",
+        "bear_case": "FAA investigations take months, and November 13 may not have featured an official nationwide ground stop, or the root cause might be attributed to hardware, communications failure, or external factors rather than software/configuration.",
+        "summary_de": "Es gibt keine eindeutigen offiziellen Belege dafür, dass ein Software- oder Konfigurationsfehler die angebliche FAA-Sperre am 13. November verursacht hat, und offizielle Untersuchungen dauern oft an.",
+        "news_used": [
+          "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/"
+        ]
+      }
+    },
     {
       "id": 309,
       "ts": "2026-11-28T00:16:44.108849+00:00",
@@ -3500,7 +3537,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:10:42.097167+00:00",
+      "last_checked_ts": "2026-11-28T00:25:32.415082+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Market resolves based on standard spot price feeds reaching $1,800 before the end of November.",
@@ -4245,41 +4282,6 @@
           "Europe Braces for Election Season as Spain Votes - Bloomberg",
           "Sanchez makes last bid to beat the right ahead of Spanish vote - The Australian",
           "Spanish PM and rivals rally supporters in final pitch for votes - BBC"
-        ]
-      }
-    },
-    {
-      "id": 285,
-      "ts": "2026-11-27T22:26:20.279088+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2500",
-      "p_blind": "0.3800",
-      "p_blended": "0.3009",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0509",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:20:40.861354+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India.",
-        "base_rate": 0.35,
-        "bull_case": "New Zealand's batters are currently at the crease on Day 2 with a decent total (246/5), giving them a platform to build a strong innings against India.",
-        "bear_case": "India is traditionally a formidable opponent in Test cricket, especially as the match progresses into days 3, 4, and 5 where spin and depth usually favor India.",
-        "summary_de": "Neuseeland ist im zweiten Test gegen Indien am zweiten Tag gut im Spiel, jedoch bleibt Indien als Testgegner auswärts traditionell ein schwieriger Kontrahent für einen Sieg.",
-        "news_used": [
-          "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
-          "Dallas CUTHBERT Obituary (2026) - The New Zealand Herald - NZ Herald",
-          "Bugman Ruud Kleinpaste Connects With A New Zealand River - Scoop - New Zealand News",
-          "England Chase Historic Third Straight Win Over New Zealand - Oz Arab Media",
-          "India vs New Zealand, 2nd Test Day 2 LIVE score: NZ resumes from 246/5; Blundell, Phillips batting - Sportstar",
-          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post"
         ]
       }
     }
@@ -5248,6 +5250,18 @@
   ],
   "recent_runs": [
     {
+      "id": 426,
+      "ts": "2026-11-28T00:26:20.855645+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1149,
+      "candidates_found": 18,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 50.59,
+      "errors": []
+    },
+    {
       "id": 425,
       "ts": "2026-11-28T00:21:38.169183+00:00",
       "dry_run": 0,
@@ -5473,18 +5487,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 57.98,
-      "errors": []
-    },
-    {
-      "id": 406,
-      "ts": "2026-11-27T22:46:20.392695+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1148,
-      "candidates_found": 19,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 40.98,
       "errors": []
     }
   ]
