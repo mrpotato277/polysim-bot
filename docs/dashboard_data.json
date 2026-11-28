@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T14:51:21.999983+00:00",
+  "generated_at": "2026-11-28T14:56:07.988900+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11505.52,
-    "reconciled_equity_usd": 11505.52,
+    "equity_usd": 11481.22,
+    "reconciled_equity_usd": 11481.22,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2262.3,
-    "deployed_pct": 19.66,
-    "total_pnl_usd": 1505.52,
-    "total_pnl_pct": 15.06,
-    "unrealized_pnl_usd": -446.14,
+    "positions_value_usd": 2238.0,
+    "deployed_pct": 19.49,
+    "total_pnl_usd": 1481.22,
+    "total_pnl_pct": 14.81,
+    "unrealized_pnl_usd": -470.44,
     "total_trades": 313,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 370,
+    "total_forecasts": 371,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1130.04,
+    "crypto": 1105.74,
     "geopolitics": 535.62,
     "politics": 481.86,
     "markets": 114.78
@@ -145,13 +145,6 @@
       "equity": 9518.65,
       "cash": 9518.65,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T20:11:07.811284+00:00",
-      "equity": 9942.49,
-      "cash": 8361.37,
-      "deployed_pct": 11.62,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T20:21:17.449636+00:00",
@@ -3897,6 +3890,13 @@
       "cash": 9243.22,
       "deployed_pct": 19.66,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T14:56:07.735974+00:00",
+      "equity": 11481.22,
+      "cash": 9243.22,
+      "deployed_pct": 19.49,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3907,9 +3907,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.465,
-      "current_value": 1130.04,
-      "unrealized_pnl": 748.14,
+      "current_price": 0.455,
+      "current_value": 1105.74,
+      "unrealized_pnl": 723.84,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3992,6 +3992,35 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 371,
+      "ts": "2026-11-28T14:56:07.733073+00:00",
+      "market_id": "0x68f425a37a2bf693d43de418335b00841af699ef37cc5cb6634c83432c6541cd",
+      "question": "Will Bitcoin dip to $57,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.4400",
+      "p_blind": "0.4800",
+      "p_blended": "0.4506",
+      "confidence": "0.6500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0106",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Monatsendabwicklung für November 2026, klare Preisberührung.",
+        "base_rate": 0.45,
+        "bull_case": "Bitcoin notiert nahe $59.200 und ist nur rund 2,9% von der $57.500er-Marke entfernt, was bei den üblichen Intraday-Schwankungen im Krypto-Markt innerhalb der verbleibenden Stunden leicht erreicht werden kann.",
+        "bear_case": "Die Zeit bis zum Monatsende (Deadline 1. Dezember 2026, 05:00 UTC) ist extrem kurz (weniger als 48 Stunden), und die aktuelle Handelsspanne hielt sich bisher stabil über dem Niveau.",
+        "summary_de": "Mit einem aktuellen Kursabstand von nur 2,9% und weniger als zwei verbleibenden Tagen im November besteht eine moderate Chance auf einen kurzen Rücksetzer, der die $57.500er-Marke berührt.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,219.50 (24h range: $58,728.70 - $60,500.00, 30d realized annualized vol: ~46%).\nDistance from live spot to $57,500.00: -2.9% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.6d (1-sigma move = +/-3.9%, distance = 0.76 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 370,
       "ts": "2026-11-28T14:11:17.857245+00:00",
@@ -4323,7 +4352,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:40:39.929969+00:00",
+      "last_checked_ts": "2026-11-28T14:55:33.634536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Bitcoin hits or dips to $52,500 at any point during November 2026 UTC.",
@@ -4447,7 +4476,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:35:32.563411+00:00",
+      "last_checked_ts": "2026-11-28T14:55:32.328108+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard Polymarket crypto spot price touch rule for November.",
@@ -4746,42 +4775,6 @@
         "bear_case": "Der langfristige globale Trend geht zu Zinssenkungen oder stabilen Zinsen, und eine Erhöhung um 25 bps ist im aktuellen Zinszyklus eher unwahrscheinlich.",
         "summary_de": "Da im aktuellen makroökonomischen Umfeld Zinssenkungen oder stabile Zinsen wahrscheinlicher sind als plötzliche Zinserhöhungen, wird eine Anhebung um 25 Basispunkte im Dezember 2026 als gering eingestuft.",
         "news_used": []
-      }
-    },
-    {
-      "id": 346,
-      "ts": "2026-11-28T07:56:33.601136+00:00",
-      "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
-      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "markets",
-      "end_date": "2026-12-01T04:59:59.999000+00:00",
-      "market_price": "0.0400",
-      "p_blind": "0.0500",
-      "p_blended": "0.0453",
-      "confidence": "0.9000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:45:41.723762+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current live price is ~$83.08 with only 2 days remaining in November.",
-        "base_rate": 0.05,
-        "bull_case": "Geopolitical tensions and Middle East supply attacks could trigger a sudden intraday spike past $90 before the end of November.",
-        "bear_case": "WTI is currently trading near $83.08 with only 2 days left in November, requiring an immediate ~8.3% vertical surge which is statistically unlikely despite supply risks.",
-        "summary_de": "Trotz geopolitischer Spannungen liegt der WTI-Preis kurz vor Monatsende bei rund 83 Dollar, wodurch ein plötzlicher Anstieg auf 90 Dollar in den verbleibenden zwei Tagen sehr unwahrscheinlich ist.",
-        "news_used": [
-          "Crude Oil Prices Climb as Brent Nears $96 a Barrel - JournalArta",
-          "Middle East Attacks Push Oil Prices Higher, Halting Recent Slide - SSBCrack",
-          "Oil Price Forecast — WTI ($83.74) $88.50 and Brent ($95.20) $100 Upside Targets on Saudi Refinery Strikes - TradingNEWS",
-          "Opinion: Oil's surplus will not erase the Hormuz risk premium - Invezz",
-          "WTI Crude Oil Forecast 27/11: Bulls Eye $90 - Menafn",
-          "Wall Street Split on 2027 Oil Outlook as Brent Slips Below $90 - IndexBox"
-        ],
-        "market_data": "WTI Crude Oil (CL=F) live reference: 83.08 (prev close: 80.17, +3.63%)."
       }
     }
   ],
@@ -5789,6 +5782,18 @@
   ],
   "recent_runs": [
     {
+      "id": 591,
+      "ts": "2026-11-28T14:56:07.736870+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1274,
+      "candidates_found": 14,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 36.84,
+      "errors": []
+    },
+    {
       "id": 590,
       "ts": "2026-11-28T14:51:21.709238+00:00",
       "dry_run": 0,
@@ -6014,18 +6019,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 55.98,
-      "errors": []
-    },
-    {
-      "id": 571,
-      "ts": "2026-11-28T13:16:40.572579+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1240,
-      "candidates_found": 11,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 55.57,
       "errors": []
     }
   ]
