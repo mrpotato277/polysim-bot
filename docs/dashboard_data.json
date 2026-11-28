@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T17:16:37.399312+00:00",
+  "generated_at": "2026-11-28T17:21:19.820948+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11006.28,
-    "reconciled_equity_usd": 11006.28,
+    "equity_usd": 11031.47,
+    "reconciled_equity_usd": 11031.47,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 1763.06,
-    "deployed_pct": 16.02,
-    "total_pnl_usd": 1006.28,
-    "total_pnl_pct": 10.06,
-    "unrealized_pnl_usd": -277.09,
+    "positions_value_usd": 1788.25,
+    "deployed_pct": 16.21,
+    "total_pnl_usd": 1031.47,
+    "total_pnl_pct": 10.31,
+    "unrealized_pnl_usd": -251.9,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.3296,
     "brier_market_score": 0.1619,
     "brier_unique_markets": 3,
-    "total_forecasts": 377,
+    "total_forecasts": 378,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 716.91,
+    "crypto": 741.21,
     "geopolitics": 514.19,
-    "politics": 417.18,
+    "politics": 418.07,
     "markets": 114.78
   },
   "equity_curve": [
@@ -157,13 +157,6 @@
       "equity": 9249.62,
       "cash": 9249.62,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T22:41:33.360220+00:00",
-      "equity": 9966.14,
-      "cash": 8787.19,
-      "deployed_pct": 11.83,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T22:46:52.276452+00:00",
@@ -3915,6 +3908,13 @@
       "cash": 9243.22,
       "deployed_pct": 16.02,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T17:21:19.585576+00:00",
+      "equity": 11031.47,
+      "cash": 9243.22,
+      "deployed_pct": 16.21,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3925,9 +3925,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.295,
-      "current_value": 716.91,
-      "unrealized_pnl": 335.01,
+      "current_price": 0.305,
+      "current_value": 741.21,
+      "unrealized_pnl": 359.31,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3955,9 +3955,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1095,
-      "current_value": 194.66,
-      "unrealized_pnl": -25.78,
+      "current_price": 0.11,
+      "current_value": 195.55,
+      "unrealized_pnl": -24.89,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3995,6 +3995,35 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 378,
+      "ts": "2026-11-28T17:21:19.583193+00:00",
+      "market_id": "0x1444c23bbb16890b3c128f420d7dffcc1034b27c1a0832c6301586ac4154caca",
+      "question": "Will Bitcoin reach $65,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.0515",
+      "p_blind": "0.0200",
+      "p_blended": "0.0385",
+      "confidence": "0.9000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Standard price hit contract based on exchange spot feeds through end of November.",
+        "base_rate": 0.03,
+        "bull_case": "Extreme crypto market volatility could trigger a sudden short squeeze or massive liquidations pushing price up 9.2% in the remaining few hours.",
+        "bear_case": "Bitcoin is trading significantly below the $65,000 threshold at ~$59,547 with only a few hours remaining until the November deadline, making a 9.2% surge statistically improbable.",
+        "summary_de": "Bitcoin handelt kurz vor Monatsende deutlich unter dem Ziel von 65.000 USD, wodurch ein plötzlicher Anstieg in der verbleibenden Zeit äußerst unwahrscheinlich ist.",
+        "news_used": [],
+        "market_data": "BTC/USD live spot (Kraken): $59,547.40 (24h range: $58,890.00 - $60,203.90, 30d realized annualized vol: ~46%).\nDistance from live spot to $65,000.00: +9.2% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.5d (1-sigma move = +/-3.8%, distance = 2.31 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 377,
       "ts": "2026-11-28T17:11:35.111035+00:00",
@@ -4164,7 +4193,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T17:01:06.912315+00:00",
+      "last_checked_ts": "2026-11-28T17:20:40.726582+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires Bitcoin to have hit $55,000 at any point during November 2026 according to resolution source.",
@@ -4542,7 +4571,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T17:01:06.693623+00:00",
+      "last_checked_ts": "2026-11-28T17:20:40.615345+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Bitcoin hits or dips to $52,500 at any point during November 2026 UTC.",
@@ -4571,7 +4600,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T17:05:35.396718+00:00",
+      "last_checked_ts": "2026-11-28T17:20:42.120159+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,500 in November, resolving based on standard spot index feeds before December 1.",
@@ -4740,42 +4769,6 @@
           "Bitcoin’s $64K rally fizzles. Can $60K hold? - Crypto News"
         ],
         "market_data": "BTC/USD live spot (Kraken): $59,199.70 (24h range: $58,728.70 - $61,750.50, 30d realized annualized vol: ~46%).\nDistance from live spot to $64,000.00: +8.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.2d (1-sigma move = +/-4.3%, distance = 1.80 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 353,
-      "ts": "2026-11-28T11:01:37.019567+00:00",
-      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
-      "question": "Will Bitcoin dip to $55,000 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.1410",
-      "p_blind": "0.9500",
-      "p_blended": "0.6964",
-      "confidence": "0.9000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.5481",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T17:01:06.912315+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Resolution depends on whether Bitcoin hits or dips to $55,000 in November 2026.",
-        "base_rate": 0.05,
-        "bull_case": "Recent news reports confirm Bitcoin has dropped to or neared $55,000 amid a broad crypto sell-off.",
-        "bear_case": "Current spot is around $59,200 with only a few days left in November, making a further dip to $55,000 unlikely unless severe liquidation occurs.",
-        "summary_de": "Aktuelle Marktdaten und Nachrichtenberichte bestätigen, dass Bitcoin im November die Marke von 55.000 USD erreicht hat, weshalb ein Ja-Ergebnis hochwahrscheinlich ist.",
-        "news_used": [
-          "Bitcoin drops to $55,000 amid broad crypto sell-off; historical data shows mixed short-term rebounds. - Pluang",
-          "Bitcoin finds strongest buying support since Au... - Pluang",
-          "Bitcoin has lost half its value: Can it recover before the end of 2026? - Al-Bawaba",
-          "Bitfinex Sees Record $4.94B BTC Fund Exodus in November as Bitcoin Nears $55,000 - CryptoDaily",
-          "Polymarket Odds Today: Netanyahu, Bitcoin, Super Bowl Odds - RG.org",
-          "Ed Zitron says the AI trade peaked at Anthropic's IPO — and Bitcoin's slide to $55,000 is riding the same unwind - BigGo Finance"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $59,199.70 (24h range: $58,728.70 - $61,750.50, 30d realized annualized vol: ~46%).\nDistance from live spot to $55,000.00: -7.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.7d (1-sigma move = +/-4.0%, distance = 1.85 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -5783,6 +5776,18 @@
   ],
   "recent_runs": [
     {
+      "id": 619,
+      "ts": "2026-11-28T17:21:19.586377+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1121,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 40.21,
+      "errors": []
+    },
+    {
       "id": 618,
       "ts": "2026-11-28T17:16:37.057567+00:00",
       "dry_run": 0,
@@ -6008,18 +6013,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 35.81,
-      "errors": []
-    },
-    {
-      "id": 599,
-      "ts": "2026-11-28T15:36:34.470528+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1223,
-      "candidates_found": 13,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.12,
       "errors": []
     }
   ]
