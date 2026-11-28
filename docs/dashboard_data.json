@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T23:56:20.811682+00:00",
+  "generated_at": "2026-11-28T00:02:08.606168+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10674.32,
-    "reconciled_equity_usd": 10674.32,
-    "equity_discrepancy_usd": 0.0,
+    "equity_usd": 10631.26,
+    "reconciled_equity_usd": 10629.48,
+    "equity_discrepancy_usd": 1.78,
     "cash_usd": 6080.31,
-    "positions_value_usd": 4594.01,
-    "deployed_pct": 43.04,
-    "total_pnl_usd": 674.32,
-    "total_pnl_pct": 6.74,
-    "unrealized_pnl_usd": 216.34,
+    "positions_value_usd": 4549.17,
+    "deployed_pct": 42.79,
+    "total_pnl_usd": 631.26,
+    "total_pnl_pct": 6.31,
+    "unrealized_pnl_usd": 171.5,
     "total_trades": 298,
     "win_rate_pct": 60.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 305,
+    "total_forecasts": 307,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2601.51,
-    "crypto": 1142.19,
+    "politics": 2580.97,
+    "crypto": 1117.89,
     "geopolitics": 664.17,
     "markets": 186.14
   },
@@ -3247,6 +3247,19 @@
       "cash": 6080.31,
       "deployed_pct": 43.04,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T00:00:00+00:00",
+      "equity": 10630.36,
+      "cash": 10630.36,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T00:02:08.197610+00:00",
+      "equity": 10631.26,
+      "cash": 6080.31,
+      "deployed_pct": 42.79,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3272,9 +3285,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.235,
-      "current_value": 1142.19,
-      "unrealized_pnl": 378.38,
+      "current_price": 0.23,
+      "current_value": 1117.89,
+      "unrealized_pnl": 354.08,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3302,9 +3315,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.138,
-      "current_value": 245.33,
-      "unrealized_pnl": 24.89,
+      "current_price": 0.128,
+      "current_value": 227.55,
+      "unrealized_pnl": 7.11,
       "p_yes": 0.2248,
       "p_blended": 0.2248,
       "edge_net": 0.0868,
@@ -3362,9 +3375,9 @@
       "outcome": "Yes",
       "quantity": 1104.9,
       "avg_entry_price": 0.204,
-      "current_price": 0.262,
-      "current_value": 289.48,
-      "unrealized_pnl": 64.08,
+      "current_price": 0.2595,
+      "current_value": 286.72,
+      "unrealized_pnl": 61.32,
       "p_yes": 0.2862,
       "p_blended": 0.2862,
       "edge_net": 0.0822,
@@ -3387,6 +3400,72 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 307,
+      "ts": "2026-11-28T00:02:08.195443+00:00",
+      "market_id": "0x5eb5d77d8607ce8b2859fb059e07859164b5096fe84c7b181c3ce034b19d7a5b",
+      "question": "Will Ethereum reach $1,800 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1100",
+      "p_blind": "0.2200",
+      "p_blended": "0.1477",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Market resolves based on standard spot price feeds reaching $1,800 before the end of November.",
+        "base_rate": 0.2,
+        "bull_case": "Ethereum recently tested the $1,800 resistance area and reached a 24h high of $1,752, showing that a volatile push of another 3% to 8% is entirely possible within the final days of November given crypto fat tails.",
+        "bear_case": "ETH currently trades around $1,662 with only about 3 days left in the month, requiring an 8.3% rally while trapped in a descending channel and facing heavy overhead resistance at $1,800.",
+        "summary_de": "Mit dem aktuellen Kurs von rund 1.662 USD und nur noch wenigen verbleibenden Tagen im November ist ein Erreichen der Marke von 1.800 USD bei starkem Abwärtstrend und anhaltendem Widerstand unwahrscheinlich, wenngleich Krypto-Volatilität eine Restwahrscheinlichkeit lässt.",
+        "news_used": [
+          "Ether Tests $1,800 Resistance as Recovery Stays in Descending Channel - www.tokenpost.com"
+        ],
+        "market_data": "ETH/USD live spot (Kraken): $1,662.59 (24h range: $1,632.16 - $1,752.33, 30d realized annualized vol: ~65%).\nDistance from live spot to $1,800.00: +8.3% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.2d (1-sigma move = +/-6.1%, distance = 1.30 sigma): Gaussian one-touch ('dip/reach/hit') b"
+      }
+    },
+    {
+      "id": 306,
+      "ts": "2026-11-28T00:02:06.332824+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8650",
+      "p_blind": "0.5500",
+      "p_blended": "0.7616",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1084",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain.",
+        "base_rate": 0.4,
+        "bull_case": "Ominous polls and right-wing coalition momentum point to Feijóo as a strong contender to take over from Pedro Sánchez.",
+        "bear_case": "Pedro Sánchez and the progressive camp remain confident of securing another term, and forming a governing majority in Spain's fragmented parliament remains difficult.",
+        "summary_de": "Trotz guter Umfrageergebnisse des konservativen Blocks und intensiver Schlusskampagnen bleibt die Regierungsbildung in Spanien ungewiss, weshalb Feijóos Chancen moderat eingeschätzt werden.",
+        "news_used": [
+          "Feijóo appeals to the left despite counting on a right-wing majority: “Lend us your vote to get back to honesty” - EL PAÍS English",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spanish PM and rivals rally supporters in final pitch for votes",
+          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
+          "Pedro Sánchez confident he can secure another term for Spain’s progressive government - EL PAÍS English",
+          "Spain's election campaign reaches its final day - RUSSPAIN.com"
+        ]
+      }
+    },
     {
       "id": 305,
       "ts": "2026-11-27T23:56:20.570044+00:00",
@@ -3649,7 +3728,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:45:41.267656+00:00",
+      "last_checked_ts": "2026-11-28T00:01:04.619664+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage betrifft direkt, welche Partei bei der vorgezogenen Parlamentswahl die meisten Sitze gewinnt. Das Ergebnis sollte kurz nach der Wahl am 29. November 2026 feststehen.",
@@ -3719,7 +3798,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:45:40.437775+00:00",
+      "last_checked_ts": "2026-11-28T00:01:03.849479+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether PP and Vox achieve a majority in the Spanish general election held on 29 November 2026.",
@@ -3754,7 +3833,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:45:41.267656+00:00",
+      "last_checked_ts": "2026-11-28T00:01:04.619664+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the early Spanish general election held on November 29, 2026.",
@@ -3999,7 +4078,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:45:42.011279+00:00",
+      "last_checked_ts": "2026-11-28T00:01:05.444612+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price check for Bitcoin above $64,000 at the specified deadline.",
@@ -4181,76 +4260,6 @@
         "bull_case": "Sánchez zeigt sich kämpferisch und mobilisiert in den letzten Wahlkampftagen erfolgreich seine Basis, um den Prognosen zu trotzen.",
         "bear_case": "Die aktuellen Umfragen und die geschlossene Front seiner politischen Rivalen deuten auf eine mögliche Niederlage und einen Machtwechsel hin.",
         "summary_de": "Angesichts der laufenden Wahlen und schwieriger Umfragewerte bleibt die Wiederwahl von Pedro Sánchez umstritten, wobei die Rechten starke Konkurrenz bieten.",
-        "news_used": [
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
-          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
-          "Spanish PM and rivals rally supporters in final pitch for votes",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg",
-          "Sanchez makes last bid to beat the right ahead of Spanish vote - The Australian",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC"
-        ]
-      }
-    },
-    {
-      "id": 282,
-      "ts": "2026-11-27T22:16:50.894732+00:00",
-      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
-      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.8650",
-      "p_blind": "0.5500",
-      "p_blended": "0.7616",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1084",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:55:35.228969+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain after the current electoral cycle.",
-        "base_rate": 0.5,
-        "bull_case": "Polls consistently favor the right-wing opposition led by Alberto Núñez Feijóo, pointing to potential victory.",
-        "bear_case": "Incumbent Pedro Sánchez historically defies expectations and could forge unlikely coalition majorities.",
-        "summary_de": "Trotz ungünstiger Umfragen für den amtierenden Premierminister Pedro Sánchez bleibt die Regierungsbildung durch Koalitionen ungewiss, wobei Feijóo moderate Chancen auf das Amt hat.",
-        "news_used": [
-          "Spanish PM and rivals rally supporters in final pitch for votes",
-          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
-          "Pedro Sánchez Seeks Unlikely Win With Plea for Spaniards to Go Vote - Bloomberg",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Don’t Bet on Spain’s Right to Fix Ties With Israel - The Times of Israel",
-          "Spanish prime minister Pedro Sánchez confident of election victory despite polls – as it happened - The Guardian"
-        ]
-      }
-    },
-    {
-      "id": 281,
-      "ts": "2026-11-27T22:16:48.849760+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1305",
-      "p_blind": "0.4500",
-      "p_blended": "0.2343",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1053",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-27T23:50:35.598567+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Pedro Sánchez will be the next Prime Minister of Spain, resolving based on official appointment.",
-        "base_rate": 0.5,
-        "bull_case": "Pedro Sánchez is aggressively fighting to mobilize his base and defy negative polls in the final stretch of the election.",
-        "bear_case": "Polls consistently show right-wing rivals gaining momentum, and coalition math may block Sánchez from retaining power.",
-        "summary_de": "Pedro Sánchez kämpft im Endspurt der Wahlen gegen Umfragen, die seinen rechten Rivalen Vorteile einräumen, weshalb seine Wiederwahl als Ministerpräsident weiterhin umstritten ist.",
         "news_used": [
           "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
           "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
@@ -5206,6 +5215,18 @@
   ],
   "recent_runs": [
     {
+      "id": 421,
+      "ts": "2026-11-28T00:02:08.198412+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1123,
+      "candidates_found": 19,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 67.39,
+      "errors": []
+    },
+    {
       "id": 420,
       "ts": "2026-11-27T23:56:20.572818+00:00",
       "dry_run": 0,
@@ -5431,18 +5452,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 42.53,
-      "errors": []
-    },
-    {
-      "id": 401,
-      "ts": "2026-11-27T22:21:22.895304+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1229,
-      "candidates_found": 19,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 42.4,
       "errors": []
     }
   ]
