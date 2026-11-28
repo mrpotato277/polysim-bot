@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T03:56:36.043556+00:00",
+  "generated_at": "2026-11-28T04:02:02.853479+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10567.03,
-    "reconciled_equity_usd": 10567.03,
+    "equity_usd": 10468.04,
+    "reconciled_equity_usd": 10468.04,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4191.7,
-    "deployed_pct": 39.67,
-    "total_pnl_usd": 567.03,
-    "total_pnl_pct": 5.67,
-    "unrealized_pnl_usd": 39.43,
+    "positions_value_usd": 4092.71,
+    "deployed_pct": 39.1,
+    "total_pnl_usd": 468.04,
+    "total_pnl_pct": 4.68,
+    "unrealized_pnl_usd": -59.56,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 332,
+    "total_forecasts": 333,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2278.83,
-    "crypto": 1093.59,
+    "politics": 2277.05,
+    "crypto": 996.38,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3586,6 +3586,19 @@
       "cash": 6375.33,
       "deployed_pct": 39.67,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T04:00:00+00:00",
+      "equity": 10518.42,
+      "cash": 10518.42,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T04:02:02.443819+00:00",
+      "equity": 10468.04,
+      "cash": 6375.33,
+      "deployed_pct": 39.1,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3611,9 +3624,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.225,
-      "current_value": 1093.59,
-      "unrealized_pnl": 329.78,
+      "current_price": 0.205,
+      "current_value": 996.38,
+      "unrealized_pnl": 232.57,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3641,9 +3654,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1185,
-      "current_value": 210.66,
-      "unrealized_pnl": -9.78,
+      "current_price": 0.1175,
+      "current_value": 208.88,
+      "unrealized_pnl": -11.56,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3659,10 +3672,10 @@
       "current_price": 0.275,
       "current_value": 222.52,
       "unrealized_pnl": 12.14,
-      "p_yes": 0.3216,
-      "p_blended": 0.3216,
-      "edge_net": 0.0516,
-      "rationale": "Trotz Pedro Sánchez' Schlussmobilisierung führen konservative Parteien in den Umfragen, weshalb die Wahrscheinlichkeit für die meisten Sitze für die PSOE unter 50 Prozent liegt."
+      "p_yes": 0.3193,
+      "p_blended": 0.3193,
+      "edge_net": 0.0493,
+      "rationale": "Die Umfragen vor der vorgezogenen Parlamentswahl in Spanien sehen die konservative Volkspartei PP vor der sozialistischen PSOE von Sánchez, weshalb ein Sieg der PP wahrscheinlicher erscheint."
     },
     {
       "market_id": "0xa157fcc18df3d9ca0655349b496c2bda2f13756f69c94d1dbca487863b01486c",
@@ -3712,6 +3725,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 333,
+      "ts": "2026-11-28T04:02:02.442693+00:00",
+      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
+      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.2750",
+      "p_blind": "0.3800",
+      "p_blended": "0.3193",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0493",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election held on November 29, 2026.",
+        "base_rate": 0.45,
+        "bull_case": "Incumbent Prime Minister Pedro Sánchez has a history of defying polling expectations and mobilizing progressive voters late in campaigns.",
+        "bear_case": "Recent polls consistently show the opposition Partido Popular (PP), often alongside Vox, leading and eyeing a majority over PSOE.",
+        "summary_de": "Die Umfragen vor der vorgezogenen Parlamentswahl in Spanien sehen die konservative Volkspartei PP vor der sozialistischen PSOE von Sánchez, weshalb ein Sieg der PP wahrscheinlicher erscheint.",
+        "news_used": [
+          "Spain's Sanchez makes final appeal to voters before election - DW.com",
+          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
+          "Popular Party and far-right Vox lead polls in tightly contested Spanish election - World Socialist Web Site",
+          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform"
+        ]
+      }
+    },
+    {
       "id": 332,
       "ts": "2026-11-28T03:46:42.699576+00:00",
       "market_id": "0x459bb1954c553022e8d64b02acf6e752287947c7402a59edb8f4beb754b7804f",
@@ -3759,7 +3807,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T04:01:08.093536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -3794,7 +3842,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:45:45.636900+00:00",
+      "last_checked_ts": "2026-11-28T04:01:09.282489+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official election results and seat counts determining if PP and Vox secure a majority in the Spanish Congress of Deputies following the November 29, 2026 snap election.",
@@ -3829,7 +3877,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:45:46.356398+00:00",
+      "last_checked_ts": "2026-11-28T04:01:09.999957+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -3896,7 +3944,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:45:45.089668+00:00",
+      "last_checked_ts": "2026-11-28T04:01:08.819256+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current price is ~$83.08 with only ~3 days left in the month.",
@@ -3932,7 +3980,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:45:46.356398+00:00",
+      "last_checked_ts": "2026-11-28T04:01:09.999957+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -3967,7 +4015,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:45:45.089668+00:00",
+      "last_checked_ts": "2026-11-28T04:01:08.819256+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether WTI Crude Oil hits $90 at any point during November 2026 based on standard market pricing.",
@@ -4003,7 +4051,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:45:45.089668+00:00",
+      "last_checked_ts": "2026-11-28T04:01:08.819256+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether WTI spot/futures touch $90.00 or higher during November 2026.",
@@ -4292,7 +4340,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:40:43.917877+00:00",
+      "last_checked_ts": "2026-11-28T04:01:08.093536+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -4327,7 +4375,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:45:45.793771+00:00",
+      "last_checked_ts": "2026-11-28T04:01:09.504557+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
@@ -4508,41 +4556,6 @@
           "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
           "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
           "Spanish PM and rivals rally supporters in final pitch for votes - BBC"
-        ]
-      }
-    },
-    {
-      "id": 308,
-      "ts": "2026-11-28T00:06:46.638365+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8450",
-      "p_blind": "0.3500",
-      "p_blended": "0.6734",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1666",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:50:41.918847+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires defining whether ongoing low-level clashes or rhetoric constitute a ceasefire breach before December 15.",
-        "base_rate": 0.4,
-        "bull_case": "International pressure and diplomatic fatigue continue to hold a fragile stalemate through mid-December.",
-        "bear_case": "Ongoing escalatory threats, proxy clashes, and internal Israeli military debates suggest a high likelihood of resumed direct strikes.",
-        "summary_de": "Anhaltende Spannungen, Drohungen und fortgesetzte militärische Operationen in der Region machen einen Zusammenbruch des Waffenstillstands vor dem 15. Dezember wahrscheinlich.",
-        "news_used": [
-          "Iran issues new threats as war stalemate drags on - KATV",
-          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
-          "Evening recap: Aoun, Salam propose extending UNIFIL mandate; Kuwait summons Iranian ambassador; Khalil al-Hayya’s son survives assassination",
-          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
-          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
-          "Dubai and Middle East flight disruption: flight cancellations continue as Kuwait and Saudi Arabia intercept attacks - Condé Nast Traveller M"
         ]
       }
     }
@@ -5511,6 +5524,18 @@
   ],
   "recent_runs": [
     {
+      "id": 466,
+      "ts": "2026-11-28T04:02:02.444376+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1160,
+      "candidates_found": 20,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 56.55,
+      "errors": []
+    },
+    {
       "id": 465,
       "ts": "2026-11-28T03:56:35.656074+00:00",
       "dry_run": 0,
@@ -5736,18 +5761,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 57.55,
-      "errors": []
-    },
-    {
-      "id": 446,
-      "ts": "2026-11-28T02:11:29.433747+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1212,
-      "candidates_found": 20,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 52.44,
       "errors": []
     }
   ]
