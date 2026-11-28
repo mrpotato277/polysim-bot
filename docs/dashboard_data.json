@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T10:21:40.501784+00:00",
+  "generated_at": "2026-11-28T10:26:16.704986+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11362.95,
-    "reconciled_equity_usd": 11362.95,
+    "equity_usd": 11366.5,
+    "reconciled_equity_usd": 11366.5,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3237.62,
-    "deployed_pct": 28.49,
-    "total_pnl_usd": 1362.95,
-    "total_pnl_pct": 13.63,
-    "unrealized_pnl_usd": 147.27,
+    "positions_value_usd": 3241.17,
+    "deployed_pct": 28.52,
+    "total_pnl_usd": 1366.5,
+    "total_pnl_pct": 13.66,
+    "unrealized_pnl_usd": 150.82,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -34,7 +34,7 @@
   "category_exposure": {
     "crypto": 2017.06,
     "geopolitics": 621.32,
-    "politics": 484.46,
+    "politics": 488.01,
     "markets": 114.78
   },
   "equity_curve": [
@@ -115,13 +115,6 @@
       "equity": 9991.86,
       "cash": 9991.86,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T15:31:46.982483+00:00",
-      "equity": 9983.16,
-      "cash": 9054.73,
-      "deployed_pct": 9.3,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T15:36:16.173479+00:00",
@@ -3873,6 +3866,13 @@
       "cash": 8125.33,
       "deployed_pct": 28.49,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T10:26:16.385118+00:00",
+      "equity": 11366.5,
+      "cash": 8125.33,
+      "deployed_pct": 28.52,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3913,9 +3913,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.124,
-      "current_value": 220.44,
-      "unrealized_pnl": 0.0,
+      "current_price": 0.126,
+      "current_value": 223.99,
+      "unrealized_pnl": 3.55,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -4014,7 +4014,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.145118+00:00",
+      "last_checked_ts": "2026-11-28T10:25:31.581556+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
@@ -4081,7 +4081,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.145118+00:00",
+      "last_checked_ts": "2026-11-28T10:25:31.581556+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England nach der Dezembersitzung 2026 hinsichtlich einer Zinserhöhung um 25 Basispunkte.",
@@ -4146,7 +4146,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.145118+00:00",
+      "last_checked_ts": "2026-11-28T10:25:31.581556+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
@@ -4210,7 +4210,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.537702+00:00",
+      "last_checked_ts": "2026-11-28T10:25:31.910107+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember anhält.",
@@ -4279,7 +4279,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.714783+00:00",
+      "last_checked_ts": "2026-11-28T10:25:32.104391+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4367,7 +4367,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.537702+00:00",
+      "last_checked_ts": "2026-11-28T10:25:31.910107+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4402,7 +4402,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:10:41.706829+00:00",
+      "last_checked_ts": "2026-11-28T10:25:32.480296+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4467,7 +4467,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.537702+00:00",
+      "last_checked_ts": "2026-11-28T10:25:31.910107+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
@@ -4559,7 +4559,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T10:05:39.537702+00:00",
+      "last_checked_ts": "2026-11-28T10:25:31.910107+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -5785,6 +5785,18 @@
   ],
   "recent_runs": [
     {
+      "id": 540,
+      "ts": "2026-11-28T10:26:16.386810+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1165,
+      "candidates_found": 13,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 46.24,
+      "errors": []
+    },
+    {
       "id": 539,
       "ts": "2026-11-28T10:21:40.102315+00:00",
       "dry_run": 0,
@@ -6010,18 +6022,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 61.84,
-      "errors": []
-    },
-    {
-      "id": 520,
-      "ts": "2026-11-28T08:46:27.938755+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1171,
-      "candidates_found": 13,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 50.03,
       "errors": []
     }
   ]
