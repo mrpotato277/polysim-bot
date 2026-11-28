@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T09:01:57.104641+00:00",
+  "generated_at": "2026-11-28T09:06:14.558504+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11017.13,
-    "reconciled_equity_usd": 11017.13,
+    "equity_usd": 10967.72,
+    "reconciled_equity_usd": 10967.72,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 2891.8,
-    "deployed_pct": 26.25,
-    "total_pnl_usd": 1017.13,
-    "total_pnl_pct": 10.17,
-    "unrealized_pnl_usd": -198.55,
+    "positions_value_usd": 2842.39,
+    "deployed_pct": 25.92,
+    "total_pnl_usd": 967.72,
+    "total_pnl_pct": 9.68,
+    "unrealized_pnl_usd": -247.96,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 350,
+    "total_forecasts": 351,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1676.83,
+    "crypto": 1628.23,
     "geopolitics": 621.32,
-    "politics": 478.87,
+    "politics": 478.06,
     "markets": 114.78
   },
   "equity_curve": [
@@ -103,13 +103,6 @@
       "equity": 9897.71,
       "cash": 9897.71,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T13:01:43.286410+00:00",
-      "equity": 9980.4,
-      "cash": 8972.03,
-      "deployed_pct": 9.27,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T13:21:28.875307+00:00",
@@ -3867,6 +3860,13 @@
       "cash": 8125.33,
       "deployed_pct": 26.25,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T09:06:14.320527+00:00",
+      "equity": 10967.72,
+      "cash": 8125.33,
+      "deployed_pct": 25.92,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3877,9 +3877,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.345,
-      "current_value": 1676.83,
-      "unrealized_pnl": 913.02,
+      "current_price": 0.335,
+      "current_value": 1628.23,
+      "unrealized_pnl": 864.42,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3907,9 +3907,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.126,
-      "current_value": 223.99,
-      "unrealized_pnl": 3.55,
+      "current_price": 0.1295,
+      "current_value": 230.22,
+      "unrealized_pnl": 9.78,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3937,9 +3937,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.0115,
-      "current_value": 40.45,
-      "unrealized_pnl": -627.84,
+      "current_price": 0.0095,
+      "current_value": 33.41,
+      "unrealized_pnl": -634.88,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3962,6 +3962,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 351,
+      "ts": "2026-11-28T09:06:14.304626+00:00",
+      "market_id": "0xd5175b9e717fb4cf4de5fe69ed13465c831917782f2224ac330e260ee35b02a8",
+      "question": "Bank of England increases interest rates by 25 bps after December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-17T23:59:00+00:00",
+      "market_price": "0.7750",
+      "p_blind": "0.4200",
+      "p_blended": "0.6625",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.1175",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.1-flash-lite",
+        "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
+        "base_rate": 0.35,
+        "bull_case": "Recent geopolitical energy shocks are forcing central banks, including the BoE, to reconsider hawkish pivots to combat imported inflation.",
+        "bear_case": "The BoE has historically been cautious and may prefer to hold rates steady to avoid stifling a fragile UK economy, despite market speculation.",
+        "summary_de": "Trotz zunehmender Marktspekulationen über Zinserhöhungen aufgrund globaler Energiepreisrisiken bleibt eine tatsächliche Anhebung um 25 Basispunkte durch die Bank of England im Dezember unsicher.",
+        "news_used": [
+          "Fixed rates near 6% this week, says Moneyfacts - Mortgage Strategy",
+          "How have interest rate expectations changed after this week's events? - investingLive",
+          "Middle East energy shock pushes global central banks back into rate-hike cycle - Anadolu Ajansı",
+          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
+          "BoE rate hike bets cushion British Pound downside as pressure persists vs USD - www.tmgm.com",
+          "British Pound remains on the back foot vs USD as BoE rate hike bets limit downside - FXStreet"
+        ]
+      }
+    },
     {
       "id": 350,
       "ts": "2026-11-28T08:51:42.211298+00:00",
@@ -4237,7 +4272,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:50:43.800462+00:00",
+      "last_checked_ts": "2026-11-28T09:05:31.809557+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
@@ -4432,7 +4467,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:50:42.836345+00:00",
+      "last_checked_ts": "2026-11-28T09:05:31.220649+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -4559,7 +4594,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:50:43.402135+00:00",
+      "last_checked_ts": "2026-11-28T09:05:31.604185+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract verified via major spot exchange oracle before November 30, 2026.",
@@ -4744,41 +4779,6 @@
           "Brent Crude Oil Prices Near $95 per Barrel Amid Middle East Tensions Ahead of November 29 OPEC+ Meeting - Kotak Neo"
         ],
         "market_data": "WTI Crude Oil (CL=F) live reference: 83.08 (prev close: 80.17, +3.63%)."
-      }
-    },
-    {
-      "id": 326,
-      "ts": "2026-11-28T02:06:12.260757+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2650",
-      "p_blind": "0.3800",
-      "p_blended": "0.3132",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0532",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:55:33.809735+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election for the party winning the most seats.",
-        "base_rate": 0.35,
-        "bull_case": "Pedro Sánchez's campaign historically overperforms polls in the final stretch by mobilizing left-wing turnout against the PP-Vox threat.",
-        "bear_case": "Most pre-election polls consistently show the Partido Popular (PP) leading PSOE in seat projections ahead of the November 29 vote.",
-        "summary_de": "Trotz Pedro Sánchez' Hoffnungen auf eine späte Mobilisierung deuten die Umfragen darauf hin, dass die konservative Volkspartei (PP) die meisten Sitze bei den Wahlen erlangen wird.",
-        "news_used": [
-          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
-          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform",
-          "Spain’s Pedro Sanchez bets on left-wing voting surge to defy election polls - Al Jazeera",
-          "Spanish prime minister Pedro Sánchez confident of election victory despite polls – as it happened - The Guardian"
-        ]
       }
     }
   ],
@@ -5786,6 +5786,18 @@
   ],
   "recent_runs": [
     {
+      "id": 524,
+      "ts": "2026-11-28T09:06:14.321375+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1165,
+      "candidates_found": 12,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 45.29,
+      "errors": []
+    },
+    {
       "id": 523,
       "ts": "2026-11-28T09:01:56.729545+00:00",
       "dry_run": 0,
@@ -6011,18 +6023,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 36.03,
-      "errors": []
-    },
-    {
-      "id": 504,
-      "ts": "2026-11-28T07:26:03.211461+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1250,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 33.1,
       "errors": []
     }
   ]
