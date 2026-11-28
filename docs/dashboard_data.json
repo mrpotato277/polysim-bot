@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T00:56:33.583152+00:00",
+  "generated_at": "2026-11-28T01:01:50.722622+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10636.86,
-    "reconciled_equity_usd": 10636.86,
+    "equity_usd": 10695.25,
+    "reconciled_equity_usd": 10695.25,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4261.53,
-    "deployed_pct": 40.06,
-    "total_pnl_usd": 636.86,
-    "total_pnl_pct": 6.37,
-    "unrealized_pnl_usd": 109.26,
+    "positions_value_usd": 4319.92,
+    "deployed_pct": 40.39,
+    "total_pnl_usd": 695.25,
+    "total_pnl_pct": 6.95,
+    "unrealized_pnl_usd": 167.65,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 314,
+    "total_forecasts": 316,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2300.06,
-    "crypto": 1142.19,
+    "politics": 2309.84,
+    "crypto": 1190.8,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3330,6 +3330,19 @@
       "cash": 6375.33,
       "deployed_pct": 40.06,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T01:00:00+00:00",
+      "equity": 10694.35,
+      "cash": 10694.35,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T01:01:50.377289+00:00",
+      "equity": 10695.25,
+      "cash": 6375.33,
+      "deployed_pct": 40.39,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3355,9 +3368,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.235,
-      "current_value": 1142.19,
-      "unrealized_pnl": 378.38,
+      "current_price": 0.245,
+      "current_value": 1190.8,
+      "unrealized_pnl": 426.99,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3385,9 +3398,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1225,
-      "current_value": 217.77,
-      "unrealized_pnl": -2.67,
+      "current_price": 0.128,
+      "current_value": 227.55,
+      "unrealized_pnl": 7.11,
       "p_yes": 0.2339,
       "p_blended": 0.2339,
       "edge_net": 0.1139,
@@ -3455,6 +3468,69 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 316,
+      "ts": "2026-11-28T01:01:50.375424+00:00",
+      "market_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
+      "question": "US x Iran Effective Ceasefire by November 30?",
+      "category": "geopolitics",
+      "end_date": "2026-11-30T20:29:00+00:00",
+      "market_price": "0.7450",
+      "p_blind": "0.0200",
+      "p_blended": "0.4044",
+      "confidence": "0.8000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.3456",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires an effective ceasefire or pause lasting at least the specified duration by November 30, which leaves very little time given current diplomatic stalemate.",
+        "base_rate": 0.05,
+        "bull_case": "Sudden backchannel diplomacy or emergency de-escalation could result in a temporary truce before the deadline.",
+        "bear_case": "No active negotiations or signs of an imminent ceasefire between the US and Iran have been reported, making a sudden agreement within days highly unlikely.",
+        "summary_de": "Angesichts fehlender diplomatischer Durchbrüche und der extrem kurzen Frist bis Ende November ist ein effektiver Waffenstillstand zwischen den USA und dem Iran äußerst unwahrscheinlich.",
+        "news_used": []
+      }
+    },
+    {
+      "id": 315,
+      "ts": "2026-11-28T01:01:49.135866+00:00",
+      "market_id": "0x97c0b1316b8d9ba677414e8a682948e7560c1af60fc239b085a68cc467c21f23",
+      "question": "Will Alberto Núñez Feijóo be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8750",
+      "p_blind": "0.4800",
+      "p_blended": "0.7493",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1307",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
+        "base_rate": 0.45,
+        "bull_case": "Feijóo leads the conservative PP and polls have shown a strong right-wing position, potentially securing a majority or parliamentary backing.",
+        "bear_case": "Sánchez and progressive allies could retain power through coalition maneuvering despite trailing in some polls.",
+        "summary_de": "Die aktuellen Berichte zeigen einen harten Endspurt vor den Wahlen, wobei Feijóo auf eine rechte Mehrheit hofft, während Sánchez um den Verbleib im Amt kämpft.",
+        "news_used": [
+          "Spain's Sanchez makes final appeal to voters before election - DW.com",
+          "Feijóo appeals to the left despite counting on a right-wing majority: “Lend us your vote to get back to honesty” - EL PAÍS English",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spanish PM and rivals rally supporters in final pitch for votes",
+          "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
+          "Pedro Sánchez confident he can secure another term for Spain’s progressive government - EL PAÍS English"
+        ]
+      }
+    },
     {
       "id": 314,
       "ts": "2026-11-28T00:46:25.803384+00:00",
@@ -3608,7 +3684,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:40:39.805816+00:00",
+      "last_checked_ts": "2026-11-28T01:01:01.849427+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error specifically caused the alleged FAA ground stop on November 13.",
@@ -3708,7 +3784,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:45:45.686351+00:00",
+      "last_checked_ts": "2026-11-28T01:01:03.472708+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Market resolves based on standard spot price feeds reaching $1,800 before the end of November.",
@@ -3809,7 +3885,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:45:44.263158+00:00",
+      "last_checked_ts": "2026-11-28T01:01:01.976111+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an actual Federal Reserve rate hike enacted during calendar year 2026 before December 10, 2026.",
@@ -4244,76 +4320,6 @@
           "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
           "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
           "Spanish PM and rivals rally supporters in final pitch for votes"
-        ]
-      }
-    },
-    {
-      "id": 291,
-      "ts": "2026-11-27T23:01:59.381444+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2300",
-      "p_blind": "0.4800",
-      "p_blended": "0.3242",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1042",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.791908+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India as listed in the title/context, though news mentions a series against Australia, indicating standard Test match cricket rules apply.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand possesses strong home-condtion advantages and a formidable squad capable of defeating India in Test match cricket.",
-        "bear_case": "India remains a dominant force in international cricket with world-class bowling and batting depth, making them formidable opponents.",
-        "summary_de": "Das Test-Match zwischen Neuseeland und Indien ist hart umkämpft, wobei Neuseeland aufgrund möglicher Heimvorteile gute Chancen hat, aber gegen ein starkes indisches Team antritt.",
-        "news_used": [
-          "Nathan Lyon dropped by Australia for their first Test against New Zealand - Sky Sports",
-          "Clayton and Rocchiccioli named in Australia Test squad for New Zealand series - ESPN",
-          "Selection shock as Aussies name squad for first New Zealand Test - ICC",
-          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
-          "Clayton and Rocchiccioli named in Australia Test squad for New Zealand series - Cricinfo",
-          "England Chase Historic Third Straight Win Over New Zealand - Oz Arab Media"
-        ]
-      }
-    },
-    {
-      "id": 290,
-      "ts": "2026-11-27T23:01:57.568328+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1305",
-      "p_blind": "0.4200",
-      "p_blended": "0.2314",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1014",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Ministerpräsident Spaniens sein wird, was durch offizielle Regierungsbildung und Amtseinführung entschieden wird.",
-        "base_rate": 0.45,
-        "bull_case": "Sánchez zeigt im Schlussspurt der Wahl eine hohe Mobilisierungskraft und könnte trotz umfragenbedingt schwieriger Ausgangslage Koalitionspartner finden.",
-        "bear_case": "Die aktuellen Umfragen deuten auf eine Stärkung des rechten Lagers hin, und die Konkurrenten werfen ihm Fehltritte und mangelnde Glaubwürdigkeit vor.",
-        "summary_de": "Pedro Sánchez kämpft am Vorabend der Wahlen in Spanien gegen schlechtere Umfragewerte, bleibt aber im Rennen um die Regierungsbildung.",
-        "news_used": [
-          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
-          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
-          "Spanish PM and rivals rally supporters in final pitch for votes",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC"
         ]
       }
     }
@@ -5282,6 +5288,18 @@
   ],
   "recent_runs": [
     {
+      "id": 432,
+      "ts": "2026-11-28T01:01:50.378467+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1178,
+      "candidates_found": 19,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 49.97,
+      "errors": []
+    },
+    {
       "id": 431,
       "ts": "2026-11-28T00:56:33.209753+00:00",
       "dry_run": 0,
@@ -5507,18 +5525,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 46.39,
-      "errors": []
-    },
-    {
-      "id": 412,
-      "ts": "2026-11-27T23:16:20.127898+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1189,
-      "candidates_found": 18,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 44.23,
       "errors": []
     }
   ]
