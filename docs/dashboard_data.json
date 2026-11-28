@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:01:50.722622+00:00",
+  "generated_at": "2026-11-28T01:06:18.198803+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10695.25,
-    "reconciled_equity_usd": 10695.25,
+    "equity_usd": 10548.29,
+    "reconciled_equity_usd": 10548.29,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4319.92,
-    "deployed_pct": 40.39,
-    "total_pnl_usd": 695.25,
-    "total_pnl_pct": 6.95,
-    "unrealized_pnl_usd": 167.65,
+    "positions_value_usd": 4172.96,
+    "deployed_pct": 39.56,
+    "total_pnl_usd": 548.29,
+    "total_pnl_pct": 5.48,
+    "unrealized_pnl_usd": 20.69,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 316,
+    "total_forecasts": 317,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2309.84,
-    "crypto": 1190.8,
+    "politics": 2308.7,
+    "crypto": 1044.98,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3343,6 +3343,13 @@
       "cash": 6375.33,
       "deployed_pct": 40.39,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T01:06:17.840266+00:00",
+      "equity": 10548.29,
+      "cash": 6375.33,
+      "deployed_pct": 39.56,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3368,9 +3375,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.245,
-      "current_value": 1190.8,
-      "unrealized_pnl": 426.99,
+      "current_price": 0.215,
+      "current_value": 1044.98,
+      "unrealized_pnl": 281.17,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3398,13 +3405,13 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.128,
-      "current_value": 227.55,
-      "unrealized_pnl": 7.11,
-      "p_yes": 0.2339,
-      "p_blended": 0.2339,
-      "edge_net": 0.1139,
-      "rationale": "Pedro Sánchez kämpft in einer sehr knappen Wahl gegen das konservative Lager, wobei aktuelle Umfragen und Berichte über den Wahlausgang ein offenes Rennen nahelegen."
+      "current_price": 0.121,
+      "current_value": 215.11,
+      "unrealized_pnl": -5.33,
+      "p_yes": 0.24,
+      "p_blended": 0.24,
+      "edge_net": 0.12,
+      "rationale": "Da die spanischen Wahlen unmittelbar bevorstehen und das Rennen hart umkämpft ist, bleibt der Ausgang für Pedro Sánchez äußerst offen."
     },
     {
       "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
@@ -3443,9 +3450,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.555,
-      "current_value": 627.56,
-      "unrealized_pnl": -57.85,
+      "current_price": 0.565,
+      "current_value": 638.86,
+      "unrealized_pnl": -46.55,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -3468,6 +3475,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 317,
+      "ts": "2026-11-28T01:06:17.839026+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1205",
+      "p_blind": "0.5000",
+      "p_blended": "0.2400",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1200",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on who becomes the next Prime Minister of Spain following the ongoing snap election.",
+        "base_rate": 0.45,
+        "bull_case": "Sanchez's late mobilization efforts and strong base support could enable him to piece together a coalition or win the election outright.",
+        "bear_case": "Polling consistently shows a strong challenge from the right-wing opposition, making his path to retaining the premiership uncertain.",
+        "summary_de": "Da die spanischen Wahlen unmittelbar bevorstehen und das Rennen hart umkämpft ist, bleibt der Ausgang für Pedro Sánchez äußerst offen.",
+        "news_used": [
+          "Spain's Sanchez makes final appeal to voters before election - DW.com",
+          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
+          "Pedro Sánchez Says He Can’t Conceive Losing Ahead of Spain’s Snap Election: 12 outlets compared - NewsCord",
+          "Spain Elections - Goshen News",
+          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
+          "Spain candidates hold closing election rallies - EFE - Agencia de noticias"
+        ]
+      }
+    },
     {
       "id": 316,
       "ts": "2026-11-28T01:01:50.375424+00:00",
@@ -3513,7 +3555,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -3815,7 +3857,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
+      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain.",
@@ -3955,7 +3997,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
+      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung bestimmt wird.",
@@ -4130,7 +4172,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
+      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain after the current political cycle or election process.",
@@ -4270,7 +4312,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
+      "last_checked_ts": "2026-11-28T01:05:39.995726+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung im Parlament entschieden wird.",
@@ -4285,41 +4327,6 @@
           "Don’t Bet on Spain’s Right to Fix Ties With Israel - The Times of Israel",
           "Spanish prime minister Pedro Sánchez confident of election victory despite polls – as it happened - The Guardian",
           "‘What do you owe Netanyahu?’: Spanish election debate erupts over Israel and Hamas - Ynetnews"
-        ]
-      }
-    },
-    {
-      "id": 292,
-      "ts": "2026-11-27T23:16:18.737816+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1375",
-      "p_blind": "0.3500",
-      "p_blended": "0.2192",
-      "confidence": "0.7000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0822",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:55:39.602160+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on whether Pedro Sánchez becomes the next Prime Minister of Spain following the current election cycle.",
-        "base_rate": 0.4,
-        "bull_case": "Pedro Sánchez has demonstrated remarkable political resilience, campaigning aggressively in the final hours to mobilize the left and potentially defy unfavourable opinion polls.",
-        "bear_case": "Recent polls and right-wing opposition momentum strongly suggest that Sánchez and the left-wing coalition could lose their parliamentary majority, leading to a conservative-led government.",
-        "summary_de": "Pedro Sánchez kämpft in einer entscheidenden Wahl gegen starke konservative Umfragewerte und eine mögliche Regierungsübernahme der Rechten, wodurch seine Chancen auf eine Wiederwahl als Ministerpräsident unter Druck stehen.",
-        "news_used": [
-          "Spain Elections - WV News",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
-          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine",
-          "Spanish PM and rivals rally supporters in final pitch for votes"
         ]
       }
     }
@@ -5288,6 +5295,18 @@
   ],
   "recent_runs": [
     {
+      "id": 433,
+      "ts": "2026-11-28T01:06:17.840742+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1223,
+      "candidates_found": 19,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 40.49,
+      "errors": []
+    },
+    {
       "id": 432,
       "ts": "2026-11-28T01:01:50.378467+00:00",
       "dry_run": 0,
@@ -5513,18 +5532,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 46.34,
-      "errors": []
-    },
-    {
-      "id": 413,
-      "ts": "2026-11-27T23:21:24.814507+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1200,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 46.39,
       "errors": []
     }
   ]
