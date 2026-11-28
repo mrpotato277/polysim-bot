@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T12:31:43.379994+00:00",
+  "generated_at": "2026-11-28T12:36:31.470730+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11457.4,
-    "reconciled_equity_usd": 11457.4,
+    "equity_usd": 11479.61,
+    "reconciled_equity_usd": 11479.61,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3332.07,
-    "deployed_pct": 29.08,
-    "total_pnl_usd": 1457.4,
-    "total_pnl_pct": 14.57,
-    "unrealized_pnl_usd": 241.72,
+    "positions_value_usd": 3354.28,
+    "deployed_pct": 29.22,
+    "total_pnl_usd": 1479.61,
+    "total_pnl_pct": 14.8,
+    "unrealized_pnl_usd": 263.93,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 357,
+    "total_forecasts": 358,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 2114.27,
+    "crypto": 2162.87,
     "geopolitics": 621.32,
-    "politics": 481.7,
+    "politics": 455.31,
     "markets": 114.78
   },
   "equity_curve": [
@@ -127,13 +127,6 @@
       "equity": 9962.09,
       "cash": 9962.09,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T17:26:01.596848+00:00",
-      "equity": 9968.7,
-      "cash": 8998.81,
-      "deployed_pct": 9.73,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T17:31:12.934308+00:00",
@@ -3885,6 +3878,13 @@
       "cash": 8125.33,
       "deployed_pct": 29.08,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T12:36:31.057714+00:00",
+      "equity": 11479.61,
+      "cash": 8125.33,
+      "deployed_pct": 29.22,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3895,9 +3895,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.435,
-      "current_value": 2114.27,
-      "unrealized_pnl": 1350.46,
+      "current_price": 0.445,
+      "current_value": 2162.87,
+      "unrealized_pnl": 1399.06,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3925,9 +3925,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1175,
-      "current_value": 208.88,
-      "unrealized_pnl": -11.56,
+      "current_price": 0.1165,
+      "current_value": 207.11,
+      "unrealized_pnl": -13.33,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3955,9 +3955,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.012,
-      "current_value": 42.21,
-      "unrealized_pnl": -626.08,
+      "current_price": 0.005,
+      "current_value": 17.59,
+      "unrealized_pnl": -650.7,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3981,6 +3981,34 @@
   ],
   "recent_forecasts": [
     {
+      "id": 358,
+      "ts": "2026-11-28T12:36:31.055864+00:00",
+      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
+      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
+      "category": "technology",
+      "end_date": "2026-12-01T04:59:00+00:00",
+      "market_price": "0.1795",
+      "p_blind": "0.5000",
+      "p_blended": "0.2421",
+      "confidence": "0.5500",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0761",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires official confirmation of the exact root cause of the FAA ground stop.",
+        "base_rate": 0.5,
+        "bull_case": "Preliminary reports and historical precedents for major FAA outages often point to software or configuration errors, making official confirmation likely.",
+        "bear_case": "Investigations into complex federal aviation systems can take weeks or months, and the cause might be attributed to hardware failure, cyberattack, or remain inconclusive by the deadline.",
+        "summary_de": "Da keine aktuellen Nachrichten vorliegen und offizielle Flugunfalluntersuchungen oft länger dauern, ist unklar, ob bis zur Frist eine definitive Bestätigung vorliegt.",
+        "news_used": []
+      }
+    },
+    {
       "id": 357,
       "ts": "2026-11-28T12:11:32.244867+00:00",
       "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
@@ -3997,7 +4025,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.982541+00:00",
+      "last_checked_ts": "2026-11-28T12:35:38.266031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining the precise start and continuation criteria of an Israel-Iran ceasefire by December 15, 2026.",
@@ -4063,7 +4091,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:36.463860+00:00",
+      "last_checked_ts": "2026-11-28T12:35:39.358656+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve raises its target federal funds rate at any FOMC meeting in 2026. Deadline is Dec 10, 2026.",
@@ -4190,7 +4218,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.694890+00:00",
+      "last_checked_ts": "2026-11-28T12:35:37.947097+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
@@ -4225,7 +4253,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:10:47.265563+00:00",
+      "last_checked_ts": "2026-11-28T12:35:37.515590+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4257,7 +4285,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.694890+00:00",
+      "last_checked_ts": "2026-11-28T12:35:37.947097+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England nach der Dezembersitzung 2026 hinsichtlich einer Zinserhöhung um 25 Basispunkte.",
@@ -4322,7 +4350,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.694890+00:00",
+      "last_checked_ts": "2026-11-28T12:35:37.947097+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
@@ -4386,7 +4414,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.982541+00:00",
+      "last_checked_ts": "2026-11-28T12:35:38.266031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember anhält.",
@@ -4455,7 +4483,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:36.128565+00:00",
+      "last_checked_ts": "2026-11-28T12:35:38.848618+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4543,7 +4571,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.982541+00:00",
+      "last_checked_ts": "2026-11-28T12:35:38.266031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4578,7 +4606,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:36.336684+00:00",
+      "last_checked_ts": "2026-11-28T12:35:39.201358+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4643,7 +4671,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.982541+00:00",
+      "last_checked_ts": "2026-11-28T12:35:38.266031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
@@ -4735,7 +4763,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:20:35.982541+00:00",
+      "last_checked_ts": "2026-11-28T12:35:38.266031+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -4750,41 +4778,6 @@
           "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
           "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
           "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews"
-        ]
-      }
-    },
-    {
-      "id": 333,
-      "ts": "2026-11-28T04:02:02.442693+00:00",
-      "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
-      "question": "Will PSOE win the most seats in the 2026 Spanish general election?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.2750",
-      "p_blind": "0.3800",
-      "p_blended": "0.3193",
-      "confidence": "0.6500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0493",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T12:30:50.884454+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election held on November 29, 2026.",
-        "base_rate": 0.45,
-        "bull_case": "Incumbent Prime Minister Pedro Sánchez has a history of defying polling expectations and mobilizing progressive voters late in campaigns.",
-        "bear_case": "Recent polls consistently show the opposition Partido Popular (PP), often alongside Vox, leading and eyeing a majority over PSOE.",
-        "summary_de": "Die Umfragen vor der vorgezogenen Parlamentswahl in Spanien sehen die konservative Volkspartei PP vor der sozialistischen PSOE von Sánchez, weshalb ein Sieg der PP wahrscheinlicher erscheint.",
-        "news_used": [
-          "Spain's Sanchez makes final appeal to voters before election - DW.com",
-          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
-          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
-          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
-          "Popular Party and far-right Vox lead polls in tightly contested Spanish election - World Socialist Web Site",
-          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform"
         ]
       }
     }
@@ -5793,6 +5786,18 @@
   ],
   "recent_runs": [
     {
+      "id": 563,
+      "ts": "2026-11-28T12:36:31.058647+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1171,
+      "candidates_found": 14,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 55.87,
+      "errors": []
+    },
+    {
       "id": 562,
       "ts": "2026-11-28T12:31:42.957839+00:00",
       "dry_run": 0,
@@ -6018,18 +6023,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 40.27,
-      "errors": []
-    },
-    {
-      "id": 543,
-      "ts": "2026-11-28T10:41:17.749193+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1260,
-      "candidates_found": 13,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 36.62,
       "errors": []
     }
   ]
