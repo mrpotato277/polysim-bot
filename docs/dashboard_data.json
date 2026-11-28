@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T05:06:26.609278+00:00",
+  "generated_at": "2026-11-28T05:11:18.250515+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10611.43,
-    "reconciled_equity_usd": 10611.43,
+    "equity_usd": 10854.45,
+    "reconciled_equity_usd": 10854.45,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4236.1,
-    "deployed_pct": 39.92,
-    "total_pnl_usd": 611.43,
-    "total_pnl_pct": 6.11,
-    "unrealized_pnl_usd": 83.83,
+    "positions_value_usd": 4479.12,
+    "deployed_pct": 41.27,
+    "total_pnl_usd": 854.45,
+    "total_pnl_pct": 8.54,
+    "unrealized_pnl_usd": 326.85,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -33,7 +33,7 @@
   },
   "category_exposure": {
     "politics": 2259.12,
-    "crypto": 1142.19,
+    "crypto": 1385.21,
     "geopolitics": 664.17,
     "markets": 170.62
   },
@@ -3682,6 +3682,13 @@
       "cash": 6375.33,
       "deployed_pct": 39.92,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T05:11:17.972220+00:00",
+      "equity": 10854.45,
+      "cash": 6375.33,
+      "deployed_pct": 41.27,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3707,9 +3714,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.235,
-      "current_value": 1142.19,
-      "unrealized_pnl": 378.38,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3922,7 +3929,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T04:50:39.813442+00:00",
+      "last_checked_ts": "2026-11-28T05:10:39.783438+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract verified via major spot exchange oracle before November 30, 2026.",
@@ -4331,7 +4338,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T04:50:38.975660+00:00",
+      "last_checked_ts": "2026-11-28T05:10:39.247179+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
@@ -5605,6 +5612,18 @@
   ],
   "recent_runs": [
     {
+      "id": 478,
+      "ts": "2026-11-28T05:11:17.973587+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1111,
+      "candidates_found": 12,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 41.34,
+      "errors": []
+    },
+    {
       "id": 477,
       "ts": "2026-11-28T05:06:26.225474+00:00",
       "dry_run": 0,
@@ -5830,18 +5849,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 48.37,
-      "errors": []
-    },
-    {
-      "id": 458,
-      "ts": "2026-11-28T03:21:36.198832+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1222,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 58.25,
       "errors": []
     }
   ]
