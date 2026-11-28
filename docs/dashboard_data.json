@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T13:51:14.941143+00:00",
+  "generated_at": "2026-11-28T13:56:23.597088+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11700.74,
-    "reconciled_equity_usd": 11700.74,
+    "equity_usd": 11615.43,
+    "reconciled_equity_usd": 11615.43,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2457.52,
-    "deployed_pct": 21.0,
-    "total_pnl_usd": 1700.74,
-    "total_pnl_pct": 17.01,
-    "unrealized_pnl_usd": -250.92,
+    "positions_value_usd": 2372.21,
+    "deployed_pct": 20.42,
+    "total_pnl_usd": 1615.43,
+    "total_pnl_pct": 16.15,
+    "unrealized_pnl_usd": -336.23,
     "total_trades": 313,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 366,
-    "circuit_breaker_active": false
+    "total_forecasts": 367,
+    "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1324.46,
+    "crypto": 1251.55,
     "geopolitics": 535.62,
-    "politics": 482.66,
+    "politics": 470.26,
     "markets": 114.78
   },
   "equity_curve": [
@@ -133,13 +133,6 @@
       "equity": 9962.25,
       "cash": 9962.25,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T18:56:06.455980+00:00",
-      "equity": 9969.55,
-      "cash": 8585.55,
-      "deployed_pct": 11.43,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T19:00:00+00:00",
@@ -3891,6 +3884,13 @@
       "cash": 9243.22,
       "deployed_pct": 21.0,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T13:56:23.284220+00:00",
+      "equity": 11615.43,
+      "cash": 9243.22,
+      "deployed_pct": 20.42,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3901,9 +3901,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.545,
-      "current_value": 1324.46,
-      "unrealized_pnl": 942.56,
+      "current_price": 0.515,
+      "current_value": 1251.55,
+      "unrealized_pnl": 869.65,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3919,10 +3919,10 @@
       "current_price": 0.125,
       "current_value": 535.62,
       "unrealized_pnl": -149.97,
-      "p_yes": 0.7178,
-      "p_blended": 0.2822,
-      "edge_net": 0.1622,
-      "rationale": "Anhaltende Spannungen, Drohungen und fortgesetzte militärische Planungen deuten darauf hin, dass ein formeller Waffenstillstand bis zum 15. Dezember stark gefährdet ist."
+      "p_yes": 0.7002,
+      "p_blended": 0.2998,
+      "edge_net": 0.1798,
+      "rationale": "Anhaltende Spannungen und militärische Drohungen lassen einen Bruch des Waffenstillstands vor dem Fristende als wahrscheinlich erscheinen."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3931,9 +3931,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.122,
-      "current_value": 216.88,
-      "unrealized_pnl": -3.56,
+      "current_price": 0.117,
+      "current_value": 207.99,
+      "unrealized_pnl": -12.45,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3961,9 +3961,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.01,
-      "current_value": 35.17,
-      "unrealized_pnl": -633.12,
+      "current_price": 0.009,
+      "current_value": 31.66,
+      "unrealized_pnl": -636.63,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3986,6 +3986,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 367,
+      "ts": "2026-11-28T13:56:23.281702+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8750",
+      "p_blind": "0.2500",
+      "p_blended": "0.7002",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.1798",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Contract asks if the Israel-Iran ceasefire continues through December 15, 2026. Resolution depends on whether active hostilities resume before the deadline.",
+        "base_rate": 0.4,
+        "bull_case": "Recent diplomatic efforts and war weariness may hold fragile pauses in place through mid-December.",
+        "bear_case": "Current headlines indicate ongoing threats, military divisions over strikes, and lingering stalemates, signaling high risk of ceasefire collapse.",
+        "summary_de": "Anhaltende Spannungen und militärische Drohungen lassen einen Bruch des Waffenstillstands vor dem Fristende als wahrscheinlich erscheinen.",
+        "news_used": [
+          "Bethlehem businesses hopeful tourism will return this Christmas - WTAQ",
+          "Norse Atlantic ends flights: How Iran war continues to batter aviation",
+          "Iran issues new threats as war stalemate drags on - KOKI FOX 23",
+          "62 of the most stupid things Donald Trump has ever said - Indy100",
+          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
+          "Evening recap: Aoun, Salam propose extending UNIFIL mandate; Kuwait summons Iranian ambassador; Khalil al-Hayya’s son survives assassination"
+        ]
+      }
+    },
     {
       "id": 366,
       "ts": "2026-11-28T13:41:29.111976+00:00",
@@ -4066,7 +4101,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:40:38.818646+00:00",
+      "last_checked_ts": "2026-11-28T13:55:39.339621+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Counts total tweets and replies on Elon Musk's official X account within the exact specified date range.",
@@ -4216,7 +4251,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:35:37.285859+00:00",
+      "last_checked_ts": "2026-11-28T13:55:37.868094+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,500 in November, resolving based on standard spot index feeds before December 1.",
@@ -4370,7 +4405,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:40:38.372338+00:00",
+      "last_checked_ts": "2026-11-28T13:55:38.928623+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price check against a specific fiat threshold at a precise timestamp.",
@@ -4504,7 +4539,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:40:39.260598+00:00",
+      "last_checked_ts": "2026-11-28T13:55:39.719675+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4571,7 +4606,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:40:38.533992+00:00",
+      "last_checked_ts": "2026-11-28T13:55:39.055636+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official FOMC rate decision following the December 2026 meeting.",
@@ -4743,35 +4778,6 @@
         "bear_case": "Current geopolitical tensions are high, no active signals or reports of impending ceasefires exist, and the 48-hour deadline makes an agreement virtually impossible.",
         "summary_de": "Angesichts der extrem kurzen verbleibenden Frist und fehlender diplomatischer Berichte ist ein effektiver Waffenstillstand bis Ende November äußerst unwahrscheinlich.",
         "news_used": []
-      }
-    },
-    {
-      "id": 342,
-      "ts": "2026-11-28T07:06:19.012697+00:00",
-      "market_id": "0xc02b6d88da49729f9461451ce82d54dac0b39d756038c20fe0485f50e201aac5",
-      "question": "Will Bitcoin dip to $52,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.0410",
-      "p_blind": "0.0100",
-      "p_blended": "0.0265",
-      "confidence": "0.9000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0155",
-      "strategy_type": "carry",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:50:39.548747+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
-        "base_rate": 0.05,
-        "bull_case": "Crypto markets are notoriously volatile, and unexpected macro shocks, liquidations, or flash crashes could theoretically bridge an 11.8% gap in the remaining few days of November.",
-        "bear_case": "Bitcoin is currently trading near $59,536, requiring a sharp drop of over 11.8% in less than 3 days, which exceeds standard statistical expectations given current volatility levels.",
-        "summary_de": "Angesichts des aktuellen Kurses von rund 59.500 USD und des engen Zeitfensters bis Monatsende ist ein Rücksetzer um fast 12 Prozent statistisch sehr unwahrscheinlich.",
-        "news_used": [],
-        "market_data": "BTC/USD live spot (Kraken): $59,536.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $52,500.00: -11.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.1%, distance = 3.07 sigma): Gaussian one-touch ('dip/reach/hi"
       }
     }
   ],
@@ -5779,6 +5785,18 @@
   ],
   "recent_runs": [
     {
+      "id": 579,
+      "ts": "2026-11-28T13:56:23.285089+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1231,
+      "candidates_found": 11,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 46.93,
+      "errors": []
+    },
+    {
       "id": 578,
       "ts": "2026-11-28T13:51:14.661900+00:00",
       "dry_run": 0,
@@ -6004,18 +6022,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 36.63,
-      "errors": []
-    },
-    {
-      "id": 559,
-      "ts": "2026-11-28T12:11:32.248437+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1161,
-      "candidates_found": 12,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 48.48,
       "errors": []
     }
   ]
