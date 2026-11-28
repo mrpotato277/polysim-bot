@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T08:41:19.960280+00:00",
+  "generated_at": "2026-11-28T08:46:28.181847+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11008.53,
-    "reconciled_equity_usd": 11008.53,
-    "equity_discrepancy_usd": 0.0,
+    "equity_usd": 11032.28,
+    "reconciled_equity_usd": 11030.52,
+    "equity_discrepancy_usd": 1.76,
     "cash_usd": 8125.33,
-    "positions_value_usd": 2883.2,
-    "deployed_pct": 26.19,
-    "total_pnl_usd": 1008.53,
-    "total_pnl_pct": 10.09,
-    "unrealized_pnl_usd": -207.15,
+    "positions_value_usd": 2905.19,
+    "deployed_pct": 26.33,
+    "total_pnl_usd": 1032.28,
+    "total_pnl_pct": 10.32,
+    "unrealized_pnl_usd": -185.16,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,13 +28,13 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 347,
+    "total_forecasts": 348,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "crypto": 1628.23,
     "geopolitics": 664.17,
-    "politics": 476.02,
+    "politics": 498.01,
     "markets": 114.78
   },
   "equity_curve": [
@@ -97,13 +97,6 @@
       "equity": 9981.66,
       "cash": 9981.66,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T12:21:13.954165+00:00",
-      "equity": 9981.45,
-      "cash": 9054.73,
-      "deployed_pct": 9.29,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T12:31:33.369716+00:00",
@@ -3861,6 +3854,13 @@
       "cash": 8125.33,
       "deployed_pct": 26.19,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T08:46:27.936350+00:00",
+      "equity": 11032.28,
+      "cash": 8125.33,
+      "deployed_pct": 26.33,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3901,9 +3901,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1145,
-      "current_value": 203.55,
-      "unrealized_pnl": -16.89,
+      "current_price": 0.115,
+      "current_value": 204.44,
+      "unrealized_pnl": -16.0,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3931,9 +3931,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.0165,
-      "current_value": 58.04,
-      "unrealized_pnl": -610.25,
+      "current_price": 0.0225,
+      "current_value": 79.14,
+      "unrealized_pnl": -589.15,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3957,6 +3957,36 @@
   ],
   "recent_forecasts": [
     {
+      "id": 348,
+      "ts": "2026-11-28T08:46:27.934302+00:00",
+      "market_id": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-09T23:59:00+00:00",
+      "market_price": "0.9450",
+      "p_blind": "0.1200",
+      "p_blended": "0.7197",
+      "confidence": "0.7500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on the official FOMC rate decision following the December 2026 meeting.",
+        "base_rate": 0.15,
+        "bull_case": "Persistent inflation risks and sticky economic data prompt the Fed to pivot hawkish and enact a surprise 25 bps rate hike in December.",
+        "bear_case": "The historical central bank base rate for December meetings during easing or pausing cycles overwhelmingly favors holding rates steady rather than hiking.",
+        "summary_de": "Trotz einzelner hawkisher Berichte bleibt eine Zinserhöhung im Dezember historisch und angesichts der allgemeinen geldpolitischen Erwartungen ein unwahrscheinliches Szenario.",
+        "news_used": [
+          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express"
+        ]
+      }
+    },
+    {
       "id": 347,
       "ts": "2026-11-28T08:41:19.685313+00:00",
       "market_id": "0xd5175b9e717fb4cf4de5fe69ed13465c831917782f2224ac330e260ee35b02a8",
@@ -3973,7 +4003,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T08:45:38.930430+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
@@ -4037,7 +4067,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.772735+00:00",
+      "last_checked_ts": "2026-11-28T08:45:39.144993+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember anhält.",
@@ -4106,7 +4136,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.921399+00:00",
+      "last_checked_ts": "2026-11-28T08:45:39.260380+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4194,7 +4224,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.772735+00:00",
+      "last_checked_ts": "2026-11-28T08:45:39.144993+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4229,7 +4259,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:30:48.298341+00:00",
+      "last_checked_ts": "2026-11-28T08:45:39.526793+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4294,7 +4324,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.772735+00:00",
+      "last_checked_ts": "2026-11-28T08:45:39.144993+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
@@ -4386,7 +4416,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:25:30.772735+00:00",
+      "last_checked_ts": "2026-11-28T08:45:39.144993+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -4741,41 +4771,6 @@
         "summary_de": "Da der aktuelle WTI-Preis bei rund 83 Dollar liegt und nur noch wenige Tage im November verbleiben, ist ein Anstieg auf 90 Dollar extrem unwahrscheinlich.",
         "news_used": [],
         "market_data": "WTI Crude Oil (CL=F) live reference: 83.08 (prev close: 80.17, +3.63%)."
-      }
-    },
-    {
-      "id": 323,
-      "ts": "2026-11-28T01:51:33.828358+00:00",
-      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
-      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
-      "category": "politics",
-      "end_date": "2026-11-30T04:59:00+00:00",
-      "market_price": "0.1150",
-      "p_blind": "0.5500",
-      "p_blended": "0.2499",
-      "confidence": "0.6000",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T08:40:41.811184+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Der Vertrag fragt, ob Pedro Sánchez der nächste Premierminister von Spanien sein wird, was durch offizielle Amtseinführung oder Regierungsbildung nach den aktuellen Wahlen eindeutig entschieden wird.",
-        "base_rate": 0.5,
-        "bull_case": "Sánchez führt eine starke Kampagne und mobilisiert die Wähler im letzten Moment gegen das rechte Lager, was seine Chancen auf eine Regierungsbildung oder den Verbleib im Amt wahrscheinlicher macht.",
-        "bear_case": "Das rechte Lager könnte bei den anstehenden Wahlen überraschend stark abschneiden oder eine Koalition bilden, die Sánchez ablöst.",
-        "summary_de": "Da in Spanien gerade Wahlen stattfinden und Pedro Sánchez um den Verbleib an der Macht kämpft, bleibt der Ausgang aufgrund der jüngsten Mobilisierung offen, tendiert jedoch leicht zu seinen Gunsten.",
-        "news_used": [
-          "Spain's Sanchez makes final appeal to voters before election - DW.com",
-          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
-          "Pedro Sánchez Says He Can’t Conceive Losing Ahead of Spain’s Snap Election: 12 outlets compared - NewsCord",
-          "Spain Elections - Goshen News",
-          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
-          "Spain candidates hold closing election rallies - EFE - Agencia de noticias"
-        ]
       }
     }
   ],
@@ -5783,6 +5778,18 @@
   ],
   "recent_runs": [
     {
+      "id": 520,
+      "ts": "2026-11-28T08:46:27.938755+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1171,
+      "candidates_found": 13,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 50.03,
+      "errors": []
+    },
+    {
       "id": 519,
       "ts": "2026-11-28T08:41:19.688582+00:00",
       "dry_run": 0,
@@ -6008,18 +6015,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 63.07,
-      "errors": []
-    },
-    {
-      "id": 500,
-      "ts": "2026-11-28T07:06:20.283181+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1222,
-      "candidates_found": 13,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 47.62,
       "errors": []
     }
   ]
