@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T03:36:14.548042+00:00",
+  "generated_at": "2026-11-28T03:41:43.948554+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10617.41,
-    "reconciled_equity_usd": 10617.41,
+    "equity_usd": 10568.81,
+    "reconciled_equity_usd": 10568.81,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4242.08,
-    "deployed_pct": 39.95,
-    "total_pnl_usd": 617.41,
-    "total_pnl_pct": 6.17,
-    "unrealized_pnl_usd": 89.81,
+    "positions_value_usd": 4193.48,
+    "deployed_pct": 39.68,
+    "total_pnl_usd": 568.81,
+    "total_pnl_pct": 5.69,
+    "unrealized_pnl_usd": 41.21,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 329,
+    "total_forecasts": 330,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "politics": 2280.61,
-    "crypto": 1142.19,
+    "crypto": 1093.59,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3558,6 +3558,13 @@
       "cash": 6375.33,
       "deployed_pct": 39.95,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T03:41:43.558796+00:00",
+      "equity": 10568.81,
+      "cash": 6375.33,
+      "deployed_pct": 39.68,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3583,9 +3590,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.235,
-      "current_value": 1142.19,
-      "unrealized_pnl": 378.38,
+      "current_price": 0.225,
+      "current_value": 1093.59,
+      "unrealized_pnl": 329.78,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3683,6 +3690,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 330,
+      "ts": "2026-11-28T03:41:43.556628+00:00",
+      "market_id": "0xef750428b94a6323dbaa01a2fc26914bb888c42102d143d978464f5553c22135",
+      "question": "Spain General Election: PP + Vox Majority?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.8350",
+      "p_blind": "0.6200",
+      "p_blended": "0.7541",
+      "confidence": "0.6500",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0859",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Resolves based on official election results and seat counts determining if PP and Vox secure a majority in the Spanish Congress of Deputies following the November 29, 2026 snap election.",
+        "base_rate": 0.55,
+        "bull_case": "Final pre-election polls consistently show the Popular Party (PP) and far-right Vox leading and within striking distance of the absolute majority threshold in parliament.",
+        "bear_case": "Sánchez's PSOE has proven resilient against negative poll trends in past campaigns, and left-wing mobilization or regional parties could deny the right-wing bloc a working majority.",
+        "summary_de": "Kurz vor der vorgezogenen Parlamentswahl in Spanien führen die Konservativen (PP) und Vox in den Umfragen, was eine Regierungsmehrheit des rechten Blocks wahrscheinlicher macht, wenngleich der Ausgang umkämpft bleibt.",
+        "news_used": [
+          "Spain holds early general election on 29 November 2026 as Sanchez seeks to stay in power - Cyprus Inform",
+          "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
+          "Spain's Sanchez insists he will defy polls as election campaign wraps up - Reuters",
+          "Popular Party and far-right Vox lead polls in tightly contested Spanish election - World Socialist Web Site",
+          "Spain votes in snap general election on 29 November as PP and Vox eye a majority over Sánchez’s PSOE - Cyprus Inform",
+          "Spain election: Will Vox be the kingmaker, and will housing decide the vote? - Euronews.com"
+        ]
+      }
+    },
     {
       "id": 329,
       "ts": "2026-11-28T03:36:14.244010+00:00",
@@ -4008,7 +4050,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:25:35.920123+00:00",
+      "last_checked_ts": "2026-11-28T03:40:42.282525+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
@@ -4163,7 +4205,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:25:37.237648+00:00",
+      "last_checked_ts": "2026-11-28T03:40:43.917877+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires formal investiture/appointment as Prime Minister by the monarch before the deadline, not just winning an election.",
@@ -4434,7 +4476,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:20:41.095530+00:00",
+      "last_checked_ts": "2026-11-28T03:40:41.255018+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Market resolves based on standard spot price feeds reaching $1,800 before the end of November.",
@@ -4465,7 +4507,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:25:37.237648+00:00",
+      "last_checked_ts": "2026-11-28T03:40:43.917877+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain.",
@@ -4480,41 +4522,6 @@
           "Spain's prime minister says he can't imagine losing despite ominous polls - SBS",
           "Pedro Sánchez confident he can secure another term for Spain’s progressive government - EL PAÍS English",
           "Spain's election campaign reaches its final day - RUSSPAIN.com"
-        ]
-      }
-    },
-    {
-      "id": 305,
-      "ts": "2026-11-27T23:56:20.570044+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2400",
-      "p_blind": "0.5200",
-      "p_blended": "0.3401",
-      "confidence": "0.5500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.1101",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T03:35:33.303756+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Das Spiel bezieht sich auf das Test-Match zwischen Neuseeland und Indien, das sich laut Live-Tickern am Tag 2 bei einem Zwischenstand von 324/8 befindet.",
-        "base_rate": 0.5,
-        "bull_case": "Neuseeland steht im 2. Test bei 324/8 und hat eine solide Ausgangsposition, um Indien unter Druck zu setzen.",
-        "bear_case": "Indiens Bowling-Attacke (z. B. Akash mit vier Wickets) kann die verbleibenden Wickets schnell abräumen und das Spiel drehen.",
-        "summary_de": "Neuseeland zeigt im laufenden Test-Match eine konkurrenzfähige Leistung, allerdings ist das Spiel gegen Indien noch völlig offen.",
-        "news_used": [
-          "India vs New Zealand, 2nd Test Day 2 LIVE score: Akash gets his fourth, dismisses Jamieson; NZ 324/8 (107) - Sportstar",
-          "Nathan Lyon, Marnus Labuschagne dropped! Pat Cummins continues as captain as Australia announce squad for - The Times of India",
-          "Australia squad for New Zealand Tests — Lyon, Labuschagne dropped; Rocchiccioli, Clayton called up - Sportstar",
-          "'Siraj needs help': R Ashwin urges India team to show compassion after pacer's repeated snubs - The Times of India",
-          "Nathan Lyon dropped as Australia name Test squad for New Zealand series - India Today",
-          "Mia Humphrey - ESPN"
         ]
       }
     }
@@ -5483,6 +5490,18 @@
   ],
   "recent_runs": [
     {
+      "id": 462,
+      "ts": "2026-11-28T03:41:43.559531+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1114,
+      "candidates_found": 19,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 64.02,
+      "errors": []
+    },
+    {
       "id": 461,
       "ts": "2026-11-28T03:36:14.246831+00:00",
       "dry_run": 0,
@@ -5708,18 +5727,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 40.58,
-      "errors": []
-    },
-    {
-      "id": 442,
-      "ts": "2026-11-28T01:51:33.830710+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1129,
-      "candidates_found": 22,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 57.1,
       "errors": []
     }
   ]
