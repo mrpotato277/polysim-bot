@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T15:46:41.699774+00:00",
+  "generated_at": "2026-11-28T15:51:19.890345+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11333.34,
-    "reconciled_equity_usd": 11333.34,
+    "equity_usd": 11211.83,
+    "reconciled_equity_usd": 11211.83,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2090.12,
-    "deployed_pct": 18.44,
-    "total_pnl_usd": 1333.34,
-    "total_pnl_pct": 13.33,
-    "unrealized_pnl_usd": 49.97,
+    "positions_value_usd": 1968.61,
+    "deployed_pct": 17.56,
+    "total_pnl_usd": 1211.83,
+    "total_pnl_pct": 12.12,
+    "unrealized_pnl_usd": -71.54,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,14 +28,14 @@
     "brier_blind_score": 0.3296,
     "brier_market_score": 0.1619,
     "brier_unique_markets": 3,
-    "total_forecasts": 371,
+    "total_forecasts": 372,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 984.23,
+    "crypto": 862.72,
     "geopolitics": 535.62,
     "politics": 455.49,
-    "markets": 114.78
+    "other": 114.78
   },
   "equity_curve": [
     {
@@ -151,13 +151,6 @@
       "equity": 9228.77,
       "cash": 9228.77,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T21:11:28.836127+00:00",
-      "equity": 9937.23,
-      "cash": 8091.18,
-      "deployed_pct": 11.58,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T21:16:07.915144+00:00",
@@ -3903,6 +3896,13 @@
       "cash": 9243.22,
       "deployed_pct": 18.44,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T15:51:19.640850+00:00",
+      "equity": 11211.83,
+      "cash": 9243.22,
+      "deployed_pct": 17.56,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3913,9 +3913,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.405,
-      "current_value": 984.23,
-      "unrealized_pnl": 602.33,
+      "current_price": 0.355,
+      "current_value": 862.72,
+      "unrealized_pnl": 480.82,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3969,7 +3969,7 @@
     {
       "market_id": "0xe4e863179f45e0fbfde0ddeb7d6e18b524f9409c84202166636a96e52a881062",
       "question": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in November?",
-      "category": "markets",
+      "category": "other",
       "outcome": "Yes",
       "quantity": 3102.25,
       "avg_entry_price": 0.1747,
@@ -3983,6 +3983,41 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 372,
+      "ts": "2026-11-28T15:51:19.639359+00:00",
+      "market_id": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
+      "question": "Will Bitcoin dip to $55,000 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.1085",
+      "p_blind": "0.9500",
+      "p_blended": "0.6675",
+      "confidence": "0.9000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires Bitcoin to have hit $55,000 at any point during November 2026 according to resolution source.",
+        "base_rate": 0.15,
+        "bull_case": "Recent news reports indicate Bitcoin touching or nearing $55,000 amid a broad crypto sell-off and heavy exchange outflows in November.",
+        "bear_case": "Current spot price is well above $55,000 ($59,437) with only ~3 days left in November, making further downward volatility to that specific level unlikely.",
+        "summary_de": "Aktuelle Nachrichten und Marktdaten bestätigen, dass Bitcoin im November bereits die Marke von 55.000 USD berührt hat, weshalb der Vertrag mit hoher Wahrscheinlichkeit mit Ja (YES) beendet wird.",
+        "news_used": [
+          "Polymarket Odds Today: Ljubljana, Bitcoin $55K, Clemson - RG.org",
+          "Bitcoin drops to $55,000 amid broad crypto sell-off; historical data shows mixed short-term rebounds. - Pluang",
+          "Bitcoin finds strongest buying support since Au... - Pluang",
+          "Bitcoin has lost half its value: Can it recover before the end of 2026? - Al-Bawaba",
+          "Bitfinex Sees Record $4.94B BTC Fund Exodus in November as Bitcoin Nears $55,000 - CryptoDaily"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,437.50 (24h range: $58,890.00 - $60,500.00, 30d realized annualized vol: ~46%).\nDistance from live spot to $55,000.00: -7.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.5d (1-sigma move = +/-3.8%, distance = 2.02 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
     {
       "id": 371,
       "ts": "2026-11-28T14:56:07.733073+00:00",
@@ -4372,7 +4407,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:35:39.027933+00:00",
+      "last_checked_ts": "2026-11-28T15:50:42.312708+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $62,500 in November, resolving based on standard spot index feeds before December 1.",
@@ -4560,7 +4595,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:30:57.744962+00:00",
+      "last_checked_ts": "2026-11-28T15:50:41.014197+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on whether Bitcoin hits or dips to $55,000 in November 2026.",
@@ -4596,7 +4631,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:30:58.456213+00:00",
+      "last_checked_ts": "2026-11-28T15:50:41.519269+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, resolved by spot oracle before December 1, 2026.",
@@ -4738,34 +4773,6 @@
         "news_used": [
           "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express"
         ]
-      }
-    },
-    {
-      "id": 347,
-      "ts": "2026-11-28T08:41:19.685313+00:00",
-      "market_id": "0xd5175b9e717fb4cf4de5fe69ed13465c831917782f2224ac330e260ee35b02a8",
-      "question": "Bank of England increases interest rates by 25 bps after December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-17T23:59:00+00:00",
-      "market_price": "0.7750",
-      "p_blind": "0.1200",
-      "p_blended": "0.5855",
-      "confidence": "0.7000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "-0.1845",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:40:41.236186+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
-        "base_rate": 0.15,
-        "bull_case": "Anhaltende Inflation oder Lohndruck könnten die Bank of England zu einer unerwarteten Zinserhöhung im Dezember zwingen.",
-        "bear_case": "Der langfristige globale Trend geht zu Zinssenkungen oder stabilen Zinsen, und eine Erhöhung um 25 bps ist im aktuellen Zinszyklus eher unwahrscheinlich.",
-        "summary_de": "Da im aktuellen makroökonomischen Umfeld Zinssenkungen oder stabile Zinsen wahrscheinlicher sind als plötzliche Zinserhöhungen, wird eine Anhebung um 25 Basispunkte im Dezember 2026 als gering eingestuft.",
-        "news_used": []
       }
     }
   ],
@@ -5773,6 +5780,18 @@
   ],
   "recent_runs": [
     {
+      "id": 602,
+      "ts": "2026-11-28T15:51:19.641763+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1241,
+      "candidates_found": 14,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.88,
+      "errors": []
+    },
+    {
       "id": 601,
       "ts": "2026-11-28T15:46:41.332815+00:00",
       "dry_run": 0,
@@ -5998,18 +6017,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 47.71,
-      "errors": []
-    },
-    {
-      "id": 582,
-      "ts": "2026-11-28T14:11:17.859794+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1172,
-      "candidates_found": 13,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 41.82,
       "errors": []
     }
   ]
