@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T07:41:13.129068+00:00",
+  "generated_at": "2026-11-28T07:46:38.829505+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10873.36,
-    "reconciled_equity_usd": 10873.36,
+    "equity_usd": 10830.16,
+    "reconciled_equity_usd": 10830.16,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4498.03,
-    "deployed_pct": 41.37,
-    "total_pnl_usd": 873.36,
-    "total_pnl_pct": 8.73,
-    "unrealized_pnl_usd": 345.76,
+    "positions_value_usd": 4454.83,
+    "deployed_pct": 41.13,
+    "total_pnl_usd": 830.16,
+    "total_pnl_pct": 8.3,
+    "unrealized_pnl_usd": 302.56,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2275.95,
-    "crypto": 1433.82,
+    "politics": 2281.36,
+    "crypto": 1385.21,
     "geopolitics": 664.17,
     "markets": 124.09
   },
@@ -85,13 +85,6 @@
       "equity": 10000.0,
       "cash": 10000.0,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T10:22:11.204596+00:00",
-      "equity": 10000.0,
-      "cash": 10000.0,
-      "deployed_pct": 0.0,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T10:31:30.518367+00:00",
@@ -3855,6 +3848,13 @@
       "cash": 6375.33,
       "deployed_pct": 41.37,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T07:46:38.388315+00:00",
+      "equity": 10830.16,
+      "cash": 6375.33,
+      "deployed_pct": 41.13,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3865,9 +3865,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.27,
-      "current_value": 484.08,
-      "unrealized_pnl": 107.57,
+      "current_price": 0.275,
+      "current_value": 493.05,
+      "unrealized_pnl": 116.54,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -3880,9 +3880,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.295,
-      "current_value": 1433.82,
-      "unrealized_pnl": 670.01,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3910,9 +3910,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.116,
-      "current_value": 206.22,
-      "unrealized_pnl": -14.22,
+      "current_price": 0.114,
+      "current_value": 202.66,
+      "unrealized_pnl": -17.78,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3997,7 +3997,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T07:45:44.516427+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $55,000 at any point during November 2026 based on standard exchange aggregates.",
@@ -4059,7 +4059,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:30:49.605077+00:00",
+      "last_checked_ts": "2026-11-28T07:45:44.331706+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
@@ -4254,7 +4254,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:25:32.603054+00:00",
+      "last_checked_ts": "2026-11-28T07:45:43.410569+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -4283,7 +4283,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:30:50.119202+00:00",
+      "last_checked_ts": "2026-11-28T07:45:45.063178+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires the ceasefire to hold continuously through the end of November 30, 2026.",
@@ -4381,7 +4381,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:30:49.400054+00:00",
+      "last_checked_ts": "2026-11-28T07:45:44.008389+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract verified via major spot exchange oracle before November 30, 2026.",
@@ -4412,7 +4412,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:30:50.006117+00:00",
+      "last_checked_ts": "2026-11-28T07:45:44.875518+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -4549,7 +4549,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:30:50.483482+00:00",
+      "last_checked_ts": "2026-11-28T07:45:45.681539+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if WTI hits $90 in November 2026. Current price is ~$83.08 with only ~3 days left in the month.",
@@ -4620,7 +4620,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:30:50.483482+00:00",
+      "last_checked_ts": "2026-11-28T07:45:45.681539+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks whether WTI Crude Oil hits $90 at any point during November 2026 based on standard market pricing.",
@@ -4656,7 +4656,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:30:50.483482+00:00",
+      "last_checked_ts": "2026-11-28T07:45:45.681539+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether WTI spot/futures touch $90.00 or higher during November 2026.",
@@ -4790,7 +4790,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:25:32.504980+00:00",
+      "last_checked_ts": "2026-11-28T07:45:43.137480+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
@@ -5767,6 +5767,18 @@
   ],
   "recent_runs": [
     {
+      "id": 508,
+      "ts": "2026-11-28T07:46:38.389753+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1163,
+      "candidates_found": 11,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 57.22,
+      "errors": []
+    },
+    {
       "id": 507,
       "ts": "2026-11-28T07:41:12.869785+00:00",
       "dry_run": 0,
@@ -5992,18 +6004,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 51.61,
-      "errors": []
-    },
-    {
-      "id": 488,
-      "ts": "2026-11-28T06:06:05.928218+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1156,
-      "candidates_found": 11,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 34.16,
       "errors": []
     }
   ]
