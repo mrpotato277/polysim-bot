@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T07:56:34.047057+00:00",
+  "generated_at": "2026-11-28T08:01:45.693096+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10783.34,
-    "reconciled_equity_usd": 10783.34,
+    "equity_usd": 10657.76,
+    "reconciled_equity_usd": 10657.76,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4408.01,
-    "deployed_pct": 40.88,
-    "total_pnl_usd": 783.34,
-    "total_pnl_pct": 7.83,
-    "unrealized_pnl_usd": 255.74,
+    "positions_value_usd": 4282.43,
+    "deployed_pct": 40.18,
+    "total_pnl_usd": 657.76,
+    "total_pnl_pct": 6.58,
+    "unrealized_pnl_usd": 130.16,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2283.14,
-    "crypto": 1336.61,
+    "politics": 2206.17,
+    "crypto": 1288.0,
     "geopolitics": 664.17,
     "markets": 124.09
   },
@@ -85,13 +85,6 @@
       "equity": 10000.0,
       "cash": 10000.0,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T10:51:24.658090+00:00",
-      "equity": 9986.4,
-      "cash": 9600.0,
-      "deployed_pct": 3.87,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T11:00:00+00:00",
@@ -3855,6 +3848,19 @@
       "cash": 6375.33,
       "deployed_pct": 40.88,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T08:00:00+00:00",
+      "equity": 10663.41,
+      "cash": 10663.41,
+      "source": "polysim"
+    },
+    {
+      "ts": "2026-11-28T08:01:45.382671+00:00",
+      "equity": 10657.76,
+      "cash": 6375.33,
+      "deployed_pct": 40.18,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3865,9 +3871,9 @@
       "outcome": "No",
       "quantity": 1792.9,
       "avg_entry_price": 0.21,
-      "current_price": 0.275,
-      "current_value": 493.05,
-      "unrealized_pnl": 116.54,
+      "current_price": 0.265,
+      "current_value": 475.12,
+      "unrealized_pnl": 98.61,
       "p_yes": 0.5957,
       "p_blended": 0.4043,
       "edge_net": 0.1943,
@@ -3880,9 +3886,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.275,
-      "current_value": 1336.61,
-      "unrealized_pnl": 572.8,
+      "current_price": 0.265,
+      "current_value": 1288.0,
+      "unrealized_pnl": 524.19,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3940,9 +3946,9 @@
       "outcome": "No",
       "quantity": 3517.3,
       "avg_entry_price": 0.19,
-      "current_price": 0.205,
-      "current_value": 721.05,
-      "unrealized_pnl": 52.76,
+      "current_price": 0.185,
+      "current_value": 650.7,
+      "unrealized_pnl": -17.59,
       "p_yes": 0.559,
       "p_blended": 0.441,
       "edge_net": 0.251,
@@ -3955,9 +3961,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.575,
-      "current_value": 650.17,
-      "unrealized_pnl": -35.24,
+      "current_price": 0.585,
+      "current_value": 661.48,
+      "unrealized_pnl": -23.93,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -4068,7 +4074,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:45:44.516427+00:00",
+      "last_checked_ts": "2026-11-28T08:01:00.064147+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $55,000 at any point during November 2026 based on standard exchange aggregates.",
@@ -4130,7 +4136,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:45:44.331706+00:00",
+      "last_checked_ts": "2026-11-28T08:00:59.831137+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
@@ -4325,7 +4331,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:45:43.410569+00:00",
+      "last_checked_ts": "2026-11-28T08:00:59.119026+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract based on major exchange feeds before the deadline.",
@@ -4452,7 +4458,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:45:44.008389+00:00",
+      "last_checked_ts": "2026-11-28T08:00:59.546393+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract verified via major spot exchange oracle before November 30, 2026.",
@@ -4483,7 +4489,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:45:44.875518+00:00",
+      "last_checked_ts": "2026-11-28T08:01:00.333923+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain following the ongoing political events and elections.",
@@ -5774,6 +5780,18 @@
   ],
   "recent_runs": [
     {
+      "id": 511,
+      "ts": "2026-11-28T08:01:45.384665+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1229,
+      "candidates_found": 11,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 49.06,
+      "errors": []
+    },
+    {
       "id": 510,
       "ts": "2026-11-28T07:56:33.603202+00:00",
       "dry_run": 0,
@@ -5999,18 +6017,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 51.26,
-      "errors": []
-    },
-    {
-      "id": 491,
-      "ts": "2026-11-28T06:21:33.686551+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1222,
-      "candidates_found": 11,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 52.41,
       "errors": []
     }
   ]
