@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T07:36:06.263904+00:00",
+  "generated_at": "2026-11-28T07:41:13.129068+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10840.93,
-    "reconciled_equity_usd": 10840.93,
+    "equity_usd": 10873.36,
+    "reconciled_equity_usd": 10873.36,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4465.6,
-    "deployed_pct": 41.19,
-    "total_pnl_usd": 840.93,
-    "total_pnl_pct": 8.41,
-    "unrealized_pnl_usd": 313.33,
+    "positions_value_usd": 4498.03,
+    "deployed_pct": 41.37,
+    "total_pnl_usd": 873.36,
+    "total_pnl_pct": 8.73,
+    "unrealized_pnl_usd": 345.76,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2286.37,
+    "politics": 2275.95,
     "crypto": 1433.82,
-    "geopolitics": 621.32,
+    "geopolitics": 664.17,
     "markets": 124.09
   },
   "equity_curve": [
@@ -85,13 +85,6 @@
       "equity": 10000.0,
       "cash": 10000.0,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T10:12:02.225730+00:00",
-      "equity": 10000.0,
-      "cash": 10000.0,
-      "deployed_pct": 0.0,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T10:22:11.204596+00:00",
@@ -3855,6 +3848,13 @@
       "cash": 6375.33,
       "deployed_pct": 41.19,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T07:41:12.868039+00:00",
+      "equity": 10873.36,
+      "cash": 6375.33,
+      "deployed_pct": 41.37,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3895,9 +3895,9 @@
       "outcome": "No",
       "quantity": 4284.95,
       "avg_entry_price": 0.16,
-      "current_price": 0.145,
-      "current_value": 621.32,
-      "unrealized_pnl": -64.27,
+      "current_price": 0.155,
+      "current_value": 664.17,
+      "unrealized_pnl": -21.42,
       "p_yes": 0.7394,
       "p_blended": 0.2606,
       "edge_net": 0.1106,
@@ -3910,9 +3910,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1155,
-      "current_value": 205.33,
-      "unrealized_pnl": -15.11,
+      "current_price": 0.116,
+      "current_value": 206.22,
+      "unrealized_pnl": -14.22,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -3955,9 +3955,9 @@
       "outcome": "Yes",
       "quantity": 1130.73,
       "avg_entry_price": 0.6062,
-      "current_price": 0.585,
-      "current_value": 661.48,
-      "unrealized_pnl": -23.93,
+      "current_price": 0.575,
+      "current_value": 650.17,
+      "unrealized_pnl": -35.24,
       "p_yes": 0.8655,
       "p_blended": 0.8655,
       "edge_net": 0.2238,
@@ -4031,7 +4031,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:20:44.673676+00:00",
+      "last_checked_ts": "2026-11-28T07:40:38.501743+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4119,7 +4119,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:20:44.542520+00:00",
+      "last_checked_ts": "2026-11-28T07:40:38.355308+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4154,7 +4154,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:20:44.913067+00:00",
+      "last_checked_ts": "2026-11-28T07:40:38.772541+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4219,7 +4219,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:20:44.542520+00:00",
+      "last_checked_ts": "2026-11-28T07:40:38.355308+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
@@ -4311,7 +4311,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T07:20:44.542520+00:00",
+      "last_checked_ts": "2026-11-28T07:40:38.355308+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -5767,6 +5767,18 @@
   ],
   "recent_runs": [
     {
+      "id": 507,
+      "ts": "2026-11-28T07:41:12.869785+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1160,
+      "candidates_found": 12,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 35.59,
+      "errors": []
+    },
+    {
       "id": 506,
       "ts": "2026-11-28T07:36:06.008076+00:00",
       "dry_run": 0,
@@ -5992,18 +6004,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 34.16,
-      "errors": []
-    },
-    {
-      "id": 487,
-      "ts": "2026-11-28T06:01:58.030577+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1156,
-      "candidates_found": 11,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 53.14,
       "errors": []
     }
   ]
