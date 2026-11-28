@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T05:36:25.072009+00:00",
+  "generated_at": "2026-11-28T05:41:25.705590+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10776.05,
-    "reconciled_equity_usd": 10776.05,
+    "equity_usd": 10824.65,
+    "reconciled_equity_usd": 10824.65,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4400.72,
-    "deployed_pct": 40.84,
-    "total_pnl_usd": 776.05,
-    "total_pnl_pct": 7.76,
-    "unrealized_pnl_usd": 248.45,
+    "positions_value_usd": 4449.32,
+    "deployed_pct": 41.1,
+    "total_pnl_usd": 824.65,
+    "total_pnl_pct": 8.25,
+    "unrealized_pnl_usd": 297.05,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -33,7 +33,7 @@
   },
   "category_exposure": {
     "politics": 2260.34,
-    "crypto": 1336.61,
+    "crypto": 1385.21,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -3717,6 +3717,13 @@
       "cash": 6375.33,
       "deployed_pct": 40.84,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T05:41:25.361957+00:00",
+      "equity": 10824.65,
+      "cash": 6375.33,
+      "deployed_pct": 41.1,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3742,9 +3749,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.275,
-      "current_value": 1336.61,
-      "unrealized_pnl": 572.8,
+      "current_price": 0.285,
+      "current_value": 1385.21,
+      "unrealized_pnl": 621.4,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3951,7 +3958,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:37.732039+00:00",
+      "last_checked_ts": "2026-11-28T05:40:42.379226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on which party wins the most seats in the Spanish general election held on November 29, 2026.",
@@ -4052,7 +4059,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:15:41.277963+00:00",
+      "last_checked_ts": "2026-11-28T05:40:41.700851+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on official election results and seat counts determining if PP and Vox secure a majority in the Spanish Congress of Deputies following the November 29, 2026 snap election.",
@@ -4087,7 +4094,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:37.732039+00:00",
+      "last_checked_ts": "2026-11-28T05:40:42.379226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official results of the 2026 Spanish general election determining which party wins the most seats.",
@@ -4122,7 +4129,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:39.631800+00:00",
+      "last_checked_ts": "2026-11-28T05:40:43.969344+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price-touch contract for November; checks if BTC hits $57,500 at any point during November 2026.",
@@ -4190,7 +4197,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:37.732039+00:00",
+      "last_checked_ts": "2026-11-28T05:40:42.379226+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on official results of the 2026 Spanish general election for the party winning the most seats.",
@@ -4424,7 +4431,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:20:39.018785+00:00",
+      "last_checked_ts": "2026-11-28T05:40:43.506879+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es wird die Gesamtzahl der Tweets von Elon Musk im angegebenen Zeitraum auf X gezählt, wobei Retweets und Antworten je nach Plattformdefinition einfließen können.",
@@ -4585,7 +4592,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:15:41.485047+00:00",
+      "last_checked_ts": "2026-11-28T05:40:41.873852+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
@@ -5634,6 +5641,18 @@
   ],
   "recent_runs": [
     {
+      "id": 483,
+      "ts": "2026-11-28T05:41:25.363475+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1169,
+      "candidates_found": 11,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 45.13,
+      "errors": []
+    },
+    {
       "id": 482,
       "ts": "2026-11-28T05:36:24.612798+00:00",
       "dry_run": 0,
@@ -5859,18 +5878,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 51.74,
-      "errors": []
-    },
-    {
-      "id": 463,
-      "ts": "2026-11-28T03:46:42.702142+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1147,
-      "candidates_found": 19,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 59.8,
       "errors": []
     }
   ]
