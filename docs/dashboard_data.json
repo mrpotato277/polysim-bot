@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T13:21:39.490152+00:00",
+  "generated_at": "2026-11-28T13:26:14.796793+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -28,7 +28,7 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 362,
+    "total_forecasts": 363,
     "circuit_breaker_active": true
   },
   "category_exposure": {
@@ -133,13 +133,6 @@
       "equity": 9962.25,
       "cash": 9962.25,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T18:15:58.211067+00:00",
-      "equity": 9958.98,
-      "cash": 8998.81,
-      "deployed_pct": 9.64,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T18:21:01.084337+00:00",
@@ -3891,6 +3884,13 @@
       "cash": 9243.22,
       "deployed_pct": 19.4,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T13:26:14.455472+00:00",
+      "equity": 11467.78,
+      "cash": 9243.22,
+      "deployed_pct": 19.4,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3919,10 +3919,10 @@
       "current_price": 0.12,
       "current_value": 514.19,
       "unrealized_pnl": -171.4,
-      "p_yes": 0.71,
-      "p_blended": 0.29,
-      "edge_net": 0.16,
-      "rationale": "Trotz internationalem Druck deuten anhaltende regionale Spannungen und Störungen im Luftverkehr auf eine anhaltend fragile Waffenruhe hin, die das Risiko eines Bruchs vor dem Stichtag erhöht."
+      "p_yes": 0.7178,
+      "p_blended": 0.2822,
+      "edge_net": 0.1622,
+      "rationale": "Anhaltende Spannungen, Drohungen und fortgesetzte militärische Planungen deuten darauf hin, dass ein formeller Waffenstillstand bis zum 15. Dezember stark gefährdet ist."
     },
     {
       "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
@@ -3987,6 +3987,41 @@
   ],
   "recent_forecasts": [
     {
+      "id": 363,
+      "ts": "2026-11-28T13:26:14.454034+00:00",
+      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
+      "question": "Israel x Iran ceasefire continues through December 15?",
+      "category": "geopolitics",
+      "end_date": "2026-12-16T04:59:00+00:00",
+      "market_price": "0.8800",
+      "p_blind": "0.2800",
+      "p_blended": "0.7178",
+      "confidence": "0.6500",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.1622",
+      "strategy_type": "news_lag",
+      "resolution_risk": "medium",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Requires verifying whether a formal ceasefire remains intact through the exact deadline of December 15, 2026.",
+        "base_rate": 0.35,
+        "bull_case": "Despite ongoing tensions, neither side may want to fully reignite open war before the end of the year, maintaining a fragile lull.",
+        "bear_case": "Recent reports indicate active military operations, ongoing aviation crises, new threats from Iran, and active debates within Israeli security on timing further strikes.",
+        "summary_de": "Anhaltende Spannungen, Drohungen und fortgesetzte militärische Planungen deuten darauf hin, dass ein formeller Waffenstillstand bis zum 15. Dezember stark gefährdet ist.",
+        "news_used": [
+          "Bethlehem businesses hopeful tourism will return this Christmas - The Mighty 790 KFGO",
+          "Norse Atlantic ends flights: How Iran war continues to batter aviation",
+          "62 of the most stupid things Donald Trump has ever said - Indy100",
+          "Iran issues new threats as war stalemate drags on - WGXA",
+          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
+          "Evening recap: Aoun, Salam propose extending UNIFIL mandate; Kuwait summons Iranian ambassador; Khalil al-Hayya’s son survives assassination"
+        ]
+      }
+    },
+    {
       "id": 362,
       "ts": "2026-11-28T13:21:39.048014+00:00",
       "market_id": "0xf56a109b9e4db6e1394a1479ee6a4aca989eff2a3ca7f4125cfd84ec7b622696",
@@ -4003,7 +4038,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T13:25:31.066294+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by the deadline, which is tightly defined and hard to verify if unofficial.",
@@ -4031,7 +4066,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming that the ceasefire officially persists continuously through December 15 without a formal resumption of hostilities.",
@@ -4122,7 +4157,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:42.574585+00:00",
+      "last_checked_ts": "2026-11-28T13:25:31.424731+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation of the exact root cause of the FAA ground stop.",
@@ -4150,7 +4185,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:42.141233+00:00",
+      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining the precise start and continuation criteria of an Israel-Iran ceasefire by December 15, 2026.",
@@ -4216,7 +4251,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:42.707472+00:00",
+      "last_checked_ts": "2026-11-28T13:25:31.554412+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves YES if the Federal Reserve raises its target federal funds rate at any FOMC meeting in 2026. Deadline is Dec 10, 2026.",
@@ -4343,7 +4378,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:41.830086+00:00",
+      "last_checked_ts": "2026-11-28T13:25:30.614377+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
@@ -4378,7 +4413,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:05:39.734385+00:00",
+      "last_checked_ts": "2026-11-28T13:25:30.262798+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4410,7 +4445,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:41.830086+00:00",
+      "last_checked_ts": "2026-11-28T13:25:30.614377+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England nach der Dezembersitzung 2026 hinsichtlich einer Zinserhöhung um 25 Basispunkte.",
@@ -4475,7 +4510,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:41.830086+00:00",
+      "last_checked_ts": "2026-11-28T13:25:30.614377+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
@@ -4539,7 +4574,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:42.141233+00:00",
+      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember anhält.",
@@ -4608,7 +4643,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:42.284332+00:00",
+      "last_checked_ts": "2026-11-28T13:25:31.066294+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4696,7 +4731,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:42.141233+00:00",
+      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4731,7 +4766,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:42.574585+00:00",
+      "last_checked_ts": "2026-11-28T13:25:31.424731+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4741,41 +4776,6 @@
         "summary_de": "Da landesweite FAA-Bodenstopps historisch gesehen häufig auf Software- oder Konfigurationsfehler zurückzuführen sind, ist eine Bestätigung wahrscheinlich, auch wenn offizielle Berichte möglicherweise noch Zeit benötigen.",
         "news_used": [
           "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/"
-        ]
-      }
-    },
-    {
-      "id": 338,
-      "ts": "2026-11-28T06:31:55.130257+00:00",
-      "market_id": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
-      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-      "category": "economics",
-      "end_date": "2026-12-09T23:59:00+00:00",
-      "market_price": "0.0405",
-      "p_blind": "0.2500",
-      "p_blended": "0.0817",
-      "confidence": "0.6500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:20:46.249040+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Prüft, ob der Leitzins nach dem Dezember-2026-Treffen unverändert bleibt.",
-        "base_rate": 0.3,
-        "bull_case": "Angesichts anhaltender Inflationssorgen und Markterwartungen bezüglich möglicher Zinserhöhungen oder verbleibender restriktiver Phasen könnte die Fed den Zins trotz Druck unverändert lassen oder eine Pause einlegen.",
-        "bear_case": "Aktuelle Nachrichten deuten auf eine hawkishe Haltung hin, wobei einige Analysten sogar Zinserhöhungen statt Pausen für wahrscheinlich halten, was ein 'no change' unwahrscheinlicher macht.",
-        "summary_de": "Aufgrund zunehmend hawkishe Tendenzen und Diskussionen über mögliche Zinserhöhungen oder geldpolitische Anpassungen ist ein unveränderter Leitzins nach der Dezember-Sitzung weniger wahrscheinlich.",
-        "news_used": [
-          "A Fed Rate Hike Next Month Is Almost Certain: Analysts Share Their Views on 2027 - Cryptonews.net",
-          "A Fed Rate Hike Next Month Is Almost Certain: Analysts Share Their Views on 2027 - Bitcoin Sistemi",
-          "High inflation has puts US Fed’s credibility on the line - ThePrint",
-          "How have interest rate expectations changed after this week's events? - investingLive",
-          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
-          "The Latest Interest Rate Forecast Is In, and It Spells Trouble for a Historically Expensive AI-Driven Bull Market - The Motley Fool"
         ]
       }
     }
@@ -5784,6 +5784,18 @@
   ],
   "recent_runs": [
     {
+      "id": 573,
+      "ts": "2026-11-28T13:26:14.456276+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1257,
+      "candidates_found": 12,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 46.06,
+      "errors": []
+    },
+    {
       "id": 572,
       "ts": "2026-11-28T13:21:39.050293+00:00",
       "dry_run": 0,
@@ -6009,18 +6021,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 53.69,
-      "errors": []
-    },
-    {
-      "id": 553,
-      "ts": "2026-11-28T11:41:37.514910+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1199,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 54.15,
       "errors": []
     }
   ]
