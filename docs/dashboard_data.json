@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T05:21:31.489980+00:00",
+  "generated_at": "2026-11-28T05:26:08.916519+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10764.41,
-    "reconciled_equity_usd": 10764.41,
+    "equity_usd": 10717.58,
+    "reconciled_equity_usd": 10717.58,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4389.08,
-    "deployed_pct": 40.77,
-    "total_pnl_usd": 764.41,
-    "total_pnl_pct": 7.64,
-    "unrealized_pnl_usd": 236.81,
+    "positions_value_usd": 4342.25,
+    "deployed_pct": 40.52,
+    "total_pnl_usd": 717.58,
+    "total_pnl_pct": 7.18,
+    "unrealized_pnl_usd": 189.98,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2248.7,
-    "crypto": 1336.61,
+    "politics": 2250.48,
+    "crypto": 1288.0,
     "geopolitics": 664.17,
     "markets": 139.6
   },
@@ -3703,6 +3703,13 @@
       "cash": 6375.33,
       "deployed_pct": 40.77,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T05:26:08.673442+00:00",
+      "equity": 10717.58,
+      "cash": 6375.33,
+      "deployed_pct": 40.52,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3728,9 +3735,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.275,
-      "current_value": 1336.61,
-      "unrealized_pnl": 572.8,
+      "current_price": 0.265,
+      "current_value": 1288.0,
+      "unrealized_pnl": 524.19,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3758,9 +3765,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.118,
-      "current_value": 209.77,
-      "unrealized_pnl": -10.67,
+      "current_price": 0.119,
+      "current_value": 211.55,
+      "unrealized_pnl": -8.89,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -4381,7 +4388,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T05:10:39.247179+00:00",
+      "last_checked_ts": "2026-11-28T05:25:33.921068+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price touch or breach during the specified date range based on exchange feeds.",
@@ -5620,6 +5627,18 @@
   ],
   "recent_runs": [
     {
+      "id": 481,
+      "ts": "2026-11-28T05:26:08.674740+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1209,
+      "candidates_found": 12,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 37.39,
+      "errors": []
+    },
+    {
       "id": 480,
       "ts": "2026-11-28T05:21:31.093467+00:00",
       "dry_run": 0,
@@ -5845,18 +5864,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 64.02,
-      "errors": []
-    },
-    {
-      "id": 461,
-      "ts": "2026-11-28T03:36:14.246831+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1115,
-      "candidates_found": 19,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 42.48,
       "errors": []
     }
   ]
