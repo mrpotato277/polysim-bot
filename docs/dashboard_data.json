@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T14:26:09.756060+00:00",
+  "generated_at": "2026-11-28T14:31:39.704137+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11477.37,
-    "reconciled_equity_usd": 11477.37,
+    "equity_usd": 11454.84,
+    "reconciled_equity_usd": 11454.84,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2234.15,
-    "deployed_pct": 19.47,
-    "total_pnl_usd": 1477.37,
-    "total_pnl_pct": 14.77,
-    "unrealized_pnl_usd": -474.29,
+    "positions_value_usd": 2211.62,
+    "deployed_pct": 19.31,
+    "total_pnl_usd": 1454.84,
+    "total_pnl_pct": 14.55,
+    "unrealized_pnl_usd": -496.82,
     "total_trades": 313,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1117.89,
+    "crypto": 1093.59,
     "geopolitics": 535.62,
-    "politics": 465.86,
+    "politics": 467.63,
     "markets": 114.78
   },
   "equity_curve": [
@@ -139,13 +139,6 @@
       "equity": 9533.04,
       "cash": 9533.04,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T19:46:25.021143+00:00",
-      "equity": 9923.34,
-      "cash": 8361.37,
-      "deployed_pct": 11.45,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T19:51:40.034445+00:00",
@@ -3897,6 +3890,13 @@
       "cash": 9243.22,
       "deployed_pct": 19.47,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T14:31:39.391054+00:00",
+      "equity": 11454.84,
+      "cash": 9243.22,
+      "deployed_pct": 19.31,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3907,9 +3907,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.46,
-      "current_value": 1117.89,
-      "unrealized_pnl": 735.99,
+      "current_price": 0.45,
+      "current_value": 1093.59,
+      "unrealized_pnl": 711.69,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3937,9 +3937,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1165,
-      "current_value": 207.11,
-      "unrealized_pnl": -13.33,
+      "current_price": 0.1175,
+      "current_value": 208.88,
+      "unrealized_pnl": -11.56,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -4044,7 +4044,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:10:38.732571+00:00",
+      "last_checked_ts": "2026-11-28T14:30:52.850850+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Monatsende November 2026, eindeutiger Tiefstkurs während des Monats.",
@@ -4167,7 +4167,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:15:37.985085+00:00",
+      "last_checked_ts": "2026-11-28T14:30:54.408250+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England über Zinserhöhungen im Dezember 2026.",
@@ -4202,7 +4202,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:15:37.185502+00:00",
+      "last_checked_ts": "2026-11-28T14:30:53.674776+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Counts total tweets and replies on Elon Musk's official X account within the exact specified date range.",
@@ -4506,7 +4506,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:10:39.024609+00:00",
+      "last_checked_ts": "2026-11-28T14:30:53.195812+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price check against a specific fiat threshold at a precise timestamp.",
@@ -4605,7 +4605,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:15:37.985085+00:00",
+      "last_checked_ts": "2026-11-28T14:30:54.408250+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
@@ -4640,7 +4640,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:15:37.620357+00:00",
+      "last_checked_ts": "2026-11-28T14:30:54.098094+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4672,7 +4672,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:15:37.985085+00:00",
+      "last_checked_ts": "2026-11-28T14:30:54.408250+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England nach der Dezembersitzung 2026 hinsichtlich einer Zinserhöhung um 25 Basispunkte.",
@@ -4707,7 +4707,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:15:36.899239+00:00",
+      "last_checked_ts": "2026-11-28T14:30:53.344724+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official FOMC rate decision following the December 2026 meeting.",
@@ -4737,7 +4737,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T14:15:37.985085+00:00",
+      "last_checked_ts": "2026-11-28T14:30:54.408250+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
@@ -5789,6 +5789,18 @@
   ],
   "recent_runs": [
     {
+      "id": 586,
+      "ts": "2026-11-28T14:31:39.392231+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1173,
+      "candidates_found": 14,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 48.67,
+      "errors": []
+    },
+    {
       "id": 585,
       "ts": "2026-11-28T14:26:09.509043+00:00",
       "dry_run": 0,
@@ -6014,18 +6026,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 45.75,
-      "errors": []
-    },
-    {
-      "id": 566,
-      "ts": "2026-11-28T12:51:38.403485+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1137,
-      "candidates_found": 12,
-      "llm_calls": 1,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 57.59,
       "errors": []
     }
   ]
