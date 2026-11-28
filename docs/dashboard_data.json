@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T11:36:27.925843+00:00",
+  "generated_at": "2026-11-28T11:41:37.909215+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11632.91,
-    "reconciled_equity_usd": 11632.91,
+    "equity_usd": 11539.25,
+    "reconciled_equity_usd": 11539.25,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 8125.33,
-    "positions_value_usd": 3507.58,
-    "deployed_pct": 30.15,
-    "total_pnl_usd": 1632.91,
-    "total_pnl_pct": 16.33,
-    "unrealized_pnl_usd": 417.23,
+    "positions_value_usd": 3413.92,
+    "deployed_pct": 29.59,
+    "total_pnl_usd": 1539.25,
+    "total_pnl_pct": 15.39,
+    "unrealized_pnl_usd": 323.57,
     "total_trades": 309,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -32,9 +32,9 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 2357.29,
+    "crypto": 2260.08,
     "geopolitics": 578.47,
-    "politics": 457.04,
+    "politics": 460.59,
     "markets": 114.78
   },
   "equity_curve": [
@@ -121,13 +121,6 @@
       "equity": 9967.76,
       "cash": 9967.76,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T16:36:04.574222+00:00",
-      "equity": 9958.75,
-      "cash": 8998.81,
-      "deployed_pct": 9.64,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T16:40:56.607024+00:00",
@@ -3879,6 +3872,13 @@
       "cash": 8125.33,
       "deployed_pct": 30.15,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T11:41:37.513326+00:00",
+      "equity": 11539.25,
+      "cash": 8125.33,
+      "deployed_pct": 29.59,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3889,9 +3889,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.485,
-      "current_value": 2357.29,
-      "unrealized_pnl": 1593.48,
+      "current_price": 0.465,
+      "current_value": 2260.08,
+      "unrealized_pnl": 1496.27,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3919,9 +3919,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1155,
-      "current_value": 205.33,
-      "unrealized_pnl": -15.11,
+      "current_price": 0.1175,
+      "current_value": 208.88,
+      "unrealized_pnl": -11.56,
       "p_yes": 0.2499,
       "p_blended": 0.2499,
       "edge_net": 0.0,
@@ -4090,7 +4090,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:48.650057+00:00",
+      "last_checked_ts": "2026-11-28T11:40:45.979882+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
@@ -4125,7 +4125,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:10:54.523789+00:00",
+      "last_checked_ts": "2026-11-28T11:40:45.536654+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4157,7 +4157,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:48.650057+00:00",
+      "last_checked_ts": "2026-11-28T11:40:45.979882+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England nach der Dezembersitzung 2026 hinsichtlich einer Zinserhöhung um 25 Basispunkte.",
@@ -4222,7 +4222,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:48.650057+00:00",
+      "last_checked_ts": "2026-11-28T11:40:45.979882+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
@@ -4286,7 +4286,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:48.991658+00:00",
+      "last_checked_ts": "2026-11-28T11:40:46.570020+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember anhält.",
@@ -4355,7 +4355,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:49.192781+00:00",
+      "last_checked_ts": "2026-11-28T11:40:46.741042+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4443,7 +4443,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:48.991658+00:00",
+      "last_checked_ts": "2026-11-28T11:40:46.570020+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
@@ -4478,7 +4478,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:49.573353+00:00",
+      "last_checked_ts": "2026-11-28T11:40:47.063802+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
@@ -4543,7 +4543,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:48.991658+00:00",
+      "last_checked_ts": "2026-11-28T11:40:46.570020+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss geprüft werden, ob die Waffenruhe bis zum 15. Dezember 2026 durchgehend hält; maßgeblich ist das offizielle Fortbestehen ohne offene militärische Eskalation.",
@@ -4635,7 +4635,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T11:15:48.991658+00:00",
+      "last_checked_ts": "2026-11-28T11:40:46.570020+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Es muss klar definiert sein, ob formelle Waffenruhen oder ein bloßer Mangel an direkten Staatskonflikten als Weiterführung gewertet werden.",
@@ -5794,6 +5794,18 @@
   ],
   "recent_runs": [
     {
+      "id": 553,
+      "ts": "2026-11-28T11:41:37.514910+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1199,
+      "candidates_found": 12,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 54.15,
+      "errors": []
+    },
+    {
       "id": 552,
       "ts": "2026-11-28T11:36:27.510512+00:00",
       "dry_run": 0,
@@ -6019,18 +6031,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 54.68,
-      "errors": []
-    },
-    {
-      "id": 533,
-      "ts": "2026-11-28T09:51:16.327823+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1265,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 36.26,
       "errors": []
     }
   ]
