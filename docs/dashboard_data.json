@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T00:41:18.106549+00:00",
+  "generated_at": "2026-11-28T00:46:26.052045+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10601.67,
-    "reconciled_equity_usd": 10590.36,
-    "equity_discrepancy_usd": 11.31,
+    "equity_usd": 10541.75,
+    "reconciled_equity_usd": 10541.75,
+    "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4215.03,
-    "deployed_pct": 39.76,
-    "total_pnl_usd": 601.67,
-    "total_pnl_pct": 6.02,
-    "unrealized_pnl_usd": 62.76,
+    "positions_value_usd": 4166.42,
+    "deployed_pct": 39.52,
+    "total_pnl_usd": 541.75,
+    "total_pnl_pct": 5.42,
+    "unrealized_pnl_usd": 14.15,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 312,
+    "total_forecasts": 314,
     "circuit_breaker_active": true
   },
   "category_exposure": {
     "politics": 2302.16,
-    "crypto": 1093.59,
+    "crypto": 1044.98,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3309,6 +3309,13 @@
       "cash": 6375.33,
       "deployed_pct": 39.76,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T00:46:25.804890+00:00",
+      "equity": 10541.75,
+      "cash": 6375.33,
+      "deployed_pct": 39.52,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3334,9 +3341,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.225,
-      "current_value": 1093.59,
-      "unrealized_pnl": 329.78,
+      "current_price": 0.215,
+      "current_value": 1044.98,
+      "unrealized_pnl": 281.17,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3370,7 +3377,7 @@
       "p_yes": 0.2339,
       "p_blended": 0.2339,
       "edge_net": 0.1139,
-      "rationale": "Pedro Sánchez kämpft kurz vor den spanischen Wahlen um den Verbleib im Amt, wobei Umfragen ein enges Rennen gegen das rechte Lager zeigen."
+      "rationale": "Pedro Sánchez kämpft in einer sehr knappen Wahl gegen das konservative Lager, wobei aktuelle Umfragen und Berichte über den Wahlausgang ein offenes Rennen nahelegen."
     },
     {
       "market_id": "0x989e60030a12b3b8c3014ca744df34fce5bc014a803f5a0c717557e11a0a04b8",
@@ -3434,6 +3441,72 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 314,
+      "ts": "2026-11-28T00:46:25.803384+00:00",
+      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
+      "question": "Will Bitcoin reach $62,500 in November?",
+      "category": "crypto",
+      "end_date": "2026-12-01T05:00:00+00:00",
+      "market_price": "0.2550",
+      "p_blind": "0.3800",
+      "p_blended": "0.3029",
+      "confidence": "0.8000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.0529",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
+        "base_rate": 0.35,
+        "bull_case": "Der Bitcoin-Preis notiert derzeit bei etwa $59.928 und war im November bereits über $62.139, sodass nur ein kleiner Anstieg von rund 4.3% nötig ist.",
+        "bear_case": "Es verbleiben nur noch wenige Tage bis zum Monatsende am 1. Dezember, und der Kurs müsste sich spürbar erholen, was bei begrenzter Zeit und aktueller Konsolidierung ungewiss bleibt.",
+        "summary_de": "Bitcoin liegt nahe der Marke von $60.000 und benötigt einen Anstieg von rund 4,3 %, um das Ziel von $62.500 vor Monatsende zu erreichen, was angesichts der verbleibenden Zeit möglich, aber nicht garantiert ist.",
+        "news_used": [
+          "Prediction Markets: Bitcoin $62,500 Odds Up, B300 Rents Ease | Nov 27 - Longbridge"
+        ],
+        "market_data": "BTC/USD live spot (Kraken): $59,928.70 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $62,500.00: +4.3% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.2d (1-sigma move = +/-4.3%, distance = 0.98 sigma): Gaussian one-touch ('dip/reach/hit"
+      }
+    },
+    {
+      "id": 313,
+      "ts": "2026-11-28T00:46:24.474379+00:00",
+      "market_id": "0x91e20860241f7c90fcff5ec348a68f953bd66a02d5662ac26cab32ac1f904be6",
+      "question": "Will Pedro Sánchez be the next Prime Minister of Spain?",
+      "category": "politics",
+      "end_date": "2026-11-30T04:59:00+00:00",
+      "market_price": "0.1205",
+      "p_blind": "0.4800",
+      "p_blended": "0.2339",
+      "confidence": "0.6000",
+      "catalyst_freshness": "breaking_lt_6h",
+      "edge_net": "0.1139",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "The contract resolves based on who becomes the next Prime Minister of Spain following the ongoing election cycle.",
+        "base_rate": 0.5,
+        "bull_case": "Pedro Sánchez demonstrates strong late mobilization and historical ability to defy trailing poll numbers to retain power.",
+        "bear_case": "Recent news headlines indicate tight polls with the right-wing opposition gaining momentum ahead of the snap election.",
+        "summary_de": "Pedro Sánchez kämpft in einer sehr knappen Wahl gegen das konservative Lager, wobei aktuelle Umfragen und Berichte über den Wahlausgang ein offenes Rennen nahelegen.",
+        "news_used": [
+          "Europe Braces for Election Season as Spain Votes - Bloomberg.com",
+          "Pedro Sánchez Says He Can’t Conceive Losing Ahead of Spain’s Snap Election: 12 outlets compared - NewsCord",
+          "Spain Elections - Goshen News",
+          "Late mobilisation: Sanchez makes last bid to beat the right ahead of Spanish vote - RTL Today",
+          "Spain candidates hold closing election rallies - EFE - Agencia de noticias",
+          "Spain’s Sanchez insists he will defy polls as election campaign wraps up - Sight Magazine"
+        ]
+      }
+    },
     {
       "id": 312,
       "ts": "2026-11-28T00:41:17.875541+00:00",
@@ -3621,7 +3694,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:25:32.415082+00:00",
+      "last_checked_ts": "2026-11-28T00:45:45.686351+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Market resolves based on standard spot price feeds reaching $1,800 before the end of November.",
@@ -3722,7 +3795,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:20:41.741915+00:00",
+      "last_checked_ts": "2026-11-28T00:45:44.263158+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an actual Federal Reserve rate hike enacted during calendar year 2026 before December 10, 2026.",
@@ -4228,75 +4301,6 @@
           "Europe Braces for Election Season as Spain Votes - Bloomberg",
           "Spanish PM and rivals rally supporters in final pitch for votes - BBC"
         ]
-      }
-    },
-    {
-      "id": 289,
-      "ts": "2026-11-27T22:56:13.382064+00:00",
-      "market_id": "0x9d5472226e73ca9c0c35c6df8625cd93e9f834feb22f8b3992759d1156507dfe",
-      "question": "Will New Zealand win?",
-      "category": "sports",
-      "end_date": "2026-12-03T22:00:00+00:00",
-      "market_price": "0.2300",
-      "p_blind": "0.4500",
-      "p_blended": "0.2792",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.0592",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:40:39.323211+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "The contract resolves based on the official outcome of the Test Match between New Zealand and India ending by December 3, 2026.",
-        "base_rate": 0.45,
-        "bull_case": "New Zealand has strong home conditions and a competitive Test squad capable of defeating India in any given match.",
-        "bear_case": "India possesses a formidable Test team with deep bowling and batting depth, making them slight favorites in most conditions.",
-        "summary_de": "Das Test-Match zwischen Neuseeland und Indien ist ausgeglichen, wobei Indien aufgrund seiner Tiefe leichte Vorteile hat, Neuseeland aber im Heimvorteil überraschen kann.",
-        "news_used": [
-          "Selection shock as Aussies name squad for first New Zealand Test - ICC",
-          "Political novice turns kingmaker after New Zealand’s deadlocked election - The Washington Post",
-          "Clayton and Rocchiccioli named in Australia Test squad for New Zealand series - ESPN",
-          "Clayton and Rocchiccioli named in Australia Test squad for New Zealand series - Cricinfo",
-          "Bugman Ruud Kleinpaste Connects With A New Zealand River - Scoop - New Zealand News",
-          "England Chase Historic Third Straight Win Over New Zealand - Oz Arab Media"
-        ]
-      }
-    },
-    {
-      "id": 288,
-      "ts": "2026-11-27T22:56:12.343234+00:00",
-      "market_id": "0xc3df044e236b0255f3b8b283957754d936cfc45f091ae7041409a1b545d268dc",
-      "question": "Will the price of Bitcoin be above $64,000 on December 1?",
-      "category": "crypto",
-      "end_date": "2026-12-01T17:00:00+00:00",
-      "market_price": "0.0750",
-      "p_blind": "0.1200",
-      "p_blended": "0.0946",
-      "confidence": "0.7500",
-      "catalyst_freshness": "breaking_lt_6h",
-      "edge_net": "0.0000",
-      "strategy_type": "carry_rejected",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:40:38.448071+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Standard price check for Bitcoin above $64,000 at the specified deadline.",
-        "base_rate": 0.15,
-        "bull_case": "Bitcoin historically exhibits rapid mean reversion and high volatility, allowing a potential 7% bounce back above $64,000 within a few days.",
-        "bear_case": "Bitcoin has recently dropped below $59,000 with weak technical support, making a swift recovery of over 7% in under four days unlikely.",
-        "summary_de": "Da Bitcoin aktuell nahe 59.700 US-Dollar gehandelt wird und in den verbleibenden vier Tagen ein Anstieg von über sieben Prozent nötig ist, ist ein Überschreiten der Marke von 64.000 US-Dollar unwahrscheinlich.",
-        "news_used": [
-          "Here’s what happened in crypto today",
-          "Bitcoin price drops below $59K as Anthropic joins tech stock rebound",
-          "Bitcoin supply metric hits 11-year low as new ‘capitulation’ signal arrives",
-          "Bitcoin’s $64K rally fizzles. Can $60K hold? - Crypto News"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $59,748.70 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~47%).\nDistance from live spot to $64,000.00: +7.1% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 3.8d (1-sigma move = +/-4.8%, distance = 1.43 sigma): Gaussian one-touch ('dip/reach/hit"
       }
     }
   ],
@@ -5264,6 +5268,18 @@
   ],
   "recent_runs": [
     {
+      "id": 429,
+      "ts": "2026-11-28T00:46:25.805941+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1114,
+      "candidates_found": 18,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 42.68,
+      "errors": []
+    },
+    {
       "id": 428,
       "ts": "2026-11-28T00:41:17.878321+00:00",
       "dry_run": 0,
@@ -5489,18 +5505,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 52.2,
-      "errors": []
-    },
-    {
-      "id": 409,
-      "ts": "2026-11-27T23:01:59.385026+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1137,
-      "candidates_found": 18,
-      "llm_calls": 2,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 54.09,
       "errors": []
     }
   ]
