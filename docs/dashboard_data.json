@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T13:26:14.796793+00:00",
+  "generated_at": "2026-11-28T13:31:56.420150+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11467.78,
-    "reconciled_equity_usd": 11467.78,
+    "equity_usd": 11321.96,
+    "reconciled_equity_usd": 11321.96,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2224.56,
-    "deployed_pct": 19.4,
-    "total_pnl_usd": 1467.78,
-    "total_pnl_pct": 14.68,
-    "unrealized_pnl_usd": -483.88,
+    "positions_value_usd": 2078.74,
+    "deployed_pct": 18.36,
+    "total_pnl_usd": 1321.96,
+    "total_pnl_pct": 13.22,
+    "unrealized_pnl_usd": -629.7,
     "total_trades": 313,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,11 +28,11 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 363,
+    "total_forecasts": 364,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1154.35,
+    "crypto": 1008.53,
     "geopolitics": 514.19,
     "politics": 441.24,
     "markets": 114.78
@@ -133,13 +133,6 @@
       "equity": 9962.25,
       "cash": 9962.25,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T18:21:01.084337+00:00",
-      "equity": 9960.54,
-      "cash": 8998.81,
-      "deployed_pct": 9.66,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T18:36:41.841776+00:00",
@@ -3891,6 +3884,13 @@
       "cash": 9243.22,
       "deployed_pct": 19.4,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T13:31:55.995757+00:00",
+      "equity": 11321.96,
+      "cash": 9243.22,
+      "deployed_pct": 18.36,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3901,9 +3901,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.475,
-      "current_value": 1154.35,
-      "unrealized_pnl": 772.45,
+      "current_price": 0.415,
+      "current_value": 1008.53,
+      "unrealized_pnl": 626.63,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3986,6 +3986,34 @@
     }
   ],
   "recent_forecasts": [
+    {
+      "id": 364,
+      "ts": "2026-11-28T13:31:55.993955+00:00",
+      "market_id": "0x9ab1642765c326fa3d83c5350e53bffd9aef79b66fe29720e0a7aab8b7219861",
+      "question": "Will Elon Musk post 220-239 tweets from November 24 to December 1, 2026?",
+      "category": "politics",
+      "end_date": "2026-12-01T17:00:00+00:00",
+      "market_price": "0.0650",
+      "p_blind": "0.2200",
+      "p_blended": "0.0907",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Counts total tweets and replies on Elon Musk's official X account within the exact specified date range.",
+        "base_rate": 0.15,
+        "bull_case": "Elon Musk occasionally enters high-engagement periods where his daily tweet volume spikes significantly, potentially landing in this specific elevated bin of 220-239 over a week.",
+        "bear_case": "A total of 220-239 tweets over an 8-day period averages to roughly 28-30 tweets per day, which is higher than his typical baseline rate of 15-20 tweets per day unless major news occurs.",
+        "summary_de": "Die Zählung erfordert ein relativ hohes tägliches Tweet-Volumen, das über Elon Musks üblichem Durchschnitt liegt, aber bei intensiven Phasen durchaus erreichbar ist.",
+        "news_used": []
+      }
+    },
     {
       "id": 363,
       "ts": "2026-11-28T13:26:14.454034+00:00",
@@ -4096,7 +4124,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:15:49.279341+00:00",
+      "last_checked_ts": "2026-11-28T13:31:03.194108+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Bitcoin hits or dips to $52,500 at any point during November 2026 UTC.",
@@ -4220,7 +4248,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:10:43.682822+00:00",
+      "last_checked_ts": "2026-11-28T13:31:01.173626+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard Polymarket crypto spot price touch rule for November.",
@@ -4671,7 +4699,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:15:49.279341+00:00",
+      "last_checked_ts": "2026-11-28T13:31:03.194108+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Contract asks if Bitcoin hits $52,500 at any point during November 2026. Resolves via standard price feeds.",
@@ -4746,36 +4774,6 @@
           "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
           "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
           "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews"
-        ]
-      }
-    },
-    {
-      "id": 339,
-      "ts": "2026-11-28T06:31:56.323854+00:00",
-      "market_id": "0x44317caf2a759734ed21c83f569376f592b1d06777fc8ce55685e36b5506d73f",
-      "question": "Will it be confirmed that a software or configuration error caused the FAA's nationwide ground stop on November 13?",
-      "category": "technology",
-      "end_date": "2026-12-01T04:59:00+00:00",
-      "market_price": "0.2070",
-      "p_blind": "0.6500",
-      "p_blended": "0.3022",
-      "confidence": "0.6000",
-      "catalyst_freshness": "stale_or_none",
-      "edge_net": "0.1122",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:31.424731+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires official confirmation that a software or configuration error was specifically the root cause.",
-        "base_rate": 0.5,
-        "bull_case": "Complex aviation ground stops of this scale are overwhelmingly traced back to IT, software, or database configuration bugs.",
-        "bear_case": "Preliminary investigations can take weeks, and official reports might remain inconclusive or cite hardware/cyberattack factors before December 1.",
-        "summary_de": "Da landesweite FAA-Bodenstopps historisch gesehen häufig auf Software- oder Konfigurationsfehler zurückzuführen sind, ist eine Bestätigung wahrscheinlich, auch wenn offizielle Berichte möglicherweise noch Zeit benötigen.",
-        "news_used": [
-          "Microsoft, FAA failures and bomb hoaxes expose new travel risks - https://www.thetraveler.org/"
         ]
       }
     }
@@ -5784,6 +5782,18 @@
   ],
   "recent_runs": [
     {
+      "id": 574,
+      "ts": "2026-11-28T13:31:55.996226+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1173,
+      "candidates_found": 13,
+      "llm_calls": 1,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 58.12,
+      "errors": []
+    },
+    {
       "id": 573,
       "ts": "2026-11-28T13:26:14.456276+00:00",
       "dry_run": 0,
@@ -6009,18 +6019,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 37.52,
-      "errors": []
-    },
-    {
-      "id": 554,
-      "ts": "2026-11-28T11:46:33.770690+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1198,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 53.69,
       "errors": []
     }
   ]
