@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T00:46:26.052045+00:00",
+  "generated_at": "2026-11-28T00:51:17.671186+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 10541.75,
-    "reconciled_equity_usd": 10541.75,
+    "equity_usd": 10601.02,
+    "reconciled_equity_usd": 10601.02,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 6375.33,
-    "positions_value_usd": 4166.42,
-    "deployed_pct": 39.52,
-    "total_pnl_usd": 541.75,
-    "total_pnl_pct": 5.42,
-    "unrealized_pnl_usd": 14.15,
+    "positions_value_usd": 4225.69,
+    "deployed_pct": 39.86,
+    "total_pnl_usd": 601.02,
+    "total_pnl_pct": 6.01,
+    "unrealized_pnl_usd": 73.42,
     "total_trades": 304,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,8 +32,8 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "politics": 2302.16,
-    "crypto": 1044.98,
+    "politics": 2312.82,
+    "crypto": 1093.59,
     "geopolitics": 664.17,
     "markets": 155.11
   },
@@ -3316,6 +3316,13 @@
       "cash": 6375.33,
       "deployed_pct": 39.52,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T00:51:17.431663+00:00",
+      "equity": 10601.02,
+      "cash": 6375.33,
+      "deployed_pct": 39.86,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3341,9 +3348,9 @@
       "outcome": "Yes",
       "quantity": 4860.39,
       "avg_entry_price": 0.1571,
-      "current_price": 0.215,
-      "current_value": 1044.98,
-      "unrealized_pnl": 281.17,
+      "current_price": 0.225,
+      "current_value": 1093.59,
+      "unrealized_pnl": 329.78,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3371,9 +3378,9 @@
       "outcome": "Yes",
       "quantity": 1777.73,
       "avg_entry_price": 0.124,
-      "current_price": 0.1205,
-      "current_value": 214.22,
-      "unrealized_pnl": -6.22,
+      "current_price": 0.1265,
+      "current_value": 224.88,
+      "unrealized_pnl": 4.44,
       "p_yes": 0.2339,
       "p_blended": 0.2339,
       "edge_net": 0.1139,
@@ -3458,7 +3465,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T00:50:41.100348+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Kontrakt fragt, ob Bitcoin im November $62.500 erreicht, basierend auf Standard-Preinquellen.",
@@ -3725,7 +3732,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:35:36.112969+00:00",
+      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether Alberto Núñez Feijóo becomes the next Prime Minister of Spain.",
@@ -3865,7 +3872,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:35:36.112969+00:00",
+      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung bestimmt wird.",
@@ -4040,7 +4047,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:35:36.112969+00:00",
+      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on who officially becomes the next Prime Minister of Spain after the current political cycle or election process.",
@@ -4075,7 +4082,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:35:37.372637+00:00",
+      "last_checked_ts": "2026-11-28T00:50:40.914661+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "The contract resolves based on whether PP and Vox achieve a majority in the Spanish general election held on 29 November 2026.",
@@ -4180,7 +4187,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T00:35:36.112969+00:00",
+      "last_checked_ts": "2026-11-28T00:50:39.968874+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Die Frage bezieht sich darauf, ob Alberto Núñez Feijóo der nächste Premierminister Spaniens wird, was durch offizielle Amtseinführung oder Regierungsbildung im Parlament entschieden wird.",
@@ -5268,6 +5275,18 @@
   ],
   "recent_runs": [
     {
+      "id": 430,
+      "ts": "2026-11-28T00:51:17.433177+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1114,
+      "candidates_found": 20,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 39.45,
+      "errors": []
+    },
+    {
       "id": 429,
       "ts": "2026-11-28T00:46:25.805941+00:00",
       "dry_run": 0,
@@ -5493,18 +5512,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 43.72,
-      "errors": []
-    },
-    {
-      "id": 410,
-      "ts": "2026-11-27T23:06:27.084127+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1158,
-      "candidates_found": 18,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 52.2,
       "errors": []
     }
   ]
