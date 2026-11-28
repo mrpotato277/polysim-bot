@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T13:36:27.217318+00:00",
+  "generated_at": "2026-11-28T13:41:29.605995+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11437.04,
-    "reconciled_equity_usd": 11437.04,
+    "equity_usd": 11573.57,
+    "reconciled_equity_usd": 11573.57,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2193.82,
-    "deployed_pct": 19.18,
-    "total_pnl_usd": 1437.04,
-    "total_pnl_pct": 14.37,
-    "unrealized_pnl_usd": -514.62,
+    "positions_value_usd": 2330.35,
+    "deployed_pct": 20.14,
+    "total_pnl_usd": 1573.57,
+    "total_pnl_pct": 15.74,
+    "unrealized_pnl_usd": -378.09,
     "total_trades": 313,
     "win_rate_pct": 75.0,
     "max_drawdown_pct": -16.85,
@@ -28,12 +28,12 @@
     "brier_blind_score": 0.0895,
     "brier_market_score": 0.2257,
     "brier_unique_markets": 2,
-    "total_forecasts": 364,
+    "total_forecasts": 366,
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1105.74,
-    "geopolitics": 535.62,
+    "crypto": 1263.7,
+    "geopolitics": 514.19,
     "politics": 437.68,
     "markets": 114.78
   },
@@ -133,13 +133,6 @@
       "equity": 9962.25,
       "cash": 9962.25,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T18:41:39.756623+00:00",
-      "equity": 9955.21,
-      "cash": 8754.38,
-      "deployed_pct": 9.61,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T18:46:58.061753+00:00",
@@ -3891,6 +3884,13 @@
       "cash": 9243.22,
       "deployed_pct": 19.18,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T13:41:29.115704+00:00",
+      "equity": 11573.57,
+      "cash": 9243.22,
+      "deployed_pct": 20.14,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3901,9 +3901,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.455,
-      "current_value": 1105.74,
-      "unrealized_pnl": 723.84,
+      "current_price": 0.52,
+      "current_value": 1263.7,
+      "unrealized_pnl": 881.8,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -3916,9 +3916,9 @@
       "outcome": "No",
       "quantity": 4284.95,
       "avg_entry_price": 0.16,
-      "current_price": 0.125,
-      "current_value": 535.62,
-      "unrealized_pnl": -149.97,
+      "current_price": 0.12,
+      "current_value": 514.19,
+      "unrealized_pnl": -171.4,
       "p_yes": 0.7178,
       "p_blended": 0.2822,
       "edge_net": 0.1622,
@@ -3987,6 +3987,69 @@
   ],
   "recent_forecasts": [
     {
+      "id": 366,
+      "ts": "2026-11-28T13:41:29.111976+00:00",
+      "market_id": "0x974708aeadc41001ac98d94bdb52a8953d7b62591763b7c2edfc961b96c46208",
+      "question": "Will Elon Musk post 240-259 tweets from November 24 to December 1, 2026?",
+      "category": "politics",
+      "end_date": "2026-12-01T17:00:00+00:00",
+      "market_price": "0.1050",
+      "p_blind": "0.1200",
+      "p_blended": "0.1087",
+      "confidence": "0.6000",
+      "catalyst_freshness": "stale_or_none",
+      "edge_net": "0.0000",
+      "strategy_type": "carry_rejected",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Counts total tweets and replies by Elon Musk on X within the strict date range specified.",
+        "base_rate": 0.15,
+        "bull_case": "Musk occasionally has extremely high-volume posting days where he replies to hundreds of users, pushing his weekly total into the 240-259 range.",
+        "bear_case": "Musk's average weekly tweet volume typically falls outside this specific narrow band of 240-259 (often significantly higher or lower depending on his workload and engagement).",
+        "summary_de": "Die Wahrscheinlichkeit liegt niedrig, da die exakte Anzahl von 240 bis 259 Tweets in einer Woche ein enges Ziel für Musks unvorhersehbares Aktivitätsniveau darstellt.",
+        "news_used": []
+      }
+    },
+    {
+      "id": 365,
+      "ts": "2026-11-28T13:41:27.994286+00:00",
+      "market_id": "0xd5175b9e717fb4cf4de5fe69ed13465c831917782f2224ac330e260ee35b02a8",
+      "question": "Bank of England increases interest rates by 25 bps after December 2026 meeting?",
+      "category": "economics",
+      "end_date": "2026-12-17T23:59:00+00:00",
+      "market_price": "0.7750",
+      "p_blind": "0.2000",
+      "p_blended": "0.5618",
+      "confidence": "0.7000",
+      "catalyst_freshness": "recent_24h",
+      "edge_net": "0.2182",
+      "strategy_type": "news_lag",
+      "resolution_risk": "low",
+      "resolved_outcome": null,
+      "brier_score": null,
+      "last_checked_ts": "",
+      "reasoning": {
+        "model": "gemini-3.5-flash-lite",
+        "resolution_note": "Entscheidung der Bank of England über Zinserhöhungen im Dezember 2026.",
+        "base_rate": 0.15,
+        "bull_case": "Anhaltene Inflations- und Energiepreisschocks zwingen die Bank of England zu einer geldpolitischen Straffung.",
+        "bear_case": "Das globale makroökonomische Umfeld stabilisiert sich und die Mehrheit der Zentralbanken verbleibt im Zinssenkungs- oder Pausenmodus.",
+        "summary_de": "Trotz vereinzelter Inflationssorgen bleibt eine Zinserhöhung der Bank of England im Dezember 2026 ein eher unwahrscheinliches Szenario.",
+        "news_used": [
+          "Fixed rates near 6% this week, says Moneyfacts - Mortgage Strategy",
+          "Middle East energy shock pushes global central banks back into rate-hike cycle - The Nation (Pakistan )",
+          "How have interest rate expectations changed after this week's events? - investingLive",
+          "US Fed rate hike: Why is the central bank turning hawkish as markets brace for more hikes? - The Financial Express",
+          "BoE rate hike bets cushion British Pound downside as pressure persists vs USD - www.tmgm.com",
+          "British Pound remains on the back foot vs USD as BoE rate hike bets limit downside - FXStreet"
+        ]
+      }
+    },
+    {
       "id": 364,
       "ts": "2026-11-28T13:31:55.993955+00:00",
       "market_id": "0x9ab1642765c326fa3d83c5350e53bffd9aef79b66fe29720e0a7aab8b7219861",
@@ -4003,7 +4066,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T13:40:38.818646+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Counts total tweets and replies on Elon Musk's official X account within the exact specified date range.",
@@ -4031,7 +4094,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "",
+      "last_checked_ts": "2026-11-28T13:40:40.039535+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires verifying whether a formal ceasefire remains intact through the exact deadline of December 15, 2026.",
@@ -4066,7 +4129,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:31.066294+00:00",
+      "last_checked_ts": "2026-11-28T13:40:40.176932+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire or pause between the US and Iran by the deadline, which is tightly defined and hard to verify if unofficial.",
@@ -4094,7 +4157,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
+      "last_checked_ts": "2026-11-28T13:40:40.039535+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires confirming that the ceasefire officially persists continuously through December 15 without a formal resumption of hostilities.",
@@ -4213,7 +4276,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
+      "last_checked_ts": "2026-11-28T13:40:40.039535+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires defining the precise start and continuation criteria of an Israel-Iran ceasefire by December 15, 2026.",
@@ -4307,7 +4370,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:20:46.749761+00:00",
+      "last_checked_ts": "2026-11-28T13:40:38.372338+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price check against a specific fiat threshold at a precise timestamp.",
@@ -4406,7 +4469,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.614377+00:00",
+      "last_checked_ts": "2026-11-28T13:40:39.771982+00:00",
       "reasoning": {
         "model": "gemini-3.1-flash-lite",
         "resolution_note": "The contract specifies a 25 bps increase; any other increment or a hold would resolve to NO.",
@@ -4441,7 +4504,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.262798+00:00",
+      "last_checked_ts": "2026-11-28T13:40:39.260598+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Binary condition based on whether Bitcoin hits or dips to $57,500 at any point during November 2026.",
@@ -4473,7 +4536,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.614377+00:00",
+      "last_checked_ts": "2026-11-28T13:40:39.771982+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidung der Bank of England nach der Dezembersitzung 2026 hinsichtlich einer Zinserhöhung um 25 Basispunkte.",
@@ -4508,7 +4571,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:20:46.971892+00:00",
+      "last_checked_ts": "2026-11-28T13:40:38.533992+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on the official FOMC rate decision following the December 2026 meeting.",
@@ -4538,7 +4601,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.614377+00:00",
+      "last_checked_ts": "2026-11-28T13:40:39.771982+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Entscheidet sich anhand der offiziellen Zinsentscheidung der Bank of England nach der Dezember-Sitzung 2026.",
@@ -4602,7 +4665,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
+      "last_checked_ts": "2026-11-28T13:40:40.039535+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Der Vertrag fragt, ob der Waffenstillstand zwischen Israel und Iran bis zum 15. Dezember anhält.",
@@ -4671,7 +4734,7 @@
       "resolution_risk": "medium",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:31.066294+00:00",
+      "last_checked_ts": "2026-11-28T13:40:40.176932+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Requires an effective ceasefire (2-week pause) between the US and Iran by November 30, 2026, which involves complex verification and potentially ambiguous definitions of US involvement vs. proxy conflicts.",
@@ -4709,72 +4772,6 @@
         "summary_de": "Angesichts des aktuellen Kurses von rund 59.500 USD und des engen Zeitfensters bis Monatsende ist ein Rücksetzer um fast 12 Prozent statistisch sehr unwahrscheinlich.",
         "news_used": [],
         "market_data": "BTC/USD live spot (Kraken): $59,536.80 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $52,500.00: -11.8% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.1%, distance = 3.07 sigma): Gaussian one-touch ('dip/reach/hi"
-      }
-    },
-    {
-      "id": 341,
-      "ts": "2026-11-28T06:51:20.506197+00:00",
-      "market_id": "0xaa7e93dd8215e9819e80f30015e42d481ec4fb5f90cda7e6771524612b2cafa7",
-      "question": "Will Bitcoin reach $62,500 in November?",
-      "category": "crypto",
-      "end_date": "2026-12-01T05:00:00+00:00",
-      "market_price": "0.2350",
-      "p_blind": "0.3200",
-      "p_blended": "0.2665",
-      "confidence": "0.7500",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.0365",
-      "strategy_type": "news_lag",
-      "resolution_risk": "low",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:35:37.285859+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Contract asks if Bitcoin hits $62,500 in November; standard spot price reference applies with clear 2026-12-01 05:00 UTC deadline.",
-        "base_rate": 0.3,
-        "bull_case": "Bitcoin recently traded near $62,139 and needs only a +4.5% move within the remaining days of November, well within historical high-volatility crypto swings.",
-        "bear_case": "Current spot is around $59,798 with only a few days left in November, meaning a rapid rally is required while momentum has recently stalled below the threshold.",
-        "summary_de": "Bitcoin müsste in den verbleibenden Novembertagen um rund viereinhalb Prozent steigen, was angesichts der aktuellen Volatilität zwar möglich, aber aufgrund der verbleibenden Zeit ein engeres Szenario bleibt.",
-        "news_used": [
-          "Prediction Markets: Bitcoin $62,500 Odds Up, B300 Rents Ease… - Longbridge"
-        ],
-        "market_data": "BTC/USD live spot (Kraken): $59,798.00 (24h range: $58,728.70 - $62,139.10, 30d realized annualized vol: ~46%).\nDistance from live spot to $62,500.00: +4.5% (NOTE: crypto has heavy fat tails and Polymarket resolution source e.g. Binance/Chainlink may differ by ~0.1-0.2%).\nQuantitative volatility reference over 2.9d (1-sigma move = +/-4.1%, distance = 1.07 sigma): Gaussian one-touch ('dip/reach/hit"
-      }
-    },
-    {
-      "id": 340,
-      "ts": "2026-11-28T06:51:19.296687+00:00",
-      "market_id": "0x3a0c86d7d9d3e4e82d533d2b1351b5d3e63577f8e1495e2804b9ae540135a556",
-      "question": "Israel x Iran ceasefire continues through December 15?",
-      "category": "geopolitics",
-      "end_date": "2026-12-16T04:59:00+00:00",
-      "market_price": "0.8450",
-      "p_blind": "0.4500",
-      "p_blended": "0.7394",
-      "confidence": "0.6000",
-      "catalyst_freshness": "recent_24h",
-      "edge_net": "0.1106",
-      "strategy_type": "news_lag",
-      "resolution_risk": "medium",
-      "resolved_outcome": null,
-      "brier_score": null,
-      "last_checked_ts": "2026-11-28T13:25:30.870009+00:00",
-      "reasoning": {
-        "model": "gemini-3.5-flash-lite",
-        "resolution_note": "Requires precise definition of whether an active ceasefire is officially recognized and unbroken through December 15.",
-        "base_rate": 0.4,
-        "bull_case": "Ongoing diplomatic mediation and US involvement continue to suppress direct escalations between Israel and Iran.",
-        "bear_case": "Recent news highlights ongoing Israeli military deliberations, persistent strikes in the region, and continuing threats from Iran that threaten fragile arrangements.",
-        "summary_de": "Trotz laufender Vermittlungsbemühungen bleibt die Lage zwischen Israel und Iran angespannt, wobei anhaltende militärische Operationen und neue Drohungen das Risiko eines Bruchs des Waffenstillstands erhöhen.",
-        "news_used": [
-          "Iran issues new threats as war stalemate drags on - fox23maine.com",
-          "Israeli security officials divided over timing of Iran strike as military operations continue in Lebanon - LBCI Lebanon",
-          "Black Friday shopping: What to buy now and what can wait - NBC 15 WPMI",
-          "Ceasefire two years on: southern Lebanon's villages still under fire - 巴士的報",
-          "Israel divided over whether to strike Iran without US backing - The Arab Weekly",
-          "Gaza, Lebanon face new Israeli strikes as Iran-U.S. mediation continues - ArabAmericanNews"
-        ]
       }
     }
   ],
@@ -5782,6 +5779,18 @@
   ],
   "recent_runs": [
     {
+      "id": 576,
+      "ts": "2026-11-28T13:41:29.116520+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1173,
+      "candidates_found": 15,
+      "llm_calls": 2,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 52.27,
+      "errors": []
+    },
+    {
       "id": 575,
       "ts": "2026-11-28T13:36:26.861439+00:00",
       "dry_run": 0,
@@ -6007,18 +6016,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 42.39,
-      "errors": []
-    },
-    {
-      "id": 556,
-      "ts": "2026-11-28T11:56:09.879689+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1160,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 38.83,
       "errors": []
     }
   ]
