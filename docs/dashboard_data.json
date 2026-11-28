@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T15:26:30.693610+00:00",
+  "generated_at": "2026-11-28T15:31:49.563158+00:00",
   "dry_run": false,
   "model": "gemini-3.5-flash-lite",
   "risk_limits": {
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "starting_balance_usd": 10000.0,
-    "equity_usd": 11407.14,
-    "reconciled_equity_usd": 11407.14,
+    "equity_usd": 11431.44,
+    "reconciled_equity_usd": 11431.44,
     "equity_discrepancy_usd": 0.0,
     "cash_usd": 9243.22,
-    "positions_value_usd": 2163.92,
-    "deployed_pct": 18.97,
-    "total_pnl_usd": 1407.14,
-    "total_pnl_pct": 14.07,
-    "unrealized_pnl_usd": 123.77,
+    "positions_value_usd": 2188.22,
+    "deployed_pct": 19.14,
+    "total_pnl_usd": 1431.44,
+    "total_pnl_pct": 14.31,
+    "unrealized_pnl_usd": 148.07,
     "total_trades": 313,
     "win_rate_pct": 66.7,
     "max_drawdown_pct": -16.85,
@@ -32,7 +32,7 @@
     "circuit_breaker_active": true
   },
   "category_exposure": {
-    "crypto": 1057.14,
+    "crypto": 1081.44,
     "geopolitics": 535.62,
     "politics": 456.38,
     "markets": 114.78
@@ -145,13 +145,6 @@
       "equity": 9518.65,
       "cash": 9518.65,
       "source": "polysim"
-    },
-    {
-      "ts": "2026-11-26T20:51:22.645430+00:00",
-      "equity": 9943.86,
-      "cash": 8091.18,
-      "deployed_pct": 11.63,
-      "source": "bot"
     },
     {
       "ts": "2026-11-26T20:56:21.005357+00:00",
@@ -3903,6 +3896,13 @@
       "cash": 9243.22,
       "deployed_pct": 18.97,
       "source": "bot"
+    },
+    {
+      "ts": "2026-11-28T15:31:49.208208+00:00",
+      "equity": 11431.44,
+      "cash": 9243.22,
+      "deployed_pct": 19.14,
+      "source": "bot"
     }
   ],
   "open_positions": [
@@ -3913,9 +3913,9 @@
       "outcome": "Yes",
       "quantity": 2430.2,
       "avg_entry_price": 0.1571,
-      "current_price": 0.435,
-      "current_value": 1057.14,
-      "unrealized_pnl": 675.24,
+      "current_price": 0.445,
+      "current_value": 1081.44,
+      "unrealized_pnl": 699.54,
       "p_yes": 0.5768,
       "p_blended": 0.5768,
       "edge_net": 0.4368,
@@ -4343,7 +4343,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:15:45.201144+00:00",
+      "last_checked_ts": "2026-11-28T15:30:57.581966+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolves based on whether Bitcoin hits or dips to $52,500 at any point during November 2026 UTC.",
@@ -4560,7 +4560,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:15:45.390935+00:00",
+      "last_checked_ts": "2026-11-28T15:30:57.744962+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Resolution depends on whether Bitcoin hits or dips to $55,000 in November 2026.",
@@ -4596,7 +4596,7 @@
       "resolution_risk": "low",
       "resolved_outcome": null,
       "brier_score": null,
-      "last_checked_ts": "2026-11-28T15:15:46.087116+00:00",
+      "last_checked_ts": "2026-11-28T15:30:58.456213+00:00",
       "reasoning": {
         "model": "gemini-3.5-flash-lite",
         "resolution_note": "Standard price hit contract, resolved by spot oracle before December 1, 2026.",
@@ -5773,6 +5773,18 @@
   ],
   "recent_runs": [
     {
+      "id": 598,
+      "ts": "2026-11-28T15:31:49.209708+00:00",
+      "dry_run": 0,
+      "markets_scanned": 1164,
+      "candidates_found": 14,
+      "llm_calls": 0,
+      "trades_attempted": 0,
+      "trades_executed": 0,
+      "duration_sec": 55.59,
+      "errors": []
+    },
+    {
       "id": 597,
       "ts": "2026-11-28T15:26:30.324681+00:00",
       "dry_run": 0,
@@ -5998,18 +6010,6 @@
       "trades_attempted": 0,
       "trades_executed": 0,
       "duration_sec": 46.93,
-      "errors": []
-    },
-    {
-      "id": 578,
-      "ts": "2026-11-28T13:51:14.661900+00:00",
-      "dry_run": 0,
-      "markets_scanned": 1163,
-      "candidates_found": 12,
-      "llm_calls": 0,
-      "trades_attempted": 0,
-      "trades_executed": 0,
-      "duration_sec": 36.84,
       "errors": []
     }
   ]
